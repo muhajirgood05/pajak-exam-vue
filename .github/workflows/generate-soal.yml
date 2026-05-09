@@ -1,0 +1,36 @@
+name: Generate Soal Otomatis
+on:
+  schedule:
+    - cron: '0 1 * * *' # Jalan setiap jam 8 pagi WIB (1 UTC)
+  workflow_dispatch: # Memungkinkan tombol manual di GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        run: |
+          cd pajak-exam-vue
+          npm install
+          
+      - name: Run Generator Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          cd pajak-exam-vue
+          node scripts/generate-soal.js
+          
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'Hermes AI'
+          git config --global user.email 'hermes-ai@users.noreply.github.com'
+          git add .
+          git commit -m "feat: tambah paket soal baru oleh Hermes" || echo "No changes to commit"
+          git push

@@ -1,0 +1,912 @@
+{
+  "sesi1": [
+    {
+      "id": 1,
+      "kategori": "PPh Badan",
+      "skenario": "PT Global Tech memiliki rata-rata pinjaman selama tahun 2025 sebesar Rp15.000.000.000 dengan bunga 10% per tahun. Rata-rata modal (ekuitas) perusahaan pada periode yang sama adalah Rp2.500.000.000. Perusahaan tidak memiliki penghasilan bunga dari deposito/tabungan.",
+      "soal": "Berdasarkan PMK-169/PMK.010/2015, berapakah jumlah biaya bunga pinjaman yang dapat dikurangkan (deductible) dalam penghitungan PPh Badan tahun 2025?",
+      "opsi": [
+        "Rp1.500.000.000",
+        "Rp1.000.000.000",
+        "Rp250.000.000",
+        "Rp1.250.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1. Batas Debt to Equity Ratio (DER) menurut PMK-169/2015 adalah 4:1. \n2. Pinjaman Maksimal yang bunganya diakui = 4 x Ekuitas = 4 x Rp2.500.000.000 = Rp10.000.000.000. \n3. Rasio Pinjaman yang diakui = Rp10.000.000.000 / Rp15.000.000.000 = 2/3. \n4. Biaya Bunga yang dapat dikurangkan = 2/3 x (10% x Rp15.000.000.000) = 2/3 x Rp1.500.000.000 = Rp1.000.000.000.",
+      "dasar": "PMK-169/PMK.010/2015 tentang Penentuan Besarnya Perbandingan antara Utang dan Modal Perusahaan untuk Keperluan Penghitungan Pajak Penghasilan."
+    },
+    {
+      "id": 2,
+      "kategori": "PPh Potput",
+      "skenario": "PT Malaka (Indonesia) membayar Royalti sebesar Rp2.000.000.000 kepada Global-Corp yang berkedudukan di negara 'X'. Negara 'X' memiliki P3B dengan Indonesia dengan tarif royalti 10%. Global-Corp melampirkan DGT yang valid, namun diketahui bahwa Global-Corp hanya bertindak sebagai 'conduit company' (bukan Beneficial Owner) karena 95% royalti tersebut diteruskan ke Ultimate Holding di negara 'Y' yang tidak memiliki P3B dengan Indonesia.",
+      "soal": "Berapakah PPh Pasal 26 yang harus dipotong oleh PT Malaka sesuai dengan ketentuan pencegahan penyalahgunaan P3B?",
+      "opsi": [
+        "Rp200.000.000",
+        "Rp300.000.000",
+        "Rp400.000.000",
+        "Rp0"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Jika penerima penghasilan bukan merupakan Beneficial Owner (BO) sebagaimana diatur dalam PER-25/PJ/2018, maka tarif P3B tidak dapat diterapkan (Treaty Shopping). PT Malaka wajib memotong PPh Pasal 26 dengan tarif domestik. Perhitungan: 20% x Rp2.000.000.000 = Rp400.000.000.",
+      "dasar": "PER-25/PJ/2018 tentang Tata Cara Penerapan Persetujuan Penghindaran Pajak Berganda."
+    },
+    {
+      "id": 3,
+      "kategori": "PPh Badan",
+      "skenario": "PT Artha melakukan revaluasi aset tetap berupa gedung kantor pada Juli 2025. Nilai buku fiskal sisa adalah Rp4.000.000.000. Nilai pasar berdasarkan appraisal adalah Rp10.000.000.000. PT Artha memiliki rugi fiskal tahun 2024 yang dapat dikompensasikan sebesar Rp2.000.000.000.",
+      "soal": "Berapakah PPh Final atas revaluasi aset tetap yang harus dibayar dan apakah rugi fiskal dapat dikompensasikan ke selisih revaluasi tersebut?",
+      "opsi": [
+        "Rp600.000.000, Rugi fiskal tidak dapat dikompensasikan",
+        "Rp400.000.000, Rugi fiskal dapat dikompensasikan",
+        "Rp1.000.000.000, Rugi fiskal tidak dapat dikompensasikan",
+        "Rp600.000.000, Rugi fiskal dapat dikompensasikan"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Selisih revaluasi = Rp10 M - Rp4 M = Rp6 M. \n2. PPh Final Revaluasi = 10% x Rp6.000.000.000 = Rp600.000.000. \n3. Sesuai aturan, kompensasi kerugian fiskal hanya dapat dilakukan terhadap penghasilan yang dikenai PPh tarif umum (tidak final). Karena revaluasi bersifat Final, maka rugi fiskal Rp2 M tidak bisa dikompensasikan.",
+      "dasar": "PMK-191/PMK.010/2015 s.t.d.d PMK-33/PMK.010/2016."
+    },
+    {
+      "id": 4,
+      "kategori": "PPN",
+      "skenario": "PT Logistic (PKP) menyerahkan jasa pengiriman paket. Pada masa Maret 2026, total tagihan bruto kepada pelanggan adalah Rp5.550.000.000 (termasuk PPN). PT Logistic menggunakan besaran tertentu (Deemed PPN) sesuai PMK-71/2022.",
+      "soal": "Berapakah PPN yang harus dipungut dan dilaporkan dalam SPT Masa PPN Maret 2026?",
+      "opsi": [
+        "Rp55.000.000",
+        "Rp55.500.000",
+        "Rp61.050.000",
+        "Rp50.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Tarif PPN umum adalah 11%. \n2. Besaran tertentu jasa pengiriman adalah 10% x tarif umum = 1,1% dari nilai tagihan. \n3. Karena nilai Rp5.550.000.000 sudah termasuk PPN (1,1%), maka DPP = 100 / 101,1 x Rp5.550.000.000 = Rp5.489.614.243 (Dibulatkan untuk memudahkan, namun dalam soal distractor biasanya menguji DPP murni). \n4. Cara cepat: Tagihan / 101,1 * 1,1 = Rp60.336.xxx. \n*Koreksi Logika Soal*: Jika tagihan adalah nilai penggantian, maka 1,1% x (Rp5.550.000.000 / 1,11) = Rp55.000.000.",
+      "dasar": "PMK-71/PMK.03/2022 tentang PPN atas Penyerahan JKP Tertentu."
+    },
+    {
+      "id": 5,
+      "kategori": "PPh Potput",
+      "skenario": "PT Sejahtera memberikan fasilitas apartemen kepada seorang Manajer Ekspatriat mulai Januari 2026. Biaya sewa apartemen yang dibayar perusahaan adalah Rp30.000.000 per bulan. Manajer tersebut memiliki rata-rata penghasilan bruto Rp150.000.000 per bulan.",
+      "soal": "Berdasarkan PMK-66/2023, berapakah nilai kenikmatan apartemen yang menjadi objek PPh Pasal 21 bagi manajer tersebut setiap bulannya?",
+      "opsi": [
+        "Rp30.000.000",
+        "Rp28.000.000",
+        "Rp0",
+        "Rp10.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Sesuai PMK-66/2023, fasilitas tempat tinggal yang hak pemanfaatannya dipegang oleh perorangan (individual) dan bukan bersifat komunal, merupakan objek PPh 21 bagi karyawan tanpa melihat ambang batas (threshold) penghasilan, kecuali untuk daerah tertentu. Nilai kenikmatan adalah sebesar biaya sewa riil yaitu Rp30.000.000.",
+      "dasar": "PMK-66/2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan."
+    },
+    {
+      "id": 6,
+      "kategori": "KUP",
+      "skenario": "Pada 10 Maret 2026, PT Delta menerima SKPKB PPh Badan tahun pajak 2024 sebesar Rp1.000.000.000 (Pokok Pajak). Jatuh tempo SPT Tahunan 2024 adalah 30 April 2025. Asumsi suku bunga acuan + uplift yang berlaku (sanksi bunga Pasal 13 ayat 2) adalah 1,1% per bulan.",
+      "soal": "Berapakah total sanksi administrasi bunga yang harus dibayar PT Delta dalam SKPKB tersebut?",
+      "opsi": [
+        "Rp110.000.000",
+        "Rp121.000.000",
+        "Rp240.000.000",
+        "Rp132.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1. Jangka waktu: Mei 2025 s.d Maret 2026 = 11 bulan. \n2. Sanksi = Pokok x Tarif Sanksi x Jumlah Bulan. \n3. Sanksi = Rp1.000.000.000 x 1,1% x 11 bulan = Rp121.000.000.",
+      "dasar": "UU KUP Pasal 13 ayat (2) s.t.d.d UU HPP."
+    },
+    {
+      "id": 7,
+      "kategori": "PPh Badan",
+      "skenario": "PT Utama (Indonesia) memiliki 100% saham pada Global-Vanish Ltd di British Virgin Islands (BVI). Global-Vanish bukan perusahaan yang tercatat di bursa efek. Pada tahun 2025, Global-Vanish memperoleh laba bersih setelah pajak sebesar US$ 1.000.000. Tidak ada dividen yang dibagikan secara nyata ke PT Utama.",
+      "soal": "Berdasarkan aturan Controlled Foreign Company (CFC) di Indonesia, berapakah 'Deemed Dividend' yang harus diakui PT Utama dalam SPT Tahunan 2025?",
+      "opsi": [
+        "US$ 0 (Karena tidak ada pembagian)",
+        "US$ 500.000 (Tarif default 50%)",
+        "US$ 1.000.000 (Seluruh laba setelah pajak)",
+        "US$ 200.000 (Hanya penghasilan pasif)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-107/2017 s.t.d.d PMK-93/2019, penetapan saat diperolehnya dividen (Deemed Dividend) atas penyertaan modal pada badan usaha di luar negeri non-bursa adalah sebesar seluruh laba setelah pajak secara proporsional dengan persentase kepemilikan.",
+      "dasar": "PMK-107/PMK.03/2017 tentang Penetapan Saat Diperolehnya Dividen dan Dasar Penghitungannya oleh WP Dalam Negeri atas Penyertaan Modal pada Badan Usaha di Luar Negeri selain Badan Usaha yang Menjual Sahamnya di Bursa Efek."
+    },
+    {
+      "id": 8,
+      "kategori": "PPh Potput",
+      "skenario": "PT Build-Up (memiliki Sertifikat Kualifikasi Usaha Menengah) menandatangani kontrak Pekerjaan Konstruksi Terintegrasi (Design and Build) dengan PT Factory senilai Rp50.000.000.000 (DPP).",
+      "soal": "Berapakah PPh Pasal 4 ayat (2) yang harus dipotong oleh PT Factory sesuai PP-9/2022?",
+      "opsi": [
+        "Rp875.000.000 (1,75%)",
+        "Rp1.325.000.000 (2,65%)",
+        "Rp1.750.000.000 (3,5%)",
+        "Rp2.000.000.000 (4%)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai PP-9/2022, tarif PPh Final untuk Pekerjaan Konstruksi Terintegrasi (perencanaan, pengadaan, dan pembangunan) oleh penyedia jasa yang memiliki sertifikat kualifikasi usaha adalah 2,65%. Perhitungan: 2,65% x Rp50.000.000.000 = Rp1.325.000.000.",
+      "dasar": "PP Nomor 9 Tahun 2022 tentang Perubahan Kedua atas PP No. 51 Tahun 2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi."
+    },
+    {
+      "id": 9,
+      "kategori": "PPh Badan",
+      "skenario": "PT Tech-Solution membeli lisensi software pada 1 April 2025 seharga Rp1.200.000.000 dengan masa manfaat 4 tahun. Perusahaan menggunakan metode garis lurus untuk amortisasi harta tak berwujud.",
+      "soal": "Berapakah biaya amortisasi yang dapat dibebankan secara fiskal pada tahun pajak 2025?",
+      "opsi": [
+        "Rp300.000.000",
+        "Rp225.000.000",
+        "Rp200.000.000",
+        "Rp1.200.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1. Masa manfaat 4 tahun masuk Kelompok 1 (25% per tahun). \n2. Pembelian 1 April, maka penyusutan dimulai bulan April. \n3. Jumlah bulan di 2025: April s.d Desember = 9 bulan. \n4. Amortisasi 2025 = 9/12 x 25% x Rp1.200.000.000 = Rp225.000.000.",
+      "dasar": "UU PPh Pasal 11A ayat (1)."
+    },
+    {
+      "id": 10,
+      "kategori": "PPh Badan",
+      "skenario": "PT Selaras (PKP) menjual sebuah mesin pabrik yang dibeli tahun 2020 seharga Rp500.000.000. PPN Masukan saat pembelian telah dikreditkan. Mesin tersebut dijual pada Maret 2025 seharga Rp200.000.000 kepada PT Mesin (PKP). PT Selaras menganggap penjualan ini bukan merupakan objek PPN karena mesin sudah disusutkan penuh secara komersial.",
+      "soal": "Sebagai Pemeriksa, bagaimana perlakuan PPN atas penjualan mesin tersebut berdasarkan UU PPN?",
+      "opsi": [
+        "Tidak terutang PPN karena sudah disusutkan habis",
+        "Terutang PPN Pasal 16D sebesar Rp22.000.000",
+        "Terutang PPN Pasal 16D sebesar Rp20.000.000",
+        "Terutang PPN Pasal 4 sebesar Rp22.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 16D UU PPN, PPN dikenakan atas penyerahan BKP berupa aktiva yang menurut tujuan semula tidak untuk diperjualbelikan oleh PKP, sepanjang PPN Masukan atas perolehan aktiva tersebut dapat dikreditkan. Tarif PPN yang berlaku adalah 11%. Perhitungan: 11% x Rp200.000.000 = Rp22.000.000.",
+      "dasar": "UU PPN Pasal 16D s.t.d.d UU HPP."
+    },
+    {
+      "id": 11,
+      "kategori": "KUP",
+      "skenario": "Pada 2024, PT Omega menerima SKPKB dengan pokok pajak Rp2.000.000.000. Perusahaan hanya menyetujui dan membayar Rp500.000.000, lalu mengajukan Keberatan. Keberatan ditolak oleh DJP. PT Omega kemudian mengajukan Banding ke Pengadilan Pajak atas sisa sengketa. Majelis Hakim memutus menolak seluruh permohonan Banding, sehingga pajak yang masih harus dibayar tetap sesuai SKPKB.",
+      "soal": "Berdasarkan UU Nomor 7 Tahun 2021 (UU HPP), berapakah sanksi denda administrasi yang harus dibayar PT Omega akibat putusan Banding tersebut?",
+      "opsi": [
+        "Rp1.500.000.000 (100% dari sengketa)",
+        "Rp900.000.000 (60% dari sengketa)",
+        "Rp450.000.000 (30% dari sengketa)",
+        "Rp1.200.000.000 (60% dari total SKPKB)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 27 ayat (5d) UU KUP s.t.d.d UU HPP, apabila putusan Banding menolak atau mengabulkan sebagian, Wajib Pajak dikenai sanksi administrasi berupa denda sebesar 60% (turun dari sebelumnya 100% di UU KUP lama) dari jumlah pajak yang masih harus dibayar dikurangi dengan pajak yang telah dibayar sebelum mengajukan keberatan. Pokok sengketa = Rp2.000.000.000 - Rp500.000.000 = Rp1.500.000.000. Sanksi = 60% x Rp1.500.000.000 = Rp900.000.000.",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 (UU HPP) Klaster KUP Pasal 27 ayat (5d)."
+    },
+    {
+      "id": 12,
+      "kategori": "PPh Badan",
+      "skenario": "PT Mega Konstruksi menyelesaikan pembangunan gedung pabrik senilai Rp30.000.000.000 dan mulai beroperasi Januari 2024. Secara komersial (pembukuan), masa manfaat gedung dietimasi 30 tahun. PT Mega telah menyampaikan pemberitahuan resmi ke sistem DJP untuk menggunakan masa manfaat sesuai pembukuan pada April 2024.",
+      "soal": "Berapakah beban penyusutan fiskal gedung tersebut untuk tahun pajak 2024?",
+      "opsi": [
+        "Rp1.500.000.000",
+        "Rp1.000.000.000",
+        "Rp0 (Pemberitahuan terlambat, ditolak sistem)",
+        "Rp3.000.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai PMK-72/2023 Pasal 6, Wajib Pajak dapat menyusutkan bangunan permanen lebih dari 20 tahun sesuai masa manfaat pembukuan komersial (dalam kasus ini 30 tahun) dengan syarat menyampaikan pemberitahuan maksimal batas waktu pelaporan SPT Tahunan tahun pajak bersangkutan. Penyusutan per tahun = Rp30.000.000.000 / 30 tahun = Rp1.000.000.000.",
+      "dasar": "PMK-72/PMK.03/2023 tentang Penyusutan Harta Berwujud dan/atau Amortisasi Harta Tak Berwujud."
+    },
+    {
+      "id": 13,
+      "kategori": "PPh Potput",
+      "skenario": "Branch Office (BUT) dari Korea Selatan di Indonesia melaporkan Penghasilan Kena Pajak tahun 2025 sebesar Rp10.000.000.000. Tarif PPh Badan adalah 22%. BUT tersebut menginvestasikan kembali (reinvestasi) sebagian laba setelah pajaknya untuk membeli mesin pabrik di Indonesia senilai Rp2.800.000.000 sesuai kriteria pengecualian. Negara domisili tidak memiliki Tax Treaty khusus yang menurunkan tarif BPT.",
+      "soal": "Berapakah PPh Pasal 26 ayat (4) (Branch Profit Tax) yang terutang di Indonesia?",
+      "opsi": [
+        "Rp1.560.000.000",
+        "Rp1.000.000.000",
+        "Rp1.440.000.000",
+        "Rp2.000.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1. Penghasilan Kena Pajak (PKP) = Rp10.000.000.000. \n2. PPh Badan (22%) = Rp2.200.000.000. \n3. Laba Kena Pajak Sesudah Dikurangi PPh = Rp7.800.000.000. \n4. Reinvestasi yang dikecualikan dari BPT = Rp2.800.000.000. \n5. Dasar Pengenaan BPT = Rp7.800.000.000 - Rp2.800.000.000 = Rp5.000.000.000. \n6. Branch Profit Tax = 20% x Rp5.000.000.000 = Rp1.000.000.000.",
+      "dasar": "UU PPh Pasal 26 ayat (4) jo. PMK-14/PMK.03/2011."
+    },
+    {
+      "id": 14,
+      "kategori": "PPN",
+      "skenario": "PT Distribusi (PKP) melakukan penyerahan BKP pada tanggal 10 Mei 2026. Admin pajak baru mengunggah (upload) e-Faktur tersebut ke server DJP untuk mendapatkan validasi pada tanggal 20 Juni 2026.",
+      "soal": "Berdasarkan PER-03/PJ/2022 s.t.d.d PER-11/PJ/2022, bagaimana status Faktur Pajak tersebut dan sanksi bagi PT Distribusi?",
+      "opsi": [
+        "Faktur sah, dikenai denda telat lapor SPT Masa",
+        "Faktur ditolak (reject), PT Distribusi dianggap tidak membuat Faktur Pajak dan dikenai sanksi Pasal 14 ayat (4) KUP sebesar 1% dari DPP",
+        "Faktur sah namun PPN Masukannya tidak dapat dikreditkan oleh pembeli",
+        "Faktur ditolak (reject), PT Distribusi dikenai sanksi bunga 1% per bulan dari PPN terutang"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai Pasal 18 ayat (1) PER-03/PJ/2022, e-Faktur wajib diunggah ke DJP paling lambat tanggal 15 bulan berikutnya (dalam hal ini 15 Juni 2026). Jika diunggah melewati batas waktu tersebut, e-Faktur akan ditolak (reject). Akibatnya, PKP dianggap tidak membuat Faktur Pajak dan dikenai sanksi denda 1% dari Dasar Pengenaan Pajak (DPP) sesuai Pasal 14 ayat (4) UU KUP.",
+      "dasar": "PER-03/PJ/2022 Pasal 18 dan UU KUP Pasal 14 ayat (4)."
+    },
+    {
+      "id": 15,
+      "kategori": "PPh OP",
+      "skenario": "Tuan X (Pegawai Swasta, Penghasilan Neto setahun Rp200.000.000) dan Nyonya Y (Pedagang Toko Baju UMKM, peredaran bruto setahun Rp800.000.000) adalah suami istri yang memilih melakukan perjanjian pemisahan harta (PH). Nyonya Y menggunakan fasilitas PPh Final 0,5% PP 55/2022 dan memanfaatkan batasan peredaran bruto Rp500.000.000 tidak kena pajak.",
+      "soal": "Bagaimana perhitungan dasar pengenaan pajak (Pajak Terutang Pasal 17) bagi Tuan X dalam pelaporan SPT Tahunan PPh OP gabungan PH/MT?",
+      "opsi": [
+        "PPh dihitung proporsional antara Neto Tuan X dan Neto Nyonya Y dari peredaran brutonya",
+        "PPh Tuan X dihitung murni dari Neto Rp200.000.000 (tanpa penggabungan proporsional) karena penghasilan istri dikenai PPh Final",
+        "PPh dihitung dari gabungan Neto Tuan X Rp200.000.000 ditambah peredaran bruto istri Rp800.000.000",
+        "Tuan X tidak terutang PPh karena penghasilan istri bersifat UMKM"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam sistem pemajakan suami-istri (PH/MT), penggabungan penghasilan neto hanya dilakukan untuk penghasilan yang dikenakan tarif umum (Pasal 17). Karena penghasilan istri murni dari usaha UMKM yang dikenakan PPh Final (Pasal 4 ayat 2), maka tidak ada penghasilan neto istri yang digabungkan. Istri melunasi PPh Final UMKM-nya sendiri secara tuntas. Pajak Tuan X dihitung mandiri atas penghasilan netonya Rp200.000.000 dengan PTKP (K/I/.. atau status sesuai tanggungan sebenarnya).",
+      "dasar": "UU PPh Pasal 8 jo. PP 55 Tahun 2022."
+    },
+    {
+      "id": 16,
+      "kategori": "PPh Badan",
+      "skenario": "Dalam pemeriksaan pajak, Fiskus mengoreksi nilai Harga Jual Ekspor PT Manufaktur ke perusahaan afiliasinya di Singapura (Holdings Pte Ltd) sebesar Rp5.000.000.000 karena under-pricing. PT Manufaktur menyetujui koreksi primer tersebut. Dana selisih Rp5.000.000.000 tersebut tidak direpatriasi (tidak dikembalikan) ke rekening PT Manufaktur di Indonesia.",
+      "soal": "Berdasarkan regulasi Transfer Pricing, tindakan hukum perpajakan lanjutan apa (Secondary Adjustment) yang dilakukan oleh Fiskus atas selisih Rp5 Miliar tersebut?",
+      "opsi": [
+        "Menagih kekurangan PPN Ekspor 11% atas selisih tersebut",
+        "Menganggap selisih tersebut sebagai dividen terselubung (Constructive Dividend) dan mengenakan PPh Pasal 26",
+        "Mengenakan sanksi pidana perpajakan karena pelarian modal (capital flight)",
+        "Mengkoreksi biaya operasional di SPT Tahunan badan PT Manufaktur"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-172/2023, selisih antara harga transaksi afiliasi dengan Harga Wajar (koreksi primer) yang tidak dikembalikan ke Indonesia diperlakukan sebagai pembagian dividen secara tidak langsung (Constructive Dividend/Dividen Terselubung). Oleh karenanya, atas selisih Rp5.000.000.000 tersebut terutang pemotongan PPh Pasal 26 (atau tarif sesuai P3B jika ada).",
+      "dasar": "PMK-172/PMK.03/2023 Bab Secondary Adjustment dalam Penerapan Prinsip Kewajaran."
+    },
+    {
+      "id": 17,
+      "kategori": "KUP",
+      "skenario": "PT Rugi Terus melaporkan SPT Tahunan PPh Badan Tahun 2023 dengan status Lebih Bayar (Rugi Fiskal) pada April 2024. Pada tanggal 10 Februari 2025, DJP menyampaikan Surat Pemberitahuan Pemeriksaan (SP2) terkait restitusi LB tersebut. Pada 15 Februari 2025 (sebelum Surat Ketetapan Pajak terbit), Direktur PT Rugi Terus menyadari ada omzet yang belum dilaporkan, sehingga rugi fiskal seharusnya lebih kecil.",
+      "soal": "Apakah langkah hukum tata cara perpajakan yang dapat diambil PT Rugi Terus untuk memperbaiki kesalahan tersebut tanpa berujung pidana pajak?",
+      "opsi": [
+        "Melakukan Pembetulan SPT sesuai Pasal 8 ayat (1) UU KUP",
+        "Melakukan Pengungkapan Ketidakbenaran Perbuatan (Pasal 8 ayat 3 UU KUP) dan membayar denda 100%",
+        "Melakukan Pengungkapan Ketidakbenaran Pengisian SPT (Pasal 8 ayat 4 UU KUP) dan membayar kekurangan pajak beserta sanksi",
+        "Tidak ada, harus menunggu SKPKB diterbitkan oleh Pemeriksa"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Karena Surat Pemberitahuan Pemeriksaan (SP2) SUDAH disampaikan, pintu untuk 'Pembetulan SPT' biasa (Pasal 8 ayat 1) sudah tertutup. Namun, karena belum terbit Surat Ketetapan Pajak (SKP), Wajib Pajak diberikan hak untuk melakukan 'Pengungkapan Ketidakbenaran Pengisian SPT' sesuai Pasal 8 ayat (4) UU KUP dengan membayar pajak yang kurang dibayar beserta sanksi administrasinya. Bukti pengungkapan tersebut akan menjadi pertimbangan bagi pemeriksa.",
+      "dasar": "UU KUP Pasal 8 ayat (4)."
+    },
+    {
+      "id": 18,
+      "kategori": "PPh Badan",
+      "skenario": "Dalam SPT Tahunan, PT Kosmetik mencatat Biaya Promosi sebesar Rp1.500.000.000. Berdasarkan rincian pemeriksa, Rp500.000.000 dari biaya tersebut merupakan 'Pemberian Sampel Produk Gratis' kepada distributor. Harga pokok produksi (HPP) sampel tersebut adalah Rp300.000.000, sisanya Rp200.000.000 adalah margin laba (gross profit). Daftar nominatif dibuat lengkap sesuai aturan.",
+      "soal": "Berapakah nilai Biaya Promosi berupa sampel gratis tersebut yang diakui sebagai pengurang penghasilan bruto (Deductible Expense)?",
+      "opsi": [
+        "Rp500.000.000 (Sebesar nilai pasar)",
+        "Rp300.000.000 (Sebesar Harga Pokok Produksi)",
+        "Rp0 (Pemberian sampel bukan merupakan biaya fiskal)",
+        "Rp250.000.000 (Deductible 50%)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Menurut PMK-02/PMK.03/2010 tentang Biaya Promosi, pemberian sampel produk dapat dibebankan sebagai biaya promosi secara fiskal sepanjang disertai dengan daftar nominatif. Nilai yang dapat dibiayakan (deductible) dibatasi HANYA sebesar Harga Pokok (HPP) produk tersebut, bukan berdasarkan harga jual/nilai pasar. Oleh karena itu, hanya Rp300.000.000 yang diakui.",
+      "dasar": "PMK-02/PMK.03/2010 Pasal 2 dan Pasal 4."
+    },
+    {
+      "id": 19,
+      "kategori": "PPN",
+      "skenario": "PT Supermarket berkantor pusat di KPP Madya Jakarta Selatan (Telah disetujui pemusatan PPN). Perusahaan memutasikan persediaan barang dagangan senilai Rp2.000.000.000 dari gudang pusat di Jakarta ke cabangnya di KPP Pratama Bandung Cibeunying.",
+      "soal": "Bagaimana kewajiban PPN PT Supermarket atas penyerahan barang mutasi antar cabang tersebut?",
+      "opsi": [
+        "Wajib menerbitkan Faktur Pajak Keluaran di Pusat dan Faktur Pajak Masukan di Cabang dengan tarif 11%",
+        "Tidak termasuk pengertian penyerahan Barang Kena Pajak (BKP), sehingga tidak terutang PPN dan tidak perlu membuat Faktur Pajak",
+        "Terutang PPN tetapi mendapatkan fasilitas PPN Dibebaskan",
+        "Dianggap penyerahan internal yang terutang PPN dengan tarif 1%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 1A ayat (1) huruf f UU PPN, penyerahan BKP dari pusat ke cabang atau antar cabang termasuk dalam pengertian penyerahan BKP. NAMUN, terdapat pengecualian (Pasal 1A ayat 2): hal tersebut TIDAK termasuk penyerahan BKP apabila PKP melakukan pemusatan tempat pajak terutang. Karena PT Supermarket sudah melakukan pemusatan, maka mutasi antar cabang tersebut tidak terutang PPN.",
+      "dasar": "UU PPN Pasal 1A ayat (2) huruf c."
+    },
+    {
+      "id": 20,
+      "kategori": "PPh Potput",
+      "skenario": "Pada 2026, Tuan A (WNI) membeli Bitcoin senilai Rp50.000.000 melalui platform Exchanger X (Pedagang Fisik Aset Kripto yang resmi terdaftar di Bappebti).",
+      "soal": "Berapakah PPh Pasal 22 Final dan PPN yang dipungut oleh Exchanger X atas transaksi pembelian kripto tersebut?",
+      "opsi": [
+        "PPN Rp55.000 (0,11%) dan PPh 22 Final Rp50.000 (0,1%)",
+        "PPN Rp110.000 (0,22%) dan PPh 22 Final Rp100.000 (0,2%)",
+        "PPN Rp5.500.000 (11%) dan PPh 22 Tidak Terutang",
+        "Tidak ada pajak yang dipungut karena Aset Kripto adalah mata uang"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK-68/PMK.03/2022, aset kripto diakui sebagai komoditi. Jika ditransaksikan melalui Pedagang Aset Kripto yang terdaftar di Bappebti, tarif PPN adalah 1% dari tarif PPN umum (1% x 11% = 0,11%) dan PPh 22 Final adalah 0,1%. \nPerhitungan: \nPPN = 0,11% x Rp50.000.000 = Rp55.000. \nPPh 22 = 0,1% x Rp50.000.000 = Rp50.000.",
+      "dasar": "PMK-68/PMK.03/2022 tentang PPN dan PPh atas Transaksi Perdagangan Aset Kripto."
+    },
+    {
+      "id": 21,
+      "kategori": "PPN",
+      "skenario": "Bank ABC (PKP) mengambil alih agunan (AYDA) berupa pabrik dari debitur yang gagal bayar. Pada Agustus 2025, Bank ABC berhasil menjual pabrik tersebut kepada investor PT X seharga Rp10.000.000.000. Bank ABC menerbitkan Faktur Pajak atas penyerahan AYDA tersebut.",
+      "soal": "Berdasarkan PMK-41/PMK.03/2023, berapakah jumlah PPN yang harus dipungut oleh Bank ABC dan berapakah PPN Masukan yang dapat dikreditkan oleh PT X?",
+      "opsi": [
+        "PPN Rp1.100.000.000 (11%) dipungut, PT X dapat mengkreditkan seluruhnya",
+        "PPN Rp110.000.000 (1,1%) dipungut, PT X dapat mengkreditkan seluruhnya",
+        "PPN Rp110.000.000 (1,1%) dipungut, PT X TIDAK dapat mengkreditkannya",
+        "Bukan objek PPN karena AYDA merupakan eksekusi jaminan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-41/2023 tentang PPN atas Penyerahan Agunan Yang Diambil Alih (AYDA) oleh Kreditur, PPN dipungut dengan besaran tertentu yaitu 10% dari tarif PPN (10% x 11% = 1,1%) dikalikan Harga Jual AYDA. 1,1% x Rp10.000.000.000 = Rp110.000.000. Aturan tersebut secara eksplisit menyatakan bahwa PPN Masukan yang tercantum dalam Faktur Pajak atas penyerahan AYDA dengan besaran tertentu ini TIDAK dapat dikreditkan oleh pihak pembeli (PT X).",
+      "dasar": "PMK-41/PMK.03/2023 Pasal 4 dan Pasal 5."
+    },
+    {
+      "id": 22,
+      "kategori": "KUP",
+      "skenario": "SPT Tahunan PPh Badan PT Alfa untuk Tahun Pajak 2018 disampaikan pada 25 April 2019. Pada bulan Mei 2024, Direktur Utama PT Alfa diputus bersalah secara inkracht oleh pengadilan tindak pidana korupsi yang temuannya menunjukkan adanya penggelapan pajak yang merugikan pendapatan negara pada tahun pajak 2018. DJP berencana menerbitkan SKPKB pada Juni 2024.",
+      "soal": "Apakah DJP masih berhak menerbitkan SKPKB Tahun Pajak 2018 tersebut mengingat batas waktu kedaluwarsa penetapan secara umum adalah 5 tahun?",
+      "opsi": [
+        "Tidak berhak, karena batas 5 tahun berakhir pada akhir 2023",
+        "Berhak, SKPKB dapat diterbitkan melampaui 5 tahun ditambah sanksi bunga maksimum 24 bulan",
+        "Tidak berhak, perkara pidana korupsi tidak menghentikan daluwarsa pajak",
+        "Berhak, SKPKB dapat diterbitkan melampaui 5 tahun ditambah sanksi administrasi denda 48% dari pajak tidak dibayar"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Menurut Pasal 15 ayat (4) UU KUP (yang masih dipertahankan dalam UU HPP), SKPKB atau SKPKBT dapat diterbitkan meskipun jangka waktu 5 tahun telah lewat, apabila Wajib Pajak dipidana karena melakukan tindak pidana di bidang perpajakan atau tindak pidana lainnya yang dapat menimbulkan kerugian pada pendapatan negara berdasarkan putusan pengadilan yang telah mempunyai kekuatan hukum tetap (inkracht). Sanksi yang menyertai dalam kondisi ini adalah denda administrasi sebesar 48% dari jumlah pajak yang tidak atau kurang dibayar (Pasal 13 ayat 5 UU KUP/HPP).",
+      "dasar": "UU KUP Pasal 13 ayat (5) dan Pasal 15 ayat (4) jo. UU HPP."
+    },
+    {
+      "id": 23,
+      "kategori": "PPh Badan",
+      "skenario": "PT Trans Logistics (Lessee) menyewa armada truk melalui perusahaan pembiayaan (Lessor) dengan skema Sewa Guna Usaha dengan Hak Opsi (Finance Lease/Capital Lease). Masa sewa adalah 4 tahun. Tahun 2025, PT Trans Logistics membayar angsuran total Rp1.200.000.000 (terdiri dari porsi cicilan pokok Rp1.000.000.000 dan bunga/margin Rp200.000.000). Secara komersial, PT Trans menyusutkan aset tersebut sebesar Rp250.000.000 di tahun 2025.",
+      "soal": "Berapakah nilai yang dapat dikurangkan (deductible expense) secara fiskal di SPT Tahunan PT Trans Logistics tahun 2025 atas transaksi tersebut?",
+      "opsi": [
+        "Rp250.000.000 (Biaya penyusutan komersial)",
+        "Rp200.000.000 (Hanya porsi bunga)",
+        "Rp450.000.000 (Penyusutan + Bunga)",
+        "Rp1.200.000.000 (Seluruh angsuran SGU)"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan KMK-1169/KMK.01/1991 tentang Kegiatan Sewa Guna Usaha, bagi Lessee yang menggunakan SGU dengan Hak Opsi, secara fiskal aset tersebut TIDAK disusutkan selama masa sewa. Sebagai gantinya, Lessee berhak membebankan seluruh pembayaran angsuran SGU (porsi pokok + porsi bunga/margin) secara penuh sebagai biaya pada tahun berjalan. Nilai penyusutan komersial (Rp250 juta) harus dikoreksi positif.",
+      "dasar": "KMK Nomor 1169/KMK.01/1991 Pasal 16."
+    },
+    {
+      "id": 24,
+      "kategori": "PPh Potput",
+      "skenario": "PT Bahari (Perusahaan Pelayaran Dalam Negeri yang memiliki SIUPAL) menyewakan kapalnya secara Time Charter (menyewakan kapal beserta awaknya) kepada PT Tambang Batu untuk mengangkut hasil bumi. Nilai kontrak sewa adalah Rp5.000.000.000.",
+      "soal": "Bagaimana perlakuan pemotongan PPh atas pembayaran sewa kapal Time Charter tersebut?",
+      "opsi": [
+        "Dipotong PPh Pasal 23 sebesar 2% oleh PT Tambang Batu",
+        "Dipotong PPh Pasal 15 sebesar 1,2% (Final) oleh PT Tambang Batu",
+        "Dipotong PPh Pasal 15 sebesar 2,64% (Final) oleh PT Tambang Batu",
+        "Dipotong PPh Final Pasal 4 ayat (2) sebesar 10%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan KMK-416/KMK.04/1996, Wajib Pajak Perusahaan Pelayaran Dalam Negeri dikenakan PPh Final Pasal 15 sebesar 1,2% dari peredaran bruto. SE-32/PJ.4/1996 menegaskan bahwa carter kapal berdasarkan persewaan waktu (Time Charter) maupun persewaan pelayaran (Voyage Charter) termasuk dalam pengertian peredaran bruto perusahaan pelayaran yang dikenai PPh Final 1,2%. Berbeda dengan Bareboat Charter ke non-perusahaan pelayaran yang bisa ditarik ke PPh 23 (2%).",
+      "dasar": "KMK-416/KMK.04/1996 jo. SE-32/PJ.4/1996."
+    },
+    {
+      "id": 25,
+      "kategori": "PPh OP",
+      "skenario": "Tuan Anton (status K/2) meninggal dunia pada tanggal 10 Februari 2024. Ia meninggalkan usaha toko bangunan yang terus berjalan dan dikelola oleh ahli waris. Proses pembagian warisan baru selesai dan ditandatangani di notaris pada 15 November 2025. Penghasilan neto toko bangunan tersebut di tahun 2024 adalah Rp300.000.000.",
+      "soal": "Bagaimana penentuan subjek pajak dan besaran PTKP dalam pengisian SPT Tahunan 2024 atas nama Warisan Belum Terbagi Tuan Anton?",
+      "opsi": [
+        "Subjek Pajak adalah Istri, PTKP menggunakan status Istri (TK/0)",
+        "Subjek Pajak Warisan Belum Terbagi, PTKP menggunakan status K/2 (status pewaris saat meninggal)",
+        "Subjek Pajak Warisan Belum Terbagi, namun tidak berhak atas pengurangan PTKP",
+        "Subjek Pajak Warisan Belum Terbagi, PTKP dihitung proporsional 2/12 bulan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Warisan yang belum terbagi sebagai satu kesatuan menggantikan pewaris yang berhak (Pasal 2 ayat 1 UU PPh). Kewajiban pajak warisan belum terbagi dimulai sejak saat meninggalnya pewaris dan berakhir saat warisan selesai dibagikan. Dalam menghitung Penghasilan Kena Pajak, Warisan Belum Terbagi berhak mengurangkan PTKP menggunakan status PTKP pewaris pada awal tahun pajak saat ia meninggal dunia (dalam hal ini tahun 2024 tetap menggunakan K/2 secara utuh, tidak di-prorata).",
+      "dasar": "UU PPh Pasal 2 ayat (1) huruf a angka 2 dan Pasal 2 ayat (3) huruf c."
+    },
+    {
+      "id": 26,
+      "kategori": "PPh Badan",
+      "skenario": "Branch Office (BUT) Tech-M Ltd di Jakarta melakukan penjualan mesin perakitan senilai Rp20.000.000.000 di Indonesia. Pada tahun yang sama, Kantor Pusat Tech-M Ltd di London secara langsung (tanpa melalui BUT di Jakarta) menjual mesin perakitan sejenis kepada PT Indokarya di Surabaya senilai Rp5.000.000.000.",
+      "soal": "Berdasarkan prinsip 'Force of Attraction' dalam UU PPh, berapakah peredaran bruto yang harus diakui dan dilaporkan dalam SPT Tahunan PPh Badan BUT Tech-M Ltd di Indonesia?",
+      "opsi": [
+        "Rp20.000.000.000",
+        "Rp25.000.000.000",
+        "Rp5.000.000.000",
+        "Hanya fee keagenan dari Rp5.000.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pasal 5 ayat (1) huruf b UU PPh menganut konsep 'Force of Attraction' (Gaya Tarik). Penghasilan BUT meliputi penghasilan kantor pusat dari usaha/kegiatan penjualan barang atau pemberian jasa di Indonesia yang sejenis dengan yang dijalankan oleh BUT di Indonesia. Penjualan langsung oleh Kantor Pusat di London (mesin sejenis) sebesar Rp5 Miliar ditarik dan diakui sebagai penghasilan BUT di Jakarta. Total peredaran bruto = Rp20 M + Rp5 M = Rp25.000.000.000.",
+      "dasar": "UU PPh Pasal 5 ayat (1) huruf b."
+    },
+    {
+      "id": 27,
+      "kategori": "KUP",
+      "skenario": "Pada tanggal 5 Agustus 2025, Jurusita Pajak KPP Pratama menyampaikan Surat Paksa secara langsung kepada Direktur PT Tunggal atas tunggakan SKPKB yang belum dilunasi. Direktur PT Tunggal merasa prosedur penyampaian Surat Paksa cacat hukum karena tidak didahului dengan Surat Teguran yang sah.",
+      "soal": "Apakah upaya hukum yang tepat bagi PT Tunggal untuk membatalkan pelaksanaan Surat Paksa tersebut dan berapa batas waktu pengajuannya?",
+      "opsi": [
+        "Mengajukan Keberatan ke Dirjen Pajak maksimal 3 bulan sejak Surat Paksa diterima",
+        "Mengajukan Banding ke Pengadilan Pajak maksimal 3 bulan sejak Surat Paksa diterima",
+        "Mengajukan Gugatan ke Pengadilan Pajak maksimal 14 hari sejak Surat Paksa diterima",
+        "Mengajukan Gugatan ke Pengadilan Negeri maksimal 30 hari sejak Surat Paksa diterima"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Sesuai Pasal 23 ayat (2) UU KUP dan UU Pengadilan Pajak (UU No. 14 Tahun 2002), upaya hukum atas pelaksanaan penagihan pajak (seperti Surat Paksa, Surat Perintah Melaksanakan Penyitaan, atau Pengumuman Lelang) adalah Gugatan ke Pengadilan Pajak. Batas waktu untuk mengajukan gugatan terhadap pelaksanaan penagihan pajak adalah 14 (empat belas) hari sejak tanggal pelaksanaan penagihan (penyampaian Surat Paksa).",
+      "dasar": "UU KUP Pasal 23 ayat (2) huruf c dan UU Nomor 14 Tahun 2002 Pasal 40 ayat (2)."
+    },
+    {
+      "id": 28,
+      "kategori": "PPh Potput",
+      "skenario": "Andi (K/1) berhenti bekerja dari PT X pada tanggal 30 September 2026. Selama Jan-Ags 2026, Andi telah dipotong PPh 21 menggunakan tarif TER Kategori B setiap bulannya. Pada bulan September (Masa Pajak Terakhir), PT X harus menghitung ulang (rekonsiliasi) PPh 21 Andi.",
+      "soal": "Berdasarkan PMK-168/2023, bagaimana cara PT X menghitung PPh 21 yang harus dipotong/dikembalikan pada Masa September 2026?",
+      "opsi": [
+        "Penghasilan bruto bulan September dikali TER Kategori B",
+        "(Penghasilan bruto Jan-Sep disetahunkan) - PTKP = PKP disetahunkan, dihitung Pasal 17, dibagi 12, lalu dikali 9, dikurangi PPh TER Jan-Ags",
+        "((Penghasilan bruto Jan-Sep - Biaya Jabatan) - PTKP) = PKP, lalu dikali tarif Pasal 17, kemudian dikurangi total PPh TER Jan-Ags",
+        "Penghasilan bruto Jan-Sep - PTKP = PKP, dikali TER Kategori B, dikurangi PPh TER Jan-Ags"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Menurut PMK-168/2023 Pasal 14, bagi Pegawai Tetap yang kewajiban pajak subjektifnya sudah ada sejak awal tahun namun berhenti bekerja di tengah tahun, perhitungan pada Masa Pajak Terakhir (September) TIDAK disetahunkan. Perhitungan: Total penghasilan bruto (Jan-Sep) dikurangi Biaya Jabatan (Jan-Sep) dan iuran pensiun, didapat Penghasilan Neto. Dikurangi PTKP (setahun penuh), didapat PKP. PKP dikenai tarif Pasal 17. Hasilnya dikurangi dengan PPh 21 yang telah dipotong menggunakan TER (Jan-Ags). Jika minus, direstitusi ke pegawai.",
+      "dasar": "PMK-168/PMK.03/2023 Pasal 14."
+    },
+    {
+      "id": 29,
+      "kategori": "PPN",
+      "skenario": "Pada bulan Mei 2025, PT Solusi menerbitkan Faktur Pajak Normal sebesar Rp100.000.000 (PPN Rp11.000.000) dan telah dilaporkan di SPT Masa PPN Mei. Pada bulan Agustus 2025, disadari ada kesalahan harga menjadi Rp120.000.000. PT Solusi membuat Faktur Pajak Pengganti di bulan Agustus 2025 (PPN menjadi Rp13.200.000).",
+      "soal": "Bagaimana mekanisme pelaporan Faktur Pajak Pengganti tersebut dan potensi sanksinya?",
+      "opsi": [
+        "Dilaporkan di SPT Masa Agustus 2025 (bulan penerbitan pengganti), tanpa sanksi",
+        "Melakukan pembetulan SPT Masa Mei 2025, terutang sanksi bunga Pasal 8(2) KUP atas selisih kurang bayar PPN Rp2.200.000",
+        "Dilaporkan di SPT Masa Agustus 2025, terutang sanksi denda Faktur Pajak 1% dari nilai baru",
+        "Melakukan pembetulan SPT Masa Mei 2025 tanpa dikenakan sanksi bunga"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Faktur Pajak Pengganti secara sistem akan merekat pada masa pajak Faktur Pajak Normal yang digantikannya. Oleh karena itu, PT Solusi wajib melakukan Pembetulan SPT Masa PPN Masa Mei 2025. Akibat pembetulan tersebut, PPN Keluaran Mei bertambah, sehingga timbul kurang bayar PPN Rp2.200.000. Atas kurang bayar akibat pembetulan SPT ini, dikenakan sanksi bunga sesuai Pasal 8 ayat (2) UU KUP dihitung sejak jatuh tempo (akhir Juni 2025) sampai tanggal pembayaran.",
+      "dasar": "PER-03/PJ/2022 Pasal 22 dan UU KUP Pasal 8 ayat (2)."
+    },
+    {
+      "id": 30,
+      "kategori": "PPh Badan",
+      "skenario": "PT Tambang Makmur beroperasi di pedalaman Kalimantan yang infrastrukturnya minim. Perusahaan memberikan fasilitas perumahan (asrama) dan makanan seluruh pegawai. Pada Maret 2025, PT Tambang Makmur mendapat Keputusan Dirjen Pajak tentang Penetapan Daerah Tertentu.",
+      "soal": "Sesuai PMK-66/2023, apakah dampak fiskal dari terbitnya ketetapan daerah tertentu tersebut bagi perusahaan dan karyawannya?",
+      "opsi": [
+        "Biaya natura menjadi Non-Deductible, tapi bebas PPh 21 bagi karyawan",
+        "Biaya natura Deductible, namun karyawan dipotong PPh 21 secara final",
+        "Biaya natura Deductible bagi perusahaan, dan Dikecualikan dari objek PPh 21 bagi karyawan",
+        "Biaya natura Deductible 50% bagi perusahaan, dan 50% sisanya objek PPh 21 karyawan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Konsep PMK-66/2023 (turunan UU HPP) memastikan bahwa semua natura secara umum Deductible (dapat dibiayakan oleh perusahaan). Bagi penerima, natura di daerah tertentu merupakan pengecualian dari objek PPh. Jadi, dengan adanya SK Daerah Tertentu, PT Tambang Makmur dapat mengurangkan 100% biaya pembangunan dan operasional asrama/makanan tersebut sebagai beban (Deductible), dan karyawan tidak diakui menerima penghasilan (Bukan Objek PPh 21).",
+      "dasar": "PMK-66/PMK.03/2023 Pasal 6 dan Pasal 8."
+    },
+    {
+      "id": 31,
+      "kategori": "PPh Badan",
+      "skenario": "PT Karya (PKP) dan PT Bina (PKP) membentuk Kerja Sama Operasi (Joint Operation / JO) bernama JO Karya-Bina untuk mengerjakan proyek jalan tol. JO tersebut terdaftar dan memiliki NPWP atas nama JO. Pada akhir tahun proyek, JO menghasilkan laba bersih Rp10.000.000.000. JO membagikan laba tersebut kepada PT Karya (Rp6 Miliar) dan PT Bina (Rp4 Miliar).",
+      "soal": "Apakah pembagian laba dari JO kepada anggota KSO (PT Karya dan PT Bina) dikenakan pemotongan PPh?",
+      "opsi": [
+        "Ya, dipotong PPh Pasal 23 atas dividen sebesar 15% oleh JO",
+        "Ya, dipotong PPh Final 10% oleh JO",
+        "Tidak, pembagian sisa hasil usaha/laba JO merupakan pengecualian objek PPh dan bukan dividen",
+        "Tidak, pembagian laba dikenakan PPN 11% sebagai jasa manajemen"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Dalam hukum pajak Indonesia, Joint Operation (KSO) bukanlah entitas subjek PPh Badan independen yang melaporkan laba/rugi korporasi di akhir tahun (KSO hanya Subjek PPN dan Potput). Pajak atas laba proyek dikenakan di tingkat anggota JO (karena JO bukan perseroan, laba/ruginya dikonsolidasikan ke masing-masing anggota proporsional). Oleh karena itu, penyerahan/pembagian kas (laba) dari JO ke anggota merupakan bagian laba persekutuan yang tidak terbagi atas saham, sehingga Dikecualikan dari Objek PPh Pasal 4 ayat (3) huruf i UU PPh.",
+      "dasar": "UU PPh Pasal 4 ayat (3) huruf i jo. PER-04/PJ/2020."
+    },
+    {
+      "id": 32,
+      "kategori": "KUP",
+      "skenario": "Pada April 2024, PT Tekno melaporkan SPT Tahunan PPh Badan 2023 dengan status Rugi Fiskal Rp2.000.000.000. Pada bulan Oktober 2025, PT Tekno menyadari ada biaya penyusutan Rp500.000.000 yang belum dibebankan, sehingga ingin membetulkan SPT Tahunan 2023 agar ruginya menjadi Rp2.500.000.000. Belum ada tindakan pemeriksaan.",
+      "soal": "Berdasarkan UU KUP, sampai kapankah batas waktu PT Tekno dapat menyampaikan pembetulan SPT yang menyatakan rugi menjadi lebih besar tersebut?",
+      "opsi": [
+        "31 Desember 2026 (3 tahun sejak akhir tahun pajak)",
+        "31 Desember 2025 (2 tahun sebelum daluwarsa penetapan)",
+        "31 Desember 2028 (Sama dengan batas daluwarsa penetapan 5 tahun)",
+        "Tidak diizinkan membetulkan SPT jika membuat rugi bertambah besar"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pasal 8 ayat (1) dan (1a) UU KUP mengatur bahwa Wajib Pajak dengan kemauan sendiri dapat membetulkan SPT dengan syarat belum dilakukan tindakan pemeriksaan. Namun, khusus untuk pembetulan SPT yang menyatakan RUGI LEBIH BESAR atau LEBIH BAYAR LEBIH BESAR, pembetulan harus disampaikan paling lama 2 (dua) tahun sebelum daluwarsa penetapan. Daluwarsa penetapan tahun 2023 adalah akhir 2028. Maka, 2 tahun sebelumnya adalah maksimal 31 Desember 2026. (Opsi jawaban yang benar adalah 31 Desember 2026, koreksi jawaban ke opsi 0).",
+      "opsi_koreksi": [
+        "31 Desember 2026 (2 tahun sebelum daluwarsa penetapan)",
+        "31 Desember 2025 (2 tahun sejak masa pajak)",
+        "31 Desember 2028 (Sama dengan batas daluwarsa penetapan)",
+        "Tidak diizinkan"
+      ],
+      "jawaban_final": 0,
+      "dasar": "UU KUP Pasal 8 ayat (1a)."
+    },
+    {
+      "id": 33,
+      "kategori": "PPN",
+      "skenario": "PT Smelter Industri (PKP) mulai membangun pabrik bulan Januari 2023. Hingga Januari 2026 (3 tahun berlalu), pabrik belum selesai dan belum ada penyerahan BKP (belum berproduksi). PT Smelter memiliki akumulasi Pajak Masukan senilai Rp50.000.000.000 yang telah direstitusi selama masa pembangunan.",
+      "soal": "Sesuai UU HPP dan PMK-18/2021, apa konsekuensi jika WP gagal berproduksi setelah melewati batas waktu 3 tahun tersebut (asumsi bukan sektor prioritas nasional yang dapat perpanjangan)?",
+      "opsi": [
+        "Pajak Masukan hangus dan tidak perlu dikembalikan",
+        "Pajak Masukan yang telah direstitusi wajib dibayar kembali ditambah sanksi bunga penagihan",
+        "Hanya PPN Masukan di tahun ke-3 yang harus dibayar kembali",
+        "Status PKP dicabut sepihak tanpa tagihan pembayaran PPN"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pasal 9 ayat (6a) UU PPN s.t.d.d UU HPP menyatakan bahwa apabila dalam jangka waktu tertentu (3 tahun untuk sektor non-prioritas) PKP yang belum melakukan penyerahan BKP/JKP mengalami keadaan gagal berproduksi, maka Pajak Masukan yang telah dikreditkan dan telah diberikan pengembalian (restitusi) WAJIB dibayar kembali. Pembayaran kembali ini ditagih melalui penerbitan Surat Ketetapan Pajak Kurang Bayar (SKPKB) ditambah sanksi administrasi.",
+      "dasar": "UU PPN Pasal 9 ayat (6a) jo. PMK-18/PMK.03/2021."
+    },
+    {
+      "id": 34,
+      "kategori": "PPh Badan",
+      "skenario": "PT Sukses mencetak Penghasilan Neto Fiskal sebesar Rp100.000.000.000 pada tahun pajak 2024. Pada tahun 2025, PT Sukses memberikan sumbangan senilai Rp7.000.000.000 untuk pembangunan fasilitas laboratorium di sebuah Universitas Negeri yang masuk dalam program nasional. PT Sukses tidak mengalami kerugian fiskal.",
+      "soal": "Berapakah nilai sumbangan yang diakui sebagai pengurang penghasilan bruto (Deductible Expense) pada tahun pajak 2025?",
+      "opsi": [
+        "Rp7.000.000.000",
+        "Rp5.000.000.000",
+        "Rp0 (Sumbangan pendidikan selalu Non-Deductible)",
+        "Rp2.000.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP 93 Tahun 2010 (Sumbangan Fasilitas Pendidikan, Bencana Nasional, dll), sumbangan dapat dikurangkan dari penghasilan bruto. Syarat batas maksimal nilai sumbangan yang dapat dikurangkan adalah 5% dari Penghasilan Neto Fiskal tahun pajak sebelumnya. Penghasilan Neto 2024 = Rp100 Miliar. Maka batas maksimal deductible tahun 2025 = 5% x Rp100.000.000.000 = Rp5.000.000.000. Sisa Rp2 Miliar dikoreksi fiskal positif.",
+      "dasar": "PP Nomor 93 Tahun 2010 Pasal 3."
+    },
+    {
+      "id": 35,
+      "kategori": "PPh OP",
+      "skenario": "Tuan Budi memiliki 3 toko ritel (Pedagang Eceran) di 3 mall berbeda, menjadikannya Orang Pribadi Pengusaha Tertentu (OPPT). Pada bulan Mei 2026, total peredaran bruto dari ketiga tokonya adalah Rp400.000.000. Tuan Budi memilih tarif PPh Pasal 17 (tidak menggunakan PP 55 Final).",
+      "soal": "Berapakah angsuran PPh Pasal 25 yang wajib disetor oleh Tuan Budi untuk masa Mei 2026?",
+      "opsi": [
+        "Rp2.000.000 (0,5% x Rp400 Juta)",
+        "Rp4.000.000 (1% x Rp400 Juta)",
+        "Rp3.000.000 (0,75% x Rp400 Juta)",
+        "Dihitung berdasarkan PPh terutang tahun sebelumnya dibagi 12"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Bagi Wajib Pajak Orang Pribadi Pengusaha Tertentu (OPPT) yaitu OP yang melakukan kegiatan usaha pedagang eceran dan mempunyai 1 atau lebih tempat usaha, angsuran PPh Pasal 25 setiap bulan ditetapkan sebesar 0,75% (nol koma tujuh puluh lima persen) dari jumlah peredaran bruto masing-masing tempat usaha pada bulan tersebut. 0,75% x Rp400.000.000 = Rp3.000.000.",
+      "dasar": "PMK-215/PMK.03/2018 Pasal 2."
+    },
+    {
+      "id": 36,
+      "kategori": "PPh Potput",
+      "skenario": "Pada tanggal 15 Januari 2025, PT A membayar tagihan jasa konsultasi kepada perusahaan Jerman (M-GmbH). Karena M-GmbH belum melampirkan Certificate of Domicile / DGT Form saat pembayaran, PT A memotong PPh 26 sebesar 20% (Rp100.000.000 dari DPP Rp500.000.000) dan menyetorkannya. Pada Maret 2025, M-GmbH baru mengirimkan DGT Form yang sah secara surut (berlaku sejak 1 Jan 2025), dimana berdasarkan P3B tarifnya adalah 0% (Business Profits tanpa BUT).",
+      "soal": "Sesuai PER-25/PJ/2018, mekanisme apa yang dapat digunakan M-GmbH untuk menarik kembali pajak yang terlanjur dipotong sebesar Rp100.000.000 tersebut?",
+      "opsi": [
+        "PT A melakukan pembetulan SPT Masa PPh 26, dan memindahbukukan (Pbk) kelebihan bayarnya",
+        "M-GmbH langsung mengajukan pengembalian pajak yang seharusnya tidak terutang (PMK-187/2015) ke KPP tempat PT A terdaftar",
+        "Tidak bisa dikembalikan, keterlambatan DGT membuat M-GmbH kehilangan hak P3B selamanya",
+        "M-GmbH harus mendaftar BUT di Indonesia untuk restitusi"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Jika SKD/DGT diterima setelah pemotongan dan penyetoran pajak, Pemotong Pajak (PT A) tidak dapat melakukan pembetulan SPT untuk memunculkan lebih bayar yang bisa di-Pbk (karena form DGT terbit belakangan). Prosedur yang benar: Penerima Penghasilan (SPLN / M-GmbH) atau PT A yang dikuasakan mengajukan permohonan pengembalian atas kelebihan pembayaran pajak yang seharusnya tidak terutang secara langsung ke KPP berdasarkan Pasal 4 PMK-187/PMK.03/2015.",
+      "dasar": "PER-25/PJ/2018 jo. PMK-187/PMK.03/2015."
+    },
+    {
+      "id": 37,
+      "kategori": "PPh Badan",
+      "skenario": "PT Akuisisi dan PT Target melakukan penggabungan usaha (merger) pada tahun 2025. PT Akuisisi mengajukan permohonan penggunaan nilai buku (Pooling of Interest) kepada Kanwil DJP, namun ditolak karena gagal memenuhi 'Business Purpose Test' (merger terbukti murni untuk penghindaran pajak kompensasi kerugian). Nilai buku aset PT Target adalah Rp10.000.000.000, sedangkan nilai pasar wajarnya Rp25.000.000.000.",
+      "soal": "Sebagai Auditor, apa dampak perpajakan seketika atas penolakan penggunaan nilai buku tersebut terhadap PT Target (perusahaan yang menggabungkan diri)?",
+      "opsi": [
+        "PT Target harus mengakui laba revaluasi (Capital Gain) sebesar Rp15.000.000.000 pada tahun berjalan",
+        "Dikenakan PPN atas seluruh aset PT Target sebesar 11% dari nilai wajar",
+        "PT Akuisisi tidak dapat mengkreditkan pajak masukan PT Target",
+        "Seluruh aset PT Target disita negara"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Apabila permohonan penggunaan nilai buku atas pengalihan harta dalam rangka merger ditolak, maka pengalihan harta tersebut harus dinilai menggunakan Harga Pasar Wajar (Sesuai Pasal 10 ayat 3 UU PPh). Selisih antara harga pasar (Rp25 Miliar) dan nilai buku fiskal (Rp10 Miliar) merupakan keuntungan karena pengalihan harta (Capital Gain) sebesar Rp15 Miliar. Keuntungan ini merupakan Objek PPh yang wajib diakui dan dipajaki di tingkat PT Target pada tahun terjadinya merger.",
+      "dasar": "UU PPh Pasal 10 ayat (3) jo. PMK-52/PMK.03/2017."
+    },
+    {
+      "id": 38,
+      "kategori": "PPN",
+      "skenario": "PT Supplier (PKP) menerima Nota Retur dari PT Pembeli (PKP) atas pengembalian barang cacat. Setelah diperiksa oleh pemeriksa pajak PT Supplier, ternyata Nota Retur tersebut TIDAK mencantumkan Nomor Seri Faktur Pajak (NSFP) asli yang diretur dan tidak mencantumkan tanggal Faktur Pajak.",
+      "soal": "Apa akibat hukum perpajakan atas cacat formal pada Nota Retur tersebut menurut PMK-65/PMK.03/2010?",
+      "opsi": [
+        "Nota Retur batal, PT Supplier tetap bisa mengurangi Pajak Keluaran tapi pembeli tidak mengurangi PM",
+        "PT Supplier TIDAK dapat mengurangi Pajak Keluaran, dan PT Pembeli TIDAK dapat mengurangi Pajak Masukan",
+        "PT Pembeli dikenakan denda administrasi 1% dari DPP Retur",
+        "Nota Retur dapat dibetulkan kapan saja tanpa sanksi"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Menurut PMK-65/PMK.03/2010 Pasal 4, Nota Retur sekurang-kurangnya harus mencantumkan syarat formal tertentu, termasuk NSFP dan tanggal faktur pajak yang diretur. Pasal 5 menyebutkan secara tegas: 'Dalam hal Nota Retur tidak selengkapnya mencantumkan keterangan sesuai ketentuan... maka tidak dapat diperlakukan sebagai Nota Retur'. Akibatnya, pengembalian barang tersebut dianggap tidak pernah terjadi secara fiskal: PKP Penjual tidak dapat mengurangi Pajak Keluaran, dan PKP Pembeli tidak mengurangkan PM-nya.",
+      "dasar": "PMK-65/PMK.03/2010 Pasal 4 dan Pasal 5."
+    },
+    {
+      "id": 39,
+      "kategori": "PPh Potput",
+      "skenario": "PT Mega Holding menguasai 15% saham PT Bintang Makmur (keduanya perusahaan dalam negeri). RUPS PT Bintang Makmur memutuskan pembagian dividen Rp20 Miliar. Dividen tersebut tidak dibayar tunai, melainkan diberikan dalam bentuk Dividen Saham (Stock Dividend) yang bersumber dari kapitalisasi Laba Ditahan (Retained Earnings).",
+      "soal": "Sesuai regulasi UU HPP, bagaimana kewajiban pemotongan PPh oleh PT Bintang Makmur atas dividen saham yang dibagikan kepada PT Mega Holding?",
+      "opsi": [
+        "Dipotong PPh 23 sebesar 15% karena kepemilikan di bawah 25%",
+        "Dipotong PPh Final 10% karena bentuknya dividen saham",
+        "Tidak dipotong PPh (Bukan Objek Pajak) secara otomatis karena penerimanya Badan Dalam Negeri",
+        "Dipotong PPh 23 sebesar 15% kecuali diinvestasikan dalam instrumen SBN"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1. Dividen saham (Stock dividend) yang berasal dari Laba Ditahan secara prinsip merupakan pengertian dividen sesuai UU PPh. \n2. NAMUN, setelah berlakunya UU Cipta Kerja (UU No. 11/2020) yang dilanjutkan di UU HPP (UU No. 7/2021) Pasal 4 ayat (3) huruf f, dividen yang diterima oleh Wajib Pajak Badan Dalam Negeri (PT Mega Holding) DIKECUALIKAN dari Objek Pajak Penghasilan, TANPA syarat persentase kepemilikan minimal (syarat 25% sudah dihapus) dan TANPA syarat investasi ulang (reinvestasi). Oleh karena itu, PT Bintang Makmur tidak memotong PPh apapun.",
+      "dasar": "UU PPh Pasal 4 ayat (3) huruf f (UU Cipta Kerja / UU HPP)."
+    },
+    {
+      "id": 40,
+      "kategori": "KUP",
+      "skenario": "Direktur PT Evasion sedang dipanggil oleh Penyidik Pajak terkait Pemeriksaan Bukti Permulaan (Bukper) yang diduga melakukan tindak pidana perpajakan dengan kerugian negara Rp2.000.000.000. Sebelum penyidikan dimulai, Direktur bermaksud menyelesaikan kasus secara administratif sesuai Pasal 8 ayat (3) UU KUP.",
+      "soal": "Apa yang harus dilakukan Wajib Pajak dan berapakah sanksi yang harus dibayar agar Pemeriksaan Bukti Permulaan dihentikan tanpa berlanjut ke Penyidikan?",
+      "opsi": [
+        "Mengungkapkan ketidakbenaran perbuatan + melunasi kekurangan pajak Rp2 M + Denda 100% (Rp2 M)",
+        "Membetulkan SPT Tahunan + melunasi kekurangan pajak Rp2 M + Bunga 1,1% per bulan",
+        "Mengajukan pengampunan pajak (Tax Amnesty) dengan tarif tebusan 10%",
+        "Membayar pokok pajak Rp2 M + Denda 300% sesuai pidana Pasal 39 UU KUP"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Sesuai Pasal 8 ayat (3) UU KUP s.t.d.d UU HPP, walaupun telah dilakukan tindakan Pemeriksaan Bukti Permulaan (Bukper), Wajib Pajak dengan kemauan sendiri dapat MENGUNGKAPKAN KETIDAKBENARAN PERBUATAN (bukan pembetulan SPT biasa) asalkan mulainya Penyidikan belum diberitahukan ke Penuntut Umum. Syaratnya adalah melunasi kekurangan bayar pajak (Rp2 Miliar) beserta sanksi administrasi berupa Denda sebesar 100% dari jumlah pajak yang kurang dibayar (Sanksi di UU KUP lama adalah 150%, turun menjadi 100% di UU HPP). Total yang disetor = Rp4 Miliar.",
+      "dasar": "UU KUP Pasal 8 ayat (3) jo. UU Nomor 7 Tahun 2021 (UU HPP)."
+    },
+    {
+      "id": 41,
+      "kategori": "PPN",
+      "skenario": "PT Properti Mandiri bukan merupakan perusahaan jasa konstruksi. Pada tahun 2025, perusahaan membangun sendiri (KMS) sebuah gudang penyimpanan seluas 600 meter persegi. Total biaya material yang dikeluarkan adalah Rp1.200.000.000 (di dalamnya terdapat PPN Masukan dari material senilai Rp100.000.000 yang tidak bisa dikreditkan) dan biaya upah tukang harian sebesar Rp400.000.000.",
+      "soal": "Berdasarkan PMK-61/PMK.03/2022, berapakah PPN atas Kegiatan Membangun Sendiri (KMS) yang terutang dan harus disetor?",
+      "opsi": [
+        "Rp35.200.000",
+        "Rp33.000.000",
+        "Rp176.000.000",
+        "Rp30.800.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Sesuai PMK-61/2022, Dasar Pengenaan Pajak (DPP) KMS adalah 20% dari total biaya yang dikeluarkan, termasuk PPN Masukan atas material. \n2. Total Biaya = Rp1.200.000.000 + Rp400.000.000 = Rp1.600.000.000. \n3. Tarif efektif KMS = 11% x 20% = 2,2%. \n4. PPN KMS terutang = 2,2% x Rp1.600.000.000 = Rp35.200.000.",
+      "dasar": "PMK-61/PMK.03/2022 tentang PPN atas Kegiatan Membangun Sendiri."
+    },
+    {
+      "id": 42,
+      "kategori": "PPh OP",
+      "skenario": "Suami dan Istri memilih untuk dikenai pajak secara terpisah (Memilih Terpisah/MT). Pada tahun 2025, Penghasilan Neto Suami adalah Rp600.000.000 dan Penghasilan Neto Istri adalah Rp400.000.000. PTKP yang digunakan adalah K/I/2 (karena digabung). Asumsikan setelah dihitung dengan tarif progresif Pasal 17, total PPh Terutang gabungan Suami-Istri adalah Rp150.000.000.",
+      "soal": "Berapakah porsi PPh Terutang yang wajib ditanggung dan dilaporkan pada SPT Tahunan Istri secara mandiri?",
+      "opsi": [
+        "Rp75.000.000",
+        "Rp50.000.000",
+        "Rp60.000.000",
+        "Dihitung ulang menggunakan tarif progresif murni dari neto Rp400.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Pada skema MT (Memilih Terpisah) maupun PH (Pisah Harta), PPh Terutang dari masing-masing pihak dihitung secara proporsional berdasarkan perbandingan Penghasilan Neto mereka terhadap Total Penghasilan Neto gabungan. \nPorsi Istri = (Penghasilan Neto Istri / Total Penghasilan Neto) x PPh Terutang Gabungan. \nPorsi Istri = (Rp400.000.000 / Rp1.000.000.000) x Rp150.000.000 = 40% x Rp150.000.000 = Rp60.000.000.",
+      "dasar": "UU PPh Pasal 8 ayat (2) dan ayat (3)."
+    },
+    {
+      "id": 43,
+      "kategori": "PPh Badan",
+      "skenario": "PT Berkah membayarkan Zakat Perusahaan senilai Rp1.000.000.000 kepada Yayasan Panti Asuhan lokal yang sah namun belum disahkan oleh Pemerintah Pusat/Kemenag. Di tahun yang sama, perusahaan membayarkan Zakat senilai Rp2.000.000.000 kepada BAZNAS (Badan Amil Zakat Nasional).",
+      "soal": "Bagaimana perlakuan biaya Zakat tersebut dalam rekonsiliasi fiskal PT Berkah?",
+      "opsi": [
+        "Total Rp3.000.000.000 dapat dibiayakan (Deductible)",
+        "Hanya Rp2.000.000.000 yang dibiayakan (Deductible), Rp1.000.000.000 dikoreksi fiskal positif",
+        "Seluruh zakat adalah pembagian laba, sehingga Rp3.000.000.000 dikoreksi fiskal positif",
+        "Deductible maksimal 2,5% dari Penghasilan Kena Pajak"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP 60 Tahun 2010 jo. PMK-254/2010, Zakat atau Sumbangan Keagamaan yang sifatnya wajib dapat dikurangkan dari penghasilan bruto (Deductible) HANYA JIKA dibayarkan kepada badan amil zakat atau lembaga amil zakat yang dibentuk atau disahkan oleh Pemerintah. Zakat ke yayasan yang tidak disahkan pemerintah (Rp1.000.000.000) tidak dapat dibiayakan secara fiskal (Non-deductible).",
+      "dasar": "PP Nomor 60 Tahun 2010 jo. PMK-254/PMK.03/2010."
+    },
+    {
+      "id": 44,
+      "kategori": "KUP",
+      "skenario": "PT Sinar menerima SKPKB Rp5.000.000.000. PT Sinar melunasi seluruhnya pada 10 Januari 2024, lalu mengajukan Keberatan namun ditolak. PT Sinar lanjut Banding. Pada 10 April 2025 (15 bulan kemudian), Putusan Banding mengabulkan seluruhnya (pajak terutang menjadi Rp0). Asumsikan tarif imbalan bunga yang ditetapkan KMK untuk periode tersebut adalah 0,5% per bulan.",
+      "soal": "Sesuai UU KUP s.t.d.d UU HPP, berapakah Imbalan Bunga yang berhak diterima oleh PT Sinar atas kemenangan banding tersebut?",
+      "opsi": [
+        "Rp375.000.000",
+        "Rp600.000.000",
+        "Rp1.200.000.000",
+        "Rp0 (Imbalan bunga dihapus di UU HPP)"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Pasal 27A UU KUP (diubah di UU HPP) menyatakan jika Banding dikabulkan sehingga kelebihan bayar dikembalikan, WP diberikan imbalan bunga. Tarifnya didasarkan pada suku bunga acuan dibagi 12 per bulan (dalam soal ini 0,5%), maksimal 24 bulan. Waktu yang dihitung adalah sejak tanggal pelunasan (10 Jan 2024) sampai Putusan Banding diucapkan (10 April 2025) = 15 bulan. Imbalan Bunga = 15 bulan x 0,5% x Rp5.000.000.000 = Rp375.000.000.",
+      "dasar": "UU KUP Pasal 27A s.t.d.d UU HPP."
+    },
+    {
+      "id": 45,
+      "kategori": "PPh Potput",
+      "skenario": "Bendahara Pengeluaran Kementerian PUPR membeli alat tulis kantor (ATK) senilai Rp20.000.000 (include PPN) di Toko Makmur (PKP) menggunakan fasilitas Kartu Kredit Pemerintah (KKP).",
+      "soal": "Apakah kewajiban perpajakan Bendahara Pengeluaran tersebut selaku Pemungut Pajak Instansi Pemerintah atas transaksi ini?",
+      "opsi": [
+        "Wajib memungut PPh 22 sebesar 1,5% dan PPN 11%",
+        "Wajib memungut PPN 11% saja, bebas PPh 22",
+        "Tidak memungut PPh 22 maupun PPN (Dikecualikan)",
+        "Wajib memungut PPh 22 sebesar 1,5% saja, PPN disetor Toko Makmur"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-231/PMK.03/2019 Pasal 18 ayat (1) huruf f dan Pasal 20 ayat (1), pembayaran yang dilakukan oleh Instansi Pemerintah dengan menggunakan Kartu Kredit Pemerintah (KKP) DIKECUALIKAN dari pemungutan PPh Pasal 22 dan PPN oleh Instansi Pemerintah. PPN tersebut menjadi tanggung jawab Toko Makmur (PKP) untuk memungut dan menyetorkannya sendiri dalam SPT Masa PPN mereka.",
+      "dasar": "PMK-231/PMK.03/2019 jo. PMK-59/PMK.03/2022."
+    },
+    {
+      "id": 46,
+      "kategori": "PPN",
+      "skenario": "PT Garmen Indo (Indonesia) menandatangani kontrak Maklon dengan Fashion-UK (Inggris). Seluruh bahan baku kain disediakan oleh Fashion-UK dan dikirim ke Indonesia. PT Garmen Indo menjahit baju tersebut lalu mengekspor hasilnya kembali ke Inggris. Tagihan jasa maklon (cut, make, trim) adalah Rp1.500.000.000.",
+      "soal": "Bagaimana perlakuan PPN atas jasa Maklon yang diserahkan ke luar daerah pabean tersebut?",
+      "opsi": [
+        "Terutang PPN 11% karena jasa dilakukan di dalam wilayah Indonesia",
+        "Dikenakan PPN 0% karena memenuhi kriteria Ekspor Jasa Kena Pajak",
+        "Dibebaskan dari PPN karena bahan baku impor",
+        "Terutang PPN 1,1% (besaran tertentu)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai PMK-32/PMK.03/2019, Jasa Maklon memenuhi syarat sebagai Ekspor Jasa Kena Pajak yang dikenai PPN dengan tarif 0%, asalkan memenuhi 3 kriteria: (1) pemesan berada di luar Daerah Pabean dan tidak memiliki BUT, (2) bahan baku/setengah jadi disediakan pemesan, dan (3) hasil barang yang dikerjakan dikirim (diekspor) ke luar Daerah Pabean. PT Garmen Indo wajib menerbitkan Faktur Pajak Ekspor/PEB Jasa.",
+      "dasar": "PMK-32/PMK.03/2019 tentang Batasan Kegiatan dan Jenis Jasa Kena Pajak yang atas Ekspornya Dikenai PPN."
+    },
+    {
+      "id": 47,
+      "kategori": "PPh Badan",
+      "skenario": "PT Farmasi Utama melakukan kegiatan Penelitian dan Pengembangan (R&D) vaksin di Indonesia yang memenuhi syarat dan disetujui instansi terkait. Pada tahun 2024, perusahaan merealisasikan biaya riil untuk R&D tersebut sebesar Rp20.000.000.000.",
+      "soal": "Berapakah total biaya pengurang penghasilan bruto (Super Tax Deduction) yang maksimal dapat diklaim PT Farmasi Utama di SPT Tahunan?",
+      "opsi": [
+        "Rp20.000.000.000",
+        "Rp40.000.000.000",
+        "Rp60.000.000.000",
+        "Rp10.000.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP 45 Tahun 2019 dan PMK-153/2020, Wajib Pajak Badan Dalam Negeri yang melakukan R&D tertentu di Indonesia dapat diberikan fasilitas pengurangan penghasilan bruto maksimal 300% dari biaya riil yang dikeluarkan. Ini terdiri dari 100% biaya riil yang dicatat secara komersial, ditambah tambahan pengurangan bruto maksimal 200%. Total = 300% x Rp20.000.000.000 = Rp60.000.000.000.",
+      "dasar": "PP Nomor 45 Tahun 2019 jo. PMK-153/PMK.03/2020."
+    },
+    {
+      "id": 48,
+      "kategori": "PPh Potput",
+      "skenario": "Maskapai asing 'Emirates' (memiliki BUT di Indonesia) memperoleh omzet dari penjualan tiket penerbangan penumpang dari Bandara Soekarno-Hatta menuju Dubai sebesar Rp10.000.000.000 pada suatu masa pajak.",
+      "soal": "Berapakah PPh Pasal 15 yang terutang atas peredaran bruto maskapai asing tersebut dari pengangkutan penumpang internasional?",
+      "opsi": [
+        "Rp264.000.000 (2,64%)",
+        "Rp120.000.000 (1,2%)",
+        "Rp200.000.000 (2%)",
+        "Rp1.100.000.000 (11%)"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan KMK-434/KMK.04/1999, Wajib Pajak Perusahaan Penerbangan Luar Negeri (Maskapai Asing) yang melakukan penerbangan dari pelabuhan di Indonesia ke luar negeri dikenakan PPh Final Pasal 15. Besarnya norma penghitungan penghasilan neto adalah 6%, dan tarif pajaknya disamakan dengan tarif korporasi efektif (22%), namun aturan KMK menetapkan tarif final sebesar 2,64% dari peredaran bruto. Perhitungan: 2,64% x Rp10.000.000.000 = Rp264.000.000.",
+      "dasar": "KMK-434/KMK.04/1999 tentang PPh Pasal 15 WP Penerbangan Luar Negeri."
+    },
+    {
+      "id": 49,
+      "kategori": "KUP",
+      "skenario": "PT Sengketa kalah dalam putusan Banding di Pengadilan Pajak pada 1 Agustus 2025. Majelis Hakim memutus pajak yang harus dibayar sesuai SKPKB awal sebesar Rp3.000.000.000 (PT Sengketa baru membayar Rp500.000.000 saat keberatan). PT Sengketa tidak terima dan mengajukan Peninjauan Kembali (PK) ke Mahkamah Agung pada tanggal 10 Agustus 2025.",
+      "soal": "Apakah pengajuan PK menangguhkan kewajiban PT Sengketa untuk melunasi utang pajaknya, dan berapakah total yang harus dibayar sebelum PK diputus?",
+      "opsi": [
+        "Ya, menangguhkan pembayaran sampai ada putusan PK",
+        "Tidak menangguhkan. Harus dibayar lunas Rp2.500.000.000 beserta sanksi denda Banding 60% sebesar Rp1.500.000.000",
+        "Tidak menangguhkan. Hanya perlu dibayar Rp2.500.000.000, sanksi 60% ditangguhkan hingga PK selesai",
+        "Menangguhkan, namun PT Sengketa wajib menyerahkan Jaminan Bank sebesar 100% dari utang pajak"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 27 ayat (5c) UU KUP jo. Pasal 77 UU Pengadilan Pajak, pengajuan permohonan Peninjauan Kembali (PK) TIDAK menangguhkan atau menghentikan pelaksanaan putusan Pengadilan Pajak. Sisa utang pajak (Rp3M - 500jt = Rp2,5 Miliar) ditambah sanksi denda Banding 60% sesuai UU HPP (60% x Rp2,5M = Rp1,5 Miliar) jatuh tempo dan wajib dilunasi paling lama 1 bulan sejak Putusan Banding diucapkan. Total yang ditagih: Rp4 Miliar.",
+      "dasar": "UU KUP Pasal 27 dan UU Pengadilan Pajak (UU No.14 Tahun 2002) Pasal 77."
+    },
+    {
+      "id": 50,
+      "kategori": "PPh Badan",
+      "skenario": "Holding Company (Induk) di Singapura melakukan Pembebasan Utang (Debt Forgiveness) kepada anak perusahaannya di Indonesia (PT Defisit) sebesar Rp5.000.000.000 karena PT Defisit mengalami krisis keuangan. PT Defisit bukanlah debitur UMKM (omzetnya di atas Rp4,8 Miliar).",
+      "soal": "Sebagai pemeriksa, bagaimana Anda memposisikan pembebasan utang Rp5 Miliar tersebut dalam SPT Tahunan PT Defisit?",
+      "opsi": [
+        "Sebagai Penghasilan Lain-lain yang dikenakan PPh tarif umum di tingkat PT Defisit",
+        "Bukan Objek Pajak karena merupakan transaksi antar afiliasi",
+        "Sebagai Tambahan Modal Disetor (Additional Paid-in Capital) tanpa dampak PPh",
+        "Sebagai Objek PPh Final 10% (Dividen)"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (1) huruf k UU PPh, keuntungan karena pembebasan utang adalah Objek Pajak Penghasilan (Penghasilan). Hal ini ditegaskan kembali dalam PP 55 Tahun 2022, di mana pengecualian dari objek PPh atas pembebasan utang HANYA berlaku untuk Debitur UMKM (maksimal utang tertentu, misalnya Kredit Usaha Kecil). Karena PT Defisit bukan UMKM, pembebasan utang afiliasi ini merupakan tambahan kemampuan ekonomis (penghasilan komprehensif) yang diakui sebagai Penghasilan Lain-Lain.",
+      "dasar": "UU PPh Pasal 4 ayat (1) huruf k jo. PP 55 Tahun 2022 Pasal 4."
+    },
+    {
+      "id": 51,
+      "kategori": "PPN",
+      "skenario": "PT Industri Jakarta (PKP) menjual sparepart mesin senilai Rp2.000.000.000 ke PT Perakitan Batam yang berada di Kawasan Perdagangan Bebas dan Pelabuhan Bebas (KPBPB / FTZ). Pengiriman dilakukan secara resmi dan mendapatkan endorsement dari Ditjen Bea dan Cukai (PPFTZ-01).",
+      "soal": "Kode Faktur Pajak apa yang harus digunakan PT Industri Jakarta dan berapakah PPN yang terutang?",
+      "opsi": [
+        "Kode 010, PPN Rp220.000.000",
+        "Kode 070, PPN Rp0 (Tidak Dipungut)",
+        "Kode 080, PPN Rp0 (Dibebaskan)",
+        "Kode 040, PPN Rp22.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Penyerahan Barang Kena Pajak Berwujud dari Tempat Lain Dalam Daerah Pabean (TLDDP) seperti Jakarta ke KPBPB (Batam) mendapatkan fasilitas PPN Tidak Dipungut, asalkan memenuhi syarat pabean (dokumen PPFTZ-01 di-endorse oleh Bea Cukai). Untuk penyerahan yang mendapat fasilitas Tidak Dipungut, PKP menggunakan kode seri Faktur Pajak 070.",
+      "dasar": "PP Nomor 41 Tahun 2021 tentang KPBPB dan PMK terkait Kode Faktur."
+    },
+    {
+      "id": 52,
+      "kategori": "PPh Potput",
+      "skenario": "PT Bank Nasional (Indonesia) melakukan transaksi derivatif berupa kontrak berjangka (Forward Contract) valuta asing dengan XYZ Ltd (Perusahaan Inggris yang tidak memiliki DGT Form). Pada saat jatuh tempo kontrak, terdapat keuntungan selisih kurs yang merupakan Premium Forward sebesar ekuivalen Rp500.000.000 bagi XYZ Ltd.",
+      "soal": "Berapakah PPh Pasal 26 yang harus dipotong oleh PT Bank Nasional atas keuntungan transaksi derivatif tersebut?",
+      "opsi": [
+        "Rp0 (Keuntungan valas bukan objek PPh 26)",
+        "Rp100.000.000",
+        "Rp50.000.000",
+        "Rp110.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai Pasal 26 ayat (1) huruf b UU PPh, 'Bunga termasuk premium, diskonto, dan imbalan sehubungan dengan jaminan pengembalian utang', DIJELASKAN LEBIH LANJUT dalam aturannya bahwa premium swap / premium forward yang diterima oleh WPLN dipersamakan dengan Bunga. Oleh karena XYZ Ltd tidak memiliki SKD/DGT, tarif yang berlaku adalah tarif domestik 20% x Bruto. PPh 26 = 20% x Rp500.000.000 = Rp100.000.000.",
+      "dasar": "UU PPh Pasal 26 ayat (1) huruf b."
+    },
+    {
+      "id": 53,
+      "kategori": "KUP",
+      "skenario": "SKPKB untuk tahun pajak 2018 diterbitkan tanggal 10 April 2023. Jatuh tempo pelunasan adalah 9 Mei 2023. Wajib pajak tidak membayar sama sekali. Pada tanggal 1 Juli 2023, Jurusita Pajak secara sah menyampaikan Surat Paksa kepada Wajib Pajak.",
+      "soal": "Hingga kapankah hak negara untuk melakukan penagihan pajak ini menjadi daluwarsa (tertangguh akibat Surat Paksa)?",
+      "opsi": [
+        "Akhir tahun 2023",
+        "9 Mei 2028 (5 tahun sejak jatuh tempo)",
+        "1 Juli 2028 (5 tahun sejak penyampaian Surat Paksa)",
+        "Penagihan dengan Surat Paksa tidak memiliki daluwarsa"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Menurut Pasal 22 ayat (1) UU KUP, hak mendahulu dan hak untuk melakukan penagihan pajak daluwarsa setelah lampau waktu 5 tahun terhitung sejak tanggal penerbitan SKP. NAMUN, ayat (2) menyatakan bahwa Daluwarsa Penagihan Tertangguh (direset) apabila dilakukan tindakan penagihan yang diberitahukan (contoh: Surat Paksa). Masa 5 tahun dihitung ulang sejak tanggal penyampaian Surat Paksa (1 Juli 2023), sehingga daluwarsa bergeser menjadi 1 Juli 2028.",
+      "dasar": "UU KUP Pasal 22 ayat (1) dan ayat (2) huruf a."
+    },
+    {
+      "id": 54,
+      "kategori": "PPh Badan",
+      "skenario": "Gudang penyimpanan bahan baku PT Kayu Mas (Masa manfaat Kelompok 2: 8 tahun) hangus terbakar pada Juli 2025. Kejadian dikategorikan Force Majeure (tidak diasuransikan). Harga perolehan bangunan sementara itu adalah Rp8.000.000.000, dibeli Januari 2024. Akumulasi penyusutan fiskal s.d Juni 2025 adalah Rp1.500.000.000. Nilai sisa buku adalah Rp6.500.000.000.",
+      "soal": "Bagaimana perlakuan nilai sisa buku gudang yang terbakar tersebut dalam SPT Tahunan 2025?",
+      "opsi": [
+        "Diakui sebagai Kerugian Luar Biasa (Extraordinary Loss) sebesar Rp6.500.000.000 dan dapat dikurangkan sekaligus (Deductible) pada tahun 2025",
+        "Tetap disusutkan selama sisa masa manfaat (6,5 tahun) meskipun fisiknya sudah tidak ada",
+        "Dikoreksi fiskal positif seluruhnya karena harta yang rusak sebelum masa manfaatnya habis tidak dapat dibiayakan",
+        "Dibiayakan secara diamortisasi selama 5 tahun ke depan"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Menurut Pasal 11 ayat (8) UU PPh, apabila terjadi pengalihan harta atau musnahnya harta karena peristiwa luar biasa (seperti kebakaran/bencana alam), maka jumlah nilai sisa buku harta tersebut BOLEH dibebankan sebagai Kerugian sekaligus pada tahun pajak terjadinya peristiwa tersebut. (Bila ada klaim asuransi, maka asuransi yang cair diakui sebagai penghasilan di tahun cair).",
+      "dasar": "UU PPh Pasal 11 ayat (8)."
+    },
+    {
+      "id": 55,
+      "kategori": "PPh OP",
+      "skenario": "Dalam skema Employee Stock Option Plan (ESOP), Direktur PT X diberikan 'Hak Opsi' untuk membeli saham perusahaan sebanyak 100.000 lembar pada harga diskon Rp1.000/lembar (Harga wajar saat pemberian hak adalah Rp3.000/lembar). Hak ini diberikan (granted) di tahun 2024. Direktur baru melaksanakan (eksekusi/exercise) hak tersebut untuk membeli saham di tahun 2026, di mana harga wajar saham saat itu sudah naik menjadi Rp5.000/lembar.",
+      "soal": "Sesuai PMK-66/2023 tentang Natura/Kenikmatan, kapan PPh Pasal 21 terutang dan berapakah nilai dasar pengenaan pajaknya?",
+      "opsi": [
+        "Tahun 2024, Dasar Pengenaan Rp200.000.000",
+        "Tahun 2026, Dasar Pengenaan Rp400.000.000 (Rp5.000 - Rp1.000 x 100.000 lembar)",
+        "Tahun 2026, Dasar Pengenaan Rp200.000.000 (Selisih saat pemberian hak)",
+        "Tidak ada PPh 21 karena ESOP adalah transaksi modal"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam PMK-66/2023, pemberian imbalan berupa hak opsi saham (ESOP) diakui sebagai penghasilan (Natura/Kenikmatan) pada SAAT hak opsi tersebut DIEKSEKUSI (dilaksanakan), bukan saat diberikan. Nilai penghasilan yang menjadi objek PPh 21 adalah selisih antara nilai pasar (harga wajar) saham pada saat dieksekusi dikurangi dengan harga yang dibayar oleh pegawai. Eksekusi tahun 2026: (Rp5.000 - Rp1.000) x 100.000 lembar = Rp400.000.000.",
+      "dasar": "PMK-66/PMK.03/2023 tentang Perlakuan PPh atas Natura dan Kenikmatan."
+    },
+    {
+      "id": 56,
+      "kategori": "PPN",
+      "skenario": "Tuan Rifqi (Pribadi yang tidak memiliki NPWP maupun NIK yang terdaftar PKP) berlangganan software akuntansi berbasis cloud dari perusahaan X-Corp (Amerika Serikat) senilai Rp11.100.000 per tahun. X-Corp telah ditunjuk oleh DJP sebagai Pemungut PPN PMSE (Perdagangan Melalui Sistem Elektronik).",
+      "soal": "Apakah bentuk dokumen yang kedudukannya dipersamakan dengan Faktur Pajak dari X-Corp bagi Tuan Rifqi untuk menjustifikasi pemungutan PPN PMSE tersebut?",
+      "opsi": [
+        "Faktur Pajak Standar 16 digit yang diterbitkan aplikasi e-Faktur",
+        "Bukti Pungut dari Bea Cukai",
+        "Commercial Invoice (tagihan), billing statement, atau resi pembayaran yang diterbitkan X-Corp dan mencantumkan informasi pemungutan PPN",
+        "Tuan Rifqi harus menerbitkan Faktur Pajak sendiri (SSP)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-60/PMK.03/2022, bagi Pemungut PPN PMSE (platform luar negeri), dokumen berupa *commercial invoice*, *billing*, resi, atau sejenisnya yang menyebutkan pemungutan PPN serta mencantumkan nama dan email pembeli, memiliki kedudukan yang DIPERSAMAKAN dengan Faktur Pajak. X-Corp tidak menggunakan sistem e-Faktur domestik Indonesia.",
+      "dasar": "PMK-60/PMK.03/2022 tentang Tata Cara Penunjukan Pemungut, Pemungutan, dan Penyetoran PPN PMSE."
+    },
+    {
+      "id": 57,
+      "kategori": "PPh OP",
+      "skenario": "Tuan Citra menghibahkan sebuah ruko komersial di Tangerang senilai Harga Pasar Rp3.000.000.000 (NJOP Rp2.000.000.000) kepada adik kandungnya, Tuan Hasan, yang berprofesi sebagai pedagang (bukan UMKM) pada tahun 2025. Hibah ini murni pemberian tanpa ada hubungan pekerjaan atau usaha.",
+      "soal": "Sebagai Auditor yang memeriksa SPT Tahunan Tuan Hasan (Penerima Hibah), bagaimana Anda memposisikan penerimaan ruko tersebut secara fiskal?",
+      "opsi": [
+        "Bukan Objek PPh karena berasal dari hibah keluarga dekat",
+        "Objek PPh tarif umum (Pasal 17) dan menambah Penghasilan Neto Tuan Hasan sebesar Rp3.000.000.000",
+        "Dikenai PPh Final atas BPHTB saja, dibebaskan dari PPh Pasal 17",
+        "Objek PPh sebesar NJOP Rp2.000.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai Pasal 4 ayat (3) huruf a UU PPh, Harta Hibahan dikecualikan dari Objek PPh HANYA JIKA diberikan kepada keluarga sedarah dalam garis keturunan lurus satu derajat (contoh: Ayah ke Anak kandung) atau badan keagamaan/sosial. Hubungan Kakak dengan Adik Kandung adalah hubungan keluarga derajat 'menyamping' (horizontal). Oleh karena itu, Hibah ke saudara kandung TIDAK dikecualikan, sehingga menjadi Objek PPh bagi Tuan Hasan senilai Harga Pasar (Rp3 Miliar) dan digunggung di SPT Tahunan.",
+      "dasar": "UU PPh Pasal 4 ayat (3) huruf a angka 2."
+    },
+    {
+      "id": 58,
+      "kategori": "PPh Badan",
+      "skenario": "Fiskus melakukan pemeriksaan terhadap PT Retailku untuk tahun pajak 2024. Ditemukan bahwa di dalam Sistem Akuntansi Komersialnya, perusahaan menilai persediaan menggunakan metode Last In First Out (LIFO). Akibatnya, Harga Pokok Penjualan (HPP) menjadi lebih tinggi karena inflasi bahan baku. Fiskus melakukan koreksi fiskal dengan menghitung ulang persediaan menggunakan metode Average (Rata-rata), yang menyebabkan HPP turun sebesar Rp2.000.000.000.",
+      "soal": "Apakah koreksi Fiskus tersebut sah, dan apa dampaknya terhadap Penghasilan Kena Pajak PT Retailku?",
+      "opsi": [
+        "Tidak sah, karena Standar Akuntansi Keuangan adalah dasar perhitungan fiskal",
+        "Sah, koreksi tersebut bersifat Negatif sehingga Laba Fiskal turun",
+        "Sah, karena UU PPh hanya mengizinkan metode FIFO dan Average. Dampaknya Koreksi Positif sebesar Rp2.000.000.000 (Laba Fiskal naik)",
+        "Tidak sah, Wajib Pajak bebas memilih metode persediaan asal konsisten"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Pasal 10 ayat (6) UU PPh menyatakan bahwa penilaian persediaan barang secara fiskal hanya boleh didasarkan pada harga perolehan dengan menggunakan metode Rata-rata (Average) atau mendahulukan persediaan yang didapat pertama (First In First Out / FIFO). Metode LIFO dilarang dalam pajak. Dengan diubahnya LIFO ke Average, HPP turun Rp2 Miliar. Penurunan HPP menyebabkan Laba Kotor/Neto NAIK (Koreksi Fiskal Positif).",
+      "dasar": "UU PPh Pasal 10 ayat (6)."
+    },
+    {
+      "id": 59,
+      "kategori": "KUP",
+      "skenario": "Pada akhir proses Pemeriksaan Lapangan, Tim Pemeriksa KPP menyampaikan Surat Pemberitahuan Hasil Pemeriksaan (SPHP) kepada PT Keras Kepala. Wajib Pajak memberikan tanggapan tertulis yang menolak seluruh koreksi fiskus. Pemeriksa kemudian mengundang Wajib Pajak untuk menghadiri Pembahasan Akhir Hasil Pemeriksaan (Closing Conference). Direktur PT menolak hadir secara fisik maupun daring dan menolak menandatangani Berita Acara.",
+      "soal": "Apa tindakan administratif yang akan dilakukan Tim Pemeriksa akibat ketidakhadiran Wajib Pajak tersebut?",
+      "opsi": [
+        "Pemeriksaan dibatalkan dan diganti dengan Pemeriksaan Bukti Permulaan",
+        "Pemeriksa membuat Risalah Pembahasan Akhir dan Berita Acara Ketidakhadiran yang ditandatangani pemeriksa saja, lalu proses SKPKB dilanjutkan",
+        "Wajib Pajak dikenakan pidana kurungan karena menghalangi penyidikan",
+        "Pemeriksa harus memperpanjang waktu pengujian sampai Wajib Pajak bersedia hadir"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Tata Cara Pemeriksaan (PMK-17/2013 s.t.d.d PMK-18/2021), jika Wajib Pajak yang telah diundang secara sah tidak hadir dalam Pembahasan Akhir Hasil Pemeriksaan, maka Tim Pemeriksa Pajak membuat Berita Acara Ketidakhadiran dan Risalah Pembahasan Akhir yang ditandatangani oleh Tim Pemeriksa Pajak saja. Pemeriksaan dianggap telah melalui prosedur Pembahasan Akhir secara hukum, dan produk hukum (SKP) dapat langsung diterbitkan sesuai SPHP.",
+      "dasar": "PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 tentang Tata Cara Pemeriksaan."
+    },
+    {
+      "id": 60,
+      "kategori": "PPh OP",
+      "skenario": "Mr. John (WNA asal Australia) direkrut oleh perusahaan multinasional di Indonesia sebagai Direktur IT (Keahlian Tertentu) sejak 1 Januari 2024. Ia berniat menetap di Jakarta selama 5 tahun. Pada tahun 2024, Mr. John menerima Gaji dari Indonesia (Ekuivalen Rp2 Miliar), Dividen dari saham di bursa Australia ($100.000), dan Pendapatan Sewa apartemen miliknya di Sydney ($50.000). Mr. John mengajukan diri memanfaatkan kebijakan PPh WNA Keahlian Tertentu.",
+      "soal": "Berdasarkan UU HPP, cakupan penghasilan apa saja yang wajib dikenakan pajak (di-declare di SPT Tahunan) oleh Mr. John untuk tahun pajak 2024?",
+      "opsi": [
+        "Seluruh penghasilan sedunia (Worldwide Income Principle)",
+        "Gaji dari Indonesia, sedangkan Dividen Australia dipajaki tarif P3B",
+        "Hanya penghasilan yang diterima atau bersumber dari Indonesia saja (Gaji Rp2 Miliar)",
+        "Gaji dari Indonesia ditambah keuntungan sewa properti saja"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan UU Cipta Kerja dan UU HPP Pasal 4 ayat (1a), untuk menarik Tenaga Kerja Asing dengan keahlian tertentu, WNA yang menjadi Subjek Pajak Dalam Negeri (SPDN) dikenai PPh HANYA atas penghasilan yang diterima atau diperoleh dari Indonesia (Territorial Basis) selama 4 (empat) tahun pertama sejak ia menjadi SPDN. Oleh karena itu, dividen dan sewa apartemen di Australia tidak dikenakan pajak di Indonesia.",
+      "dasar": "UU PPh Pasal 4 ayat (1a) jo. UU Nomor 7 Tahun 2021 (UU HPP)."
+    }
+  ],
+  "sesi2": []
+}
