@@ -16,16 +16,12 @@ jobs:
           node-version: '18'
           
       - name: Install Dependencies
-        run: |
-          cd pajak-exam-vue
-          npm install
+        run: npm install
           
       - name: Run Generator Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          cd pajak-exam-vue
-          node scripts/generate-soal.js
+        run: node scripts/generate-soal.js
           
       - name: Commit and Push
         run: |
