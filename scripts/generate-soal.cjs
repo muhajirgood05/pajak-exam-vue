@@ -117,9 +117,9 @@ Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SULI
 untuk Uji Kompetensi Teknis Pemeriksa Pajak.
 
 KETENTUAN:
-- 1 skenario perusahaan dengan data lengkap (nama, bidang usaha, tahun pajak, data keuangan, transaksi)
+- 1 skenario perusahaan dengan data unik dan singkat (maksimal 5-7 baris data keuangan/transaksi dalam tabel).
 - ${numToGenerate} soal yang SALING BERKAITAN dengan skenario yang sama
-- Setiap soal menguji aspek berbeda: (1) PPh Badan, (2) PPh Potput, (3) PPN, (4) KUP/Pemeriksaan, (5) Bebas pilih
+- Setiap soal menguji aspek yang relevan dengan skenario (tidak harus mencakup semua jenis pajak, fokus pada 1-2 topik saja agar tidak terlalu rumit).
 - Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1
 - Pilihan pengecoh (distractors) harus masuk akal secara hukum, bukan asal salah
 - Angka-angka harus konsisten antar soal. Angka perhitungan harus dibuat simpel dan tidak menghasilkan angka keriting (hindari pembagian yang menghasilkan desimal panjang).
