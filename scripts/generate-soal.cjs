@@ -10,72 +10,115 @@ async function generateSoal() {
 
   const paketDir = path.join(__dirname, '../src/data/paket');
   
-  // 1. Cari nomor paket berikutnya
-  const files = fs.readdirSync(paketDir);
+  // 1. Cari paket terakhir
+  const files = fs.readdirSync(paketDir).filter(f => f.endsWith('.json'));
   let maxNum = 0;
+  let targetFile = '';
+  
   files.forEach(file => {
     const match = file.match(/^(\d+)-/);
     if (match) {
       const num = parseInt(match[1]);
-      if (num > maxNum) maxNum = num;
+      if (num > maxNum) {
+        maxNum = num;
+        targetFile = file;
+      }
     }
   });
-  
-  const nextNum = maxNum + 1;
-  const nextNumStr = nextNum.toString().padStart(2, '0');
-  const newFileName = `${nextNumStr}-Paket-${nextNum}.json`;
-  const newFilePath = path.join(paketDir, newFileName);
 
-  console.log(`Generating soal for ${newFileName}...`);
+  let currentData = { sesi1: [], sesi2: [] };
+  let isNewPaket = false;
+  let filePath = '';
 
-  // 2. Siapkan Prompt Master
-  const prompt = `
+  if (targetFile) {
+    filePath = path.join(paketDir, targetFile);
+    const content = fs.readFileSync(filePath, 'utf8');
+    try {
+      currentData = JSON.parse(content);
+    } catch (e) {
+      console.error(`Failed to parse ${targetFile}, creating new.`);
+      isNewPaket = true;
+    }
+  } else {
+    isNewPaket = true;
+  }
+
+  const countSesi1 = currentData.sesi1 ? currentData.sesi1.length : 0;
+  const countSesi2 = currentData.sesi2 ? currentData.sesi2.length : 0;
+
+  console.log(`Paket Saat Ini: ${targetFile || 'Baru'}`);
+  console.log(`Jumlah Sesi 1 (PG Sedang): ${countSesi1}/60`);
+  console.log(`Jumlah Sesi 2 (Kasus Sulit): ${countSesi2}/20`);
+
+  let targetSesi = '';
+  let numToGenerate = 0;
+  let difficulty = '';
+  let prompt = '';
+
+  if (countSesi1 < 60) {
+    targetSesi = 'sesi1';
+    numToGenerate = Math.min(10, 60 - countSesi1);
+    difficulty = 'SEDANG';
+    prompt = `Buat ${numToGenerate} soal pilihan ganda tingkat kesulitan ${difficulty} untuk Uji Kompetensi Pemeriksa Pajak.`;
+  } else if (countSesi2 < 20) {
+    targetSesi = 'sesi2';
+    numToGenerate = Math.min(5, 20 - countSesi2);
+    difficulty = 'SULIT (Studi Kasus)';
+    prompt = `Buat 1 studi kasus dan ${numToGenerate} soal yang berkaitan dengan studi kasus tersebut (tingkat kesulitan SULIT) untuk Uji Kompetensi Pemeriksa Pajak.`;
+  } else {
+    // Paket penuh, buat paket baru
+    isNewPaket = true;
+    maxNum++;
+    const nextNumStr = maxNum.toString().padStart(2, '0');
+    targetFile = `${nextNumStr}-Paket-${maxNum}.json`;
+    filePath = path.join(paketDir, targetFile);
+    currentData = { sesi1: [], sesi2: [] };
+    
+    targetSesi = 'sesi1';
+    numToGenerate = 10;
+    difficulty = 'SEDANG';
+    prompt = `Buat ${numToGenerate} soal pilihan ganda tingkat kesulitan ${difficulty} untuk Uji Kompetensi Pemeriksa Pajak.`;
+  }
+
+  console.log(`Akan generate ${numToGenerate} soal untuk ${targetSesi} (${difficulty})...`);
+
+  // Lengkapi prompt dengan instruksi detail
+  const fullPrompt = `
 Anda adalah konsultan pajak senior dan instruktur BPSDM DJP.
-Buat 1 studi kasus kompleks dan 5 soal pilihan ganda tingkat SULIT
-untuk Uji Kompetensi Teknis Pemeriksa Pajak.
+${prompt}
 
 KETENTUAN:
-- 1 skenario perusahaan dengan data lengkap (nama, bidang usaha, tahun pajak, data keuangan, transaksi)
-- 5 soal yang SALING BERKAITAN dengan skenario yang sama
-- Setiap soal menguji aspek berbeda: (1) PPh Badan, (2) PPh Potput, (3) PPN, (4) KUP/Pemeriksaan, (5) Bebas pilih
-- Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1
-- Pilihan pengecoh (distractors) harus masuk akal secara hukum, bukan asal salah
-- Angka-angka harus konsisten antar soal
-- Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP)
+- Soal harus menguji pemahaman konsep dan aturan (bukan sekadar hafalan).
+- Kategori soal mencakup: PPh Badan, PPh Potput, PPN, KUP/Pemeriksaan.
+- Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1.
+- Pilihan pengecoh (distractors) harus masuk akal secara hukum.
+- Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
 
-FORMAT OUTPUT (Harus berupa valid JSON object seperti ini, jangan ada teks lain di luar JSON):
-{
-  "sesi1": [],
-  "sesi2": [
-    {
-      "id": 1,
-      "kategori": "[KATEGORI]",
-      "skenario": "[isi skenario yang sama untuk semua soal]",
-      "soal": "[pertanyaan]",
-      "opsi": ["A...", "B...", "C...", "D..."],
-      "jawaban": [0-3],
-      "pembahasan": "[penjelasan lengkap perhitungan]",
-      "dasar": "[pasal dan regulasi]"
-    },
-    ... (total 5 soal dengan skenario yang sama)
-  ]
-}
+FORMAT OUTPUT (Harus berupa valid JSON array dari objek soal, jangan ada teks lain di luar JSON):
+[
+  {
+    "kategori": "pph-badan", // atau pph-potput, ppn, kup
+    "skenario": "[isi skenario jika ada, atau kosongkan jika soal mandiri]",
+    "soal": "[pertanyaan]",
+    "opsi": ["A...", "B...", "C...", "D..."],
+    "jawaban": [0-3],
+    "pembahasan": "[penjelasan lengkap perhitungan]",
+    "dasar": "[pasal dan regulasi]"
+  },
+  ...
+]
 
-PENTING: Berikan output HANYA berupa JSON yang valid. Jangan gunakan markdown block seperti \`\`\`json ... \`\`\`. Langsung mulai dengan { dan akhiri dengan }.
+PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block seperti \`\`\`json ... \`\`\`. Langsung mulai dengan [ dan akhiri dengan ].
 `;
 
-  // 3. Panggil API Gemini
+  // Panggil API Gemini
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
   
   const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      contents: [{
-        parts: [{ text: prompt }]
-      }]
+      contents: [{ parts: [{ text: fullPrompt }] }]
     })
   });
 
@@ -88,17 +131,27 @@ PENTING: Berikan output HANYA berupa JSON yang valid. Jangan gunakan markdown bl
 
   try {
     const text = data.candidates[0].content.parts[0].text.trim();
-    
-    // Kadang AI tetap memberikan backticks markdown, kita bersihkan jika ada
     const jsonStr = text.replace(/^```json/, '').replace(/```$/, '').trim();
+    const newSoal = JSON.parse(jsonStr);
     
-    const parsedData = JSON.parse(jsonStr);
-    
+    // Assign ID baru
+    let startId = 1;
+    const allSoal = [...(currentData.sesi1 || []), ...(currentData.sesi2 || [])];
+    if (allSoal.length > 0) {
+      startId = Math.max(...allSoal.map(s => s.id || 0)) + 1;
+    }
+
+    newSoal.forEach(s => {
+      s.id = startId++;
+      if (!currentData[targetSesi]) currentData[targetSesi] = [];
+      currentData[targetSesi].push(s);
+    });
+
     // Simpan ke file
-    fs.writeFileSync(newFilePath, JSON.stringify(parsedData, null, 2), 'utf8');
-    console.log(`Success! File created at ${newFilePath}`);
+    fs.writeFileSync(filePath, JSON.stringify(currentData, null, 2), 'utf8');
+    console.log(`Success! Updated ${filePath} with ${newSoal.length} new questions.`);
   } catch (e) {
-    console.error('Failed to parse JSON from AI response or write file:', e.message);
+    console.error('Failed to parse JSON or write file:', e.message);
     console.error('Raw Response was:', data.candidates[0].content.parts[0].text);
     process.exit(1);
   }
