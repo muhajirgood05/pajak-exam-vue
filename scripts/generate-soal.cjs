@@ -10,45 +10,58 @@ async function generateSoal() {
 
   const paketDir = path.join(__dirname, '../src/data/paket');
   
-  // 1. Cari paket terakhir
+  // 1. Cari paket yang belum lengkap
   const files = fs.readdirSync(paketDir).filter(f => f.endsWith('.json'));
-  let maxNum = 0;
-  let targetFile = '';
   
-  files.forEach(file => {
+  // Parse file info and sort by number
+  const paketInfos = files.map(file => {
     const match = file.match(/^(\d+)-/);
-    if (match) {
-      const num = parseInt(match[1]);
-      if (num > maxNum) {
-        maxNum = num;
-        targetFile = file;
-      }
-    }
-  });
+    return {
+      name: file,
+      num: match ? parseInt(match[1]) : 0,
+      path: path.join(paketDir, file)
+    };
+  }).sort((a, b) => a.num - b.num);
 
+  let targetFile = '';
   let currentData = { sesi1: [], sesi2: [] };
-  let isNewPaket = false;
-  let filePath = '';
+  let maxNum = 0;
 
-  if (targetFile) {
-    filePath = path.join(paketDir, targetFile);
-    const content = fs.readFileSync(filePath, 'utf8');
+  for (const info of paketInfos) {
+    if (info.num > maxNum) maxNum = info.num;
+    
+    const content = fs.readFileSync(info.path, 'utf8');
     try {
-      currentData = JSON.parse(content);
+      const data = JSON.parse(content);
+      const c1 = data.sesi1 ? data.sesi1.length : 0;
+      const c2 = data.sesi2 ? data.sesi2.length : 0;
+      
+      if (c1 < 60 || c2 < 20) {
+        targetFile = info.name;
+        currentData = data;
+        console.log(`Menemukan paket belum lengkap: ${targetFile} (Sesi1: ${c1}/60, Sesi2: ${c2}/20)`);
+        break;
+      }
     } catch (e) {
-      console.error(`Failed to parse ${targetFile}, creating new.`);
-      isNewPaket = true;
+      console.error(`Failed to parse ${info.name}, skipping.`);
     }
-  } else {
-    isNewPaket = true;
   }
 
+  let filePath = '';
   const countSesi1 = currentData.sesi1 ? currentData.sesi1.length : 0;
   const countSesi2 = currentData.sesi2 ? currentData.sesi2.length : 0;
 
-  console.log(`Paket Saat Ini: ${targetFile || 'Baru'}`);
-  console.log(`Jumlah Sesi 1 (PG Sedang): ${countSesi1}/60`);
-  console.log(`Jumlah Sesi 2 (Kasus Sulit): ${countSesi2}/20`);
+  if (!targetFile) {
+    // Semua paket penuh atau belum ada paket, buat baru
+    const nextNum = maxNum + 1;
+    const nextNumStr = nextNum.toString().padStart(2, '0');
+    targetFile = `${nextNumStr}-Paket-${nextNum}.json`;
+    filePath = path.join(paketDir, targetFile);
+    currentData = { sesi1: [], sesi2: [] };
+    console.log(`Semua paket penuh atau belum ada. Membuat paket baru: ${targetFile}`);
+  } else {
+    filePath = path.join(paketDir, targetFile);
+  }
 
   let targetSesi = '';
   let numToGenerate = 0;
@@ -65,19 +78,6 @@ async function generateSoal() {
     numToGenerate = Math.min(5, 20 - countSesi2);
     difficulty = 'SULIT (Studi Kasus)';
     prompt = `Buat 1 studi kasus dan ${numToGenerate} soal yang berkaitan dengan studi kasus tersebut (tingkat kesulitan SULIT) untuk Uji Kompetensi Pemeriksa Pajak.`;
-  } else {
-    // Paket penuh, buat paket baru
-    isNewPaket = true;
-    maxNum++;
-    const nextNumStr = maxNum.toString().padStart(2, '0');
-    targetFile = `${nextNumStr}-Paket-${maxNum}.json`;
-    filePath = path.join(paketDir, targetFile);
-    currentData = { sesi1: [], sesi2: [] };
-    
-    targetSesi = 'sesi1';
-    numToGenerate = 10;
-    difficulty = 'SEDANG';
-    prompt = `Buat ${numToGenerate} soal pilihan ganda tingkat kesulitan ${difficulty} untuk Uji Kompetensi Pemeriksa Pajak.`;
   }
 
   console.log(`Akan generate ${numToGenerate} soal untuk ${targetSesi} (${difficulty})...`);
@@ -135,11 +135,11 @@ PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markd
     const jsonStr = text.replace(/^```json/, '').replace(/```$/, '').trim();
     const newSoal = JSON.parse(jsonStr);
     
-    // Assign ID baru
+    // Assign ID baru (berdasarkan ID di sesi tersebut)
     let startId = 1;
-    const allSoal = [...(currentData.sesi1 || []), ...(currentData.sesi2 || [])];
-    if (allSoal.length > 0) {
-      startId = Math.max(...allSoal.map(s => s.id || 0)) + 1;
+    const sessionSoal = currentData[targetSesi] || [];
+    if (sessionSoal.length > 0) {
+      startId = Math.max(...sessionSoal.map(s => s.id || 0)) + 1;
     }
 
     newSoal.forEach(s => {
