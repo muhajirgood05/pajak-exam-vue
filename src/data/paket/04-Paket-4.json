@@ -1,5 +1,171 @@
 {
-  "sesi1": [],
+  "sesi1": [
+    {
+      "kategori": "pph-badan",
+      "skenario": "PT Angkasa Raya memiliki data biaya operasional untuk tahun pajak yang bersangkutan sebagai berikut:<br><table><thead><tr><th>Jenis Biaya</th><th>Jumlah (Rp)</th><th>Keterangan</th></tr></thead><tbody><tr><td>Gaji dan Tunjangan Karyawan</td><td>500.000.000</td><td>Termasuk tunjangan makan natura senilai Rp50.000.000 untuk seluruh karyawan, diberikan di kantor.</td></tr><tr><td>Biaya Perjalanan Dinas Direksi</td><td>75.000.000</td><td>Untuk liburan keluarga ke Bali, tidak terkait bisnis perusahaan.</td></tr><tr><td>Biaya Entertaint</td><td>20.000.000</td><td>Tidak didukung daftar nominatif.</td></tr><tr><td>Sumbangan Bencana Nasional</td><td>15.000.000</td><td>Disalurkan melalui BNPB.</td></tr><tr><td>Pajak Penghasilan Badan</td><td>100.000.000</td><td>Angsuran PPh Pasal 25.</td></tr></tbody></table>",
+      "soal": "Berapa total biaya yang TIDAK dapat dibebankan dalam perhitungan PPh Badan PT Angkasa Raya untuk tahun pajak yang bersangkutan?",
+      "opsi": [
+        "A. Rp 195.000.000",
+        "B. Rp 210.000.000",
+        "C. Rp 245.000.000",
+        "D. Rp 260.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Penghitungan biaya yang tidak dapat dibebankan (Non-Deductible Expense):\n1.  Tunjangan makan natura senilai Rp50.000.000 yang disediakan di kantor untuk seluruh karyawan dikecualikan dari objek PPh bagi pegawai dan dapat dibiayakan oleh pemberi kerja (Pasal 9 ayat (1) huruf e UU PPh jo. Pasal 5 ayat (2) huruf b PMK 66/2023). Jadi, Rp0 tidak dapat dibebankan.\n2.  Biaya Perjalanan Dinas Direksi untuk liburan keluarga senilai Rp75.000.000 tidak terkait langsung dengan kegiatan 3M (Mendapatkan, Menagih, dan Memelihara penghasilan), sehingga tidak dapat dibebankan (Pasal 9 ayat (1) huruf a UU PPh).\n3.  Biaya Entertaint senilai Rp20.000.000 tanpa daftar nominatif tidak dapat dibebankan (SE-27/PJ.22/1986).\n4.  Sumbangan Bencana Nasional senilai Rp15.000.000 yang disalurkan melalui BNPB dapat dibebankan secara fiskal (Pasal 6 ayat (1) huruf i UU PPh jo. PMK 244/PMK.03/2009). Jadi, Rp0 tidak dapat dibebankan.\n5.  Pajak Penghasilan Badan (Angsuran PPh Pasal 25) senilai Rp100.000.000 tidak dapat dibebankan karena merupakan pembayaran PPh itu sendiri, bukan biaya untuk mendapatkan penghasilan (Pasal 9 ayat (1) huruf d UU PPh).\n\nTotal biaya yang tidak dapat dibebankan = Rp75.000.000 (Perjalanan Dinas) + Rp20.000.000 (Entertaint) + Rp100.000.000 (PPh Badan) = Rp195.000.000.",
+      "dasar": "Pasal 6 ayat (1) huruf i, Pasal 9 ayat (1) huruf a, d, e UU PPh; PMK-244/PMK.03/2009; PMK-66/PMK.03/2023; SE-27/PJ.22/1986.",
+      "id": 6
+    },
+    {
+      "kategori": "pph-badan",
+      "skenario": "PT Bahari Jaya adalah perusahaan pelayaran. Pada tahun 2023, PT Bahari Jaya memperoleh penghasilan sebagai berikut:<br><table><thead><tr><th>Jenis Penghasilan</th><th>Jumlah (Rp)</th></tr></thead><tbody><tr><td>Penghasilan dari pengangkutan orang dan/atau barang termasuk penyewaan kapal</td><td>1.200.000.000</td></tr><tr><td>Penghasilan sewa gedung kantor di Jakarta</td><td>250.000.000</td></tr><tr><td>Keuntungan penjualan saham di Bursa Efek</td><td>80.000.000</td></tr><tr><td>Dividen dari PT Cemerlang (bukan objek PPh Pasal 23, memenuhi syarat pengecualian Pasal 4 ayat (3) huruf f UU PPh)</td><td>150.000.000</td></tr></tbody></table>",
+      "soal": "Berapa total penghasilan yang menjadi objek PPh Final yang terutang oleh PT Bahari Jaya?",
+      "opsi": [
+        "A. Rp 1.200.000.000",
+        "B. Rp 1.450.000.000",
+        "C. Rp 1.530.000.000",
+        "D. Rp 1.680.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Penghitungan penghasilan yang menjadi objek PPh Final:\n1.  Penghasilan dari pengangkutan orang dan/atau barang termasuk penyewaan kapal (Perusahaan Pelayaran): Merupakan objek PPh Final (PP No. 41 Tahun 1994). Jumlah: Rp1.200.000.000.\n2.  Penghasilan sewa gedung kantor: Merupakan objek PPh Final Pasal 4 ayat (2) UU PPh, diatur dalam PP No. 34 Tahun 2017. Jumlah: Rp250.000.000.\n3.  Keuntungan penjualan saham di Bursa Efek: Merupakan objek PPh Final Pasal 4 ayat (2) UU PPh, diatur dalam PP No. 14 Tahun 1997 jo. PP No. 45 Tahun 1994. Jumlah: Rp80.000.000.\n4.  Dividen dari PT Cemerlang yang memenuhi syarat pengecualian Pasal 4 ayat (3) huruf f UU PPh: Bukan objek PPh. Jumlah: Rp0.\n\nTotal penghasilan yang menjadi objek PPh Final = Rp1.200.000.000 + Rp250.000.000 + Rp80.000.000 = Rp1.530.000.000.",
+      "dasar": "Pasal 4 ayat (2), Pasal 4 ayat (3) huruf f UU PPh; PP No. 41 Tahun 1994; PP No. 34 Tahun 2017; PP No. 14 Tahun 1997 jo. PP No. 45 Tahun 1994.",
+      "id": 7
+    },
+    {
+      "kategori": "pph-badan",
+      "skenario": "PT Sukses Bersama memiliki peredaran bruto sebesar Rp10 miliar dan Penghasilan Kena Pajak (PKP) sebesar Rp2 miliar pada Tahun Pajak 2023.",
+      "soal": "Berapa Penghasilan Kena Pajak PT Sukses Bersama yang dikenai tarif PPh Badan sebesar 50% dari tarif normal?",
+      "opsi": [
+        "A. Rp 800.000.000",
+        "B. Rp 960.000.000",
+        "C. Rp 1.000.000.000",
+        "D. Rp 1.200.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai Pasal 31E ayat (1) Undang-Undang Pajak Penghasilan (PPh), Wajib Pajak badan dalam negeri dengan peredaran bruto sampai dengan Rp50 miliar mendapatkan fasilitas berupa pengurangan tarif sebesar 50% dari tarif normal yang dikenakan atas Penghasilan Kena Pajak dari bagian peredaran bruto sampai dengan Rp4.800.000.000.\n\nPeredaran bruto PT Sukses Bersama = Rp10.000.000.000.\nPenghasilan Kena Pajak (PKP) PT Sukses Bersama = Rp2.000.000.000.\n\nBagian Penghasilan Kena Pajak yang mendapatkan fasilitas (dikenai tarif 50% dari tarif normal) dihitung dengan formula:\nPKP Fasilitas = (Rp4.800.000.000 / Peredaran Bruto) x PKP\nPKP Fasilitas = (Rp4.800.000.000 / Rp10.000.000.000) x Rp2.000.000.000\nPKP Fasilitas = 0,48 x Rp2.000.000.000\nPKP Fasilitas = Rp960.000.000\n\nSisa PKP sebesar (Rp2.000.000.000 - Rp960.000.000 = Rp1.040.000.000) akan dikenakan tarif PPh Badan normal (22%).",
+      "dasar": "Pasal 31E ayat (1) Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh).",
+      "id": 8
+    },
+    {
+      "kategori": "pph-potput",
+      "skenario": "PT Maju Jaya memberikan fasilitas kepada karyawannya selama tahun 2023.<br><table><thead><tr><th>Jenis Fasilitas</th><th>Nilai Wajar (Rp)</th><th>Keterangan</th></tr></thead><tbody><tr><td>Makanan dan Minuman</td><td>30.000.000</td><td>Disediakan di tempat kerja untuk seluruh pegawai.</td></tr><tr><td>Fasilitas Olahraga</td><td>25.000.000</td><td>Berupa keanggotaan gym di pusat kota untuk Direktur Utama.</td></tr><tr><td>Fasilitas Perumahan</td><td>70.000.000</td><td>Untuk manajer pemasaran, bukan di daerah terpencil.</td></tr><tr><td>Bingkisan Lebaran</td><td>15.000.000</td><td>Diberikan dalam bentuk sembako, dengan total nilai per pegawai kurang dari Rp3.000.000.</td></tr></tbody></table>",
+      "soal": "Berapa total nilai natura/kenikmatan yang menjadi objek pemotongan PPh Pasal 21 bagi karyawan PT Maju Jaya?",
+      "opsi": [
+        "A. Rp 95.000.000",
+        "B. Rp 110.000.000",
+        "C. Rp 120.000.000",
+        "D. Rp 140.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Penghitungan natura/kenikmatan yang menjadi objek PPh Pasal 21 berdasarkan PMK-66/PMK.03/2023:\n1.  Makanan dan Minuman yang disediakan di tempat kerja untuk seluruh pegawai senilai Rp30.000.000: Dikecualikan dari objek PPh (Pasal 5 ayat (2) huruf b PMK-66/PMK.03/2023). Nilai objek PPh = Rp0.\n2.  Fasilitas Olahraga (keanggotaan gym untuk Direktur Utama) senilai Rp25.000.000: Merupakan kenikmatan yang menjadi objek PPh (Pasal 4 ayat (1) huruf a dan Pasal 7 ayat (2) huruf b PMK-66/PMK.03/2023).\n3.  Fasilitas Perumahan untuk manajer pemasaran (bukan di daerah terpencil) senilai Rp70.000.000: Merupakan kenikmatan yang menjadi objek PPh (Pasal 4 ayat (1) huruf d dan Pasal 7 ayat (2) huruf d PMK-66/PMK.03/2023).\n4.  Bingkisan Lebaran senilai Rp15.000.000 (dengan total nilai per pegawai < Rp3.000.000): Dikecualikan dari objek PPh karena nilainya tidak melebihi batasan Rp3.000.000 per pegawai per tahun (Pasal 5 ayat (2) huruf a PMK-66/PMK.03/2023). Nilai objek PPh = Rp0.\n\nTotal natura/kenikmatan yang menjadi objek PPh Pasal 21 = Rp25.000.000 (Fasilitas Olahraga) + Rp70.000.000 (Fasilitas Perumahan) = Rp95.000.000.",
+      "dasar": "Pasal 4, Pasal 5, Pasal 7 PMK-66/PMK.03/2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa dalam Bentuk Natura dan/atau Kenikmatan.",
+      "id": 9
+    },
+    {
+      "kategori": "pph-potput",
+      "skenario": "PT Sejahtera melakukan transaksi pembayaran pada bulan Oktober 2023.<br><table><thead><tr><th>Jenis Pembayaran</th><th>Nilai Pembayaran (Rp)</th><th>Penerima Pembayaran</th><th>Keterangan</th></tr></thead><tbody><tr><td>Jasa Manajemen</td><td>120.000.000</td><td>PT Kreatif Solusi (WP Badan)</td><td>Sudah termasuk PPN 11%</td></tr><tr><td>Bunga Pinjaman</td><td>60.000.000</td><td>PT Investama (WP Badan, bukan bank)</td><td></td></tr><tr><td>Jasa Desain Grafis</td><td>30.000.000</td><td>CV Desain Murni (WP Badan)</td><td>Belum termasuk PPN</td></tr><tr><td>Sewa Peralatan</td><td>40.000.000</td><td>PT Perkasa Jaya (WP Badan)</td><td>Sudah termasuk PPN 11%</td></tr></tbody></table>",
+      "soal": "Berapa total PPh Pasal 23 yang wajib dipotong oleh PT Sejahtera pada bulan Oktober 2023?",
+      "opsi": [
+        "A. Rp 11.000.000",
+        "B. Rp 12.482.882",
+        "C. Rp 13.700.000",
+        "D. Rp 14.200.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Penghitungan PPh Pasal 23 yang wajib dipotong:\n1.  **Jasa Manajemen (PT Kreatif Solusi)**: Tarif PPh Pasal 23 untuk jasa adalah 2% (Pasal 23 ayat (1) huruf c angka 2 UU PPh). Nilai pembayaran Rp120.000.000 sudah termasuk PPN 11%. Dasar Pengenaan Pajak (DPP) PPh 23 tidak termasuk PPN (PMK-141/PMK.03/2015 Pasal 1 ayat (5)).\n    DPP PPh 23 = Rp120.000.000 / 1.11 = Rp108.108.108.\n    PPh 23 = 2% x Rp108.108.108 = Rp2.162.162.\n2.  **Bunga Pinjaman (PT Investama)**: Tarif PPh Pasal 23 untuk bunga adalah 15% (Pasal 23 ayat (1) huruf a UU PPh). Penerima adalah WP Badan bukan bank, sehingga tidak termasuk pengecualian.\n    DPP PPh 23 = Rp60.000.000.\n    PPh 23 = 15% x Rp60.000.000 = Rp9.000.000.\n3.  **Jasa Desain Grafis (CV Desain Murni)**: Tarif PPh Pasal 23 untuk jasa adalah 2% (Pasal 23 ayat (1) huruf c angka 2 UU PPh). Nilai pembayaran belum termasuk PPN, jadi DPP adalah nilai pembayaran.\n    DPP PPh 23 = Rp30.000.000.\n    PPh 23 = 2% x Rp30.000.000 = Rp600.000.\n4.  **Sewa Peralatan (PT Perkasa Jaya)**: Tarif PPh Pasal 23 untuk sewa dan penghasilan lain sehubungan dengan penggunaan harta adalah 2% (Pasal 23 ayat (1) huruf c angka 1 UU PPh). Nilai pembayaran Rp40.000.000 sudah termasuk PPN 11%. DPP PPh 23 tidak termasuk PPN.\n    DPP PPh 23 = Rp40.000.000 / 1.11 = Rp36.036.036.\n    PPh 23 = 2% x Rp36.036.036 = Rp720.720.\n\nTotal PPh Pasal 23 yang dipotong = Rp2.162.162 + Rp9.000.000 + Rp600.000 + Rp720.720 = Rp12.482.882.",
+      "dasar": "Pasal 23 ayat (1) huruf a, c UU PPh; PMK-141/PMK.03/2015 tentang Jenis Jasa Lain Selain Jasa yang Dikenai Pajak Penghasilan Pasal 23.",
+      "id": 10
+    },
+    {
+      "kategori": "ppn",
+      "skenario": "PT Cahaya Gemilang (PKP) pada bulan November 2023 melakukan transaksi sebagai berikut:<br><table><thead><tr><th>Jenis Transaksi</th><th>Jumlah (Rp)</th><th>Keterangan</th></tr></thead><tbody><tr><td>Penyerahan Barang Kena Pajak (BKP) kepada PT Harapan Abadi</td><td>200.000.000</td><td>Harga jual belum termasuk PPN.</td></tr><tr><td>Penyerahan Jasa Kena Pajak (JKP) kepada Bendaharawan Pemerintah</td><td>150.000.000</td><td>Nilai kontrak adalah DPP PPN.</td></tr><tr><td>Pemberian cuma-cuma BKP kepada karyawan</td><td>20.000.000</td><td>Harga Pokok Penjualan. Harga pasar wajar Rp25.000.000.</td></tr><tr><td>Ekspor JKP</td><td>100.000.000</td><td>Telah memiliki Pemberitahuan Ekspor Jasa Kena Pajak (PEJKP).</td></tr></tbody></table>",
+      "soal": "Berapa total Dasar Pengenaan Pajak (DPP) PPN yang wajib dilaporkan oleh PT Cahaya Gemilang pada Masa Pajak November 2023?",
+      "opsi": [
+        "A. Rp 375.000.000",
+        "B. Rp 385.000.000",
+        "C. Rp 475.000.000",
+        "D. Rp 490.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Penghitungan total Dasar Pengenaan Pajak (DPP) PPN:\n1.  **Penyerahan BKP kepada PT Harapan Abadi**: DPP adalah harga jual (Pasal 1 angka 22 UU PPN). Jumlah = Rp200.000.000.\n2.  **Penyerahan JKP kepada Bendaharawan Pemerintah**: DPP adalah nilai kontrak (Pasal 1 angka 22 UU PPN). Jumlah = Rp150.000.000.\n3.  **Pemberian cuma-cuma BKP kepada karyawan**: DPP adalah harga pasar wajar (Pasal 1A ayat (1) huruf d UU PPN).\n    Harga pasar wajar = Rp25.000.000.\n4.  **Ekspor JKP**: Meskipun dikenakan PPN tarif 0% (Pasal 7 ayat (2) UU PPN), ekspor JKP tetap merupakan penyerahan yang wajib dilaporkan DPP-nya. DPP adalah nilai ekspor (Pasal 1 angka 22 UU PPN).\n    Jumlah = Rp100.000.000.\n\nTotal DPP PPN = Rp200.000.000 + Rp150.000.000 + Rp25.000.000 + Rp100.000.000 = Rp475.000.000.",
+      "dasar": "Pasal 1 angka 22, Pasal 1A ayat (1) huruf d, Pasal 7 ayat (2) Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPN).",
+      "id": 11
+    },
+    {
+      "kategori": "ppn",
+      "skenario": "PT Makmur Sentosa (PKP) memiliki data Pajak Keluaran dan Pajak Masukan untuk Masa Pajak Desember 2023 sebagai berikut:<br><table><thead><tr><th>Keterangan</th><th>Jumlah PPN (Rp)</th></tr></thead><tbody><tr><td>Pajak Keluaran (PK)</td><td>50.000.000</td></tr><tr><td>Pajak Masukan (PM) atas pembelian bahan baku</td><td>35.000.000</td></tr><tr><td>Pajak Masukan atas pembelian kendaraan pribadi Direksi</td><td>8.000.000</td></tr><tr><td>Pajak Masukan atas biaya entertainment tanpa daftar nominatif</td><td>5.000.000</td></tr><tr><td>Pajak Masukan atas pembelian komputer (digunakan untuk usaha)</td><td>10.000.000</td></tr></tbody></table>",
+      "soal": "Berapa PPN Kurang Bayar (atau Lebih Bayar) yang harus disetor/dilaporkan oleh PT Makmur Sentosa untuk Masa Pajak Desember 2023?",
+      "opsi": [
+        "A. PPN Kurang Bayar Rp 0",
+        "B. PPN Kurang Bayar Rp 5.000.000",
+        "C. PPN Kurang Bayar Rp 8.000.000",
+        "D. PPN Lebih Bayar Rp 5.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Penghitungan PPN Kurang Bayar / Lebih Bayar:\n1.  Pajak Keluaran (PK) = Rp50.000.000.\n2.  Pajak Masukan (PM) yang dapat dikreditkan:\n    *   PM atas pembelian bahan baku = Rp35.000.000 (Dapat dikreditkan sesuai Pasal 9 ayat (2) dan (3) UU PPN).\n    *   PM atas pembelian kendaraan pribadi Direksi (sedan/station wagon) = Rp0 (Tidak dapat dikreditkan sesuai Pasal 9 ayat (8) huruf b UU PPN).\n    *   PM atas biaya entertainment tanpa daftar nominatif = Rp0 (Tidak dapat dikreditkan karena tidak memenuhi syarat formal dan material terkait langsung dengan kegiatan usaha/dokumen tidak lengkap, sesuai Pasal 9 ayat (8) huruf b UU PPN).\n    *   PM atas pembelian komputer (digunakan untuk usaha) = Rp10.000.000 (Dapat dikreditkan sesuai Pasal 9 ayat (2) dan (3) UU PPN).\n\nTotal PM yang dapat dikreditkan = Rp35.000.000 + Rp10.000.000 = Rp45.000.000.\n\nPPN Kurang Bayar / Lebih Bayar = PK - Total PM yang dapat dikreditkan\n= Rp50.000.000 - Rp45.000.000 = Rp5.000.000.\n\nKarena hasilnya positif, maka statusnya adalah PPN Kurang Bayar Rp5.000.000.",
+      "dasar": "Pasal 9 ayat (2), ayat (3), dan ayat (8) huruf b Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPN).",
+      "id": 12
+    },
+    {
+      "kategori": "ppn",
+      "skenario": "PT Prima Niaga adalah perusahaan yang bergerak di bidang perdagangan umum. Pada bulan Januari 2024, PT Prima Niaga melakukan beberapa transaksi dengan asumsi tarif PPN 12%:<br><table><thead><tr><th>Jenis Transaksi</th><th>Jumlah (Rp)</th><th>Keterangan</th></tr></thead><tbody><tr><td>Penyerahan emas perhiasan oleh pabrikan</td><td>500.000.000</td><td>DPP PPN adalah 20% dari harga jual.</td></tr><tr><td>Penyerahan jasa perjalanan ibadah umrah</td><td>300.000.000</td><td>Termasuk biaya akomodasi dan transportasi.</td></tr><tr><td>Penyerahan BKP berupa kendaraan bermotor bekas</td><td>100.000.000</td><td>DPP PPN adalah 10% dari harga jual.</td></tr></tbody></table>",
+      "soal": "Berapa total PPN yang terutang oleh PT Prima Niaga dari transaksi-transaksi tersebut pada Masa Pajak Januari 2024?",
+      "opsi": [
+        "A. Rp 13.200.000",
+        "B. Rp 14.400.000",
+        "C. Rp 15.600.000",
+        "D. Rp 18.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Penghitungan total PPN terutang:\n1.  **Penyerahan emas perhiasan oleh pabrikan**: Berdasarkan PMK-48/PMK.03/2023, DPP PPN atas penyerahan emas perhiasan oleh pabrikan adalah 20% dari harga jual.\n    DPP = 20% x Rp500.000.000 = Rp100.000.000.\n    PPN Terutang = Rp100.000.000 x 12% = Rp12.000.000.\n2.  **Penyerahan jasa perjalanan ibadah umrah**: Berdasarkan Pasal 4A ayat (3) UU PPN dan PMK-72/PMK.03/2023, jasa keagamaan termasuk jasa perjalanan ibadah umrah merupakan jenis jasa yang dibebaskan dari pengenaan PPN.\n    PPN Terutang = Rp0.\n3.  **Penyerahan BKP berupa kendaraan bermotor bekas**: Berdasarkan PMK-65/PMK.03/2022, DPP PPN atas penyerahan kendaraan bermotor bekas adalah 10% dari harga jual.\n    DPP = 10% x Rp100.000.000 = Rp10.000.000.\n    PPN Terutang = Rp10.000.000 x 12% = Rp1.200.000.\n\nTotal PPN terutang = Rp12.000.000 + Rp0 + Rp1.200.000 = Rp13.200.000.",
+      "dasar": "Pasal 4A ayat (3), Pasal 7 ayat (1) UU PPN jo. UU HPP (untuk tarif PPN); PMK-48/PMK.03/2023 tentang Perlakuan PPN atas Penyerahan Emas Perhiasan, Emas Batangan, dan Batu Permata; PMK-72/PMK.03/2023 tentang Jasa Kena Pajak Tertentu yang Dibebaskan dari Pengenaan PPN; PMK-65/PMK.03/2022 tentang Perlakuan PPN atas Penyerahan Kendaraan Bermotor Bekas.",
+      "id": 13
+    },
+    {
+      "kategori": "kup",
+      "skenario": "PT Jaya Abadi menerima Surat Pemberitahuan Dimulainya Pemeriksaan (SPDP) untuk pemeriksaan lapangan atas SPT Tahunan PPh Badan Tahun Pajak 2022. Pemeriksaan tersebut dilakukan oleh tim pemeriksa dari KPP tempat PT Jaya Abadi terdaftar.",
+      "soal": "Manakah pernyataan di bawah ini yang PALING TEPAT mengenai hak dan kewajiban wajib pajak terkait pemeriksaan tersebut?",
+      "opsi": [
+        "A. Wajib Pajak berhak menolak diperiksa jika SPDP tidak ditunjukkan pada saat pemeriksaan dimulai.",
+        "B. Wajib Pajak berkewajiban untuk menyediakan sarana dan prasarana yang memadai untuk tim pemeriksa, termasuk ruangan kerja khusus.",
+        "C. Wajib Pajak berhak meminta pemeriksaan dilakukan di luar jam kerja jika hal tersebut lebih sesuai dengan jadwal operasional perusahaan.",
+        "D. Wajib Pajak berkewajiban untuk memberikan fotokopi dokumen yang diminta oleh pemeriksa, dan bukan dokumen asli, untuk menjaga kerahasiaan."
+      ],
+      "jawaban": 0,
+      "pembahasan": "Analisis opsi:\n*   **A. Wajib Pajak berhak menolak diperiksa jika SPDP tidak ditunjukkan pada saat pemeriksaan dimulai.** Ini adalah hak wajib pajak yang diatur secara tegas dalam Pasal 29 ayat (1) UU KUP dan Pasal 36 PMK-17/PMK.03/2013. SPDP adalah dokumen krusial sebagai dasar dimulainya pemeriksaan.\n*   **B. Wajib Pajak berkewajiban untuk menyediakan sarana dan prasarana yang memadai untuk tim pemeriksa, termasuk ruangan kerja khusus.** Wajib Pajak memang berkewajiban menyediakan sarana dan prasarana, namun tidak ada ketentuan yang mengharuskan 'ruangan kerja khusus'. Cukup sarana dan prasarana yang diperlukan untuk kelancaran pemeriksaan (Pasal 29 ayat (1) huruf b UU KUP).\n*   **C. Wajib Pajak berhak meminta pemeriksaan dilakukan di luar jam kerja jika hal tersebut lebih sesuai dengan jadwal operasional perusahaan.** Pemeriksaan dilakukan pada jam kerja (Pasal 29 ayat (2) UU KUP). Pemeriksaan di luar jam kerja dapat dilakukan atas persetujuan Wajib Pajak, bukan hak Wajib Pajak untuk meminta secara sepihak.\n*   **D. Wajib Pajak berkewajiban untuk memberikan fotokopi dokumen yang diminta oleh pemeriksa, dan bukan dokumen asli, untuk menjaga kerahasiaan.** Wajib Pajak wajib meminjamkan buku, catatan, dan dokumen yang menjadi dasar pembukuan atau pencatatan, serta dokumen lain yang berhubungan dengan penghasilan yang diperoleh, kegiatan usaha, pekerjaan bebas Wajib Pajak, atau objek yang terutang pajak. Pemeriksa berhak meminjam dokumen asli. Memberikan fotokopi saja tanpa kesempatan memeriksa asli atau legalisir tidak memenuhi kewajiban (Pasal 29 ayat (1) huruf a UU KUP).\n\nDengan demikian, pernyataan A adalah yang paling tepat.",
+      "dasar": "Pasal 29 ayat (1) dan ayat (2) Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan Umum dan Tata Cara Perpajakan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU KUP); Pasal 36 Peraturan Menteri Keuangan Nomor 17/PMK.03/2013 tentang Tata Cara Pemeriksaan Pajak.",
+      "id": 14
+    },
+    {
+      "kategori": "kup",
+      "skenario": "PT Sentosa Jaya telah diperiksa untuk Masa Pajak Januari 2021 hingga Desember 2021. Pada tanggal 10 April 2027, Kantor Pelayanan Pajak (KPP) menerbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) untuk tahun pajak tersebut.",
+      "soal": "Mengacu pada ketentuan kadaluwarsa penetapan pajak, apakah penerbitan SKPKB tersebut sah secara hukum?",
+      "opsi": [
+        "A. Sah, karena penerbitan SKPKB dapat dilakukan kapan saja selama belum ada daluwarsa penagihan.",
+        "B. Sah, karena batas waktu penerbitan SKPKB adalah 5 tahun sejak saat terutangnya pajak atau berakhirnya Masa Pajak.",
+        "C. Tidak sah, karena batas waktu penerbitan SKPKB adalah 5 tahun setelah berakhirnya Masa Pajak, Bagian Tahun Pajak, atau Tahun Pajak yang bersangkutan.",
+        "D. Tidak sah, karena pemeriksaan telah melewati batas waktu 3 tahun sejak berakhirnya Tahun Pajak yang bersangkutan."
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 13 ayat (1) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) jo. UU HPP, Direktur Jenderal Pajak dapat menerbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) dalam jangka waktu 5 (lima) tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, Bagian Tahun Pajak, atau Tahun Pajak.\n\nDalam kasus ini:\n*   Tahun Pajak yang diperiksa adalah 2021.\n*   Batas waktu penerbitan SKPKB adalah 5 tahun setelah berakhirnya Tahun Pajak 2021.\n*   Berakhirnya Tahun Pajak 2021 adalah 31 Desember 2021.\n*   Batas akhir penerbitan SKPKB adalah 31 Desember 2021 + 5 tahun = 31 Desember 2026.\n\nSKPKB diterbitkan pada tanggal 10 April 2027. Tanggal ini sudah melewati batas waktu 31 Desember 2026.\n\nOleh karena itu, penerbitan SKPKB tersebut TIDAK SAH secara hukum karena telah melewati jangka waktu kadaluwarsa penetapan pajak.",
+      "dasar": "Pasal 13 ayat (1) Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan Umum dan Tata Cara Perpajakan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU KUP).",
+      "id": 15
+    },
+    {
+      "kategori": "pph-badan",
+      "skenario": "PT Bangun Persada (bergerak di bidang konstruksi) membeli sebuah mesin baru untuk produksi pada tanggal 1 Juli 2023 dengan harga perolehan Rp300.000.000. Mesin tersebut termasuk dalam kelompok 2 harta berwujud, yang masa manfaatnya adalah 8 tahun. PT Bangun Persada menggunakan metode penyusutan garis lurus (straight-line method) untuk tujuan fiskal.",
+      "soal": "Berapa biaya penyusutan fiskal yang dapat dibebankan oleh PT Bangun Persada untuk Tahun Pajak 2023?",
+      "opsi": [
+        "A. Rp 18.750.000",
+        "B. Rp 37.500.000",
+        "C. Rp 50.000.000",
+        "D. Rp 75.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Penghitungan biaya penyusutan fiskal:\n1.  Harga Perolehan Mesin = Rp300.000.000.\n2.  Mesin termasuk Kelompok 2 harta berwujud, dengan masa manfaat 8 tahun (Pasal 11 ayat (6) UU PPh jo. PMK-96/PMK.03/2009).\n3.  Metode penyusutan garis lurus (straight-line method).\n4.  Tarif penyusutan garis lurus per tahun untuk Kelompok 2 = (1 / Masa Manfaat) = (1/8) = 12,5%.\n5.  Penyusutan setahun penuh = 12,5% x Rp300.000.000 = Rp37.500.000.\n6.  Mesin dibeli pada tanggal 1 Juli 2023. Untuk tujuan fiskal, penyusutan dihitung sejak bulan perolehan (Pasal 11 ayat (6) UU PPh).\n    Jumlah bulan penggunaan di tahun 2023 = Juli, Agustus, September, Oktober, November, Desember = 6 bulan.\n7.  Penyusutan Tahun Pajak 2023 = (6/12) x Rp37.500.000 = Rp18.750.000.",
+      "dasar": "Pasal 11 ayat (1) dan ayat (6) Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh); Peraturan Menteri Keuangan Nomor 96/PMK.03/2009 tentang Jenis-Jenis Harta yang Termasuk dalam Kelompok Harta Berwujud Bukan Bangunan untuk Keperluan Penyusutan.",
+      "id": 16
+    }
+  ],
   "sesi2": [
     {
       "id": 1,
