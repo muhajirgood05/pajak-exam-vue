@@ -440,9 +440,9 @@
         "Akhir bulan Mei 2026 (saat rekonsiliasi penjualan)",
         "Tidak terutang PPN sampai pembayaran diterima"
       ],
-      "jawaban": 1,
-      "pembahasan": "Ini adalah konsep fundamental PPN. Berdasarkan Pasal 1A ayat (1) huruf g UU PPN, penyerahan Barang Kena Pajak secara konsinyasi TERMASUK dalam pengertian Penyerahan BKP. Oleh karenanya, saat terutangnya PPN adalah pada saat penyerahan hak/fisik barang ke consignee (PT Ritel), yaitu tanggal 10 April 2026. PT Produsen wajib menerbitkan Faktur Pajak pada saat pengiriman tersebut, terlepas dari barang belum laku ke konsumen akhir.",
-      "dasar": "UU PPN Pasal 1A ayat (1) huruf g dan Pasal 11."
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan perubahan dalam UU Cipta Kerja dan PP Nomor 44 Tahun 2022, ketentuan Pasal 1A ayat (1) huruf g UU PPN yang menyatakan penyerahan konsinyasi sebagai penyerahan BKP telah dihapus. Saat terutangnya PPN bagi pemilik barang (consignor) bergeser menjadi saat barang tersebut terjual kepada pihak ketiga/konsumen akhir atau saat diakui sebagai piutang/penghasilan. Jadi, PPN terutang pada tanggal 20 Mei 2026.",
+      "dasar": "PP Nomor 44 Tahun 2022"
     },
     {
       "id": 30,
