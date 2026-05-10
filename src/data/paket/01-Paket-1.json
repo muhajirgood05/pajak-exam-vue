@@ -110,13 +110,13 @@
       "skenario": "PT Global Pharma (PKP) memproduksi obat-obatan. Pada Masa Pajak September 2024: (1) menyerahkan obat bebas ke apotek Rp 5 miliar, (2) menyerahkan obat keras (resep dokter) masuk daftar Perpres obat esensial Rp 2 miliar, (3) mengekspor obat ke Malaysia Rp 3 miliar, (4) PM atas perolehan bahan baku Rp 700 juta, (5) PM atas biaya entertainment Rp 50 juta (tanpa daftar nominatif).",
       "soal": "Berapa PPN yang kurang bayar atau lebih bayar PT Global Pharma untuk Masa Pajak September 2024?",
       "opsi": [
-        "Lebih bayar Rp 150.000.000",
+        "Lebih bayar Rp 10.000.000",
         "Kurang bayar Rp 350.000.000",
         "Lebih bayar Rp 200.000.000",
         "Kurang bayar Rp 500.000.000"
       ],
       "jawaban": 0,
-      "pembahasan": "PK: obat bebas Rp 5M × 11% = 550 juta. Obat keras esensial = DIBEBASKAN PPN (PP 49/2022). Ekspor = tarif 0% (PK = 0). Total PK = 550 juta. PM: PM entertainment tanpa daftar nominatif TIDAK dapat dikreditkan (Pasal 9 ayat 8). PM bahan baku Rp 700 juta, namun ada penyerahan tidak terutang (obat esensial Rp 2M), proporsional: penyerahan terutang/(terutang+bebas) = (5+3)/(5+2+3) = 8/10 = 80%. PM dapat dikreditkan = 80% × 700 = 560 juta. PPN = 550 – 560 – ekspor portion 20% × 700 = 140 juta. Sederhananya: PM teratribusi ke ekspor (tarif 0%) dapat dimintakan restitusi. Lebih bayar neto = Rp 150 juta.",
+      "pembahasan": "PK: obat bebas Rp 5M × 11% = 550 juta. Obat keras esensial = DIBEBASKAN PPN (PP 49/2022). Ekspor = tarif 0% (PK = 0). Total PK = 550 juta. PM: PM entertainment tanpa daftar nominatif TIDAK dapat dikreditkan (Pasal 9 ayat 8). PM bahan baku Rp 700 juta, namun ada penyerahan tidak terutang (obat esensial Rp 2M), proporsional: penyerahan terutang/(terutang+bebas) = (5+3)/(5+2+3) = 8/10 = 80%. PM dapat dikreditkan = 80% × 700 = 560 juta. PPN = PK - PM = 550 - 560 = -10 juta. Sehingga terjadi Lebih Bayar sebesar Rp 10.000.000.",
       "dasar": "Pasal 9 UU PPN; PP 49/2022; PMK-78/PMK.03/2010",
       "id": 8
     },
@@ -219,30 +219,30 @@
       "skenario": "PT Media Digital (PKP) bergerak dalam bidang penyediaan konten digital melalui platform online. Pada bulan Mei 2025, PT Media Digital melakukan transaksi penjualan konten digital kepada pelanggan perorangan yang berada di Indonesia. Total nilai transaksi dengan pelanggan tersebut dalam bulan Mei 2025 adalah Rp15.000.000. Meskipun PT Media Digital bukan PKP, ia telah ditunjuk oleh DJP sebagai Pemungut PPN PMSE (Perdagangan Melalui Sistem Elektronik).",
       "soal": "Kapan paling lambat PT Media Digital wajib melaporkan pemungutan PPN atas transaksi penjualan konten digital tersebut dalam Surat Pemberitahuan (SPT) Masa PPN?",
       "opsi": [
-        "Paling lambat akhir bulan berikutnya (Juni 2025)",
+        "Paling lambat akhir bulan berikutnya (30 Juni 2025)",
         "31 Mei 2025",
         "15 Juni 2025",
-        "Paling lambat akhir bulan kedua setelah bulan penyerahan (Juli 2025)"
+        "Paling lambat akhir bulan kedua setelah bulan penyerahan (31 Juli 2025)"
       ],
-      "jawaban": 1,
-      "pembahasan": "Sesuai PER-12/PJ/2020, Pemungut PPN PMSE wajib melaporkan pemungutan PPN PMSE dalam SPT Masa PPN paling lambat pada akhir bulan berikutnya setelah masa pajak penyerahan. Dalam kasus ini, transaksi terjadi pada Mei 2025, sehingga batas waktu pelaporannya adalah 31 Mei 2025.",
-      "dasar": "Pasal 24 PER-12/PJ/2020",
+      "jawaban": 0,
+      "pembahasan": "Sesuai PMK-60/PMK.03/2022, Pemungut PPN PMSE wajib melaporkan pemungutan PPN PMSE dalam SPT Masa PPN paling lambat pada akhir bulan berikutnya setelah masa pajak berakhir. Dalam kasus ini, transaksi terjadi pada Mei 2025, sehingga batas waktu pelaporannya adalah akhir bulan berikutnya, yaitu 30 Juni 2025.",
+      "dasar": "PMK-60/PMK.03/2022",
       "id": 15
     },
     {
       "id": 16,
       "kategori": "ppn",
       "skenario": "PT Nusa Lestari (PKP) merupakan distributor utama produk elektronik di Indonesia. Berikut data transaksi selama bulan Maret 2025: (1) Penjualan barang elektronik kepada PT Mitra Jaya sebesar Rp165.000.000 (termasuk PPN). (2) Penyerahan jasa perbaikan mesin kepada PT Teknika Utama sebesar Rp55.000.000 (termasuk PPN). (3) Melakukan impor barang impor untuk dijual kembali dengan nilai pabean Rp440.000.000. (4) Menerima uang muka atas pesanan barang dari customer sebesar Rp33.000.000 (termasuk PPN).",
-      "soal": "Berdasarkan ketentuan PPN, kapan PT Nusa Lestari paling lambat harus menerbitkan Faktur Pajak atas seluruh transaksi tersebut?",
+      "soal": "Berdasarkan ketentuan PPN, kapan PT Nusa Lestari paling lambat harus menerbitkan Faktur Pajak atas seluruh transaksi tersebut jika menggunakan fasilitas Faktur Pajak Gabungan untuk transaksi sejenis?",
       "opsi": [
         "Atas transaksi (1), (2), dan (4) pada akhir bulan berikutnya; atas transaksi (3) pada saat pelunasan bea masuk",
-        "Atas seluruh transaksi pada saat penyerahan/terjadinya penyerahan JKP/JKP",
+        "Atas seluruh transaksi pada saat penyerahan/terjadinya penyerahan JKP/BKP",
         "Atas transaksi (1), (2), dan (4) pada akhir bulan Maret 2025; atas transaksi (3) pada saat pelunasan bea masuk",
         "Atas transaksi (2) dan (4) pada akhir bulan Maret 2025; atas transaksi (1) pada akhir bulan April 2025; atas transaksi (3) pada saat pelunasan bea masuk"
       ],
-      "jawaban": 3,
-      "pembahasan": "Berdasarkan PER-03/PJ/2022: (1) Penjualan barang: FP diterbitkan paling lambat akhir bulan berikutnya (April 2025). (2) Jasa: FP diterbitkan paling lambat akhir bulan berikutnya (April 2025). (3) Impor BKP: FP dibuat saat pembayaran bea masuk (saat pelunasan). (4) Uang muka: FP dibuat saat penerimaan pembayaran (Maret 2025). Oleh karena itu, FP atas transaksi (2) dan (4) dibuat pada Maret 2025; atas transaksi (1) pada April 2025; atas transaksi (3) pada saat pelunasan bea masuk.",
-      "dasar": "Pasal 11 ayat (1) huruf c dan (2) huruf c; Pasal 23 ayat (1) PER-03/PJ/2022",
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PER-03/PJ/2022 Pasal 4, Faktur Pajak Gabungan harus dibuat paling lama pada akhir bulan penyerahan BKP dan/atau JKP. Dalam kasus ini, transaksi (1), (2), dan (4) terjadi di bulan Maret 2025, sehingga FP Gabungan paling lambat dibuat pada 31 Maret 2025. Untuk impor BKP (3), dokumen tertentu yang kedudukannya dipersamakan dengan Faktur Pajak adalah PIB yang mencantumkan identitas pemilik barang dan dilampiri SSP, yang dibuat pada saat pelunasan bea masuk.",
+      "dasar": "Pasal 4 PER-03/PJ/2022",
       "id": 16
     },
     {
@@ -252,13 +252,13 @@
       "soal": "Berdasarkan ketentuan PPN, mana yang BENAR mengenai kewajiban penerbitan Faktur Pajak oleh PT Global pada masa Maret 2025?",
       "opsi": [
         "PT Global wajib menerbitkan Faktur Pajak atas seluruh transaksi (1), (2), (3), dan (4).",
-        "PT Global wajib menerbitkan Faktur Pajak atas transaksi (1), (2), dan (4), tetapi tidak atas transaksi (3) karena merupakan JKP dari luar negeri.",
+        "PT Global wajib menerbitkan Faktur Pajak atas transaksi (1), (2), dan (4), tetapi tidak atas transaksi (3) karena merupakan pemanfaatan JKP dari luar negeri yang menggunakan SSP sebagai Faktur Pajak.",
         "PT Global wajib menerbitkan Faktur Pajak atas transaksi (1), (2), dan (4), tetapi tidak atas transaksi (3) karena bukan PKP.",
         "PT Global wajib menerbitkan Faktur Pajak atas transaksi (1), (3), dan (4), tetapi tidak atas transaksi (2) karena tidak memiliki NPWP."
       ],
-      "jawaban": 2,
-      "pembahasan": "Sesuai PER-03/PJ/2022: (1) Penjualan ke sesama PKP: Wajib menerbitkan FP. (2) Penjualan ke bukan PKP: Wajib menerbitkan FP karena PT Global adalah PKP. (3) Impor JKP: Wajib diterbitkan FP oleh importer (PT Global) karena PT Global adalah PKP. (4) Penyerahan JKP ke bukan PKP: Wajib menerbitkan FP. Namun, dalam soal disebutkan penyerahan jasa pelatihan kepada karyawan (bukan pihak independen), sehingga ini dapat diperlakukan sebagai natura bagi karyawan dan bukan objek PPN. Oleh karena itu, PT Global hanya wajib menerbitkan FP atas transaksi (1), (2), dan (4).",
-      "dasar": "Pasal 11 ayat (1) huruf b; Pasal 12 ayat (1) PER-03/PJ/2022",
+      "jawaban": 1,
+      "pembahasan": "Sesuai UU PPN dan PER-03/PJ/2022: (1) & (2) Penjualan BKP ke PKP maupun non-PKP wajib dibuatkan Faktur Pajak. (3) Pemanfaatan JKP dari luar daerah pabean (impor JKP) tidak menggunakan Faktur Pajak standar, melainkan SSP (Surat Setoran Pajak) yang dipersamakan dengan Faktur Pajak. (4) Penyerahan jasa kepada karyawan (pemberian cuma-cuma) termasuk dalam pengertian penyerahan JKP yang terutang PPN, sehingga wajib dibuatkan Faktur Pajak. Jadi, PT Global wajib menerbitkan Faktur Pajak untuk transaksi (1), (2), dan (4).",
+      "dasar": "Pasal 1A ayat (1) UU PPN; Pasal 13 ayat (6) UU PPN",
       "id": 17
     },
     {
