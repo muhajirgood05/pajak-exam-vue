@@ -81,7 +81,7 @@ Buat ${numToGenerate} soal pilihan ganda PPh [BADAN/OP/POTPUT/PPN/KUP] tingkat S
 untuk Pemeriksa Pajak DJP.
 
 Syarat:
-- Skenario kasus nyata, angka realistis dalam Rupiah
+- Skenario kasus nyata, angka realistis dalam Rupiah. Angka perhitungan harus dibuat simpel dan tidak menghasilkan angka keriting (hindari pembagian yang menghasilkan desimal panjang).
 - 4 pilihan jawaban, distractor plausible (masuk akal)
 - Pembahasan dengan perhitungan step-by-step
 - Dasar hukum spesifik (termasuk aturan terbaru UU HPP)
@@ -122,7 +122,7 @@ KETENTUAN:
 - Setiap soal menguji aspek berbeda: (1) PPh Badan, (2) PPh Potput, (3) PPN, (4) KUP/Pemeriksaan, (5) Bebas pilih
 - Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1
 - Pilihan pengecoh (distractors) harus masuk akal secara hukum, bukan asal salah
-- Angka-angka harus konsisten antar soal
+- Angka-angka harus konsisten antar soal. Angka perhitungan harus dibuat simpel dan tidak menghasilkan angka keriting (hindari pembagian yang menghasilkan desimal panjang).
 - Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
 - Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
 
