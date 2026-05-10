@@ -83,7 +83,7 @@
 
           <div v-if="soal.skenario" class="scenario-box">
             <div class="scenario-label">Skenario / Kasus</div>
-            {{ soal.skenario }}
+            <div v-html="soal.skenario"></div>
           </div>
 
           <div class="soal-text">{{ soal.soal }}</div>
@@ -109,7 +109,7 @@
 
           <div v-if="showPembahasan[soal.id] || (revealed[soal.id] && showPembahasan[soal.id] !== false)" class="pembahasan show">
             <div class="pembahasan-title">📖 Pembahasan</div>
-            {{ soal.pembahasan }}
+            <div v-html="soal.pembahasan"></div>
             <div class="dasar">⚖️ Dasar hukum: {{ soal.dasar }}</div>
           </div>
         </div>
@@ -390,6 +390,22 @@ const categoryStats = computed(() => {
   line-height: 1.75;
   color: var(--purple-dark);
   animation: fadeIn 0.2s ease;
+  white-space: pre-wrap;
+}
+.scenario-box table, .pembahasan table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 12.5px;
+}
+.scenario-box th, .scenario-box td, .pembahasan th, .pembahasan td {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  text-align: left;
+}
+.scenario-box th, .pembahasan th {
+  background: var(--blue-light);
+  font-weight: 600;
 }
 .pembahasan-title { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-bottom: 6px; opacity: 0.7; }
 .dasar { margin-top: 8px; font-size: 12px; opacity: 0.75; font-style: italic; }

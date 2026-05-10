@@ -93,6 +93,7 @@ KETENTUAN:
 - Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1.
 - Pilihan pengecoh (distractors) harus masuk akal secara hukum.
 - Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
+- Jika terdapat data keuangan, rincian transaksi, atau data panjang lainnya dalam skenario atau pembahasan, buatlah dalam bentuk **HTML Table** (menggunakan tag <table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
 
 FORMAT OUTPUT (Harus berupa valid JSON array dari objek soal, jangan ada teks lain di luar JSON):
 [
