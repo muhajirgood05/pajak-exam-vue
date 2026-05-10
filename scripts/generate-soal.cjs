@@ -65,52 +65,96 @@ async function generateSoal() {
 
   let targetSesi = '';
   let numToGenerate = 0;
-  let difficulty = '';
-  let prompt = '';
+  let fullPrompt = '';
+  let startId = 1;
 
   if (countSesi1 < 60) {
     targetSesi = 'sesi1';
     numToGenerate = Math.min(10, 60 - countSesi1);
-    difficulty = 'SEDANG';
-    prompt = `Buat ${numToGenerate} soal pilihan ganda tingkat kesulitan ${difficulty} untuk Uji Kompetensi Pemeriksa Pajak.`;
-  } else if (countSesi2 < 20) {
-    targetSesi = 'sesi2';
-    numToGenerate = Math.min(5, 20 - countSesi2);
-    difficulty = 'SULIT (Studi Kasus)';
-    prompt = `Buat 1 studi kasus dan ${numToGenerate} soal yang berkaitan dengan studi kasus tersebut (tingkat kesulitan SULIT) untuk Uji Kompetensi Pemeriksa Pajak.`;
-  }
+    
+    // Hitung startId untuk sesi1
+    const sSoal = currentData.sesi1 || [];
+    startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
 
-  console.log(`Akan generate ${numToGenerate} soal untuk ${targetSesi} (${difficulty})...`);
+    fullPrompt = `
+Buat ${numToGenerate} soal pilihan ganda PPh [BADAN/OP/POTPUT/PPN/KUP] tingkat SEDANG
+untuk Pemeriksa Pajak DJP.
 
-  // Lengkapi prompt dengan instruksi detail
-  const fullPrompt = `
-Anda adalah konsultan pajak senior dan instruktur BPSDM DJP.
-${prompt}
+Syarat:
+- Skenario kasus nyata, angka realistis dalam Rupiah
+- 4 pilihan jawaban, distractor plausible (masuk akal)
+- Pembahasan dengan perhitungan step-by-step
+- Dasar hukum spesifik (termasuk aturan terbaru UU HPP)
+- Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
 
-KETENTUAN:
-- Soal harus menguji pemahaman konsep dan aturan (bukan sekadar hafalan).
-- Kategori soal mencakup: PPh Badan, PPh Potput, PPN, KUP/Pemeriksaan.
-- Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1.
-- Pilihan pengecoh (distractors) harus masuk akal secara hukum.
-- Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
-- Jika terdapat data keuangan, rincian transaksi, atau data panjang lainnya dalam skenario atau pembahasan, buatlah dalam bentuk **HTML Table** (menggunakan tag <table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
-
-FORMAT OUTPUT (Harus berupa valid JSON array dari objek soal, jangan ada teks lain di luar JSON):
+Format JSON (langsung berupa array objek):
 [
   {
-    "kategori": "pph-badan", // atau pph-potput, ppn, kup
-    "skenario": "[isi skenario jika ada, atau kosongkan jika soal mandiri]",
-    "soal": "[pertanyaan]",
+    "id": [Mulai dari ${startId}],
+    "kategori": "[pph-badan/pph-potput/ppn/kup]",
+    "skenario": "...",
+    "soal": "...",
     "opsi": ["A...", "B...", "C...", "D..."],
     "jawaban": [0-3],
-    "pembahasan": "[penjelasan lengkap perhitungan]",
-    "dasar": "[pasal dan regulasi]"
-  },
-  ...
+    "pembahasan": "...",
+    "dasar": "..."
+  }
 ]
 
 PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block seperti \`\`\`json ... \`\`\`. Langsung mulai dengan [ dan akhiri dengan ].
 `;
+  } else if (countSesi2 < 20) {
+    targetSesi = 'sesi2';
+    numToGenerate = Math.min(5, 20 - countSesi2);
+    
+    // Hitung startId untuk sesi2
+    const sSoal = currentData.sesi2 || [];
+    startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
+
+    fullPrompt = `
+Anda adalah konsultan pajak senior dan instruktur BPSDM DJP.
+Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SULIT
+untuk Uji Kompetensi Teknis Pemeriksa Pajak.
+
+KETENTUAN:
+- 1 skenario perusahaan dengan data lengkap (nama, bidang usaha, tahun pajak, data keuangan, transaksi)
+- ${numToGenerate} soal yang SALING BERKAITAN dengan skenario yang sama
+- Setiap soal menguji aspek berbeda: (1) PPh Badan, (2) PPh Potput, (3) PPN, (4) KUP/Pemeriksaan, (5) Bebas pilih
+- Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1
+- Pilihan pengecoh (distractors) harus masuk akal secara hukum, bukan asal salah
+- Angka-angka harus konsisten antar soal
+- Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
+- Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
+
+TOPIK YANG BOLEH DIPILIH (variasikan setiap kali):
+- Transfer pricing / hubungan istimewa
+- Restrukturisasi / merger / akuisisi
+- BUT (Bentuk Usaha Tetap)
+- Pengusaha e-commerce / PMSE
+- Perusahaan properti (PPJB, KPR, BPHTB)
+- Industri pertambangan (royalti, IUP)
+- Perusahaan pelayaran / penerbangan
+- Kelompok usaha dengan transaksi afiliasi
+
+FORMAT OUTPUT (JSON siap pakai):
+[
+  {
+    "id": [Mulai dari ${startId}],
+    "kategori": "[KATEGORI]",
+    "skenario": "[STUDI KASUS X — Soal Y] [isi skenario]",
+    "soal": "[STUDI KASUS X — Soal Y] [pertanyaan]",
+    "opsi": ["A...", "B...", "C...", "D..."],
+    "jawaban": [0-3],
+    "pembahasan": "[penjelasan lengkap perhitungan]",
+    "dasar": "[pasal dan regulasi]"
+  }
+]
+
+PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block seperti \`\`\`json ... \`\`\`. Langsung mulai dengan [ dan akhiri dengan ].
+`;
+  }
+
+  console.log(`Akan generate soal untuk ${targetSesi} di file ${targetFile}...`);
 
   // Panggil API Gemini
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
@@ -135,15 +179,10 @@ PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markd
     const jsonStr = text.replace(/^```json/, '').replace(/```$/, '').trim();
     const newSoal = JSON.parse(jsonStr);
     
-    // Assign ID baru (berdasarkan ID di sesi tersebut)
-    let startId = 1;
-    const sessionSoal = currentData[targetSesi] || [];
-    if (sessionSoal.length > 0) {
-      startId = Math.max(...sessionSoal.map(s => s.id || 0)) + 1;
-    }
-
+    // Kita tetap assign ID di sini untuk memastikan konsistensi jika AI salah paham
+    let currentId = startId;
     newSoal.forEach(s => {
-      s.id = startId++;
+      s.id = currentId++;
       if (!currentData[targetSesi]) currentData[targetSesi] = [];
       currentData[targetSesi].push(s);
     });
