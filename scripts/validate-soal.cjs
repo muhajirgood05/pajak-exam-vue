@@ -1,6 +1,32 @@
 const fs = require('fs');
 const path = require('path');
 
+// Retry helper with exponential backoff
+async function fetchWithRetry(url, options, maxRetries = 5) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(url, options);
+      
+      // Jika rate limited (429) atau server error (5xx), retry
+      if (response.status === 429 || response.status >= 500) {
+        const waitTime = Math.min(2000 * Math.pow(2, attempt - 1), 60000); // max 60s
+        console.log(`Attempt ${attempt}/${maxRetries} failed with status ${response.status}. Retrying in ${waitTime / 1000}s...`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+        continue;
+      }
+      
+      return response;
+    } catch (err) {
+      // Network error, timeout, dll
+      if (attempt === maxRetries) throw err;
+      const waitTime = Math.min(2000 * Math.pow(2, attempt - 1), 60000);
+      console.log(`Attempt ${attempt}/${maxRetries} network error: ${err.message}. Retrying in ${waitTime / 1000}s...`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+  }
+  throw new Error(`All ${maxRetries} attempts failed.`);
+}
+
 async function validateAndCorrect() {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -84,11 +110,15 @@ Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block
 `;
 
       try {
-        const response = await fetch(url, {
+        const response = await fetchWithRetry(url, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            contents: [{ parts: [{ text: fullPrompt }] }]
+            contents: [{ parts: [{ text: fullPrompt }] }],
+            generationConfig: {
+              temperature: 0.3,
+              maxOutputTokens: 8192
+            }
           })
         });
 
@@ -140,11 +170,12 @@ Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block
 
       } catch (e) {
         console.error('Gagal memproses batch atau parse hasil review:', e.message);
-        if (resData && resData.candidates && resData.candidates[0].content && resData.candidates[0].content.parts) {
-          console.error('Raw Response was:', resData.candidates[0].content.parts[0].text);
-        } else {
-          console.error('Raw Data was:', JSON.stringify(resData, null, 2));
-        }
+      }
+
+      // Delay antar batch untuk menghindari rate limit
+      if (i + batchSize < allSoal.length) {
+        console.log('Menunggu 5 detik sebelum batch berikutnya...');
+        await new Promise(resolve => setTimeout(resolve, 5000));
       }
     }
 

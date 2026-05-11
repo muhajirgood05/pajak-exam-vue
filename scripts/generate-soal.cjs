@@ -1,6 +1,32 @@
 const fs = require('fs');
 const path = require('path');
 
+// Retry helper with exponential backoff
+async function fetchWithRetry(url, options, maxRetries = 5) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(url, options);
+      
+      // Jika rate limited (429) atau server error (5xx), retry
+      if (response.status === 429 || response.status >= 500) {
+        const waitTime = Math.min(2000 * Math.pow(2, attempt - 1), 60000); // max 60s
+        console.log(`Attempt ${attempt}/${maxRetries} failed with status ${response.status}. Retrying in ${waitTime / 1000}s...`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+        continue;
+      }
+      
+      return response;
+    } catch (err) {
+      // Network error, timeout, dll
+      if (attempt === maxRetries) throw err;
+      const waitTime = Math.min(2000 * Math.pow(2, attempt - 1), 60000);
+      console.log(`Attempt ${attempt}/${maxRetries} network error: ${err.message}. Retrying in ${waitTime / 1000}s...`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+  }
+  throw new Error(`All ${maxRetries} attempts failed.`);
+}
+
 async function generateSoal() {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -192,14 +218,18 @@ PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markd
 
   console.log(`Akan generate soal untuk ${targetSesi} di file ${targetFile}...`);
 
-  // Panggil API Gemini
+  // Panggil API Gemini dengan retry
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
   
-  const response = await fetch(url, {
+  const response = await fetchWithRetry(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      contents: [{ parts: [{ text: fullPrompt }] }]
+      contents: [{ parts: [{ text: fullPrompt }] }],
+      generationConfig: {
+        temperature: 0.7,
+        maxOutputTokens: 8192
+      }
     })
   });
 
