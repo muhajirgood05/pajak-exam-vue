@@ -169,16 +169,16 @@
       "id": 12,
       "kategori": "pph-potput",
       "skenario": "Bapak Arman (belum menikah, tidak ada tanggungan) adalah karyawan di PT Maju Mundur dengan gaji bulanan Rp 15.000.000. Selain itu, pada bulan Juni 2024, Bapak Arman menerima fasilitas perumahan dari kantor senilai Rp 2.000.000 per bulan yang disediakan di lokasi kerja (bukan di daerah terpencil).",
-      "soal": "Berapakah PPh Pasal 21 yang dipotong PT Maju Mundur dari penghasilan Bapak Arman untuk bulan Juni 2024?",
+      "soal": "Apakah fasilitas perumahan sebesar Rp 2.000.000 tersebut merupakan objek pemotongan PPh Pasal 21 bagi Bapak Arman?",
       "opsi": [
-        "A. Rp 1.125.000",
-        "B. Rp 1.428.000",
-        "C. Rp 1.550.000",
-        "D. Rp 1.700.000"
+        "A. Ya, merupakan objek PPh 21 karena tidak memenuhi kriteria pengecualian natura dalam PMK 66/2023.",
+        "B. Tidak, dikecualikan dari objek PPh karena merupakan natura yang dinikmati karyawan.",
+        "C. Ya, tetapi dikenakan PPh Final sebesar 10%.",
+        "D. Tidak, karena merupakan natura yang tidak dapat dibiayakan oleh perusahaan."
       ],
-      "jawaban": 1,
-      "pembahasan": "1. Penghasilan berupa fasilitas perumahan (natura) yang tidak termasuk dalam daftar natura/kenikmatan dikecualikan dari objek PPh sebagaimana diatur dalam Pasal 4 ayat (3) huruf d UU PPh jo. Pasal 2 PMK 66/2023. Namun, fasilitas perumahan senilai Rp 2.000.000 per bulan yang diberikan di lokasi kerja (bukan daerah terpencil) tidak memenuhi kriteria pengecualian, sehingga merupakan objek PPh 21.<br>2. Total penghasilan bruto sebulan = Gaji + Natura = Rp 15.000.000 + Rp 2.000.000 = Rp 17.000.000.<br>3. Bapak Arman (TK/0) termasuk dalam kategori A untuk TER PPh 21.<br>4. Berdasarkan Lampiran I Tabel A PMK 168/2023, untuk penghasilan bruto bulanan antara Rp 17.000.000 sampai dengan Rp 17.100.000, Tarif Efektif Rata-rata (TER) kategori A untuk status TK/0 adalah 8,4000%.<br>5. PPh Pasal 21 bulan Juni 2024 = Tarif TER x Penghasilan Bruto = 8,40% x Rp 17.000.000 = Rp 1.428.000.",
-      "dasar": "Pasal 4 ayat (3) huruf d Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) jo. Pasal 2 Peraturan Menteri Keuangan Nomor 66/PMK.03/2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan; Peraturan Menteri Keuangan Nomor 168/PMK.03/2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi."
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK 66/2023, natura berupa fasilitas perumahan yang hak pemanfaatannya dipegang oleh perseorangan (bukan komunal) dan bukan di daerah terpencil, merupakan objek PPh Pasal 21 bagi penerimanya.",
+      "dasar": "PMK 66/2023"
     },
     {
       "id": 13,
@@ -348,32 +348,32 @@
     {
       "id": 24,
       "kategori": "pph-op",
-      "skenario": "Pak Budi adalah karyawan tetap PT Makmur Sejahtera dengan gaji bulanan Rp12.000.000 dan berstatus TK/0. Pada bulan Juli 2024, Pak Budi menerima bonus kinerja sebesar Rp5.000.000.",
-      "soal": "Berapakah PPh Pasal 21 yang dipotong oleh PT Makmur Sejahtera atas penghasilan Pak Budi untuk bulan Juli 2024, dengan asumsi penggunaan Tarif Efektif Rata-rata (TER) Kategori A?",
+      "skenario": "Tuan Candra menerima uang pesangon sebesar Rp 80.000.000 yang dibayarkan sekaligus oleh perusahaan karena pemutusan hubungan kerja.",
+      "soal": "Berapakah PPh Pasal 21 Final yang harus dipotong atas uang pesangon tersebut?",
       "opsi": [
-        "A. Rp720.000",
-        "B. Rp925.000",
-        "C. Rp1.020.000",
-        "D. Rp1.250.000"
+        "A. Rp 0",
+        "B. Rp 1.500.000",
+        "C. Rp 4.000.000",
+        "D. Rp 5.000.000"
       ],
-      "jawaban": 2,
-      "pembahasan": "Sesuai PMK 168/2023 tentang Pedoman Penghitungan Pemotongan Pajak Penghasilan Pasal 21 atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi:\n1.  **Penghitungan PPh Pasal 21 menggunakan Tarif Efektif Rata-rata (TER).**\n2.  **Penghasilan bruto yang menjadi dasar pengenaan TER:**\n    *   Gaji bulanan = Rp12.000.000\n    *   Bonus kinerja = Rp5.000.000\n    *   Total penghasilan bruto bulan Juli = Rp12.000.000 + Rp5.000.000 = Rp17.000.000\n3.  **Penentuan TER:**\n    *   Status Pak Budi adalah TK/0, sehingga termasuk dalam TER Kategori A.\n    *   Berdasarkan Lampiran TER Kategori A PMK 168/2023, untuk rentang penghasilan bruto bulanan antara Rp10.000.000 hingga Rp17.000.000, tarif TER yang berlaku adalah 6%.\n4.  **Perhitungan PPh Pasal 21 bulan Juli:**\n    *   PPh Pasal 21 = Tarif TER x Total penghasilan bruto bulan Juli\n    *   PPh Pasal 21 = 6% x Rp17.000.000 = Rp1.020.000\n\nJadi, PPh Pasal 21 yang dipotong oleh PT Makmur Sejahtera untuk bulan Juli 2024 adalah Rp1.020.000.",
-      "dasar": "UU PPh Pasal 21; PMK 168/2023 Pasal 2, Pasal 3, Pasal 5, dan Lampiran A PMK 168/2023."
+      "jawaban": 1,
+      "pembahasan": "Tarif PPh 21 atas pesangon (PP 68/2009):\n- s.d. Rp 50 juta: 0%\n- > Rp 50 juta s.d. Rp 100 juta: 5%\n\nPenghitungan:\n5% x (Rp 80.000.000 - Rp 50.000.000) = 5% x Rp 30.000.000 = Rp 1.500.000.",
+      "dasar": "PP 68/2009"
     },
     {
       "id": 25,
       "kategori": "ppn",
-      "skenario": "PT Indah Catering menyediakan jasa katering untuk acara pernikahan dengan nilai penggantian sebesar Rp120.000.000. Dalam nilai penggantian tersebut sudah termasuk PPN.",
-      "soal": "Berapakah PPN yang terutang atas transaksi jasa katering tersebut?",
+      "skenario": "PT Kurir Kilat (PKP) menyerahkan jasa pengiriman paket dengan nilai transaksi sebesar Rp 10.000.000 (belum termasuk PPN).",
+      "soal": "Berapakah PPN yang harus dipungut oleh PT Kurir Kilat menggunakan besaran tertentu sesuai PMK 71/2022?",
       "opsi": [
-        "A. Rp1.080.000",
-        "B. Rp1.100.000",
-        "C. Rp1.320.000",
-        "D. Rp1.500.000"
+        "A. Rp 110.000",
+        "B. Rp 220.000",
+        "C. Rp 1.100.000",
+        "D. Rp 1.000.000"
       ],
-      "jawaban": 2,
-      "pembahasan": "Sesuai PMK 71/2022 tentang Dasar Pengenaan Pajak dan Pajak Pertambahan Nilai atas Penyerahan Jasa Kena Pajak Tertentu:\n1.  **Identifikasi Dasar Pengenaan Pajak (DPP) untuk Jasa Katering:**\n    *   Berdasarkan Pasal 3 huruf a PMK 71/2022, Dasar Pengenaan Pajak (DPP) untuk penyerahan Jasa Katering atau Boga adalah 10% dari Nilai Penggantian. Perlu diperhatikan bahwa nilai penggantian sudah termasuk PPN.\n    *   Namun, pada praktiknya, DPP ini adalah 10% dari nilai transaksi total, tanpa perlu mengeliminasi PPN dari nilai penggantian terlebih dahulu, karena rumus DPP 10% sudah memperhitungkan hal tersebut.\n    *   Nilai Penggantian = Rp120.000.000\n    *   DPP = 10% x Rp120.000.000 = Rp12.000.000\n2.  **Tarif PPN:**\n    *   Tarif PPN yang berlaku saat ini adalah 11% (UU PPN Pasal 7 ayat (1)).\n3.  **Perhitungan PPN terutang:**\n    *   PPN terutang = Tarif PPN x DPP\n    *   PPN terutang = 11% x Rp12.000.000 = Rp1.320.000\n\nJadi, PPN yang terutang atas transaksi jasa katering tersebut adalah Rp1.320.000.",
-      "dasar": "UU PPN Pasal 8A; PMK 71/2022 Pasal 2, Pasal 3 huruf a, Pasal 4."
+      "jawaban": 0,
+      "pembahasan": "Sesuai PMK 71/2022, penyerahan jasa pengiriman paket dikenai PPN dengan besaran tertentu yaitu 10% dari tarif umum (11%) dikalikan jumlah yang ditagih. Efektifnya adalah 1,1% x Rp 10.000.000 = Rp 110.000.",
+      "dasar": "PMK 71/2022"
     },
     {
       "id": 26,
