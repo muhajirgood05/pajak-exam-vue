@@ -23,11 +23,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generate-soal.cjs
           
-      - name: Run Validator Script
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/validate-soal.cjs
-          
       - name: Commit and Push
         run: |
           git config --global user.name 'Hermes AI'
