@@ -27,6 +27,22 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/validate-soal.cjs
+        
+      - name: Run Generator Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-soal.cjs
+        timeout-minutes: 10
+        
+      - name: Wait before validation
+        run: sleep 10
+        
+      - name: Run Validator Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/validate-soal.cjs
+        timeout-minutes: 15
+
 
           
       - name: Commit and Push
