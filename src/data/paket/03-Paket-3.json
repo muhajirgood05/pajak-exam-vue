@@ -201,16 +201,16 @@
       "id": 4,
       "kategori": "KUP/Pemeriksaan",
       "skenario": "PT Indojaya Global adalah perusahaan manufaktur komponen elektronik. Berikut ringkasan data keuangan untuk Tahun Pajak 2023 setelah disederhanakan:<ul><li>Laba Komersial Sebelum Pajak: Rp 14.000.000.000</li><li>Koreksi Positif: Transfer Pricing HPP Rp 1.000.000.000; Tunjangan PPh 21 Rp 500.000.000; Entertainment (no nominatif) Rp 300.000.000; Denda PPN Rp 50.000.000; Biaya PPh Rp 100.000.000; Sewa Gedung (porsi tahun depan) Rp 600.000.000; Sumbangan Masjid Rp 100.000.000.</li><li>Koreksi Negatif: Bunga Deposito Rp 150.000.000; Dividen (bukan objek) Rp 300.000.000; Keuntungan Tanah Rp 500.000.000; Selisih Penyusutan Rp 250.000.000.</li><li>Data Potput: Sewa Gedung Rp 1.200.000.000; Royalti ke Singapura Rp 600.000.000; Jasa Konsultan TI Rp 800.000.000.</li><li>Data PPN: PPN Keluaran dilaporkan Rp 7.000.000.000 (termasuk PPN ekspor 11% dari omzet ekspor Rp 20M yang salah hitung); PPN Masukan dilaporkan Rp 5.500.000.000 (termasuk Faktur Pajak sedan Rp 200.000.000).</li><li>Data KUP: Terlambat lapor SPT Masa PPN Agustus; SKPKB PPh Badan 2022 kurang bayar Rp 500.000.000.</li><li>Biaya R&D: Rp 700.000.000 (memenuhi PMK 153/2020).</li></ul>",
-      "soal": "Berapakah total sanksi administrasi yang harus dibayar oleh PT Indojaya Global terkait dengan informasi KUP di atas?",
+      "soal": "Asumsikan pemeriksa pajak menerbitkan SKPKB pada bulan Oktober 2024 atas kekurangan PPh Badan 2022 sebesar Rp 500.000.000 yang jatuh tempo di Desember 2023. Jika tarif bunga sanksi administrasi adalah 0,7% per bulan dan denda keterlambatan SPT Masa PPN adalah Rp 500.000, berapakah total sanksi administrasi yang harus dibayar?",
       "opsi": [
         "Rp 500.000",
-        "Rp 150.000.000",
-        "Rp 150.500.000",
-        "Rp 200.500.000"
+        "Rp 35.000.000",
+        "Rp 35.500.000",
+        "Rp 150.500.000"
       ],
       "jawaban": 2,
-      "pembahasan": "Untuk menghitung total sanksi administrasi, kita perlu mengidentifikasi sanksi dari setiap kejadian yang disebutkan dalam data KUP:\n\n1.  **Sanksi Keterlambatan Pelaporan SPT Masa PPN Agustus 2023:**\n    *   Batas waktu pelaporan: 30 September 2023.\n    *   Tanggal lapor: 15 Oktober 2023.\n    *   Sanksi administrasi berupa denda karena tidak atau terlambat menyampaikan SPT Masa adalah Rp 500.000 (Pasal 7 ayat (1) huruf a Undang-Undang KUP).\n\n2.  **Sanksi atas SKPKB PPh Badan Tahun Pajak 2022:**\n    *   DJP menerbitkan SKPKB atas kekurangan pembayaran pajak sebesar Rp 500.000.000.\n    *   SKPKB ini diterbitkan atas dasar pemeriksaan.\n    *   Sanksi administrasi atas SKPKB karena hasil pemeriksaan adalah 30% dari jumlah kekurangan pajak (Pasal 13 ayat (2) Undang-Undang KUP).\n    *   Sanksi: 30% x Rp 500.000.000 = Rp 150.000.000.\n\n**Total Sanksi Administrasi yang Harus Dibayar:**\nRp 500.000 (denda SPT Masa PPN) + Rp 150.000.000 (sanksi SKPKB PPh Badan) = **Rp 150.500.000**",
-      "dasar": "UU Nomor 6 Tahun 1983 s.t.d.t.d. UU Nomor 7 Tahun 2021 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) Pasal 7 ayat (1) huruf a dan Pasal 13 ayat (2)."
+      "pembahasan": "1. Denda keterlambatan SPT Masa PPN = Rp 500.000.\n2. Sanksi bunga SKPKB = 10 bulan (Januari - Oktober 2024) x 0,7% x Rp 500.000.000 = Rp 35.000.000.\nTotal Sanksi = Rp 500.000 + Rp 35.000.000 = Rp 35.500.000. (Aturan 30% adalah aturan lama sebelum UU HPP).",
+      "dasar": "UU KUP Pasal 7 dan Pasal 13 ayat (2) sttd UU HPP."
     },
     {
       "id": 5,
