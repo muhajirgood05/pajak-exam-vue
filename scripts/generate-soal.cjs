@@ -85,6 +85,24 @@ Syarat:
 - 4 pilihan jawaban, distractor plausible (masuk akal)
 - Pembahasan dengan perhitungan step-by-step
 - Dasar hukum spesifik (termasuk aturan terbaru UU HPP)
+- MATERI SOAL WAJIB MERUJUK PADA SALAH SATU ATAU BEBERAPA PERATURAN BERIKUT (Gunakan sebagai dasar hukum):
+  * UU (KUP, PPh, PPN, PBB, BM)
+  * PP 50/2022 (Hak & Kewajiban)
+  * PP 9/2022 (Jasa Konstruksi)
+  * PP 44/2022 (KSO)
+  * PMK 41/2020 (Impor Alat Tertentu)
+  * PMK 60/2022 (PMSE)
+  * PMK 71/2022 (JKP Tertentu)
+  * PMK 131/2024 (PPN Impor)
+  * PMK 11/2025 (Nilai Lain)
+  * PMK 141/2015 (Jasa Lain PPh 23)
+  * PMK 191/2015 (Revaluasi)
+  * PMK 192/2018 (PPh LN)
+  * PMK 66/2023 (Natura)
+  * PMK 168/2023 (TER)
+  * PMK 79/2024 (KSO)
+  * PMK 15/2025 (Pemeriksaan)
+  * PMK 112/2025 (P3B)
 - Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
 
 Format JSON (langsung berupa array objek):
@@ -124,6 +142,24 @@ KETENTUAN:
 - Pilihan pengecoh (distractors) harus masuk akal secara hukum, bukan asal salah
 - Angka-angka harus konsisten antar soal. Angka perhitungan harus dibuat simpel dan tidak menghasilkan angka keriting (hindari pembagian yang menghasilkan desimal panjang).
 - Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
+- MATERI SOAL WAJIB MERUJUK PADA SALAH SATU ATAU BEBERAPA PERATURAN BERIKUT (Gunakan sebagai dasar hukum):
+  * UU (KUP, PPh, PPN, PBB, BM)
+  * PP 50/2022 (Hak & Kewajiban)
+  * PP 9/2022 (Jasa Konstruksi)
+  * PP 44/2022 (KSO)
+  * PMK 41/2020 (Impor Alat Tertentu)
+  * PMK 60/2022 (PMSE)
+  * PMK 71/2022 (JKP Tertentu)
+  * PMK 131/2024 (PPN Impor)
+  * PMK 11/2025 (Nilai Lain)
+  * PMK 141/2015 (Jasa Lain PPh 23)
+  * PMK 191/2015 (Revaluasi)
+  * PMK 192/2018 (PPh LN)
+  * PMK 66/2023 (Natura)
+  * PMK 168/2023 (TER)
+  * PMK 79/2024 (KSO)
+  * PMK 15/2025 (Pemeriksaan)
+  * PMK 112/2025 (P3B)
 - Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
 
 TOPIK YANG BOLEH DIPILIH (variasikan setiap kali):
