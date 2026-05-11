@@ -16,6 +16,7 @@
       "id": 1
     },
     {
+      "id": 2,
       "kategori": "pph-badan",
       "skenario": "Dalam pemeriksaan PT Delta Karya, pemeriksa menemukan aset berupa mesin produksi dengan harga perolehan Rp 6 miliar diperoleh tanggal 1 Juli 2021. Perusahaan menggunakan metode garis lurus kelompok II (tarif 12,5%/tahun). Pada 1 Maret 2024, mesin dijual seharga Rp 3,8 miliar.",
       "soal": "Berapa keuntungan atau kerugian penjualan aset yang harus diakui PT Delta Karya dalam perhitungan PPh tahun pajak 2024 sesuai UU PPh?",
@@ -23,27 +24,26 @@
         "Keuntungan Rp 1.475.000.000",
         "Kerugian Rp 575.000.000",
         "Keuntungan Rp 950.000.000",
-        "Keuntungan Rp 1.175.000.000"
+        "Kerugian Rp 200.000.000"
       ],
-      "jawaban": 0,
-      "pembahasan": "Penyusutan kelompok II garis lurus 12,5%/tahun. Total masa pakai saat jual = Juli 2021 – Maret 2024 = 2 tahun 8 bulan = 2,667 tahun. Akumulasi penyusutan = 6.000 × 12,5% × 2,667 = 2.000 juta. Nilai buku = 6.000 – 2.000 = 4.000 juta. Koreksi: karena dijual di tengah tahun (Mar 2024), sisa penyusutan Jan-Feb 2024 = 6.000 × 12,5% × 2/12 = 125 juta. Nilai buku saat jual = 4.000 – 125 = 3.875 juta. Diperbaiki: nilai buku pada saat penjualan = Rp 2.325 juta. Keuntungan = 3.800 – 2.325 = Rp 1.475 juta.",
-      "dasar": "Pasal 11 UU PPh; PMK-96/PMK.03/2009",
-      "id": 2
+      "jawaban": 3,
+      "pembahasan": "Harga Perolehan Mesin: Rp 6.000.000.000\nTarif Penyusutan Kelompok II (Garis Lurus): 12,5% per tahun\nTanggal Perolehan: 1 Juli 2021\nTanggal Penjualan: 1 Maret 2024\n\n**Perhitungan Penyusutan Fiskal:**\n*   Tahun 2021 (Juli-Des, 6 bulan): Rp 6.000.000.000 × 12,5% × (6/12) = Rp 375.000.000\n*   Tahun 2022 (Jan-Des, 12 bulan): Rp 6.000.000.000 × 12,5% × (12/12) = Rp 750.000.000\n*   Tahun 2023 (Jan-Des, 12 bulan): Rp 6.000.000.000 × 12,5% × (12/12) = Rp 750.000.000\n*   Tahun 2024 (Jan-Feb, 2 bulan, karena dijual 1 Maret): Rp 6.000.000.000 × 12,5% × (2/12) = Rp 125.000.000\n\n**Total Akumulasi Penyusutan (sampai 28 Februari 2024):**\nRp 375.000.000 + Rp 750.000.000 + Rp 750.000.000 + Rp 125.000.000 = Rp 2.000.000.000\n\n**Nilai Buku Fiskal (pada 1 Maret 2024):**\nHarga Perolehan - Akumulasi Penyusutan = Rp 6.000.000.000 - Rp 2.000.000.000 = Rp 4.000.000.000\n\n**Harga Penjualan Aset:** Rp 3.800.000.000\n\n**Keuntungan / Kerugian Penjualan Aset:**\nHarga Penjualan - Nilai Buku Fiskal = Rp 3.800.000.000 - Rp 4.000.000.000 = **(Rp 200.000.000)**\n\nJadi, PT Delta Karya mengakui **kerugian sebesar Rp 200.000.000**.",
+      "dasar": "Pasal 11 UU PPh; PMK-96/PMK.03/2009"
     },
     {
+      "id": 3,
       "kategori": "pph-badan",
       "skenario": "PT Andalan Grup memiliki penyertaan saham di 3 entitas: (A) PT Anak Usaha (kepemilikan 80%, NPWP terdaftar), (B) ABC Ltd di Singapura (kepemilikan 40%), (C) PT Mitra Strategis (kepemilikan 20%). Pada tahun 2023, PT Andalan menerima dividen dari ketiga entitas masing-masing Rp 2 miliar, Rp 1,5 miliar, dan Rp 500 juta. Dividen dari ABC Ltd berasal dari laba setelah pajak (CIT Singapore 17%). PT Andalan tidak memiliki BUT di Singapura.",
       "soal": "Berapa total dividen yang merupakan objek PPh bagi PT Andalan Grup tahun 2023 berdasarkan UU PPh sebagaimana diubah UU HPP?",
       "opsi": [
         "Rp 500.000.000 (hanya dari PT Mitra Strategis)",
-        "Rp 2.000.000.000 (hanya dari PT Mitra Strategis)",
+        "Rp 2.000.000.000 (dari ABC Ltd dan PT Mitra Strategis)",
         "Rp 4.000.000.000 (dari ABC Ltd dan PT Mitra Strategis)",
         "Rp 0 karena seluruh dividen dikecualikan"
       ],
-      "jawaban": 0,
-      "pembahasan": "UU HPP memperluas pengecualian dividen: (A) Dividen dari anak usaha dalam negeri (kepemilikan ≥25%) → dikecualikan. (B) Dividen dari ABC Ltd luar negeri (kepemilikan ≥25%) → dikecualikan JIKA diinvestasikan kembali di Indonesia dalam 3 tahun; jika tidak, tetap dikecualikan dengan tarif Pasal 26 15% atau P3B. Berdasarkan Pasal 4 ayat (3) UU HPP, dividen LN dikecualikan selama diinvestasikan. (C) Dividen dari PT Mitra Strategis (kepemilikan 20% < 25%) → TETAP objek PPh. Total objek = Rp 500 juta.",
-      "dasar": "Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP; PMK-18/PMK.03/2021",
-      "id": 3
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP dan PMK-18/PMK.03/2021:\n*   (A) Dividen dari PT Anak Usaha (dalam negeri, kepemilikan 80% ≥ 25%): Dikecualikan dari objek PPh. (Rp 0 objek)\n*   (B) Dividen dari ABC Ltd di Singapura (luar negeri, kepemilikan 40% ≥ 25%): Termasuk objek PPh. Pengecualian dividen luar negeri hanya berlaku JIKA diinvestasikan kembali di wilayah NKRI. Karena skenario tidak menyebutkan adanya investasi, maka dividen ini merupakan objek PPh. (Rp 1.500.000.000 objek)\n*   (C) Dividen dari PT Mitra Strategis (dalam negeri, kepemilikan 20% < 25%): Termasuk objek PPh. (Rp 500.000.000 objek)\n\nTotal dividen yang merupakan objek PPh bagi PT Andalan Grup tahun 2023 adalah Rp 1.500.000.000 + Rp 500.000.000 = **Rp 2.000.000.000**.",
+      "dasar": "Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP; PMK-18/PMK.03/2021"
     },
     {
       "kategori": "pph-op",
@@ -86,8 +86,8 @@
         "Tidak ada kewajiban potput karena PT KN dan PT Mitra Bangun sama-sama PKP yang melaporkan sendiri"
       ],
       "jawaban": 0,
-      "pembahasan": "Berdasarkan PP 9/2022: jasa konstruksi kualifikasi menengah dikenai PPh Final 2,65%. Bendahara (Pemkot) wajib memotong atas DPP = nilai kontrak tidak termasuk PPN = 50M/1,11 ≈ 45,05M, tarif 2,65%. PT KN sebagai pemotong atas subkon kualifikasi kecil (tarif 1,75%) wajib memotong PPh Final atas nilai Rp 10 miliar (sudah tidak termasuk PPN).",
-      "dasar": "PP 9/2022; PMK-153/PMK.03/2009",
+      "pembahasan": "Berdasarkan PP 9/2022: jasa konstruksi kualifikasi menengah dikenai PPh Final 2,65%. Bendahara (Pemkot) wajib memotong atas DPP = nilai kontrak tidak termasuk PPN = 50M/1,11 ≈ 45,045M, tarif 2,65%. PT KN sebagai pemotong atas subkon kualifikasi kecil (tarif 1,75%) wajib memotong PPh Final atas nilai Rp 10 miliar (sudah tidak termasuk PPN).",
+      "dasar": "PP 9/2022",
       "id": 6
     },
     {
@@ -168,17 +168,17 @@
     {
       "id": 12,
       "kategori": "pph-badan",
-      "skenario": "PT Harapan Kita (PKP) merupakan distributor barang elektronik yang memiliki peredaran bruto tahun 2024 sebesar Rp4.200.000.000. Sepanjang tahun 2024, PT Harapan Kita melakukan transaksi penjualan kepada PT Konsumen Sejahtera sebagai berikut: (1) Penjualan barang konsinyasi yang belum lunas hingga akhir tahun 2024 senilai Rp200.000.000. (2) Penjualan dengan syarat pembayaran 45 hari, dilakukan pada bulan November 2024 senilai Rp150.000.000 (dilunasi Januari 2025). (3) Penyerahan barang dengan uang muka yang belum dikirimkan hingga akhir tahun 2024 senilai Rp50.000.000.",
+      "skenario": "PT Harapan Kita (PKP) merupakan distributor barang elektronik yang memiliki peredaran bruto tahun 2024 sebesar Rp4.200.000.000. Sepanjang tahun 2024, PT Harapan Kita melakukan transaksi penjualan kepada PT Konsumen Sejahtera sebagai berikut: (1) Barang konsinyasi yang belum laku terjual hingga akhir tahun 2024 senilai Rp200.000.000. (2) Penjualan dengan syarat pembayaran 45 hari, dengan penyerahan barang pada bulan November 2024 senilai Rp150.000.000 (pelunasan dilakukan Januari 2025). (3) Penerimaan uang muka atas penyerahan barang yang akan dilakukan di tahun 2025, sebesar Rp50.000.000 pada bulan Desember 2024.",
       "soal": "Berdasarkan ketentuan PPN yang berlaku, kapan PT Harapan Kita harus menerbitkan Faktur Pajak atas transaksi-transaksi tersebut?",
       "opsi": [
         "Atas seluruh transaksi pada akhir tahun 2024",
         "Atas seluruh transaksi saat barang diserahkan",
         "Atas transaksi (1) dan (3) pada akhir tahun 2024, sedangkan transaksi (2) pada saat pelunasan",
-        "Atas transaksi (2) dan (3) pada akhir tahun 2024, sedangkan transaksi (1) saat lunas"
+        "Atas transaksi (2) dan (3) pada tahun 2024, sedangkan transaksi (1) saat barang laku terjual"
       ],
-      "jawaban": 2,
-      "pembahasan": "Transaksi (1) berupa konsinyasi, Faktur Pajak dibuat saat barang laku/terjual. Transaksi (2) berupa penjualan biasa dengan termin, Faktur Pajak dibuat saat penyerahan barang (meskipun pelunasan di masa berbeda). Transaksi (3) berupa penyerahan uang muka (DP), Faktur Pajak harus dibuat saat penerimaan pembayaran/DP. Oleh karena itu, Faktur Pajak atas transaksi (1) dan (3) dibuat pada akhir tahun 2024, sedangkan transaksi (2) dibuat saat penyerahan barang.",
-      "dasar": "Pasal 11 ayat (1) huruf b dan (2) huruf d PER-03/PJ/2022"
+      "jawaban": 3,
+      "pembahasan": "Transaksi (1) berupa penyerahan BKP secara konsinyasi, Faktur Pajak dibuat pada saat BKP tersebut laku terjual oleh pedagang perantara (Pasal 4 ayat (1) huruf b PER-03/PJ/2022). Jika hingga akhir 2024 belum laku terjual, Faktur Pajak belum diterbitkan. Transaksi (2) berupa penjualan dengan penyerahan barang pada November 2024, Faktur Pajak dibuat pada saat penyerahan BKP (November 2024) meskipun pembayaran dilakukan di tahun berikutnya (Pasal 3 ayat (2) huruf a PER-03/PJ/2022). Transaksi (3) berupa penerimaan uang muka pada Desember 2024, Faktur Pajak wajib dibuat pada saat pembayaran diterima (Desember 2024) (Pasal 3 ayat (2) huruf b PER-03/PJ/2022). Oleh karena itu, Faktur Pajak atas transaksi (2) dan (3) wajib diterbitkan pada tahun 2024, sedangkan transaksi (1) saat barang laku terjual.",
+      "dasar": "Pasal 3 dan Pasal 4 PER-03/PJ/2022"
     },
     {
       "id": 13,
@@ -198,22 +198,22 @@
     {
       "id": 14,
       "kategori": "ppn",
-      "skenario": "PT Global Teknik (PKP) pada bulan Maret 2025 menerima jasa maintenance mesin dari PT TechSupport (non-PKP), dengan total tagihan sebesar Rp55.000.000. Penyerahan Jasa Kena Pajak (JKP) ini telah selesai pada bulan Maret 2025, dan pembayaran akan dilakukan pada bulan April 2025. PT Global Teknik merupakan pengguna jasa non-PKP yang melakukan impor BKP/JKP.",
-      "soal": "Kapan batas waktu paling lambat bagi PT Global Teknik untuk menerbitkan Faktur Pajak atas impor JKP tersebut?",
+      "skenario": "PT Global Teknik (bukan PKP) pada bulan Maret 2025 menerima jasa maintenance mesin dari PT TechSupport yang berkedudukan di luar Daerah Pabean, dengan total tagihan sebesar Rp55.000.000. Pemanfaatan Jasa Kena Pajak (JKP) ini telah selesai pada bulan Maret 2025, dan pembayaran akan dilakukan pada bulan April 2025.",
+      "soal": "Kapan batas waktu paling lambat bagi PT Global Teknik untuk menyetor PPN atas pemanfaatan JKP dari luar daerah pabean tersebut?",
       "opsi": [
-        "10 April 2025",
+        "15 April 2025",
         "31 Maret 2025",
         "15 Maret 2025",
         "30 April 2025"
       ],
-      "jawaban": 1,
-      "pembahasan": "Sesuai PER-03/PJ/2022, untuk impor Jasa Kena Pajak oleh non-PKP (seperti PT Global Teknik), Faktur Pajak harus diterbitkan paling lambat pada akhir bulan berikutnya setelah bulan penyerahan JKP. Karena penyerahan jasa dilakukan pada Maret 2025, maka batas waktu penerbitan Faktur Pajak adalah 31 Maret 2025. Aturan 'Paling lambat akhir bulan berikutnya' berlaku untuk semua jenis impor JKP oleh non-PKP.",
-      "dasar": "Pasal 26 ayat (3) huruf b PER-03/PJ/2022"
+      "jawaban": 0,
+      "pembahasan": "Sesuai PMK-109/PMK.03/2021 tentang Tata Cara Pemanfaatan JKP dan BKP Tidak Berwujud dari Luar Daerah Pabean, saat terutang PPN atas pemanfaatan JKP dari luar daerah pabean adalah saat JKP tersebut dimanfaatkan. Dalam kasus ini, JKP selesai dimanfaatkan pada Maret 2025. Batas waktu penyetoran PPN terutang adalah paling lambat tanggal 15 bulan berikutnya setelah saat terutangnya PPN. Karena saat terutang PPN adalah Maret 2025, maka batas waktu penyetorannya adalah 15 April 2025.",
+      "dasar": "Pasal 2 dan Pasal 3 PMK-109/PMK.03/2021"
     },
     {
       "id": 15,
       "kategori": "ppn",
-      "skenario": "PT Media Digital (PKP) bergerak dalam bidang penyediaan konten digital melalui platform online. Pada bulan Mei 2025, PT Media Digital melakukan transaksi penjualan konten digital kepada pelanggan perorangan yang berada di Indonesia. Total nilai transaksi dengan pelanggan tersebut dalam bulan Mei 2025 adalah Rp15.000.000. Meskipun PT Media Digital bukan PKP, ia telah ditunjuk oleh DJP sebagai Pemungut PPN PMSE (Perdagangan Melalui Sistem Elektronik).",
+      "skenario": "PT Media Digital adalah penyedia konten digital melalui platform online. Meskipun perusahaan ini bukan Pengusaha Kena Pajak (PKP), ia telah ditunjuk oleh Direktur Jenderal Pajak sebagai Pemungut PPN Perdagangan Melalui Sistem Elektronik (PMSE). Pada bulan Mei 2025, PT Media Digital melakukan transaksi penjualan konten digital kepada pelanggan perorangan yang berada di Indonesia. Total nilai transaksi dengan pelanggan tersebut dalam bulan Mei 2025 adalah Rp15.000.000.",
       "soal": "Kapan paling lambat PT Media Digital wajib melaporkan pemungutan PPN atas transaksi penjualan konten digital tersebut dalam Surat Pemberitahuan (SPT) Masa PPN?",
       "opsi": [
         "Paling lambat akhir bulan berikutnya (30 Juni 2025)",
@@ -222,8 +222,8 @@
         "Paling lambat akhir bulan kedua setelah bulan penyerahan (31 Juli 2025)"
       ],
       "jawaban": 0,
-      "pembahasan": "Sesuai PMK-60/PMK.03/2022, Pemungut PPN PMSE wajib melaporkan pemungutan PPN PMSE dalam SPT Masa PPN paling lambat pada akhir bulan berikutnya setelah masa pajak berakhir. Dalam kasus ini, transaksi terjadi pada Mei 2025, sehingga batas waktu pelaporannya adalah akhir bulan berikutnya, yaitu 30 Juni 2025.",
-      "dasar": "PMK-60/PMK.03/2022"
+      "pembahasan": "Sesuai Pasal 10 ayat (2) PMK-60/PMK.03/2022, Pemungut PPN PMSE wajib melaporkan PPN yang dipungut dalam Surat Pemberitahuan Masa PPN paling lambat pada akhir bulan berikutnya setelah Masa Pajak berakhir. Dalam kasus ini, transaksi terjadi pada Mei 2025 (Masa Pajak Mei 2025), sehingga batas waktu pelaporannya adalah akhir bulan berikutnya, yaitu 30 Juni 2025.",
+      "dasar": "Pasal 10 ayat (2) PMK-60/PMK.03/2022"
     },
     {
       "id": 16,
@@ -273,7 +273,7 @@
     {
       "id": 19,
       "kategori": "ppn",
-      "skenario": "PT Sinar Abadi (PKP) pada bulan Mei 2025 melakukan penyerahan jasa konsultan kepada PT Mandiri Investama. Berdasarkan kesepakatan, PT Sinar Abadi wajib menerbitkan Faktur Pajak atas penyerahan jasa tersebut selambat-lambatnya pada tanggal 10 Juni 2025, meskipun pembayaran baru akan dilakukan pada tanggal 20 Juni 2025.",
+      "skenario": "PT Sinar Abadi (PKP) pada bulan Mei 2025 melakukan penyerahan jasa konsultan kepada PT Mandiri Investama. Pembayaran atas jasa tersebut baru akan dilakukan pada tanggal 20 Juni 2025. Dalam internal PT Sinar Abadi disepakati untuk menerbitkan Faktur Pajak atas penyerahan jasa tersebut selambat-lambatnya pada tanggal 10 Juni 2025.",
       "soal": "Dalam hal ini, Faktur Pajak atas penyerahan jasa konsultan tersebut paling lambat harus diterbitkan tanggal berapa?",
       "opsi": [
         "10 Juni 2025",
@@ -281,9 +281,9 @@
         "20 Juni 2025",
         "1 Juni 2025"
       ],
-      "jawaban": 0,
-      "pembahasan": "Sesuai PER-03/PJ/2022, Faktur Pajak harus dibuat paling lambat pada akhir bulan berikutnya setelah bulan terutang. Meskipun dalam soal ditentukan batas waktu yang lebih awal (10 Juni 2025), batas waktu tersebut tetap mengacu pada akhir bulan berikutnya setelah bulan penyerahan JKP, yaitu Mei 2025.",
-      "dasar": "Pasal 11 ayat (1) huruf b PER-03/PJ/2022"
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 11 ayat (1) Undang-Undang PPN jo. Pasal 4 ayat (1) huruf a PER-03/PJ/2022, Faktur Pajak wajib dibuat paling lambat pada saat penyerahan Jasa Kena Pajak. Dalam skenario ini, penyerahan jasa konsultan dilakukan pada bulan Mei 2025. Meskipun pembayaran baru akan dilakukan pada tanggal 20 Juni 2025, dan ada kesepakatan internal untuk menerbitkan FP pada 10 Juni 2025, batas waktu penerbitan Faktur Pajak yang diatur undang-undang adalah pada saat penyerahan JKP, yaitu paling lambat 31 Mei 2025. Kesepakatan internal atau antara PKP tidak dapat mengesampingkan batas waktu yang diatur dalam peraturan perpajakan.",
+      "dasar": "Pasal 11 ayat (1) Undang-Undang PPN; Pasal 4 ayat (1) huruf a PER-03/PJ/2022"
     },
     {
       "id": 20,
@@ -294,11 +294,11 @@
         "15 Februari 2025",
         "31 Januari 2025",
         "28 Februari 2025",
-        "15 Januari 2025"
+        "5 Januari 2025"
       ],
-      "jawaban": 1,
-      "pembahasan": "Sesuai PER-03/PJ/2022, Faktur Pajak harus diterbitkan paling lambat pada saat penerimaan pembayaran, jika pembayaran diterima sebelum penyerahan BKP/JKP. Dalam kasus ini, uang muka diterima tanggal 5 Januari 2025, dan pembayaran dianggap diterima pada saat diterima (prinsip accrual tidak mengubah batas waktu FP untuk uang muka yang diterima). Oleh karena itu, FP wajib diterbitkan paling lambat tanggal 31 Januari 2025.",
-      "dasar": "Pasal 11 ayat (1) huruf c PER-03/PJ/2022"
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan Pasal 11 ayat (1) Undang-Undang PPN jo. Pasal 4 ayat (1) huruf b PER-03/PJ/2022, Faktur Pajak wajib dibuat pada saat penerimaan pembayaran dalam hal pembayaran diterima sebelum penyerahan Barang Kena Pajak. Dalam kasus ini, uang muka diterima pada tanggal 5 Januari 2025. Oleh karena itu, Faktur Pajak wajib diterbitkan paling lambat pada tanggal 5 Januari 2025. Prinsip akuntansi (cash basis atau accrual basis) tidak mengubah batas waktu penerbitan Faktur Pajak ini.",
+      "dasar": "Pasal 11 ayat (1) Undang-Undang PPN; Pasal 4 ayat (1) huruf b PER-03/PJ/2022"
     },
     {
       "id": 21,
