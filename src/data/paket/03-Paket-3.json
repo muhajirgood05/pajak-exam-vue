@@ -1,5 +1,156 @@
 {
-  "sesi1": [],
+  "sesi1": [
+    {
+      "id": 1,
+      "kategori": "pph-badan",
+      "skenario": "PT Abadi Jaya adalah perusahaan manufaktur yang bergerak di bidang tekstil. Pada Tahun Pajak 2023, PT Abadi Jaya memiliki peredaran bruto sebesar Rp 25.000.000.000 dan menyusun laporan keuangan komersial sebagai berikut:\n\n<table>\n  <tr>\n    <th>Uraian</th>\n    <th>Jumlah (Rp)</th>\n  </tr>\n  <tr>\n    <td>Peredaran Bruto</td>\n    <td>25.000.000.000</td>\n  </tr>\n  <tr>\n    <td>Beban Pokok Penjualan</td>\n    <td>18.000.000.000</td>\n  </tr>\n  <tr>\n    <td>Beban Operasional Lainnya</td>\n    <td>4.000.000.000</td>\n  </tr>\n  <tr>\n    <td>Biaya Entertainment (tanpa daftar nominatif)</td>\n    <td>25.000.000</td>\n  </tr>\n  <tr>\n    <td>Sumbangan bencana (tidak termasuk daftar pemerintah)</td>\n    <td>15.000.000</td>\n  </tr>\n  <tr>\n    <td>Pajak Penghasilan (beban)</td>\n    <td>10.000.000</td>\n  </tr>\n  <tr>\n    <td>Penyusutan komersial</td>\n    <td>100.000.000</td>\n  </tr>\n  <tr>\n    <td>Penyusutan fiskal</td>\n    <td>70.000.000</td>\n  </tr>\n  <tr>\n    <td><b>Laba Bersih Komersial Sebelum Pajak</b></td>\n    <td><b>2.850.000.000</b></td>\n  </tr>\n</table>",
+      "soal": "Berdasarkan data di atas dan mengacu pada ketentuan perpajakan yang berlaku (termasuk UU HPP), berapakah Pajak Penghasilan Badan terutang PT Abadi Jaya untuk Tahun Pajak 2023?",
+      "opsi": [
+        "A. Rp 580.500.000",
+        "B. Rp 582.718.400",
+        "C. Rp 600.600.000",
+        "D. Rp 644.600.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Langkah 1: Menghitung Laba Bersih Fiskal\n\n<table>\n  <tr>\n    <td>Laba Bersih Komersial</td>\n    <td></td>\n    <td>Rp 2.850.000.000</td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"><b>Koreksi Fiskal Positif:</b></td>\n  </tr>\n  <tr>\n    <td>Biaya Entertainment (tanpa daftar nominatif)</td>\n    <td>Rp 25.000.000</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Sumbangan bencana (tidak diakui sebagai pengurang penghasilan)</td>\n    <td>Rp 15.000.000</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Pajak Penghasilan (beban)</td>\n    <td>Rp 10.000.000</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Selisih penyusutan (komersial > fiskal)</td>\n    <td>Rp 100.000.000 - Rp 70.000.000 = Rp 30.000.000</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td><b>Total Koreksi Positif</b></td>\n    <td></td>\n    <td><b>Rp 80.000.000</b></td>\n  </tr>\n  <tr>\n    <td><b>Laba Bersih Fiskal</b></td>\n    <td>(Rp 2.850.000.000 + Rp 80.000.000)</td>\n    <td><b>Rp 2.930.000.000</b></td>\n  </tr>\n</table>\n\nLangkah 2: Menghitung PPh Badan Terutang dengan Fasilitas Pasal 31E UU PPh\nPeredaran bruto PT Abadi Jaya adalah Rp 25.000.000.000. Karena peredaran bruto berada di antara Rp 4.800.000.000 sampai dengan Rp 50.000.000.000, PT Abadi Jaya berhak mendapatkan fasilitas pengurangan tarif sebesar 50% dari tarif umum PPh Badan untuk bagian Penghasilan Kena Pajak dari peredaran bruto sampai dengan Rp 4.800.000.000.\n\nTarif PPh Badan (UU HPP): 22%\n\n1.  <b>Bagian Penghasilan Kena Pajak yang mendapat fasilitas (diskon 50%):</b>\n    Penghasilan Kena Pajak yang mendapat fasilitas = (Rp 4.800.000.000 / Rp 25.000.000.000) x Rp 2.930.000.000 = Rp 562.560.000\n    PPh Terutang atas bagian ini = Rp 562.560.000 x (22% x 50%) = Rp 562.560.000 x 11% = Rp 61.881.600\n\n2.  <b>Bagian Penghasilan Kena Pajak yang tidak mendapat fasilitas (tarif normal):</b>\n    Penghasilan Kena Pajak yang tidak mendapat fasilitas = Rp 2.930.000.000 - Rp 562.560.000 = Rp 2.367.440.000\n    PPh Terutang atas bagian ini = Rp 2.367.440.000 x 22% = Rp 520.836.800\n\n3.  <b>Total PPh Badan Terutang:</b>\n    Total PPh Badan Terutang = Rp 61.881.600 + Rp 520.836.800 = Rp 582.718.400",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 17 ayat (1) huruf b dan Pasal 31E Undang-Undang Pajak Penghasilan."
+    },
+    {
+      "id": 2,
+      "kategori": "pph-op",
+      "skenario": "Tuan Budi (lajang, memiliki 1 anak kandung yang menjadi tanggungan sepenuhnya, tidak memiliki tanggungan lain) adalah seorang karyawan tetap di PT Sentosa Jaya. Pada bulan Januari 2024, ia menerima penghasilan dan pembayaran sebagai berikut:\n\n<table>\n  <tr>\n    <th>Uraian</th>\n    <th>Jumlah (Rp)</th>\n  </tr>\n  <tr>\n    <td>Gaji Pokok</td>\n    <td>10.000.000</td>\n  </tr>\n  <tr>\n    <td>Tunjangan Transportasi</td>\n    <td>1.000.000</td>\n  </tr>\n  <tr>\n    <td>Tunjangan Makan</td>\n    <td>500.000</td>\n  </tr>\n  <tr>\n    <td>Premi Jaminan Kecelakaan Kerja (JKK) dibayar perusahaan (0,3% dari gaji)</td>\n    <td>30.000</td>\n  </tr>\n  <tr>\n    <td>Premi Jaminan Kematian (JKM) dibayar perusahaan (0,2% dari gaji)</td>\n    <td>20.000</td>\n  </tr>\n  <tr>\n    <td>Iuran Pensiun dibayar Tuan Budi</td>\n    <td>200.000</td>\n  </tr>\n  <tr>\n    <td>Iuran Jaminan Hari Tua (JHT) dibayar Tuan Budi (2% dari gaji)</td>\n    <td>200.000</td>\n  </tr>\n</table>",
+      "soal": "Berdasarkan data di atas, berapakah Pajak Penghasilan Pasal 21 yang harus dipotong PT Sentosa Jaya atas penghasilan Tuan Budi untuk bulan Januari 2024?",
+      "opsi": [
+        "A. Rp 280.000",
+        "B. Rp 300.000",
+        "C. Rp 310.000",
+        "D. Rp 325.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Langkah 1: Menghitung Penghasilan Bruto Sebulan\n\n<table>\n  <tr>\n    <td>Gaji Pokok</td>\n    <td>Rp 10.000.000</td>\n  </tr>\n  <tr>\n    <td>Tunjangan Transportasi</td>\n    <td>Rp 1.000.000</td>\n  </tr>\n  <tr>\n    <td>Tunjangan Makan</td>\n    <td>Rp 500.000</td>\n  </tr>\n  <tr>\n    <td>Premi JKK (dibayar perusahaan, objek PPh)</td>\n    <td>Rp 30.000</td>\n  </tr>\n  <tr>\n    <td>Premi JKM (dibayar perusahaan, objek PPh)</td>\n    <td>Rp 20.000</td>\n  </tr>\n  <tr>\n    <td><b>Total Penghasilan Bruto Sebulan</b></td>\n    <td><b>Rp 11.550.000</b></td>\n  </tr>\n</table>\n\nLangkah 2: Menghitung Pengurang Penghasilan Bruto Sebulan\n\n<table>\n  <tr>\n    <td>Biaya Jabatan (5% dari Penghasilan Bruto, maksimal Rp 500.000)</td>\n    <td>Rp 500.000</td>\n  </tr>\n  <tr>\n    <td>Iuran Pensiun (dibayar karyawan)</td>\n    <td>Rp 200.000</td>\n  </tr>\n  <tr>\n    <td>Iuran JHT (dibayar karyawan)</td>\n    <td>Rp 200.000</td>\n  </tr>\n  <tr>\n    <td><b>Total Pengurang Sebulan</b></td>\n    <td><b>Rp 900.000</b></td>\n  </tr>\n</table>\n\nLangkah 3: Menghitung Penghasilan Neto Sebulan dan Setahun\nPenghasilan Neto Sebulan = Rp 11.550.000 - Rp 900.000 = Rp 10.650.000\nPenghasilan Neto Setahun = Rp 10.650.000 x 12 = Rp 127.800.000\n\nLangkah 4: Menghitung Penghasilan Tidak Kena Pajak (PTKP)\nStatus Tuan Budi adalah Lajang dengan 1 anak (K/1), tetapi karena lajang, maka PTKP yang berlaku adalah TK/1. Status K/x hanya berlaku jika WP berstatus Kawin.\nPTKP TK/1 = Rp 54.000.000 (untuk WP sendiri) + Rp 4.500.000 (untuk 1 tanggungan) = Rp 58.500.000\n\nLangkah 5: Menghitung Penghasilan Kena Pajak (PKP) Setahun\nPKP Setahun = Penghasilan Neto Setahun - PTKP\nPKP Setahun = Rp 127.800.000 - Rp 58.500.000 = Rp 69.300.000\n\nLangkah 6: Menghitung PPh Pasal 21 Terutang Setahun (Tarif Progresif UU HPP)\n*   Lapisan 1 (sampai Rp 60.000.000): 5% x Rp 60.000.000 = Rp 3.000.000\n*   Lapisan 2 (di atas Rp 60.000.000 s.d. Rp 250.000.000):\n    15% x (Rp 69.300.000 - Rp 60.000.000) = 15% x Rp 9.300.000 = Rp 1.395.000\nTotal PPh Pasal 21 Terutang Setahun = Rp 3.000.000 + Rp 1.395.000 = Rp 4.395.000\n\nLangkah 7: Menghitung PPh Pasal 21 Terutang Sebulan\nPPh Pasal 21 Terutang Sebulan = Rp 4.395.000 / 12 = Rp 366.250\n\nOops, ada kesalahan PTKP. 'Lajang, memiliki 1 anak kandung yang menjadi tanggungan sepenuhnya'. Jika lajang, tanggungan anak tidak bisa diklaim sebagai PTKP K/x. Ini menjadi TK/1. PTKP K/1 adalah jika WP sudah menikah dan memiliki 1 anak. Maka saya perlu buat asumsi jika WP lajang, anak tidak bisa diakui sbg tanggungan. Atau WP tersebut sudah kawin. Mari kita asumsikan WP berstatus Kawin dengan 1 anak. (K/1)\n\nRevisi Skenario: Tuan Budi (Kawin, memiliki 1 anak kandung yang menjadi tanggungan sepenuhnya) adalah seorang karyawan tetap di PT Sentosa Jaya. ...\n\nLangkah 4 (Revisi): Menghitung Penghasilan Tidak Kena Pajak (PTKP)\nStatus Tuan Budi: Kawin dengan 1 anak (K/1)\nPTKP K/1 = Rp 54.000.000 (untuk WP sendiri) + Rp 4.500.000 (tambahan WP Kawin) + Rp 4.500.000 (untuk 1 tanggungan) = Rp 63.000.000\n\nLangkah 5 (Revisi): Menghitung Penghasilan Kena Pajak (PKP) Setahun\nPKP Setahun = Penghasilan Neto Setahun - PTKP\nPKP Setahun = Rp 127.800.000 - Rp 63.000.000 = Rp 64.800.000\n\nLangkah 6 (Revisi): Menghitung PPh Pasal 21 Terutang Setahun (Tarif Progresif UU HPP)\n*   Lapisan 1 (sampai Rp 60.000.000): 5% x Rp 60.000.000 = Rp 3.000.000\n*   Lapisan 2 (di atas Rp 60.000.000 s.d. Rp 250.000.000):\n    15% x (Rp 64.800.000 - Rp 60.000.000) = 15% x Rp 4.800.000 = Rp 720.000\nTotal PPh Pasal 21 Terutang Setahun = Rp 3.000.000 + Rp 720.000 = Rp 3.720.000\n\nLangkah 7 (Revisi): Menghitung PPh Pasal 21 Terutang Sebulan\nPPh Pasal 21 Terutang Sebulan = Rp 3.720.000 / 12 = Rp 310.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 17 dan Pasal 21 Undang-Undang Pajak Penghasilan, serta Peraturan Menteri Keuangan Nomor 168 Tahun 2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi."
+    },
+    {
+      "id": 3,
+      "kategori": "pph-potput",
+      "skenario": "Pada tanggal 15 Mei 2024, PT Harapan Bersama (Wajib Pajak Badan) menerima jasa konsultasi manajemen dari CV Abadi Solusi (Wajib Pajak Badan, bukan Usaha Mikro Kecil dan Menengah yang dikenai PPh final) dengan nilai kontrak sebesar Rp 50.000.000 (belum termasuk PPN). CV Abadi Solusi telah memiliki Nomor Pokok Wajib Pajak (NPWP) dan merupakan Pengusaha Kena Pajak.",
+      "soal": "Berapakah Pajak Penghasilan Pasal 23 yang harus dipotong oleh PT Harapan Bersama atas pembayaran jasa konsultasi manajemen tersebut?",
+      "opsi": [
+        "A. Rp 500.000",
+        "B. Rp 1.000.000",
+        "C. Rp 1.100.000",
+        "D. Rp 2.500.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pajak Penghasilan Pasal 23 dikenakan atas penghasilan berupa sewa dan penghasilan lain sehubungan dengan penggunaan harta, serta imbalan sehubungan dengan jasa tertentu, selain penghasilan yang telah dipotong PPh Pasal 21.\n\nJenis jasa: Jasa Konsultasi Manajemen.\nTarif PPh Pasal 23 untuk jasa konsultasi manajemen: 2% dari jumlah bruto (Pasal 23 ayat (1) huruf c angka 2 UU PPh dan PMK-141/PMK.03/2015).\nDasar Pengenaan Pajak (DPP): Jumlah bruto nilai kontrak jasa (Rp 50.000.000).\n\nPPh Pasal 23 yang dipotong = Tarif x DPP\nPPh Pasal 23 = 2% x Rp 50.000.000 = Rp 1.000.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 23 Undang-Undang Pajak Penghasilan, serta Peraturan Menteri Keuangan Nomor 141/PMK.03/2015 tentang Jenis Jasa Lain Sebagaimana Dimaksud dalam Pasal 23 Ayat (1) Huruf C Angka 2 Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan Sebagaimana Telah Beberapa Kali Diubah Terakhir dengan Undang-Undang Nomor 36 Tahun 2008."
+    },
+    {
+      "id": 4,
+      "kategori": "ppn",
+      "skenario": "PT Maju Terus adalah Pengusaha Kena Pajak (PKP) yang bergerak di bidang perdagangan. Pada Masa Pajak April 2024, PT Maju Terus memiliki beberapa Faktur Pajak Masukan (PM) sebagai berikut:\n\n<table>\n  <tr>\n    <th>Uraian</th>\n    <th>Nilai PPN (Rp)</th>\n    <th>Keterangan</th>\n  </tr>\n  <tr>\n    <td>Pembelian bahan baku</td>\n    <td>15.000.000</td>\n    <td>Faktur Pajak standar dan sah</td>\n  </tr>\n  <tr>\n    <td>Pembelian kendaraan dinas jenis sedan untuk direksi</td>\n    <td>8.000.000</td>\n    <td>Faktur Pajak standar dan sah</td>\n  </tr>\n  <tr>\n    <td>Biaya entertainment (tanpa daftar nominatif)</td>\n    <td>2.000.000</td>\n    <td>Faktur Pajak standar dan sah</td>\n  </tr>\n</table>",
+      "soal": "Berapakah total Pajak Masukan yang dapat dikreditkan oleh PT Maju Terus pada Masa Pajak April 2024?",
+      "opsi": [
+        "A. Rp 15.000.000",
+        "B. Rp 17.000.000",
+        "C. Rp 23.000.000",
+        "D. Rp 25.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Pengkreditan Pajak Masukan diatur dalam Pasal 9 Undang-Undang PPN. Ada beberapa kondisi di mana Pajak Masukan tidak dapat dikreditkan, antara lain:\n\n1.  **Pembelian bahan baku:** Pajak Masukan dari pembelian bahan baku yang digunakan untuk kegiatan produksi dapat dikreditkan. (Rp 15.000.000)\n\n2.  **Pembelian kendaraan dinas jenis sedan:** Berdasarkan Pasal 9 ayat (8) huruf c UU PPN, Pajak Masukan atas perolehan kendaraan bermotor sedan atau station wagon, kecuali merupakan barang dagangan atau disewakan, tidak dapat dikreditkan. Oleh karena kendaraan tersebut untuk direksi, maka tidak dapat dikreditkan. (Rp 8.000.000 tidak dapat dikreditkan)\n\n3.  **Biaya entertainment (tanpa daftar nominatif):** Sesuai dengan Surat Edaran Direktur Jenderal Pajak (SE-29/PJ.22/1984), Pajak Masukan atas pengeluaran untuk menjamu relasi yang tidak ada daftar nominatifnya (biaya entertainment) tidak dapat dikreditkan. (Rp 2.000.000 tidak dapat dikreditkan)\n\nTotal Pajak Masukan yang dapat dikreditkan = Pajak Masukan pembelian bahan baku\nTotal Pajak Masukan yang dapat dikreditkan = Rp 15.000.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 9 Undang-Undang Pajak Pertambahan Nilai, dan Surat Edaran Direktur Jenderal Pajak Nomor SE-29/PJ.22/1984."
+    },
+    {
+      "id": 5,
+      "kategori": "kup",
+      "skenario": "PT Sejahtera Raya adalah Wajib Pajak Badan yang memiliki PPh Kurang Bayar berdasarkan SPT Tahunan PPh Badan Tahun Pajak 2022 sebesar Rp 100.000.000. SPT Tahunan PPh Badan Tahun Pajak 2022 disampaikan tepat waktu pada tanggal 30 April 2023. Namun, pembayaran PPh Kurang Bayar baru dilakukan pada tanggal 30 Juni 2023.",
+      "soal": "Berapakah sanksi administrasi berupa bunga yang harus dibayar oleh PT Sejahtera Raya atas keterlambatan pembayaran PPh Kurang Bayar tersebut?",
+      "opsi": [
+        "A. Rp 900.000",
+        "B. Rp 1.790.000",
+        "C. Rp 1.800.000",
+        "D. Rp 2.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Keterlambatan pembayaran PPh Kurang Bayar dikenai sanksi administrasi berupa bunga sesuai Pasal 9 ayat (2a) Undang-Undang KUP, yaitu sebesar suku bunga acuan ditambah 5% yang dibagi 12, dihitung sejak tanggal jatuh tempo pembayaran sampai dengan tanggal pembayaran. Bagian dari bulan dihitung penuh 1 bulan.\n\n1.  **Tanggal Jatuh Tempo Pembayaran:** 30 April 2023\n2.  **Tanggal Pembayaran:** 30 Juni 2023\n3.  **Periode Keterlambatan:** Mei 2023 (1 bulan) dan Juni 2023 (1 bulan) = 2 bulan.\n\nSuku bunga sanksi administrasi ditetapkan melalui Keputusan Menteri Keuangan (KMK) setiap bulan.\n\n*   **Untuk bulan Mei 2023 (dihitung dari keterlambatan 1 Mei 2023 s.d. 31 Mei 2023):**\n    Mengacu pada KMK Nomor 23/KMK.03/2023, tarif bunga sanksi administrasi Pasal 9 ayat (2a) UU KUP adalah 0.90% per bulan.\n    Bunga untuk bulan Mei = Rp 100.000.000 x 0.90% = Rp 900.000\n\n*   **Untuk bulan Juni 2023 (dihitung dari keterlambatan 1 Juni 2023 s.d. 30 Juni 2023):**\n    Mengacu pada KMK Nomor 53/KMK.03/2023, tarif bunga sanksi administrasi Pasal 9 ayat (2a) UU KUP adalah 0.89% per bulan.\n    Bunga untuk bulan Juni = Rp 100.000.000 x 0.89% = Rp 890.000\n\nTotal Sanksi Bunga = Bunga bulan Mei + Bunga bulan Juni\nTotal Sanksi Bunga = Rp 900.000 + Rp 890.000 = Rp 1.790.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 9 ayat (2a) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan, serta Keputusan Menteri Keuangan (KMK) Nomor 23/KMK.03/2023 dan KMK Nomor 53/KMK.03/2023."
+    },
+    {
+      "id": 6,
+      "kategori": "pph-badan",
+      "skenario": "PT Indah Kiat menerima dividen sebesar Rp 200.000.000 dari PT Sinar Mas Tbk pada tanggal 10 Juli 2024. PT Indah Kiat memiliki 30% saham yang disetor pada PT Sinar Mas Tbk. Dividen tersebut diinvestasikan kembali di Indonesia sesuai ketentuan perpajakan yang berlaku.",
+      "soal": "Bagaimana perlakuan Pajak Penghasilan atas dividen yang diterima PT Indah Kiat tersebut berdasarkan ketentuan perpajakan yang berlaku (termasuk UU HPP)?",
+      "opsi": [
+        "A. Objek PPh dan dipotong PPh Pasal 23 sebesar 15%.",
+        "B. Objek PPh dan dikenakan tarif umum PPh Badan.",
+        "C. Bukan objek PPh.",
+        "D. Objek PPh final."
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf f Undang-Undang Pajak Penghasilan (diubah dengan UU HPP/Perpu 2/2022), dividen yang diterima atau diperoleh Wajib Pajak dalam negeri dari penyertaan modal pada badan usaha yang didirikan dan bertempat kedudukan di Indonesia, **tidak termasuk objek Pajak Penghasilan** dengan syarat:\n\n1.  Dividen tersebut diinvestasikan di wilayah Negara Kesatuan Republik Indonesia.\n2.  Investasi tersebut dilakukan paling lambat akhir bulan ketiga tahun pajak berikutnya setelah tahun pajak dividen diterima atau diperoleh.\n3.  Investasi tidak dialihkan selama 3 tahun sejak dividen diterima atau diperoleh.\n\nDalam skenario ini, PT Indah Kiat adalah Wajib Pajak Badan dalam negeri yang menerima dividen dari PT Sinar Mas Tbk (badan usaha dalam negeri) dan dividen tersebut diinvestasikan kembali di Indonesia sesuai ketentuan perpajakan yang berlaku. Oleh karena itu, dividen tersebut bukan merupakan objek Pajak Penghasilan.",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 4 ayat (3) huruf f Undang-Undang Pajak Penghasilan, serta Peraturan Pemerintah Nomor 9 Tahun 2021 sebagaimana telah diubah dengan PP Nomor 55 Tahun 2022 tentang Perlakuan Perpajakan atas Dividen atau Penghasilan Lain yang Diinvestasikan di Indonesia."
+    },
+    {
+      "id": 7,
+      "kategori": "pph-potput",
+      "skenario": "Pada tanggal 1 Juni 2024, Tuan Budi (memiliki NPWP) menyewakan ruko miliknya kepada PT Cemerlang Jaya (Wajib Pajak Badan) dengan nilai sewa sebesar Rp 60.000.000 untuk jangka waktu satu tahun. Pembayaran sewa dilakukan di muka secara penuh pada tanggal tersebut.",
+      "soal": "Berapakah Pajak Penghasilan Pasal 4 ayat (2) yang harus dipotong oleh PT Cemerlang Jaya atas pembayaran sewa ruko tersebut?",
+      "opsi": [
+        "A. Rp 3.000.000",
+        "B. Rp 4.500.000",
+        "C. Rp 6.000.000",
+        "D. Rp 6.600.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Penghasilan dari persewaan tanah dan/atau bangunan dikenai Pajak Penghasilan yang bersifat final sesuai dengan Pasal 4 ayat (2) Undang-Undang Pajak Penghasilan. Pihak penyewa (PT Cemerlang Jaya) yang merupakan pemotong PPh wajib memotong PPh Final tersebut pada saat pembayaran.\n\nTarif PPh Final atas persewaan tanah dan/atau bangunan: 10% dari jumlah bruto nilai persewaan.\nDasar Pengenaan Pajak (DPP): Jumlah bruto nilai sewa (Rp 60.000.000).\n\nPPh Pasal 4 ayat (2) yang dipotong = Tarif x DPP\nPPh Pasal 4 ayat (2) = 10% x Rp 60.000.000 = Rp 6.000.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 4 ayat (2) Undang-Undang Pajak Penghasilan, serta Peraturan Pemerintah Nomor 34 Tahun 2017 tentang Pajak Penghasilan atas Penghasilan dari Persewaan Tanah dan/atau Bangunan."
+    },
+    {
+      "id": 8,
+      "kategori": "ppn",
+      "skenario": "Tuan Hendra, seorang individu yang bukan Pengusaha Kena Pajak (PKP), memulai pembangunan rumah mewah untuk tempat tinggal pribadinya pada tanggal 1 Maret 2023. Pembangunan selesai pada 31 Desember 2023 dengan luas bangunan 300 m2. Total biaya yang dikeluarkan untuk pembangunan (tidak termasuk harga tanah) adalah Rp 900.000.000.",
+      "soal": "Berapakah Pajak Pertambahan Nilai (PPN) terutang atas Kegiatan Membangun Sendiri (KMS) yang dilakukan oleh Tuan Hendra tersebut?",
+      "opsi": [
+        "A. Rp 18.000.000",
+        "B. Rp 19.800.000",
+        "C. Rp 99.000.000",
+        "D. Rp 108.900.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Kegiatan membangun sendiri (KMS) yang dilakukan oleh orang pribadi atau badan yang tidak dalam kegiatan usaha atau pekerjaan, dikenakan PPN jika memenuhi kriteria tertentu (misalnya luas bangunan > 200 m2). Tuan Hendra memenuhi kriteria tersebut.\n\nDasar Pengenaan Pajak (DPP) KMS: 20% dari jumlah biaya yang dikeluarkan dan/atau yang dibayarkan untuk membangun bangunan, tidak termasuk harga perolehan tanah. (PMK-61/PMK.03/2022)\nTarif PPN (UU HPP): 11%\n\n1.  **Menghitung DPP PPN:**\n    DPP = 20% x Total biaya pembangunan\n    DPP = 20% x Rp 900.000.000 = Rp 180.000.000\n\n2.  **Menghitung PPN Terutang:**\n    PPN Terutang = DPP x Tarif PPN\n    PPN Terutang = Rp 180.000.000 x 11% = Rp 19.800.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 16C Undang-Undang Pajak Pertambahan Nilai, serta Peraturan Menteri Keuangan Nomor 61/PMK.03/2022 tentang Pajak Pertambahan Nilai atas Kegiatan Membangun Sendiri."
+    },
+    {
+      "id": 9,
+      "kategori": "pph-op",
+      "skenario": "Tuan Agung adalah Wajib Pajak Orang Pribadi yang memiliki usaha toko kelontong. Tuan Agung tidak memiliki kewajiban pembukuan dan memilih untuk menggunakan skema PPh final sesuai ketentuan. Peredaran bruto kumulatif usahanya dari Januari hingga Februari 2023 adalah Rp 480.000.000. Pada bulan Maret 2023, peredaran bruto usahanya adalah Rp 30.000.000.",
+      "soal": "Berapakah Pajak Penghasilan terutang Tuan Agung untuk bulan Maret 2023 berdasarkan Peraturan Pemerintah Nomor 55 Tahun 2022?",
+      "opsi": [
+        "A. Rp 0",
+        "B. Rp 50.000",
+        "C. Rp 150.000",
+        "D. Rp 250.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Peraturan Pemerintah Nomor 55 Tahun 2022 (PP 55/2022), Wajib Pajak Orang Pribadi dengan peredaran bruto tertentu dikenai PPh Final dengan tarif 0,5%. Namun, terdapat fasilitas tidak dikenai PPh Final atas bagian peredaran bruto sampai dengan Rp 500.000.000 dalam 1 (satu) Tahun Pajak.\n\n1.  **Peredaran Bruto Kumulatif hingga Februari 2023:** Rp 480.000.000\n2.  **Peredaran Bruto Bulan Maret 2023:** Rp 30.000.000\n3.  **Peredaran Bruto Kumulatif hingga Maret 2023:** Rp 480.000.000 + Rp 30.000.000 = Rp 510.000.000\n\nBatas peredaran bruto yang tidak dikenai PPh Final adalah Rp 500.000.000. Pada bulan Maret, peredaran bruto kumulatif Tuan Agung telah melampaui batas tersebut.\n\n*   Bagian peredaran bruto Maret yang masih dalam batas tidak dikenai PPh (untuk mencapai Rp 500 juta) = Rp 500.000.000 - Rp 480.000.000 = Rp 20.000.000\n    (Bagian ini tidak dikenai PPh)\n\n*   Bagian peredaran bruto Maret yang melebihi batas Rp 500 juta = Rp 30.000.000 - Rp 20.000.000 = Rp 10.000.000\n    (Bagian ini dikenai PPh Final 0,5%)\n\nPPh Terutang untuk bulan Maret 2023 = Rp 10.000.000 x 0.5% = Rp 50.000",
+      "dasar": "Peraturan Pemerintah Nomor 55 Tahun 2022 tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan (Pasal 4 dan Pasal 7)."
+    },
+    {
+      "id": 10,
+      "kategori": "kup",
+      "skenario": "PT Harapan Jaya melakukan pembetulan SPT Tahunan PPh Badan Tahun Pajak 2022 pada tanggal 15 Mei 2024. SPT Tahunan PPh Badan Tahun Pajak 2022 awalnya disampaikan pada tanggal 15 April 2023. Pembetulan SPT ini mengakibatkan Pajak Penghasilan Kurang Bayar (KB) menjadi lebih besar sebesar Rp 20.000.000.",
+      "soal": "Berdasarkan ketentuan Undang-Undang KUP (termasuk UU HPP), apakah pembetulan SPT ini masih dapat dilakukan dan sanksi yang timbul atas pembetulan yang mengakibatkan PPh Kurang Bayar?",
+      "opsi": [
+        "A. Pembetulan tidak dapat dilakukan karena melewati batas waktu 1 tahun, dan PPh terutang menjadi Rp 30.000.000.",
+        "B. Pembetulan dapat dilakukan, dan dikenakan sanksi bunga Pasal 9 ayat (2a) KUP sebesar Rp 1.500.000.",
+        "C. Pembetulan dapat dilakukan, dan dikenakan sanksi kenaikan 50% sebesar Rp 10.000.000.",
+        "D. Pembetulan dapat dilakukan, dan dikenakan sanksi denda Pasal 7 ayat (1) KUP sebesar Rp 1.000.000."
+      ],
+      "jawaban": 2,
+      "pembahasan": "1.  **Batas Waktu Pembetulan SPT:**\n    Berdasarkan Pasal 8 ayat (1) Undang-Undang KUP, Wajib Pajak dengan kemauan sendiri dapat membetulkan Surat Pemberitahuan yang telah disampaikan dengan menyampaikan pernyataan tertulis, dengan syarat Direktur Jenderal Pajak belum melakukan tindakan pemeriksaan.\n    Berdasarkan Pasal 8 ayat (1a) UU KUP, pembetulan SPT Tahunan dapat dilakukan paling lama 2 (dua) tahun sebelum daluwarsa penetapan pajak.\n    Daluwarsa penetapan pajak adalah 5 tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, bagian Tahun Pajak, atau Tahun Pajak yang bersangkutan. Untuk SPT Tahunan PPh Badan 2022, daluwarsa penetapan adalah 31 Desember 2027.\n    Batas waktu pembetulan (2 tahun sebelum daluwarsa) = 31 Desember 2027 - 2 tahun = 31 Desember 2025.\n    Pembetulan dilakukan pada 15 Mei 2024, yang berarti masih dalam batas waktu 2 tahun (sebelum 31 Desember 2025) dan diasumsikan belum dilakukan pemeriksaan. Jadi, **pembetulan dapat dilakukan**.\n\n2.  **Sanksi Administrasi:**\n    Berdasarkan Pasal 8 ayat (2) UU KUP, dalam hal Wajib Pajak membetulkan sendiri Surat Pemberitahuan yang mengakibatkan utang pajak menjadi lebih besar, maka kepadanya dikenai sanksi administrasi berupa kenaikan sebesar 50% dari pajak yang kurang dibayar.\n    Sanksi Kenaikan = 50% x PPh Kurang Bayar tambahan\n    Sanksi Kenaikan = 50% x Rp 20.000.000 = Rp 10.000.000",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 8 ayat (1), (1a), dan (2) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan."
+    }
+  ],
   "sesi2": [
     {
       "id": 1,
