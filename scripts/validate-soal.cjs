@@ -99,8 +99,24 @@ Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block
           continue;
         }
 
+        if (!resData.candidates || !resData.candidates[0].content || !resData.candidates[0].content.parts) {
+          console.error('API Response missing content. Full response:', JSON.stringify(resData, null, 2));
+          continue;
+        }
+
         const rawText = resData.candidates[0].content.parts[0].text.trim();
-        const results = JSON.parse(rawText);
+        
+        // Ekstrak JSON array dengan mencari [ dan ] terluar
+        const startIdx = rawText.indexOf('[');
+        const endIdx = rawText.lastIndexOf(']');
+        
+        if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
+          console.error('No valid JSON array found in response. Raw text:', rawText);
+          continue;
+        }
+        
+        const jsonStr = rawText.substring(startIdx, endIdx + 1);
+        const results = JSON.parse(jsonStr);
 
         // Terapkan perbaikan jika ada
         results.forEach(res => {
@@ -124,7 +140,11 @@ Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block
 
       } catch (e) {
         console.error('Gagal memproses batch atau parse hasil review:', e.message);
-        // console.error(rawText); // Jika ingin debug raw output
+        if (resData && resData.candidates && resData.candidates[0].content && resData.candidates[0].content.parts) {
+          console.error('Raw Response was:', resData.candidates[0].content.parts[0].text);
+        } else {
+          console.error('Raw Data was:', JSON.stringify(resData, null, 2));
+        }
       }
     }
 

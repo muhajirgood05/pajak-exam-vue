@@ -211,8 +211,23 @@ PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markd
   }
 
   try {
+    if (!data.candidates || !data.candidates[0].content || !data.candidates[0].content.parts) {
+      console.error('API Response missing content. Full response:', JSON.stringify(data, null, 2));
+      process.exit(1);
+    }
+
     const text = data.candidates[0].content.parts[0].text.trim();
-    const jsonStr = text.replace(/^```json/, '').replace(/```$/, '').trim();
+    
+    // Ekstrak JSON array dengan mencari [ dan ] terluar
+    const startIdx = text.indexOf('[');
+    const endIdx = text.lastIndexOf(']');
+    
+    if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
+      console.error('No valid JSON array found in response. Raw text:', text);
+      process.exit(1);
+    }
+    
+    const jsonStr = text.substring(startIdx, endIdx + 1);
     const newSoal = JSON.parse(jsonStr);
     
     // Kita tetap assign ID di sini untuk memastikan konsistensi jika AI salah paham
@@ -228,7 +243,11 @@ PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markd
     console.log(`Success! Updated ${filePath} with ${newSoal.length} new questions.`);
   } catch (e) {
     console.error('Failed to parse JSON or write file:', e.message);
-    console.error('Raw Response was:', data.candidates[0].content.parts[0].text);
+    if (data && data.candidates && data.candidates[0].content && data.candidates[0].content.parts) {
+      console.error('Raw Response was:', data.candidates[0].content.parts[0].text);
+    } else {
+      console.error('Raw Data was:', JSON.stringify(data, null, 2));
+    }
     process.exit(1);
   }
 }
