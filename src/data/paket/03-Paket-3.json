@@ -149,6 +149,156 @@
       "jawaban": 2,
       "pembahasan": "1.  **Batas Waktu Pembetulan SPT:**\n    Berdasarkan Pasal 8 ayat (1) Undang-Undang KUP, Wajib Pajak dengan kemauan sendiri dapat membetulkan Surat Pemberitahuan yang telah disampaikan dengan menyampaikan pernyataan tertulis, dengan syarat Direktur Jenderal Pajak belum melakukan tindakan pemeriksaan.\n    Berdasarkan Pasal 8 ayat (1a) UU KUP, pembetulan SPT Tahunan dapat dilakukan paling lama 2 (dua) tahun sebelum daluwarsa penetapan pajak.\n    Daluwarsa penetapan pajak adalah 5 tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, bagian Tahun Pajak, atau Tahun Pajak yang bersangkutan. Untuk SPT Tahunan PPh Badan 2022, daluwarsa penetapan adalah 31 Desember 2027.\n    Batas waktu pembetulan (2 tahun sebelum daluwarsa) = 31 Desember 2027 - 2 tahun = 31 Desember 2025.\n    Pembetulan dilakukan pada 15 Mei 2024, yang berarti masih dalam batas waktu 2 tahun (sebelum 31 Desember 2025) dan diasumsikan belum dilakukan pemeriksaan. Jadi, **pembetulan dapat dilakukan**.\n\n2.  **Sanksi Administrasi:**\n    Berdasarkan Pasal 8 ayat (2) UU KUP, dalam hal Wajib Pajak membetulkan sendiri Surat Pemberitahuan yang mengakibatkan utang pajak menjadi lebih besar, maka kepadanya dikenai sanksi administrasi berupa kenaikan sebesar 50% dari pajak yang kurang dibayar.\n    Sanksi Kenaikan = 50% x PPh Kurang Bayar tambahan\n    Sanksi Kenaikan = 50% x Rp 20.000.000 = Rp 10.000.000",
       "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 8 ayat (1), (1a), dan (2) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan."
+    },
+    {
+      "id": 11,
+      "kategori": "pph-badan",
+      "skenario": "PT Sejahtera melakukan revaluasi aset tetap pada tanggal 1 Juli 2023. Nilai buku fiskal aset per 30 Juni 2023 adalah Rp 5.000.000.000. Setelah revaluasi, nilai wajar aset ditetapkan menjadi Rp 8.000.000.000. PT Sejahtera adalah perusahaan terbuka yang sahamnya diperdagangkan di bursa efek.",
+      "soal": "Berapakah PPh Final yang terutang atas selisih nilai revaluasi aset tersebut?",
+      "opsi": [
+        "A. Rp 30.000.000",
+        "B. Rp 45.000.000",
+        "C. Rp 90.000.000",
+        "D. Rp 150.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Selisih lebih penilaian kembali aset tetap = Nilai Wajar - Nilai Buku Fiskal = Rp 8.000.000.000 - Rp 5.000.000.000 = Rp 3.000.000.000.<br>2. Berdasarkan Pasal 4 ayat (3) huruf a PMK 191/2015, bagi Wajib Pajak yang terdaftar di bursa efek, PPh Final atas selisih lebih penilaian kembali aset tetap ditetapkan sebesar 1% dari selisih lebih tersebut.<br>3. PPh Final yang terutang = 1% x Rp 3.000.000.000 = Rp 30.000.000.",
+      "dasar": "Pasal 4 ayat (3) huruf a Peraturan Menteri Keuangan Nomor 191/PMK.03/2015 tentang Penilaian Kembali Aktiva Tetap untuk Tujuan Perpajakan."
+    },
+    {
+      "id": 12,
+      "kategori": "pph-potput",
+      "skenario": "Bapak Arman (belum menikah, tidak ada tanggungan) adalah karyawan di PT Maju Mundur dengan gaji bulanan Rp 15.000.000. Selain itu, pada bulan Juni 2024, Bapak Arman menerima fasilitas perumahan dari kantor senilai Rp 2.000.000 per bulan yang disediakan di lokasi kerja (bukan di daerah terpencil).",
+      "soal": "Berapakah PPh Pasal 21 yang dipotong PT Maju Mundur dari penghasilan Bapak Arman untuk bulan Juni 2024?",
+      "opsi": [
+        "A. Rp 1.125.000",
+        "B. Rp 1.428.000",
+        "C. Rp 1.550.000",
+        "D. Rp 1.700.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1. Penghasilan berupa fasilitas perumahan (natura) yang tidak termasuk dalam daftar natura/kenikmatan dikecualikan dari objek PPh sebagaimana diatur dalam Pasal 4 ayat (3) huruf d UU PPh jo. Pasal 2 PMK 66/2023. Namun, fasilitas perumahan senilai Rp 2.000.000 per bulan yang diberikan di lokasi kerja (bukan daerah terpencil) tidak memenuhi kriteria pengecualian, sehingga merupakan objek PPh 21.<br>2. Total penghasilan bruto sebulan = Gaji + Natura = Rp 15.000.000 + Rp 2.000.000 = Rp 17.000.000.<br>3. Bapak Arman (TK/0) termasuk dalam kategori A untuk TER PPh 21.<br>4. Berdasarkan Lampiran I Tabel A PMK 168/2023, untuk penghasilan bruto bulanan antara Rp 17.000.000 sampai dengan Rp 17.100.000, Tarif Efektif Rata-rata (TER) kategori A untuk status TK/0 adalah 8,4000%.<br>5. PPh Pasal 21 bulan Juni 2024 = Tarif TER x Penghasilan Bruto = 8,40% x Rp 17.000.000 = Rp 1.428.000.",
+      "dasar": "Pasal 4 ayat (3) huruf d Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) jo. Pasal 2 Peraturan Menteri Keuangan Nomor 66/PMK.03/2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan; Peraturan Menteri Keuangan Nomor 168/PMK.03/2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi."
+    },
+    {
+      "id": 13,
+      "kategori": "pph-potput",
+      "skenario": "PT Bangun Jaya adalah Wajib Pajak Badan yang memiliki sertifikat badan usaha (SBU) kualifikasi Usaha Besar. Pada bulan Juli 2024, PT Bangun Jaya menerima pembayaran termin kedua sebesar Rp 2.500.000.000 (belum termasuk PPN) atas pekerjaan konstruksi pembangunan gedung kantor.",
+      "soal": "Berapakah PPh Final yang harus dipotong atas pembayaran termin pekerjaan konstruksi tersebut?",
+      "opsi": [
+        "A. Rp 50.000.000",
+        "B. Rp 87.500.000",
+        "C. Rp 100.000.000",
+        "D. Rp 125.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1. Berdasarkan Pasal 4 ayat (1) huruf e Peraturan Pemerintah Nomor 9 Tahun 2022, PPh Final atas penghasilan dari usaha jasa konstruksi yang dilakukan oleh penyedia jasa yang memiliki Sertifikat Badan Usaha kualifikasi Usaha Menengah atau Besar dikenakan tarif 3,5%.<br>2. Dasar pengenaan PPh adalah nilai kontrak atau nilai penggantian (tidak termasuk PPN).<br>3. PPh Final = 3,5% x Rp 2.500.000.000 = Rp 87.500.000.",
+      "dasar": "Pasal 4 ayat (1) huruf e Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Perlakuan Perpajakan atas Penghasilan dari Usaha Jasa Konstruksi."
+    },
+    {
+      "id": 14,
+      "kategori": "pph-potput",
+      "skenario": "PT Sentosa pada bulan Agustus 2024 melakukan pembayaran atas beberapa jenis jasa kepada Wajib Pajak Badan sebagai berikut:<br><table><thead><tr><th>Jenis Jasa</th><th>Nilai Pembayaran (Rp)</th></tr></thead><tbody><tr><td>Jasa Desain Grafis</td><td>25.000.000</td></tr><tr><td>Jasa Katering</td><td>30.000.000</td></tr><tr><td>Jasa Penilaian (Appraisal)</td><td>40.000.000</td></tr><tr><td>Jasa Kebersihan (Cleaning Service)</td><td>35.000.000</td></tr><tr><td>Jasa Pengelolaan Limbah</td><td>30.000.000</td></tr></tbody></table>Semua nilai belum termasuk PPN. Asumsi PT Sentosa memiliki NPWP dan penyedia jasa juga memiliki NPWP.",
+      "soal": "Berapakah total PPh Pasal 23 yang wajib dipotong oleh PT Sentosa pada bulan Agustus 2024?",
+      "opsi": [
+        "A. Rp 2.200.000",
+        "B. Rp 2.400.000",
+        "C. Rp 2.600.000",
+        "D. Rp 2.800.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1. Berdasarkan Pasal 1 ayat (2) PMK 141/2015, jasa katering tidak termasuk objek pemotongan PPh Pasal 23.<br>2. Perhitungan PPh Pasal 23:<br>   - Jasa Desain Grafis (Pasal 1 ayat (1) huruf u PMK 141/2015): 2% x Rp 25.000.000 = Rp 500.000.<br>   - Jasa Penilaian (Appraisal) (Pasal 1 ayat (1) huruf j PMK 141/2015): 2% x Rp 40.000.000 = Rp 800.000.<br>   - Jasa Kebersihan (Cleaning Service) (Pasal 1 ayat (1) huruf l PMK 141/2015): 2% x Rp 35.000.000 = Rp 700.000.<br>   - Jasa Pengelolaan Limbah (Pasal 1 ayat (1) huruf t PMK 141/2015): 2% x Rp 30.000.000 = Rp 600.000.<br>3. Total PPh Pasal 23 yang dipotong = Rp 500.000 + Rp 800.000 + Rp 700.000 + Rp 600.000 = Rp 2.600.000.",
+      "dasar": "Pasal 23 ayat (1) huruf c Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) dan Pasal 1 ayat (1) huruf j, l, t, u serta Pasal 1 ayat (2) Peraturan Menteri Keuangan Nomor 141/PMK.03/2015 tentang Jenis Jasa Lain Sebagaimana Dimaksud dalam Pasal 23 Ayat (1) Huruf c Angka 2 Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan Sebagaimana Telah Beberapa Kali Diubah Terakhir dengan Undang-Undang Nomor 36 Tahun 2008."
+    },
+    {
+      "id": 15,
+      "kategori": "ppn",
+      "skenario": "Global Apps Co., sebuah penyedia layanan aplikasi digital dari luar negeri yang telah ditunjuk sebagai Pemungut PPN PMSE, menjual langganan aplikasi kepada 10.000 pelanggan individu di Indonesia. Setiap langganan dikenakan biaya Rp 100.000 per bulan. Pembayaran dilakukan pada bulan September 2025.",
+      "soal": "Berapakah total PPN yang wajib dipungut oleh Global Apps Co. dan disetorkan ke kas negara untuk transaksi pada bulan September 2025?",
+      "opsi": [
+        "A. Rp 100.000.000",
+        "B. Rp 110.000.000",
+        "C. Rp 120.000.000",
+        "D. Rp 130.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1. Nilai Transaksi Bruto = Jumlah Pelanggan x Biaya Langganan = 10.000 x Rp 100.000 = Rp 1.000.000.000.<br>2. Berdasarkan Pasal 7 ayat (1) huruf b Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP), tarif PPN adalah 12% yang mulai berlaku paling lambat 1 Januari 2025. Karena transaksi terjadi pada bulan September 2025, tarif PPN yang berlaku adalah 12%.<br>3. PPN yang wajib dipungut = Tarif PPN x Nilai Transaksi Bruto = 12% x Rp 1.000.000.000 = Rp 120.000.000.",
+      "dasar": "Pasal 7 ayat (1) huruf b Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) dan Peraturan Menteri Keuangan Nomor 60/PMK.03/2022 tentang Tata Cara Penunjukan Pemungut Pajak Pertambahan Nilai atas Pemanfaatan Barang Kena Pajak Tidak Berwujud dan/atau Jasa Kena Pajak dari Luar Daerah Pabean di dalam Daerah Pabean melalui Perdagangan Melalui Sistem Elektronik."
+    },
+    {
+      "id": 16,
+      "kategori": "ppn",
+      "skenario": "Restoran 'Rasa Nusantara' memiliki omzet dari penjualan makanan dan minuman sebesar Rp 350.000.000 pada bulan Oktober 2024. Restoran ini terletak di wilayah DKI Jakarta.",
+      "soal": "Berapakah PPN yang terutang atas penyerahan makanan dan minuman oleh Restoran 'Rasa Nusantara' pada bulan Oktober 2024?",
+      "opsi": [
+        "A. Rp 0",
+        "B. Rp 35.000.000",
+        "C. Rp 38.500.000",
+        "D. Rp 42.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Berdasarkan Pasal 2 ayat (1) Peraturan Menteri Keuangan Nomor 71/PMK.03/2022, jenis Jasa Kena Pajak tertentu yang dibebaskan dari pengenaan PPN adalah jasa penyediaan makanan dan minuman yang disajikan di restoran.<br>2. Jasa penyediaan makanan dan minuman yang disajikan di restoran (termasuk katering) merupakan jenis jasa tertentu yang tidak dikenai PPN sesuai Pasal 4A ayat (3) huruf g UU PPN dan PMK 71/2022. Penyerahan ini merupakan objek Pajak Barang dan Jasa Tertentu (PBJT) yang dipungut oleh Pemerintah Daerah, bukan PPN yang dipungut oleh DJP.<br>3. Dengan demikian, PPN yang terutang atas penyerahan tersebut adalah Rp 0.",
+      "dasar": "Pasal 4A ayat (3) huruf g Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) dan Peraturan Menteri Keuangan Nomor 71/PMK.03/2022 tentang Pajak Pertambahan Nilai atas Penyerahan Jasa Kena Pajak Tertentu."
+    },
+    {
+      "id": 17,
+      "kategori": "pph-badan",
+      "skenario": "Kemitraan atau Operasi Bersama (KSO) 'Karya Bersama' dibentuk oleh PT Jaya Abadi (Wajib Pajak dalam negeri) dan Global Constructors Ltd. (Wajib Pajak luar negeri). KSO ini memiliki NPWP terpisah dan telah ditunjuk sebagai Pemotong PPh. Pada tahun 2023, KSO 'Karya Bersama' memperoleh peredaran bruto sebesar Rp 60.000.000.000 dan penghasilan neto fiskal sebesar Rp 7.000.000.000. Pembagian laba KSO adalah 60% untuk PT Jaya Abadi dan 40% untuk Global Constructors Ltd.",
+      "soal": "Berapakah total Pajak Penghasilan (PPh) yang terutang atas KSO 'Karya Bersama' sebagai Wajib Pajak pada Tahun Pajak 2023?",
+      "opsi": [
+        "A. Rp 1.050.000.000",
+        "B. Rp 1.400.000.000",
+        "C. Rp 1.540.000.000",
+        "D. Rp 1.750.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1. Berdasarkan Pasal 2 ayat (1) huruf b UU PPh dan Pasal 2 ayat (2) PP 44/2022, KSO yang memiliki NPWP terpisah dari para anggotanya diperlakukan sebagai Wajib Pajak Badan.<br>2. Tarif PPh Badan untuk tahun pajak 2023 adalah 22% (Pasal 17 ayat (1) huruf b UU PPh).<br>3. Karena peredaran bruto KSO melebihi Rp 50.000.000.000 (yaitu Rp 60.000.000.000), KSO tidak dapat memanfaatkan fasilitas pengurangan tarif sebesar 50% sebagaimana dimaksud dalam Pasal 31A UU PPh.<br>4. PPh Terutang KSO = Tarif Normal x Penghasilan Neto Fiskal = 22% x Rp 7.000.000.000 = Rp 1.540.000.000.",
+      "dasar": "Pasal 2 ayat (1) huruf b, Pasal 17 ayat (1) huruf b, dan Pasal 31A Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP); Pasal 2 ayat (2) dan Pasal 4 ayat (2) Peraturan Pemerintah Nomor 44 Tahun 2022 tentang Perlakuan Perpajakan atas Kemitraan atau Operasi Bersama."
+    },
+    {
+      "id": 18,
+      "kategori": "kup",
+      "skenario": "Kantor Pelayanan Pajak (KPP) pada tanggal 10 Juli 2025 menyampaikan Surat Pemberitahuan Pemeriksaan Lapangan kepada PT Makmur Jaya untuk melakukan Pemeriksaan Lengkap atas SPT Tahunan PPh Badan Tahun Pajak 2023. PT Makmur Jaya tidak memberikan tanggapan atas Surat Pemberitahuan Pemeriksaan Lapangan tersebut.",
+      "soal": "Berdasarkan PMK 15/2025, kapan paling lambat Pemeriksa Pajak harus menyampaikan Surat Pemberitahuan Hasil Pemeriksaan (SPHP) kepada PT Makmur Jaya dalam Pemeriksaan Lapangan atas SPT Tahunan PPh Badan tersebut?",
+      "opsi": [
+        "A. 10 Oktober 2025",
+        "B. 10 November 2025",
+        "C. 10 Desember 2025",
+        "D. 10 Januari 2026"
+      ],
+      "jawaban": 3,
+      "pembahasan": "1. Berdasarkan ketentuan umum dalam peraturan mengenai pemeriksaan pajak (yang akan diatur dalam PMK 15/2025), jangka waktu Pemeriksaan Lapangan untuk menguji kepatuhan pemenuhan kewajiban perpajakan adalah paling lama 6 (enam) bulan.<br>2. Jangka waktu ini dihitung sejak Surat Pemberitahuan Pemeriksaan Lapangan disampaikan kepada Wajib Pajak sampai dengan tanggal Surat Pemberitahuan Hasil Pemeriksaan (SPHP) disampaikan kepada Wajib Pajak.<br>3. Surat Pemberitahuan Pemeriksaan Lapangan disampaikan pada tanggal 10 Juli 2025.<br>4. Maka, SPHP paling lambat harus disampaikan pada tanggal 10 Juli 2025 + 6 bulan = 10 Januari 2026.",
+      "dasar": "Pasal terkait jangka waktu pemeriksaan dalam Peraturan Menteri Keuangan Nomor 15/PMK.03/2025 tentang Tata Cara Pemeriksaan Pajak (mengacu pada ketentuan jangka waktu pemeriksaan yang berlaku umum dalam aturan pemeriksaan)."
+    },
+    {
+      "id": 19,
+      "kategori": "pph-potput",
+      "skenario": "PT Inovasi Solusi (Indonesia) membayar royalti sebesar Rp 500.000.000 kepada Tech Genius Inc. (Amerika Serikat) pada bulan September 2024. Tech Genius Inc. tidak memiliki Bentuk Usaha Tetap (BUT) di Indonesia. Indonesia dan Amerika Serikat memiliki Persetujuan Penghindaran Pajak Berganda (P3B) yang menetapkan tarif PPh atas royalti sebesar 10%.",
+      "soal": "Berapakah PPh Pasal 26 yang harus dipotong oleh PT Inovasi Solusi atas pembayaran royalti tersebut?",
+      "opsi": [
+        "A. Rp 50.000.000",
+        "B. Rp 75.000.000",
+        "C. Rp 100.000.000",
+        "D. Rp 125.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Berdasarkan Pasal 26 UU PPh, penghasilan berupa royalti yang dibayarkan kepada Wajib Pajak luar negeri selain BUT di Indonesia pada umumnya dikenakan PPh Pasal 26 dengan tarif 20% dari penghasilan bruto.<br>2. Namun, jika terdapat Persetujuan Penghindaran Pajak Berganda (P3B) antara Indonesia dengan negara domisili Wajib Pajak luar negeri yang mengatur tarif yang lebih rendah, maka tarif P3B dapat diterapkan, asalkan Wajib Pajak luar negeri memenuhi persyaratan (misalnya, menyerahkan Surat Keterangan Domisili/SKD). Asumsi SKD telah disampaikan.<br>3. Dalam kasus ini, P3B antara Indonesia dan Amerika Serikat menetapkan tarif PPh atas royalti sebesar 10%.<br>4. PPh Pasal 26 yang harus dipotong = Tarif P3B x Penghasilan Bruto = 10% x Rp 500.000.000 = Rp 50.000.000.",
+      "dasar": "Pasal 26 Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP); Peraturan Menteri Keuangan Nomor 192/PMK.03/2018 tentang Pelaksanaan Perjanjian Penghindaran Pajak Berganda."
+    },
+    {
+      "id": 20,
+      "kategori": "pph-badan",
+      "skenario": "PT Maju Pesat membeli sebuah mesin produksi baru pada tanggal 1 Juli 2024 dengan harga perolehan Rp 400.000.000. Estimasi masa manfaat ekonomis mesin adalah 8 tahun. PT Maju Pesat menggunakan metode penyusutan garis lurus (straight-line method) dan memiliki kebijakan akuntansi untuk mulai menyusutkan aset pada bulan perolehan.",
+      "soal": "Berapakah beban penyusutan fiskal yang dapat dikurangkan oleh PT Maju Pesat untuk Tahun Pajak 2024?",
+      "opsi": [
+        "A. Rp 25.000.000",
+        "B. Rp 37.500.000",
+        "C. Rp 50.000.000",
+        "D. Rp 60.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1. Mesin produksi pada umumnya termasuk dalam kelompok 2 harta berwujud.<br>2. Berdasarkan Pasal 11 ayat (6) UU PPh, masa manfaat untuk harta berwujud kelompok 2 adalah 8 tahun, dengan tarif penyusutan garis lurus sebesar 12,5%.<br>3. Nilai perolehan mesin = Rp 400.000.000.<br>4. Penyusutan per tahun = Tarif Penyusutan x Nilai Perolehan = 12,5% x Rp 400.000.000 = Rp 50.000.000.<br>5. Karena mesin diperoleh pada 1 Juli 2024, penyusutan untuk Tahun Pajak 2024 dihitung secara prorata selama 6 bulan (Juli sampai dengan Desember).<br>6. Beban penyusutan fiskal Tahun Pajak 2024 = (6/12) x Rp 50.000.000 = Rp 25.000.000.",
+      "dasar": "Pasal 11 ayat (1) dan ayat (6) Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) (mengacu pada ketentuan penyusutan Pasal 11 UU PPh)."
     }
   ],
   "sesi2": [
