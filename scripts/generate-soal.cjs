@@ -1,30 +1,98 @@
 const fs = require('fs');
 const path = require('path');
 
+// Model fallback list - jika model pertama gagal, coba berikutnya
+const MODELS = [
+  'gemini-2.0-flash',
+  'gemini-1.5-flash',
+  'gemini-2.5-flash'
+];
+
 // Retry helper with exponential backoff
-async function fetchWithRetry(url, options, maxRetries = 5) {
+async function fetchWithRetry(url, options, maxRetries = 4) {
+  let lastError = null;
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
-      const response = await fetch(url, options);
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 120000); // 2 menit timeout
+      
+      const response = await fetch(url, { ...options, signal: controller.signal });
+      clearTimeout(timeout);
       
       // Jika rate limited (429) atau server error (5xx), retry
       if (response.status === 429 || response.status >= 500) {
-        const waitTime = Math.min(2000 * Math.pow(2, attempt - 1), 60000); // max 60s
-        console.log(`Attempt ${attempt}/${maxRetries} failed with status ${response.status}. Retrying in ${waitTime / 1000}s...`);
+        const waitTime = Math.min(3000 * Math.pow(2, attempt - 1), 90000);
+        console.log(`  Attempt ${attempt}/${maxRetries} failed with status ${response.status}. Retrying in ${waitTime / 1000}s...`);
         await new Promise(resolve => setTimeout(resolve, waitTime));
         continue;
       }
       
       return response;
     } catch (err) {
-      // Network error, timeout, dll
+      lastError = err;
       if (attempt === maxRetries) throw err;
-      const waitTime = Math.min(2000 * Math.pow(2, attempt - 1), 60000);
-      console.log(`Attempt ${attempt}/${maxRetries} network error: ${err.message}. Retrying in ${waitTime / 1000}s...`);
+      const waitTime = Math.min(3000 * Math.pow(2, attempt - 1), 90000);
+      console.log(`  Attempt ${attempt}/${maxRetries} error: ${err.message}. Retrying in ${waitTime / 1000}s...`);
       await new Promise(resolve => setTimeout(resolve, waitTime));
     }
   }
-  throw new Error(`All ${maxRetries} attempts failed.`);
+  throw lastError || new Error(`All ${maxRetries} attempts failed.`);
+}
+
+// Coba panggil API dengan fallback model
+async function callGeminiWithFallback(apiKey, prompt) {
+  for (const model of MODELS) {
+    console.log(`Mencoba model: ${model}...`);
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+    
+    try {
+      const response = await fetchWithRetry(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            temperature: 0.7,
+            maxOutputTokens: 8192,
+            responseMimeType: 'application/json'
+          }
+        })
+      });
+
+      const data = await response.json();
+      
+      if (!response.ok) {
+        console.error(`Model ${model} API Error (${response.status}):`, JSON.stringify(data).substring(0, 500));
+        continue; // Coba model berikutnya
+      }
+
+      // Cek apakah response punya content
+      if (!data.candidates || !data.candidates[0]) {
+        console.error(`Model ${model}: No candidates in response.`);
+        continue;
+      }
+
+      const candidate = data.candidates[0];
+      
+      // Cek finish reason
+      if (candidate.finishReason && candidate.finishReason !== 'STOP' && candidate.finishReason !== 'MAX_TOKENS') {
+        console.error(`Model ${model}: Blocked by safety filter. Reason: ${candidate.finishReason}`);
+        continue;
+      }
+
+      if (!candidate.content || !candidate.content.parts || !candidate.content.parts[0].text) {
+        console.error(`Model ${model}: Response missing text content.`);
+        continue;
+      }
+
+      return { model, text: candidate.content.parts[0].text.trim() };
+    } catch (err) {
+      console.error(`Model ${model} failed completely: ${err.message}`);
+      continue; // Coba model berikutnya
+    }
+  }
+  
+  throw new Error('Semua model gagal. Tidak bisa generate soal.');
 }
 
 async function generateSoal() {
@@ -35,6 +103,11 @@ async function generateSoal() {
   }
 
   const paketDir = path.join(__dirname, '../src/data/paket');
+  
+  // Pastikan directory ada
+  if (!fs.existsSync(paketDir)) {
+    fs.mkdirSync(paketDir, { recursive: true });
+  }
   
   // 1. Cari paket yang belum lengkap
   const files = fs.readdirSync(paketDir).filter(f => f.endsWith('.json'));
@@ -78,7 +151,6 @@ async function generateSoal() {
   const countSesi2 = currentData.sesi2 ? currentData.sesi2.length : 0;
 
   if (!targetFile) {
-    // Semua paket penuh atau belum ada paket, buat baru
     const nextNum = maxNum + 1;
     const nextNumStr = nextNum.toString().padStart(2, '0');
     targetFile = `${nextNumStr}-Paket-${nextNum}.json`;
@@ -96,171 +168,99 @@ async function generateSoal() {
 
   if (countSesi1 < 60) {
     targetSesi = 'sesi1';
-    numToGenerate = Math.min(10, 60 - countSesi1);
+    numToGenerate = Math.min(5, 60 - countSesi1); // Dikurangi jadi 5 supaya response tidak terlalu panjang
     
-    // Hitung startId untuk sesi1
     const sSoal = currentData.sesi1 || [];
     startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
 
-    fullPrompt = `
-Buat ${numToGenerate} soal pilihan ganda PPh [BADAN/OP/POTPUT/PPN/KUP] tingkat SEDANG
-untuk Pemeriksa Pajak DJP.
+    fullPrompt = `Buat ${numToGenerate} soal pilihan ganda PPh [BADAN/OP/POTPUT/PPN/KUP] tingkat SEDANG untuk Pemeriksa Pajak DJP.
 
 Syarat:
-- Skenario kasus nyata, angka realistis dalam Rupiah. Angka perhitungan harus dibuat simpel dan tidak menghasilkan angka keriting (hindari pembagian yang menghasilkan desimal panjang).
-- 4 pilihan jawaban, distractor plausible (masuk akal)
+- Skenario kasus nyata, angka realistis dalam Rupiah. Angka perhitungan harus dibuat simpel (hindari desimal panjang).
+- 4 pilihan jawaban, distractor plausible
 - Pembahasan dengan perhitungan step-by-step
 - Dasar hukum spesifik (termasuk aturan terbaru UU HPP)
-- MATERI SOAL WAJIB MERUJUK PADA SALAH SATU ATAU BEBERAPA PERATURAN BERIKUT (Gunakan sebagai dasar hukum):
+- MATERI SOAL WAJIB MERUJUK PADA SALAH SATU PERATURAN BERIKUT:
   * UU (KUP, PPh, PPN, PBB, BM)
-  * PP 50/2022 (Hak & Kewajiban)
-  * PP 9/2022 (Jasa Konstruksi)
-  * PP 44/2022 (KSO)
-  * PMK 41/2020 (Impor Alat Tertentu)
-  * PMK 60/2022 (PMSE)
-  * PMK 71/2022 (JKP Tertentu)
-  * PMK 131/2024 (PPN Impor)
-  * PMK 11/2025 (Nilai Lain)
-  * PMK 141/2015 (Jasa Lain PPh 23)
-  * PMK 191/2015 (Revaluasi)
-  * PMK 192/2018 (PPh LN)
-  * PMK 66/2023 (Natura)
-  * PMK 168/2023 (TER)
-  * PMK 79/2024 (KSO)
-  * PMK 15/2025 (Pemeriksaan)
-  * PMK 112/2025 (P3B)
-- Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
+  * PP 50/2022, PP 9/2022, PP 44/2022
+  * PMK 41/2020, PMK 60/2022, PMK 71/2022, PMK 131/2024, PMK 11/2025
+  * PMK 141/2015, PMK 191/2015, PMK 192/2018
+  * PMK 66/2023, PMK 168/2023, PMK 79/2024, PMK 15/2025, PMK 112/2025
+- Jika ada data keuangan, gunakan HTML Table.
 
-Format JSON (langsung berupa array objek):
-[
-  {
-    "id": [Mulai dari ${startId}],
-    "kategori": "[pph-badan/pph-potput/ppn/kup]",
-    "skenario": "...",
-    "soal": "...",
-    "opsi": ["A...", "B...", "C...", "D..."],
-    "jawaban": [0-3],
-    "pembahasan": "...",
-    "dasar": "..."
-  }
-]
+Format JSON array:
+[{"id": ${startId}, "kategori": "pph-badan", "skenario": "...", "soal": "...", "opsi": ["A...", "B...", "C...", "D..."], "jawaban": 0, "pembahasan": "...", "dasar": "..."}]
 
-PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block seperti \`\`\`json ... \`\`\`. Langsung mulai dengan [ dan akhiri dengan ].
-`;
+PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
   } else if (countSesi2 < 20) {
     targetSesi = 'sesi2';
-    numToGenerate = Math.min(5, 20 - countSesi2);
+    numToGenerate = Math.min(4, 20 - countSesi2); // Dikurangi jadi 4
     
-    // Hitung startId untuk sesi2
     const sSoal = currentData.sesi2 || [];
     startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
 
-    fullPrompt = `
-Anda adalah konsultan pajak senior dan instruktur BPSDM DJP.
-Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SULIT
-untuk Uji Kompetensi Teknis Pemeriksa Pajak.
+    fullPrompt = `Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SULIT untuk Uji Kompetensi Pemeriksa Pajak.
 
 KETENTUAN:
-- 1 skenario perusahaan dengan data unik dan singkat (maksimal 5-7 baris data keuangan/transaksi dalam tabel).
-- ${numToGenerate} soal yang SALING BERKAITAN dengan skenario yang sama
-- Setiap soal menguji aspek yang relevan dengan skenario (tidak harus mencakup semua jenis pajak, fokus pada 1-2 topik saja agar tidak terlalu rumit).
-- Setiap soal memiliki 4 pilihan jawaban (A–D), jawaban benar cukup 1
-- Pilihan pengecoh (distractors) harus masuk akal secara hukum, bukan asal salah
-- Angka-angka harus konsisten antar soal. Angka perhitungan harus dibuat simpel dan tidak menghasilkan angka keriting (hindari pembagian yang menghasilkan desimal panjang).
-- Cantumkan dasar hukum spesifik (pasal, UU, PMK, PP) termasuk aturan terbaru UU HPP.
-- MATERI SOAL WAJIB MERUJUK PADA SALAH SATU ATAU BEBERAPA PERATURAN BERIKUT (Gunakan sebagai dasar hukum):
-  * UU (KUP, PPh, PPN, PBB, BM)
-  * PP 50/2022 (Hak & Kewajiban)
-  * PP 9/2022 (Jasa Konstruksi)
-  * PP 44/2022 (KSO)
-  * PMK 41/2020 (Impor Alat Tertentu)
-  * PMK 60/2022 (PMSE)
-  * PMK 71/2022 (JKP Tertentu)
-  * PMK 131/2024 (PPN Impor)
-  * PMK 11/2025 (Nilai Lain)
-  * PMK 141/2015 (Jasa Lain PPh 23)
-  * PMK 191/2015 (Revaluasi)
-  * PMK 192/2018 (PPh LN)
-  * PMK 66/2023 (Natura)
-  * PMK 168/2023 (TER)
-  * PMK 79/2024 (KSO)
-  * PMK 15/2025 (Pemeriksaan)
-  * PMK 112/2025 (P3B)
-- Jika terdapat data keuangan atau rincian transaksi, buatlah dalam bentuk HTML Table (<table>, <tr>, <th>, <td>) agar tampil rapi di frontend.
+- 1 skenario perusahaan dengan data singkat (maks 5 baris data keuangan dalam tabel HTML).
+- ${numToGenerate} soal SALING BERKAITAN dengan skenario yang sama
+- Setiap soal: 4 pilihan jawaban (A-D), 1 jawaban benar
+- Distractor masuk akal secara hukum
+- Angka konsisten antar soal, simpel (hindari desimal panjang)
+- Dasar hukum spesifik (pasal, UU, PMK, PP) termasuk UU HPP
+- MATERI MERUJUK PADA: UU (KUP/PPh/PPN/PBB/BM), PP 50/2022, PP 9/2022, PP 44/2022, PMK 60/2022, PMK 71/2022, PMK 131/2024, PMK 11/2025, PMK 141/2015, PMK 191/2015, PMK 192/2018, PMK 66/2023, PMK 168/2023, PMK 79/2024, PMK 15/2025, PMK 112/2025
 
-TOPIK YANG BOLEH DIPILIH (variasikan setiap kali):
-- Transfer pricing / hubungan istimewa
-- Restrukturisasi / merger / akuisisi
-- BUT (Bentuk Usaha Tetap)
-- Pengusaha e-commerce / PMSE
-- Perusahaan properti (PPJB, KPR, BPHTB)
-- Industri pertambangan (royalti, IUP)
-- Perusahaan pelayaran / penerbangan
-- Kelompok usaha dengan transaksi afiliasi
+TOPIK (variasikan): Transfer pricing, Restrukturisasi/merger, BUT, e-commerce/PMSE, Properti, Pertambangan, Pelayaran/penerbangan, Transaksi afiliasi
 
-FORMAT OUTPUT (JSON siap pakai):
-[
-  {
-    "id": [Mulai dari ${startId}],
-    "kategori": "[KATEGORI]",
-    "skenario": "[STUDI KASUS X — Soal Y] [isi skenario]",
-    "soal": "[STUDI KASUS X — Soal Y] [pertanyaan]",
-    "opsi": ["A...", "B...", "C...", "D..."],
-    "jawaban": [0-3],
-    "pembahasan": "[penjelasan lengkap perhitungan]",
-    "dasar": "[pasal dan regulasi]"
-  }
-]
+Format JSON array:
+[{"id": ${startId}, "kategori": "pph-badan", "skenario": "[STUDI KASUS] ...", "soal": "[STUDI KASUS - Soal 1] ...", "opsi": ["A...", "B...", "C...", "D..."], "jawaban": 0, "pembahasan": "...", "dasar": "..."}]
 
-PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markdown block seperti \`\`\`json ... \`\`\`. Langsung mulai dengan [ dan akhiri dengan ].
-`;
+PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
   }
 
-  console.log(`Akan generate soal untuk ${targetSesi} di file ${targetFile}...`);
-
-  // Panggil API Gemini dengan retry
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
-  
-  const response = await fetchWithRetry(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: fullPrompt }] }],
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 8192
-      }
-    })
-  });
-
-  const data = await response.json();
-  
-  if (!response.ok) {
-    console.error('API Error:', data);
-    process.exit(1);
+  if (!targetSesi) {
+    console.log('Semua paket sudah lengkap. Tidak ada yang perlu digenerate.');
+    process.exit(0);
   }
+
+  console.log(`\nAkan generate ${numToGenerate} soal untuk ${targetSesi} di file ${targetFile}...`);
 
   try {
-    if (!data.candidates || !data.candidates[0].content || !data.candidates[0].content.parts) {
-      console.error('API Response missing content. Full response:', JSON.stringify(data, null, 2));
-      process.exit(1);
-    }
-
-    const text = data.candidates[0].content.parts[0].text.trim();
+    const result = await callGeminiWithFallback(apiKey, fullPrompt);
+    console.log(`Berhasil dengan model: ${result.model}`);
     
-    // Ekstrak JSON array dengan mencari [ dan ] terluar
+    const text = result.text;
+    
+    // Ekstrak JSON array
     const startIdx = text.indexOf('[');
     const endIdx = text.lastIndexOf(']');
     
     if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
-      console.error('No valid JSON array found in response. Raw text:', text);
+      console.error('No valid JSON array found in response.');
+      console.error('Raw text (first 1000 chars):', text.substring(0, 1000));
       process.exit(1);
     }
     
     const jsonStr = text.substring(startIdx, endIdx + 1);
-    const newSoal = JSON.parse(jsonStr);
     
-    // Kita tetap assign ID di sini untuk memastikan konsistensi jika AI salah paham
+    let newSoal;
+    try {
+      newSoal = JSON.parse(jsonStr);
+    } catch (parseErr) {
+      // Coba bersihkan common issues
+      const cleaned = jsonStr
+        .replace(/,\s*]/g, ']')  // trailing comma
+        .replace(/,\s*}/g, '}') // trailing comma in object
+        .replace(/[\x00-\x1F\x7F]/g, ' '); // control characters
+      newSoal = JSON.parse(cleaned);
+    }
+    
+    if (!Array.isArray(newSoal) || newSoal.length === 0) {
+      console.error('Parsed result is not a valid array or is empty.');
+      process.exit(1);
+    }
+    
+    // Assign ID untuk konsistensi
     let currentId = startId;
     newSoal.forEach(s => {
       s.id = currentId++;
@@ -270,14 +270,10 @@ PENTING: Berikan output HANYA berupa JSON array yang valid. Jangan gunakan markd
 
     // Simpan ke file
     fs.writeFileSync(filePath, JSON.stringify(currentData, null, 2), 'utf8');
-    console.log(`Success! Updated ${filePath} with ${newSoal.length} new questions.`);
+    console.log(`\nSukses! File ${targetFile} diupdate dengan ${newSoal.length} soal baru.`);
+    console.log(`Total sekarang - Sesi1: ${(currentData.sesi1 || []).length}/60, Sesi2: ${(currentData.sesi2 || []).length}/20`);
   } catch (e) {
-    console.error('Failed to parse JSON or write file:', e.message);
-    if (data && data.candidates && data.candidates[0].content && data.candidates[0].content.parts) {
-      console.error('Raw Response was:', data.candidates[0].content.parts[0].text);
-    } else {
-      console.error('Raw Data was:', JSON.stringify(data, null, 2));
-    }
+    console.error('\nGagal generate soal:', e.message);
     process.exit(1);
   }
 }
