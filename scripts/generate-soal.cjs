@@ -172,8 +172,14 @@ async function generateSoal() {
     
     const sSoal = currentData.sesi1 || [];
     startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
+    
+    const existingTopics = sSoal.slice(-15).map(s => `- ${s.skenario.substring(0, 100).replace(/\n/g, ' ')}...`).join('\n');
 
     fullPrompt = `Buat ${numToGenerate} soal pilihan ganda PPh [BADAN/OP/POTPUT/PPN/KUP] tingkat SEDANG untuk Pemeriksa Pajak DJP.
+    
+PENTING: JANGAN MENGULANGI skenario, topik, atau perhitungan yang sudah dibuat sebelumnya. Berikut adalah contoh 15 soal terakhir yang SUDAH ADA (hindari membuat soal yang mirip dengan ini):
+${existingTopics}
+Buatlah variasi kasus baru, pasal yang berbeda, atau jenis pajak lain agar bank soal sangat kaya dan beragam!
 
 Syarat:
 - Skenario kasus nyata, angka realistis dalam Rupiah. Angka perhitungan harus dibuat simpel (hindari desimal panjang).
@@ -198,8 +204,15 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
     
     const sSoal = currentData.sesi2 || [];
     startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
+    
+    // Ambil topik dari 2 studi kasus terakhir (kira-kira 8 soal terakhir)
+    const existingTopics = sSoal.slice(-8).map(s => `- ${s.skenario.substring(0, 100).replace(/\n/g, ' ')}...`).join('\n');
 
     fullPrompt = `Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SULIT untuk Uji Kompetensi Pemeriksa Pajak.
+
+PENTING: JANGAN MENGULANGI skenario atau studi kasus yang sudah dibuat sebelumnya. Berikut adalah potongan kasus yang SUDAH ADA:
+${existingTopics}
+Buatlah skenario studi kasus BARU dengan industri atau permasalahan perpajakan yang sangat berbeda!
 
 KETENTUAN:
 - 1 skenario perusahaan dengan data singkat (maks 5 baris data keuangan dalam tabel HTML).
