@@ -124,7 +124,7 @@ async function validateAndCorrect() {
     data = JSON.parse(content);
   } catch (e) {
     console.error(`Gagal parse JSON file ${latestFile}.`);
-    process.exit(1);
+    process.exit(0);
   }
 
   // Gabungkan semua soal

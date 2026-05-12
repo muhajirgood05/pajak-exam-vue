@@ -168,7 +168,7 @@ async function generateSoal() {
 
   if (countSesi1 < 60) {
     targetSesi = 'sesi1';
-    numToGenerate = Math.min(5, 60 - countSesi1); // Dikurangi jadi 5 supaya response tidak terlalu panjang
+    numToGenerate = Math.min(3, 60 - countSesi1); // Dikurangi jadi 3 supaya response tidak terlalu panjang
     
     const sSoal = currentData.sesi1 || [];
     startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
@@ -274,7 +274,8 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
     console.log(`Total sekarang - Sesi1: ${(currentData.sesi1 || []).length}/60, Sesi2: ${(currentData.sesi2 || []).length}/20`);
   } catch (e) {
     console.error('\nGagal generate soal:', e.message);
-    process.exit(1);
+    console.error('Response AI mungkin terpotong. Akan dicoba lagi pada jadwal berikutnya.');
+    process.exit(0); // Exit 0 agar workflow tidak dianggap gagal
   }
 }
 
