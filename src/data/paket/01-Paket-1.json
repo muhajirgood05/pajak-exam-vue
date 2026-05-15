@@ -186,13 +186,13 @@
       "skenario": "PT Sumber Berkah (PKP) memiliki peredaran bruto tahun 2024 sebesar Rp4.800.000.000, sehingga mulai tahun 2025 wajib menjadi PKP. Pada masa Januari 2025, PT Sumber Berkah melakukan penyerahan Barang Kena Pajak (BKP) kepada Tuan Budi senilai Rp33.000.000 (termasuk PPN). Namun, hingga tanggal 5 Februari 2025, PT Sumber Berkah belum menerbitkan Faktur Pajak atas penyerahan tersebut dan Tuan Budi belum melunasi pembayaran.",
       "soal": "Kapan PT Sumber Berkah paling lambat wajib menerbitkan Faktur Pajak atas penyerahan kepada Tuan Budi sesuai dengan ketentuan perundang-undangan perpajakan yang berlaku?",
       "opsi": [
-        "5 Februari 2025",
-        "31 Januari 2025",
-        "31 Desember 2025",
-        "28 Februari 2025"
+        "A. Pada akhir bulan penyerahan BKP.",
+        "B. Pada akhir bulan berikutnya setelah penyerahan BKP.",
+        "C. Pada saat penyerahan BKP atau saat tagihan dibuat (mana yang lebih dulu).",
+        "D. Pada saat pelaporan SPT Masa PPN bulan bersangkutan."
       ],
-      "jawaban": 3,
-      "pembahasan": "Sesuai ketentuan PER-03/PJ/2022 tentang Faktur Pajak, Faktur Pajak harus diterbitkan paling lambat pada akhir bulan berikutnya setelah bulan penyerahan BKP/JKP. Dalam kasus ini, BKP diserahkan pada Januari 2025. Batas waktu penerbitan Faktur Pajak adalah akhir Februari 2025 (28 Februari 2025, karena 2025 bukan tahun kabisat). Meskipun PT Sumber Berkah baru wajib menjadi PKP pada tahun 2025, kewajiban penerbitan Faktur Pajak tetap berlaku sejak perolehan status PKP.",
+      "jawaban": 2,
+      "pembahasan": "Sesuai Pasal 13 ayat (1a) UU PPN, Faktur Pajak harus dibuat pada saat penyerahan BKP/JKP, atau saat penerimaan pembayaran (jika mendahului penyerahan), atau saat pembuatan tagihan. Pembuatan Faktur Pajak pada akhir bulan (paling lambat) HANYA berlaku khusus untuk Faktur Pajak Gabungan atas beberapa penyerahan kepada pembeli yang sama dalam 1 bulan kalender. Untuk transaksi tunggal, faktur tidak boleh menunggu akhir bulan.",
       "dasar": "Pasal 11 ayat (1) huruf b PER-03/PJ/2022"
     },
     {
@@ -966,7 +966,7 @@
       "id": 5,
       "kategori": "potput",
       "skenario": "[KASUS 1: PT SENTOSA ABADI] ... (lanjutan)",
-      "soal": "[Soal 1.5] Atas pembelian bahan baku dari PT Kulit Jaya (transaksi nomor 2), berapa PPh Pasal 22 yang dipungut oleh PT Kulit Jaya jika PT Sentosa Abadi memiliki API?",
+      "soal": "[Soal 1.5] Atas pembelian bahan baku dari PT Semen Jaya (transaksi nomor 2), berapa PPh Pasal 22 yang dipungut oleh PT Semen Jaya jika PT Sentosa Abadi memiliki API?",
       "opsi": [
         "Rp0 (tidak dipungut PPh 22)",
         "Rp500.000 (0,25% x Rp200.000.000)",
@@ -974,7 +974,7 @@
         "Rp5.000.000 (2,5% x Rp200.000.000)"
       ],
       "jawaban": 1,
-      "pembahasan": "PPh 22 untuk pembelian oleh distributor dengan API = 0,25% x Rp200.000.000 = Rp500.000",
+      "pembahasan": "Sesuai PMK-34/2017 jo PMK-41/2022, PPh Pasal 22 atas penjualan hasil produksi industri Semen di dalam negeri adalah sebesar 0,25% dari Dasar Pengenaan Pajak (DPP) PPN. PPh 22 = 0,25% x Rp 200.000.000 = Rp 500.000.",
       "dasar": "PMK 34/2017 / UU PPh Pasal 22"
     },
     {
@@ -983,13 +983,13 @@
       "skenario": "[KASUS 2: CV KARYA BERSAMA] CV Karya Bersama adalah PKP yang bergerak di bidang jasa konstruksi. Berikut data transaksi:\n(1) Mengerjakan proyek pembangunan gedung untuk PT Bangun Nusantara dengan nilai kontrak Rp2.000.000.000.\n(2) Membeli solar Rp50.000.000.\n(3) Menjual salah satu excavator bekas seharga Rp150.000.000.\n(4) Membayar jasa notaris Rp10.000.000.\n(5) Memberikan sumbangan bencana alam ke BNPB Rp20.000.000.\n(6) Membagikan dividen interim kepada para pemegang saham (badan hukum) sebesar Rp100.000.000.",
       "soal": "[Soal 2.1] Atas proyek konstruksi (transaksi nomor 1), berapa PPh Pasal 4 ayat (2) final jasa konstruksi yang harus dipotong oleh PT Bangun Nusantara jika CV Karya Bersama memiliki sertifikat usaha kualifikasi menengah?",
       "opsi": [
-        "Rp40.000.000 (2% x Rp2.000.000.000)",
-        "Rp60.000.000 (3% x Rp2.000.000.000)",
-        "Rp80.000.000 (4% x Rp2.000.000.000)",
-        "Rp100.000.000 (5% x Rp2.000.000.000)"
+        "A. Rp 35.000.000 (1,75%)",
+        "B. Rp 53.000.000 (2,65%)",
+        "C. Rp 80.000.000 (4%)",
+        "D. Rp 60.000.000 (3%)"
       ],
       "jawaban": 1,
-      "pembahasan": "Jasa konstruksi kualifikasi menengah = 3% x Rp2.000.000.000 = Rp60.000.000",
+      "pembahasan": "Sesuai dengan PP 9 Tahun 2022, tarif PPh Final Pasal 4 ayat (2) atas Pelaksanaan Jasa Konstruksi yang dilakukan oleh Penyedia Jasa yang memiliki sertifikat kualifikasi menengah atau besar adalah 2,65% (turun dari sebelumnya 3%). PPh Final = 2,65% x Rp 2.000.000.000 = Rp 53.000.000.",
       "dasar": "PP 9 Tahun 2022"
     },
     {
@@ -1058,28 +1058,28 @@
       "skenario": "[KASUS 3: PT MAJU JAYA]\n(1) Impor smartphone dengan CIF+BM = US$200.000 x Rp15.000 = Rp3.000.000.000.\n(2) Menjual laptop ke PT Komputer Nusantara selaku distributor senilai Rp2.500.000.000.\n(3) Membayar sewa kendaraan ke Tono (OP bukan PKP) Rp15.000.000.\n(4) Hadiah undian televisi Rp7.500.000.\n(5) Royalty ke pencipta lagu Rp12.000.000.",
       "soal": "[Soal 3.1] Atas impor smartphone, berapa PPh Pasal 22 Impor yang harus dibayar oleh PT Maju Jaya jika memiliki API?",
       "opsi": [
-        "Rp0 (dibebaskan)",
-        "Rp15.000.000 (0,5% x nilai impor)",
-        "Rp30.000.000 (1% x nilai impor)",
-        "Rp45.000.000 (1,5% x nilai impor)"
+        "A. Rp 15.000.000",
+        "B. Rp 75.000.000",
+        "C. Rp 225.000.000",
+        "D. Rp 300.000.000"
       ],
-      "jawaban": 1,
-      "pembahasan": "PPh 22 Impor dengan API (barang tertentu) = 0,5% x (CIF + bea masuk) = 0,5% x Rp3.000.000.000 = Rp15.000.000.",
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-41/PMK.010/2022, impor barang tertentu seperti smartphone dikenakan PPh Pasal 22 dengan tarif 7,5% dari Nilai Impor, tanpa membedakan apakah importir memiliki Angka Pengenal Impor (API) atau tidak. PPh 22 = 7,5% x Rp 3.000.000.000 = Rp 225.000.000.",
       "dasar": "PMK 34/2017"
     },
     {
       "id": 12,
       "kategori": "potput",
       "skenario": "[KASUS 3: PT MAJU JAYA] ... (lanjutan)",
-      "soal": "[Soal 3.2] Atas penjualan laptop ke PT Komputer Nusantara (distributor), berapa PPh Pasal 22 yang dipungut oleh PT Maju Jaya?",
+      "soal": "[Soal 3.2] Atas penjualan kertas ke PT Kertas Nusantara (distributor), berapa PPh Pasal 22 yang dipungut oleh PT Maju Jaya?",
       "opsi": [
-        "Rp0 (tidak dipungut)",
-        "Rp6.250.000 (0,25% x Rp2.500.000.000)",
-        "Rp12.500.000 (0,5% x Rp2.500.000.000)",
-        "Rp25.000.000 (1% x Rp2.500.000.000)"
+        "A. Rp 2.500.000",
+        "B. Rp 6.250.000",
+        "C. Rp 11.250.000",
+        "D. Rp 12.500.000"
       ],
-      "jawaban": 1,
-      "pembahasan": "PPh 22 penjualan oleh produsen/distributor elektronik = 0,25% x Rp2.500.000.000 = Rp6.250.000",
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK-34/PMK.010/2017, pemungutan PPh Pasal 22 oleh industri kertas atas penjualan hasil produksinya di dalam negeri adalah sebesar 0,1% dari Dasar Pengenaan Pajak (DPP) PPN. PPh 22 = 0,1% x Rp 2.500.000.000 = Rp 2.500.000.",
       "dasar": "UU PPh Pasal 22"
     },
     {
