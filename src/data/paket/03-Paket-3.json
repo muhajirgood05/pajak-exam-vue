@@ -723,17 +723,17 @@
     {
       "id": 49,
       "kategori": "ppn",
-      "skenario": "PT Griya Kencana, sebuah Pengusaha Kena Pajak (PKP) yang bergerak di bidang real estat, pada bulan Mei 2025 melakukan penjualan sebidang tanah dan bangunan yang sebelumnya digunakan sebagai kantor pusat perusahaan. Data transaksi adalah sebagai berikut:\n<ul>\n  <li>Harga Jual Tanah dan Bangunan: Rp 12.000.000.000,-</li>\n  <li>Nilai Perolehan (Harga Pokok) Tanah dan Bangunan: Rp 8.000.000.000,-</li>\n</ul>\nPT Griya Kencana sebelumnya telah mengkreditkan Pajak Masukan atas perolehan bangunan tersebut.",
-      "soal": "Berapakah Pajak Pertambahan Nilai (PPN) yang terutang atas penyerahan tanah dan bangunan tersebut?",
+      "skenario": "PT Griya Kencana, sebuah Pengusaha Kena Pajak (PKP) yang bergerak di bidang real estat, pada bulan Mei 2025 melakukan penjualan sebidang tanah dan bangunan yang sebelumnya digunakan sebagai kantor pusat perusahaan. Sesuai kesepakatan dengan pembeli, nilai transaksi yang dibayarkan adalah Rp 11.200.000.000,- (Harga tersebut sudah Termasuk PPN). PT Griya Kencana sebelumnya telah mengkreditkan Pajak Masukan atas perolehan bangunan tersebut.",
+      "soal": "Berapakah Pajak Pertambahan Nilai (PPN) yang harus dipungut dan disetor atas penyerahan aktiva (Pasal 16D) tersebut?",
       "opsi": [
-        "A. Rp 1.100.000.000,-",
-        "B. Rp 1.200.000.000,-",
-        "C. Rp 1.320.000.000,-",
-        "D. Rp 1.440.000.000,-"
+        "A. Rp 1.200.000.000,-",
+        "B. Rp 1.109.909.909,-",
+        "C. Rp 1.344.000.000,-",
+        "D. Rp 1.232.000.000,-"
       ],
-      "jawaban": 3,
-      "pembahasan": "1.   **Menentukan Objek PPN:**\n    Penyerahan hak atas tanah dan/atau bangunan oleh Pengusaha Kena Pajak (PKP) merupakan objek PPN (Pasal 4 ayat (1) huruf a UU PPN).\n    Karena PT Griya Kencana adalah PKP dan telah mengkreditkan Pajak Masukan atas perolehan bangunan tersebut, maka penyerahan ini terutang PPN sesuai Pasal 20 ayat (1) Peraturan Pemerintah Nomor 44 Tahun 2022.\n\n2.   **Menentukan Dasar Pengenaan Pajak (DPP):**\n    Dasar Pengenaan Pajak (DPP) atas penyerahan Barang Kena Pajak berupa tanah dan/atau bangunan adalah Harga Jual (Pasal 8A ayat (1) UU PPN).\n    DPP = Rp 12.000.000.000,-\n\n3.   **Menentukan Tarif PPN:**\n    Berdasarkan Pasal 7 ayat (1) huruf b UU PPN HPP, tarif PPN adalah 12% yang berlaku paling lambat 1 Januari 2025. Karena transaksi terjadi pada Mei 2025, maka tarif yang berlaku adalah 12%.\n\n4.   **Menghitung PPN Terutang:**\n    PPN Terutang = Tarif PPN x DPP\n    PPN Terutang = 12% x Rp 12.000.000.000 = Rp 1.440.000.000,-\n\nJadi, Pajak Pertambahan Nilai (PPN) yang terutang atas penyerahan tanah dan bangunan tersebut adalah Rp 1.440.000.000,-.",
-      "dasar": "Pasal 4 ayat (1) huruf a, Pasal 7 ayat (1) huruf b, dan Pasal 8A ayat (1) Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPN), serta Pasal 20 ayat (1) Peraturan Pemerintah Nomor 44 Tahun 2022 tentang Penerapan Terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah."
+      "jawaban": 0,
+      "pembahasan": "1. **Tarif PPN Tahun 2025:** Sesuai mandat UU HPP Pasal 7 ayat (1), tarif PPN resmi naik menjadi 12% selambat-lambatnya 1 Januari 2025. Karena transaksi terjadi di bulan Mei 2025, maka tarifnya adalah 12%.\n\n2. **Menghitung PPN dari Harga Inklusif:** Jika nilai transaksi sudah Termasuk PPN (Inklusif) dan barang tersebut bukan barang mewah, maka rumus memisahkan PPN adalah: Tarif / (100 + Tarif) x Harga Inklusif.\n\n3. **Perhitungan:**\nPPN = (12 / 112) x Rp 11.200.000.000 = Rp 1.200.000.000,-\n\nJebakan: Jika peserta lupa bahwa tarif sudah 12% dan menggunakan 11%, maka perhitungannya menjadi (11/111) x Rp 11.2M = Rp 1.109.909.909. Jika peserta mengalikan langsung 12% ke harga inklusif tanpa membaginya (12% x 11.2M), hasilnya Rp 1.344.000.000. Jadi jawaban yang benar adalah Rp 1.200.000.000.",
+      "dasar": "Pasal 4 ayat (1) huruf a, Pasal 7 ayat (1) huruf b, dan Pasal 8A ayat (1) Undang-Undang PPN sttd UU HPP, serta Pasal 20 ayat (1) PP Nomor 44 Tahun 2022."
     }
   ],
   "sesi2": [

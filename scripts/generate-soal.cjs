@@ -299,6 +299,12 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
     });
 
     // Simpan ke file
+    if (currentData.sesi1 && currentData.sesi1.length > 60) {
+      currentData.sesi1 = currentData.sesi1.slice(0, 60);
+    }
+    if (currentData.sesi2 && currentData.sesi2.length > 20) {
+      currentData.sesi2 = currentData.sesi2.slice(0, 20);
+    }
     fs.writeFileSync(filePath, JSON.stringify(currentData, null, 2), 'utf8');
     console.log(`\nSukses! File ${targetFile} diupdate dengan ${newSoal.length} soal baru.`);
     console.log(`Total sekarang - Sesi1: ${(currentData.sesi1 || []).length}/60, Sesi2: ${(currentData.sesi2 || []).length}/20`);
