@@ -761,9 +761,9 @@
         "C. Rp 120.000.000",
         "D. Rp 195.000.000"
       ],
-      "jawaban": 2,
-      "pembahasan": "1.   **Dividen dari PT Makmur Sentosa:**\n    *   Jumlah Dividen = Rp 800.000.000\n    *   Persentase kepemilikan saham PT SB pada PT Makmur Sentosa adalah 20%.\n    *   Berdasarkan Pasal 4 ayat (3) huruf f Undang-Undang PPh, dividen yang diterima oleh Wajib Pajak badan dalam negeri dikecualikan dari objek pajak jika kepemilikan saham pada badan yang memberikan dividen paling rendah 25% dari jumlah modal yang disetor.\n    *   Karena kepemilikan PT SB (20%) kurang dari 25%, dividen ini merupakan objek PPh Pasal 23.\n    *   Tarif PPh Pasal 23 atas dividen adalah 15% (Pasal 23 ayat (1) huruf a UU PPh).\n    *   PPh Pasal 23 atas dividen dari PT Makmur Sentosa = 15% x Rp 800.000.000 = Rp 120.000.000.\n\n2.   **Dividen dari PT Indah Permai:**\n    *   Jumlah Dividen = Rp 500.000.000\n    *   Persentase kepemilikan saham PT SB pada PT Indah Permai adalah 30%.\n    *   Karena kepemilikan PT SB (30%) paling rendah 25%, dividen ini dikecualikan dari objek PPh Pasal 23 (bukan objek pajak).\n    *   PPh Pasal 23 atas dividen dari PT Indah Permai = Rp 0.\n\n3.   **Total PPh Pasal 23 yang dipotong:**\n    *   Total PPh Pasal 23 = PPh dari PT Makmur Sentosa + PPh dari PT Indah Permai\n    *   Total PPh Pasal 23 = Rp 120.000.000 + Rp 0 = Rp 120.000.000.",
-      "dasar": "Pasal 4 ayat (3) huruf f dan Pasal 23 ayat (1) huruf a Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh)."
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf f UU PPh sebagaimana telah diubah oleh UU Cipta Kerja dan UU HPP, dividen yang diterima atau diperoleh Wajib Pajak badan dalam negeri dari badan usaha yang didirikan dan bertempat kedudukan di Indonesia adalah DIKECUALIKAN DARI OBJEK PAJAK (Bukan Objek Pajak).\\n\\nSyarat kepemilikan saham minimal 25% yang ada pada aturan lama kini TELAH DIHAPUS. Oleh karena itu, berapapun persentase kepemilikannya (baik 20% maupun 30%), dividen yang diterima oleh PT SB (Badan Dalam Negeri) dari PT Makmur Sentosa maupun PT Indah Permai TIDAK dipotong PPh Pasal 23.\\n\\nTotal PPh Pasal 23 yang dipotong = Rp 0 + Rp 0 = Rp 0.",
+      "dasar": "Pasal 4 ayat (3) huruf f Undang-Undang PPh sttd UU HPP dan Pasal 35 ayat (1) Peraturan Pemerintah Nomor 55 Tahun 2022."
     },
     {
       "id": 52,
