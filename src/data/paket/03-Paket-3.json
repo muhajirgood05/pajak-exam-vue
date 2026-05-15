@@ -18,16 +18,16 @@
     {
       "id": 2,
       "kategori": "pph-op",
-      "skenario": "Tuan Budi (status kawin, 1 anak tanggungan / K/1) adalah seorang karyawan tetap di PT Sentosa Jaya. Pada bulan Januari 2024, ia menerima penghasilan sebagai berikut:\n\n<table>\n  <tr><th>Uraian</th><th>Jumlah (Rp)</th></tr>\n  <tr><td>Gaji Pokok</td><td>12.000.000</td></tr>\n  <tr><td>Tunjangan Transportasi</td><td>1.500.000</td></tr>\n  <tr><td>Tunjangan Makan</td><td>500.000</td></tr>\n  <tr><td>Premi JKK (dibayar perusahaan, 0,3%)</td><td>36.000</td></tr>\n  <tr><td>Premi JKM (dibayar perusahaan, 0,2%)</td><td>24.000</td></tr>\n</table>",
+      "skenario": "Tuan Budi (status kawin, 1 anak tanggungan / K/1) adalah seorang karyawan tetap di PT Sentosa Jaya. Pada bulan Januari 2024, ia menerima penghasilan sebagai berikut:\n\n<table>\n  <tr><th>Uraian</th><th>Jumlah (Rp)</th></tr>\n  <tr><td>Gaji Pokok</td><td>12.000.000</td></tr>\n  <tr><td>Tunjangan Transportasi</td><td>1.500.000</td></tr>\n  <tr><td>Tunjangan Makan</td><td>500.000</td></tr>\n  <tr><td>Premi JKK (dibayar perusahaan, 0,3%)</td><td>36.000</td></tr>\n  <tr><td>Premi JKM (dibayar perusahaan, 0,2%)</td><td>24.000</td></tr>\n</table>\n\nData Tarif TER Bulanan (Excerpt PMK 168/2023):\n- Bruto Rp 13.500.000 - Rp 14.000.000: Kat A (4%), Kat B (1,5%), Kat C (1%)\n- Bruto Rp 14.000.000 - Rp 14.250.000: Kat A (5%), Kat B (2%), Kat C (1,5%)\n- Bruto Rp 14.250.000 - Rp 14.500.000: Kat A (6%), Kat B (2,5%), Kat C (2%)\n\nData Tarif TER Bulanan (Excerpt PMK 168/2023):\n- Bruto Rp 13.500.000 - Rp 14.000.000: Kat A (4%), Kat B (1,5%), Kat C (1%)\n- Bruto Rp 14.000.000 - Rp 14.250.000: Kat A (5%), Kat B (2%), Kat C (1,5%)\n- Bruto Rp 14.250.000 - Rp 14.500.000: Kat A (6%), Kat B (2,5%), Kat C (2%)",
       "soal": "Berdasarkan PMK 168/2023 tentang Tarif Efektif Rata-rata (TER), berapakah PPh Pasal 21 yang harus dipotong PT Sentosa Jaya atas penghasilan Tuan Budi untuk bulan Januari 2024?",
       "opsi": [
-        "A. Rp 0",
-        "B. Rp 211.000",
-        "C. Rp 281.200",
-        "D. Rp 352.000"
+        "A. Rp 210.900 (Terjebak pengurangan Biaya Jabatan)",
+        "B. Rp 281.200 (Tarif TER 2%)",
+        "C. Rp 703.000 (Terjebak Kategori A)",
+        "D. Rp 140.600 (Terjebak Kategori C)"
       ],
-      "jawaban": 2,
-      "pembahasan": "Langkah 1: Menghitung Penghasilan Bruto Sebulan\nGaji Pokok: Rp 12.000.000\nTunjangan Transportasi: Rp 1.500.000\nTunjangan Makan: Rp 500.000\nPremi JKK: Rp 36.000\nPremi JKM: Rp 24.000\nTotal Penghasilan Bruto = Rp 14.060.000\n\nLangkah 2: Menentukan Tarif Efektif Rata-rata (TER)\nStatus PTKP Tuan Budi: K/1 → Kategori B (PMK 168/2023 Lampiran)\nBerdasarkan Tabel TER Kategori B, untuk penghasilan bruto bulanan Rp 14.000.000 s.d. Rp 14.250.000, tarif TER adalah 2%.\n\nLangkah 3: Menghitung PPh Pasal 21\nPPh 21 = TER x Penghasilan Bruto\nPPh 21 = 2% x Rp 14.060.000 = Rp 281.200",
+      "jawaban": 1,
+      "pembahasan": "Langkah 1: Menghitung Penghasilan Bruto. Gaji + Tunjangan + Premi JKK/JKM dibayar perusahaan = 12.000.000 + 1.500.000 + 500.000 + 36.000 + 24.000 = Rp 14.060.000. INGAT: Iuran pensiun/JHT yang dibayar karyawan BUKAN pengurang dalam menghitung PPh 21 bulanan (Masa selain Desember), dan Biaya Jabatan tidak dikurangkan saat mencari DPP TER.\nLangkah 2: Tentukan Kategori TER. Status K/1 masuk dalam TER Kategori B.\nLangkah 3: Cek Tabel. Bruto Rp14.060.000 berada di range Rp14.000.000 - Rp14.250.000, sehingga tarif TER Kategori B adalah 2%.\nPPh 21 = 2% x Rp 14.060.000 = Rp 281.200.\nJebakan: Jika terkecoh mengurangkan biaya jabatan 5% (Rp 500rb), bruto dianggap Rp13.560.000 lalu menggunakan tarif 1,5% (Jawaban A). Ini SALAH!",
       "dasar": "Peraturan Menteri Keuangan Nomor 168 Tahun 2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (Lampiran Tabel TER Kategori B)."
     },
     {
@@ -483,16 +483,16 @@
     {
       "id": 33,
       "kategori": "pph-potput",
-      "skenario": "Pak Budi, seorang pegawai tetap dengan status lajang tanpa tanggungan (PTKP K/0), menerima penghasilan bruto pada bulan Januari 2024 sebagai berikut:<table><thead><tr><th>Deskripsi Penghasilan</th><th>Jumlah</th></tr></thead><tbody><tr><td>Gaji Pokok</td><td>Rp 8.000.000</td></tr><tr><td>Tunjangan Transportasi</td><td>Rp 1.000.000</td></tr><tr><td>Tunjangan Makan</td><td>Rp 500.000</td></tr><tr><td>Premi Jaminan Kecelakaan Kerja (dibayar perusahaan)</td><td>Rp 50.000</td></tr><tr><td>Premi Jaminan Kematian (dibayar perusahaan)</td><td>Rp 30.000</td></tr></tbody></table>Perusahaan juga membayarkan iuran BPJS Kesehatan sebesar 4% dari gaji pokok dan iuran Jaminan Hari Tua sebesar 3,7% dari gaji pokok. Pak Budi membayar iuran Jaminan Hari Tua sebesar 2% dari gaji pokok dan iuran pensiun sebesar Rp 100.000.",
+      "skenario": "Pak Budi, seorang pegawai tetap dengan status lajang tanpa tanggungan (PTKP TK/0), menerima penghasilan pada bulan Januari 2024 sebagai berikut:\n- Gaji Pokok: Rp 8.000.000\n- Tunjangan Transportasi: Rp 1.000.000\n- Tunjangan Makan: Rp 500.000\n- Premi JKK (dibayar perusahaan): Rp 50.000\n- Premi JKM (dibayar perusahaan): Rp 30.000\n- Iuran BPJS Kesehatan (dibayar perusahaan 4%): Rp 320.000\n- Iuran JHT (dibayar sendiri): Rp 160.000\n- Iuran Pensiun (dibayar sendiri): Rp 100.000\n\nData Tabel TER Bulanan (Excerpt PMK 168/2023):\n- Range Bruto Rp 8.850.000 - Rp 9.300.000: Kat A (1,5%), Kat B (1%)\n- Range Bruto Rp 9.300.000 - Rp 9.650.000: Kat A (2%), Kat B (1,5%)\n- Range Bruto Rp 9.650.000 - Rp 10.050.000: Kat A (2,5%), Kat B (2%)",
       "soal": "Berapakah PPh Pasal 21 yang harus dipotong oleh pemberi kerja atas penghasilan Pak Budi pada bulan Januari 2024, menggunakan metode Tarif Efektif Rata-rata (TER)?",
       "opsi": [
-        "Rp 0",
-        "Rp 100.000",
-        "Rp 255.000",
-        "Rp 355.000"
+        "A. Rp 191.600 (Terjebak lupa menambah BPJS Kes)",
+        "B. Rp 247.500 (Tarif 2,5%)",
+        "C. Rp 186.400 (Terjebak mengurangkan iuran JHT & Pensiun)",
+        "D. Rp 198.000 (Terjebak Kategori B)"
       ],
-      "jawaban": 2,
-      "pembahasan": "1.  **Menghitung Total Penghasilan Bruto Bulanan:**\n    *   Gaji Pokok: Rp 8.000.000\n    *   Tunjangan Transportasi: Rp 1.000.000\n    *   Tunjangan Makan: Rp 500.000\n    *   Premi Jaminan Kecelakaan Kerja (dibayar perusahaan): Rp 50.000\n    *   Premi Jaminan Kematian (dibayar perusahaan): Rp 30.000\n    *   **Total Penghasilan Bruto = Rp 8.000.000 + Rp 1.000.000 + Rp 500.000 + Rp 50.000 + Rp 30.000 = Rp 9.580.000.**\n\n2.  **Menentukan Tarif Efektif Rata-rata (TER):**\n    *   Status PTKP Pak Budi adalah K/0 (Lajang tanpa tanggungan), sehingga termasuk dalam Kategori A.\n    *   Berdasarkan Lampiran III Tabel A PMK 168/2023, untuk penghasilan bruto bulanan antara Rp 9.500.000 s.d. Rp 9.700.000, Tarif Efektif Rata-rata (TER) Kategori A adalah **2,65%**.\n\n3.  **Menghitung PPh Pasal 21 Terutang:**\n    *   PPh Pasal 21 = TER Kategori A x Total Penghasilan Bruto\n    *   PPh Pasal 21 = 2,65% x Rp 9.580.000 = Rp 253.870.\n    *   Nilai terdekat yang tersedia pada opsi adalah Rp 255.000.",
+      "jawaban": 1,
+      "pembahasan": "Langkah 1: Penghasilan Bruto = Gaji Pokok (8.000.000) + Transpor (1.000.000) + Makan (500.000) + JKK (50.000) + JKM (30.000) + BPJS Kes Perusahaan (320.000) = Rp 9.900.000. INGAT: BPJS Kesehatan yang dibayar pemberi kerja WAJIB ditambahkan sebagai komponen bruto. Iuran JHT dan Pensiun yang dibayar sendiri TIDAK BOLEH dikurangkan dari bruto pada masa Jan-Nov.\nLangkah 2: Status TK/0 adalah TER Kategori A.\nLangkah 3: Nilai Rp 9.900.000 masuk range Rp 9.650.000 - Rp 10.050.000, dengan tarif Kategori A sebesar 2,5%.\nPPh 21 = 2,5% x Rp 9.900.000 = Rp 247.500.\nJebakan: Jika peserta lupa menambah BPJS Kes perusahaan, bruto menjadi Rp 9.580.000 yang masuk ke range tarif 2% (Rp 191.600). Jika malah mengurangkan iuran pribadi, bruto menjadi Rp 9.320.000 (Rp 186.400).",
       "dasar": "Peraturan Menteri Keuangan Nomor 168 Tahun 2023 tentang Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Orang Pribadi (terutama Lampiran III Tabel A)."
     },
     {
