@@ -140,13 +140,42 @@ const answers = ref({});
 const revealed = ref({});
 const showPembahasan = ref({});
 
-// Reset state when session changes
-watch(() => props.sessionId, () => {
-  answers.value = {};
-  revealed.value = {};
-  showPembahasan.value = {};
+const saveState = () => {
+  localStorage.setItem('pajak_exam_state_' + props.sessionId, JSON.stringify({
+    answers: answers.value,
+    revealed: revealed.value,
+    showPembahasan: showPembahasan.value
+  }));
+};
+
+const loadState = (id) => {
+  const saved = localStorage.getItem('pajak_exam_state_' + id);
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      answers.value = parsed.answers || {};
+      revealed.value = parsed.revealed || {};
+      showPembahasan.value = parsed.showPembahasan || {};
+    } catch (e) {
+      answers.value = {};
+      revealed.value = {};
+      showPembahasan.value = {};
+    }
+  } else {
+    answers.value = {};
+    revealed.value = {};
+    showPembahasan.value = {};
+  }
+};
+
+watch([answers, revealed, showPembahasan], () => {
+  saveState();
+}, { deep: true });
+
+watch(() => props.sessionId, (newId) => {
+  loadState(newId);
   currentFilter.value = 'semua';
-});
+}, { immediate: true });
 
 const filteredSoals = computed(() => {
   if (currentFilter.value === 'semua') return props.soals;
