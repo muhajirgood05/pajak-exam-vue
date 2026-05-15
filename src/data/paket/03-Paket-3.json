@@ -779,6 +779,81 @@
       "jawaban": 2,
       "pembahasan": "1.   **Dasar Hukum:** Berdasarkan Pasal 16D Undang-Undang PPN, Pajak Pertambahan Nilai dikenakan atas penyerahan Barang Kena Pajak berupa aktiva yang menurut tujuan semula tidak untuk diperjualbelikan oleh Pengusaha Kena Pajak, sepanjang Pajak Masukan yang dibayar pada saat perolehannya dapat dikreditkan.\n2.   **Kondisi Kasus:**\n    *   PT Cendana adalah PKP.\n    *   Menjual mobil dinas operasional (aktiva yang menurut tujuan semula tidak untuk diperjualbelikan).\n    *   PPN Masukan atas perolehan mobil tersebut (Rp 25.000.000) telah dikreditkan.\n    *   Semua syarat Pasal 16D terpenuhi, sehingga penyerahan mobil ini terutang PPN.\n3.   **Perhitungan PPN Terutang:**\n    *   Harga Jual Mobil = Rp 250.000.000.\n    *   Tarif PPN yang berlaku sejak 1 April 2022 adalah 11% (sesuai UU HPP).\n    *   PPN Terutang = Tarif PPN x Harga Jual\n    *   PPN Terutang = 11% x Rp 250.000.000 = Rp 27.500.000.",
       "dasar": "Pasal 16D Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPN). Serta Pasal 7 ayat (1) huruf a UU PPN (tarif PPN)."
+    },
+    {
+      "id": 53,
+      "kategori": "ppn",
+      "skenario": "Bapak Anton (Bukan PKP) membangun sebuah rumah tinggal secara mandiri (Kegiatan Membangun Sendiri) seluas 250 m2. Pekerjaan konstruksi dilakukan selama bulan Juni 2025. Total biaya yang dikeluarkan pada bulan tersebut untuk pembelian bahan bangunan dan upah tukang adalah Rp 1.500.000.000 (tidak termasuk harga perolehan tanah).",
+      "soal": "Berapakah Pajak Pertambahan Nilai (PPN) terutang atas Kegiatan Membangun Sendiri (KMS) yang dilakukan Bapak Anton untuk bulan Juni 2025?",
+      "opsi": [
+        "A. Rp 36.000.000",
+        "B. Rp 33.000.000",
+        "C. Rp 180.000.000",
+        "D. Rp 300.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK 61/2022, Kegiatan Membangun Sendiri (KMS) dikenakan PPN dengan Besaran Tertentu, yaitu 20% dari tarif PPN dikalikan total biaya bangunan.\nTarif PPN yang berlaku sejak 1 Januari 2025 (UU HPP) adalah 12%.\nMaka tarif efektif KMS = 20% x 12% = 2,4%.\n\nPPN Terutang = 2,4% x Rp 1.500.000.000 = Rp 36.000.000.",
+      "dasar": "UU PPN Pasal 16C; UU HPP Pasal 7 ayat (1); PMK 61/PMK.03/2022."
+    },
+    {
+      "id": 54,
+      "kategori": "pph-potput",
+      "skenario": "Tuan Fajar (K/1) bekerja pada PT Sinar Makmur dengan gaji pokok Rp 15.000.000 per bulan. Pada bulan April 2024, selain gaji pokok bulanan, Tuan Fajar juga menerima Tunjangan Hari Raya (THR) sebesar Rp 20.000.000.\n\n[Excerpt Tabel TER Kategori B (Status K/1)]:\n- Rp 14.500.000 s.d Rp 15.500.000: Tarif 2,5%\n- Rp 34.000.000 s.d Rp 36.000.000: Tarif 10%",
+      "soal": "Berdasarkan metode TER (PMK 168/2023), berapakah total pemotongan PPh Pasal 21 atas penghasilan Tuan Fajar pada Masa Pajak April 2024?",
+      "opsi": [
+        "A. Rp 3.500.000",
+        "B. Rp 375.000",
+        "C. Rp 2.000.000",
+        "D. Rp 2.375.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan mekanisme TER PMK 168/2023, PPh 21 Masa (selain Desember) dihitung dengan mengalikan Tarif Efektif dengan Total Penghasilan Bruto pada masa tersebut.\n\nTotal Bruto April 2024 = Gaji Pokok (15.000.000) + THR (20.000.000) = Rp 35.000.000.\n\nBerdasarkan tabel TER Kategori B, untuk penghasilan Rp 35.000.000 berada pada range tarif 10%.\nTotal PPh 21 Masa April = 10% x Rp 35.000.000 = Rp 3.500.000.\n\nBerbeda dengan aturan lama yang memisahkan PPh atas Gaji dan THR, mekanisme TER langsung mengenakan tarif pada akumulasi total bruto bulan terkait.",
+      "dasar": "PMK 168 Tahun 2023 tentang Petunjuk Pelaksanaan Pemotongan PPh sehubungan dengan Pekerjaan."
+    },
+    {
+      "id": 55,
+      "kategori": "pph-badan",
+      "skenario": "Dalam laporan laba rugi komersial tahun 2024, PT Omega mencatat biaya-biaya berikut:\n1. Pajak Penghasilan (PPh Badan) dibayar di muka sebesar Rp 150.000.000.\n2. Biaya jamuan tamu (Entertainment) sebesar Rp 250.000.000 (hanya Rp 200.000.000 yang didukung oleh daftar nominatif yang valid).\n3. Tunjangan PPh Pasal 21 karyawan (Pajak ditanggung perusahaan tanpa skema gross-up) sebesar Rp 100.000.000.\n4. Sumbangan dalam rangka penanggulangan bencana nasional via BNPB sebesar Rp 50.000.000.",
+      "soal": "Berapakah total koreksi fiskal positif yang harus dilakukan PT Omega atas biaya-biaya di atas saat menyusun SPT Tahunan PPh Badan 2024?",
+      "opsi": [
+        "A. Rp 200.000.000",
+        "B. Rp 300.000.000",
+        "C. Rp 350.000.000",
+        "D. Rp 450.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Analisis setiap biaya secara fiskal:\n1. PPh Badan Rp 150 juta: Non-Deductible (Pasal 9 ayat 1 UU PPh). Harus dikoreksi positif.\n2. Entertainment: Hanya yang memiliki daftar nominatif yang diakui. Biaya komersial Rp 250 juta, diakui Rp 200 juta. Maka koreksi positif Rp 50 juta.\n3. Tunjangan PPh 21 Ditanggung Perusahaan (tanpa gross-up): Berdasarkan PMK 66/2023, PPh 21 yang ditanggung oleh pemberi kerja saat ini secara prinsip DAPAT DIBIAYAKAN (Deductible) oleh perusahaan sebagai bagian dari imbalan natura kenikmatan, SEPANJANG diberikan sehubungan dengan 3M (Mendapatkan, Menagih, Memelihara penghasilan). Dalam rezim PMK 66/2023, biaya ini tidak perlu dikoreksi. Namun dalam banyak literatur konvensional PPh ditanggung perusahaan tanpa gross-up (kenikmatan) adalah deductible mulai 2023. Maka Koreksi Positif Rp 0.\n4. Sumbangan Bencana Nasional via BNPB: Deductible (PP 93/2010). Koreksi Positif Rp 0.\n\nTotal Koreksi Positif = 150 Juta + 50 Juta = Rp 200.000.000.",
+      "dasar": "Pasal 9 ayat 1 UU PPh, PP 93/2010, dan PMK 66/2023 tentang Natura/Kenikmatan."
+    },
+    {
+      "id": 56,
+      "kategori": "pph-potput",
+      "skenario": "Pada 10 Juli 2025, PT Indah Makmur (ber-NPWP) menjual sejumlah meja kantor dan komputer kepada instansi Pemerintah Provinsi (Pemprov) Jawa Barat senilai Rp 280.000.000 (Nilai tersebut sudah Termasuk PPN 12%). Pembayaran dilakukan langsung oleh Bendaharawan Pemprov melalui KPPN.",
+      "soal": "Berapakah Pajak Penghasilan (PPh) Pasal 22 yang wajib dipungut oleh Bendaharawan Pemprov atas transaksi pembelian barang inventaris tersebut?",
+      "opsi": [
+        "A. Rp 4.200.000",
+        "B. Rp 3.750.000",
+        "C. Rp 3.360.000",
+        "D. Rp 4.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Penghitungan PPh Pasal 22 oleh Bendaharawan Pemerintah (Tarif 1,5% dari DPP tanpa PPN):\n\n1. Memisahkan PPN dari Harga Inklusif (Tahun 2025 tarif PPN 12%):\nDPP = 100 / 112 x Rp 280.000.000 = Rp 250.000.000.\n\n2. Menghitung PPh 22 yang dipungut bendahara:\nPPh 22 = 1,5% x DPP\nPPh 22 = 1,5% x Rp 250.000.000 = Rp 3.750.000.",
+      "dasar": "PMK 34/PMK.010/2017 std PMK 41/2022 tentang Pemungutan PPh Pasal 22 oleh Bendaharawan Pemerintah."
+    },
+    {
+      "id": 57,
+      "kategori": "ppn",
+      "skenario": "PT Trans Logistik (PKP) pada tahun 2020 membeli sebuah mobil sedan mewah untuk digunakan sebagai mobil operasional Direktur Utama. Atas pembelian mobil tersebut, Pajak Masukan (PM) yang dibayar tidak dapat dikreditkan sesuai ketentuan UU PPN. Pada bulan September 2024, PT Trans Logistik menjual mobil sedan bekas tersebut dengan harga jual Rp 500.000.000 (belum termasuk PPN).",
+      "soal": "Berapakah PPN Keluaran yang harus dipungut oleh PT Trans Logistik atas penyerahan mobil sedan bekas tersebut berdasarkan UU PPN?",
+      "opsi": [
+        "A. Rp 55.000.000",
+        "B. Rp 60.000.000",
+        "C. Rp 5.500.000",
+        "D. Rp 0"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan Pasal 16D UU PPN, Pajak Pertambahan Nilai dikenakan atas penyerahan Barang Kena Pajak berupa aktiva yang menurut tujuan semula tidak untuk diperjualbelikan oleh Pengusaha Kena Pajak, KECUALI atas penyerahan aktiva yang Pajak Masukannya tidak dapat dikreditkan sebagaimana dimaksud dalam Pasal 9 ayat (8) huruf b (Perolehan kendaraan bermotor sedan dan station wagon).\n\nKarena mobil yang dijual adalah kendaraan sedan yang Pajak Masukannya saat perolehan (tahun 2020) tidak dapat dikreditkan, maka penjualan aktiva bekas tersebut Pengecualian dari Pasal 16D, sehingga TIDAK TERUTANG PPN (Rp 0).",
+      "dasar": "Pasal 16D dan Pasal 9 ayat (8) huruf b Undang-Undang Pajak Pertambahan Nilai."
     }
   ],
   "sesi2": [
