@@ -763,9 +763,9 @@
         "C. Terutang PPN 12% namun PPN tersebut wajib dilunasi oleh PT Garment Lokal selaku importir menggunakan SSP/Billing saat pengeluaran barang.",
         "D. Bebas PPN karena merupakan barang reject/sisa produksi."
       ],
-      "jawaban": 2,
-      "pembahasan": "Berdasarkan aturan Kawasan Berikat (PMK 65/PMK.04/2021), pengeluaran barang hasil produksi atau sisa produksi dari Kawasan Berikat ke TLDDP (Tempat Lain Dalam Daerah Pabean) DIPERSAMAKAN dengan IMPOR. Oleh karena itu, entitas di TLDDP (PT Garment Lokal) bertindak sebagai importir dan wajib melunasi PPN Impor (dan PPh 22 Impor, serta Bea Masuk jika ada) melalui mekanisme penyetoran pabean menggunakan SSP/Billing ke kas negara. PT IB di Kawasan Berikat tidak menerbitkan Faktur Pajak Keluaran standar (kode 01), melainkan menggunakan dokumen kepabeanan (BC 2.5) yang dipersamakan dengan Faktur Pajak.",
-      "dasar": "PMK 65/PMK.04/2021 tentang Kawasan Berikat."
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 30 ayat (3) PMK 65/PMK.04/2021 tentang Kawasan Berikat, atas pengeluaran barang hasil produksi atau sisa produksi (seperti kain reject) dari Kawasan Berikat ke Tempat Lain Dalam Daerah Pabean (TLDDP), Pengusaha Kawasan Berikat (PT IB) wajib membuat Faktur Pajak dan memungut Pajak Pertambahan Nilai (PPN). PPN terutang sebesar 12% (berlaku mulai 1 Januari 2025 sesuai UU HPP) dan PT IB wajib menerbitkan Faktur Pajak dengan kode 01 serta menyetorkannya ke kas negara. Perlakuan sebagai impor yang PPN-nya dilunasi oleh penerima di TLDDP hanya berlaku untuk pengeluaran barang modal atau bahan baku yang tidak diolah.",
+      "dasar": "Pasal 30 ayat (3) PMK 65/PMK.04/2021 tentang Kawasan Berikat jo. Pasal 7 ayat (1) UU PPN (UU HPP)."
     },
     {
       "id": 21,
