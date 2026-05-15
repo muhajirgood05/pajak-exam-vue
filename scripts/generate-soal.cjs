@@ -212,7 +212,7 @@ Format JSON array:
 PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
   } else if (targetSesi === 'sesi2') {
     targetSesi = 'sesi2';
-    numToGenerate = Math.min(4, 20 - countSesi2); // Dikurangi jadi 4
+    numToGenerate = Math.min(2, 20 - countSesi2); // Dikurangi jadi 2 agar tidak terpotong (token limit)
     
     const sSoal = currentData.sesi2 || [];
     startId = sSoal.length > 0 ? Math.max(...sSoal.map(s => s.id || 0)) + 1 : 1;
@@ -268,7 +268,7 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
     if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
       console.error('No valid JSON array found in response.');
       console.error('Raw text (first 1000 chars):', text.substring(0, 1000));
-      process.exit(1);
+      process.exit(0); // Exit 0 agar workflow tetap sukses dan mencoba lagi di jadwal berikutnya
     }
     
     const jsonStr = text.substring(startIdx, endIdx + 1);
