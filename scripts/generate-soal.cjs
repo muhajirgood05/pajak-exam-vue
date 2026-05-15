@@ -166,7 +166,19 @@ async function generateSoal() {
   let fullPrompt = '';
   let startId = 1;
 
-  if (countSesi1 < 60) {
+  const needsSesi1 = countSesi1 < 60;
+  const needsSesi2 = countSesi2 < 20;
+
+  if (needsSesi1 && needsSesi2) {
+    // Jika keduanya belum lengkap, pilih secara acak namun prioritaskan sesi2 jika masih sangat sedikit
+    targetSesi = (Math.random() < 0.6 || countSesi2 < 5) ? 'sesi2' : 'sesi1';
+  } else if (needsSesi1) {
+    targetSesi = 'sesi1';
+  } else if (needsSesi2) {
+    targetSesi = 'sesi2';
+  }
+
+  if (targetSesi === 'sesi1') {
     targetSesi = 'sesi1';
     numToGenerate = Math.min(3, 60 - countSesi1); // Dikurangi jadi 3 supaya response tidak terlalu panjang
     
@@ -198,7 +210,7 @@ Format JSON array:
 [{"id": ${startId}, "kategori": "pph-badan", "skenario": "...", "soal": "...", "opsi": ["A...", "B...", "C...", "D..."], "jawaban": 0, "pembahasan": "...", "dasar": "..."}]
 
 PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
-  } else if (countSesi2 < 20) {
+  } else if (targetSesi === 'sesi2') {
     targetSesi = 'sesi2';
     numToGenerate = Math.min(4, 20 - countSesi2); // Dikurangi jadi 4
     
@@ -208,22 +220,27 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
     // Ambil topik dari 2 studi kasus terakhir (kira-kira 8 soal terakhir)
     const existingTopics = sSoal.slice(-8).map(s => `- ${s.skenario.substring(0, 100).replace(/\n/g, ' ')}...`).join('\n');
 
-    fullPrompt = `Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SULIT untuk Uji Kompetensi Pemeriksa Pajak.
+    fullPrompt = `Buat 1 studi kasus kompleks dan ${numToGenerate} soal pilihan ganda tingkat SANGAT SULIT (setara Uji Kompetensi Pemeriksa Pajak / FPP).
 
 PENTING: JANGAN MENGULANGI skenario atau studi kasus yang sudah dibuat sebelumnya. Berikut adalah potongan kasus yang SUDAH ADA:
 ${existingTopics}
 Buatlah skenario studi kasus BARU dengan industri atau permasalahan perpajakan yang sangat berbeda!
 
-KETENTUAN:
-- 1 skenario perusahaan dengan data singkat (maks 5 baris data keuangan dalam tabel HTML).
-- ${numToGenerate} soal SALING BERKAITAN dengan skenario yang sama
-- Setiap soal: 4 pilihan jawaban (A-D), 1 jawaban benar
-- Distractor masuk akal secara hukum
-- Angka konsisten antar soal, simpel (hindari desimal panjang)
-- Dasar hukum spesifik (pasal, UU, PMK, PP) termasuk UU HPP
-- MATERI MERUJUK PADA: UU (KUP/PPh/PPN/PBB/BM), PP 50/2022, PP 9/2022, PP 44/2022, PMK 60/2022, PMK 71/2022, PMK 131/2024, PMK 11/2025, PMK 141/2015, PMK 191/2015, PMK 192/2018, PMK 66/2023, PMK 168/2023, PMK 79/2024, PMK 15/2025, PMK 112/2025
+KETENTUAN SKENARIO (HARUS MIRIP KASUS AUDIT NYATA):
+- 1 skenario perusahaan dengan narasi profesional dan "Temuan Pemeriksa" (Audit Findings) yang spesifik (contoh: biaya tanpa daftar nominatif, DER melebihi batas 4:1, metode TP tidak sesuai, dll).
+- Gunakan angka/skala realistis perusahaan besar (Miliaran/Triliunan Rupiah) dalam tabel HTML.
+- Skenario harus mencakup kompleksitas lintas-pajak (PPh Badan, Pemotongan/Pemungutan/Unifikasi, PPN, dan sanksi KUP).
+- Industri yang disarankan: Konstruksi (termasuk aspek PPh Final Proporsional), Ekspor-Impor, Pertambangan, atau Perusahaan Multinasional.
 
-TOPIK (variasikan): Transfer pricing, Restrukturisasi/merger, BUT, e-commerce/PMSE, Properti, Pertambangan, Pelayaran/penerbangan, Transaksi afiliasi
+KETENTUAN SOAL:
+- ${numToGenerate} soal SALING BERKAITAN dengan skenario yang sama.
+- Setiap soal: 4 pilihan jawaban (A-D), 1 jawaban benar. Distractor harus plausible secara hukum.
+- Soal harus menuntut perhitungan multi-step (bukan sekadar hafalan).
+- Angka konsisten antar soal (hindari desimal panjang).
+- Dasar hukum HARUS sangat spesifik (sebutkan Pasal, Ayat, dari UU, PP, atau PMK yang berlaku).
+
+MATERI MERUJUK PADA: 
+UU (KUP/PPh/PPN), PP 50/2022, PP 9/2022 (terkait DER & Dividen), PP 44/2022, PMK 60/2022, PMK 71/2022, PMK 131/2024, PMK 11/2025, PMK 141/2015, PMK 168/2023, PMK 112/2025, dll.
 
 Format JSON array:
 [{"id": ${startId}, "kategori": "pph-badan", "skenario": "[STUDI KASUS] ...", "soal": "[STUDI KASUS - Soal 1] ...", "opsi": ["A...", "B...", "C...", "D..."], "jawaban": 0, "pembahasan": "...", "dasar": "..."}]
