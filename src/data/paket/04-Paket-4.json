@@ -228,7 +228,7 @@
     {
       "id": 21,
       "kategori": "potput",
-      "skenario": "PT Importama adalah importir kedelai berstatus PKP. Pada bulan Mei 2025, perusahaan melakukan impor kedelai dengan Nilai Impor (CIF + Bea Masuk) sebesar Rp 500.000.000. PT Importama BUKAN merupakan importir yang memiliki Angka Pengenal Impor (API). Kedelai bukan merupakan barang tertentu yang dikenakan tarif khusus.",
+      "skenario": "PT Importama berstatus PKP. Pada bulan Mei 2025, perusahaan melakukan impor bahan baku plastik dengan Nilai Impor (CIF + Bea Masuk) sebesar Rp 500.000.000. PT Importama BUKAN merupakan importir yang memiliki Angka Pengenal Impor (API). Bahan baku plastik ini bukan merupakan barang tertentu pada lampiran PMK-41/2022.",
       "soal": "Berapakah PPh Pasal 22 Impor yang harus dilunasi oleh PT Importama?",
       "opsi": [
         "A. Rp 37.500.000",
@@ -236,8 +236,8 @@
         "C. Rp 1.250.000",
         "D. Rp 0 (Dibebaskan)"
       ],
-      "jawaban": 0,
-      "pembahasan": "Berdasarkan PMK 34/PMK.010/2017 std PMK 41/PMK.010/2022, impor barang selain barang tertentu dan barang kiriman, dikenakan tarif PPh Pasal 22 sebesar: 2,5% jika menggunakan Angka Pengenal Impor (API), atau 7,5% jika TIDAK menggunakan API. Karena PT Importama tidak memiliki API, tarifnya adalah 7,5%. PPh Pasal 22 = 7,5% x Nilai Impor = 7,5% x Rp 500.000.000 = Rp 37.500.000.",
+      "jawaban": 1,
+      "pembahasan": "Sesuai PMK-41/PMK.010/2022, impor barang selain yang tercantum pada Lampiran I, II, dan III (seperti bahan baku umum) dikenakan tarif PPh Pasal 22 sebesar 2,5% dari Nilai Impor. Ketentuan terbaru telah MENGHAPUSKAN perbedaan tarif berdasarkan kepemilikan Angka Pengenal Impor (API) untuk barang umum. Sehingga, PPh Pasal 22 = 2,5% x Rp 500.000.000 = Rp 12.500.000.",
       "dasar": "PMK-34/PMK.010/2017 std PMK 41/PMK.010/2022 tentang Pemungutan PPh Pasal 22 Sehubungan dengan Pembayaran Atas Penyerahan Barang dan Kegiatan di Bidang Impor."
     },
     {
