@@ -734,6 +734,51 @@
       "jawaban": 0,
       "pembahasan": "1. **Tarif PPN Tahun 2025:** Sesuai mandat UU HPP Pasal 7 ayat (1), tarif PPN resmi naik menjadi 12% selambat-lambatnya 1 Januari 2025. Karena transaksi terjadi di bulan Mei 2025, maka tarifnya adalah 12%.\n\n2. **Menghitung PPN dari Harga Inklusif:** Jika nilai transaksi sudah Termasuk PPN (Inklusif) dan barang tersebut bukan barang mewah, maka rumus memisahkan PPN adalah: Tarif / (100 + Tarif) x Harga Inklusif.\n\n3. **Perhitungan:**\nPPN = (12 / 112) x Rp 11.200.000.000 = Rp 1.200.000.000,-\n\nJebakan: Jika peserta lupa bahwa tarif sudah 12% dan menggunakan 11%, maka perhitungannya menjadi (11/111) x Rp 11.2M = Rp 1.109.909.909. Jika peserta mengalikan langsung 12% ke harga inklusif tanpa membaginya (12% x 11.2M), hasilnya Rp 1.344.000.000. Jadi jawaban yang benar adalah Rp 1.200.000.000.",
       "dasar": "Pasal 4 ayat (1) huruf a, Pasal 7 ayat (1) huruf b, dan Pasal 8A ayat (1) Undang-Undang PPN sttd UU HPP, serta Pasal 20 ayat (1) PP Nomor 44 Tahun 2022."
+    },
+    {
+      "id": 50,
+      "kategori": "pph-badan",
+      "skenario": "PT Jaya Abadi (PT JA) pada tanggal 1 Januari 2024 memperoleh Hak Paten untuk produk barunya dengan nilai perolehan Rp 1.200.000.000. Masa manfaat ekonomis Hak Paten tersebut adalah 12 tahun. PT JA menggunakan metode amortisasi garis lurus.",
+      "soal": "Berapakah beban amortisasi fiskal yang dapat dibebankan oleh PT Jaya Abadi untuk tahun pajak 2024?",
+      "opsi": [
+        "A. Rp 75.000.000",
+        "B. Rp 100.000.000",
+        "C. Rp 120.000.000",
+        "D. Rp 150.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "1.   Berdasarkan Pasal 11A ayat (3) Undang-Undang Pajak Penghasilan, masa manfaat harta tak berwujud lainnya yang tidak termasuk dalam kelompok yang disebutkan pada ayat (2) ditetapkan sesuai dengan masa manfaat yang sebenarnya. Hak paten termasuk dalam kategori harta tak berwujud lainnya.\n2.   Masa manfaat sebenarnya Hak Paten adalah 12 tahun.\n3.   Nilai perolehan Hak Paten = Rp 1.200.000.000.\n4.   Metode amortisasi yang digunakan adalah garis lurus.\n5.   Beban amortisasi fiskal tahun 2024 = Nilai Perolehan / Masa Manfaat Sebenarnya\n    = Rp 1.200.000.000 / 12 tahun\n    = Rp 100.000.000.",
+      "dasar": "Pasal 11A ayat (1), ayat (2), dan ayat (3) Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh). Serta Pasal 2 Peraturan Menteri Keuangan Nomor 72 Tahun 2023 tentang Tata Cara Penyusutan dan Amortisasi Harta Berwujud dan Harta Tak Berwujud."
+    },
+    {
+      "id": 51,
+      "kategori": "pph-potput",
+      "skenario": "Pada bulan Juni 2024, PT Sejahtera Bersama (PT SB) menerima dividen tunai dari dua perusahaan yang berbeda:\n<table border=\"1\">\n  <tr>\n    <th>Perusahaan Pemberi Dividen</th>\n    <th>Jumlah Dividen (Bruto)</th>\n    <th>Persentase Kepemilikan Saham PT SB</th>\n  </tr>\n  <tr>\n    <td>PT Makmur Sentosa</td>\n    <td>Rp 800.000.000</td>\n    <td>20%</td>\n  </tr>\n  <tr>\n    <td>PT Indah Permai</td>\n    <td>Rp 500.000.000</td>\n    <td>30%</td>\n  </tr>\n</table>\nPT SB adalah Wajib Pajak badan dalam negeri.",
+      "soal": "Berapakah total PPh Pasal 23 yang harus dipotong atas penghasilan dividen yang diterima oleh PT Sejahtera Bersama pada bulan Juni 2024?",
+      "opsi": [
+        "A. Rp 0",
+        "B. Rp 75.000.000",
+        "C. Rp 120.000.000",
+        "D. Rp 195.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1.   **Dividen dari PT Makmur Sentosa:**\n    *   Jumlah Dividen = Rp 800.000.000\n    *   Persentase kepemilikan saham PT SB pada PT Makmur Sentosa adalah 20%.\n    *   Berdasarkan Pasal 4 ayat (3) huruf f Undang-Undang PPh, dividen yang diterima oleh Wajib Pajak badan dalam negeri dikecualikan dari objek pajak jika kepemilikan saham pada badan yang memberikan dividen paling rendah 25% dari jumlah modal yang disetor.\n    *   Karena kepemilikan PT SB (20%) kurang dari 25%, dividen ini merupakan objek PPh Pasal 23.\n    *   Tarif PPh Pasal 23 atas dividen adalah 15% (Pasal 23 ayat (1) huruf a UU PPh).\n    *   PPh Pasal 23 atas dividen dari PT Makmur Sentosa = 15% x Rp 800.000.000 = Rp 120.000.000.\n\n2.   **Dividen dari PT Indah Permai:**\n    *   Jumlah Dividen = Rp 500.000.000\n    *   Persentase kepemilikan saham PT SB pada PT Indah Permai adalah 30%.\n    *   Karena kepemilikan PT SB (30%) paling rendah 25%, dividen ini dikecualikan dari objek PPh Pasal 23 (bukan objek pajak).\n    *   PPh Pasal 23 atas dividen dari PT Indah Permai = Rp 0.\n\n3.   **Total PPh Pasal 23 yang dipotong:**\n    *   Total PPh Pasal 23 = PPh dari PT Makmur Sentosa + PPh dari PT Indah Permai\n    *   Total PPh Pasal 23 = Rp 120.000.000 + Rp 0 = Rp 120.000.000.",
+      "dasar": "Pasal 4 ayat (3) huruf f dan Pasal 23 ayat (1) huruf a Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh)."
+    },
+    {
+      "id": 52,
+      "kategori": "ppn",
+      "skenario": "PT Cendana, seorang Pengusaha Kena Pajak (PKP) yang bergerak di bidang manufaktur, pada bulan Juli 2024 menjual sebuah mobil dinas operasional perusahaan dengan harga jual Rp 250.000.000. Mobil tersebut dibeli pada tahun 2020 dan PPN Masukan atas perolehannya sebesar Rp 25.000.000 telah dikreditkan oleh PT Cendana.",
+      "soal": "Berapakah PPN terutang atas penyerahan mobil dinas oleh PT Cendana pada bulan Juli 2024?",
+      "opsi": [
+        "A. Rp 0",
+        "B. Rp 25.000.000",
+        "C. Rp 27.500.000",
+        "D. Rp 30.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1.   **Dasar Hukum:** Berdasarkan Pasal 16D Undang-Undang PPN, Pajak Pertambahan Nilai dikenakan atas penyerahan Barang Kena Pajak berupa aktiva yang menurut tujuan semula tidak untuk diperjualbelikan oleh Pengusaha Kena Pajak, sepanjang Pajak Masukan yang dibayar pada saat perolehannya dapat dikreditkan.\n2.   **Kondisi Kasus:**\n    *   PT Cendana adalah PKP.\n    *   Menjual mobil dinas operasional (aktiva yang menurut tujuan semula tidak untuk diperjualbelikan).\n    *   PPN Masukan atas perolehan mobil tersebut (Rp 25.000.000) telah dikreditkan.\n    *   Semua syarat Pasal 16D terpenuhi, sehingga penyerahan mobil ini terutang PPN.\n3.   **Perhitungan PPN Terutang:**\n    *   Harga Jual Mobil = Rp 250.000.000.\n    *   Tarif PPN yang berlaku sejak 1 April 2022 adalah 11% (sesuai UU HPP).\n    *   PPN Terutang = Tarif PPN x Harga Jual\n    *   PPN Terutang = 11% x Rp 250.000.000 = Rp 27.500.000.",
+      "dasar": "Pasal 16D Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPN). Serta Pasal 7 ayat (1) huruf a UU PPN (tarif PPN)."
     }
   ],
   "sesi2": [
