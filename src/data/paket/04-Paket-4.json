@@ -164,6 +164,81 @@
       "pembahasan": "Penghitungan biaya penyusutan fiskal:\n1.  Harga Perolehan Mesin = Rp300.000.000.\n2.  Mesin termasuk Kelompok 2 harta berwujud, dengan masa manfaat 8 tahun (Pasal 11 ayat (6) UU PPh jo. PMK-96/PMK.03/2009).\n3.  Metode penyusutan garis lurus (straight-line method).\n4.  Tarif penyusutan garis lurus per tahun untuk Kelompok 2 = (1 / Masa Manfaat) = (1/8) = 12,5%.\n5.  Penyusutan setahun penuh = 12,5% x Rp300.000.000 = Rp37.500.000.\n6.  Mesin dibeli pada tanggal 1 Juli 2023. Untuk tujuan fiskal, penyusutan dihitung sejak bulan perolehan (Pasal 11 ayat (6) UU PPh).\n    Jumlah bulan penggunaan di tahun 2023 = Juli, Agustus, September, Oktober, November, Desember = 6 bulan.\n7.  Penyusutan Tahun Pajak 2023 = (6/12) x Rp37.500.000 = Rp18.750.000.",
       "dasar": "Pasal 11 ayat (1) dan ayat (6) Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh); Peraturan Menteri Keuangan Nomor 96/PMK.03/2009 tentang Jenis-Jenis Harta yang Termasuk dalam Kelompok Harta Berwujud Bukan Bangunan untuk Keperluan Penyusutan.",
       "id": 16
+    },
+    {
+      "id": 17,
+      "kategori": "pph-badan",
+      "skenario": "PT Sukses Makmur (Tahun Pajak 2025) membeli sebuah mesin pabrik seharga Rp 1.500.000.000 pada bulan April 2025. Mesin tersebut termasuk dalam kelompok 2 (Masa Manfaat 8 tahun). Perusahaan menggunakan metode penyusutan saldo menurun ganda (declining balance) untuk tujuan komersial maupun fiskal.",
+      "soal": "Berapakah beban penyusutan fiskal atas mesin tersebut yang dapat dibiayakan pada SPT Tahunan PPh Badan Tahun 2025?",
+      "opsi": [
+        "A. Rp 281.250.000",
+        "B. Rp 375.000.000",
+        "C. Rp 140.625.000",
+        "D. Rp 187.500.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Kelompok 2 memiliki masa manfaat 8 tahun. Tarif penyusutan saldo menurun adalah 25% (2 x 12.5%). Mesin dibeli April 2025, maka disusutkan selama 9 bulan (April - Desember). Penyusutan tahun 2025 = 25% x Rp 1.500.000.000 x (9/12) = Rp 281.250.000.",
+      "dasar": "Pasal 11 ayat (2) dan ayat (6) UU PPh s.t.d.t.d UU HPP jo. PMK 72/2023 tentang Penyusutan Harta Berwujud."
+    },
+    {
+      "id": 18,
+      "kategori": "potput",
+      "skenario": "Pada bulan Maret 2025, PT Karya Cipta memberikan fasilitas apartemen kepada salah satu direkturnya, Tuan Budi. Biaya sewa apartemen tersebut dibayar langsung oleh PT Karya Cipta kepada pemilik apartemen sebesar Rp 150.000.000 per tahun. Apartemen tersebut digunakan sepenuhnya untuk kepentingan Tuan Budi dan keluarganya.",
+      "soal": "Bagaimana perlakuan pajak atas fasilitas apartemen (natura/kenikmatan) tersebut berdasarkan ketentuan terbaru?",
+      "opsi": [
+        "A. Bukan objek PPh Pasal 21 bagi Tuan Budi dan tidak dapat dibiayakan (non-deductible) oleh PT Karya Cipta.",
+        "B. Merupakan objek PPh Pasal 21 bagi Tuan Budi sebesar nilai sewa (Rp 150 Juta) dan dapat dibiayakan (deductible) oleh PT Karya Cipta.",
+        "C. Merupakan objek PPh Pasal 21 bagi Tuan Budi sebesar 50% dari nilai sewa dan deductible bagi PT Karya Cipta.",
+        "D. Hanya dikenakan PPh Final Pasal 4 ayat (2) atas sewa apartemen oleh PT Karya Cipta."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan UU HPP dan PMK 66/2023, pemberian imbalan dalam bentuk natura dan/atau kenikmatan (fringe benefits) pada dasarnya merupakan objek PPh (Taxable) bagi penerima dan dapat dibiayakan (Deductible) bagi pemberi kerja, kecuali jenis natura tertentu yang dikecualikan. Fasilitas tempat tinggal apartemen yang hak pemanfaatannya dipegang oleh perseorangan (bukan asrama komunal) bukan termasuk natura yang dikecualikan, sehingga dikenakan PPh Pasal 21 sebesar nilai penggantian/sewa yang dibayarkan.",
+      "dasar": "Pasal 4 ayat (1) huruf a UU PPh s.t.d.t.d UU HPP jo. PMK 66 Tahun 2023 tentang Perlakuan PPh atas Natura dan/atau Kenikmatan."
+    },
+    {
+      "id": 19,
+      "kategori": "ppn",
+      "skenario": "PT Distribusi Maju (PKP) menjual barang elektronik kepada CV Ritel Pratama. PT Distribusi Maju menerbitkan Faktur Pajak tepat waktu. Namun, NPWP pembeli (CV Ritel Pratama) salah diketik menjadi NPWP perusahaan lain, meskipun Nama dan Alamat pembeli sudah benar. CV Ritel Pratama telah mengkreditkan Faktur Pajak tersebut di SPT Masa PPN.",
+      "soal": "Apakah Faktur Pajak tersebut sah dan dapat dikreditkan oleh CV Ritel Pratama?",
+      "opsi": [
+        "A. Sah dan dapat dikreditkan karena Nama dan Alamat sudah benar.",
+        "B. Tidak sah dan tidak dapat dikreditkan karena Faktur Pajak cacat akibat kesalahan NPWP.",
+        "C. Sah, namun CV Ritel Pratama akan dikenakan denda administratif sebesar 1%.",
+        "D. Dapat dikreditkan hanya jika PT Distribusi Maju membuat Nota Retur."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Faktur Pajak yang tidak memuat identitas pembeli secara lengkap dan benar (termasuk kesalahan penulisan NPWP) dikategorikan sebagai Faktur Pajak Cacat. Berdasarkan Pasal 9 ayat (8) huruf f UU PPN, Pajak Masukan atas Faktur Pajak yang tidak memenuhi ketentuan persyaratan formal (cacat) tidak dapat dikreditkan oleh pembeli sebelum dilakukan pembetulan/penggantian Faktur Pajak oleh penjual.",
+      "dasar": "Pasal 13 ayat (5) jo. Pasal 9 ayat (8) huruf f UU PPN s.t.d.t.d UU HPP dan PER-03/PJ/2022."
+    },
+    {
+      "id": 20,
+      "kategori": "kup",
+      "skenario": "Tuan Candra, seorang Wajib Pajak Orang Pribadi, melaporkan SPT Tahunan PPh Tahun Pajak 2018 pada tanggal 20 Maret 2019. Pada tanggal 10 April 2025, Direktorat Jenderal Pajak (DJP) menemukan data baru berupa rekening koran Tuan Candra di luar negeri yang menunjukkan adanya penghasilan yang tidak dilaporkan di SPT Tahun 2018.",
+      "soal": "Terkait temuan tersebut, apakah DJP secara hukum masih dapat menerbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) untuk Tahun Pajak 2018 pada tanggal 10 April 2025?",
+      "opsi": [
+        "A. Dapat, karena untuk kasus penghasilan di luar negeri batas daluarsa adalah 10 tahun.",
+        "B. Dapat, jika WP belum pernah diperiksa untuk tahun pajak tersebut.",
+        "C. Tidak dapat, karena hak untuk melakukan penetapan pajak (daluarsa penetapan) telah lewat dari 5 tahun.",
+        "D. Tidak dapat, kecuali WP melakukan tindak pidana perpajakan berdasarkan putusan pengadilan inkracht."
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 13 ayat (1) UU KUP, Direktur Jenderal Pajak dapat menerbitkan Surat Ketetapan Pajak Kurang Bayar dalam jangka waktu 5 (lima) tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, bagian Tahun Pajak, atau Tahun Pajak. Tahun Pajak 2018 berakhir pada 31 Desember 2018. Maka, batas daluarsa penetapan (5 tahun) jatuh pada 31 Desember 2023. Pada April 2025, penetapan sudah daluarsa (kecuali untuk kasus pidana pajak).",
+      "dasar": "Pasal 13 ayat (1) Undang-Undang KUP s.t.d.t.d Undang-Undang HPP."
+    },
+    {
+      "id": 21,
+      "kategori": "potput",
+      "skenario": "PT Importama adalah importir kedelai berstatus PKP. Pada bulan Mei 2025, perusahaan melakukan impor kedelai dengan Nilai Impor (CIF + Bea Masuk) sebesar Rp 500.000.000. PT Importama BUKAN merupakan importir yang memiliki Angka Pengenal Impor (API). Kedelai bukan merupakan barang tertentu yang dikenakan tarif khusus.",
+      "soal": "Berapakah PPh Pasal 22 Impor yang harus dilunasi oleh PT Importama?",
+      "opsi": [
+        "A. Rp 37.500.000",
+        "B. Rp 12.500.000",
+        "C. Rp 1.250.000",
+        "D. Rp 0 (Dibebaskan)"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK 34/PMK.010/2017 std PMK 41/PMK.010/2022, impor barang selain barang tertentu dan barang kiriman, dikenakan tarif PPh Pasal 22 sebesar: 2,5% jika menggunakan Angka Pengenal Impor (API), atau 7,5% jika TIDAK menggunakan API. Karena PT Importama tidak memiliki API, tarifnya adalah 7,5%. PPh Pasal 22 = 7,5% x Nilai Impor = 7,5% x Rp 500.000.000 = Rp 37.500.000.",
+      "dasar": "PMK-34/PMK.010/2017 std PMK 41/PMK.010/2022 tentang Pemungutan PPh Pasal 22 Sehubungan dengan Pembayaran Atas Penyerahan Barang dan Kegiatan di Bidang Impor."
     }
   ],
   "sesi2": [
@@ -301,6 +376,66 @@
       "jawaban": 2,
       "pembahasan": "Dalam hal pemeriksaan Pajak Pertambahan Nilai menemukan adanya pengkreditan Pajak Masukan yang tidak benar (misalnya faktur pajak dari penerbit fiktif / tidak sah) dan ini berujung pada terbitnya Surat Ketetapan Pajak Kurang Bayar (SKPKB), berdasarkan Pasal 13 ayat (3) huruf c UU KUP s.t.d.t.d UU HPP, sanksi administrasinya adalah berupa kenaikan sebesar 75% (tujuh puluh lima persen) dari PPN yang kurang dibayar.",
       "dasar": "Pasal 13 ayat (3) huruf c Undang-Undang KUP sebagaimana telah diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP)."
+    },
+    {
+      "id": 10,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Global Maritim Nusantara (GMN) adalah perusahaan logistik dan shipping berskala multinasional (Tahun Pajak 2025). Selama pemeriksaan oleh FPP, ditemukan temuan berikut:\n1. PT GMN menjual layanan kapal kargo kepada perusahaan afiliasinya di negara tax haven (GMN Offshore Ltd) dengan harga di bawah harga pokok produksi (rugi Rp 20 Miliar). PT GMN beralasan hal tersebut adalah strategi penetrasi pasar global.\n2. PT GMN membayar royalti atas penggunaan logo \"Global Nusantara\" kepada induk perusahaan di Belanda sebesar Rp 15 Miliar. Pemeriksa menemukan bahwa logo tersebut tidak memiliki nilai tambah ekonomis yang signifikan bagi GMN di Indonesia, dan tidak ada bukti peningkatan omzet setelah logo diubah.\n3. PT GMN melakukan penyerahan jasa logistik lokal senilai Rp 5 Miliar pada Januari 2025. Namun, Faktur Pajak baru diterbitkan pada bulan April 2025.\n4. Pada pertengahan 2025, PT GMN memisahkan (spin-off) divisi logistik daratnya menjadi PT GMN Darat, dan mentransfer aset bernilai pasar Rp 150 Miliar menggunakan nilai buku (Rp 60 Miliar) tanpa mendapatkan Surat Keputusan Persetujuan Penggunaan Nilai Buku dari Dirjen Pajak.\nFPP ditugaskan untuk menghitung kembali liabilitas perpajakan PT GMN.",
+      "soal": "[STUDI KASUS - Soal 1] Terkait transaksi jual rugi ke GMN Offshore Ltd (temuan pertama), bagaimana pendekatan hukum Pemeriksa Pajak (FPP) terhadap kerugian tersebut berdasarkan PMK 172/2023?",
+      "opsi": [
+        "A. Kerugian tersebut diakui sebagai biaya deductibe karena bagian dari strategi bisnis yang valid (market penetration).",
+        "B. FPP harus melakukan koreksi fiskal positif dengan menggunakan metode Comparable Uncontrolled Price (CUP) atau metode TP lainnya untuk mencari margin/harga wajar, karena transaksi dengan afirmasi tidak boleh merugikan basis pajak domestik.",
+        "C. Transaksi tersebut tidak dapat dikoreksi selama GMN Offshore Ltd membayar pajak di negaranya atas profit margin yang mereka peroleh.",
+        "D. Menolak seluruh harga jual dan menetapkan omzet secara jabatan (Deemed Profit) sebesar 15% dari total aset."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam transaksi dengan pihak afiliasi, berlakunya Prinsip Kewajaran dan Kelaziman Usaha (Arm's Length Principle/ALP) adalah mutlak. Penjualan di bawah harga pokok (rugi) kepada afiliasi, terutama di negara tax haven, mengindikasikan adanya pergeseran laba (base erosion). Strategi penetrasi pasar memang diakui, namun harus dibuktikan kelazimannya (misalnya ada batas waktu yang wajar dan ekspektasi laba jangka panjang yang jelas dalam dokumentasi TP). Jika ALP tidak terbukti, FPP berwenang menentukan harga wajar kembali menggunakan metode Transfer Pricing yang sesuai (seperti CUP, Cost Plus, atau TNMM) dan melakukan koreksi fiskal positif atas kekurangan pencatatan omzet.",
+      "dasar": "Pasal 18 ayat (3) UU PPh jo. PMK-172/PMK.03/2023 tentang Penerapan Prinsip Kewajaran dan Kelaziman Usaha."
+    },
+    {
+      "id": 11,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Global Maritim Nusantara (GMN) adalah perusahaan logistik dan shipping berskala multinasional (Tahun Pajak 2025). Selama pemeriksaan oleh FPP, ditemukan temuan berikut:\n1. PT GMN menjual layanan kapal kargo kepada perusahaan afiliasinya di negara tax haven (GMN Offshore Ltd) dengan harga di bawah harga pokok produksi (rugi Rp 20 Miliar). PT GMN beralasan hal tersebut adalah strategi penetrasi pasar global.\n2. PT GMN membayar royalti atas penggunaan logo \"Global Nusantara\" kepada induk perusahaan di Belanda sebesar Rp 15 Miliar. Pemeriksa menemukan bahwa logo tersebut tidak memiliki nilai tambah ekonomis yang signifikan bagi GMN di Indonesia, dan tidak ada bukti peningkatan omzet setelah logo diubah.\n3. PT GMN melakukan penyerahan jasa logistik lokal senilai Rp 5 Miliar pada Januari 2025. Namun, Faktur Pajak baru diterbitkan pada bulan April 2025.\n4. Pada pertengahan 2025, PT GMN memisahkan (spin-off) divisi logistik daratnya menjadi PT GMN Darat, dan mentransfer aset bernilai pasar Rp 150 Miliar menggunakan nilai buku (Rp 60 Miliar) tanpa mendapatkan Surat Keputusan Persetujuan Penggunaan Nilai Buku dari Dirjen Pajak.\nFPP ditugaskan untuk menghitung kembali liabilitas perpajakan PT GMN.",
+      "soal": "[STUDI KASUS - Soal 2] Atas pembayaran royalti sebesar Rp 15 Miliar (temuan kedua), langkah koreksi apa yang paling tepat dilakukan FPP?",
+      "opsi": [
+        "A. Mengakui biaya royalti tersebut namun memastikan bahwa PPh Pasal 26 telah dipotong sesuai Tax Treaty Indonesia-Belanda.",
+        "B. Melakukan koreksi fiskal positif seluruh biaya royalti (Rp 15 Miliar) karena tidak memenuhi uji manfaat (Benefit Test) dalam ketentuan Transfer Pricing atas transaksi harta tidak berwujud.",
+        "C. Hanya mengoreksi sebesar 50% karena royalti dibayarkan ke negara treaty partner.",
+        "D. Menambahkan sanksi pidana karena pembayaran royalti fiktif merupakan tindak pidana pencucian uang."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam ketentuan pembebanan biaya royalti kepada pihak afiliasi (Intragroup Intangible Property Transaction), Wajib Pajak harus membuktikan kepemilikan ekonomi (economic ownership) dan melakukan Uji Manfaat (Benefit Test). Karena pemeriksa menemukan bahwa tidak ada nilai tambah ekonomis (manfaat ekspektasi) bagi operasi bisnis GMN di Indonesia atas pemakaian logo tersebut, maka biaya royalti tersebut tidak memenuhi syarat deductible expense dan harus dikoreksi fiskal positif seluruhnya berdasarkan ALP.",
+      "dasar": "Pasal 18 ayat (3) UU PPh dan PMK-172/PMK.03/2023 tentang Transfer Pricing Harta Tidak Berwujud (Intangible Property)."
+    },
+    {
+      "id": 12,
+      "kategori": "ppn",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Global Maritim Nusantara (GMN) adalah perusahaan logistik dan shipping berskala multinasional (Tahun Pajak 2025). Selama pemeriksaan oleh FPP, ditemukan temuan berikut:\n1. PT GMN menjual layanan kapal kargo kepada perusahaan afiliasinya di negara tax haven (GMN Offshore Ltd) dengan harga di bawah harga pokok produksi (rugi Rp 20 Miliar). PT GMN beralasan hal tersebut adalah strategi penetrasi pasar global.\n2. PT GMN membayar royalti atas penggunaan logo \"Global Nusantara\" kepada induk perusahaan di Belanda sebesar Rp 15 Miliar. Pemeriksa menemukan bahwa logo tersebut tidak memiliki nilai tambah ekonomis yang signifikan bagi GMN di Indonesia, dan tidak ada bukti peningkatan omzet setelah logo diubah.\n3. PT GMN melakukan penyerahan jasa logistik lokal senilai Rp 5 Miliar pada Januari 2025. Namun, Faktur Pajak baru diterbitkan pada bulan April 2025.\n4. Pada pertengahan 2025, PT GMN memisahkan (spin-off) divisi logistik daratnya menjadi PT GMN Darat, dan mentransfer aset bernilai pasar Rp 150 Miliar menggunakan nilai buku (Rp 60 Miliar) tanpa mendapatkan Surat Keputusan Persetujuan Penggunaan Nilai Buku dari Dirjen Pajak.\nFPP ditugaskan untuk menghitung kembali liabilitas perpajakan PT GMN.",
+      "soal": "[STUDI KASUS - Soal 3] Terkait Faktur Pajak yang diterbitkan terlambat pada temuan ketiga, sanksi administratif apa yang dikenakan kepada PT GMN atas penyerahan Rp 5 Miliar (asumsi tarif PPN 12% sesuai UU HPP 2025)?",
+      "opsi": [
+        "A. Denda administratif 1% dari Dasar Pengenaan Pajak (DPP) yaitu sebesar Rp 50.000.000.",
+        "B. Denda administratif 2% dari Dasar Pengenaan Pajak (DPP) yaitu sebesar Rp 100.000.000.",
+        "C. Denda administratif 1% dari PPN Terutang yaitu sebesar Rp 6.000.000.",
+        "D. Sanksi kenaikan 100% dari PPN Terutang."
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan UU KUP yang diubah oleh UU HPP, sanksi bagi Pengusaha Kena Pajak yang menerbitkan Faktur Pajak tidak tepat waktu (terlambat) adalah berupa denda administratif sebesar 1% (satu persen) dari Dasar Pengenaan Pajak (DPP). DPP dalam kasus ini adalah Rp 5.000.000.000. Maka dendanya adalah 1% x Rp 5.000.000.000 = Rp 50.000.000. Sanksi 2% (UU KUP lama) sudah diubah menjadi 1% sejak berlakunya UU Cipta Kerja dan UU HPP.",
+      "dasar": "Pasal 14 ayat (4) Undang-Undang KUP s.t.d.t.d Undang-Undang Harmonisasi Peraturan Perpajakan (HPP)."
+    },
+    {
+      "id": 13,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Global Maritim Nusantara (GMN) adalah perusahaan logistik dan shipping berskala multinasional (Tahun Pajak 2025). Selama pemeriksaan oleh FPP, ditemukan temuan berikut:\n1. PT GMN menjual layanan kapal kargo kepada perusahaan afiliasinya di negara tax haven (GMN Offshore Ltd) dengan harga di bawah harga pokok produksi (rugi Rp 20 Miliar). PT GMN beralasan hal tersebut adalah strategi penetrasi pasar global.\n2. PT GMN membayar royalti atas penggunaan logo \"Global Nusantara\" kepada induk perusahaan di Belanda sebesar Rp 15 Miliar. Pemeriksa menemukan bahwa logo tersebut tidak memiliki nilai tambah ekonomis yang signifikan bagi GMN di Indonesia, dan tidak ada bukti peningkatan omzet setelah logo diubah.\n3. PT GMN melakukan penyerahan jasa logistik lokal senilai Rp 5 Miliar pada Januari 2025. Namun, Faktur Pajak baru diterbitkan pada bulan April 2025.\n4. Pada pertengahan 2025, PT GMN memisahkan (spin-off) divisi logistik daratnya menjadi PT GMN Darat, dan mentransfer aset bernilai pasar Rp 150 Miliar menggunakan nilai buku (Rp 60 Miliar) tanpa mendapatkan Surat Keputusan Persetujuan Penggunaan Nilai Buku dari Dirjen Pajak.\nFPP ditugaskan untuk menghitung kembali liabilitas perpajakan PT GMN.",
+      "soal": "[STUDI KASUS - Soal 4] Bagaimana perlakuan Pajak Penghasilan atas transfer aset saat pemisahan usaha (spin-off) pada temuan keempat, karena PT GMN tidak memiliki Surat Persetujuan?",
+      "opsi": [
+        "A. Aset tetap dicatat dengan nilai buku (Rp 60 Miliar) dan tidak ada pengakuan keuntungan secara fiskal.",
+        "B. Transfer aset harus dinilai menggunakan harga pasar (Rp 150 Miliar), sehingga terdapat capital gain secara fiskal sebesar Rp 90 Miliar yang merupakan Objek PPh Badan PT GMN.",
+        "C. PT GMN dikenakan sanksi denda 200% atas nilai aset yang dipindahkan.",
+        "D. Spin-off dibatalkan secara hukum pajak, dan PT GMN Darat tidak diakui sebagai Wajib Pajak entitas terpisah."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Prinsip umum perlakuan PPh atas pengalihan harta dalam rangka restrukturisasi usaha (merger/spin-off) adalah menggunakan nilai pasar, sehingga keuntungan (capital gain) atas selisih nilai pasar dan nilai buku merupakan Objek PPh. WP dapat menggunakan nilai buku (Tax Neutrality) HANYA JIKA mendapatkan persetujuan dari Dirjen Pajak yang diajukan dalam batas waktu 6 bulan setelah tanggal efektif restrukturisasi. Karena PT GMN mentransfer aset tanpa persetujuan, maka secara fiskal pengalihan aset tersebut dianggap dilakukan pada Harga Pasar. Keuntungan Rp 150 M - Rp 60 M = Rp 90 Miliar merupakan tambahan penghasilan (capital gain) yang terutang PPh Badan.",
+      "dasar": "Pasal 10 ayat (3) UU PPh s.t.d.t.d UU HPP jo. PMK-56/PMK.010/2021 tentang Penggunaan Nilai Buku atas Pengalihan Harta dalam Rangka Penggabungan, Peleburan, Pemekaran, atau Pengambilalihan Usaha."
     }
   ]
 }
