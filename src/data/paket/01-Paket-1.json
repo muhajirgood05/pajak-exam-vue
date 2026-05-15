@@ -910,7 +910,7 @@
       "opsi": [
         "Rp75.000.000",
         "Rp7.500.000",
-        "Rp0 (tarif 0%)",
+        "Rp0",
         "Rp82.500.000"
       ],
       "jawaban": 2,
@@ -939,9 +939,9 @@
       "soal": "[Soal 1.3] Atas dividen yang dibagikan kepada Tuan Andi (transaksi nomor 4), berapa PPh yang terutang jika Tuan Andi tidak menginvestasikan dividen tersebut di Indonesia?",
       "opsi": [
         "Rp0 (dikecualikan dari objek)",
-        "Rp2.500.000 (tarif final 5%)",
-        "Rp5.000.000 (tarif final 10%)",
-        "Rp10.000.000 (tarif final 20%)"
+        "Rp2.500.000",
+        "Rp5.000.000",
+        "Rp10.000.000"
       ],
       "jawaban": 2,
       "pembahasan": "Dividen tidak diinvestasikan → PPh final 10% x Rp50.000.000 = Rp5.000.000",
@@ -1194,7 +1194,7 @@
       "soal": "[Soal 4.5] Atas penghasilan dari ekspor jasa ke Malaysia, berapa PPN yang terutang?",
       "opsi": [
         "10% x US$20.000",
-        "0% (tarif 0%)",
+        "0%",
         "5% x US$20.000",
         "Tidak terutang PPN karena jasa dikonsumsi di luar negeri"
       ],
