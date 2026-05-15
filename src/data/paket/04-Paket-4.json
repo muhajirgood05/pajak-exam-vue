@@ -241,6 +241,66 @@
       "jawaban": 0,
       "pembahasan": "1.  **Penghasilan Kena Pajak (Laba Fiskal)**:\n    *   Dari hasil perhitungan pada Soal 1, Penghasilan Kena Pajak PT MTJ adalah Rp 22.750.000.000.\n2.  **PPh Badan Terutang**:\n    *   Peredaran bruto PT MTJ (Rp 75.000.000.000) melebihi Rp 50.000.000.000, sehingga tarif PPh Badan umum sebesar 22% (sesuai UU HPP) diterapkan untuk seluruh Penghasilan Kena Pajak.\n    *   PPh Badan Terutang = 22% x Rp 22.750.000.000 = Rp 5.005.000.000.\n3.  **Kredit Pajak**:\n    *   PPh Pasal 22: Rp 50.000.000.\n    *   PPh Pasal 23 yang telah dipotong atas beban operasional: Rp 150.000.000.\n    *   PPh Pasal 23 atas dividen dari PT Solusi Digital (15% x Rp 500.000.000): Rp 75.000.000.\n    *   PPh Pasal 25 (angsuran): Rp 1.800.000.000.\n    *   **Total Kredit Pajak = Rp 50.000.000 + Rp 150.000.000 + Rp 75.000.000 + Rp 1.800.000.000 = Rp 2.075.000.000**.\n4.  **PPh Kurang Bayar**:\n    *   PPh Badan Terutang - Total Kredit Pajak = Rp 5.005.000.000 - Rp 2.075.000.000 = Rp 2.930.000.000.",
       "dasar": "UU PPh Pasal 17 ayat (1) huruf b dan Pasal 31E ayat (1) (untuk tarif PPh Badan). UU PPh Pasal 28 (untuk kredit pajak)."
+    },
+    {
+      "id": 6,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS] PT Bangun Nusantara Jaya (BNJ) adalah perusahaan konstruksi berskala nasional dengan omzet Rp 2,5 Triliun pada tahun 2025. Pada saat dilakukan pemeriksaan pajak untuk Tahun Pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa hal berikut:\n1. Terdapat biaya jasa manajemen yang dibayarkan kepada perusahaan afiliasi di Singapura (BNJ Holdings SG) sebesar Rp 45.000.000.000. Pemeriksa menemukan bahwa tidak ada rincian jasa yang diberikan, dan BNJ Holdings SG tidak dapat memberikan bukti penyerahan jasa selain invoice tagihan rutin bulanan. BNJ tidak menyertakan dokumen TP Doc terkait transaksi ini.\n2. PT BNJ melakukan pembayaran dividen sebesar Rp 15.000.000.000 kepada Tuan Andi (pemegang saham 25% Orang Pribadi Dalam Negeri) pada Desember 2025. Tuan Andi mengklaim dividen tersebut bebas pajak karena diinvestasikan kembali, namun setelah ditelusuri investasi tersebut berupa pembelian mobil sport mewah atas nama istrinya.\n3. Struktur modal PT BNJ menunjukkan utang berbunga dari bank sebesar Rp 1.200.000.000.000 dan ekuitas sebesar Rp 250.000.000.000. Biaya bunga yang dibebankan pada Laba Rugi adalah Rp 120.000.000.000.\n4. Dalam SPT Masa PPN bulan Oktober 2025, PT BNJ mengkreditkan Pajak Masukan sebesar Rp 2.500.000.000 atas pembelian material konstruksi. Namun hasil konfirmasi menunjukkan Faktur Pajak tersebut diterbitkan oleh PKP fiktif.\nBerdasarkan temuan tersebut, Pemeriksa Pajak harus melakukan penyesuaian/koreksi.",
+      "soal": "[STUDI KASUS - Soal 1] Berdasarkan temuan pertama mengenai biaya jasa manajemen afiliasi sebesar Rp 45 Miliar, tindakan apa yang secara hukum paling tepat dilakukan oleh Pemeriksa Pajak berdasarkan PMK 172 Tahun 2023 dan UU PPh?",
+      "opsi": [
+        "A. Melakukan koreksi fiskal positif seluruh biaya jasa manajemen tersebut karena tidak memenuhi prinsip kewajaran dan kelaziman usaha (arm's length principle) serta ketiadaan bukti penyerahan jasa ekspektasi manfaat.",
+        "B. Membiarkan biaya tersebut sebagai pengurang penghasilan bruto karena sudah didukung oleh invoice dan dipotong PPh Pasal 26 sebesar 20%.",
+        "C. Melakukan koreksi sebesar 50% karena transaksi afiliasi selalu diindikasikan adanya mark-up biaya.",
+        "D. Menunggu proses Mutual Agreement Procedure (MAP) dengan otoritas pajak Singapura sebelum melakukan koreksi fiskal."
+      ],
+      "jawaban": 0,
+      "pembahasan": "Sesuai dengan ketentuan Transfer Pricing (PMK 172/2023) dan Pasal 18 ayat (3) UU PPh, biaya intra-grup seperti jasa manajemen hanya dapat dikurangkan jika memenuhi tiga syarat: (1) Jasa benar-benar diberikan, (2) Memberikan manfaat ekonomi bagi penerima jasa, (3) Nilainya sesuai dengan prinsip kewajaran dan kelaziman usaha. Ketiadaan bukti penyerahan jasa dan TP Doc mengindikasikan syarat tersebut tidak terpenuhi, sehingga seluruh biaya sebesar Rp 45 Miliar dikoreksi fiskal positif.",
+      "dasar": "Pasal 18 ayat (3) UU PPh s.t.d.t.d UU HPP dan PMK 172 Tahun 2023 terkait penerapan Prinsip Kewajaran dan Kelaziman Usaha."
+    },
+    {
+      "id": 7,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS] PT Bangun Nusantara Jaya (BNJ) adalah perusahaan konstruksi berskala nasional dengan omzet Rp 2,5 Triliun pada tahun 2025. Pada saat dilakukan pemeriksaan pajak untuk Tahun Pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa hal berikut:\n1. Terdapat biaya jasa manajemen yang dibayarkan kepada perusahaan afiliasi di Singapura (BNJ Holdings SG) sebesar Rp 45.000.000.000. Pemeriksa menemukan bahwa tidak ada rincian jasa yang diberikan, dan BNJ Holdings SG tidak dapat memberikan bukti penyerahan jasa selain invoice tagihan rutin bulanan. BNJ tidak menyertakan dokumen TP Doc terkait transaksi ini.\n2. PT BNJ melakukan pembayaran dividen sebesar Rp 15.000.000.000 kepada Tuan Andi (pemegang saham 25% Orang Pribadi Dalam Negeri) pada Desember 2025. Tuan Andi mengklaim dividen tersebut bebas pajak karena diinvestasikan kembali, namun setelah ditelusuri investasi tersebut berupa pembelian mobil sport mewah atas nama istrinya.\n3. Struktur modal PT BNJ menunjukkan utang berbunga dari bank sebesar Rp 1.200.000.000.000 dan ekuitas sebesar Rp 250.000.000.000. Biaya bunga yang dibebankan pada Laba Rugi adalah Rp 120.000.000.000.\n4. Dalam SPT Masa PPN bulan Oktober 2025, PT BNJ mengkreditkan Pajak Masukan sebesar Rp 2.500.000.000 atas pembelian material konstruksi. Namun hasil konfirmasi menunjukkan Faktur Pajak tersebut diterbitkan oleh PKP fiktif.\nBerdasarkan temuan tersebut, Pemeriksa Pajak harus melakukan penyesuaian/koreksi.",
+      "soal": "[STUDI KASUS - Soal 2] Terkait temuan ketiga (struktur modal), berapakah biaya bunga yang TIDAK DAPAT diakui sebagai pengurang penghasilan bruto secara fiskal berdasarkan ketentuan yang berlaku?",
+      "opsi": [
+        "A. Rp 0, karena seluruh utang berasal dari pihak ketiga (bank independen).",
+        "B. Rp 20.000.000.000, karena Debt to Equity Ratio (DER) yang diakui maksimal adalah 4:1.",
+        "C. Rp 24.000.000.000, karena DER aktual perusahaan adalah 4,8:1, sehingga porsi biaya bunga yang dikoreksi adalah melebihi rasio 4:1.",
+        "D. Rp 120.000.000.000, karena perusahaan memiliki pinjaman yang tidak wajar."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sesuai PMK 169/PMK.010/2015 dan PP 9 Tahun 2022, perbandingan rasio utang dan modal (DER) maksimal yang diperbolehkan untuk keperluan pajak adalah 4:1. Modal PT BNJ adalah Rp 250 Miliar, sehingga batas maksimal utang yang diperbolehkan bunganya dibiayakan adalah 4 x Rp 250 Miliar = Rp 1.000 Miliar (Rp 1 Triliun). Utang aktual adalah Rp 1,2 Triliun. Total biaya bunga adalah Rp 120 Miliar. Bunga yang dapat dibiayakan = (Rp 1.000 M / Rp 1.200 M) x Rp 120 Miliar = Rp 100 Miliar. Bunga yang harus dikoreksi fiskal positif (tidak dapat dibiayakan) = Rp 120 Miliar - Rp 100 Miliar = Rp 20 Miliar.",
+      "dasar": "Pasal 18 ayat (1) UU PPh jo. PMK-169/PMK.010/2015 tentang Penentuan Besarnya Perbandingan Antara Utang dan Modal Perusahaan untuk Keperluan Penghitungan Pajak Penghasilan."
+    },
+    {
+      "id": 8,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS] PT Bangun Nusantara Jaya (BNJ) adalah perusahaan konstruksi berskala nasional dengan omzet Rp 2,5 Triliun pada tahun 2025. Pada saat dilakukan pemeriksaan pajak untuk Tahun Pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa hal berikut:\n1. Terdapat biaya jasa manajemen yang dibayarkan kepada perusahaan afiliasi di Singapura (BNJ Holdings SG) sebesar Rp 45.000.000.000. Pemeriksa menemukan bahwa tidak ada rincian jasa yang diberikan, dan BNJ Holdings SG tidak dapat memberikan bukti penyerahan jasa selain invoice tagihan rutin bulanan. BNJ tidak menyertakan dokumen TP Doc terkait transaksi ini.\n2. PT BNJ melakukan pembayaran dividen sebesar Rp 15.000.000.000 kepada Tuan Andi (pemegang saham 25% Orang Pribadi Dalam Negeri) pada Desember 2025. Tuan Andi mengklaim dividen tersebut bebas pajak karena diinvestasikan kembali, namun setelah ditelusuri investasi tersebut berupa pembelian mobil sport mewah atas nama istrinya.\n3. Struktur modal PT BNJ menunjukkan utang berbunga dari bank sebesar Rp 1.200.000.000.000 dan ekuitas sebesar Rp 250.000.000.000. Biaya bunga yang dibebankan pada Laba Rugi adalah Rp 120.000.000.000.\n4. Dalam SPT Masa PPN bulan Oktober 2025, PT BNJ mengkreditkan Pajak Masukan sebesar Rp 2.500.000.000 atas pembelian material konstruksi. Namun hasil konfirmasi menunjukkan Faktur Pajak tersebut diterbitkan oleh PKP fiktif.\nBerdasarkan temuan tersebut, Pemeriksa Pajak harus melakukan penyesuaian/koreksi.",
+      "soal": "[STUDI KASUS - Soal 3] Atas temuan kedua mengenai pembagian dividen kepada Tuan Andi (WPDN Orang Pribadi), tindakan yang harus dilakukan oleh Pemeriksa Pajak terkait kewajiban PT BNJ adalah:",
+      "opsi": [
+        "A. Menagih PPh Pasal 4 ayat (2) sebesar 10% dari Rp 15 Miliar kepada PT BNJ karena Tuan Andi gagal memenuhi kriteria investasi kembali.",
+        "B. Tidak melakukan koreksi kepada PT BNJ karena dividen yang diterima oleh WPDN OP dikecualikan dari objek pemotongan PPh oleh pemotong pajak.",
+        "C. Mengenakan sanksi denda 100% kepada PT BNJ atas kegagalan pemotongan PPh Pasal 23.",
+        "D. Menagih PPh Pasal 21 sebesar tarif progresif kepada PT BNJ karena dividen tersebut dianggap sebagai tunjangan."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sejak berlakunya UU HPP dan diturunkan dalam PP 9 Tahun 2022 serta PMK 18/2021, Dividen yang diterima WPDN Orang Pribadi DIKECUALIKAN dari pemotongan PPh. Artinya, PT BNJ selaku pembayar dividen tidak memiliki kewajiban memotong PPh (baik final maupun tidak final). Kewajiban pelaporan dan penyetoran PPh atas dividen tersebut (jika tidak diinvestasikan kembali pada instrumen yang sah sesuai PMK 18/2021) sepenuhnya merupakan tanggung jawab WPDN Orang Pribadi yang bersangkutan (Tuan Andi) untuk disetor sendiri.",
+      "dasar": "Pasal 4 ayat (3) huruf f UU PPh s.t.d.t.d UU HPP jo. Pasal 15 PP 9 Tahun 2022 tentang Pengecualian dari Objek PPh atas Dividen."
+    },
+    {
+      "id": 9,
+      "kategori": "ppn",
+      "skenario": "[STUDI KASUS] PT Bangun Nusantara Jaya (BNJ) adalah perusahaan konstruksi berskala nasional dengan omzet Rp 2,5 Triliun pada tahun 2025. Pada saat dilakukan pemeriksaan pajak untuk Tahun Pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa hal berikut:\n1. Terdapat biaya jasa manajemen yang dibayarkan kepada perusahaan afiliasi di Singapura (BNJ Holdings SG) sebesar Rp 45.000.000.000. Pemeriksa menemukan bahwa tidak ada rincian jasa yang diberikan, dan BNJ Holdings SG tidak dapat memberikan bukti penyerahan jasa selain invoice tagihan rutin bulanan. BNJ tidak menyertakan dokumen TP Doc terkait transaksi ini.\n2. PT BNJ melakukan pembayaran dividen sebesar Rp 15.000.000.000 kepada Tuan Andi (pemegang saham 25% Orang Pribadi Dalam Negeri) pada Desember 2025. Tuan Andi mengklaim dividen tersebut bebas pajak karena diinvestasikan kembali, namun setelah ditelusuri investasi tersebut berupa pembelian mobil sport mewah atas nama istrinya.\n3. Struktur modal PT BNJ menunjukkan utang berbunga dari bank sebesar Rp 1.200.000.000.000 dan ekuitas sebesar Rp 250.000.000.000. Biaya bunga yang dibebankan pada Laba Rugi adalah Rp 120.000.000.000.\n4. Dalam SPT Masa PPN bulan Oktober 2025, PT BNJ mengkreditkan Pajak Masukan sebesar Rp 2.500.000.000 atas pembelian material konstruksi. Namun hasil konfirmasi menunjukkan Faktur Pajak tersebut diterbitkan oleh PKP fiktif.\nBerdasarkan temuan tersebut, Pemeriksa Pajak harus melakukan penyesuaian/koreksi.",
+      "soal": "[STUDI KASUS - Soal 4] Terkait temuan keempat mengenai Pajak Masukan fiktif, selain mengoreksi Pajak Masukan sebesar Rp 2,5 Miliar menjadi tidak dapat dikreditkan, sanksi administrasi apa yang dikenakan berdasarkan UU KUP pasca UU HPP?",
+      "opsi": [
+        "A. Sanksi administrasi berupa bunga per bulan sebesar tarif bunga acuan ditambah uplift factor 15% dibagi 12, maksimal 24 bulan.",
+        "B. Sanksi administrasi berupa denda sebesar 100% dari Pajak Masukan yang dikreditkan secara tidak benar.",
+        "C. Sanksi administrasi berupa kenaikan sebesar 75% dari Pajak Pertambahan Nilai yang kurang dibayar akibat pengkreditan pajak masukan yang tidak benar.",
+        "D. Pidana penjara paling singkat 6 bulan karena menggunakan faktur pajak tidak sah sesuai Pasal 39A UU KUP."
+      ],
+      "jawaban": 2,
+      "pembahasan": "Dalam hal pemeriksaan Pajak Pertambahan Nilai menemukan adanya pengkreditan Pajak Masukan yang tidak benar (misalnya faktur pajak dari penerbit fiktif / tidak sah) dan ini berujung pada terbitnya Surat Ketetapan Pajak Kurang Bayar (SKPKB), berdasarkan Pasal 13 ayat (3) huruf c UU KUP s.t.d.t.d UU HPP, sanksi administrasinya adalah berupa kenaikan sebesar 75% (tujuh puluh lima persen) dari PPN yang kurang dibayar.",
+      "dasar": "Pasal 13 ayat (3) huruf c Undang-Undang KUP sebagaimana telah diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP)."
     }
   ]
 }
