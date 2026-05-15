@@ -644,6 +644,51 @@
       "jawaban": 3,
       "pembahasan": "Berdasarkan PMK Nomor 79 Tahun 2024 tentang Pajak Penghasilan atas Penghasilan dari Obligasi dan Surat Utang Negara:\n\n1.  **Bunga Obligasi Korporasi yang diperdagangkan di Bursa Efek Indonesia (Rp25.000.000):**\n    *   Subjek Pajak Badan dikenakan PPh Pasal 4 ayat (2) sebesar 15% dari jumlah bruto bunga. (Pasal 2 ayat (1) huruf a PMK 79/2024)\n    *   PPh Terutang = 15% x Rp25.000.000 = Rp3.750.000\n\n2.  **Diskonto Obligasi Pemerintah (SUN) yang diperdagangkan di Bursa Efek Indonesia, dijual sebelum jatuh tempo (Rp15.000.000):**\n    *   Subjek Pajak Badan dikenakan PPh Pasal 4 ayat (2) sebesar 10% dari jumlah bruto diskonto. (Pasal 2 ayat (1) huruf b PMK 79/2024)\n    *   PPh Terutang = 10% x Rp15.000.000 = Rp1.500.000\n\n3.  **Bunga Obligasi Pemerintah (SUN) yang tidak diperdagangkan di Bursa Efek Indonesia, jatuh tempo dan dibayar (Rp10.000.000):**\n    *   Subjek Pajak Badan dikenakan PPh Pasal 4 ayat (2) sebesar 10% dari jumlah bruto bunga, baik diperdagangkan maupun tidak diperdagangkan di bursa efek. (Pasal 2 ayat (1) huruf b PMK 79/2024)\n    *   PPh Terutang = 10% x Rp10.000.000 = Rp1.000.000\n\nTotal PPh Pasal 4 ayat (2) yang dipotong:\nRp3.750.000 + Rp1.500.000 + Rp1.000.000 = Rp6.250.000",
       "dasar": "Undang-Undang Pajak Penghasilan Pasal 4 ayat (2), Peraturan Menteri Keuangan Nomor 79 Tahun 2024 tentang Pajak Penghasilan atas Penghasilan dari Obligasi dan Surat Utang Negara."
+    },
+    {
+      "id": 44,
+      "kategori": "pph-potput",
+      "skenario": "PT Abadi Jaya, sebuah perusahaan di bidang manufaktur, membutuhkan jasa pelayanan kesehatan untuk karyawannya. Pada bulan April 2024, PT Abadi Jaya membayar jasa pelayanan kesehatan kepada Klinik Sehat Selalu (sebuah klinik swasta) senilai Rp150.000.000. Klinik Sehat Selalu adalah Wajib Pajak Badan yang bergerak di bidang jasa pelayanan kesehatan. PT Abadi Jaya adalah Wajib Pajak Badan yang ditunjuk sebagai Pemotong PPh Pasal 23.",
+      "soal": "Berapakah PPh Pasal 23 yang wajib dipotong oleh PT Abadi Jaya atas pembayaran jasa pelayanan kesehatan tersebut?",
+      "opsi": [
+        "Rp 3.000.000",
+        "Rp 2.250.000",
+        "Rp 1.500.000",
+        "Rp 750.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 23 ayat (1) huruf c angka 2 Undang-Undang Pajak Penghasilan (UU PPh) dan Pasal 1 ayat (2) huruf c angka 25 Peraturan Menteri Keuangan Nomor 141/PMK.03/2015, atas penghasilan berupa imbalan sehubungan dengan jasa pelayanan kesehatan dikenai pemotongan PPh Pasal 23 sebesar 2% dari jumlah bruto tidak termasuk PPN.\n\nPerhitungan PPh Pasal 23:\nDasar Pengenaan Pajak = Rp150.000.000\nTarif PPh Pasal 23 = 2%\nPPh Pasal 23 yang dipotong = 2% x Rp150.000.000 = Rp3.000.000\n\nJadi, PT Abadi Jaya wajib memotong PPh Pasal 23 sebesar Rp3.000.000.",
+      "dasar": "UU PPh Pasal 23 ayat (1) huruf c angka 2, PMK 141/PMK.03/2015 Pasal 1 ayat (2) huruf c angka 25"
+    },
+    {
+      "id": 45,
+      "kategori": "pph-badan",
+      "skenario": "PT Berkah Jaya, sebuah perusahaan manufaktur, pada tahun pajak 2024 mengeluarkan beberapa biaya sumbangan dan bantuan. Berikut adalah rinciannya:\n<table border='1'>\n  <tr>\n    <th>Jenis Sumbangan/Bantuan</th>\n    <th>Jumlah (Rp)</th>\n  </tr>\n  <tr>\n    <td>Bantuan bencana nasional untuk korban gempa bumi di Sulawesi (disalurkan melalui BNPB)</td>\n    <td>100.000.000</td>\n  </tr>\n  <tr>\n    <td>Sumbangan penelitian dan pengembangan yang dilakukan oleh lembaga penelitian yang diakui pemerintah</td>\n    <td>75.000.000</td>\n  </tr>\n  <tr>\n    <td>Sumbangan untuk pembangunan fasilitas umum berupa tempat ibadah (masjid) di lingkungan perusahaan</td>\n    <td>50.000.000</td>\n  </tr>\n  <tr>\n    <td>Sumbangan untuk kampanye politik seorang calon legislatif</td>\n    <td>25.000.000</td>\n  </tr>\n</table>\nPT Berkah Jaya memenuhi seluruh persyaratan administratif yang diperlukan untuk pengakuan biaya sumbangan.",
+      "soal": "Berapakah total biaya sumbangan yang dapat dikurangkan dari penghasilan bruto PT Berkah Jaya pada tahun pajak 2024?",
+      "opsi": [
+        "Rp 250.000.000",
+        "Rp 225.000.000",
+        "Rp 175.000.000",
+        "Rp 150.000.000"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan Pasal 6 ayat (1) huruf i, j, k, l, dan m Undang-Undang Pajak Penghasilan (UU PPh) serta Peraturan Menteri Keuangan Nomor 79/PMK.03/2024 tentang Perlakuan Pajak Penghasilan atas Biaya Sumbangan dan/atau Bantuan, jenis sumbangan yang dapat dikurangkan dari penghasilan bruto adalah:\n1.  Sumbangan penanggulangan bencana nasional (Pasal 6 ayat (1) huruf i UU PPh dan Pasal 2 ayat (1) PMK 79/2024).\n2.  Sumbangan penelitian dan pengembangan (Pasal 6 ayat (1) huruf j UU PPh dan Pasal 3 ayat (1) PMK 79/2024).\n3.  Sumbangan fasilitas umum (Pasal 6 ayat (1) huruf k UU PPh dan Pasal 4 ayat (1) PMK 79/2024).\n4.  Sumbangan biaya pembangunan infrastruktur sosial (Pasal 6 ayat (1) huruf l UU PPh dan Pasal 5 ayat (1) PMK 79/2024).\n5.  Sumbangan biaya pembangunan sarana pendidikan (Pasal 6 ayat (1) huruf m UU PPh dan Pasal 6 ayat (1) PMK 79/2024).\n6.  Sumbangan biaya pembinaan olahraga (Pasal 6 ayat (1) huruf m UU PPh dan Pasal 7 ayat (1) PMK 79/2024).\n\nMari kita analisis setiap sumbangan:\n*   <b>Bantuan bencana nasional:</b> Rp100.000.000. Dapat dikurangkan karena disalurkan melalui BNPB (Pasal 2 ayat (1) huruf a PMK 79/2024).\n*   <b>Sumbangan penelitian dan pengembangan:</b> Rp75.000.000. Dapat dikurangkan (Pasal 3 ayat (1) PMK 79/2024).\n*   <b>Sumbangan pembangunan fasilitas umum (tempat ibadah):</b> Rp50.000.000. Dapat dikurangkan (Pasal 4 ayat (1) PMK 79/2024).\n*   <b>Sumbangan untuk kampanye politik:</b> Rp25.000.000. Tidak dapat dikurangkan karena tidak termasuk dalam jenis sumbangan yang diatur dalam Pasal 6 ayat (1) UU PPh dan PMK 79/2024.\n\nTotal biaya sumbangan yang dapat dikurangkan:\nRp100.000.000 (Bencana Nasional) + Rp75.000.000 (Litbang) + Rp50.000.000 (Fasilitas Umum) = Rp225.000.000.",
+      "dasar": "UU PPh Pasal 6 ayat (1) huruf i, j, k, l, m, PMK 79/PMK.03/2024 Pasal 2, Pasal 3, Pasal 4"
+    },
+    {
+      "id": 46,
+      "kategori": "kup",
+      "skenario": "PT Maju Terus, seorang Pengusaha Kena Pajak (PKP), telah melaporkan SPT Masa PPN untuk masa pajak Juni 2024 pada tanggal 10 Juli 2024 dengan PPN Kurang Bayar sebesar Rp50.000.000. Pada tanggal 15 Januari 2025, Pemeriksa Pajak menemukan bahwa PT Maju Terus seharusnya melaporkan PPN Kurang Bayar sebesar Rp75.000.000. PT Maju Terus kemudian melakukan pembetulan SPT Masa PPN pada tanggal 20 Januari 2025 dan melunasi kekurangan pembayaran pajak tersebut.",
+      "soal": "Berapakah sanksi administrasi berupa bunga yang harus dibayar oleh PT Maju Terus atas kekurangan pembayaran PPN tersebut? (Asumsikan tarif bunga sanksi administrasi yang ditetapkan Menteri Keuangan untuk bulan Januari 2025 dan bulan-bulan sebelumnya adalah 0,55% per bulan).",
+      "opsi": [
+        "Rp 1.375.000",
+        "Rp 1.100.000",
+        "Rp 825.000",
+        "Rp 550.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 8 ayat (2a) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) sebagaimana telah diubah dengan UU HPP, dalam hal Wajib Pajak membetulkan sendiri Surat Pemberitahuan yang mengakibatkan utang pajak menjadi lebih besar, kepadanya dikenai sanksi administrasi berupa bunga sebesar tarif bunga per bulan yang ditetapkan oleh Menteri Keuangan atas jumlah pajak yang kurang dibayar, dihitung sejak saat jatuh tempo pembayaran sampai dengan tanggal pembayaran, dan bagian dari bulan dihitung penuh 1 (satu) bulan.\n\nLangkah-langkah perhitungan:\n1.  <b>Kekurangan Pembayaran PPN:</b>\n    PPN Kurang Bayar yang seharusnya = Rp75.000.000\n    PPN Kurang Bayar yang dilaporkan = Rp50.000.000\n    Kekurangan Pembayaran = Rp75.000.000 - Rp50.000.000 = Rp25.000.000\n\n2.  <b>Jatuh Tempo Pembayaran PPN Masa Juni 2024:</b>\n    Jatuh tempo pembayaran PPN Masa adalah akhir bulan berikutnya setelah Masa Pajak berakhir. Untuk Masa Pajak Juni 2024, jatuh temponya adalah 31 Juli 2024.\n\n3.  <b>Tanggal Pembayaran Kekurangan:</b>\n    Pembayaran dilakukan pada 20 Januari 2025.\n\n4.  <b>Periode Perhitungan Bunga:</b>\n    Dihitung sejak saat jatuh tempo pembayaran (31 Juli 2024) sampai dengan tanggal pembayaran (20 Januari 2025). Bagian dari bulan dihitung penuh 1 (satu) bulan.\n    *   Agustus 2024 (1 bulan)\n    *   September 2024 (1 bulan)\n    *   Oktober 2024 (1 bulan)\n    *   November 2024 (1 bulan)\n    *   Desember 2024 (1 bulan)\n    *   Januari 2025 (1 bulan, karena pembayaran di tanggal 20 Januari)\n    Total = 6 bulan.\n\n5.  <b>Tarif Bunga Sanksi Administrasi:</b>\n    Asumsi tarif bunga adalah 0,55% per bulan (mengacu pada PMK 11/PMK.03/2025 untuk Januari 2025).\n\n6.  <b>Perhitungan Sanksi Bunga:</b>\n    Sanksi Bunga = Kekurangan Pembayaran x Tarif Bunga x Jumlah Bulan\n    Sanksi Bunga = Rp25.000.000 x 0,55% x 6\n    Sanksi Bunga = Rp25.000.000 x 0,0055 x 6\n    Sanksi Bunga = Rp137.500 x 6\n    Sanksi Bunga = Rp825.000\n\nJadi, sanksi administrasi berupa bunga yang harus dibayar oleh PT Maju Terus adalah Rp825.000.",
+      "dasar": "UU KUP Pasal 8 ayat (2a) (UU Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan), PMK 11/PMK.03/2025"
     }
   ],
   "sesi2": [
