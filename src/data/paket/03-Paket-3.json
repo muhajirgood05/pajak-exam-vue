@@ -689,6 +689,51 @@
       "jawaban": 0,
       "pembahasan": "Berdasarkan Pasal 8 ayat (2a) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) sebagaimana telah diubah dengan UU HPP, dalam hal Wajib Pajak membetulkan sendiri Surat Pemberitahuan yang mengakibatkan utang pajak menjadi lebih besar, kepadanya dikenai sanksi administrasi berupa bunga sebesar tarif bunga per bulan yang ditetapkan oleh Menteri Keuangan atas jumlah pajak yang kurang dibayar, dihitung sejak saat jatuh tempo pembayaran sampai dengan tanggal pembayaran, dan bagian dari bulan dihitung penuh 1 (satu) bulan.\n\nLangkah-langkah perhitungan:\n1.  <b>Kekurangan Pembayaran PPN:</b>\n    PPN Kurang Bayar yang seharusnya = Rp75.000.000\n    PPN Kurang Bayar yang dilaporkan = Rp50.000.000\n    Kekurangan Pembayaran = Rp75.000.000 - Rp50.000.000 = Rp25.000.000\n\n2.  <b>Jatuh Tempo Pembayaran PPN Masa Juni 2024:</b>\n    Jatuh tempo pembayaran PPN Masa adalah akhir bulan berikutnya setelah Masa Pajak berakhir. Untuk Masa Pajak Juni 2024, jatuh temponya adalah 31 Juli 2024.\n\n3.  <b>Tanggal Pembayaran Kekurangan:</b>\n    Pembayaran dilakukan pada 20 Januari 2025.\n\n4.  <b>Periode Perhitungan Bunga:</b>\n    Dihitung sejak saat jatuh tempo pembayaran (31 Juli 2024) sampai dengan tanggal pembayaran (20 Januari 2025). Bagian dari bulan dihitung penuh 1 (satu) bulan.\n    *   Agustus 2024 (1 bulan)\n    *   September 2024 (1 bulan)\n    *   Oktober 2024 (1 bulan)\n    *   November 2024 (1 bulan)\n    *   Desember 2024 (1 bulan)\n    *   Januari 2025 (1 bulan, karena pembayaran di tanggal 20 Januari)\n    Total = 6 bulan.\n\n5.  <b>Tarif Bunga Sanksi Administrasi:</b>\n    Asumsi tarif bunga adalah 0,55% per bulan (mengacu pada PMK 11/PMK.03/2025 untuk Januari 2025).\n\n6.  <b>Perhitungan Sanksi Bunga:</b>\n    Sanksi Bunga = Kekurangan Pembayaran x Tarif Bunga x Jumlah Bulan\n    Sanksi Bunga = Rp25.000.000 x 0,55% x 6\n    Sanksi Bunga = Rp25.000.000 x 0,0055 x 6\n    Sanksi Bunga = Rp137.500 x 6\n    Sanksi Bunga = Rp825.000\n\nJadi, sanksi administrasi berupa bunga yang harus dibayar oleh PT Maju Terus adalah Rp825.000.",
       "dasar": "UU KUP Pasal 8 ayat (2a) (UU Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan), PMK 11/PMK.03/2025"
+    },
+    {
+      "id": 47,
+      "kategori": "pph-badan",
+      "skenario": "PT Makmur Sentosa, sebuah perusahaan manufaktur, pada tanggal 1 Januari 2024 melakukan revaluasi atas seluruh aset tetapnya untuk tujuan perpajakan. Nilai buku fiskal aset pada tanggal tersebut adalah Rp 10.000.000.000,-. Setelah penilaian oleh penilai publik, nilai wajar aset ditetapkan sebesar Rp 15.000.000.000,-. PT Makmur Sentosa bukan merupakan perusahaan yang bergerak di bidang usaha tertentu atau di daerah tertentu.",
+      "soal": "Berapakah PPh Final yang terutang atas selisih nilai revaluasi aset tetap PT Makmur Sentosa?",
+      "opsi": [
+        "A. Rp 500.000.000,-",
+        "B. Rp 750.000.000,-",
+        "C. Rp 1.000.000.000,-",
+        "D. Rp 1.500.000.000,-"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1.   **Menentukan Selisih Lebih Revaluasi Aset:**\n    Nilai Wajar Aset = Rp 15.000.000.000,-\n    Nilai Buku Fiskal Aset = Rp 10.000.000.000,-\n    Selisih Lebih Revaluasi = Rp 15.000.000.000 - Rp 10.000.000.000 = Rp 5.000.000.000,-\n\n2.   **Menentukan Tarif PPh Final:**\n    Berdasarkan Pasal 2 ayat (3) huruf a Peraturan Menteri Keuangan Nomor 79 Tahun 2024, tarif Pajak Penghasilan yang bersifat final atas selisih lebih penilaian kembali aktiva tetap adalah 10% (sepuluh persen) bagi Wajib Pajak yang tidak bergerak di bidang usaha tertentu atau tidak berlokasi di daerah tertentu.\n\n3.   **Menghitung PPh Final Terutang:**\n    PPh Final = Tarif PPh Final x Selisih Lebih Revaluasi\n    PPh Final = 10% x Rp 5.000.000.000 = Rp 500.000.000,-\n\nJadi, PPh Final yang terutang atas selisih nilai revaluasi aset tetap PT Makmur Sentosa adalah Rp 500.000.000,-.",
+      "dasar": "Pasal 19 ayat (2) Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh), dan Pasal 2 ayat (1), ayat (3) huruf a Peraturan Menteri Keuangan Nomor 79 Tahun 2024 tentang Penilaian Kembali Aktiva Tetap untuk Tujuan Perpajakan."
+    },
+    {
+      "id": 48,
+      "kategori": "pph-potput",
+      "skenario": "PT Auto Prima, sebuah importir sekaligus distributor utama kendaraan bermotor roda empat, pada bulan Juni 2025 menjual satu unit mobil mewah jenis SUV dengan harga jual (tidak termasuk PPN) sebesar Rp 2.500.000.000,- kepada Tuan David, seorang pengusaha. Kendaraan tersebut termasuk kategori yang dikenakan PPh Pasal 22 atas penjualan barang sangat mewah. PT Auto Prima memiliki Nomor Pokok Wajib Pajak (NPWP).",
+      "soal": "Berapakah PPh Pasal 22 yang wajib dipungut oleh PT Auto Prima atas penjualan mobil mewah tersebut?",
+      "opsi": [
+        "A. Rp 62.500.000,-",
+        "B. Rp 75.000.000,-",
+        "C. Rp 100.000.000,-",
+        "D. Rp 125.000.000,-"
+      ],
+      "jawaban": 3,
+      "pembahasan": "1.   **Menentukan Objek Pemungutan PPh Pasal 22:**\n    Penjualan kendaraan bermotor roda empat yang tergolong sangat mewah oleh importir atau distributor utama merupakan objek pemungutan PPh Pasal 22.\n\n2.   **Menentukan Tarif PPh Pasal 22:**\n    Berdasarkan Pasal 2 ayat (1) huruf j Peraturan Menteri Keuangan Nomor 34/PMK.010/2017, tarif PPh Pasal 22 atas penjualan kendaraan bermotor roda empat pengangkutan orang kurang dari 10 (sepuluh) orang berupa sedan, jeep, sport utility vehicle (SUV), multi purpose vehicle (MPV), dan sejenisnya dengan harga jual lebih dari Rp 2.000.000.000,00 (dua miliar rupiah) adalah 5% (lima persen) dari harga jual tidak termasuk Pajak Pertambahan Nilai (PPN) dan Pajak Penjualan atas Barang Mewah (PPnBM).\n\n3.   **Menghitung PPh Pasal 22 Terutang:**\n    Harga Jual (tidak termasuk PPN) = Rp 2.500.000.000,-\n    PPh Pasal 22 Terutang = Tarif PPh Pasal 22 x Harga Jual\n    PPh Pasal 22 Terutang = 5% x Rp 2.500.000.000 = Rp 125.000.000,-\n\nJadi, PPh Pasal 22 yang wajib dipungut oleh PT Auto Prima adalah Rp 125.000.000,-.",
+      "dasar": "Pasal 22 Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPh), dan Pasal 1 ayat (1) huruf a angka 10 serta Pasal 2 ayat (1) huruf j Peraturan Menteri Keuangan Nomor 34/PMK.010/2017 tentang Pemungutan Pajak Penghasilan Pasal 22 Sehubungan dengan Pembayaran atas Penyerahan Barang dan Kegiatan di Bidang Impor atau Kegiatan Usaha di Bidang Lain."
+    },
+    {
+      "id": 49,
+      "kategori": "ppn",
+      "skenario": "PT Griya Kencana, sebuah Pengusaha Kena Pajak (PKP) yang bergerak di bidang real estat, pada bulan Mei 2025 melakukan penjualan sebidang tanah dan bangunan yang sebelumnya digunakan sebagai kantor pusat perusahaan. Data transaksi adalah sebagai berikut:\n<ul>\n  <li>Harga Jual Tanah dan Bangunan: Rp 12.000.000.000,-</li>\n  <li>Nilai Perolehan (Harga Pokok) Tanah dan Bangunan: Rp 8.000.000.000,-</li>\n</ul>\nPT Griya Kencana sebelumnya telah mengkreditkan Pajak Masukan atas perolehan bangunan tersebut.",
+      "soal": "Berapakah Pajak Pertambahan Nilai (PPN) yang terutang atas penyerahan tanah dan bangunan tersebut?",
+      "opsi": [
+        "A. Rp 1.100.000.000,-",
+        "B. Rp 1.200.000.000,-",
+        "C. Rp 1.320.000.000,-",
+        "D. Rp 1.440.000.000,-"
+      ],
+      "jawaban": 3,
+      "pembahasan": "1.   **Menentukan Objek PPN:**\n    Penyerahan hak atas tanah dan/atau bangunan oleh Pengusaha Kena Pajak (PKP) merupakan objek PPN (Pasal 4 ayat (1) huruf a UU PPN).\n    Karena PT Griya Kencana adalah PKP dan telah mengkreditkan Pajak Masukan atas perolehan bangunan tersebut, maka penyerahan ini terutang PPN sesuai Pasal 20 ayat (1) Peraturan Pemerintah Nomor 44 Tahun 2022.\n\n2.   **Menentukan Dasar Pengenaan Pajak (DPP):**\n    Dasar Pengenaan Pajak (DPP) atas penyerahan Barang Kena Pajak berupa tanah dan/atau bangunan adalah Harga Jual (Pasal 8A ayat (1) UU PPN).\n    DPP = Rp 12.000.000.000,-\n\n3.   **Menentukan Tarif PPN:**\n    Berdasarkan Pasal 7 ayat (1) huruf b UU PPN HPP, tarif PPN adalah 12% yang berlaku paling lambat 1 Januari 2025. Karena transaksi terjadi pada Mei 2025, maka tarif yang berlaku adalah 12%.\n\n4.   **Menghitung PPN Terutang:**\n    PPN Terutang = Tarif PPN x DPP\n    PPN Terutang = 12% x Rp 12.000.000.000 = Rp 1.440.000.000,-\n\nJadi, Pajak Pertambahan Nilai (PPN) yang terutang atas penyerahan tanah dan bangunan tersebut adalah Rp 1.440.000.000,-.",
+      "dasar": "Pasal 4 ayat (1) huruf a, Pasal 7 ayat (1) huruf b, dan Pasal 8A ayat (1) Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU PPN), serta Pasal 20 ayat (1) Peraturan Pemerintah Nomor 44 Tahun 2022 tentang Penerapan Terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah."
     }
   ],
   "sesi2": [
