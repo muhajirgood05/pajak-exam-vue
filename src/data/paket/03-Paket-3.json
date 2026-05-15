@@ -393,17 +393,17 @@
     {
       "id": 27,
       "kategori": "kup",
-      "skenario": "PT Sejahtera Abadi mengajukan permohonan pengembalian kelebihan pembayaran PPN pada tanggal 15 Januari 2024, setelah dilakukannya pemeriksaan oleh DJP. Hasil pemeriksaan menyatakan terdapat kelebihan pembayaran PPN sebesar Rp50.000.000.",
-      "soal": "Berapa lama jangka waktu paling lama bagi Direktur Jenderal Pajak untuk memberikan keputusan atas permohonan pengembalian kelebihan pembayaran PPN tersebut?",
+      "skenario": "PT Sejahtera Abadi mengajukan permohonan pengembalian (restitusi) kelebihan pembayaran PPN pada tanggal 15 Januari 2024 melalui SPT Masa PPN. Atas permohonan tersebut, DJP melakukan pemeriksaan untuk meneliti kebenaran nilai lebih bayar tersebut.",
+      "soal": "Berdasarkan UU KUP, berapa lama jangka waktu paling lama bagi Direktur Jenderal Pajak untuk menerbitkan Surat Ketetapan Pajak (memberikan keputusan) atas permohonan pengembalian kelebihan pembayaran pajak (restitusi) tersebut?",
       "opsi": [
-        "A. 12 bulan sejak permohonan diterima lengkap.",
-        "B. 6 bulan sejak permohonan diterima lengkap.",
-        "C. 3 bulan sejak permohonan diterima lengkap.",
-        "D. 1 bulan sejak diterbitkannya SKPPK."
+        "A. 12 bulan sejak surat permohonan diterima secara lengkap.",
+        "B. 6 bulan sejak surat permohonan diterima secara lengkap.",
+        "C. 3 bulan sejak surat permohonan diterima secara lengkap.",
+        "D. 1 bulan sejak diterbitkannya Surat Pemberitahuan Pemeriksaan."
       ],
-      "jawaban": 1,
-      "pembahasan": "Sesuai dengan ketentuan dalam Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) yang diubah dengan Undang-Undang Harmonisasi Peraturan Perpajakan (UU HPP) dan diatur lebih lanjut dalam PP 50/2022 tentang Tata Cara Pelaksanaan Hak dan Pemenuhan Kewajiban Perpajakan:\n1.  Pasal 17B ayat (1) UU KUP menyatakan bahwa Direktur Jenderal Pajak setelah melakukan pemeriksaan atas permohonan pengembalian kelebihan pembayaran pajak, harus menerbitkan surat ketetapan pajak paling lama 12 (dua belas) bulan sejak surat permohonan diterima secara lengkap.\n2.  Namun, untuk Pajak Pertambahan Nilai atau Pajak Penjualan atas Barang Mewah, jangka waktu tersebut dipersingkat dalam beberapa kondisi.\n3.  PP 50/2022 Pasal 18 ayat (1) huruf b secara spesifik mengatur bahwa 'jangka waktu paling lama 6 (enam) bulan sejak diterimanya permohonan pengembalian kelebihan pembayaran Pajak Pertambahan Nilai atau Pajak Penjualan atas Barang Mewah secara lengkap untuk permohonan pengembalian kelebihan pembayaran Pajak Pertambahan Nilai atau Pajak Penjualan atas Barang Mewah setelah dilakukan pemeriksaan atau penelitian'.\n\nDalam kasus PT Sejahtera Abadi, permohonan pengembalian PPN diajukan setelah dilakukan pemeriksaan. Oleh karena itu, jangka waktu paling lama bagi Direktur Jenderal Pajak untuk memberikan keputusan adalah 6 bulan sejak permohonan diterima secara lengkap.",
-      "dasar": "UU KUP Pasal 17B ayat (1); PP 50/2022 Pasal 18 ayat (1) huruf b."
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 17B ayat (1) UU KUP, Direktur Jenderal Pajak atau DJP setelah melakukan pemeriksaan atas permohonan pengembalian kelebihan pembayaran pajak (Restitusi normal), harus menerbitkan surat ketetapan pajak paling lama 12 (dua belas) bulan sejak surat permohonan diterima secara lengkap.\n\nJika setelah lewat batas waktu 12 bulan DJP tidak menerbitkan Surat Ketetapan Pajak, maka permohonan restitusi tersebut dianggap dikabulkan dan SKPLB harus diterbitkan paling lambat 1 bulan setelah jangka waktu tersebut berakhir.",
+      "dasar": "Pasal 17B ayat (1) UU Ketentuan Umum dan Tata Cara Perpajakan (KUP)."
     },
     {
       "id": 28,
