@@ -393,17 +393,17 @@
     {
       "id": 27,
       "kategori": "KUP",
-      "skenario": "PPNS (Penyidik Pegawai Negeri Sipil) DJP menemukan indikasi kuat bahwa PT Fraud telah menerbitkan Faktur Pajak Fiktif selama tahun 2012 dan 2013 yang merugikan negara secara masif. Bukti permulaan baru ditemukan dan penyidikan baru akan dimulai pada tahun 2025.",
-      "soal": "Apakah PPNS DJP masih memiliki kewenangan untuk menyidik kasus tahun 2012-2013 tersebut pada tahun 2025?",
+      "skenario": "Penyidik Pegawai Negeri Sipil (PPNS) DJP menemukan indikasi kuat bahwa PT Fraud telah dengan sengaja menerbitkan Faktur Pajak fiktif selama Tahun Pajak 2013 yang merugikan negara secara masif. Namun, bukti permulaan baru ditemukan pada awal tahun 2025 sehingga penyidikan baru akan dimulai pada pertengahan tahun 2025.",
+      "soal": "Berdasarkan UU KUP yang telah diubah dengan UU HPP, apakah PPNS DJP masih memiliki kewenangan untuk menyidik dan menyampaikan Surat Pemberitahuan Dimulainya Penyidikan (SPDP) atas kasus tahun 2013 tersebut pada tahun 2025?",
       "opsi": [
-        "Masih berhak, karena tindak pidana pajak tidak memiliki daluwarsa",
-        "Tidak berhak, karena tindak pidana di bidang perpajakan daluwarsa setelah lampau waktu 10 (sepuluh) tahun terhitung sejak saat terutangnya pajak",
-        "Masih berhak, daluwarsa pidana pajak adalah 15 tahun",
-        "Tidak berhak, daluwarsa pidana pajak mengikuti daluwarsa penetapan administrasi yaitu 5 tahun"
+        "A. Masih berhak, karena tindak pidana pajak yang merugikan pendapatan negara tidak memiliki batas waktu daluwarsa.",
+        "B. Tidak berhak, karena tindak pidana di bidang perpajakan daluwarsa setelah lampau waktu 10 (sepuluh) tahun terhitung sejak saat terutangnya pajak atau berakhirnya Tahun Pajak.",
+        "C. Masih berhak, daluwarsa tindak pidana pajak adalah 15 tahun sejak terjadinya tindak pidana.",
+        "D. Tidak berhak, karena daluwarsa penuntutan tindak pidana pajak mengikuti daluwarsa penetapan pajak yaitu 5 tahun."
       ],
       "jawaban": 1,
-      "pembahasan": "Pasal 40 UU KUP (yang tidak diubah substansi batas waktunya dalam UU HPP) secara tegas mengatur bahwa Tindak Pidana di bidang perpajakan TIDAK DAPAT DITUNTUT setelah lampau waktu 10 (sepuluh) tahun terhitung sejak saat terutangnya pajak, berakhirnya masa pajak, bagian tahun pajak, atau tahun pajak yang bersangkutan. Untuk tahun 2012-2013, daluwarsa penuntutannya jatuh pada akhir 2022-2023. Sehingga di tahun 2025 sudah daluwarsa dan gugur hak penuntutannya.",
-      "dasar": "UU KUP Pasal 40."
+      "pembahasan": "Berdasarkan Pasal 40 UU KUP sebagaimana telah diubah dengan UU Harmonisasi Peraturan Perpajakan (UU HPP) Nomor 7 Tahun 2021, Tindak Pidana di bidang perpajakan TIDAK DAPAT DITUNTUT setelah lampau waktu 10 (sepuluh) tahun terhitung sejak saat terutangnya pajak, berakhirnya Masa Pajak, berakhirnya Bagian Tahun Pajak, atau berakhirnya Tahun Pajak yang bersangkutan.\n\nPenjelasan Pasal 40 dalam UU HPP memberikan penegasan penting bahwa yang dimaksud dengan 'penuntutan' adalah penyampaian Surat Pemberitahuan Dimulainya Penyidikan (SPDP) kepada Penuntut Umum. Untuk Tahun Pajak 2013, daluwarsa penuntutannya jatuh pada akhir tahun 2023. Oleh karena itu, di tahun 2025 hak untuk melakukan penuntutan (penyampaian SPDP) sudah daluwarsa dan gugur demi hukum.",
+      "dasar": "Pasal 40 Undang-Undang Nomor 6 Tahun 1983 s.t.d.t.d Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP)."
     },
     {
       "id": 28,
