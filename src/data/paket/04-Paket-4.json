@@ -239,6 +239,81 @@
       "jawaban": 0,
       "pembahasan": "Berdasarkan PMK 34/PMK.010/2017 std PMK 41/PMK.010/2022, impor barang selain barang tertentu dan barang kiriman, dikenakan tarif PPh Pasal 22 sebesar: 2,5% jika menggunakan Angka Pengenal Impor (API), atau 7,5% jika TIDAK menggunakan API. Karena PT Importama tidak memiliki API, tarifnya adalah 7,5%. PPh Pasal 22 = 7,5% x Nilai Impor = 7,5% x Rp 500.000.000 = Rp 37.500.000.",
       "dasar": "PMK-34/PMK.010/2017 std PMK 41/PMK.010/2022 tentang Pemungutan PPh Pasal 22 Sehubungan dengan Pembayaran Atas Penyerahan Barang dan Kegiatan di Bidang Impor."
+    },
+    {
+      "id": 22,
+      "kategori": "ppn",
+      "skenario": "Tuan Anton membangun sebuah rumah tinggal untuk keperluan pribadi dengan luas keseluruhan bangunan sebesar 250 meter persegi. Pembangunan dilakukan secara bertahap mulai Februari 2025 sampai Oktober 2025. Total biaya yang dikeluarkan (tidak termasuk harga perolehan tanah) adalah Rp 1.000.000.000. Tuan Anton tidak menggunakan jasa kontraktor PKP.",
+      "soal": "Berapakah besarnya Pajak Pertambahan Nilai (PPN) atas Kegiatan Membangun Sendiri (KMS) yang terutang berdasarkan tarif PPN 12% (UU HPP tahun 2025)?",
+      "opsi": [
+        "A. Rp 120.000.000",
+        "B. Rp 24.000.000",
+        "C. Rp 20.000.000",
+        "D. Tidak terutang PPN KMS karena dibangun untuk keperluan pribadi."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pembangunan bangunan untuk tempat tinggal atau tempat usaha dengan luas ≥ 200m² tanpa kontraktor PKP dikenakan PPN KMS. Berdasarkan PMK 61/PMK.03/2022, PPN KMS dihitung menggunakan besaran tertentu yaitu 20% dari tarif PPN dikali Dasar Pengenaan Pajak (total biaya). Dengan tarif PPN 12% pada 2025, tarif efektifnya adalah 2,4% (20% x 12%). PPN Terutang = 2,4% x Rp 1.000.000.000 = Rp 24.000.000.",
+      "dasar": "Pasal 16G UU PPN jo. PMK-61/PMK.03/2022 tentang PPN atas Kegiatan Membangun Sendiri."
+    },
+    {
+      "id": 23,
+      "kategori": "potput",
+      "skenario": "PT Trans Logistik (Wajib Pajak Badan) menyewa sebuah truk dari Tuan Budi (Orang Pribadi yang tidak memiliki NPWP) untuk pengiriman barang selama satu bulan penuh. Nilai sewa yang disepakati adalah Rp 10.000.000.",
+      "soal": "Berapakah PPh Pasal 23 yang harus dipotong oleh PT Trans Logistik atas pembayaran sewa truk tersebut?",
+      "opsi": [
+        "A. Rp 200.000",
+        "B. Rp 400.000",
+        "C. Rp 300.000",
+        "D. Rp 0, karena Tuan Budi adalah WP Orang Pribadi sehingga dikenakan PPh Pasal 21."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sewa atas harta berupa kendaraan bermotor terutang PPh Pasal 23, tidak peduli apakah pihak yang menyewakan (lessor) adalah Orang Pribadi atau Badan. Tarif normal PPh Pasal 23 atas sewa selain tanah dan bangunan adalah 2%. Namun, karena Tuan Budi tidak memiliki NPWP, tarifnya menjadi lebih tinggi 100%, yaitu 4%. PPh Pasal 23 yang dipotong = 4% x Rp 10.000.000 = Rp 400.000.",
+      "dasar": "Pasal 23 ayat (1) huruf c UU PPh s.t.d.t.d UU HPP jo. Pasal 23 ayat (1a) (kenaikan tarif 100% untuk WP tanpa NPWP)."
+    },
+    {
+      "id": 24,
+      "kategori": "pph-op",
+      "skenario": "Ibu Dina adalah seorang karyawati swasta yang telah menikah dan memiliki 2 orang anak kandung. Suami Ibu Dina adalah seorang pengangguran yang tidak memiliki penghasilan sama sekali, dan hal ini dibuktikan dengan surat keterangan dari pemerintah daerah setempat.",
+      "soal": "Berapakah besaran Penghasilan Tidak Kena Pajak (PTKP) yang berhak diklaim oleh Ibu Dina dalam menghitung PPh Pasal 21-nya untuk tahun 2025?",
+      "opsi": [
+        "A. Rp 54.000.000 (TK/0)",
+        "B. Rp 58.500.000 (K/0)",
+        "C. Rp 63.000.000 (K/1)",
+        "D. Rp 67.500.000 (K/2)"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan peraturan perpajakan, bagi karyawati yang sudah menikah, PTKP yang berlaku umumnya adalah TK/0 (karena suami dianggap sebagai kepala keluarga). Namun, jika karyawati dapat membuktikan bahwa suaminya tidak berpenghasilan sama sekali (dengan surat keterangan tertulis dari Pemda/Kecamatan), maka karyawati tersebut dapat mengklaim PTKP sebagai Kepala Keluarga. Ibu Dina sudah menikah (K) dan punya 2 tanggungan anak (2). Maka PTKP-nya adalah K/2 sebesar Rp 54.000.000 + Rp 4.500.000 (status kawin) + (2 x Rp 4.500.000) = Rp 67.500.000.",
+      "dasar": "Penjelasan Pasal 8 ayat (1) UU PPh jo. PMK-101/PMK.010/2016 tentang Penyesuaian Besarnya PTKP."
+    },
+    {
+      "id": 25,
+      "kategori": "kup",
+      "skenario": "PT Mega Elektronik (Tahun Buku Januari - Desember) mengalami masalah sistem akuntansi sehingga baru menyampaikan SPT Tahunan PPh Badan Tahun Pajak 2024 pada tanggal 15 Juni 2025. Perusahaan tidak mengajukan permohonan perpanjangan waktu penyampaian SPT sebelumnya. SPT tersebut menunjukkan status Lebih Bayar.",
+      "soal": "Atas keterlambatan tersebut, sanksi administratif apa yang dikenakan berdasarkan UU KUP?",
+      "opsi": [
+        "A. Denda administratif sebesar Rp 100.000.",
+        "B. Denda administratif sebesar Rp 1.000.000.",
+        "C. Sanksi administrasi berupa bunga sebesar 2% per bulan dari jumlah Lebih Bayar.",
+        "D. Tidak dikenakan denda karena status SPT adalah Lebih Bayar (tidak merugikan negara)."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Batas akhir penyampaian SPT Tahunan PPh Badan adalah paling lama 4 (empat) bulan setelah akhir Tahun Pajak, yakni tanggal 30 April. Keterlambatan penyampaian SPT Tahunan PPh Badan, terlepas dari statusnya Kurang Bayar, Nihil, atau Lebih Bayar, akan dikenakan sanksi denda administratif. Berdasarkan Pasal 7 ayat (1) UU KUP, denda untuk SPT Tahunan PPh Badan adalah Rp 1.000.000.",
+      "dasar": "Pasal 7 ayat (1) Undang-Undang KUP tentang Sanksi Terlambat Menyampaikan SPT."
+    },
+    {
+      "id": 26,
+      "kategori": "pph-badan",
+      "skenario": "PT Properti Sentosa yang bukan merupakan perusahaan terbuka memiliki 100% saham di PT Special Purpose Company (SPC). Aset tunggal PT SPC adalah sebuah gedung apartemen senilai Rp 50 Miliar. Tuan Armand ingin membeli apartemen tersebut, namun untuk menghindari PPh Final dan BPHTB, Tuan Armand membeli seluruh saham PT SPC dari PT Properti Sentosa seharga Rp 50 Miliar.",
+      "soal": "Bagaimana perlakuan PPh atas penjualan saham PT SPC oleh PT Properti Sentosa berdasarkan regulasi pajak di Indonesia?",
+      "opsi": [
+        "A. Penjualan saham tersebut dikenakan PPh Final sebesar 0,1% karena dianggap transaksi efek.",
+        "B. Penjualan saham tersebut dikenakan PPh Final Pasal 4 ayat (2) sebesar 2,5% karena secara substansial merupakan pengalihan hak atas tanah dan/atau bangunan (Special Purpose Company).",
+        "C. Penjualan saham dikenakan PPh Badan tarif normal (non-final) dari capital gain yang diperoleh PT Properti Sentosa.",
+        "D. Dibebaskan dari pengenaan pajak karena pembeli adalah Orang Pribadi."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Untuk mencegah praktik penghindaran pajak atas pengalihan properti melalui instrumen penjualan saham (menggunakan SPC/Special Purpose Company), Pasal 2 ayat (1) huruf c PP 34 Tahun 2016 menegaskan bahwa pengalihan saham pada perusahaan yang didirikan secara khusus (SPC) yang aset utamanya berupa tanah/bangunan, DIPERSAMAKAN dengan pengalihan hak atas tanah dan bangunan. Oleh karena itu, transaksi tersebut dipotong PPh Final Pasal 4 ayat (2) sebesar 2,5% dari nilai pengalihan (Rp 50 Miliar).",
+      "dasar": "Pasal 4 ayat (2) UU PPh jo. PP Nomor 34 Tahun 2016 tentang PPh Atas Penghasilan dari Pengalihan Hak Atas Tanah Dan/Atau Bangunan, dan Perjanjian Pengikatan Jual Beli Atas Tanah Dan/Atau Bangunan."
     }
   ],
   "sesi2": [
@@ -436,6 +511,66 @@
       "jawaban": 1,
       "pembahasan": "Prinsip umum perlakuan PPh atas pengalihan harta dalam rangka restrukturisasi usaha (merger/spin-off) adalah menggunakan nilai pasar, sehingga keuntungan (capital gain) atas selisih nilai pasar dan nilai buku merupakan Objek PPh. WP dapat menggunakan nilai buku (Tax Neutrality) HANYA JIKA mendapatkan persetujuan dari Dirjen Pajak yang diajukan dalam batas waktu 6 bulan setelah tanggal efektif restrukturisasi. Karena PT GMN mentransfer aset tanpa persetujuan, maka secara fiskal pengalihan aset tersebut dianggap dilakukan pada Harga Pasar. Keuntungan Rp 150 M - Rp 60 M = Rp 90 Miliar merupakan tambahan penghasilan (capital gain) yang terutang PPh Badan.",
       "dasar": "Pasal 10 ayat (3) UU PPh s.t.d.t.d UU HPP jo. PMK-56/PMK.010/2021 tentang Penggunaan Nilai Buku atas Pengalihan Harta dalam Rangka Penggabungan, Peleburan, Pemekaran, atau Pengambilalihan Usaha."
+    },
+    {
+      "id": 14,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Agrobisnis Sawit Raya (ASR) adalah perusahaan perkebunan kelapa sawit yang beroperasi di Sumatera. Pada tahun pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa transaksi berikut:\n1. PT ASR memperoleh pinjaman afiliasi (Shareholder Loan) dari Tuan Hartono (Pemegang Saham 60%) sebesar Rp 10 Miliar tanpa bunga. Pada saat pinjaman diberikan, modal dasar PT ASR sebesar Rp 20 Miliar namun yang disetor baru Rp 5 Miliar.\n2. Perusahaan menyumbangkan Rp 500 Juta untuk program bencana alam nasional yang telah ditetapkan pemerintah. Biaya ini dibebankan pada Laporan Laba Rugi. Namun, saat menyerahkan SPT Tahunan, PT ASR tidak melampirkan Daftar Nominatif Sumbangan yang disyaratkan PMK.\n3. Direksi perusahaan mendapatkan bonus akhir tahun sebesar Rp 2 Miliar. Bonus ini telah dicadangkan dan dibebankan sebagai biaya (accrued) pada Desember 2024, tetapi aktual pembayarannya baru dilakukan pada bulan Maret 2025.\n4. PT ASR menjual Tandan Buah Segar (TBS) yang merupakan Barang Kena Pajak Tertentu Bersifat Strategis yang dibebaskan dari pengenaan PPN, namun perusahaan mengkreditkan Pajak Masukan atas pembelian pupuk untuk kebun tersebut senilai Rp 200 Juta.\nFPP diminta untuk meneliti kepatuhan PT ASR.",
+      "soal": "[STUDI KASUS - Soal 1] Atas temuan pertama terkait pinjaman tanpa bunga dari pemegang saham, tindakan apa yang harus dilakukan FPP berdasarkan PP 94 Tahun 2010 (dan perubahannya)?",
+      "opsi": [
+        "A. Membiarkan pinjaman tersebut karena pemegang saham mayoritas berhak memberikan pinjaman tanpa bunga tanpa syarat apapun.",
+        "B. Mengoreksi dan menghitung penghasilan bunga fiktif (imputed interest) bagi Tuan Hartono, karena syarat modal disetor penuh belum terpenuhi.",
+        "C. Menganggap pinjaman tersebut sebagai tambahan modal disetor sehingga tidak perlu dilakukan koreksi penghasilan bunga.",
+        "D. Menghitung bunga wajar dan membebankannya sebagai biaya bunga (deductible) bagi PT ASR secara otomatis."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 12 ayat (1) PP 94 Tahun 2010, pinjaman tanpa bunga dari pemegang saham kepada perseroan hanya diperbolehkan jika memenuhi 4 syarat kumulatif: (1) Pinjaman dari dana milik pemegang saham itu sendiri, (2) Pemegang saham tidak dalam keadaan merugi, (3) Perusahaan penerima pinjaman sedang mengalami kesulitan keuangan, dan (4) MODAL SAHAM DISETOR PENUH. Karena modal dasar PT ASR Rp 20 M baru disetor Rp 5 M, maka syarat ke-4 tidak terpenuhi. Akibatnya, FPP harus melakukan koreksi dengan menetapkan tingkat bunga wajar (imputed interest) yang menjadi tambahan penghasilan bagi Tuan Hartono dan objek PPh Pasal 23/Final (jika dibayarkan).",
+      "dasar": "Pasal 18 ayat (3) UU PPh jo. Pasal 12 PP Nomor 94 Tahun 2010 tentang Penghitungan Penghasilan Kena Pajak dan Pelunasan Pajak Penghasilan dalam Tahun Berjalan."
+    },
+    {
+      "id": 15,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Agrobisnis Sawit Raya (ASR) adalah perusahaan perkebunan kelapa sawit yang beroperasi di Sumatera. Pada tahun pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa transaksi berikut:\n1. PT ASR memperoleh pinjaman afiliasi (Shareholder Loan) dari Tuan Hartono (Pemegang Saham 60%) sebesar Rp 10 Miliar tanpa bunga. Pada saat pinjaman diberikan, modal dasar PT ASR sebesar Rp 20 Miliar namun yang disetor baru Rp 5 Miliar.\n2. Perusahaan menyumbangkan Rp 500 Juta untuk program bencana alam nasional yang telah ditetapkan pemerintah. Biaya ini dibebankan pada Laporan Laba Rugi. Namun, saat menyerahkan SPT Tahunan, PT ASR tidak melampirkan Daftar Nominatif Sumbangan yang disyaratkan PMK.\n3. Direksi perusahaan mendapatkan bonus akhir tahun sebesar Rp 2 Miliar. Bonus ini telah dicadangkan dan dibebankan sebagai biaya (accrued) pada Desember 2024, tetapi aktual pembayarannya baru dilakukan pada bulan Maret 2025.\n4. PT ASR menjual Tandan Buah Segar (TBS) yang merupakan Barang Kena Pajak Tertentu Bersifat Strategis yang dibebaskan dari pengenaan PPN, namun perusahaan mengkreditkan Pajak Masukan atas pembelian pupuk untuk kebun tersebut senilai Rp 200 Juta.\nFPP diminta untuk meneliti kepatuhan PT ASR.",
+      "soal": "[STUDI KASUS - Soal 2] Terkait temuan kedua (Sumbangan Bencana Alam Nasional Rp 500 Juta), apakah sumbangan tersebut dapat diakui sebagai pengurang penghasilan bruto secara fiskal?",
+      "opsi": [
+        "A. Dapat diakui (Deductible), karena bencana alam tersebut resmi ditetapkan oleh Pemerintah Pusat.",
+        "B. Tidak dapat diakui (Non-Deductible), karena sumbangan untuk kepentingan apapun dilarang dikurangkan menurut Pasal 9 UU PPh.",
+        "C. Tidak dapat diakui (Non-Deductible), karena PT ASR gagal memenuhi persyaratan administratif berupa penyampaian Daftar Nominatif beserta SPT Tahunan.",
+        "D. Dapat diakui, namun dibatasi maksimal 5% dari laba neto komersial."
+      ],
+      "jawaban": 2,
+      "pembahasan": "Sumbangan penanggulangan bencana alam nasional, sumbangan penelitian, pendidikan, olahraga, dan fasilitas sosial sebenarnya merupakan pengecualian dari Pasal 9 UU PPh dan BISA dibiayakan (Deductible). Namun, berdasarkan PP 93/2010 jo. PMK 76/PMK.03/2011, terdapat syarat formal/administratif yang KETAT: WP wajib menyampaikan daftar nominatif (bukti penerimaan) sumbangan tersebut ke Dirjen Pajak paling lambat bersamaan dengan penyerahan SPT Tahunan. Ketiadaan daftar nominatif mengakibatkan sumbangan Rp 500 Juta tersebut dikoreksi fiskal positif (Non-Deductible).",
+      "dasar": "Pasal 6 ayat (1) huruf i UU PPh jo. PP 93 Tahun 2010 dan PMK 76/PMK.03/2011 tentang Sumbangan Penanggulangan Bencana Nasional."
+    },
+    {
+      "id": 16,
+      "kategori": "potput",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Agrobisnis Sawit Raya (ASR) adalah perusahaan perkebunan kelapa sawit yang beroperasi di Sumatera. Pada tahun pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa transaksi berikut:\n1. PT ASR memperoleh pinjaman afiliasi (Shareholder Loan) dari Tuan Hartono (Pemegang Saham 60%) sebesar Rp 10 Miliar tanpa bunga. Pada saat pinjaman diberikan, modal dasar PT ASR sebesar Rp 20 Miliar namun yang disetor baru Rp 5 Miliar.\n2. Perusahaan menyumbangkan Rp 500 Juta untuk program bencana alam nasional yang telah ditetapkan pemerintah. Biaya ini dibebankan pada Laporan Laba Rugi. Namun, saat menyerahkan SPT Tahunan, PT ASR tidak melampirkan Daftar Nominatif Sumbangan yang disyaratkan PMK.\n3. Direksi perusahaan mendapatkan bonus akhir tahun sebesar Rp 2 Miliar. Bonus ini telah dicadangkan dan dibebankan sebagai biaya (accrued) pada Desember 2024, tetapi aktual pembayarannya baru dilakukan pada bulan Maret 2025.\n4. PT ASR menjual Tandan Buah Segar (TBS) yang merupakan Barang Kena Pajak Tertentu Bersifat Strategis yang dibebaskan dari pengenaan PPN, namun perusahaan mengkreditkan Pajak Masukan atas pembelian pupuk untuk kebun tersebut senilai Rp 200 Juta.\nFPP diminta untuk meneliti kepatuhan PT ASR.",
+      "soal": "[STUDI KASUS - Soal 3] Atas pembayaran bonus Direksi pada temuan ketiga, kapankah PT ASR SEHARUSNYA melakukan pemotongan PPh Pasal 21 dan membayarkannya?",
+      "opsi": [
+        "A. Pada akhir Desember 2024 (Masa Desember 2024) karena biaya tersebut telah dicadangkan/diakui pada tahun 2024.",
+        "B. Pada bulan Maret 2025 (Masa Maret 2025) karena prinsip pemotongan PPh Pasal 21 adalah cash basis, yakni pada saat penghasilan secara aktual dibayarkan.",
+        "C. Bebas pilih antara Desember 2024 atau Maret 2025, tergantung metode pembukuan yang dianut Wajib Pajak.",
+        "D. PPh Pasal 21 atas bonus dipotong bersamaan dengan pelaporan SPT Tahunan Orang Pribadi masing-masing Direktur."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 15 ayat (1) PP 94 Tahun 2010 jo. PMK-168/PMK.03/2023, kewajiban pemotongan PPh Pasal 21 terutang pada akhir bulan dilakukannya pembayaran, atau pada saat terutangnya penghasilan, atau pada saat dialihkannya penghasilan, mana yang terjadi LBIH DAHULU. Namun, khusus untuk penghasilan pegawai berupa jasa produksi, tantiem, gratifikasi, tunjangan hari raya, dan bonus, PPh terutang pada AKHIR BULAN DILAKUKANNYA PEMBAYARAN. Karena bonus aktual dibayar bulan Maret 2025, maka kewajiban potong PPh 21 berada di Masa Pajak Maret 2025 (cash basis untuk bonus).",
+      "dasar": "PP Nomor 94 Tahun 2010 jo. Pasal 22 PMK-168/PMK.03/2023 terkait Saat Terutang PPh Pasal 21."
+    },
+    {
+      "id": 17,
+      "kategori": "ppn",
+      "skenario": "[STUDI KASUS KOMPREHENSIF] PT Agrobisnis Sawit Raya (ASR) adalah perusahaan perkebunan kelapa sawit yang beroperasi di Sumatera. Pada tahun pajak 2025, Pemeriksa Pajak (FPP) menemukan beberapa transaksi berikut:\n1. PT ASR memperoleh pinjaman afiliasi (Shareholder Loan) dari Tuan Hartono (Pemegang Saham 60%) sebesar Rp 10 Miliar tanpa bunga. Pada saat pinjaman diberikan, modal dasar PT ASR sebesar Rp 20 Miliar namun yang disetor baru Rp 5 Miliar.\n2. Perusahaan menyumbangkan Rp 500 Juta untuk program bencana alam nasional yang telah ditetapkan pemerintah. Biaya ini dibebankan pada Laporan Laba Rugi. Namun, saat menyerahkan SPT Tahunan, PT ASR tidak melampirkan Daftar Nominatif Sumbangan yang disyaratkan PMK.\n3. Direksi perusahaan mendapatkan bonus akhir tahun sebesar Rp 2 Miliar. Bonus ini telah dicadangkan dan dibebankan sebagai biaya (accrued) pada Desember 2024, tetapi aktual pembayarannya baru dilakukan pada bulan Maret 2025.\n4. PT ASR menjual Tandan Buah Segar (TBS) yang merupakan Barang Kena Pajak Tertentu Bersifat Strategis yang dibebaskan dari pengenaan PPN, namun perusahaan mengkreditkan Pajak Masukan atas pembelian pupuk untuk kebun tersebut senilai Rp 200 Juta.\nFPP diminta untuk meneliti kepatuhan PT ASR.",
+      "soal": "[STUDI KASUS - Soal 4] Terkait Pajak Masukan sebesar Rp 200 Juta dari pembelian pupuk, bagaimana konsekuensi perpajakannya bagi PT ASR?",
+      "opsi": [
+        "A. Pajak Masukan tersebut dapat dikreditkan sepenuhnya karena digunakan untuk memproduksi Barang Kena Pajak (TBS).",
+        "B. Pajak Masukan tersebut TIDAK DAPAT dikreditkan, karena berkaitan langsung dengan penyerahan Barang Kena Pajak yang dibebaskan dari pengenaan PPN.",
+        "C. Pajak Masukan dapat dikreditkan sebagian melalui metode pedoman pengkreditan pajak masukan bagi hasil pertanian.",
+        "D. Pajak Masukan tersebut harus direstitusi pada akhir tahun pajak tanpa melalui pengkreditan bulanan."
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam sistem PPN, terdapat perbedaan perlakuan antara penyerahan yang 'Tidak Dipungut' (Pajak Masukan bisa dikreditkan) dengan yang 'Dibebaskan'. Sesuai Pasal 16B ayat (3) UU PPN, Pajak Masukan yang dibayar untuk perolehan BKP/JKP yang digunakan untuk menghasilkan BKP yang penyerahannya DIBEBASKAN dari pengenaan PPN (seperti Tandan Buah Segar kelapa sawit), TIDAK DAPAT DIKREDITKAN. Sebagai kompensasinya, Pajak Masukan Rp 200 Juta tersebut dapat dibebankan sebagai biaya (deductible expense) dalam menghitung PPh Badan PT ASR.",
+      "dasar": "Pasal 16B ayat (3) UU PPN s.t.d.t.d UU HPP jo. PP 49 Tahun 2022 tentang PPN Dibebaskan dan Tidak Dipungut."
     }
   ]
 }
