@@ -618,16 +618,16 @@
     {
       "id": 42,
       "kategori": "ppn",
-      "skenario": "PT Rasa Nusantara adalah Pengusaha Kena Pajak (PKP) yang bergerak di bidang penyediaan jasa katering. Pada bulan April 2025, PT Rasa Nusantara memperoleh penghasilan dari penyerahan jasa sebagai berikut:",
-      "soal": "Berdasarkan data tersebut, berapa Pajak Pertambahan Nilai (PPN) yang terutang atas penyerahan jasa katering PT Rasa Nusantara pada bulan April 2025? <table><thead><tr><th>Penyerahan Jasa</th><th>Nilai (Rp)</th></tr></thead><tbody><tr><td>Jasa katering untuk acara pernikahan PT Harmoni</td><td>150.000.000</td></tr><tr><td>Jasa katering makanan siap saji untuk karyawan PT Maju Jaya (kontrak bulanan)</td><td>80.000.000</td></tr><tr><td>Penjualan makanan dan minuman di restoran milik sendiri (tidak termasuk jasa katering)</td><td>120.000.000</td></tr></tbody></table>",
+      "skenario": "PT Rasa Nusantara adalah pengusaha di bidang kuliner. Pada bulan April 2025, perusahaan mencatat transaksi sebagai berikut:<br><table><thead><tr><th>Penyerahan Jasa/Barang</th><th>Nilai (Rp)</th></tr></thead><tbody><tr><td>Jasa katering untuk acara pernikahan PT Harmoni</td><td>150.000.000</td></tr><tr><td>Jasa katering makanan siap saji untuk karyawan PT Maju Jaya</td><td>80.000.000</td></tr><tr><td>Penjualan makanan & minuman di restoran milik sendiri (dine-in & take-away)</td><td>120.000.000</td></tr></tbody></table>",
+      "soal": "Berdasarkan UU HPP dan peraturan terkait, berapakah Pajak Pertambahan Nilai (PPN) yang terutang atas seluruh penyerahan tersebut?",
       "opsi": [
-        "Rp1.650.000",
-        "Rp2.530.000",
-        "Rp15.730.000",
-        "Rp2.300.000"
+        "A. Rp 38.500.000 (11% dari total)",
+        "B. Rp 2.530.000 (Menggunakan Besaran Tertentu 10%)",
+        "C. Rp 0 (Semuanya merupakan Objek Pajak Daerah / PBJT)",
+        "D. Rp 13.200.000 (Hanya restoran yang kena PPN)"
       ],
-      "jawaban": 1,
-      "pembahasan": "Berdasarkan PMK Nomor 71 Tahun 2022, penyerahan jasa katering termasuk dalam jasa kena pajak tertentu yang dikenakan PPN dengan besaran tertentu (DPP Nilai Lain).\n\n1.  **Jasa katering untuk acara pernikahan PT Harmoni (Rp150.000.000):**\n    *   Dasar Pengenaan Pajak (DPP) untuk jasa katering adalah 10% dari jumlah yang ditagihkan. (Pasal 3 ayat (2) huruf b PMK 71/2022)\n    *   DPP = 10% x Rp150.000.000 = Rp15.000.000\n    *   PPN Terutang = 11% x Rp15.000.000 = Rp1.650.000\n\n2.  **Jasa katering makanan siap saji untuk karyawan PT Maju Jaya (kontrak bulanan) (Rp80.000.000):**\n    *   DPP = 10% x Rp80.000.000 = Rp8.000.000\n    *   PPN Terutang = 11% x Rp8.000.000 = Rp880.000\n\n3.  **Penjualan makanan dan minuman di restoran milik sendiri (Rp120.000.000):**\n    *   Penyerahan makanan dan minuman di restoran bukan termasuk jasa katering, melainkan penyerahan makanan/minuman oleh pengusaha restoran. Apabila restoran tersebut merupakan PKP, maka PPN terutang dihitung dengan tarif normal 11% dari harga jual. Namun, soal hanya menanyakan PPN atas *jasa katering*. Oleh karena itu, penjualan di restoran ini tidak dihitung dalam total PPN jasa katering.\n\nTotal PPN yang terutang atas penyerahan jasa katering adalah:\nRp1.650.000 + Rp880.000 = Rp2.530.000",
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan UU HPP (UU No. 7 Tahun 2021) Pasal 4A ayat (2) dan (3), makanan dan minuman yang disajikan di hotel, restoran, rumah makan, warung, dan sejenisnya, TERCANGKUP JUGA Jasa Boga atau Katering, BUKAN merupakan Barang Kena Pajak (BKP) maupun Jasa Kena Pajak (JKP). Pengenaan pajaknya merupakan kewenangan Pemerintah Daerah melalui Pajak Barang dan Jasa Tertentu (PBJT) sesuai UU HKPD. Oleh karena itu, seluruh transaksi tersebut TIDAK TERUTANG PPN (Rp 0).",
       "dasar": "Undang-Undang Pajak Pertambahan Nilai Pasal 16G huruf i, Peraturan Menteri Keuangan Nomor 71 Tahun 2022 tentang Pajak Pertambahan Nilai atas Penyerahan Jasa Kena Pajak Tertentu."
     },
     {

@@ -86,7 +86,7 @@
             <div v-html="soal.skenario"></div>
           </div>
 
-          <div class="soal-text">{{ soal.soal }}</div>
+          <div class="soal-text" v-html="soal.soal"></div>
 
           <div class="options">
             <div v-for="(opt, i) in soal.opsi" :key="i"
