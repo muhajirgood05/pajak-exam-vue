@@ -76,7 +76,7 @@
                   </td>
                   <td>
                     <span v-if="s.wrongPct > 70" class="badge badge-red">SANGAT SULIT</span>
-                    <span v-elif="s.wrongPct > 40" class="badge badge-amber">SULIT</span>
+                    <span v-else-if="s.wrongPct > 40" class="badge badge-amber">SULIT</span>
                     <span v-else class="badge badge-green">NORMAL</span>
                   </td>
                 </tr>
@@ -171,7 +171,6 @@
         </main>
       </div>
     </div>
-  </div>
 </template>
 
 <script setup>
