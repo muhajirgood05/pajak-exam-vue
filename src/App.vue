@@ -58,6 +58,18 @@
               </select>
               <input v-model="generator.model" type="text" placeholder="Model (opsional)" />
             </div>
+            <div class="admin-form-grid">
+              <select v-model="generator.targetSession">
+                <option value="sesi1">Soal Pilihan Ganda (Sesi 1)</option>
+                <option value="sesi2">Soal Kasus (Sesi 2)</option>
+              </select>
+              <select v-model="generator.targetPackageId">
+                <option value="">Paket otomatis (terakhir)</option>
+                <option v-for="pkg in PACKAGES" :key="`target-${pkg.id}`" :value="pkg.id">
+                  {{ pkg.title }}
+                </option>
+              </select>
+            </div>
             <input
               v-model="generator.apiKey"
               type="password"
@@ -76,12 +88,28 @@
               <button
                 v-if="generationResult"
                 class="btn-success"
+                @click="pushGenerated()"
+                :disabled="adminLoading || pushLoading || deployLoading"
+              >
+                {{ pushLoading ? 'Pushing...' : 'Push ke Bank Soal' }}
+              </button>
+              <button
+                v-if="generationResult"
+                class="btn-success"
+                @click="pushGenerated({ deployAfter: true })"
+                :disabled="adminLoading || pushLoading || deployLoading"
+              >
+                {{ pushLoading || deployLoading ? 'Memproses...' : 'Push + Deploy' }}
+              </button>
+              <button
+                v-if="generationResult"
+                class="btn-outline"
                 @click="deployGenerated"
-                :disabled="deployLoading"
+                :disabled="adminLoading || pushLoading || deployLoading"
               >
                 {{ deployLoading ? 'Deploying...' : 'Deploy ke Vercel' }}
               </button>
-              <button class="btn-outline" @click="logoutAdmin" :disabled="adminLoading || deployLoading">
+              <button class="btn-outline" @click="logoutAdmin" :disabled="adminLoading || pushLoading || deployLoading">
                 Logout
               </button>
             </div>
@@ -201,6 +229,7 @@ const isDarkMode = ref(false);
 const showAdminPanel = ref(false);
 const adminLoading = ref(false);
 const deployLoading = ref(false);
+const pushLoading = ref(false);
 const adminLogs = ref([]);
 const generationResult = ref(null);
 const adminAuth = ref({ authenticated: false, username: '' });
@@ -209,6 +238,8 @@ const generator = ref({
   provider: 'openrouter',
   model: '',
   apiKey: '',
+   targetSession: 'sesi1',
+   targetPackageId: '',
   prompt: 'Buat 2 soal pilihan ganda pajak format JSON array dengan field id, kategori, skenario, soal, opsi, jawaban, pembahasan, dasar.'
 });
 
@@ -298,9 +329,35 @@ const generateAdminSoal = async () => {
   }
 };
 
+const triggerDeploy = async (generationMeta) => {
+  deployLoading.value = true;
+  try {
+    const response = await fetch('/api/admin/deploy', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({
+        confirmed: true,
+        generationMeta
+      })
+    });
+    const data = await response.json();
+    if (!response.ok || !data.ok) {
+      throw new Error(data.error || 'Deploy gagal.');
+    }
+    pushAdminLog('Deploy ke Vercel berhasil dipicu.');
+    return true;
+  } catch (error) {
+    pushAdminLog(`Deploy gagal: ${error.message}`);
+    return false;
+  } finally {
+    deployLoading.value = false;
+  }
+};
+
 const deployGenerated = async () => {
   if (!adminAuth.value.authenticated || !generationResult.value) {
-    pushAdminLog('Deploy ditolak: login admin & hasil generate wajib ada.');
+    pushAdminLog('Deploy ditolak: login admin dan hasil generate wajib ada.');
     return;
   }
 
@@ -310,30 +367,56 @@ const deployGenerated = async () => {
     return;
   }
 
-  deployLoading.value = true;
+  await triggerDeploy({
+    provider: generationResult.value.provider,
+    model: generationResult.value.model,
+    count: generationResult.value.generatedQuestions.length,
+    targetSession: generator.value.targetSession,
+    targetPackageId: generator.value.targetPackageId || 'auto'
+  });
+};
+
+const pushGenerated = async ({ deployAfter = false } = {}) => {
+  if (!adminAuth.value.authenticated || !generationResult.value) {
+    pushAdminLog('Push ditolak: login admin dan hasil generate wajib ada.');
+    return;
+  }
+
+  pushLoading.value = true;
   try {
-    const response = await fetch('/api/admin/deploy', {
+    const response = await fetch('/api/admin/push', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
       body: JSON.stringify({
-        confirmed: true,
-        generationMeta: {
-          provider: generationResult.value.provider,
-          model: generationResult.value.model,
-          count: generationResult.value.generatedQuestions.length
-        }
+        targetPackageId: generator.value.targetPackageId || null,
+        targetSession: generator.value.targetSession,
+        generatedQuestions: generationResult.value.generatedQuestions
       })
     });
     const data = await response.json();
     if (!response.ok || !data.ok) {
-      throw new Error(data.error || 'Deploy gagal.');
+      throw new Error(data.error || 'Push soal gagal.');
     }
-    pushAdminLog('Deploy ke Vercel berhasil dipicu.');
+
+    pushAdminLog(
+      `Push berhasil: +${data.addedCount} soal ke ${data.targetPackageId} (${data.targetSession}). Total ${data.totalInSession}.`
+    );
+
+    if (deployAfter) {
+      await triggerDeploy({
+        provider: generationResult.value.provider,
+        model: generationResult.value.model,
+        count: generationResult.value.generatedQuestions.length,
+        pushedCount: data.addedCount,
+        targetPackageId: data.targetPackageId,
+        targetSession: data.targetSession
+      });
+    }
   } catch (error) {
-    pushAdminLog(`Deploy gagal: ${error.message}`);
+    pushAdminLog(`Push gagal: ${error.message}`);
   } finally {
-    deployLoading.value = false;
+    pushLoading.value = false;
   }
 };
 
