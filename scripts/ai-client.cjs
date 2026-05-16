@@ -9,7 +9,7 @@ const OPENROUTER_MODELS = [
 ];
 
 function isOpenRouterLikeKey(value) {
-  return typeof value === 'string' && /^sk-or-v1-|^sk-or-|^sk-/.test(value.trim());
+  return typeof value === 'string' && /^sk-or/.test(value.trim());
 }
 
 function splitModels(value) {
