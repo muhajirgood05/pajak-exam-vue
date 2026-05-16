@@ -70,8 +70,7 @@ jobs:
           else
             git add .
             git commit -m "feat: tambah paket soal baru oleh Hermes"
-            git pull --rebase origin main
-            git push
+            git push || (git pull --rebase origin main && git push)
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
 

@@ -71,14 +71,16 @@ function resolveAiSettings() {
     throw new Error(`API key tidak ditemukan. Set ${providerConfig.apiKeyEnv} atau AI_API_KEY.`);
   }
 
-  const baseUrl = (
+  const rawBaseUrl = (
     process.env[`${prefix}_BASE_URL`] ||
     process.env.AI_BASE_URL ||
     providerConfig.baseUrl
-  ).trim();
+  );
+  const normalizedBaseUrl = (rawBaseUrl || '').trim();
 
-  if (!baseUrl) {
-    throw new Error(`Base URL untuk provider "${provider}" belum diatur. Set ${prefix}_BASE_URL atau AI_BASE_URL.`);
+  if (!normalizedBaseUrl) {
+    const extraHint = provider === 'mimo' ? ' Provider mimo wajib set MIMO_BASE_URL atau AI_BASE_URL.' : '';
+    throw new Error(`Base URL untuk provider "${provider}" belum diatur. Set ${prefix}_BASE_URL atau AI_BASE_URL.${extraHint}`);
   }
 
   const models = parseModelList(
@@ -91,7 +93,7 @@ function resolveAiSettings() {
   return {
     provider,
     apiKey,
-    baseUrl: baseUrl.replace(/\/+$/, ''),
+    baseUrl: normalizedBaseUrl.replace(/\/+$/, ''),
     models: models.length ? models : providerConfig.models,
     authType: providerConfig.authType
   };
