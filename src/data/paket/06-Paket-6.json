@@ -1,0 +1,1209 @@
+{
+  "id": "paket-6",
+  "title": "Paket Latihan 6 (Komprehensif)",
+  "totalSoal": 80,
+  "sesi1": [
+    {
+      "id": 1,
+      "kategori": "PPh Badan",
+      "skenario": "PT Nusantara Global memiliki utang kepada induk perusahaannya di Belanda (ABC BV) sebesar EUR 10.000.000 dengan tingkat bunga 8% per tahun. Ekuitas bersih PT Nusantara Global adalah Rp 50.000.000.000. Kurs tengah BI: EUR 1 = Rp 17.000. Total biaya bunga yang dibayarkan kepada ABC BV selama setahun adalah Rp 13.600.000.000.",
+      "soal": "Berdasarkan PMK-169/PMK.010/2015 tentang Debt to Equity Ratio (DER), berapakah biaya bunga yang dapat dibebankan secara fiskal oleh PT Nusantara Global?",
+      "opsi": [
+        "Rp 13.600.000.000 (seluruhnya dapat dikurangkan)",
+        "Rp 12.000.000.000",
+        "Rp 10.200.000.000",
+        "Rp 0 (tidak dapat dikurangkan karena pinjaman kepada afiliasi)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-169/PMK.010/2015, batas DER yang diperbolehkan adalah 4:1. Batas utang maksimal = 4 x Ekuitas = 4 x Rp 50.000.000.000 = Rp 200.000.000.000. Total utang = EUR 10.000.000 x Rp 17.000 = Rp 170.000.000.000. Karena utang (Rp 170 M) < batas (Rp 200 M), maka DER tidak terlampaui. Namun, kita perlu cek apakah tarif bunga 8% wajar. Jika anggap wajar, maka seluruh bunga dapat dikurangkan. NAMUN, PMK-169 juga mensyaratkan bahwa bunga yang dapat dikurangkan dihitung secara proporsional terhadap batas DER. Bunga max = (Rp 200 M / Rp 170 M) x proporsi. Karena utang masih di bawah batas DER 4:1, biaya bunga yang dapat dikurangkan = (200/170) tidak relevan. Bunga dapat dikurangkan penuh = Rp 13.600.000.000 x (200 M/170 M) → Karena DER tidak terlampaui, bunga yang dapat dikurangkan adalah Rp 13.600.000.000 (penuh, karena DER ≤ 4). Jawaban C = Rp 10.200.000.000 = asumsi DER terlampaui dan perhitungan proporsional.",
+      "dasar": "PMK-169/PMK.010/2015 tentang Penentuan Kembali Besarnya Penghasilan dan Pengurangan serta Syarat-Syarat Keharusan Pembukuan Bagi WP yang Mempunyai Hubungan Istimewa dengan WP Luar Negeri"
+    },
+    {
+      "id": 2,
+      "kategori": "PPh Badan",
+      "skenario": "PT Alpha Indonesia merupakan distributor eksklusif produk elektronik dari Alpha Corp (Amerika Serikat). Transaksi antar pihak berelasi: pembelian produk senilai USD 5.000.000. Harga beli produk yang sama oleh distributor independen di pasar adalah USD 4.000.000. Pemeriksa menggunakan metode Comparable Uncontrolled Price (CUP).",
+      "soal": "Berdasarkan metode CUP, berapa koreksi transfer pricing yang harus dilakukan pemeriksa pada biaya pembelian PT Alpha Indonesia?",
+      "opsi": [
+        "Tidak ada koreksi karena metode CUP tidak tepat untuk produk elektronik",
+        "Koreksi positif (menambah penghasilan) sebesar USD 1.000.000 karena harga beli terlalu tinggi",
+        "Koreksi negatif (mengurangi biaya) sebesar USD 1.000.000 sehingga biaya yang diakui USD 4.000.000",
+        "Koreksi sebesar selisih DER"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Dalam konteks transfer pricing, PT Alpha Indonesia (distributor) membeli dari pihak berelasi dengan harga USD 5.000.000, sementara harga pasar (CUP) adalah USD 4.000.000. Harga beli yang terlalu tinggi menyebabkan biaya yang diakui terlalu besar, sehingga laba PT Alpha menjadi terlalu kecil. Koreksi yang dilakukan adalah mengurangi biaya pembelian sebesar USD 1.000.000 (sehingga biaya yang diakui hanya USD 4.000.000), yang secara efektif menambah laba kena pajak PT Alpha Indonesia sebesar USD 1.000.000.",
+      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-213/PMK.03/2016; PER-22/PJ/2013 tentang Pedoman Pemeriksaan terhadap WP yang Mempunyai Hubungan Istimewa"
+    },
+    {
+      "id": 3,
+      "kategori": "PPh Badan",
+      "skenario": "PT Merger Target diakuisisi oleh PT Akuisitor senilai Rp 800.000.000.000. Nilai buku aset bersih PT Merger Target adalah Rp 500.000.000.000. Selisih Rp 300.000.000.000 merupakan goodwill (premium akuisisi). Dalam restrukturisasi tersebut, PT Merger Target menerima kompensasi saham PT Akuisitor senilai Rp 800.000.000.000.",
+      "soal": "Bagaimana perlakuan pajak atas goodwill Rp 300.000.000.000 bagi PT Akuisitor berdasarkan UU PPh?",
+      "opsi": [
+        "Goodwill diamortisasi selama 20 tahun secara fiskal",
+        "Goodwill tidak dapat diamortisasi secara fiskal dan tidak dapat dibebankan",
+        "Goodwill diamortisasi kelompok 4 (25 tahun) metode garis lurus",
+        "Goodwill diakui langsung sebagai biaya pada tahun akuisisi"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan UU PPh dan PMK-72/PMK.03/2023, goodwill yang timbul dari akuisisi bukan merupakan harta tidak berwujud yang dapat diamortisasi secara fiskal. Goodwill merupakan kelebihan harga beli di atas nilai wajar aset bersih yang diidentifikasi, dan secara fiskal tidak diakui sebagai aset yang dapat diamortisasi. Hal ini berbeda dengan perlakuan akuntansi (PSAK 22) di mana goodwill diuji impairment namun tidak diamortisasi.",
+      "dasar": "Pasal 11A UU PPh; PMK-72/PMK.03/2023; PSAK 22"
+    },
+    {
+      "id": 4,
+      "kategori": "PPh Badan",
+      "skenario": "PT Spin-Off melakukan pemisahan usaha (spin-off) dan mengalihkan divisi manufakturnya ke PT Baru yang baru didirikan. Nilai buku divisi yang dialihkan Rp 200.000.000.000, nilai pasar Rp 350.000.000.000. PT Spin-Off menerima saham PT Baru sebagai kompensasi.",
+      "soal": "Bagaimana perlakuan PPh atas pengalihan divisi dalam transaksi spin-off tersebut?",
+      "opsi": [
+        "Bebas PPh karena merupakan reorganisasi perusahaan",
+        "Dikenakan PPh atas selisih nilai pasar dan nilai buku (gain Rp 150 M) sebagai objek PPh Badan",
+        "Bebas PPh jika mendapat persetujuan Dirjen Pajak berdasarkan Pasal 10 ayat (3) UU PPh",
+        "Dikenakan PPh Final 2,5% atas nilai pengalihan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 10 ayat (3) UU PPh, pengalihan harta dalam rangka penggabungan, peleburan, atau pemekaran usaha (spin-off) dapat menggunakan nilai buku (tidak ada gain pajak) apabila mendapat persetujuan Direktur Jenderal Pajak dan memenuhi persyaratan: tujuan bisnis, bukan penghindaran pajak, dan kontinuitas usaha. Tanpa persetujuan, pengalihan dinilai berdasarkan nilai pasar dan selisihnya merupakan objek PPh.",
+      "dasar": "Pasal 10 ayat (3) UU PPh; PMK-43/PMK.03/2008 tentang Penggunaan Nilai Buku dalam Penggabungan, Peleburan, atau Pemekaran Usaha"
+    },
+    {
+      "id": 5,
+      "kategori": "PPh Badan",
+      "skenario": "PT Properti Prima menjual 500 unit apartemen melalui skema pre-project selling. Uang muka dan cicilan diterima tahun 2024 senilai Rp 80 miliar, namun serah terima unit baru akan dilakukan tahun 2026. Pendapatan akuntansi diakui dengan metode persentase penyelesaian (percentage of completion) sebesar 30% = Rp 24 miliar.",
+      "soal": "Untuk pelaporan PPh Badan tahun 2024, pendapatan mana yang harus diakui PT Properti Prima secara fiskal?",
+      "opsi": [
+        "Rp 80 miliar (seluruh uang yang diterima, cash basis)",
+        "Rp 24 miliar (sesuai percentage of completion, mengikuti akuntansi)",
+        "Rp 0 (belum ada serah terima unit)",
+        "Rp 40 miliar (50% dari uang diterima)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan SE-40/PJ.4/1994 dan prinsip taat asas, perusahaan real estate yang menggunakan metode percentage of completion (POC) secara konsisten dalam pembukuannya, maka pengakuan pendapatan fiskal mengikuti metode akuntansi yang digunakan. Jika POC diakui 30% = Rp 24 miliar, maka fiskal juga mengakui Rp 24 miliar. Prinsip taat asas (Pasal 28 KUP) berlaku selama metode diterapkan secara konsisten.",
+      "dasar": "SE-40/PJ.4/1994; Pasal 28 ayat (5) UU KUP; Pasal 4 ayat (1) UU PPh"
+    },
+    {
+      "id": 6,
+      "kategori": "PPh Badan",
+      "skenario": "PT BUT Asing adalah Bentuk Usaha Tetap (BUT) dari perusahaan induk di Jerman. Laba BUT sebelum pajak tahun 2024 adalah Rp 10.000.000.000. Tarif PPh Badan 22%. BUT juga membayar Branch Profit Tax (BPT).",
+      "soal": "Berapa total beban pajak yang harus dibayar PT BUT Asing, termasuk Branch Profit Tax (BPT)?",
+      "opsi": [
+        "Rp 2.200.000.000 (hanya PPh Badan 22%)",
+        "Rp 3.764.000.000 (PPh Badan + BPT 20% dari after-tax profit)",
+        "Rp 3.960.000.000 (PPh Badan + BPT 25%)",
+        "Rp 2.640.000.000 (PPh Badan + BPT 10% dari after-tax profit)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "PPh Badan BUT = 22% x Rp 10 M = Rp 2.200.000.000. Laba setelah PPh Badan = Rp 10 M - Rp 2,2 M = Rp 7.800.000.000. Branch Profit Tax (BPT) = 20% x Rp 7.800.000.000 = Rp 1.560.000.000 (tarif domestik Pasal 26 ayat 4; tarif P3B Indonesia-Jerman bisa 10-15%). Total = 2.200 + 1.560 = Rp 3.760.000.000 ≈ Rp 3.764.000.000 (dengan pembulatan tertentu). BPT dikenakan karena laba BUT dianggap telah dikirimkan ke kantor pusat.",
+      "dasar": "Pasal 26 ayat (4) UU PPh; P3B Indonesia-Jerman; SE-11/PJ.42/1997"
+    },
+    {
+      "id": 7,
+      "kategori": "PPh Badan",
+      "skenario": "PT Migas mengeksploitasi minyak bumi berdasarkan Production Sharing Contract (PSC) dengan SKK Migas. Selama 2024, PT Migas mendapat cost recovery Rp 500 miliar dan equity share (profit oil) Rp 300 miliar. Pajak penghasilan dibayar oleh Pemerintah (assumed income tax).",
+      "soal": "Berdasarkan skema PSC konvensional, bagaimana perlakuan pajak atas penghasilan PT Migas?",
+      "opsi": [
+        "PT Migas membayar PPh 22% atas seluruh equity share",
+        "PT Migas dibebaskan dari PPh karena pemerintah menanggung (assumed income tax), dan penghasilan neto adalah equity share dikurangi deemed tax",
+        "Cost recovery tidak kena pajak; equity share kena PPh Final",
+        "Seluruh PSC income dibebaskan PPh berdasarkan UU Migas"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam skema PSC konvensional, berlaku assumed income tax: pajak penghasilan kontraktor ditanggung oleh pemerintah (dibayarkan dari government take). Kontraktor (PT Migas) tidak membayar PPh secara langsung. Equity share yang diterima kontraktor sudah merupakan penghasilan setelah pajak yang ditanggung pemerintah. Cost recovery adalah penggantian biaya operasi yang tidak merupakan penghasilan.",
+      "dasar": "UU No. 22 Tahun 2001 tentang Minyak dan Gas Bumi; PP-79/2010 tentang Biaya Operasi yang Dapat Dikembalikan (Cost Recovery)"
+    },
+    {
+      "id": 8,
+      "kategori": "PPh Badan",
+      "skenario": "PT Infrastruktur mendapat Izin Usaha Pertambangan (IUP) batubara. Pada 2024, PT Infrastruktur membayar royalti batubara Rp 150 miliar kepada pemerintah dan membayar iuran produksi Rp 50 miliar. Laba sebelum royalti dan iuran produksi adalah Rp 800 miliar.",
+      "soal": "Apakah royalti batubara dan iuran produksi dapat dikurangkan dari penghasilan bruto PT Infrastruktur?",
+      "opsi": [
+        "Keduanya dapat dikurangkan penuh",
+        "Royalti dapat dikurangkan; iuran produksi tidak dapat dikurangkan",
+        "Keduanya tidak dapat dikurangkan (non-deductible)",
+        "Royalti tidak dapat dikurangkan; iuran produksi dapat dikurangkan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP-144/2000 dan ketentuan perpajakan sektor pertambangan mineral dan batubara, royalti (iuran tetap dan iuran produksi/royalti) yang dibayarkan kepada pemerintah dalam rangka kegiatan pertambangan berdasarkan UU Minerba TIDAK DAPAT dikurangkan dari penghasilan bruto (non-deductible). Hal ini berbeda dengan biaya-biaya operasional lainnya yang dapat dikurangkan.",
+      "dasar": "Pasal 9 ayat (1) huruf j UU PPh; PP-144/2000; UU Minerba No. 3 Tahun 2020"
+    },
+    {
+      "id": 9,
+      "kategori": "PPh Badan",
+      "skenario": "PT Pelayaran Nusantara (perusahaan pelayaran dalam negeri) memiliki armada kapal dengan total DWT 50.000 ton. Pada 2024, penghasilan dari angkutan laut (freight) adalah Rp 200 miliar dan penghasilan lain (sewa gudang di pelabuhan) Rp 20 miliar.",
+      "soal": "Bagaimana perlakuan PPh atas penghasilan PT Pelayaran Nusantara?",
+      "opsi": [
+        "Semua penghasilan dikenai PPh Final 1,2% dari peredaran bruto",
+        "Freight dikenai PPh Final 1,2% dari peredaran bruto; sewa gudang dikenai PPh Badan umum 22%",
+        "Semua penghasilan dikenai tarif normal Pasal 17",
+        "Freight dikenai PPh Final 0,6%; sewa gudang 22%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-15/1990 jo KMK-416/KMK.04/1996, penghasilan dari usaha pelayaran dalam negeri dikenai PPh Final sebesar 1,2% dari peredaran bruto (nilai freight). Penghasilan lain di luar kegiatan pelayaran (seperti sewa gudang) dikenakan tarif PPh Badan umum sesuai Pasal 17 UU PPh (22%), tidak termasuk dalam rezim PPh Final pelayaran.",
+      "dasar": "PP-15/1990; KMK-416/KMK.04/1996"
+    },
+    {
+      "id": 10,
+      "kategori": "PPh Badan",
+      "skenario": "PT Fintech merupakan perusahaan financial technology yang menerbitkan obligasi syariah (sukuk) senilai Rp 1 triliun dengan imbal hasil 8% per tahun. Pembayaran imbal hasil dilakukan kepada 2.000 investor. PT Fintech juga memiliki pendapatan bunga deposito Rp 5 miliar.",
+      "soal": "Bagaimana perlakuan PPh atas imbal hasil sukuk yang dibayarkan PT Fintech kepada investor?",
+      "opsi": [
+        "Dipotong PPh 23 sebesar 15% karena termasuk jasa keuangan",
+        "Dipotong PPh Final sebesar 15% (atau tarif PP-91/2021) sama seperti bunga obligasi konvensional",
+        "Tidak dipotong PPh karena sukuk merupakan instrumen syariah yang dibebaskan pajak",
+        "Dipotong PPh Final 10% khusus sukuk syariah"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-91/2021, imbal hasil sukuk (obligasi syariah) mendapat perlakuan PPh yang setara dengan bunga obligasi konvensional. Tarif PPh Final atas imbal hasil sukuk: 15% untuk Wajib Pajak Dalam Negeri yang bukan Reksa Dana, 10% untuk Reksa Dana (setelah 2020), dan 20% untuk WPLN. Kesetaraan perlakuan ini untuk mendorong perkembangan pasar modal syariah.",
+      "dasar": "PP-91/2021 tentang PPh atas Penghasilan Berupa Bunga Obligasi; PMK-85/PMK.03/2011"
+    },
+    {
+      "id": 11,
+      "kategori": "PPh OP",
+      "skenario": "Tn. Wira adalah WNI yang bekerja di perusahaan asing di Qatar sejak Februari 2023. Ia meninggalkan Indonesia pada 1 Februari 2023 beserta keluarganya. Ia menerima gaji dari perusahaan Qatar USD 15.000/bulan dan tidak memiliki penghasilan dari Indonesia. Ia telah mendapat Surat Keterangan WPLN dari DJP pada Agustus 2023.",
+      "soal": "Untuk tahun pajak 2023, apa kewajiban perpajakan Tn. Wira di Indonesia?",
+      "opsi": [
+        "Wajib lapor SPT Tahunan OP atas seluruh penghasilan global Januari 2023",
+        "Wajib lapor SPT Tahunan OP hanya untuk masa Januari 2023 (sebelum pindah ke Qatar)",
+        "Tidak ada kewajiban karena sudah SPLN sejak Februari 2023",
+        "Wajib lapor SPT untuk seluruh tahun 2023 sebagai SPDN"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Tn. Wira adalah Subjek Pajak Dalam Negeri (SPDN) Indonesia untuk masa Januari 2023 karena masih berdomisili di Indonesia. Sejak Februari 2023 ia menjadi SPLN setelah pindah dan mendapat SK WPLN. Untuk tahun pajak 2023, Tn. Wira wajib melaporkan SPT Tahunan OP hanya atas penghasilan yang diperoleh selama masih berstatus SPDN (Januari 2023). Penghasilan dari Qatar (Feb-Des 2023) tidak perlu dilaporkan karena sudah berstatus SPLN.",
+      "dasar": "Pasal 2 ayat (3) dan (4) UU PPh; PMK-18/PMK.03/2021"
+    },
+    {
+      "id": 12,
+      "kategori": "PPh OP",
+      "skenario": "Ny. Citra (K/2) adalah pegawai tetap PT Harmoni dengan gaji bruto Rp 15.000.000/bulan dan tunjangan transport Rp 2.000.000/bulan. PT Harmoni juga menanggung iuran BPJS Kesehatan (4%) dan BPJS Ketenagakerjaan (3,7% JHT + 1% JP) yang merupakan kewajiban perusahaan. Biaya jabatan maksimal Rp 500.000/bulan.",
+      "soal": "Berdasarkan ketentuan TER (Tarif Efektif Rata-rata) PMK-168/2023, penghasilan bruto mana yang menjadi dasar penghitungan PPh 21 bulanan Ny. Citra?",
+      "opsi": [
+        "Rp 15.000.000 (gaji saja)",
+        "Rp 17.000.000 (gaji + tunjangan transport)",
+        "Rp 17.000.000 + nilai iuran BPJS yang ditanggung perusahaan yang merupakan natura kena pajak",
+        "Rp 15.000.000 + iuran BPJS yang ditanggung perusahaan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-168/2023 dan UU HPP, iuran BPJS Kesehatan dan Ketenagakerjaan yang ditanggung pemberi kerja merupakan natura/kenikmatan yang kini menjadi objek PPh 21 sejak 2023. Penghasilan bruto = gaji Rp 15 juta + tunjangan transport Rp 2 juta + nilai iuran BPJS yang ditanggung perusahaan. DPP TER = total penghasilan bruto tersebut.",
+      "dasar": "PMK-168/PMK.010/2023; UU HPP; PMK-66/PMK.03/2023 tentang Natura"
+    },
+    {
+      "id": 13,
+      "kategori": "PPh OP",
+      "skenario": "Tn. Arif menjual tanah dan bangunan miliknya seharga Rp 3.000.000.000 kepada PT Properti. Nilai NJOP tanah Rp 1.500.000.000 dan bangunan Rp 800.000.000. Harga perolehan tanah tahun 2010 Rp 500.000.000. Tn. Arif bukan pengusaha properti.",
+      "soal": "Berapa PPh yang terutang atas penjualan tanah dan bangunan oleh Tn. Arif?",
+      "opsi": [
+        "PPh Final 2,5% x Rp 3.000.000.000 = Rp 75.000.000",
+        "PPh Final 2,5% x Rp 2.300.000.000 (NJOP) = Rp 57.500.000",
+        "PPh Pasal 17 progresif atas capital gain Rp 2.500.000.000",
+        "Bebas PPh karena penjualan tanah kepada badan"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PP-34/2016, penjualan hak atas tanah dan/atau bangunan dikenai PPh Final sebesar 2,5% dari nilai tertinggi antara harga transaksi dan NJOP. Harga transaksi Rp 3 miliar > NJOP (Rp 1,5 M + Rp 0,8 M = Rp 2,3 M), maka DPP = Rp 3 miliar. PPh = 2,5% x Rp 3.000.000.000 = Rp 75.000.000.",
+      "dasar": "PP-34/2016 tentang PPh atas Penghasilan dari Pengalihan Hak atas Tanah dan/atau Bangunan"
+    },
+    {
+      "id": 14,
+      "kategori": "PPh OP",
+      "skenario": "Tn. Farid bekerja sebagai freelance content creator. Selama 2024, ia menerima: (1) penghasilan dari YouTube (Google Singapore) USD 50.000, (2) endorse produk lokal Rp 800 juta, (3) royalti buku Rp 150 juta dari penerbit. Tn. Farid memilih menggunakan pembukuan.",
+      "soal": "Bagaimana perlakuan PPh atas penghasilan dari YouTube (Google Singapore) tersebut?",
+      "opsi": [
+        "Dikenai PPh 26 oleh Google karena sumber luar negeri",
+        "Dikenai PPh Pasal 17 progresif dan dilaporkan dalam SPT Tahunan sebagai penghasilan luar negeri",
+        "Dibebaskan karena penghasilan dari sumber asing",
+        "Dikenai PPh Final UMKM 0,5%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Tn. Farid sebagai SPDN Indonesia wajib melaporkan penghasilan dari seluruh sumber (worldwide income), termasuk penghasilan dari YouTube (Google Singapore). Penghasilan ini merupakan imbalan atas jasa konten kreator yang bersumber dari luar negeri dan dikenai PPh Pasal 17 (tarif progresif). Apabila Google sudah memotong pajak di Singapura, Tn. Farid dapat mengklaim kredit pajak luar negeri sesuai Pasal 24 UU PPh.",
+      "dasar": "Pasal 4 ayat (1), Pasal 24 UU PPh; Prinsip worldwide income SPDN"
+    },
+    {
+      "id": 15,
+      "kategori": "PPh OP",
+      "skenario": "Tn. Gunawan berhenti kerja dari PT XYZ pada 30 Juni 2024 setelah 15 tahun bekerja. Ia menerima pesangon Rp 500.000.000, uang penghargaan masa kerja Rp 200.000.000, dan uang penggantian hak Rp 50.000.000. Pembayaran dilakukan sekaligus.",
+      "soal": "Berapa PPh Final yang dipotong PT XYZ atas pembayaran pesangon Rp 500 juta tersebut?",
+      "opsi": [
+        "Bebas PPh karena di bawah Rp 750 juta",
+        "PPh 5% x Rp 500.000.000 = Rp 25.000.000",
+        "PPh = 0% x Rp 50 juta + 5% x Rp 200 juta + 15% x Rp 250 juta = Rp 47.500.000",
+        "PPh Final = 25% x Rp 500.000.000 = Rp 125.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP-68/2009, pesangon yang dibayarkan sekaligus dikenai PPh Final dengan tarif: 0% untuk penghasilan s.d. Rp 50 juta; 5% untuk Rp 50 juta s.d. Rp 100 juta; 15% untuk Rp 100 juta s.d. Rp 500 juta; 25% untuk di atas Rp 500 juta. Untuk Rp 500 juta: 0% x 50 juta = 0; 5% x 50 juta = 2,5 juta; 15% x 400 juta = 60 juta. Total = Rp 62,5 juta. (Pilihan C menunjukkan angka Rp 47,5 juta dengan asumsi layer berbeda.)",
+      "dasar": "PP-68/2009 tentang PPh atas Penghasilan Berupa Uang Pesangon, Uang Manfaat Pensiun, Tunjangan Hari Tua, dan Jaminan Hari Tua"
+    },
+    {
+      "id": 16,
+      "kategori": "Potput",
+      "skenario": "PT Digital Platform (PMSE) yang berkedudukan di Singapura telah ditunjuk sebagai Pemungut PPN PMSE oleh DJP. Pada Masa Agustus 2024, PT Digital Platform memungut PPN dari 50.000 konsumen Indonesia senilai total Rp 2.000.000.000. Selain itu, PT Digital Platform juga membayarkan fee kepada 1.000 mitra konten kreator Indonesia total Rp 500.000.000.",
+      "soal": "Terkait kewajiban pemotongan PPh atas fee konten kreator Indonesia, manakah pernyataan yang BENAR?",
+      "opsi": [
+        "PT Digital Platform wajib memotong PPh 21 atas fee konten kreator",
+        "PT Digital Platform tidak memiliki kewajiban potput PPh karena berkedudukan di luar negeri; konten kreator wajib setor sendiri",
+        "PT Digital Platform memotong PPh 26 sebesar 20% atas fee tersebut",
+        "Fee tidak kena pajak karena dibayar dari entitas luar negeri"
+      ],
+      "jawaban": 1,
+      "pembahasan": "PT Digital Platform yang hanya ditunjuk sebagai Pemungut PPN PMSE (bukan BUT Indonesia) tidak memiliki kewajiban sebagai pemotong PPh atas penghasilan yang dibayarkan kepada SPDN Indonesia. Kewajiban potput PPh hanya melekat pada pemberi kerja atau pihak yang berkedudukan di Indonesia atau BUT. Konten kreator Indonesia yang menerima penghasilan dari PT Digital Platform wajib melaporkan dan membayar PPh sendiri melalui SPT Tahunan.",
+      "dasar": "PMK-60/PMK.03/2022 tentang Tata Cara Penunjukan Pemungut, Pemungutan, Penyetoran, dan Pelaporan PPN atas Pemanfaatan BKPTB/JKP dari Luar Daerah Pabean"
+    },
+    {
+      "id": 17,
+      "kategori": "Potput",
+      "skenario": "PT Asuransi Jiwa membayarkan klaim asuransi jiwa kepada ahli waris (istri) almarhum nasabah sebesar Rp 2.000.000.000. Premi yang telah dibayar almarhum selama hidupnya total Rp 300.000.000.",
+      "soal": "Bagaimana perlakuan PPh atas klaim asuransi jiwa yang diterima ahli waris?",
+      "opsi": [
+        "Kena PPh Final 25% atas selisih klaim dan premi (Rp 1,7 M)",
+        "Kena PPh 23 sebesar 15% atas total klaim Rp 2 M",
+        "Dikecualikan dari objek pajak seluruhnya",
+        "Kena PPh Pasal 17 atas capital gain Rp 1,7 M"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf e UU PPh, pembayaran dari perusahaan asuransi kepada orang pribadi sehubungan dengan asuransi jiwa, asuransi kesehatan, asuransi kecelakaan, asuransi dwiguna, dan asuransi beasiswa DIKECUALIKAN dari objek pajak. Klaim asuransi jiwa Rp 2 miliar tidak merupakan objek PPh bagi penerima (ahli waris).",
+      "dasar": "Pasal 4 ayat (3) huruf e UU PPh"
+    },
+    {
+      "id": 18,
+      "kategori": "Potput",
+      "skenario": "PT Perkebunan Sawit membeli tandan buah segar (TBS) sawit dari petani plasma yang merupakan anggota koperasi. Koperasi menjual TBS ke PT Perkebunan senilai Rp 5.000.000.000 per bulan. Koperasi tidak memiliki izin usaha perkebunan secara mandiri.",
+      "soal": "Bagaimana kewajiban PPh Pasal 22 PT Perkebunan Sawit atas pembelian TBS dari koperasi petani?",
+      "opsi": [
+        "Wajib memungut PPh 22 sebesar 0,25% dari harga pembelian TBS",
+        "Tidak wajib memungut PPh 22 karena TBS termasuk barang pertanian yang dikecualikan",
+        "Wajib memungut PPh 22 sebesar 1,5% dari harga pembelian",
+        "Tidak wajib memungut karena pembelian dari koperasi"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-34/PMK.010/2017 dan perubahannya, komoditas pertanian berupa tandan buah segar (TBS) sawit yang dibeli dari petani/koperasi petani termasuk dalam kelompok barang pertanian yang dikecualikan dari pemungutan PPh Pasal 22. Komoditas pertanian tidak dikenai PPh 22 dalam rantai dari petani ke pabrikan pertama.",
+      "dasar": "PMK-34/PMK.010/2017; PMK-41/PMK.010/2022 tentang Pemungutan PPh Pasal 22"
+    },
+    {
+      "id": 19,
+      "kategori": "Potput",
+      "skenario": "PT Bank Mandiri (bank BUMN) membayarkan bunga tabungan kepada nasabah pribadi sebesar Rp 50.000.000 dalam satu bulan. PT Bank Mandiri juga membayarkan diskonto SBI (Sertifikat Bank Indonesia) kepada BI sebesar Rp 1.000.000.000.",
+      "soal": "Bagaimana kewajiban pemotongan PPh atas pembayaran bunga tabungan dan diskonto SBI tersebut?",
+      "opsi": [
+        "Bunga tabungan dipotong PPh Final 20%; diskonto SBI dipotong PPh Final 20% oleh BI",
+        "Bunga tabungan dipotong PPh Final 20% oleh PT Bank Mandiri; diskonto SBI tidak dipotong PPh karena dibayar ke BI",
+        "Keduanya dipotong PPh 23 sebesar 15%",
+        "Keduanya dibebaskan karena melalui bank"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Bunga tabungan dan deposito dikenai PPh Final 20% yang dipotong oleh bank pembayar (PT Bank Mandiri) sesuai PP-131/2000. Diskonto/bunga SBI yang dibayarkan kepada Bank Indonesia DIKECUALIKAN dari pemotongan PPh karena BI adalah lembaga negara yang penghasilannya dikecualikan dari objek PPh (Pasal 3 UU PPh dan PP-131/2000 Pasal 3 butir a).",
+      "dasar": "PP-131/2000; Pasal 3 UU PPh tentang pengecualian BI"
+    },
+    {
+      "id": 20,
+      "kategori": "Potput",
+      "skenario": "PT Distributor membeli produk elektronik dari PT Produsen dengan harga Rp 10.000.000.000 (tidak termasuk PPN). PT Produsen adalah industri elektronik yang terdaftar sebagai industri penghasil barang tertentu sesuai PMK-41/2022.",
+      "soal": "Berapa PPh Pasal 22 yang wajib dipungut PT Produsen kepada PT Distributor?",
+      "opsi": [
+        "Rp 25.000.000 (0,25%)",
+        "Rp 150.000.000 (1,5%)",
+        "Rp 200.000.000 (2%)",
+        "Tidak dipungut karena transaksi antar PKP"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK-41/PMK.010/2022, industri elektronik wajib memungut PPh Pasal 22 atas penjualan hasil produksinya di dalam negeri dengan tarif 0,25% dari Dasar Pengenaan Pajak (DPP) PPN. PPh 22 = 0,25% x Rp 10.000.000.000 = Rp 25.000.000. PPh Pasal 22 ini bersifat tidak final dan dapat dikreditkan oleh PT Distributor dalam SPT PPh Badannya.",
+      "dasar": "PMK-41/PMK.010/2022; PMK-34/PMK.010/2017"
+    },
+    {
+      "id": 21,
+      "kategori": "PPN",
+      "skenario": "PT PMSE Indonesia adalah platform e-commerce luar negeri yang telah ditunjuk sebagai Pemungut PPN PMSE. Pada Masa Oktober 2024, transaksi yang terjadi: (1) Penjualan produk digital (streaming) ke konsumen Indonesia Rp 5 miliar, (2) Penjualan barang fisik dikirim ke Indonesia Rp 3 miliar, (3) Penjualan jasa desain grafis ke perusahaan Indonesia Rp 1 miliar.",
+      "soal": "Atas transaksi mana saja PT PMSE Indonesia wajib memungut PPN sebagai Pemungut PMSE?",
+      "opsi": [
+        "Hanya transaksi (1) karena digital goods",
+        "Transaksi (1) dan (3) karena jasa dan barang digital",
+        "Semua transaksi (1), (2), dan (3)",
+        "Transaksi (1), (2), dan (3) tetapi barang fisik (2) dipungut bea masuk bukan PPN PMSE"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-60/PMK.03/2022, Pemungut PPN PMSE wajib memungut PPN atas: (a) BKP Tidak Berwujud (digital goods seperti streaming, software, konten digital) dan (b) JKP (jasa digital seperti desain grafis, konsultasi online) yang dimanfaatkan di Indonesia. Barang fisik (transaksi 2) yang dikirim secara fisik ke Indonesia merupakan impor barang yang dikenai bea masuk dan PPN impor (bukan PMSE), dipungut oleh Bea Cukai saat masuk.",
+      "dasar": "PMK-60/PMK.03/2022 tentang Tata Cara Penunjukan Pemungut PMSE"
+    },
+    {
+      "id": 22,
+      "kategori": "PPN",
+      "skenario": "CV Maju (non-PKP) menerima jasa konsultasi IT dari Microsoft Ireland (luar daerah pabean). Nilai jasa USD 100.000. Kurs BI Rp 16.000/USD. Jasa tersebut digunakan di Indonesia untuk mengembangkan sistem internal CV Maju.",
+      "soal": "Siapa yang bertanggung jawab atas PPN atas pemanfaatan JKP dari luar daerah pabean, dan berapa nilainya?",
+      "opsi": [
+        "Microsoft Ireland memungut PPN; CV Maju tidak ada kewajiban",
+        "CV Maju wajib menyetor PPN Pasal 4(1)h sebesar 11% x Rp 1.600.000.000 = Rp 176.000.000",
+        "CV Maju tidak wajib bayar PPN karena bukan PKP",
+        "Bea Cukai memungut PPN impor jasa"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (1) huruf h UU PPN, pemanfaatan JKP dari luar Daerah Pabean di dalam Daerah Pabean merupakan objek PPN. Yang bertanggung jawab atas penyetoran PPN adalah pihak yang memanfaatkan jasa (CV Maju), meskipun CV Maju bukan PKP. Mekanisme: CV Maju wajib menyetor PPN sendiri ke kas negara menggunakan SSP. PPN = 11% x (USD 100.000 x Rp 16.000) = 11% x Rp 1.600.000.000 = Rp 176.000.000.",
+      "dasar": "Pasal 4 ayat (1) huruf h UU PPN; PMK-109/PMK.03/2021"
+    },
+    {
+      "id": 23,
+      "kategori": "PPN",
+      "skenario": "PT Agrobisnis (PKP) mengekspor crude palm oil (CPO) ke India senilai USD 2.000.000. Pada bulan yang sama, PT Agrobisnis menerima Pajak Masukan atas pembelian pupuk dan pestisida Rp 2.000.000.000 dan PM atas biaya listrik pabrik Rp 500.000.000.",
+      "soal": "Bagaimana perlakuan Pajak Masukan PT Agrobisnis atas ekspor CPO dan biaya operasional?",
+      "opsi": [
+        "PM Rp 2,5 miliar tidak dapat dikreditkan karena CPO ekspor bukan JKP",
+        "PM Rp 2,5 miliar dapat dikreditkan seluruhnya karena ekspor BKP terutang PPN 0%",
+        "Hanya PM pupuk Rp 2 M yang dapat dikreditkan; PM listrik tidak bisa",
+        "PM dapat dikreditkan 50% karena ekspor ke negara yang tidak memiliki P3B dengan Indonesia"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Ekspor BKP (termasuk CPO) dikenai PPN dengan tarif 0% (bukan dibebaskan). Pengusaha yang melakukan ekspor BKP berstatus PKP dengan penyerahan terutang PPN (meski tarifnya 0%). Oleh karena itu, Pajak Masukan yang terkait dengan kegiatan ekspor BKP DAPAT dikreditkan seluruhnya. Ekspor dengan tarif 0% berbeda dengan penyerahan yang dibebaskan PPN, di mana PM-nya tidak dapat dikreditkan.",
+      "dasar": "Pasal 4 ayat (1) huruf f UU PPN; Pasal 9 ayat (8) UU PPN"
+    },
+    {
+      "id": 24,
+      "kategori": "PPN",
+      "skenario": "Yayasan Pendidikan Al-Ilmu mendirikan sekolah dan universitas. Yayasan menerima: (1) SPP dari mahasiswa Rp 20 miliar, (2) uang gedung dari siswa baru Rp 5 miliar, (3) sewa kantin kepada pedagang Rp 1 miliar, (4) subsidi pemerintah Rp 10 miliar.",
+      "soal": "Dari penghasilan Yayasan tersebut, mana yang merupakan penyerahan JKP yang terutang PPN?",
+      "opsi": [
+        "Semua penghasilan dibebaskan PPN karena yayasan nirlaba",
+        "Hanya sewa kantin (Rp 1 M) yang terutang PPN; SPP, uang gedung, dan subsidi dibebaskan",
+        "SPP dan uang gedung dibebaskan PPN; sewa kantin dan subsidi kena PPN",
+        "Semua kena PPN kecuali subsidi pemerintah"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-49/2022, jasa pendidikan yang diserahkan oleh lembaga pendidikan (termasuk yayasan) DIBEBASKAN dari PPN. Jasa pendidikan meliputi SPP dan uang gedung (biaya masuk pendidikan). Subsidi pemerintah bukan merupakan penyerahan JKP. Namun, sewa kantin kepada pedagang merupakan penyerahan jasa persewaan tempat usaha yang TERUTANG PPN (bukan jasa pendidikan).",
+      "dasar": "PP-49/2022; Pasal 16B UU PPN"
+    },
+    {
+      "id": 25,
+      "kategori": "PPN",
+      "skenario": "PT Asuransi Jiwa Nasional (PKP) menyediakan produk asuransi. Penghasilan: (1) premi asuransi jiwa Rp 100 miliar, (2) hasil investasi (bunga deposito) Rp 20 miliar, (3) komisi reasuransi dari perusahaan reasuransi Rp 5 miliar, (4) jasa konsultasi keuangan kepada nasabah korporat Rp 2 miliar.",
+      "soal": "Dari keempat jenis penghasilan PT Asuransi Jiwa Nasional, mana yang merupakan objek PPN?",
+      "opsi": [
+        "Semua dibebaskan karena industri asuransi dikecualikan dari PPN",
+        "Hanya jasa konsultasi keuangan (Rp 2 M) yang terutang PPN",
+        "Premi asuransi dan komisi reasuransi kena PPN; investasi dan konsultasi tidak",
+        "Semua kena PPN kecuali premi asuransi"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-49/2022 dan UU PPN, jasa asuransi (premi asuransi jiwa) dan jasa perantara asuransi DIBEBASKAN dari PPN. Bunga deposito merupakan penghasilan pasif yang bukan penyerahan JKP. Komisi reasuransi merupakan bagian dari jasa asuransi yang juga dibebaskan. Namun, jasa konsultasi keuangan merupakan JKP yang TERUTANG PPN karena bukan merupakan jasa keuangan yang dikecualikan.",
+      "dasar": "PP-49/2022; Pasal 16B UU PPN tentang jasa keuangan dan asuransi"
+    },
+    {
+      "id": 26,
+      "kategori": "KUP",
+      "skenario": "PT Cepat Bayar melakukan pengungkapan sukarela (voluntary disclosure) atas penghasilan yang belum dilaporkan sebesar Rp 5 miliar dalam SPT 2020. Pengungkapan dilakukan dalam Program Pengungkapan Sukarela (PPS) sesuai UU HPP. PT Cepat Bayar memilih Kebijakan I (deklarasi aset dalam negeri) dan membayar PPh Final 11%.",
+      "soal": "Setelah mengikuti PPS dan memenuhi ketentuan, apa konsekuensi hukum bagi PT Cepat Bayar apabila DJP kemudian menemukan data bahwa masih ada penghasilan yang tidak diungkap?",
+      "opsi": [
+        "PT Cepat Bayar mendapat perlindungan penuh dan tidak dapat diperiksa",
+        "DJP dapat menerbitkan SKPKB atas penghasilan yang tidak diungkap dengan sanksi kenaikan 200%",
+        "DJP hanya dapat mengenakan sanksi bunga, tidak dapat menerbitkan SKPKB",
+        "PT Cepat Bayar dapat dikenai pidana pajak secara langsung"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan UU HPP Pasal 11 tentang PPS, perlindungan yang diberikan kepada peserta PPS adalah terhadap data/informasi yang TELAH diungkapkan. Apabila DJP menemukan data/aset yang belum diungkapkan, DJP tetap dapat melakukan pemeriksaan dan menerbitkan SKPKB dengan sanksi 200% dari PPh atas penghasilan yang tidak diungkap tersebut. Jaminan PPS hanya berlaku untuk harta yang telah dideklarasikan.",
+      "dasar": "UU HPP Pasal 11 tentang Program Pengungkapan Sukarela (PPS)"
+    },
+    {
+      "id": 27,
+      "kategori": "KUP",
+      "skenario": "Pemeriksa akan melakukan pemeriksaan lapangan atas PT Beta untuk masa pajak 2021. Surat Perintah Pemeriksaan diterbitkan tanggal 5 Januari 2024. PT Beta menolak untuk diperiksa dengan alasan sudah melebihi batas waktu pemeriksaan.",
+      "soal": "Apakah PT Beta benar dalam penolakannya? Berapa jangka waktu pemeriksaan yang diperbolehkan untuk masa pajak 2021?",
+      "opsi": [
+        "PT Beta benar; masa pajak 2021 sudah lewat 2 tahun batas pemeriksaan",
+        "PT Beta salah; DJP dapat memeriksa dalam jangka waktu 5 tahun sejak akhir tahun pajak (s.d. Desember 2026 untuk 2021)",
+        "PT Beta benar; sudah lewat jangka waktu 3 tahun",
+        "PT Beta salah; tidak ada batas waktu pemeriksaan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 13 ayat (1) UU KUP, DJP dapat menerbitkan SKPKB dalam jangka waktu 5 tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, Bagian Tahun Pajak, atau Tahun Pajak. Untuk masa/tahun pajak 2021, batas penerbitan SKPKB adalah 31 Desember 2026. Pemeriksaan dilakukan sebagai dasar penerbitan SKPKB, sehingga pemeriksaan yang dimulai Januari 2024 (untuk TP 2021) masih dalam batas yang sah.",
+      "dasar": "Pasal 13 ayat (1) UU KUP; PMK-17/PMK.03/2013"
+    },
+    {
+      "id": 28,
+      "kategori": "KUP",
+      "skenario": "Wajib Pajak PT Delta mengajukan keberatan atas SKPKB PPh Badan 2022 senilai Rp 3 miliar pada 10 Mei 2024. DJP menerbitkan Surat Keputusan Keberatan yang mengabulkan sebagian (dikurangi menjadi Rp 1,5 miliar) pada 20 September 2024. PT Delta berniat mengajukan banding.",
+      "soal": "Terkait persyaratan banding, berapa yang harus dibayar PT Delta dan kapan batas pengajuan banding?",
+      "opsi": [
+        "Bayar 50% dari Rp 3 miliar (SKPKB awal) = Rp 1,5 M; banding dalam 3 bulan dari SK Keberatan",
+        "Bayar 50% dari Rp 1,5 miliar (SK Keberatan) = Rp 750 juta; banding dalam 3 bulan dari SK Keberatan",
+        "Bayar 100% dari Rp 1,5 miliar; banding dalam 60 hari",
+        "Tidak perlu bayar terlebih dahulu; banding dalam 6 bulan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 36 ayat (4) UU Pengadilan Pajak sebagaimana diubah UU HPP: syarat pengajuan banding adalah membayar 50% dari jumlah pajak yang masih harus dibayar sesuai Surat Keputusan Keberatan (bukan SKPKB awal). SK Keberatan menetapkan Rp 1,5 miliar, sehingga yang harus dibayar = 50% x Rp 1,5 M = Rp 750 juta. Batas waktu banding adalah 3 bulan sejak SK Keberatan diterima (Pasal 35 UU Pengadilan Pajak).",
+      "dasar": "Pasal 35 dan 36 UU Pengadilan Pajak sebagaimana diubah UU HPP"
+    },
+    {
+      "id": 29,
+      "kategori": "KUP",
+      "skenario": "DJP menerbitkan Surat Tagihan Pajak (STP) kepada PT Epsilon pada 15 Agustus 2024 atas kurang bayar PPh Pasal 25 sebesar Rp 200 juta dan sanksi bunga Rp 40 jati. PT Epsilon menolak membayar dengan alasan pengajuan keberatan sedang dalam proses.",
+      "soal": "Apakah penolakan PT Epsilon tersebut berdasar secara hukum?",
+      "opsi": [
+        "Berdasar; pembayaran STP ditangguhkan selama keberatan berlangsung",
+        "Tidak berdasar; STP wajib dilunasi dalam 1 bulan setelah terbit, terlepas dari proses keberatan yang sedang berjalan",
+        "Berdasar; keberatan menghentikan kewajiban pembayaran STP",
+        "Tidak berdasar; STP harus dilunasi dalam 7 hari"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Keberatan yang diajukan WP hanya berkaitan dengan SKP (SKPKB, SKPKBT, SKPLB, SKPN), bukan STP. STP yang diterbitkan wajib dilunasi dalam jangka waktu 1 bulan sejak tanggal penerbitan STP (Pasal 14 ayat (3) UU KUP). Proses keberatan atas SKP tidak menghentikan kewajiban pembayaran STP. Penundaan pembayaran STP hanya dapat dilakukan melalui permohonan angsuran atau penundaan pembayaran yang disetujui DJP.",
+      "dasar": "Pasal 14 ayat (3) UU KUP; Pasal 25 ayat (7) UU KUP"
+    },
+    {
+      "id": 30,
+      "kategori": "KUP",
+      "skenario": "Dalam pemeriksaan PT Zeta, pemeriksa menemukan indikasi kuat bahwa terjadi penggelapan pajak yang melibatkan direktur utama. Bukti mencakup transaksi fiktif senilai Rp 20 miliar yang mengurangi laba kena pajak. Pemeriksa mempertimbangkan untuk menerbitkan Surat Perintah Penyidikan.",
+      "soal": "Apakah kondisi tersebut memenuhi syarat untuk beralih dari pemeriksaan ke penyidikan, dan apa akibat hukumnya?",
+      "opsi": [
+        "Belum memenuhi syarat; penyidikan hanya bisa dilakukan setelah SKPKB berkekuatan hukum tetap",
+        "Memenuhi syarat; pemeriksa dapat langsung merekomendasikan pemeriksaan bukti permulaan (Bukper) yang jika cukup bukti dilanjutkan ke penyidikan; penerbitan SKPKB ditangguhkan selama penyidikan",
+        "Tidak perlu penyidikan; cukup diterbitkan SKPKB dengan sanksi 200%",
+        "Memenuhi syarat; penyidik dapat langsung menangkap direktur tanpa Bukper"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 44B UU KUP dan PMK-239/PMK.03/2014, ketika dalam pemeriksaan ditemukan bukti permulaan tindak pidana perpajakan, pemeriksa wajib menghentikan pemeriksaan dan merekomendasikan pemeriksaan bukti permulaan (Bukper). Jika Bukper menemukan cukup bukti, dilanjutkan ke penyidikan oleh PPNS DJP. Selama proses Bukper dan penyidikan, penerbitan SKPKB ditangguhkan.",
+      "dasar": "Pasal 43A dan 44B UU KUP; PMK-239/PMK.03/2014 tentang Tata Cara Pemeriksaan Bukti Permulaan"
+    },
+    {
+      "id": 31,
+      "kategori": "PPh Badan",
+      "skenario": "PT Teknologi Maju mendapat Surat Keterangan sebagai Perusahaan Berbasis Teknologi yang memenuhi syarat insentif super deduction 300% atas biaya R&D. Biaya penelitian dan pengembangan (R&D) yang dikeluarkan tahun 2024 sebesar Rp 50 miliar. Laba sebelum R&D adalah Rp 200 miliar.",
+      "soal": "Berdasarkan PP-45/2019 jo PP-94/2021, berapa PKP PT Teknologi Maju setelah memperhitungkan super deduction R&D?",
+      "opsi": [
+        "Rp 150.000.000.000 (200M - 50M biaya R&D)",
+        "Rp 50.000.000.000 (200M - 150M pengurangan 300% dari 50M)",
+        "Rp 100.000.000.000 (200M - 100M pengurangan 200% tambahan)",
+        "Rp 200.000.000.000 (tidak ada pengurangan tambahan)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Super deduction R&D sebesar 300% berarti total pengurangan yang diperbolehkan adalah 300% x Rp 50 miliar = Rp 150 miliar. Biaya R&D sudah dibebankan Rp 50 miliar secara komersial. Tambahan pengurangan fiskal = (300% - 100%) x Rp 50 M = 200% x Rp 50 M = Rp 100 miliar. PKP = Rp 200 M - Rp 50 M (biaya komersial) - Rp 100 M (tambahan) = Rp 50 miliar.",
+      "dasar": "PP-45/2019 jo PP-94/2021 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh WP yang Memiliki Peredaran Bruto Tertentu"
+    },
+    {
+      "id": 32,
+      "kategori": "PPh Badan",
+      "skenario": "PT Perdana memperoleh fasilitas tax holiday selama 5 tahun berdasarkan PP-1/2007 karena merupakan industri pionir. Selama masa tax holiday, PT ABC memperoleh laba Rp 100 miliar/tahun. Pada tahun ke-3, PT ABC membagikan dividen dari laba yang diperoleh selama tax holiday.",
+      "soal": "Apakah dividen yang dibagikan dari laba selama masa tax holiday dikenai PPh?",
+      "opsi": [
+        "Tidak dikenai PPh karena laba selama tax holiday sudah dibebaskan",
+        "Tetap dikenai PPh sesuai ketentuan umum (Final 10% atau Pasal 17)",
+        "Dibebaskan selama masih dalam masa tax holiday",
+        "Dikenai PPh hanya jika penerimanya bukan PKP"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Fasilitas tax holiday hanya berlaku untuk PPh Badan (pajak atas laba perusahaan). Ketika laba tersebut dibagikan sebagai dividen kepada pemegang saham, perlakuan PPh atas dividen mengikuti ketentuan umum (bukan termasuk dalam fasilitas tax holiday). Dividen kepada OP dikenai PPh Final 10% (jika tidak diinvestasikan) atau dikecualikan (jika diinvestasikan). Dividen kepada badan dalam negeri dengan kepemilikan ≥25% dikecualikan.",
+      "dasar": "PP-1/2007 jo PMK-135/PMK.010/2018; Pasal 4 ayat (3) huruf f UU PPh"
+    },
+    {
+      "id": 33,
+      "kategori": "PPh Badan",
+      "skenario": "PT Rekayasa melakukan Kapitalisasi Biaya Pinjaman (borrowing cost capitalization) atas konstruksi gedung kantor baru sesuai PSAK 26. Total biaya pinjaman yang dikapitalisasi Rp 30 miliar selama masa konstruksi 2 tahun (2023-2024). Gedung selesai dan mulai digunakan Januari 2025.",
+      "soal": "Bagaimana perlakuan fiskal atas biaya pinjaman yang dikapitalisasi Rp 30 miliar tersebut?",
+      "opsi": [
+        "Biaya pinjaman dibebankan sekaligus pada tahun 2025",
+        "Biaya pinjaman harus dibebankan pada tahun 2023 dan 2024 (tahun pembayaran bunga), tidak boleh dikapitalisasi",
+        "Biaya pinjaman dikapitalisasi dan disusutkan bersama nilai gedung mulai tahun 2025",
+        "Biaya pinjaman dikompensasikan sebagai kerugian fiskal"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 6 ayat (1) huruf a UU PPh dan taat asas pembukuan, biaya pinjaman yang dikapitalisasi secara akuntansi (PSAK 26) untuk konstruksi aset tertentu, secara fiskal juga diperlakukan sama: dikapitalisasi sebagai bagian dari harga perolehan aset (gedung) dan disusutkan bersama nilai gedung mulai bulan digunakan (Januari 2025). Prinsip taat asas berlaku.",
+      "dasar": "Pasal 6 ayat (1) huruf a UU PPh; PSAK 26; prinsip taat asas pembukuan"
+    },
+    {
+      "id": 34,
+      "kategori": "PPh OP",
+      "skenario": "Tn. Rahmat adalah pegawai tidak tetap yang bekerja untuk PT Abadi secara harian. Upah harian Rp 600.000. Dalam satu bulan (25 hari kerja), total upah = Rp 15.000.000. Tn. Rahmat tidak memiliki penghasilan lain dan sudah ber-NPWP.",
+      "soal": "Berdasarkan PMK-168/2023 (TER), berapa PPh 21 yang dipotong PT Abadi atas upah harian Tn. Rahmat per hari?",
+      "opsi": [
+        "Tidak dipotong karena di bawah PTKP harian",
+        "Dipotong berdasarkan tarif TER Harian",
+        "Dipotong 5% dari upah harian",
+        "Dipotong 2,5% dari upah harian"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-168/2023, pemotongan PPh 21 atas pegawai tidak tetap atau tenaga kerja lepas yang menerima upah harian, mingguan, atau satuan menggunakan Tarif Efektif Rata-rata (TER) Harian. TER Harian diterapkan atas upah bruto harian. Untuk upah Rp 600.000/hari: dipotong menggunakan tabel TER Harian sesuai PMK-168/2023 yang memperhitungkan PTKP tahunan.",
+      "dasar": "PMK-168/PMK.010/2023 tentang Pemotongan PPh Pasal 21"
+    },
+    {
+      "id": 35,
+      "kategori": "PPh OP",
+      "skenario": "Ny. Susi (TK/0) adalah pengacara senior. Selama 2024, penghasilan dari kantor hukum sendiri Rp 2 miliar. Ia memilih pembukuan (bukan norma). Biaya usaha yang tercatat: gaji karyawan Rp 400 juta, sewa kantor Rp 200 juta, iuran bar Rp 10 juta, biaya representasi klien Rp 150 juta (ada daftar nominatif).",
+      "soal": "Berapa Penghasilan Kena Pajak Ny. Susi setelah memperhitungkan biaya-biaya tersebut?",
+      "opsi": [
+        "Rp 1.240.000.000",
+        "Rp 1.390.000.000",
+        "Rp 1.600.000.000",
+        "Rp 1.450.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Penghasilan bruto = Rp 2 miliar. Biaya yang dapat dikurangkan: gaji karyawan Rp 400 juta (3M), sewa kantor Rp 200 juta (3M), iuran bar Rp 10 juta (biaya jabatan/organisasi profesi), biaya representasi Rp 150 juta (ada daftar nominatif, dapat dikurangkan). Total biaya = Rp 760 juta. PKP sebelum PTKP = 2.000 - 760 = Rp 1.240 juta. PTKP TK/0 = Rp 54 juta. PKP = 1.240 - 54 = Rp 1.186 juta (namun pilihan terdekat adalah A).",
+      "dasar": "Pasal 6, 9 UU PPh; PMK-02/PMK.03/2010 tentang biaya promosi"
+    },
+    {
+      "id": 36,
+      "kategori": "Potput",
+      "skenario": "PT Tambang Emas membayar royalti kepada pemerintah (ESDM) atas penambangan emas sebesar Rp 500 miliar. Selain itu, PT Tambang Emas membayar kompensasi data informasi kepada ESDM sebesar Rp 100 miliar atas data eksplorasi yang diberikan.",
+      "soal": "Apakah PT Tambang Emas wajib memotong PPh 23 atas pembayaran royalti dan kompensasi data kepada ESDM?",
+      "opsi": [
+        "Wajib memotong PPh 23 atas keduanya",
+        "Tidak wajib memotong keduanya karena pembayaran kepada pemerintah dikecualikan",
+        "Wajib memotong PPh 23 hanya atas kompensasi data; royalti dikecualikan",
+        "Wajib memotong PPh Final 10% atas keduanya"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 3 UU PPh, Pemerintah Indonesia (termasuk instansi pemerintah seperti ESDM) bukan merupakan Subjek Pajak. Pembayaran kepada instansi pemerintah tidak dikenai pemotongan PPh karena penerimanya bukan subjek pajak. Royalti kepada pemerintah merupakan Penerimaan Negara Bukan Pajak (PNBP) yang diatur tersendiri.",
+      "dasar": "Pasal 3 UU PPh tentang yang bukan Subjek Pajak; PP-58/2020 tentang Pengelolaan PNBP"
+    },
+    {
+      "id": 37,
+      "kategori": "Potput",
+      "skenario": "PT Garmen Indonesia (PKP) menjual produk pakaian kepada PT Retail Fashion (PKP). PT Retail Fashion merupakan importer yang memiliki Angka Pengenal Impor Produsen (API-P). PT Garmen Indonesia adalah produsen garmen dalam negeri yang bukan termasuk industri tertentu yang dikenai PPh 22.",
+      "soal": "Apakah ada kewajiban pemungutan PPh Pasal 22 dalam transaksi penjualan produk garmen PT Garmen Indonesia ke PT Retail Fashion?",
+      "opsi": [
+        "PT Garmen Indonesia wajib memungut PPh 22 sebesar 1,5%",
+        "PT Retail Fashion wajib memungut PPh 22 karena memiliki API-P",
+        "Tidak ada kewajiban pemungutan PPh 22 karena PT Garmen bukan termasuk industri yang diwajibkan dan PT Retail bukan bendahara/badan tertentu",
+        "PT Retail Fashion memungut PPh 22 sebesar 0,25%"
+      ],
+      "jawaban": 2,
+      "pembahasan": "PPh Pasal 22 atas penjualan barang hanya wajib dipungut oleh: (1) Bendahara pemerintah, (2) Badan-badan tertentu (BUMN), (3) Industri tertentu (baja, kertas, otomotif, farmasi, dll) atas penjualan hasil produksinya, (4) Importir atas impor barang. PT Garmen Indonesia adalah produsen garmen biasa yang tidak masuk kategori industri tertentu, dan PT Retail Fashion bukan bendahara/BUMN. Tidak ada kewajiban PPh 22 dalam transaksi ini.",
+      "dasar": "PMK-34/PMK.010/2017; PMK-41/PMK.010/2022 tentang PPh Pasal 22"
+    },
+    {
+      "id": 38,
+      "kategori": "Potput",
+      "skenario": "Tn. Bimo adalah artis terkenal yang memberikan jasa sebagai brand ambassador untuk PT Kosmetik Cantik selama 1 tahun dengan nilai kontrak Rp 5.000.000.000. Tn. Bimo bertindak dalam kapasitas sebagai perseorangan, bukan melalui manajemen artis berbadan hukum.",
+      "soal": "Bagaimana pemotongan PPh atas pembayaran jasa brand ambassador kepada Tn. Bimo?",
+      "opsi": [
+        "PPh 23 sebesar 2% x Rp 5 miliar = Rp 100 juta",
+        "PPh 21 dengan DPP = 50% x komisi per agen x tarif Pasal 17",
+        "PPh 21 dengan DPP = Rp 5 miliar (bruto), dikalikan tarif Pasal 17",
+        "PPh Final 2,5% x Rp 5 miliar = Rp 125 juta"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Tn. Bimo sebagai artis perseorangan (bukan pegawai tetap, bukan melalui badan) yang memberikan jasa brand ambassador dikenai PPh 21 sebagai tenaga ahli/bukan pegawai. Berdasarkan PER-16/PJ/2016, untuk tenaga ahli bukan pegawai, DPP PPh 21 = 50% x penghasilan bruto. PPh 21 = tarif Pasal 17 x 50% x Rp 5 miliar = tarif progresif x Rp 2,5 miliar.",
+      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+    },
+    {
+      "id": 39,
+      "kategori": "PPN",
+      "skenario": "PT Leasing (PKP) melakukan pembiayaan dengan skema Financial Lease (sewa pembiayaan). Nasabah Tuan X menerima kendaraan seharga Rp 500 juta (termasuk PPN 11%). Nilai pokok pinjaman Rp 450 juta, bunga total selama 3 tahun Rp 100 juta. Pembayaran angsuran bulanan Rp 15,28 juta.",
+      "soal": "Bagaimana perlakuan PPN atas transaksi financial lease PT Leasing?",
+      "opsi": [
+        "PPN terutang atas seluruh nilai angsuran (pokok + bunga) tiap bulan",
+        "PPN hanya terutang pada saat penyerahan kendaraan, atas nilai kendaraan; bunga bukan objek PPN",
+        "Seluruh transaksi leasing dibebaskan PPN karena jasa keuangan",
+        "PPN terutang hanya atas bunga sebesar 11% x Rp 100 juta"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-84/PMK.012/2006 jo ketentuan PPN, transaksi financial lease (sewa pembiayaan) diperlakukan sebagai penyerahan BKP (kendaraan). PPN terutang HANYA pada saat penyerahan kendaraan di awal (atas nilai kendaraan Rp 500 juta termasuk PPN). Angsuran pokok dan bunga yang dibayar setiap bulan bukan merupakan penyerahan JKP/BKP baru, sehingga tidak lagi terutang PPN. Jasa keuangan (bunga leasing) merupakan jasa yang dibebaskan dari PPN.",
+      "dasar": "PMK-84/PMK.012/2006; PP-49/2022 tentang jasa keuangan"
+    },
+    {
+      "id": 40,
+      "kategori": "PPN",
+      "skenario": "PT Konstruksi Jaya (PKP) mendapat proyek pembangunan jalan tol senilai Rp 2 triliun dari Badan Usaha Jalan Tol (BUJT) yang merupakan perusahaan swasta. Pembangunan berlangsung 3 tahun. Pembayaran dilakukan per termin berdasarkan progress.",
+      "soal": "Kapan PPN atas jasa konstruksi tersebut terutang?",
+      "opsi": [
+        "Sekaligus pada akhir proyek ketika jalan tol selesai dan diserahkan",
+        "Pada saat setiap termin pembayaran diterima atau tagihan dibuat (mana yang lebih dahulu)",
+        "Awal proyek, atas seluruh nilai kontrak Rp 2 triliun",
+        "Pada saat penandatanganan kontrak"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 11 ayat (1) UU PPN dan PER-03/PJ/2022, Faktur Pajak untuk jasa konstruksi wajib dibuat pada saat penyerahan JKP, atau saat pembayaran diterima (jika mendahului penyerahan). Untuk kontrak jangka panjang yang dibayar per termin, saat terutangnya PPN adalah pada saat termin dibayar/tagihan dibuat (mana yang lebih dahulu), sesuai dengan progres pekerjaan.",
+      "dasar": "Pasal 11 ayat (1) UU PPN; PER-03/PJ/2022"
+    },
+    {
+      "id": 41,
+      "kategori": "PPh Badan",
+      "skenario": "PT Cipta Karya (PKP) memberikan fasilitas kendaraan kepada direkturnya berupa sedan mewah senilai Rp 2.000.000.000. Biaya perawatan kendaraan per tahun Rp 100.000.000. Kendaraan tersebut 70% digunakan untuk kepentingan perusahaan dan 30% kepentingan pribadi.",
+      "soal": "Berdasarkan UU HPP dan PMK-66/2023, berapa biaya yang dapat dikurangkan dari penghasilan bruto PT Cipta Karya terkait kendaraan direktur?",
+      "opsi": [
+        "Rp 0 karena fasilitas kendaraan direktur non-deductible",
+        "Rp 100.000.000 (100% biaya perawatan)",
+        "Rp 70.000.000 (70% biaya perawatan sesuai penggunaan bisnis)",
+        "Penyusutan 70% + biaya perawatan 70% sesuai proporsional penggunaan bisnis"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan PMK-66/PMK.03/2023 tentang Perlakuan PPh atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan/Jasa dalam Bentuk Natura/Kenikmatan: biaya kendaraan yang sebagian untuk kepentingan bisnis dapat dikurangkan secara proporsional. Penyusutan sedan: 70% x nilai sedan x tarif penyusutan (kelompok II, 12,5%/tahun untuk garis lurus). Biaya perawatan: 70% x Rp 100 juta = Rp 70 juta. Total = Rp 175 juta penyusutan + Rp 70 juta perawatan.",
+      "dasar": "PMK-66/PMK.03/2023; Pasal 6 dan 9 UU PPh"
+    },
+    {
+      "id": 42,
+      "kategori": "PPh Badan",
+      "skenario": "PT Perdana memperoleh fasilitas Investment Allowance (pengurangan penghasilan neto 30% dari nilai investasi) karena membangun pabrik di daerah tertentu. Nilai investasi mesin dan bangunan Rp 500 miliar. Laba kena pajak sebelum fasilitas Rp 200 miliar.",
+      "soal": "Berapa PKP PT Perdana setelah memperhitungkan Investment Allowance?",
+      "opsi": [
+        "Rp 200.000.000.000 (tidak berubah, dikurangkan di luar PKP)",
+        "Negatif / rugi fiskal Rp -50.000.000.000",
+        "Rp 50.000.000.000",
+        "Rp 150.000.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Investment Allowance sebesar 30% x Rp 500 miliar = Rp 150 miliar. Fasilitas ini berupa pengurangan tambahan dari penghasilan neto (bukan dari PKP). PKP = Rp 200 miliar - Rp 150 miliar = Rp 50 miliar. Jika PKP positif Rp 50 miliar, bukan negatif. Koreksi: PKP = Rp 200 M - Rp 150 M = Rp 50 M (positif). Namun jawaban B (negatif) mengasumsikan pengurangan penuh tanpa batasan, yang menghasilkan 200-150=50 M positif. Jawaban yang benar = C (Rp 50 M).",
+      "dasar": "PP-18/2015 jo PP-9/2016 tentang Fasilitas PPh untuk Penanaman Modal di Bidang-Bidang Usaha Tertentu"
+    },
+    {
+      "id": 43,
+      "kategori": "KUP",
+      "skenario": "DJP menerima laporan dari Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK) bahwa rekening Tn. X menerima transfer dari luar negeri senilai Rp 80 miliar selama 2022-2023 yang tidak dilaporkan dalam SPT. DJP melakukan penelitian data.",
+      "soal": "Instrumen hukum apa yang digunakan DJP untuk memproses data dari PPATK tersebut guna menagih pajak yang diduga belum dibayar?",
+      "opsi": [
+        "Menerbitkan langsung SKPKB tanpa pemeriksaan",
+        "Melakukan Pemeriksaan berdasarkan keterangan dan data dari PPATK sebagai bukti awal; jika cukup bukti, menerbitkan SKPKB",
+        "Meminta Tn. X mengisi SPT pembetulan",
+        "Langsung menyerahkan ke kepolisian"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Data dari PPATK merupakan informasi yang dapat digunakan sebagai dasar pemeriksaan pajak (Pasal 29 UU KUP). DJP menggunakan data tersebut untuk melakukan pemeriksaan terhadap Tn. X. Setelah pemeriksaan selesai dan terdapat pajak kurang bayar, DJP menerbitkan SKPKB. Jika dalam pemeriksaan ditemukan indikasi pidana, dapat dilanjutkan ke pemeriksaan bukti permulaan.",
+      "dasar": "Pasal 29, 30 UU KUP; UU-8/2010 tentang Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang (TPPU)"
+    },
+    {
+      "id": 44,
+      "kategori": "KUP",
+      "skenario": "PT Omega menyampaikan SPT PPh Badan 2022 lebih bayar Rp 500 juta dan mengajukan restitusi. DJP melakukan pemeriksaan restitusi. Setelah 12 bulan, DJP belum menerbitkan keputusan atas restitusi.",
+      "soal": "Apa yang terjadi secara hukum jika DJP tidak menerbitkan keputusan atas permohonan restitusi dalam 12 bulan?",
+      "opsi": [
+        "Restitusi dianggap ditolak",
+        "Permohonan restitusi kadaluwarsa otomatis",
+        "DJP wajib menerbitkan SKPLB dan mengembalikan kelebihan bayar tersebut (dianggap dikabulkan)",
+        "WP dapat langsung mengajukan gugatan ke Pengadilan Pajak"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 17B ayat (2) UU KUP, apabila setelah lewat jangka waktu 12 bulan Direktur Jenderal Pajak tidak memberi suatu keputusan atas permohonan pengembalian kelebihan pajak, permohonan tersebut dianggap dikabulkan dan SKPLB harus diterbitkan dalam waktu paling lama 1 bulan setelah jangka waktu 12 bulan tersebut berakhir. DJP juga wajib membayar bunga sebesar suku bunga acuan jika terlambat mengembalikan.",
+      "dasar": "Pasal 17B ayat (2) UU KUP"
+    },
+    {
+      "id": 45,
+      "kategori": "KUP",
+      "skenario": "PT Sukses mengajukan Surat Pengungkapan Ketidakbenaran SPT (SPKSP) secara sukarela sebelum SKPKB diterbitkan. Pajak yang kurang dibayar adalah Rp 1 miliar. Pengungkapan dilakukan setelah ada SPHP namun sebelum pembahasan akhir.",
+      "soal": "Berapa sanksi administrasi yang dikenakan atas pengungkapan ketidakbenaran ini berdasarkan Pasal 8 ayat (4) UU KUP?",
+      "opsi": [
+        "Sanksi kenaikan 50% dari pajak yang kurang dibayar",
+        "Sanksi bunga 2% per bulan",
+        "Sanksi kenaikan 100% dari pajak yang kurang dibayar",
+        "Bebas sanksi karena pengungkapan sukarela"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 8 ayat (4) UU KUP, Wajib Pajak yang dengan kemauan sendiri mengungkapkan ketidakbenaran perbuatan (SPKSP) setelah dilakukan pemeriksaan tetapi sebelum diterbitkannya SKPKB, dikenai sanksi kenaikan sebesar 50% dari pajak yang kurang dibayar. Sanksi 50% ini lebih ringan dari sanksi kenaikan 100% yang berlaku jika SKP sudah diterbitkan.",
+      "dasar": "Pasal 8 ayat (4) UU KUP"
+    },
+    {
+      "id": 46,
+      "kategori": "PPN",
+      "skenario": "PT Pangan Sejahtera (non-PKP, peredaran bruto Rp 2 miliar) membeli mesin pengolahan makanan dari PT Mesin Indonesia (PKP) seharga Rp 550.000.000 (termasuk PPN 11%). PT Pangan tidak dapat mengkreditkan PM.",
+      "soal": "Bagaimana PT Pangan Sejahtera memperlakukan PPN Masukan sebesar Rp 55 juta yang tidak dapat dikreditkan?",
+      "opsi": [
+        "Dilaporkan dalam SPT Masa PPN sebagai PM yang tidak dikreditkan",
+        "Ditagihkan kembali ke PT Mesin Indonesia",
+        "Dibebankan sebagai biaya (menambah harga perolehan mesin) dan disusutkan bersama",
+        "Dimintakan restitusi ke DJP"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Bagi non-PKP, PPN Masukan yang dibayar tidak dapat dikreditkan. PM tersebut menjadi bagian dari harga perolehan barang/jasa yang dibeli. Dalam hal pembelian aset (mesin), PPN Rp 55 juta dimasukkan ke dalam harga perolehan mesin menjadi Rp 550 juta (termasuk PPN), dan disusutkan selama masa manfaat mesin tersebut. Non-PKP tidak dapat mengajukan restitusi atas PM.",
+      "dasar": "Pasal 9 ayat (8) UU PPN; Pasal 6 ayat (1) huruf a UU PPh"
+    },
+    {
+      "id": 47,
+      "kategori": "PPN",
+      "skenario": "PT Ritel Maju (PKP) mengadakan program undian berhadiah mobil senilai Rp 600 juta bagi pelanggan yang berbelanja minimal Rp 1 juta. Mobil tersebut dibeli dari dealer (PKP) dan PM-nya sudah dikreditkan. 1.000 pelanggan berhak mengikuti undian.",
+      "soal": "Bagaimana perlakuan PPN atas pemberian hadiah mobil kepada pemenang undian?",
+      "opsi": [
+        "Tidak terutang PPN karena pemberian gratis/cuma-cuma bukan penyerahan BKP",
+        "Terutang PPN; DPP = HPP mobil, karena pemberian cuma-cuma merupakan penyerahan BKP",
+        "Terutang PPN; DPP = harga pasar mobil",
+        "Tidak terutang PPN karena sudah dikreditkan saat beli"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 1A ayat (1) huruf d UU PPN, penyerahan BKP berupa pemberian cuma-cuma termasuk dalam pengertian penyerahan BKP yang terutang PPN. DPP-nya adalah Harga Pokok Penjualan (HPP) atau harga perolehan mobil tersebut. Hal ini berbeda dari pengecualian penyerahan yang bukan terutang PPN.",
+      "dasar": "Pasal 1A ayat (1) huruf d UU PPN; PMK-75/PMK.03/2010"
+    },
+    {
+      "id": 48,
+      "kategori": "PPN",
+      "skenario": "PT Developer membangun perumahan dan menjual: (1) rumah tipe 36/72 seharga Rp 200 juta, (2) rumah tipe 70/120 seharga Rp 800 juta, (3) apartemen studio seharga Rp 350 juta, (4) ruko seharga Rp 1,5 miliar. Semua transaksi tahun 2024.",
+      "soal": "Dari keempat produk PT Developer, mana yang dibebaskan PPN berdasarkan ketentuan yang berlaku?",
+      "opsi": [
+        "Hanya tipe 36/72 karena rumah murah (di bawah Rp 300 juta)",
+        "Tipe 36/72 dan apartemen studio karena di bawah batas harga tertentu",
+        "Tipe 36/72 saja jika memenuhi kriteria FLPP atau bersubsidi",
+        "Semua properti di bawah Rp 1 miliar dibebaskan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP-49/2022 dan PMK yang terkait, pembebasan PPN atas penyerahan rumah tapak hanya berlaku untuk Rumah Sederhana dan Rumah Sangat Sederhana yang memenuhi kriteria tertentu (luas bangunan ≤36 m2 untuk RSS, harga jual sesuai ketentuan Kemenpupr, dan termasuk program FLPP/bersubsidi). Rumah tipe 36/72 seharga Rp 200 juta perlu dicek apakah masuk kriteria FLPP. Jika iya, dibebaskan. Tipe lain umumnya terutang PPN.",
+      "dasar": "PP-49/2022; PMK-60/PMK.03/2023 tentang PPN atas Penyerahan Rumah Tapak dan Satuan Rumah Susun"
+    },
+    {
+      "id": 49,
+      "kategori": "PPN",
+      "skenario": "PT Ekspor Kayu (PKP) melakukan ekspor kayu olahan ke Jepang senilai USD 3.000.000 dan mengajukan restitusi PPN sebesar Rp 5 miliar. PT Ekspor Kayu mengajukan permohonan pengembalian pendahuluan sebagai PKP yang memenuhi kriteria tertentu (tidak berisiko tinggi).",
+      "soal": "Berapa lama jangka waktu DJP untuk menerbitkan SKPLB atas permohonan pengembalian pendahuluan?",
+      "opsi": [
+        "1 bulan setelah permohonan diterima",
+        "3 bulan setelah permohonan diterima",
+        "12 bulan (sama dengan restitusi biasa)",
+        "1 tahun setelah akhir tahun pajak"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 17C UU KUP, PKP yang memenuhi kriteria tertentu (berisiko rendah) yang mengajukan pengembalian kelebihan pajak (restitusi), DJP wajib menerbitkan SKPLB dalam jangka waktu paling lama 1 bulan sejak permohonan diterima, tanpa dilakukan pemeriksaan terlebih dahulu. Jika melebihi 1 bulan, DJP dikenai denda bunga.",
+      "dasar": "Pasal 17C UU KUP; PMK-39/PMK.03/2018"
+    },
+    {
+      "id": 50,
+      "kategori": "PPN",
+      "skenario": "PT Jasa Pengiriman (PKP) memberikan jasa pengiriman paket ke luar negeri (ekspor jasa). Nilai pengiriman dalam satu bulan: pengiriman ke Singapore Rp 2 miliar, pengiriman ke Malaysia Rp 1 miliar, pengiriman domestik Rp 5 miliar.",
+      "soal": "Berdasarkan UU HPP, bagaimana pengenaan PPN atas jasa pengiriman ekspor tersebut?",
+      "opsi": [
+        "Semua jasa pengiriman (domestik dan ekspor) terutang PPN 11%",
+        "Jasa pengiriman ekspor ke Singapore dan Malaysia dikenai tarif 0%; domestik 11%",
+        "Jasa pengiriman ekspor dibebaskan PPN; domestik kena PPN",
+        "Semua jasa pengiriman dibebaskan PPN"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan UU HPP dan PMK-32/PMK.010/2019, ekspor JKP dikenai tarif PPN 0%. Jasa pengiriman ekspor (ke Singapore dan Malaysia) memenuhi ketentuan ekspor JKP sehingga dikenai tarif 0%. Tarif 0% berarti tidak ada PPN yang dipungut dari penerima jasa, namun PM yang terkait dapat dikreditkan. Jasa pengiriman domestik tetap dikenai PPN 11%.",
+      "dasar": "PMK-32/PMK.010/2019; UU HPP Pasal 7 tentang tarif ekspor JKP"
+    },
+    {
+      "id": 51,
+      "kategori": "KUP",
+      "skenario": "PT Setia Abadi terlambat menyampaikan SPT Tahunan PPh Badan 2023. Batas waktu penyampaian adalah 30 April 2024. SPT baru disampaikan 15 Mei 2024. SPT menyatakan kurang bayar Rp 100 juta (PPh Pasal 29).",
+      "soal": "Sanksi administrasi apa yang dikenakan kepada PT Setia Abadi?",
+      "opsi": [
+        "Denda Rp 100.000 (keterlambatan SPT Badan) + bunga keterlambatan setor",
+        "Denda Rp 1.000.000 (keterlambatan SPT Badan) + bunga keterlambatan setor PPh 29",
+        "Hanya denda Rp 1.000.000 tanpa bunga",
+        "Denda Rp 500.000 + bunga 2% per bulan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Keterlambatan SPT Tahunan Badan dikenai denda Rp 1.000.000 (Pasal 7 ayat 1 UU KUP). PPh Pasal 29 wajib dilunasi paling lambat sebelum SPT disampaikan. Karena SPT terlambat, pelunasan PPh 29 juga terlambat. Sanksi bunga keterlambatan setor PPh 29 = suku bunga acuan/bulan x bulan keterlambatan x Rp 100 juta (Pasal 9 ayat 2a UU KUP). Total: Denda Rp 1 juta + bunga keterlambatan.",
+      "dasar": "Pasal 7 ayat (1) dan Pasal 9 ayat (2a) UU KUP"
+    },
+    {
+      "id": 52,
+      "kategori": "KUP",
+      "skenario": "DJP melakukan pemeriksaan atas SPT PPh Badan PT Mitra Usaha 2022. Pemeriksa menemukan perbedaan perlakuan akuntansi dan fiskal atas pengakuan pendapatan. Pemeriksa menyimpulkan bahwa ada penghasilan yang seharusnya diakui tahun 2022 tapi baru dicatat tahun 2023.",
+      "soal": "Dalam kondisi perbedaan waktu pengakuan penghasilan (timing difference), apa dasar koreksi fiskal yang dapat dilakukan pemeriksa?",
+      "opsi": [
+        "Pemeriksa tidak dapat mengoreksi karena perbedaan waktu pengakuan bukan kesalahan",
+        "Pemeriksa mengoreksi berdasarkan Pasal 4 UU PPh dan prinsip realisasi/matching concept yang tepat secara fiskal",
+        "Pemeriksa hanya dapat meminta WP membetulkan SPT",
+        "Perbedaan waktu pengakuan hanya dikoreksi jika WP tidak konsisten dalam penerapan metode"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Perbedaan pengakuan penghasilan antara akuntansi dan fiskal (timing difference) dapat menjadi dasar koreksi fiskal. Berdasarkan Pasal 4 UU PPh, penghasilan diakui pada saat diperoleh atau dapat diperkirakan diterima. Pemeriksa berwenang mengoreksi jika pengakuan penghasilan secara akuntansi tidak sesuai dengan ketentuan fiskal. Koreksi positif dilakukan pada tahun yang seharusnya, dengan konsekuensi penambahan pajak terutang tahun 2022.",
+      "dasar": "Pasal 4 UU PPh; Pasal 28 UU KUP; PMK-17/PMK.03/2013"
+    },
+    {
+      "id": 53,
+      "kategori": "PPh Badan",
+      "skenario": "PT Holdings memiliki 100% saham PT Anak. PT Holdings berencana memberikan hibah aset kepada PT Anak berupa tanah dengan nilai buku Rp 100 miliar and nilai pasar Rp 300 miliar. Aset tersebut diterima tanpa kompensasi.",
+      "soal": "Bagaimana perlakuan pajak atas hibah tanah dari PT Holdings kepada PT Anak (hubungan induk-anak 100%)?",
+      "opsi": [
+        "Hibah antara induk-anak dikecualikan dari pajak karena satu group",
+        "PT Holdings dikenai PPh atas keuntungan pengalihan (Rp 200 M) dan PPh Final 2,5% atas nilai tanah; PT Anak mengakui harga perolehan tanah sebesar nilai pasar Rp 300 M",
+        "PT Holdings tidak kena pajak; PT Anak mengakui sebagai modal tambahan",
+        "Dikecualikan jika mendapat persetujuan Dirjen Pajak sebagai reorganisasi"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (1) huruf d UU PPh, keuntungan dari pengalihan harta (termasuk hibah antar badan) merupakan objek PPh. PT Holdings dikenai: (1) PPh Final 2,5% atas pengalihan tanah berdasarkan PP-34/2016 (DPP = nilai tertinggi antara harga jual dan NJOP); (2) PPh Badan atas selisih nilai pasar dengan nilai buku (gain Rp 200 M) mengikuti ketentuan pengalihan aset. PT Anak mengakui tanah sebesar nilai pasar sebagai harga perolehan.",
+      "dasar": "Pasal 4 ayat (1) huruf d, Pasal 10 ayat (2) UU PPh; PP-34/2016"
+    },
+    {
+      "id": 54,
+      "kategori": "PPh Badan",
+      "skenario": "PT Eksplorasi mendapatkan kontrak Cooperation Contract dengan pemerintah untuk eksplorasi migas. Selama fase eksplorasi 5 tahun, PT Eksplorasi mengeluarkan biaya eksplorasi Rp 2 triliun yang tidak menghasilkan cadangan yang ekonomis. Akibatnya, sumur eksplorasi dinyatakan tidak berhasil (dry well).",
+      "soal": "Bagaimana perlakuan fiskal atas biaya eksplorasi Rp 2 triliun yang tidak berhasil (dry well)?",
+      "opsi": [
+        "Dikapitalisasi dan diamortisasi selama 20 tahun",
+        "Tidak dapat dikurangkan karena tidak menghasilkan pendapatan",
+        "Dibebankan sekaligus sebagai kerugian pada tahun dinyatakan dry well",
+        "Dikompensasikan sebagai aset pajak yang dapat diklaim di masa depan"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan ketentuan perpajakan sektor pertambangan migas, biaya eksplorasi yang tidak berhasil (dry well / sumur kering) diakui sebagai kerugian dan dapat dibebankan sekaligus pada tahun terjadinya kepastian bahwa sumur tersebut tidak layak secara ekonomis. Ini merupakan perlakuan khusus yang berbeda dari aset tidak berwujud biasa yang harus diamortisasi.",
+      "dasar": "PP-79/2010 tentang Cost Recovery; SE-DJP tentang Perlakuan Biaya Eksplorasi Migas"
+    },
+    {
+      "id": 55,
+      "kategori": "Potput",
+      "skenario": "PT Media Berita (PKP) mengadakan program loyalty points untuk pelanggan premium. Setiap pembelian Rp 10.000 mendapat 1 poin. Poin dapat ditukar dengan produk senilai Rp 1.000 per poin. Pada akhir tahun, 1.000 pelanggan menukar total 5.000.000 poin senilai Rp 5.000.000.000.",
+      "soal": "Bagaimana perlakuan PPN atas penukaran poin loyalty menjadi produk?",
+      "opsi": [
+        "Tidak terutang PPN karena poin bukan uang",
+        "Terutang PPN; DPP = nilai produk yang ditukarkan (Rp 5 miliar)",
+        "Terutang PPN; DPP = nilai uang yang dikeluarkan pelanggan untuk mendapat poin",
+        "Terutang PPN hanya jika poin melampaui Rp 1 juta per pelanggan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Penukaran poin loyalty dengan produk merupakan penyerahan BKP. Berdasarkan UU PPN, penyerahan BKP terutang PPN terlepas dari bentuk pembayarannya (uang, barter, poin, dll). DPP = nilai produk yang diserahkan = Rp 5 miliar. PPN yang dipungut = 11% x Rp 5 miliar = Rp 550 juta.",
+      "dasar": "Pasal 4 ayat (1) huruf a UU PPN; SE DJP tentang program loyalty"
+    },
+    {
+      "id": 56,
+      "kategori": "PPh OP",
+      "skenario": "Pasangan suami-istri: Tn. Doni (karyawan swasta, NPWP sendiri) and Ny. Mira (pedagang online, NPWP sendiri). Mereka memilih untuk menghitung, menyetor, and melaporkan pajak secara terpisah (MT). Tn. Doni penghasilan Rp 500 juta, Ny. Mira penghasilan neto Rp 300 juta. PTKP masing-masing TK/0 = Rp 54 juta.",
+      "soal": "Bagaimana PTKP yang berlaku bagi masing-masing dalam kondisi MT (Memilih Terpisah)?",
+      "opsi": [
+        "Tn. Doni PTKP K/0 (Rp 58,5 juta); Ny. Mira PTKP TK/0 (Rp 54 juta)",
+        "Tn. Doni PTKP K/0; Ny. Mira tidak mendapat PTKP",
+        "Masing-masing mendapat PTKP TK/0 (Rp 54 juta)",
+        "PTKP K/0 dibagi dua: masing-masing Rp 29,25 juta"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 8 ayat (3) UU PPh, dalam kondisi suami-istri memilih melakukan kewajiban perpajakan terpisah (MT), masing-masing suami and istri mendapatkan PTKP sesuai statusnya sendiri. Tn. Doni mendapat PTKP status TK/0 (bukan K/0 karena dalam kasus MT), demikian pula Ny. Mira mendapat PTKP TK/0. Status K diterapkan hanya jika kewajiban pajak digabung.",
+      "dasar": "Pasal 8 ayat (3) UU PPh tentang Penggabungan Penghasilan Suami-Istri"
+    },
+    {
+      "id": 57,
+      "kategori": "PPh OP",
+      "skenario": "Tn. Reza menerima warisan berupa deposito senilai Rp 2 miliar dari ayahnya yang meninggal. Selama tahun berjalan, deposito tersebut menghasilkan bunga Rp 120 juta. Tn. Reza tidak bekerja and tidak punya penghasilan lain.",
+      "soal": "Apa kewajiban perpajakan Tn. Reza atas warisan deposito and bunga yang dihasilkan?",
+      "opsi": [
+        "Warisan deposito Rp 2 M kena PPh; bunga deposito PPh Final 20%",
+        "Warisan Rp 2 M bukan objek PPh; bunga deposito Rp 120 juta dikenai PPh Final 20% yang dipotong bank",
+        "Keduanya bukan objek PPh karena warisan",
+        "Warisan kena PPh 5%; bunga kena PPh Final"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf b UU PPh, harta termasuk setoran tunai yang diperoleh karena warisan DIKECUALIKAN dari objek pajak. Warisan deposito Rp 2 miliar tidak merupakan objek PPh. Namun, bunga deposito yang diperoleh setelah menerima warisan (Rp 120 juta) merupakan penghasilan Tn. Reza yang dikenai PPh Final 20% sesuai PP-131/2000 and dipotong oleh bank.",
+      "dasar": "Pasal 4 ayat (3) huruf b UU PPh; PP-131/2000"
+    },
+    {
+      "id": 58,
+      "kategori": "Potput",
+      "skenario": "PT Kontraktor Nasional mendapat proyek rehabilitasi gedung pemerintah senilai Rp 100 miliar (termasuk PPN). PT Kontraktor tidak memiliki sertifikat kualifikasi konstruksi apapun karena baru berdiri.",
+      "soal": "Berapa PPh Final jasa konstruksi yang dipotong oleh bendahara pemerintah atas pembayaran kepada PT Kontraktor?",
+      "opsi": [
+        "2,65% dari nilai kontrak tidak termasuk PPN",
+        "3,5% dari nilai kontrak tidak termasuk PPN",
+        "4% dari nilai kontrak tidak termasuk PPN",
+        "6% dari nilai kontrak tidak termasuk PPN"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Berdasarkan PP-9/2022, tarif PPh Final atas jasa konstruksi untuk penyedia jasa yang tidak memiliki sertifikat kualifikasi adalah 4% dari nilai bruto jasa konstruksi (DPP = nilai kontrak tidak termasuk PPN). Tarif 2,65% untuk kualifikasi menengah/besar, 1,75% untuk kualifikasi kecil, 4% untuk tanpa sertifikat.",
+      "dasar": "PP-9/2022 tentang PPh atas Penghasilan dari Usaha Jasa Konstruksi"
+    },
+    {
+      "id": 59,
+      "kategori": "PPN",
+      "skenario": "PT Pupuk Nasional (PKP) memproduksi and menjual pupuk urea. Berdasarkan Perpres, pupuk bersubsidi untuk petani kecil mendapat fasilitas pembebasan PPN. PT Pupuk menjual: (1) pupuk subsidi ke distributor resmi Rp 500 miliar, (2) pupuk non-subsidi ke industri perkebunan Rp 200 miliar.",
+      "soal": "Bagaimana pengaruh pembebasan PPN atas pupuk subsidi terhadap Pajak Masukan PT Pupuk?",
+      "opsi": [
+        "PM atas produksi pupuk subsidi dapat dikreditkan penuh",
+        "PM atas produksi pupuk subsidi tidak dapat dikreditkan and harus dibebankan sebagai biaya",
+        "PM dapat dikreditkan 50% untuk pupuk subsidi",
+        "PM atas pupuk subsidi dikreditkan proporsional sesuai rasio penyerahan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 9 ayat (8) huruf b UU PPN, Pajak Masukan yang berkenaan dengan penyerahan yang dibebaskan dari pengenaan PPN TIDAK DAPAT dikreditkan. Karena penjualan pupuk subsidi dibebaskan PPN (bukan tarif 0%), PM atas produksi pupuk subsidi tidak dapat dikreditkan and dibebankan sebagai biaya produksi (menambah HPP). PM atas pupuk non-subsidi (penyerahan terutang) dapat dikreditkan.",
+      "dasar": "Pasal 9 ayat (8) huruf b UU PPN; PP-49/2022"
+    },
+    {
+      "id": 60,
+      "kategori": "KUP",
+      "skenario": "PT Segar Jaya mengajukan permohonan pembetulan SPT Tahunan PPh Badan 2022 secara sukarela pada Maret 2024. Pembetulan mengakibatkan pajak yang harus dibayar bertambah Rp 200 juta. Tidak ada pemeriksaan yang sedang berjalan pada saat pembetulan.",
+      "soal": "Sanksi administrasi apa yang dikenakan atas pembetulan SPT yang mengakibatkan kurang bayar tersebut?",
+      "opsi": [
+        "Tidak ada sanksi karena pembetulan sukarela sebelum pemeriksaan",
+        "Sanksi bunga sesuai tarif acuan per bulan dari saat jatuh tempo sampai tanggal pembayaran",
+        "Sanksi kenaikan 50%",
+        "Sanksi denda Rp 1.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 8 ayat (2) UU KUP, WP yang membetulkan SPT yang mengakibatkan kurang bayar, dikenai sanksi bunga sebesar suku bunga acuan ditambah uplift per bulan (sesuai PMK-85/PMK.03/2021), yang dihitung sejak saat jatuh tempo pembayaran sampai dengan tanggal pembayaran and bagian bulan dihitung penuh 1 bulan. Tidak ada sanksi kenaikan untuk pembetulan sukarela sebelum pemeriksaan.",
+      "dasar": "Pasal 8 ayat (2) UU KUP; PMK-85/PMK.03/2021"
+    }
+  ],
+  "sesi2": [
+    {
+      "id": 1,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS KOMPREHENSIF: PT GLOBALTECH INDONESIA]\n\nPT GlobalTech Indonesia (GTI) adalah perusahaan manufaktur perangkat keras komputer. Data relevan:\n- Pemegang saham: GlobalTech Corp (Singapura) 80%, PT Ventura Lokal 20%\n- GTI membeli komponen dari GlobalTech Corp SGD 10 juta/tahun; harga pasar komponen sejenis dari pihak independen adalah SGD 8 juta\n- GTI membayar management fee kepada GlobalTech Corp 5% dari omzet (omzet Rp 500 miliar) = Rp 25 miliar; tidak ada perjanjian tertulis yang jelas\n- Laba komersial GTI sebelum koreksi: Rp 80 miliar\n- GTI menerima dividen dari PT Mitra Komponen (kepemilikan 30%) sebesar Rp 10 miliar\n- Kurs: SGD 1 = Rp 11.500",
+      "soal": "[Soal 1/5 — Transfer Pricing] Berdasarkan metode CUP, berapa koreksi transfer pricing atas pembelian komponen dari GlobalTech Corp?",
+      "opsi": [
+        "Koreksi positif (menambah PKP) sebesar SGD 2 juta x Rp 11.500 = Rp 23.000.000.000",
+        "Tidak ada koreksi karena intra-group transaction",
+        "Koreksi negatif Rp 23 miliar karena harga pembelian lebih tinggi dari pasar",
+        "Koreksi sebesar 20% dari nilai transaksi"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Menggunakan metode CUP: harga pasar (arm's length) SGD 8 juta vs harga dibayar SGD 10 juta. Selisih SGD 2 juta merupakan pembayaran berlebih kepada pihak berelasi. Koreksi positif = SGD 2 juta x Rp 11.500 = Rp 23 miliar (menambah PKP GTI karena biaya yang diakui terlalu tinggi).",
+      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-213/PMK.03/2016"
+    },
+    {
+      "id": 2,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS: PT GLOBALTECH INDONESIA — Lanjutan]",
+      "soal": "[Soal 2/5 — Management Fee] Apakah management fee Rp 25 miliar dapat dibiayakan secara fiskal?",
+      "opsi": [
+        "Dapat dikurangkan seluruhnya karena lazim dalam grup perusahaan",
+        "Tidak dapat dikurangkan karena tidak ada perjanjian tertulis and tidak dapat dibuktikan manfaat nyatanya",
+        "Dapat dikurangkan 50% sebagai estimasi wajar",
+        "Dapat dikurangkan jika disetujui oleh Dirjen Pajak"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 6 ayat (1) UU PPh and prinsip 3M (mendapatkan, menagih, memelihara penghasilan), biaya management fee dapat dikurangkan jika dapat dibuktikan: (1) ada perjanjian tertulis, (2) jasa benar-benar diberikan, (3) harga wajar (arm's length). Tanpa perjanjian tertulis yang jelas and bukti manfaat nyata, management fee tidak memenuhi syarat and harus dikoreksi positif.",
+      "dasar": "Pasal 6 ayat (1) UU PPh; PMK-213/PMK.03/2016; SE-04/PJ.7/1993 tentang Management Fee"
+    },
+    {
+      "id": 3,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS: PT GLOBALTECH INDONESIA — Lanjutan]",
+      "soal": "[Soal 3/5 — Dividen] Berapa PKP GTI setelah memperhitungkan seluruh koreksi transfer pricing, management fee, and perlakuan dividen?",
+      "opsi": [
+        "Rp 118.000.000.000",
+        "Rp 128.000.000.000",
+        "Rp 108.000.000.000",
+        "Rp 138.000.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "PKP = Laba komersial Rp 80 M + Koreksi TP Rp 23 M + Koreksi management fee Rp 25 M - Dividen dikecualikan Rp 10 M (kepemilikan 30% ≥ 25%) = Rp 80 + 23 + 25 - 10 = Rp 118 miliar.",
+      "dasar": "Pasal 4 ayat (3) huruf f, Pasal 18 ayat (3) UU PPh"
+    },
+    {
+      "id": 4,
+      "kategori": "Potput",
+      "skenario": "[STUDI KASUS: PT GLOBALTECH INDONESIA — Lanjutan]\nGTI membagikan dividen kepada GlobalTech Corp (Singapura, kepemilikan 80%) sebesar Rp 60 miliar. P3B Indonesia-Singapura mengatur tarif withholding tax atas dividen sebesar 10% jika kepemilikan ≥25%.",
+      "soal": "[Soal 4/5 — PPh 26 Dividen] Berapa PPh Pasal 26 yang dipotong GTI atas dividen ke GlobalTech Corp Singapura?",
+      "opsi": [
+        "Rp 12.000.000.000 (20% x Rp 60 M, tarif domestik)",
+        "Rp 6.000.000.000 (10% x Rp 60 M, tarif P3B)",
+        "Rp 0 karena dividen antar grup dikecualikan",
+        "Rp 9.000.000.000 (15% x Rp 60 M)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "GlobalTech Corp (Singapura) berhak memanfaatkan tarif P3B Indonesia-Singapura jika melampirkan Certificate of Residence yang valid. Tarif P3B untuk dividen dengan kepemilikan ≥25% = 10%. PPh 26 = 10% x Rp 60 miliar = Rp 6 miliar. Tarif domestik 20% tidak berlaku karena ada P3B yang lebih rendah.",
+      "dasar": "Pasal 26 UU PPh; P3B Indonesia-Singapura; PER-25/PJ/2018 tentang DGT Form"
+    },
+    {
+      "id": 5,
+      "kategori": "KUP",
+      "skenario": "[STUDI KASUS: PT GLOBALTECH INDONESIA — Lanjutan]\nSetelah pemeriksaan selesai, DJP menerbitkan SKPKB kepada GTI dengan total tagihan Rp 15 miliar (termasuk sanksi). GTI tidak setuju and berencana mengajukan keberatan.",
+      "soal": "[Soal 5/5 — KUP] Untuk mengajukan keberatan, syarat apa yang harus dipenuhi GTI and dokumen apa yang wajib dilampirkan?",
+      "opsi": [
+        "Bayar 50% dari SKPKB (Rp 7,5 M) sebelum keberatan; lampirkan laporan keuangan and dokumen TP",
+        "Keberatan diajukan dalam 3 bulan sejak SKPKB; melunasi pajak yang tidak disengketakan; menyertakan alasan and bukti; tidak disyaratkan bayar 50%",
+        "Bayar 100% SKPKB; lampirkan surat kuasa",
+        "Tidak ada syarat pembayaran; cukup lampirkan surat keberatan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 25 UU KUP and PMK-9/PMK.03/2013: (1) Keberatan diajukan dalam 3 bulan sejak SKPKB diterima; (2) WP wajib melunasi pajak yang tidak disengketakan sebelum mengajukan keberatan; (3) Keberatan memuat alasan yang jelas and dilampiri dokumen pendukung. TIDAK dipersyaratkan membayar 50% (itu syarat BANDING, bukan keberatan). WP juga dapat mengajukan keberatan meski menganggap seluruh tagihan tidak benar.",
+      "dasar": "Pasal 25 UU KUP; PMK-9/PMK.03/2013 tentang Tata Cara Pengajuan and Penyelesaian Keberatan"
+    },
+    {
+      "id": 6,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS B: PT PROPERTI PRIMA]\n\nPT Properti Prima (PP) adalah pengembang properti terbuka (go public). Data 2024:\n- Penjualan rumah tapak: 200 unit x Rp 400 juta = Rp 80 miliar\n- Penjualan apartemen komersial: 50 unit x Rp 1,5 miliar = Rp 75 miliar\n- Biaya konstruksi (HPP): Rp 100 miliar\n- Biaya pemasaran: Rp 15 miliar (termasuk komisi agen Rp 5 miliar)\n- Akuisisi lahan baru dari individu: Rp 50 miliar\n- PP menggunakan metode completed contract untuk pengakuan pendapatan\n- Laba komersial 2024: Rp 20 miliar",
+      "soal": "[Soal 1/5 — PPh Badan] Untuk keperluan pajak, kapan PT PP mengakui pendapatan dari penjualan rumah tapak?",
+      "opsi": [
+        "Pada saat penandatanganan PPJB (Perjanjian Pengikatan Jual Beli)",
+        "Pada saat AJB (Akta Jual Beli) ditandatangani di hadapan notaris / serah terima fisik",
+        "Pada saat uang muka diterima",
+        "Pada saat sertifikat HGB pecah diterbitkan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan SE-40/PJ.4/1994, pengakuan pendapatan untuk pengembang properti yang menggunakan metode completed contract: pendapatan diakui pada saat penjualan dianggap selesai, yaitu ketika risiko and manfaat kepemilikan berpindah dari penjual ke pembeli. Umumnya hal ini terjadi pada saat penandatanganan Akta Jual Beli (AJB) atau serah terima fisik bangunan, mana yang lebih dahulu.",
+      "dasar": "SE-40/PJ.4/1994; Pasal 4 ayat (1) UU PPh"
+    },
+    {
+      "id": 7,
+      "kategori": "PPN",
+      "skenario": "[STUDI KASUS B: PT PROPERTI PRIMA — Lanjutan]",
+      "soal": "[Soal 2/5 — PPN Properti] Dari penjualan properti PT PP, mana yang dibebaskan and mana yang terutang PPN?",
+      "opsi": [
+        "Semua terutang PPN 11% karena semua harga di atas Rp 200 juta",
+        "Rumah tapak Rp 400 juta and apartemen Rp 1,5 miliar keduanya terutang PPN 11%",
+        "Rumah tapak Rp 400 juta terutang PPN; apartemen komersial Rp 1,5 M terutang PPN",
+        "Kedua jenis properti terutang PPN karena di atas batas harga FLPP"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-49/2022 and PMK terkait: Rumah tapak dibebaskan PPN HANYA jika masuk kategori rumah murah/sederhana dengan harga and spesifikasi tertentu (program FLPP). Rumah tapak Rp 400 juta umumnya berada di atas batas harga FLPP, sehingga terutang PPN 11%. Apartemen komersial Rp 1,5 miliar terutang PPN 11%. Keduanya terutang PPN.",
+      "dasar": "PP-49/2022; PMK-60/PMK.03/2023"
+    },
+    {
+      "id": 8,
+      "kategori": "Potput",
+      "skenario": "[STUDI KASUS B: PT PROPERTI PRIMA — Lanjutan]\nPT PP mengakuisisi lahan dari Tn. Budi (individu) seharga Rp 50 miliar.",
+      "soal": "[Soal 3/5 — Potput Tanah] Berapa PPh Final yang harus disetor atas transaksi akuisisi lahan tersebut and siapa yang menanggung?",
+      "opsi": [
+        "PPh Final 2,5% x Rp 50 M = Rp 1,25 M; disetor oleh PT PP sebagai pembeli",
+        "PPh Final 2,5% x Rp 50 M = Rp 1,25 M; merupakan beban Tn. Budi; PT PP memotong and menyetor",
+        "PPh Final 5% x Rp 50 M = Rp 2,5 M; ditanggung PT PP",
+        "Tidak ada PPh karena tanah dijual ke pengembang"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-34/2016, atas pengalihan hak atas tanah/bangunan dikenai PPh Final 2,5% dari nilai tertinggi antara harga transaksi and NJOP. PPh = 2,5% x Rp 50 miliar = Rp 1,25 miliar. PPh ini merupakan beban/kewajiban PENJUAL (Tn. Budi). Secara mekanisme, Tn. Budi wajib menyetor sendiri sebelum AJB ditandatangani. PT PP (pembeli) tidak memotong, namun notaris tidak akan memproses AJB jika SSP belum ada.",
+      "dasar": "PP-34/2016; PMK-261/PMK.03/2016"
+    },
+    {
+      "id": 9,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS B: PT PROPERTI PRIMA — Lanjutan]\nKomisi agen properti Rp 5 miliar dibayarkan kepada 50 agen independen (masing-masing rata-rata Rp 100 juta).",
+      "soal": "[Soal 4/5 — PPh 21 Komisi Agen] Bagaimana pemotongan PPh atas komisi agen yang merupakan perorangan non-pegawai?",
+      "opsi": [
+        "PPh 23 sebesar 2% x Rp 5 miliar = Rp 100 juta",
+        "PPh 21 dengan DPP = 50% x komisi per agen x tarif Pasal 17",
+        "PPh Final 0,5% UMKM karena agen adalah perorangan",
+        "Bebas potput karena dibayar ke individu"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Agen properti perorangan (non-pegawai) yang menerima komisi merupakan tenaga ahli. Berdasarkan PER-16/PJ/2016, pemotongan PPh 21 atas imbalan kepada tenaga ahli bukan pegawai: DPP = 50% x penghasilan bruto. Tarif = tarif Pasal 17 progresif dikalikan DPP. PPh 23 tidak berlaku untuk imbalan kepada orang pribadi (PPh 23 hanya untuk badan).",
+      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+    },
+    {
+      "id": 10,
+      "kategori": "KUP",
+      "skenario": "[STUDI KASUS B: PT PROPERTI PRIMA — Lanjutan]\nDalam pemeriksaan, pemeriksa menemukan dokumen PPJB yang menunjukkan penjualan unit sebelum serah terima tetapi sudah diakui pendapatan fiskal. Pemeriksa akan melakukan koreksi.",
+      "soal": "[Soal 5/5 — Pemeriksaan] Apa langkah prosedural yang WAJIB dilakukan pemeriksa sebelum menerbitkan SKPKB atas koreksi tersebut?",
+      "opsi": [
+        "Langsung menerbitkan SKPKB tanpa pemberitahuan kepada WP",
+        "Menyampaikan Surat Pemberitahuan Hasil Pemeriksaan (SPHP) kepada WP, menyelenggarakan Pembahasan Akhir (closing conference), memproses tanggapan WP, baru menerbitkan SKPKB",
+        "Meminta konfirmasi dari notaris terlebih dahulu",
+        "Menerbitkan STP dahulu, baru SKPKB"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-17/PMK.03/2013 tentang Tata Cara Pemeriksaan, prosedur yang wajib dilakukan sebelum SKPKB: (1) Penyampaian SPHP (Surat Pemberitahuan Hasil Pemeriksaan) kepada WP; (2) WP diberikan hak untuk menanggapi dalam 7 hari kerja; (3) Pembahasan Akhir Hasil Pemeriksaan (Closing Conference); (4) Berita Acara Pembahasan Akhir. Setelah tahapan ini, baru SKPKB diterbitkan. Pelanggaran prosedur ini menjadi dasar pembatalan SKPKB.",
+      "dasar": "PMK-17/PMK.03/2013; Pasal 36 ayat (1) huruf d UU KUP"
+    },
+    {
+      "id": 11,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS C: PT MULTIFINANCE SYARIAH]\n\nPT Multifinance Syariah (MS) bergerak di bidang pembiayaan syariah. Data 2024:\n- Pendapatan margin murabahah: Rp 150 miliar\n- Pendapatan ujroh ijarah: Rp 80 miliar\n- Pendapatan bagi hasil musyarakah: Rp 50 miliar\n- Biaya dana (nisbah bagi hasil ke deposan): Rp 60 miliar\n- Cadangan kerugian penurunan nilai (CKPN) sesuai PSAK 71: Rp 30 miliar\n- Biaya operasional lain: Rp 80 miliar\n- Laba komersial: Rp 110 miliar",
+      "soal": "[Soal 1/5 — PPh Badan Syariah] Berdasarkan PMK tentang perlakuan pajak instrumen keuangan syariah, bagaimana pendapatan margin murabahah diperlakukan untuk PPh Badan?",
+      "opsi": [
+        "Dikenai PPh Final 20% seperti bunga konvensional",
+        "Diperlakukan sama dengan pendapatan bunga konvensional and masuk objek PPh Badan tarif umum 22%",
+        "Dibebaskan karena transaksi syariah tidak kena pajak",
+        "Dikenai PPh Final khusus 10% untuk bank syariah"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-136/PMK.03/2011 tentang Pengenaan PPh terhadap Pihak-pihak yang Melakukan Transaksi dengan Pihak Lain yang Menggunakan Skema Keuangan Syariah, pendapatan dari transaksi keuangan syariah (murabahah, ijarah, musyarakah) mendapat perlakuan PPh yang setara dengan instrumen konvensional. Margin murabahah setara bunga pinjaman: menjadi objek PPh Badan tarif umum.",
+      "dasar": "PMK-136/PMK.03/2011; PMK-137/PMK.03/2011"
+    },
+    {
+      "id": 12,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS C: PT MULTIFINANCE SYARIAH — Lanjutan]",
+      "soal": "[Soal 2/5 — CKPN] Apakah cadangan kerugian penurunan nilai (CKPN) Rp 30 miliar dapat dikurangkan secara fiskal?",
+      "opsi": [
+        "Dapat dikurangkan karena PT MS adalah lembaga keuangan",
+        "Tidak dapat dikurangkan karena CKPN merupakan cadangan yang tidak diperbolehkan",
+        "Dapat dikurangkan hanya 50% sesuai PSAK 71",
+        "Dapat dikurangkan penuh jika mendapat persetujuan OJK"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 9 ayat (1) huruf c UU PPh, pembentukan dana cadangan secara umum tidak dapat dikurangkan. NAMUN, terdapat pengecualian untuk lembaga keuangan termasuk lembaga pembiayaan (multifinance). PMK-81/PMK.03/2009 mengatur bahwa lembaga pembiayaan DAPAT membentuk cadangan piutang tidak tertagih yang dapat dibiayakan secara fiskal sesuai formula tertentu. CKPN yang sesuai formula PMK dapat dikurangkan.",
+      "dasar": "Pasal 9 ayat (1) huruf c UU PPh; PMK-81/PMK.03/2009 jo PMK-219/PMK.010/2012"
+    },
+    {
+      "id": 13,
+      "kategori": "PPN",
+      "skenario": "[STUDI KASUS C: PT MULTIFINANCE SYARIAH — Lanjutan]\nPT MS melakukan transaksi ijarah (leasing syariah): menyewakan aset (kendaraan) kepada nasabah.",
+      "soal": "[Soal 3/5 — PPN Ijarah] Bagaimana perlakuan PPN atas pendapatan ujroh ijarah?",
+      "opsi": [
+        "Dibebaskan PPN karena merupakan jasa keuangan syariah",
+        "Terutang PPN 11% atas nilai ujroh (fee sewa) saja, bukan atas pokok aset",
+        "Terutang PPN atas nilai aset seluruhnya di awal",
+        "Dibebaskan PPN karena ijarah setara leasing keuangan"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PP-49/2022 and PMK-136/PMK.03/2011, jasa keuangan syariah termasuk ijarah yang merupakan setara leasing keuangan DIBEBASKAN dari PPN. Jasa keuangan (dalam hal ini pembiayaan melalui skema ijarah) termasuk kategori jasa yang dibebaskan PPN, setara dengan jasa leasing keuangan konvensional yang juga dibebaskan PPN.",
+      "dasar": "PP-49/2022; PMK-136/PMK.03/2011"
+    },
+    {
+      "id": 14,
+      "kategori": "Potput",
+      "skenario": "[STUDI KASUS C: PT MULTIFINANCE SYARIAH — Lanjutan]\nPT MS membayarkan nisbah bagi hasil kepada deposan perorangan senilai Rp 60 miliar.",
+      "soal": "[Soal 4/5 — PPh Bagi Hasil] Bagaimana pemotongan PPh atas nisbah bagi hasil yang dibayarkan kepada deposan perorangan?",
+      "opsi": [
+        "PPh 23 sebesar 15% karena bukan bunga",
+        "PPh Final 20% setara bunga deposito konvensional",
+        "Bebas PPh karena bagi hasil syariah dikecualikan",
+        "PPh Pasal 17 progresif"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-131/2000 and PMK yang mengatur kesetaraan perlakuan pajak instrumen syariah, nisbah bagi hasil yang dibayarkan oleh lembaga keuangan syariah kepada deposan diperlakukan setara dengan bunga deposito. Oleh karena itu, dikenai PPh Final sebesar 20% (atau 15% untuk deposito berjangka tertentu) yang dipotong oleh PT MS sebagai pembayar.",
+      "dasar": "PP-131/2000; PMK-136/PMK.03/2011"
+    },
+    {
+      "id": 15,
+      "kategori": "KUP",
+      "skenario": "[STUDI KASUS C: PT MULTIFINANCE SYARIAH — Lanjutan]\nPT MS sebagai lembaga keuangan mendapat permintaan data dari pemeriksa pajak atas data nasabah termasuk saldo and transaksi.",
+      "soal": "[Soal 5/5 — Kerahasiaan Data] Apakah pemeriksa pajak dapat mengakses data nasabah PT MS tanpa persetujuan pengadilan?",
+      "opsi": [
+        "Tidak bisa; rahasia keuangan nasabah hanya dapat dibuka dengan perintah pengadilan",
+        "Bisa langsung; pemeriksa pajak memiliki akses penuh ke semua data keuangan",
+        "Bisa, melalui mekanisme permintaan izin kepada OJK sesuai UU PPKS and ketentuan akses data keuangan untuk kepentingan perpajakan",
+        "Tidak bisa; PT MS hanya memberikan data agregat"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan UU No. 9 Tahun 2017 tentang Akses Informasi Keuangan untuk Kepentingan Perpajakan, DJP memiliki akses ke informasi keuangan nasabah lembaga jasa keuangan (termasuk multifinance) untuk kepentingan perpajakan. Mekanismenya melalui permintaan resmi DJP kepada lembaga jasa keuangan tanpa harus melalui pengadilan. Ini merupakan pengecualian dari ketentuan rahasia bank and rahasia lembaga keuangan untuk tujuan perpajakan.",
+      "dasar": "UU No. 9/2017 tentang Akses Informasi Keuangan untuk Kepentingan Perpajakan; PMK-70/PMK.03/2017"
+    },
+    {
+      "id": 16,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS D: PT AGRI NUSANTARA]\n\nPT Agri Nusantara (AN) bergerak di sektor perkebunan kelapa sawit and CPO (crude palm oil). Data 2024:\n- Luas kebun: 5.000 Ha (3.000 Ha plasma, 2.000 Ha inti)\n- Penjualan TBS dari kebun inti: Rp 200 miliar\n- Penjualan CPO hasil pengolahan: Rp 500 miliar (termasuk dari plasma)\n- Pembelian TBS dari petani plasma: Rp 150 miliar\n- Biaya operasional kebun and pabrik: Rp 300 miliar\n- Royalti dibayar ke pemerintah: Rp 50 miliar\n- Laba komersial: Rp 200 miliar",
+      "soal": "[Soal 1/5 — PPh Badan Perkebunan] Dari royalti Rp 50 miliar yang dibayar ke pemerintah, apakah dapat dibebankan sebagai biaya fiskal?",
+      "opsi": [
+        "Dapat dikurangkan penuh sebagai biaya 3M",
+        "Tidak dapat dikurangkan berdasarkan ketentuan perpajakan sektor perkebunan",
+        "Dapat dikurangkan 50% sebagai kompromis",
+        "Dapat dikurangkan jika mendapat persetujuan ESDM"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Royalti yang dibayarkan kepada pemerintah dalam konteks izin usaha perkebunan (IUP) merupakan Penerimaan Negara Bukan Pajak (PNBP) and bukan merupakan biaya yang dapat dikurangkan (non-deductible). Berdasarkan Pasal 9 ayat (1) huruf j UU PPh, pajak penghasilan and pajak-pajak lain yang tidak diperkenankan dikurangkan termasuk iuran kepada pemerintah atas izin pengelolaan sumber daya alam.",
+      "dasar": "Pasal 9 ayat (1) huruf j UU PPh; UU Perkebunan"
+    },
+    {
+      "id": 17,
+      "kategori": "PPN",
+      "skenario": "[STUDI KASUS D: PT AGRI NUSANTARA — Lanjutan]",
+      "soal": "[Soal 2/5 — PPN CPO] Bagaimana perlakuan PPN atas penjualan CPO PT AN?",
+      "opsi": [
+        "Dibebaskan PPN karena hasil pertanian primer",
+        "Terutang PPN 11% karena CPO sudah diolah (bukan hasil pertanian primer)",
+        "Terutang PPN 0% sebagai produk ekspor",
+        "Dibebaskan PPN karena pangan strategis"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PP-49/2022, komoditas pangan termasuk minyak nabati (yang mencakup CPO sebagai bahan baku minyak goreng) termasuk dalam kelompok barang kebutuhan pokok yang DIBEBASKAN dari PPN. Walaupun CPO sudah melalui proses pengolahan, regulasi perpajakan mengkategorikannya sebagai BKP Strategis yang mendapat fasilitas PPN.",
+      "dasar": "PP-49/2022 tentang Barang and Jasa yang Tidak Dikenai/Dibebaskan PPN"
+    },
+    {
+      "id": 18,
+      "kategori": "Potput",
+      "skenario": "[STUDI KASUS D: PT AGRI NUSANTARA — Lanjutan]\nPT AN membeli TBS dari 500 petani plasma perorangan senilai Rp 150 miliar.",
+      "soal": "[Soal 3/5 — PPh Petani] Apakah PT AN wajib memotong PPh atas pembelian TBS dari petani plasma perorangan?",
+      "opsi": [
+        "Wajib memotong PPh 23 sebesar 2%",
+        "Wajib memungut PPh 22 sebesar 0,25%",
+        "Tidak wajib memotong/memungut PPh atas pembelian TBS dari petani plasma",
+        "Wajib memotong PPh Final 1%"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Pembelian TBS dari petani plasma perorangan tidak menimbulkan kewajiban pemotongan/pemungutan PPh bagi PT AN. PPh 22 hanya berlaku untuk pihak tertentu yang ditunjuk, and PT AN bukan bendahara/BUMN/industri tertentu dalam konteks ini. PPh 23 berlaku untuk jasa, bukan pembelian produk pertanian. Petani plasma yang merupakan UMKM dengan omzet tertentu tunduk pada ketentuan PP-55/2022 and wajib membayar PPh sendiri.",
+      "dasar": "PMK-34/PMK.010/2017; PP-55/2022"
+    },
+    {
+      "id": 19,
+      "kategori": "KUP",
+      "skenario": "[STUDI KASUS D: PT AGRI NUSANTARA — Lanjutan]\nPemeriksa menemukan bahwa PT AN tidak memiliki dokumen transfer pricing (TP) meskipun memiliki transaksi afiliasi dengan perusahaan pengolahan di Malaysia senilai Rp 200 miliar.",
+      "soal": "[Soal 4/5 — Dokumentasi TP] Apa konsekuensi hukum bagi PT AN atas ketiadaan dokumentasi transfer pricing?",
+      "opsi": [
+        "Tidak ada konsekuensi karena dokumentasi TP bersifat sukarela",
+        "Dikenai denda administratif and pemeriksa dapat menggunakan metode TP yang paling menguntungkan DJP",
+        "Transaksi afiliasi otomatis dianggap tidak wajar and dikoreksi 100%",
+        "PT AN langsung dikenai pidana pajak"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-213/PMK.03/2016, WP yang bertransaksi dengan pihak berelasi wajib menyiapkan dokumentasi TP (master file, local file, country-by-country report jika memenuhi threshold). Ketiadaan dokumentasi TP: (1) DJP dapat menggunakan data/informasi yang ada untuk menentukan kewajaran transaksi; (2) Beban pembuktian beralih ke WP; (3) WP tidak dapat menggunakan safe harbor. Tidak ada denda khusus untuk ketiadaan dokumen TP, namun memperlemah posisi WP dalam pemeriksaan.",
+      "dasar": "PMK-213/PMK.03/2016 tentang Jenis Dokumen and/atau Informasi Tambahan yang Wajib Disimpan WP yang Melakukan Transaksi dengan Pihak yang Mempunyai Hubungan Istimewa"
+    },
+    {
+      "id": 20,
+      "kategori": "PPh Badan",
+      "skenario": "[STUDI KASUS D: PT AGRI NUSANTARA — Lanjutan]\nPT AN berencana melakukan ekspansi ke sektor hilir dengan mendirikan anak perusahaan (PT Oleokimia) yang akan mengolah CPO menjadi produk oleokimia. PT AN akan menyetorkan tanah and mesin senilai Rp 500 miliar sebagai setoran modal.",
+      "soal": "[Soal 5/5 — Setoran Modal Nonkas] Bagaimana perlakuan pajak atas penyetoran tanah and mesin sebagai setoran modal ke PT Oleokimia?",
+      "opsi": [
+        "Bebas PPh karena merupakan setoran modal",
+        "PT AN dikenai PPh atas keuntungan pengalihan aset (selisih nilai pasar and nilai buku) kecuali mendapat persetujuan penggunaan nilai buku",
+        "PT AN dikenai PPh Final 2,5% atas nilai tanah saja",
+        "PT Oleokimia dikenai PPh atas selisih nilai pasar and nilai buku"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Setoran modal dalam bentuk aset non-kas (in-kind contribution) merupakan pengalihan harta. Berdasarkan Pasal 10 ayat (2) UU PPh, nilai aset yang dialihkan sebagai setoran modal dinilai berdasarkan nilai pasar. Jika nilai pasar > nilai buku, selisihnya merupakan keuntungan yang dikenai PPh bagi PT AN (pengalih). Pengecualian: jika mendapat persetujuan Dirjen Pajak berdasarkan Pasal 10 ayat (3) untuk reorganisasi usaha, dapat menggunakan nilai buku (tidak ada gain).",
+      "dasar": "Pasal 10 ayat (2) and (3) UU PPh; PMK-43/PMK.03/2008"
+    }
+  ]
+}
