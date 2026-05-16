@@ -97,6 +97,7 @@ function resolveAiSettings() {
   return {
     provider,
     apiKey,
+    // Hindari double-slash saat URL endpoint disusun di buildRequest.
     baseUrl: normalizedBaseUrl.replace(/\/+$/, ''),
     models: models.length ? models : providerConfig.models,
     authType: providerConfig.authType

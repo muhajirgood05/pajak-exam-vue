@@ -4,6 +4,10 @@ on:
     - cron: '0 1 * * *' # Jalan setiap jam 8 pagi WIB (1 UTC)
   workflow_dispatch: # Memungkinkan tombol manual di GitHub
 
+concurrency:
+  group: generate-soal-main
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
