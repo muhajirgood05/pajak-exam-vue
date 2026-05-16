@@ -21,7 +21,8 @@ const PROVIDERS = {
     apiKeyEnv: 'MIMO_API_KEY',
     baseUrl: '',
     models: ['mimo-chat'],
-    authType: 'bearer'
+    authType: 'bearer',
+    requiresCustomUrl: true
   },
   deepseek: {
     apiKeyEnv: 'DEEPSEEK_API_KEY',
@@ -79,7 +80,7 @@ function resolveAiSettings() {
   const normalizedBaseUrl = (rawBaseUrl || '').trim();
 
   if (!normalizedBaseUrl) {
-    const extraHint = provider === 'mimo' ? ' Provider mimo wajib set MIMO_BASE_URL atau AI_BASE_URL.' : '';
+    const extraHint = providerConfig.requiresCustomUrl ? ' Provider ini wajib set MIMO_BASE_URL atau AI_BASE_URL.' : '';
     throw new Error(`Base URL untuk provider "${provider}" belum diatur. Set ${prefix}_BASE_URL atau AI_BASE_URL.${extraHint}`);
   }
 
@@ -131,7 +132,8 @@ function extractErrorDetail(data) {
   if (!data) return 'No response body.';
   if (typeof data === 'string') return data.substring(0, MAX_ERROR_LENGTH);
   if (data.error && typeof data.error === 'object') {
-    return `${data.error.message || 'Unknown error'}${data.error.code ? ` (code: ${data.error.code})` : ''}`.substring(0, MAX_ERROR_LENGTH);
+    const codeSuffix = data.error.code ? ` (code: ${data.error.code})` : '';
+    return `${data.error.message || 'Unknown error'}${codeSuffix}`.substring(0, MAX_ERROR_LENGTH);
   }
   if (data.message) return String(data.message).substring(0, MAX_ERROR_LENGTH);
   return JSON.stringify(data).substring(0, MAX_ERROR_LENGTH);
