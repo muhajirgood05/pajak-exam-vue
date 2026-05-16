@@ -24,7 +24,13 @@ jobs:
           
       - name: Run Generator Script
         env:
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_MODELS: ${{ vars.AI_MODELS }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_SITE_URL: ${{ vars.OPENROUTER_SITE_URL }}
+          OPENROUTER_APP_NAME: pajak-exam-vue
         run: node scripts/generate-soal.cjs
         timeout-minutes: 10
         
@@ -33,7 +39,13 @@ jobs:
         
       - name: Run Validator Script
         env:
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_MODELS: ${{ vars.AI_MODELS }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_SITE_URL: ${{ vars.OPENROUTER_SITE_URL }}
+          OPENROUTER_APP_NAME: pajak-exam-vue
         run: node scripts/validate-soal.cjs
         timeout-minutes: 15
           

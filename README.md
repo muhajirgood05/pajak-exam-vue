@@ -1,5 +1,23 @@
-# Vue 3 + Vite
+# pajak-exam-vue
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Development
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+- Install dependencies: `npm install`
+- Start dev server: `npm run dev`
+- Build production bundle: `npm run build`
+
+## Generate soal workflow
+
+Generator dan validator sekarang bisa memakai salah satu provider berikut:
+
+- **Gemini** dengan `GEMINI_API_KEY`
+- **OpenRouter** dengan `OPENROUTER_API_KEY`
+
+Konfigurasi opsional:
+
+- `AI_PROVIDER=gemini` atau `AI_PROVIDER=openrouter`
+- `AI_MODEL` untuk memilih satu model
+- `AI_MODELS` untuk daftar fallback model dipisahkan koma
+- `OPENROUTER_SITE_URL` untuk header `HTTP-Referer`
+
+Jika `AI_PROVIDER` tidak diisi, script akan auto-detect dari key yang tersedia. Untuk kompatibilitas lama, jika `GEMINI_API_KEY` ternyata berisi key OpenRouter, script akan memakai OpenRouter secara otomatis.
