@@ -1,12 +1,50 @@
 const fs = require('fs');
 const path = require('path');
 
-// Model fallback list - jika model pertama gagal, coba berikutnya
-const MODELS = [
-  'gemini-2.0-flash',
-  'gemini-1.5-flash',
-  'gemini-2.5-flash'
-];
+const PROVIDERS = {
+  gemini: {
+    protocol: 'gemini',
+    baseUrl: 'https://generativelanguage.googleapis.com',
+    endpoint: '/v1beta/models/{model}:generateContent',
+    modelList: ['gemini-2.0-flash', 'gemini-2.5-flash', 'gemini-1.5-flash'],
+    keyEnvs: ['GEMINI_API_KEY']
+  },
+  openrouter: {
+    protocol: 'openai',
+    baseUrl: 'https://openrouter.ai/api/v1',
+    endpoint: '/chat/completions',
+    modelList: ['google/gemini-2.5-flash', 'google/gemini-2.0-flash-001', 'deepseek/deepseek-chat-v3-0324:free'],
+    keyEnvs: ['OPENROUTER_API_KEY', 'GEMINI_API_KEY']
+  },
+  kimi: {
+    protocol: 'openai',
+    baseUrl: 'https://api.moonshot.cn/v1',
+    endpoint: '/chat/completions',
+    modelList: ['moonshot-v1-8k', 'moonshot-v1-32k'],
+    keyEnvs: ['KIMI_API_KEY']
+  },
+  mimo: {
+    protocol: 'openai',
+    baseUrl: 'https://api.mimo.ai/v1',
+    endpoint: '/chat/completions',
+    modelList: ['mimo-v1'],
+    keyEnvs: ['MIMO_API_KEY']
+  },
+  deepseek: {
+    protocol: 'openai',
+    baseUrl: 'https://api.deepseek.com/v1',
+    endpoint: '/chat/completions',
+    modelList: ['deepseek-chat', 'deepseek-reasoner'],
+    keyEnvs: ['DEEPSEEK_API_KEY']
+  },
+  qwen: {
+    protocol: 'openai',
+    baseUrl: 'https://dashscope-intl.aliyuncs.com/compatible-mode/v1',
+    endpoint: '/chat/completions',
+    modelList: ['qwen-plus', 'qwen-turbo'],
+    keyEnvs: ['QWEN_API_KEY']
+  }
+};
 
 // Retry helper with exponential backoff
 async function fetchWithRetry(url, options, maxRetries = 4) {
@@ -39,68 +77,168 @@ async function fetchWithRetry(url, options, maxRetries = 4) {
   throw lastError || new Error(`All ${maxRetries} attempts failed.`);
 }
 
+function normalizeProviderName(value) {
+  return (value || '').trim().toLowerCase().replace(/[-_ ]/g, '');
+}
+
+function detectProviderName() {
+  const explicit = process.env.AI_API_SYSTEM || process.env.LLM_API_SYSTEM;
+  const normalized = normalizeProviderName(explicit);
+  if (normalized) {
+    if (PROVIDERS[normalized]) return normalized;
+    return 'custom';
+  }
+  if (process.env.OPENROUTER_API_KEY) return 'openrouter';
+  if (process.env.KIMI_API_KEY) return 'kimi';
+  if (process.env.MIMO_API_KEY) return 'mimo';
+  if (process.env.DEEPSEEK_API_KEY) return 'deepseek';
+  if (process.env.QWEN_API_KEY) return 'qwen';
+  return 'gemini';
+}
+
+function resolveApiConfig() {
+  const providerName = detectProviderName();
+  const provider = PROVIDERS[providerName] || {
+    protocol: 'openai',
+    baseUrl: 'https://openrouter.ai/api/v1',
+    endpoint: '/chat/completions',
+    modelList: ['google/gemini-2.5-flash'],
+    keyEnvs: []
+  };
+
+  const keyCandidates = [
+    process.env.AI_API_KEY,
+    process.env.LLM_API_KEY,
+    ...provider.keyEnvs.map(envName => process.env[envName])
+  ].filter(Boolean);
+  const apiKey = keyCandidates[0];
+  if (!apiKey) {
+    throw new Error(`API key tidak ditemukan untuk provider "${providerName}". Set AI_API_KEY atau key spesifik provider.`);
+  }
+
+  const prefix = providerName.toUpperCase();
+  const modelListFromEnv = process.env.AI_MODEL_LIST || process.env[`${prefix}_MODEL_LIST`];
+  const preferredModel = process.env.AI_MODEL || process.env[`${prefix}_MODEL`];
+  const models = modelListFromEnv
+    ? modelListFromEnv.split(',').map(m => m.trim()).filter(Boolean)
+    : [...provider.modelList];
+  if (preferredModel && !models.includes(preferredModel)) {
+    models.unshift(preferredModel);
+  }
+
+  const baseUrl = (process.env.AI_BASE_URL || process.env[`${prefix}_BASE_URL`] || provider.baseUrl).replace(/\/$/, '');
+  const endpoint = process.env.AI_ENDPOINT || process.env[`${prefix}_ENDPOINT`] || provider.endpoint;
+  const authType = (process.env.AI_AUTH_TYPE || process.env[`${prefix}_AUTH_TYPE`] || (provider.protocol === 'gemini' ? 'query' : 'bearer')).toLowerCase();
+  const authHeader = process.env.AI_AUTH_HEADER || process.env[`${prefix}_AUTH_HEADER`] || 'Authorization';
+
+  return { providerName, protocol: provider.protocol, apiKey, models, baseUrl, endpoint, authType, authHeader };
+}
+
+function buildRequest(config, model, prompt) {
+  const headers = { 'Content-Type': 'application/json' };
+  let requestPath = config.endpoint.replace('{model}', encodeURIComponent(model));
+
+  if (config.authType === 'bearer') {
+    headers[config.authHeader] = `Bearer ${config.apiKey}`;
+  } else if (config.authType === 'x-api-key') {
+    headers[config.authHeader] = config.apiKey;
+  } else if (config.authType === 'query') {
+    const separator = requestPath.includes('?') ? '&' : '?';
+    requestPath += `${separator}key=${encodeURIComponent(config.apiKey)}`;
+  }
+
+  if (config.providerName === 'openrouter') {
+    if (process.env.OPENROUTER_REFERER) headers['HTTP-Referer'] = process.env.OPENROUTER_REFERER;
+    if (process.env.OPENROUTER_TITLE) headers['X-Title'] = process.env.OPENROUTER_TITLE;
+  }
+
+  const url = `${config.baseUrl}${requestPath}`;
+  const body = config.protocol === 'gemini'
+    ? {
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.7,
+        maxOutputTokens: 8192,
+        responseMimeType: 'application/json'
+      }
+    }
+    : {
+      model,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      max_tokens: 8192
+    };
+
+  return { url, headers, body };
+}
+
+function extractTextFromResponse(config, model, data) {
+  if (config.protocol === 'gemini') {
+    if (!data.candidates || !data.candidates[0]) {
+      throw new Error('No candidates in response.');
+    }
+    const candidate = data.candidates[0];
+    if (candidate.finishReason && candidate.finishReason !== 'STOP' && candidate.finishReason !== 'MAX_TOKENS') {
+      throw new Error(`Blocked by safety filter. Reason: ${candidate.finishReason}`);
+    }
+    if (!candidate.content || !candidate.content.parts || !candidate.content.parts[0].text) {
+      throw new Error('Response missing text content.');
+    }
+    return candidate.content.parts[0].text.trim();
+  }
+
+  const message = data.choices && data.choices[0] && data.choices[0].message;
+  const text = typeof message?.content === 'string'
+    ? message.content
+    : Array.isArray(message?.content)
+      ? message.content.map(part => (typeof part === 'string' ? part : part?.text || '')).join('\n')
+      : '';
+  if (!text) {
+    throw new Error('No text content in choices[0].message.content.');
+  }
+  return text.trim();
+}
+
 // Coba panggil API dengan fallback model
-async function callGeminiWithFallback(apiKey, prompt) {
-  for (const model of MODELS) {
-    console.log(`Mencoba model: ${model}...`);
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-    
+async function callAiWithFallback(config, prompt) {
+  for (const model of config.models) {
+    console.log(`[${config.providerName}] Mencoba model: ${model}...`);
+    const { url, headers, body } = buildRequest(config, model, prompt);
+
     try {
       const response = await fetchWithRetry(url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: {
-            temperature: 0.7,
-            maxOutputTokens: 8192,
-            responseMimeType: 'application/json'
-          }
-        })
+        headers,
+        body: JSON.stringify(body)
       });
 
       const data = await response.json();
-      
+
       if (!response.ok) {
-        console.error(`Model ${model} API Error (${response.status}):`, JSON.stringify(data).substring(0, 500));
+        console.error(`[${config.providerName}] Model ${model} API Error (${response.status}):`, JSON.stringify(data).substring(0, 500));
         continue; // Coba model berikutnya
       }
 
-      // Cek apakah response punya content
-      if (!data.candidates || !data.candidates[0]) {
-        console.error(`Model ${model}: No candidates in response.`);
-        continue;
-      }
-
-      const candidate = data.candidates[0];
-      
-      // Cek finish reason
-      if (candidate.finishReason && candidate.finishReason !== 'STOP' && candidate.finishReason !== 'MAX_TOKENS') {
-        console.error(`Model ${model}: Blocked by safety filter. Reason: ${candidate.finishReason}`);
-        continue;
-      }
-
-      if (!candidate.content || !candidate.content.parts || !candidate.content.parts[0].text) {
-        console.error(`Model ${model}: Response missing text content.`);
-        continue;
-      }
-
-      return { model, text: candidate.content.parts[0].text.trim() };
+      const text = extractTextFromResponse(config, model, data);
+      return { model, text };
     } catch (err) {
-      console.error(`Model ${model} failed completely: ${err.message}`);
+      console.error(`[${config.providerName}] Model ${model} gagal: ${err.message}`);
       continue; // Coba model berikutnya
     }
   }
-  
-  throw new Error('Semua model gagal. Tidak bisa generate soal.');
+
+  throw new Error(`[${config.providerName}] Semua model gagal. Tidak bisa generate soal.`);
 }
 
 async function generateSoal() {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    console.error('Error: GEMINI_API_KEY is not set.');
+  let apiConfig;
+  try {
+    apiConfig = resolveApiConfig();
+  } catch (err) {
+    console.error(`Error: ${err.message}`);
     process.exit(1);
   }
+  console.log(`Menggunakan provider API: ${apiConfig.providerName} (base URL: ${apiConfig.baseUrl})`);
 
   const paketDir = path.join(__dirname, '../src/data/paket');
   
@@ -256,7 +394,7 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
   console.log(`\nAkan generate ${numToGenerate} soal untuk ${targetSesi} di file ${targetFile}...`);
 
   try {
-    const result = await callGeminiWithFallback(apiKey, fullPrompt);
+    const result = await callAiWithFallback(apiConfig, fullPrompt);
     console.log(`Berhasil dengan model: ${result.model}`);
     
     const text = result.text;
