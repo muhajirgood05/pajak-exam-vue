@@ -67,13 +67,13 @@ jobs:
           if [[ -z "$(git status --porcelain)" ]]; then
             echo "No changes to commit"
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
-            exit 0
+          else
+            git add .
+            git commit -m "feat: tambah paket soal baru oleh Hermes"
+            git pull --rebase origin main
+            git push
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
-          git add .
-          git commit -m "feat: tambah paket soal baru oleh Hermes"
-          git pull --rebase origin main
-          git push
-          echo "has_changes=true" >> "$GITHUB_OUTPUT"
 
       - name: Deploy to Vercel
         if: steps.commit_and_push.outputs.has_changes == 'true'
@@ -83,7 +83,7 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
           if [[ -z "$VERCEL_TOKEN" || -z "$VERCEL_ORG_ID" || -z "$VERCEL_PROJECT_ID" ]]; then
-            echo "Konfigurasi Vercel belum lengkap. Pastikan VERCEL_TOKEN, VERCEL_ORG_ID, dan VERCEL_PROJECT_ID tersedia."
+            echo "Vercel configuration incomplete. Ensure VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID are set."
             exit 1
           fi
           npx vercel deploy --prod --yes --token "$VERCEL_TOKEN"

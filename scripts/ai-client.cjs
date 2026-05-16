@@ -36,11 +36,13 @@ const PROVIDERS = {
     authType: 'bearer'
   }
 };
+const DEFAULT_PROVIDER = 'gemini';
+const MAX_ERROR_LENGTH = 500;
 const FINISH_REASON_STOP = 'STOP';
 const FINISH_REASON_MAX_TOKENS = 'MAX_TOKENS';
 
 function normalizeProvider(input) {
-  const raw = (input || 'gemini').toLowerCase().trim();
+  const raw = (input || DEFAULT_PROVIDER).toLowerCase().trim();
   if (raw === 'open-router') return 'openrouter';
   return raw;
 }
@@ -125,12 +127,12 @@ async function fetchWithRetry(url, options, maxRetries = 4) {
 
 function extractErrorDetail(data) {
   if (!data) return 'No response body.';
-  if (typeof data === 'string') return data.substring(0, 500);
+  if (typeof data === 'string') return data.substring(0, MAX_ERROR_LENGTH);
   if (data.error && typeof data.error === 'object') {
-    return `${data.error.message || 'Unknown error'}${data.error.code ? ` (code: ${data.error.code})` : ''}`.substring(0, 500);
+    return `${data.error.message || 'Unknown error'}${data.error.code ? ` (code: ${data.error.code})` : ''}`.substring(0, MAX_ERROR_LENGTH);
   }
-  if (data.message) return String(data.message).substring(0, 500);
-  return JSON.stringify(data).substring(0, 500);
+  if (data.message) return String(data.message).substring(0, MAX_ERROR_LENGTH);
+  return JSON.stringify(data).substring(0, MAX_ERROR_LENGTH);
 }
 
 async function parseResponseData(response) {
