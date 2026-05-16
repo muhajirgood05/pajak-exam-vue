@@ -36,6 +36,8 @@ const PROVIDERS = {
     authType: 'bearer'
   }
 };
+const FINISH_REASON_STOP = 'STOP';
+const FINISH_REASON_MAX_TOKENS = 'MAX_TOKENS';
 
 function normalizeProvider(input) {
   const raw = (input || 'gemini').toLowerCase().trim();
@@ -144,7 +146,11 @@ function extractResponseText(provider, data) {
   if (provider === 'gemini') {
     const candidate = data && data.candidates && data.candidates[0];
     if (!candidate) return null;
-    if (candidate.finishReason && candidate.finishReason !== 'STOP' && candidate.finishReason !== 'MAX_TOKENS') {
+    if (
+      candidate.finishReason &&
+      candidate.finishReason !== FINISH_REASON_STOP &&
+      candidate.finishReason !== FINISH_REASON_MAX_TOKENS
+    ) {
       return null;
     }
     return candidate.content && candidate.content.parts && candidate.content.parts[0] && candidate.content.parts[0].text

@@ -76,7 +76,8 @@ Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
   try {
     result = await callAiWithFallback(aiSettings, fullPrompt, { temperature: 0.3, maxOutputTokens: 8192 });
     console.log(`Validasi berhasil dengan provider/model: ${result.provider}/${result.model}`);
-  } catch (_) {
+  } catch (err) {
+    console.error(`Validasi AI gagal: ${err.message}`);
     result = null;
   }
   const rawText = result ? result.text : null;
