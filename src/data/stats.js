@@ -1,5 +1,5 @@
 import { PACKAGES } from './soalBank.js';
-import { supabase, syncResultToSupabase, fetchAllGlobalResults } from './supabase.js';
+import { getSupabaseClient, syncResultToSupabase, fetchAllGlobalResults } from './supabase.js';
 
 // Simple statistics manager
 // For 'Everyone' stats, in a real app we'd use Supabase/Firebase.
@@ -20,7 +20,7 @@ export const saveResultLocally = async (packageId, sessionId, results, ip) => {
   localStorage.setItem('pajak_exam_all_results', JSON.stringify(allResults));
 
   // Sync to global DB if configured
-  if (supabase) {
+  if (getSupabaseClient()) {
     await syncResultToSupabase(packageId, sessionId, results, ip);
   }
   
@@ -65,7 +65,7 @@ export const getAggregatedStats = (allResults) => {
 export const getAllStats = async () => {
   const localResults = JSON.parse(localStorage.getItem('pajak_exam_all_results') || '[]');
   
-  if (!supabase) return getAggregatedStats(localResults);
+  if (!getSupabaseClient()) return getAggregatedStats(localResults);
 
   const globalResults = await fetchAllGlobalResults();
   

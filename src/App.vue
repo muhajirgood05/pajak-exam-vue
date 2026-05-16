@@ -24,64 +24,107 @@
       <nav class="topbar">
         <div class="topbar-brand">
           <button class="tab-btn" @click="currentView = 'menu'">⬅ Kembali</button>
-          <span style="font-weight: 600;">📊 Dashboard Evaluasi Soal</span>
+          <span style="font-weight: 600;">📊 Dashboard Admin</span>
+        </div>
+        <div class="topbar-tabs">
+          <button 
+            :class="['tab-btn', { active: dashboardTab === 'stats' }]" 
+            @click="dashboardTab = 'stats'"
+          >
+            Evaluasi Soal
+          </button>
+          <button 
+            :class="['tab-btn', { active: dashboardTab === 'config' }]" 
+            @click="dashboardTab = 'config'"
+          >
+            Konfigurasi
+          </button>
         </div>
         <div class="topbar-right">
-          <button class="btn btn-sm btn-outline" @click="refreshStats">🔄 Refresh</button>
+          <button v-if="dashboardTab === 'stats'" class="btn btn-sm btn-outline" @click="refreshStats">🔄 Refresh</button>
           <button class="btn btn-sm btn-danger" @click="logoutAdmin">Keluar</button>
         </div>
       </nav>
       
       <main class="dashboard-content">
-        <div class="stats-overview">
-          <div class="stat-card">
-            <div class="stat-val">{{ Object.keys(aggregatedStats).length }}</div>
-            <div class="stat-lab">Paket Aktif</div>
+        <!-- STATS TAB -->
+        <div v-if="dashboardTab === 'stats'">
+          <div class="stats-overview">
+            <div class="stat-card">
+              <div class="stat-val">{{ Object.keys(aggregatedStats).length }}</div>
+              <div class="stat-lab">Paket Aktif</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val">{{ totalSubmissions }}</div>
+              <div class="stat-lab">Total Ujian Selesai</div>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-val">{{ totalSubmissions }}</div>
-            <div class="stat-lab">Total Ujian Selesai</div>
+
+          <div v-for="(pkgStats, pkgId) in aggregatedStats" :key="pkgId" class="pkg-stats-section">
+            <div class="pkg-stats-header">
+              <h3>{{ pkgId.replace(/-/g, ' ') }}</h3>
+              <span class="badge badge-blue">{{ pkgStats.totalSubmissions }} Submisi</span>
+            </div>
+            
+            <div class="stats-table-container">
+              <table class="stats-table">
+                <thead>
+                  <tr>
+                    <th>No Soal</th>
+                    <th>Total Jawab</th>
+                    <th>Benar</th>
+                    <th>Salah</th>
+                    <th>Tingkat Kesulitan</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(s, qId) in getSortedQuestions(pkgStats.questions)" :key="qId">
+                    <td>#{{ qId }}</td>
+                    <td>{{ s.total }}</td>
+                    <td class="text-green">{{ s.correct }}</td>
+                    <td class="text-red">{{ s.wrong }}</td>
+                    <td>
+                      <div class="diff-bar">
+                        <div class="diff-fill" :style="{ width: s.wrongPct + '%', background: getDiffColor(s.wrongPct) }"></div>
+                      </div>
+                      <span class="diff-val">{{ s.wrongPct }}% Salah</span>
+                    </td>
+                    <td>
+                      <span v-if="s.wrongPct > 70" class="badge badge-red">SANGAT SULIT</span>
+                      <span v-else-if="s.wrongPct > 40" class="badge badge-amber">SULIT</span>
+                      <span v-else class="badge badge-green">NORMAL</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
-        <div v-for="(pkgStats, pkgId) in aggregatedStats" :key="pkgId" class="pkg-stats-section">
-          <div class="pkg-stats-header">
-            <h3>{{ pkgId.replace(/-/g, ' ') }}</h3>
-            <span class="badge badge-blue">{{ pkgStats.totalSubmissions }} Submisi</span>
-          </div>
-          
-          <div class="stats-table-container">
-            <table class="stats-table">
-              <thead>
-                <tr>
-                  <th>No Soal</th>
-                  <th>Total Jawab</th>
-                  <th>Benar</th>
-                  <th>Salah</th>
-                  <th>Tingkat Kesulitan</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="(s, qId) in getSortedQuestions(pkgStats.questions)" :key="qId">
-                  <td>#{{ qId }}</td>
-                  <td>{{ s.total }}</td>
-                  <td class="text-green">{{ s.correct }}</td>
-                  <td class="text-red">{{ s.wrong }}</td>
-                  <td>
-                    <div class="diff-bar">
-                      <div class="diff-fill" :style="{ width: s.wrongPct + '%', background: getDiffColor(s.wrongPct) }"></div>
-                    </div>
-                    <span class="diff-val">{{ s.wrongPct }}% Salah</span>
-                  </td>
-                  <td>
-                    <span v-if="s.wrongPct > 70" class="badge badge-red">SANGAT SULIT</span>
-                    <span v-else-if="s.wrongPct > 40" class="badge badge-amber">SULIT</span>
-                    <span v-else class="badge badge-green">NORMAL</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <!-- CONFIG TAB -->
+        <div v-if="dashboardTab === 'config'" class="config-section">
+          <div class="stat-card" style="max-width: 600px; margin: 0 auto;">
+            <h3>Pengaturan Supabase</h3>
+            <p style="font-size: 13px; color: var(--text3); margin-bottom: 1.5rem;">
+              Konfigurasi ini digunakan untuk mensinkronkan statistik "Everyone" lintas browser dan perangkat.
+            </p>
+            
+            <div class="form-group">
+              <label>Supabase URL</label>
+              <input v-model="config.supabaseUrl" type="text" placeholder="https://xxx.supabase.co" class="admin-input" style="margin: 8px 0 20px;">
+            </div>
+            
+            <div class="form-group">
+              <label>Supabase Anon Key</label>
+              <input v-model="config.supabaseKey" type="password" placeholder="eyJhbG..." class="admin-input" style="margin: 8px 0 20px;">
+            </div>
+            
+            <button class="btn btn-primary" @click="saveConfig" style="width: 100%;">Simpan Konfigurasi</button>
+            
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg2); border-radius: var(--radius-sm); font-size: 12px;">
+              <strong>Note:</strong> Data ini disimpan secara lokal di browser Anda. Untuk pengamanan maksimal, gunakan Environment Variables di Vercel.
+            </div>
           </div>
         </div>
       </main>
@@ -183,12 +226,25 @@ const currentView = ref('menu'); // 'menu', 'exam', 'dashboard'
 const currentPackageId = ref(null);
 const currentPackage = computed(() => PACKAGES.find(p => p.id === currentPackageId.value));
 const currentExamSession = ref('sesi1');
+const dashboardTab = ref('stats'); // 'stats', 'config'
 
 // Admin Logic
 const isAdmin = ref(false);
 const showAdminLogin = ref(false);
 const adminPassword = ref('');
 const loginAttempts = ref(0);
+
+const config = ref({
+  supabaseUrl: localStorage.getItem('VITE_SUPABASE_URL') || '',
+  supabaseKey: localStorage.getItem('VITE_SUPABASE_ANON_KEY') || ''
+});
+
+const saveConfig = () => {
+  localStorage.setItem('VITE_SUPABASE_URL', config.value.supabaseUrl);
+  localStorage.setItem('VITE_SUPABASE_ANON_KEY', config.value.supabaseKey);
+  alert('Konfigurasi Disimpan! Silakan refresh halaman.');
+  window.location.reload();
+};
 
 const handleAdminTrigger = () => {
   loginAttempts.value++;

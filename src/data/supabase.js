@@ -1,15 +1,25 @@
 import { createClient } from '@supabase/supabase-js'
 
-// These should be set in environment variables
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+const getCreds = () => {
+  return {
+    url: import.meta.env.VITE_SUPABASE_URL || localStorage.getItem('VITE_SUPABASE_URL') || '',
+    key: import.meta.env.VITE_SUPABASE_ANON_KEY || localStorage.getItem('VITE_SUPABASE_ANON_KEY') || ''
+  };
+};
 
-export const supabase = (supabaseUrl && supabaseKey) ? createClient(supabaseUrl, supabaseKey) : null;
+export const getSupabaseClient = () => {
+  const { url, key } = getCreds();
+  if (url && key) {
+    return createClient(url, key);
+  }
+  return null;
+};
 
 export const syncResultToSupabase = async (packageId, sessionId, results, ip) => {
-  if (!supabase) return null;
+  const client = getSupabaseClient();
+  if (!client) return null;
   
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('pajak_exam_results')
     .insert([
       { 
@@ -26,9 +36,10 @@ export const syncResultToSupabase = async (packageId, sessionId, results, ip) =>
 };
 
 export const fetchAllGlobalResults = async () => {
-  if (!supabase) return [];
+  const client = getSupabaseClient();
+  if (!client) return [];
   
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('pajak_exam_results')
     .select('*');
     
