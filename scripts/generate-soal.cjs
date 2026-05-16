@@ -1,106 +1,16 @@
 const fs = require('fs');
 const path = require('path');
-
-// Model fallback list - jika model pertama gagal, coba berikutnya
-const MODELS = [
-  'gemini-2.0-flash',
-  'gemini-1.5-flash',
-  'gemini-2.5-flash'
-];
-
-// Retry helper with exponential backoff
-async function fetchWithRetry(url, options, maxRetries = 4) {
-  let lastError = null;
-  for (let attempt = 1; attempt <= maxRetries; attempt++) {
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 120000); // 2 menit timeout
-      
-      const response = await fetch(url, { ...options, signal: controller.signal });
-      clearTimeout(timeout);
-      
-      // Jika rate limited (429) atau server error (5xx), retry
-      if (response.status === 429 || response.status >= 500) {
-        const waitTime = Math.min(3000 * Math.pow(2, attempt - 1), 90000);
-        console.log(`  Attempt ${attempt}/${maxRetries} failed with status ${response.status}. Retrying in ${waitTime / 1000}s...`);
-        await new Promise(resolve => setTimeout(resolve, waitTime));
-        continue;
-      }
-      
-      return response;
-    } catch (err) {
-      lastError = err;
-      if (attempt === maxRetries) throw err;
-      const waitTime = Math.min(3000 * Math.pow(2, attempt - 1), 90000);
-      console.log(`  Attempt ${attempt}/${maxRetries} error: ${err.message}. Retrying in ${waitTime / 1000}s...`);
-      await new Promise(resolve => setTimeout(resolve, waitTime));
-    }
-  }
-  throw lastError || new Error(`All ${maxRetries} attempts failed.`);
-}
-
-// Coba panggil API dengan fallback model
-async function callGeminiWithFallback(apiKey, prompt) {
-  for (const model of MODELS) {
-    console.log(`Mencoba model: ${model}...`);
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-    
-    try {
-      const response = await fetchWithRetry(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: {
-            temperature: 0.7,
-            maxOutputTokens: 8192,
-            responseMimeType: 'application/json'
-          }
-        })
-      });
-
-      const data = await response.json();
-      
-      if (!response.ok) {
-        console.error(`Model ${model} API Error (${response.status}):`, JSON.stringify(data).substring(0, 500));
-        continue; // Coba model berikutnya
-      }
-
-      // Cek apakah response punya content
-      if (!data.candidates || !data.candidates[0]) {
-        console.error(`Model ${model}: No candidates in response.`);
-        continue;
-      }
-
-      const candidate = data.candidates[0];
-      
-      // Cek finish reason
-      if (candidate.finishReason && candidate.finishReason !== 'STOP' && candidate.finishReason !== 'MAX_TOKENS') {
-        console.error(`Model ${model}: Blocked by safety filter. Reason: ${candidate.finishReason}`);
-        continue;
-      }
-
-      if (!candidate.content || !candidate.content.parts || !candidate.content.parts[0].text) {
-        console.error(`Model ${model}: Response missing text content.`);
-        continue;
-      }
-
-      return { model, text: candidate.content.parts[0].text.trim() };
-    } catch (err) {
-      console.error(`Model ${model} failed completely: ${err.message}`);
-      continue; // Coba model berikutnya
-    }
-  }
-  
-  throw new Error('Semua model gagal. Tidak bisa generate soal.');
-}
+const { resolveAiSettings, callAiWithFallback } = require('./ai-client.cjs');
 
 async function generateSoal() {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    console.error('Error: GEMINI_API_KEY is not set.');
+  let aiSettings;
+  try {
+    aiSettings = resolveAiSettings();
+  } catch (err) {
+    console.error(`Error konfigurasi AI: ${err.message}`);
     process.exit(1);
   }
+  console.log(`Provider AI aktif: ${aiSettings.provider}. Total model fallback: ${aiSettings.models.length}`);
 
   const paketDir = path.join(__dirname, '../src/data/paket');
   
@@ -256,8 +166,8 @@ PENTING: Output HANYA JSON array valid. Mulai dengan [ akhiri dengan ].`;
   console.log(`\nAkan generate ${numToGenerate} soal untuk ${targetSesi} di file ${targetFile}...`);
 
   try {
-    const result = await callGeminiWithFallback(apiKey, fullPrompt);
-    console.log(`Berhasil dengan model: ${result.model}`);
+    const result = await callAiWithFallback(aiSettings, fullPrompt, { temperature: 0.7, maxOutputTokens: 8192 });
+    console.log(`Berhasil dengan provider/model: ${result.provider}/${result.model}`);
     
     const text = result.text;
     

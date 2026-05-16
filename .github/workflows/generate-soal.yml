@@ -4,6 +4,10 @@ on:
     - cron: '0 1 * * *' # Jalan setiap jam 8 pagi WIB (1 UTC)
   workflow_dispatch: # Memungkinkan tombol manual di GitHub
 
+concurrency:
+  group: generate-soal-main
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,14 +21,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
           
       - name: Install Dependencies
         run: npm install
           
       - name: Run Generator Script
         env:
+          AI_PROVIDER: ${{ vars.AI_PROVIDER || 'gemini' }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_MODELS: ${{ vars.AI_MODELS }}
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          OPENROUTER_HTTP_REFERER: ${{ vars.OPENROUTER_HTTP_REFERER }}
+          OPENROUTER_X_TITLE: ${{ vars.OPENROUTER_X_TITLE }}
         run: node scripts/generate-soal.cjs
         timeout-minutes: 10
         
@@ -33,14 +48,47 @@ jobs:
         
       - name: Run Validator Script
         env:
+          AI_PROVIDER: ${{ vars.AI_PROVIDER || 'gemini' }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_MODELS: ${{ vars.AI_MODELS }}
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          OPENROUTER_HTTP_REFERER: ${{ vars.OPENROUTER_HTTP_REFERER }}
+          OPENROUTER_X_TITLE: ${{ vars.OPENROUTER_X_TITLE }}
         run: node scripts/validate-soal.cjs
         timeout-minutes: 15
           
       - name: Commit and Push
+        id: commit_and_push
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           git config --global user.name 'Hermes AI'
           git config --global user.email 'hermes-ai@users.noreply.github.com'
-          git add .
-          git commit -m "feat: tambah paket soal baru oleh Hermes" || echo "No changes to commit"
-          git push
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to commit"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            git add .
+            git commit -m "feat: tambah paket soal baru oleh Hermes"
+            git push || (git pull --rebase origin "$DEFAULT_BRANCH" && git push)
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy to Vercel
+        if: steps.commit_and_push.outputs.has_changes == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          if [[ -z "$VERCEL_TOKEN" || -z "$VERCEL_ORG_ID" || -z "$VERCEL_PROJECT_ID" ]]; then
+            echo "Vercel configuration incomplete. Ensure VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID are set."
+            exit 1
+          fi
+          npx vercel deploy --prod --yes --token "$VERCEL_TOKEN"
