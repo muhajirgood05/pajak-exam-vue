@@ -79,8 +79,8 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(s, qId) in getSortedQuestions(pkgStats.questions)" :key="qId">
-                    <td>#{{ qId }}</td>
+                  <tr v-for="s in getSortedQuestions(pkgStats.questions)" :key="s.id">
+                    <td>#{{ s.id }}</td>
                     <td>{{ s.total }}</td>
                     <td class="text-green">{{ s.correct }}</td>
                     <td class="text-red">{{ s.wrong }}</td>
