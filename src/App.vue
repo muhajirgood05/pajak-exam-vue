@@ -1,12 +1,102 @@
 <template>
-  <div>
+    <div :class="{ 'dark-theme': isDarkMode }">
+    <!-- ADMIN LOGIN MODAL -->
+    <div v-if="showAdminLogin" class="modal-overlay">
+      <div class="modal-content">
+        <h3>Akses Administrator</h3>
+        <p>Masukkan password untuk mengakses Dashboard Statistik.</p>
+        <input 
+          v-model="adminPassword" 
+          type="password" 
+          placeholder="Password" 
+          @keyup.enter="loginAdmin"
+          class="admin-input"
+        >
+        <div class="modal-actions">
+          <button @click="showAdminLogin = false" class="btn-text">Batal</button>
+          <button @click="loginAdmin" class="btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD VIEW (Admin Only) -->
+    <div v-if="currentView === 'dashboard'" class="dashboard-view">
+      <nav class="topbar">
+        <div class="topbar-brand">
+          <button class="tab-btn" @click="currentView = 'menu'">⬅ Kembali</button>
+          <span style="font-weight: 600;">📊 Dashboard Evaluasi Soal</span>
+        </div>
+        <div class="topbar-right">
+          <button class="btn btn-sm btn-outline" @click="refreshStats">🔄 Refresh</button>
+          <button class="btn btn-sm btn-danger" @click="logoutAdmin">Keluar</button>
+        </div>
+      </nav>
+      
+      <main class="dashboard-content">
+        <div class="stats-overview">
+          <div class="stat-card">
+            <div class="stat-val">{{ Object.keys(aggregatedStats).length }}</div>
+            <div class="stat-lab">Paket Aktif</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">{{ totalSubmissions }}</div>
+            <div class="stat-lab">Total Ujian Selesai</div>
+          </div>
+        </div>
+
+        <div v-for="(pkgStats, pkgId) in aggregatedStats" :key="pkgId" class="pkg-stats-section">
+          <div class="pkg-stats-header">
+            <h3>{{ pkgId.replace(/-/g, ' ') }}</h3>
+            <span class="badge badge-blue">{{ pkgStats.totalSubmissions }} Submisi</span>
+          </div>
+          
+          <div class="stats-table-container">
+            <table class="stats-table">
+              <thead>
+                <tr>
+                  <th>No Soal</th>
+                  <th>Total Jawab</th>
+                  <th>Benar</th>
+                  <th>Salah</th>
+                  <th>Tingkat Kesulitan</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(s, qId) in getSortedQuestions(pkgStats.questions)" :key="qId">
+                  <td>#{{ qId }}</td>
+                  <td>{{ s.total }}</td>
+                  <td class="text-green">{{ s.correct }}</td>
+                  <td class="text-red">{{ s.wrong }}</td>
+                  <td>
+                    <div class="diff-bar">
+                      <div class="diff-fill" :style="{ width: s.wrongPct + '%', background: getDiffColor(s.wrongPct) }"></div>
+                    </div>
+                    <span class="diff-val">{{ s.wrongPct }}% Salah</span>
+                  </td>
+                  <td>
+                    <span v-if="s.wrongPct > 70" class="badge badge-red">SANGAT SULIT</span>
+                    <span v-elif="s.wrongPct > 40" class="badge badge-amber">SULIT</span>
+                    <span v-else class="badge badge-green">NORMAL</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <!-- MENU VIEW -->
-    <div v-if="!currentPackageId" class="menu-view">
+    <div v-else-if="currentView === 'menu'" class="menu-view">
       <div class="menu-container">
         <div class="menu-header">
-          <div class="menu-icon">🏛</div>
+          <div class="menu-icon" @click="handleAdminTrigger">🏛</div>
           <h1>Kompetensi Teknis Pemeriksa Pajak</h1>
           <p>Pilih paket soal untuk memulai sesi ujian Anda.</p>
+          <div v-if="isAdmin" class="admin-badge" @click="currentView = 'dashboard'">
+            🔧 Dashboard Admin Aktif
+          </div>
         </div>
         
         <div class="package-list">
@@ -34,7 +124,7 @@
     </div>
 
     <!-- EXAM VIEW -->
-    <div v-else class="exam-view">
+    <div v-else-if="currentView === 'exam'" class="exam-view">
       <nav class="topbar">
         <div class="topbar-brand">
           <button class="tab-btn" @click="backToMenu" style="margin-right: 10px;">⬅ Kembali</button>
@@ -64,19 +154,22 @@
         </div>
       </nav>
       <main class="main-content">
-        <SoalExam 
-          v-if="currentExamSession === 'sesi1' && currentPackage.sesi1.length > 0"
-          :soals="currentPackage.sesi1" 
-          :session-id="currentPackage.id + '-sesi1'" 
-          @all-done="checkAllDone" 
-        />
-        <SoalExam 
-          v-if="currentExamSession === 'sesi2' && currentPackage.sesi2.length > 0"
-          :soals="currentPackage.sesi2" 
-          :session-id="currentPackage.id + '-sesi2'" 
-          @all-done="checkAllDone" 
-        />
-      </main>
+          <SoalExam 
+            v-if="currentExamSession === 'sesi1' && currentPackage.sesi1.length > 0"
+            :soals="currentPackage.sesi1" 
+            :session-id="currentPackage.id + '-sesi1'" 
+            @all-done="checkAllDone" 
+            @results-ready="handleResults"
+          />
+          <SoalExam 
+            v-if="currentExamSession === 'sesi2' && currentPackage.sesi2.length > 0"
+            :soals="currentPackage.sesi2" 
+            :session-id="currentPackage.id + '-sesi2'" 
+            @all-done="checkAllDone" 
+            @results-ready="handleResults"
+          />
+        </main>
+      </div>
     </div>
   </div>
 </template>
@@ -85,13 +178,79 @@
 import { ref, watch, onMounted, onUnmounted, computed } from 'vue';
 import SoalExam from './components/SoalExam.vue';
 import { PACKAGES } from './data/soalBank.js';
+import { saveResultLocally, getAllStats, getIP } from './data/stats.js';
 
+const currentView = ref('menu'); // 'menu', 'exam', 'dashboard'
 const currentPackageId = ref(null);
 const currentPackage = computed(() => PACKAGES.find(p => p.id === currentPackageId.value));
 const currentExamSession = ref('sesi1');
 
+// Admin Logic
+const isAdmin = ref(false);
+const showAdminLogin = ref(false);
+const adminPassword = ref('');
+const loginAttempts = ref(0);
+
+const handleAdminTrigger = () => {
+  loginAttempts.value++;
+  if (loginAttempts.value >= 3) {
+    showAdminLogin.value = true;
+    loginAttempts.value = 0;
+  }
+};
+
+const loginAdmin = () => {
+  if (adminPassword.value === 'Pajak416') {
+    isAdmin.value = true;
+    showAdminLogin.value = false;
+    adminPassword.value = '';
+    currentView.value = 'dashboard';
+    refreshStats();
+  } else {
+    alert('Password Salah');
+    adminPassword.value = '';
+  }
+};
+
+const logoutAdmin = () => {
+  isAdmin.value = false;
+  currentView.value = 'menu';
+};
+
+// Statistics Logic
+const aggregatedStats = ref({});
+const totalSubmissions = ref(0);
+
+const refreshStats = async () => {
+  aggregatedStats.value = await getAllStats();
+  // Calculate total submissions from aggregated data
+  totalSubmissions.value = Object.values(aggregatedStats.value).reduce((acc, curr) => acc + curr.totalSubmissions, 0);
+};
+
+const getSortedQuestions = (questions) => {
+  return Object.entries(questions).map(([id, s]) => ({
+    id,
+    ...s,
+    total: s.correct + s.wrong,
+    wrongPct: Math.round((s.wrong / (s.correct + s.wrong)) * 100)
+  })).sort((a, b) => b.wrongPct - a.wrongPct); // Sort by most wrong
+};
+
+const getDiffColor = (pct) => {
+  if (pct > 70) return '#ff4d4f';
+  if (pct > 40) return '#faad14';
+  return '#52c41a';
+};
+
+const handleResults = async (results) => {
+  const ip = await getIP();
+  saveResultLocally(currentPackageId.value, currentExamSession.value, results, ip);
+  if (isAdmin.value) refreshStats();
+};
+
 const selectPackage = (id) => {
   currentPackageId.value = id;
+  currentView.value = 'exam';
   const pkg = PACKAGES.find(p => p.id === id);
   currentExamSession.value = pkg.sesi1.length > 0 ? 'sesi1' : 'sesi2';
   startTimer();
@@ -99,6 +258,7 @@ const selectPackage = (id) => {
 
 const backToMenu = () => {
   currentPackageId.value = null;
+  currentView.value = 'menu';
   stopTimer();
   timerDisplay.value = '00:00';
 };
@@ -163,7 +323,74 @@ onUnmounted(() => {
 </script>
 
 <style>
-/* ── TOPBAR ── */
+/* ── SHARED STYLES ── */
+:root {
+  --blue: #2563eb;
+  --blue-light: #eff6ff;
+  --blue-mid: #bfdbfe;
+  --bg: #f8fafc;
+  --bg2: #f1f5f9;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --text2: #475569;
+  --text3: #64748b;
+  --border: #e2e8f0;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --green: #10b981;
+  --red: #ef4444;
+  --amber: #f59e0b;
+}
+
+.dark-theme {
+  --bg: #0f172a;
+  --bg2: #1e293b;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --text2: #cbd5e1;
+  --text3: #94a3b8;
+  --border: #334155;
+}
+
+/* ── DASHBOARD ── */
+.dashboard-view { min-height: 100vh; background: var(--bg); }
+.dashboard-content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.stats-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+.stat-card { background: var(--surface); padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.stat-val { font-size: 2.5rem; font-weight: 800; color: var(--blue); }
+.stat-lab { color: var(--text3); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; margin-top: 4px; }
+
+.pkg-stats-section { background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 2rem; margin-bottom: 2rem; }
+.pkg-stats-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.stats-table-container { overflow-x: auto; }
+.stats-table { width: 100%; border-collapse: collapse; min-width: 700px; }
+.stats-table th { text-align: left; padding: 1rem; color: var(--text3); font-size: 0.85rem; border-bottom: 2px solid var(--border); }
+.stats-table td { padding: 1rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.stats-table tr:hover { background: var(--bg2); }
+
+.diff-bar { height: 8px; background: var(--bg2); border-radius: 4px; overflow: hidden; width: 120px; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.diff-fill { height: 100%; transition: width 0.5s ease; }
+.diff-val { font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ── MODAL ── */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modal-content { background: var(--surface); padding: 2rem; border-radius: var(--radius-lg); width: 90%; max-width: 400px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+.admin-input { width: 100%; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border); margin: 1.5rem 0; font-size: 1rem; background: var(--bg); color: var(--text); }
+.modal-actions { display: flex; justify-content: flex-end; gap: 12px; }
+.btn-text { background: none; border: none; color: var(--text3); cursor: pointer; font-weight: 500; }
+
+.admin-badge { margin-top: 1rem; background: var(--blue-light); color: var(--blue); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-block; border: 1px solid var(--blue-mid); }
+.admin-badge:hover { background: var(--blue-mid); }
+
+.text-green { color: var(--green); font-weight: 600; }
+.text-red { color: var(--red); font-weight: 600; }
+
+.btn-danger { background: var(--red); color: white; border: none; padding: 6px 12px; border-radius: var(--radius-sm); cursor: pointer; }
+.btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text2); padding: 6px 12px; border-radius: var(--radius-sm); cursor: pointer; }
+
+/* ── EXISTING STYLES ── */
 .topbar {
   background: var(--surface);
   border-bottom: 1px solid var(--border);

@@ -133,7 +133,7 @@ const props = defineProps({
   }
 });
 
-const emit = defineEmits(['all-done']);
+const emit = defineEmits(['all-done', 'results-ready']);
 
 const currentFilter = ref('semua');
 const answers = ref({});
@@ -189,6 +189,11 @@ const allDone = computed(() => doneCount.value === totalCount.value && totalCoun
 
 watch(allDone, (newVal) => {
   if (newVal) {
+    const results = {};
+    props.soals.forEach(s => {
+      results[s.id] = answers.value[s.id] === s.jawaban;
+    });
+    emit('results-ready', results);
     emit('all-done');
   }
 });
