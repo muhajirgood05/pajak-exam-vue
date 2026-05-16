@@ -38,6 +38,7 @@ const PROVIDERS = {
   }
 };
 const DEFAULT_PROVIDER = 'gemini';
+// Batasi detail error agar log tetap informatif tapi tidak kebanjiran payload besar dari API.
 const MAX_ERROR_LENGTH = 500;
 const FINISH_REASON_STOP = 'STOP';
 const FINISH_REASON_MAX_TOKENS = 'MAX_TOKENS';
@@ -80,7 +81,9 @@ function resolveAiSettings() {
   const normalizedBaseUrl = (rawBaseUrl || '').trim();
 
   if (!normalizedBaseUrl) {
-    const extraHint = providerConfig.requiresCustomUrl ? ' Provider ini wajib set MIMO_BASE_URL atau AI_BASE_URL.' : '';
+    const extraHint = providerConfig.requiresCustomUrl
+      ? ` Provider ini wajib set ${prefix}_BASE_URL atau AI_BASE_URL.`
+      : '';
     throw new Error(`Base URL untuk provider "${provider}" belum diatur. Set ${prefix}_BASE_URL atau AI_BASE_URL.${extraHint}`);
   }
 
