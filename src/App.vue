@@ -60,6 +60,18 @@
             </div>
           </div>
 
+          <!-- CATEGORY FILTER -->
+          <div class="dashboard-filters">
+            <button 
+              v-for="(meta, key) in KATEGORI_META" 
+              :key="key"
+              :class="['filter-btn', { active: dashboardCategoryFilter === key }]"
+              @click="dashboardCategoryFilter = key"
+            >
+              {{ meta.label }}
+            </button>
+          </div>
+
           <div v-for="(pkgStats, pkgId) in aggregatedStats" :key="pkgId" class="pkg-stats-section">
             <div class="pkg-stats-header">
               <h3>{{ pkgId.replace(/-/g, ' ') }}</h3>
@@ -79,8 +91,13 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="s in getSortedQuestions(pkgStats.questions)" :key="s.id">
+                  <tr v-for="s in getFilteredDashboardQuestions(pkgStats.questions)" :key="s.id">
                     <td>#{{ s.id }}</td>
+                    <td>
+                      <span :class="['badge', KATEGORI_META[s.kategori]?.badge || 'badge-blue']">
+                        {{ KATEGORI_META[s.kategori]?.label || s.kategori }}
+                      </span>
+                    </td>
                     <td>{{ s.total }}</td>
                     <td class="text-green">{{ s.correct }}</td>
                     <td class="text-red">{{ s.wrong }}</td>
@@ -219,7 +236,7 @@
 <script setup>
 import { ref, watch, onMounted, onUnmounted, computed } from 'vue';
 import SoalExam from './components/SoalExam.vue';
-import { PACKAGES } from './data/soalBank.js';
+import { PACKAGES, KATEGORI_META } from './data/soalBank.js';
 import { saveResultLocally, getAllStats, getIP } from './data/stats.js';
 
 const currentView = ref('menu'); // 'menu', 'exam', 'dashboard'
@@ -227,6 +244,7 @@ const currentPackageId = ref(null);
 const currentPackage = computed(() => PACKAGES.find(p => p.id === currentPackageId.value));
 const currentExamSession = ref('sesi1');
 const dashboardTab = ref('stats'); // 'stats', 'config'
+const dashboardCategoryFilter = ref('semua');
 const currentAttemptId = ref(null);
 
 const generateUUID = () => {
@@ -297,6 +315,12 @@ const getSortedQuestions = (questions) => {
     total: s.correct + s.wrong,
     wrongPct: Math.round((s.wrong / (s.correct + s.wrong)) * 100)
   })).sort((a, b) => b.wrongPct - a.wrongPct); // Sort by most wrong
+};
+
+const getFilteredDashboardQuestions = (questions) => {
+  const sorted = getSortedQuestions(questions);
+  if (dashboardCategoryFilter.value === 'semua') return sorted;
+  return sorted.filter(q => q.kategori === dashboardCategoryFilter.value);
 };
 
 const getDiffColor = (pct) => {
@@ -421,7 +445,12 @@ onUnmounted(() => {
 /* ── DASHBOARD ── */
 .dashboard-view { min-height: 100vh; background: var(--bg); }
 .dashboard-content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-.stats-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+.stats-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem; }
+.dashboard-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; padding: 1rem; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); }
+.dashboard-filters .filter-btn { padding: 6px 14px; font-size: 13px; font-weight: 600; border: 1px solid var(--border); background: var(--bg); border-radius: 20px; cursor: pointer; transition: all 0.2s; }
+.dashboard-filters .filter-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+.dashboard-filters .filter-btn:hover:not(.active) { background: var(--bg2); }
+
 .stat-card { background: var(--surface); padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
 .stat-val { font-size: 2.5rem; font-weight: 800; color: var(--blue); }
 .stat-lab { color: var(--text3); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; margin-top: 4px; }

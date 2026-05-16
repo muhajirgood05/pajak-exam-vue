@@ -51,9 +51,13 @@ export const getAggregatedStats = (allResults) => {
     stats[entry.packageId].totalSubmissions++;
     stats[entry.packageId].uniqueIPs.add(entry.ip);
     
-    Object.entries(entry.results).forEach(([qId, isCorrect]) => {
+    Object.entries(entry.results).forEach(([qId, resObj]) => {
+      // Handle both old (boolean) and new (object) format
+      const isCorrect = typeof resObj === 'boolean' ? resObj : resObj.correct;
+      const kategori = typeof resObj === 'boolean' ? 'lainnya' : resObj.kategori;
+
       if (!stats[entry.packageId].questions[qId]) {
-        stats[entry.packageId].questions[qId] = { correct: 0, wrong: 0 };
+        stats[entry.packageId].questions[qId] = { correct: 0, wrong: 0, kategori: kategori };
       }
       if (isCorrect) {
         stats[entry.packageId].questions[qId].correct++;

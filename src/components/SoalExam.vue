@@ -192,7 +192,10 @@ watch(doneCount, (newCount) => {
     const results = {};
     props.soals.forEach(s => {
       if (revealed.value[s.id]) {
-        results[s.id] = answers.value[s.id] === s.jawaban;
+        results[s.id] = {
+          correct: answers.value[s.id] === s.jawaban,
+          kategori: s.kategori
+        };
       }
     });
     emit('results-ready', results);
@@ -203,7 +206,10 @@ watch(allDone, (newVal) => {
   if (newVal) {
     const results = {};
     props.soals.forEach(s => {
-      results[s.id] = answers.value[s.id] === s.jawaban;
+      results[s.id] = {
+        correct: answers.value[s.id] === s.jawaban,
+        kategori: s.kategori
+      };
     });
     emit('results-ready', results);
     emit('all-done');
