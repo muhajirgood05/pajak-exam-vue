@@ -227,6 +227,14 @@ const currentPackageId = ref(null);
 const currentPackage = computed(() => PACKAGES.find(p => p.id === currentPackageId.value));
 const currentExamSession = ref('sesi1');
 const dashboardTab = ref('stats'); // 'stats', 'config'
+const currentAttemptId = ref(null);
+
+const generateUUID = () => {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+};
 
 // Admin Logic
 const isAdmin = ref(false);
@@ -299,12 +307,13 @@ const getDiffColor = (pct) => {
 
 const handleResults = async (results) => {
   const ip = await getIP();
-  saveResultLocally(currentPackageId.value, currentExamSession.value, results, ip);
+  await saveResultLocally(currentPackageId.value, currentExamSession.value, results, ip, currentAttemptId.value);
   if (isAdmin.value) refreshStats();
 };
 
 const selectPackage = (id) => {
   currentPackageId.value = id;
+  currentAttemptId.value = generateUUID();
   currentView.value = 'exam';
   const pkg = PACKAGES.find(p => p.id === id);
   currentExamSession.value = pkg.sesi1.length > 0 ? 'sesi1' : 'sesi2';

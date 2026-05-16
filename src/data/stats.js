@@ -5,23 +5,32 @@ import { getSupabaseClient, syncResultToSupabase, fetchAllGlobalResults } from '
 // For 'Everyone' stats, in a real app we'd use Supabase/Firebase.
 // Here we'll implement a structure that can be easily synced to GitHub or a DB.
 
-export const saveResultLocally = async (packageId, sessionId, results, ip) => {
+export const saveResultLocally = async (packageId, sessionId, results, ip, attemptId) => {
   const allResults = JSON.parse(localStorage.getItem('pajak_exam_all_results') || '[]');
+  
+  // Find if this attempt already exists in local storage to update it (upsert locally)
+  const existingIndex = allResults.findIndex(r => r.attemptId === attemptId);
   
   const resultEntry = {
     timestamp: new Date().toISOString(),
     packageId,
     sessionId,
     ip,
+    attemptId,
     results // { questionId: isCorrect }
   };
   
-  allResults.push(resultEntry);
+  if (existingIndex > -1) {
+    allResults[existingIndex] = resultEntry;
+  } else {
+    allResults.push(resultEntry);
+  }
+  
   localStorage.setItem('pajak_exam_all_results', JSON.stringify(allResults));
 
   // Sync to global DB if configured
   if (getSupabaseClient()) {
-    await syncResultToSupabase(packageId, sessionId, results, ip);
+    await syncResultToSupabase(packageId, sessionId, results, ip, attemptId);
   }
   
   return resultEntry;

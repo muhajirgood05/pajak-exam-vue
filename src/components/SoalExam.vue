@@ -187,6 +187,18 @@ const doneCount = computed(() => Object.keys(revealed.value).length);
 const progressPct = computed(() => totalCount.value > 0 ? Math.round((doneCount.value / totalCount.value) * 100) : 0);
 const allDone = computed(() => doneCount.value === totalCount.value && totalCount.value > 0);
 
+watch(doneCount, (newCount) => {
+  if (newCount > 0 && newCount % 5 === 0) {
+    const results = {};
+    props.soals.forEach(s => {
+      if (revealed.value[s.id]) {
+        results[s.id] = answers.value[s.id] === s.jawaban;
+      }
+    });
+    emit('results-ready', results);
+  }
+});
+
 watch(allDone, (newVal) => {
   if (newVal) {
     const results = {};

@@ -15,21 +15,23 @@ export const getSupabaseClient = () => {
   return null;
 };
 
-export const syncResultToSupabase = async (packageId, sessionId, results, ip) => {
+export const syncResultToSupabase = async (packageId, sessionId, results, ip, attemptId) => {
   const client = getSupabaseClient();
   if (!client) return null;
   
+  // We use upsert so that every 5 questions we just update the same row for this specific attempt
   const { data, error } = await client
     .from('pajak_exam_results')
-    .insert([
+    .upsert([
       { 
+        attempt_id: attemptId, // Unique ID for this specific test session
         package_id: packageId, 
         session_id: sessionId, 
         results: results, 
         user_ip: ip,
         created_at: new Date().toISOString()
       }
-    ]);
+    ], { onConflict: 'attempt_id' });
     
   if (error) console.error('Error syncing to Supabase:', error);
   return data;
