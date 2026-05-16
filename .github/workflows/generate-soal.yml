@@ -61,6 +61,8 @@ jobs:
           
       - name: Commit and Push
         id: commit_and_push
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           git config --global user.name 'Hermes AI'
           git config --global user.email 'hermes-ai@users.noreply.github.com'
@@ -70,7 +72,7 @@ jobs:
           else
             git add .
             git commit -m "feat: tambah paket soal baru oleh Hermes"
-            git push || (git pull --rebase origin main && git push)
+            git push || (git pull --rebase origin "$DEFAULT_BRANCH" && git push)
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
 
