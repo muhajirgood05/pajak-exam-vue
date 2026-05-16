@@ -96,7 +96,10 @@ export default async function handler(req, res) {
     }
 
     const toAppend = generatedQuestions.slice(0, availableSlots);
-    const nextIdStart = currentList.reduce((max, item) => Math.max(max, Number(item?.id) || 0), 0) + 1;
+    const nextIdStart = currentList.reduce((max, item) => {
+      const parsedId = Number.parseInt(String(item?.id ?? 0), 10);
+      return Number.isFinite(parsedId) ? Math.max(max, parsedId) : max;
+    }, 0) + 1;
     const normalized = toAppend.map((item, index) => normalizeQuestion(item, nextIdStart + index));
     selected.data[targetSession] = currentList.concat(normalized);
 
