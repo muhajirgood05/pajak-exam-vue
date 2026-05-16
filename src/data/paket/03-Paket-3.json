@@ -854,6 +854,51 @@
       "jawaban": 3,
       "pembahasan": "Berdasarkan Pasal 16D UU PPN, Pajak Pertambahan Nilai dikenakan atas penyerahan Barang Kena Pajak berupa aktiva yang menurut tujuan semula tidak untuk diperjualbelikan oleh Pengusaha Kena Pajak, KECUALI atas penyerahan aktiva yang Pajak Masukannya tidak dapat dikreditkan sebagaimana dimaksud dalam Pasal 9 ayat (8) huruf b (Perolehan kendaraan bermotor sedan dan station wagon).\n\nKarena mobil yang dijual adalah kendaraan sedan yang Pajak Masukannya saat perolehan (tahun 2020) tidak dapat dikreditkan, maka penjualan aktiva bekas tersebut Pengecualian dari Pasal 16D, sehingga TIDAK TERUTANG PPN (Rp 0).",
       "dasar": "Pasal 16D dan Pasal 9 ayat (8) huruf b Undang-Undang Pajak Pertambahan Nilai."
+    },
+    {
+      "id": 58,
+      "kategori": "pph-badan",
+      "skenario": "PT Bahagia Sejahtera, sebuah perusahaan manufaktur, pada tahun pajak 2024 memberikan berbagai fasilitas dan/atau penggantian kepada karyawannya. Berikut adalah rincian biaya fasilitas yang dikeluarkan perusahaan:",
+      "soal": "Berdasarkan data di atas dan ketentuan perpajakan yang berlaku (termasuk UU HPP dan PMK 66/2023), berapakah total biaya fasilitas yang dapat dikurangkan (deductible) oleh PT Bahagia Sejahtera dalam perhitungan PPh Badan Tahun Pajak 2024?",
+      "opsi": [
+        "A. Rp 550.000.000",
+        "B. Rp 600.000.000",
+        "C. Rp 400.000.000",
+        "D. Rp 350.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan ketentuan Pasal 4, Pasal 5, dan Pasal 6 PMK Nomor 66 Tahun 2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan:\n\n1.  **Fasilitas makan siang di kantin perusahaan untuk seluruh karyawan**: Termasuk natura dan/atau kenikmatan yang dikecualikan dari objek PPh bagi penerima dan dapat dibebankan sebagai biaya bagi pemberi kerja (Pasal 3 ayat (1) huruf a dan Pasal 6 ayat (1) huruf a PMK 66/2023). **Deductible: Rp 150.000.000**.\n2.  **Fasilitas kendaraan dinas yang disewakan untuk keperluan jabatan direksi**: Termasuk natura dan/atau kenikmatan yang dikecualikan dari objek PPh bagi penerima dan dapat dibebankan sebagai biaya bagi pemberi kerja (Pasal 3 ayat (1) huruf d dan Pasal 6 ayat (1) huruf d PMK 66/2023). **Deductible: Rp 300.000.000**.\n3.  **Pemberian voucher belanja kepada tim marketing sebagai bonus kinerja**: Termasuk natura dan/atau kenikmatan yang merupakan objek PPh bagi penerima dan merupakan biaya yang tidak dapat dikurangkan (non-deductible) bagi pemberi kerja, karena tidak termasuk pengecualian yang diatur dalam Pasal 3 PMK 66/2023. Voucher belanja bukan fasilitas di daerah tertentu, bukan fasilitas kerja, atau fasilitas lainnya yang dikecualikan. **Non-deductible: Rp 50.000.000**.\n4.  **Fasilitas olahraga (lapangan bulutangkis) yang disediakan di lokasi kerja untuk seluruh karyawan**: Termasuk natura dan/atau kenikmatan yang dikecualikan dari objek PPh bagi penerima dan dapat dibebankan sebagai biaya bagi pemberi kerja (Pasal 3 ayat (1) huruf b dan Pasal 6 ayat (1) huruf b PMK 66/2023). **Deductible: Rp 100.000.000**.\n\nTotal biaya fasilitas yang dapat dikurangkan oleh PT Bahagia Sejahtera adalah:\nRp 150.000.000 (Makan siang) + Rp 300.000.000 (Kendaraan dinas) + Rp 100.000.000 (Fasilitas olahraga) = **Rp 550.000.000**.",
+      "dasar": "UU PPh Pasal 6 ayat (1) huruf a, Pasal 9 ayat (1) huruf e; PMK Nomor 66 Tahun 2023 Pasal 3 ayat (1), Pasal 5 ayat (2), dan Pasal 6 ayat (1)."
+    },
+    {
+      "id": 59,
+      "kategori": "pph-potput",
+      "skenario": "PT Bangun Sentosa adalah Pengusaha Kena Pajak (PKP) yang bergerak di bidang jasa konstruksi. PT Bangun Sentosa memiliki Sertifikat Badan Usaha (SBU) dengan kualifikasi usaha kecil. Pada bulan Agustus 2024, PT Bangun Sentosa menandatangani kontrak pembangunan gedung kantor dengan PT Maju Bersama senilai Rp 5.000.000.000 (sudah termasuk PPN 11%). Pekerjaan telah diselesaikan 100% dan PT Maju Bersama melakukan pembayaran penuh kepada PT Bangun Sentosa.",
+      "soal": "Berapakah PPh Final atas Jasa Konstruksi yang harus dipotong oleh PT Maju Bersama atas pembayaran tersebut?",
+      "opsi": [
+        "A. Rp 78.828.829",
+        "B. Rp 87.500.000",
+        "C. Rp 180.180.180",
+        "D. Rp 200.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "1.  **Menentukan Dasar Pengenaan Pajak (DPP) PPh Final Jasa Konstruksi**:\n    Nilai kontrak yang menjadi dasar pengenaan PPh Final adalah nilai kontrak tidak termasuk PPN. Karena nilai kontrak sudah termasuk PPN 11%:\n    DPP = Nilai Kontrak / (1 + Tarif PPN)\n    DPP = Rp 5.000.000.000 / (1 + 0,11)\n    DPP = Rp 5.000.000.000 / 1,11\n    DPP = Rp 4.504.504.504,50\n\n2.  **Menentukan Tarif PPh Final Jasa Konstruksi**:\n    Berdasarkan Pasal 3 ayat (1) huruf b Peraturan Menteri Keuangan Nomor 60 Tahun 2022 jo. Pasal 2 ayat (2) huruf a Peraturan Pemerintah Nomor 50 Tahun 2022, tarif PPh Final untuk pekerjaan konstruksi yang dilakukan oleh Pelaksana Konstruksi dengan Kualifikasi Usaha Kecil adalah **1,75%**.\n\n3.  **Menghitung PPh Final**:\n    PPh Final = Tarif PPh Final x DPP\n    PPh Final = 1,75% x Rp 4.504.504.504,50\n    PPh Final = Rp 78.828.828,83\n    Dibulatkan menjadi **Rp 78.828.829**.",
+      "dasar": "UU PPh Pasal 4 ayat (2); Peraturan Pemerintah Nomor 50 Tahun 2022 Pasal 2 ayat (2) huruf a; Peraturan Menteri Keuangan Nomor 60 Tahun 2022 Pasal 3 ayat (1) huruf b."
+    },
+    {
+      "id": 60,
+      "kategori": "kup",
+      "skenario": "PT Harmoni Jaya diperiksa oleh Direktorat Jenderal Pajak (DJP) untuk tahun pajak 2023. Berdasarkan hasil pemeriksaan, ditemukan kekurangan pembayaran Pajak Penghasilan (PPh) Badan sebesar Rp 250.000.000. Surat Ketetapan Pajak Kurang Bayar (SKPKB) diterbitkan oleh DJP pada tanggal 10 Juni 2025. Asumsikan tingkat suku bunga acuan yang ditetapkan oleh Menteri Keuangan untuk bulan Juni 2025 adalah 6% per tahun.",
+      "soal": "Berapakah sanksi administrasi berupa bunga yang tercantum dalam SKPKB tersebut?",
+      "opsi": [
+        "A. Rp 22.500.000",
+        "B. Rp 27.500.000",
+        "C. Rp 41.250.000",
+        "D. Rp 55.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "1.  **Dasar Hukum**: Berdasarkan Pasal 13 ayat (2) Undang-Undang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) sebagaimana telah diubah dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP), atas kekurangan pembayaran pajak dalam SKPKB dikenakan sanksi administrasi berupa bunga sebesar suku bunga acuan ditambah 5% dan dibagi 12 yang dihitung sejak saat terutangnya pajak sampai dengan diterbitkannya SKPKB, paling lama 24 bulan.\n\n2.  **Penentuan Saat Terutang dan Periode Bunga**:\n    *   Saat terutangnya PPh Badan Tahun Pajak 2023 adalah pada akhir Tahun Pajak 2023, yaitu 31 Desember 2023.\n    *   SKPKB diterbitkan pada tanggal 10 Juni 2025.\n    *   Periode perhitungan bunga dimulai dari bulan Januari 2024 (setelah saat terutang) hingga bulan Juni 2025 (bulan diterbitkannya SKPKB).\n    *   Jumlah bulan = (Desember 2024 - Januari 2024 + 1) + (Juni 2025 - Januari 2025 + 1)\n    *   Jumlah bulan = 12 bulan (untuk tahun 2024) + 6 bulan (untuk tahun 2025) = **18 bulan**.\n\n3.  **Penentuan Tarif Bunga per Bulan**:\n    *   Suku Bunga Acuan (SBA) yang diasumsikan = 6% per tahun.\n    *   Tarif bunga per bulan = (SBA + 5%) / 12\n    *   Tarif bunga per bulan = (6% + 5%) / 12 = 11% / 12 = 0,0091666667 (dibulatkan untuk perhitungan)\n\n4.  **Perhitungan Sanksi Administrasi**:\n    *   Sanksi Bunga = Kekurangan PPh x Jumlah Bulan x Tarif Bunga per Bulan\n    *   Sanksi Bunga = Rp 250.000.000 x 18 bulan x (11% / 12)\n    *   Sanksi Bunga = Rp 250.000.000 x 18 x 0,0091666667\n    *   Sanksi Bunga = Rp 41.250.000\n\nJadi, sanksi administrasi berupa bunga yang tercantum dalam SKPKB adalah **Rp 41.250.000**.",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 13 ayat (2) UU KUP; Peraturan Menteri Keuangan mengenai Tingkat Suku Bunga Acuan (contoh: PMK 58/2023)."
     }
   ],
   "sesi2": [
