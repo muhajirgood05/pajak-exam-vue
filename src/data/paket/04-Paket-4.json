@@ -1,7 +1,7 @@
 {
   "id": "paket-4",
   "title": "Paket Latihan 4 (KUP, PPN & PPh Potput)",
-  "totalSoal": 50,
+  "totalSoal": 80,
   "sesi1": [
     {
       "id": 1,
@@ -377,6 +377,531 @@
       "jawaban": 3,
       "pembahasan": "Syarat keberatan meliputi: tertulis dalam bahasa Indonesia, mengemukakan jumlah pajak, diajukan dalam 3 bulan, dan melunasi pajak yang disetujui (pembayaran minimal).",
       "dasar": "Pasal 25 UU KUP."
+    },
+    {
+      "id": 26,
+      "kategori": "ppn",
+      "skenario": "PT Fast Logistic (PKP) melakukan jasa pengiriman barang paket ke seluruh Indonesia dengan total nilai transaksi sebesar Rp 10.000.000.",
+      "soal": "Berapakah PPN yang harus dipungut oleh PT Fast Logistic menggunakan ketentuan Besaran Tertentu sesuai PMK-71/2022?",
+      "opsi": [
+        "A. Rp 1.100.000 (11%)",
+        "B. Rp 220.000 (2.2%)",
+        "C. Rp 110.000 (1.1%)",
+        "D. Rp 120.000 (1.2%)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-71/PMK.03/2022, penyerahan jasa pengiriman paket pos dikenai PPN dengan besaran tertentu sebesar 10% dari tarif umum (11%), yang berarti tarif efektifnya adalah 1,1% dari jumlah yang ditagih.<br>PPN = 1,1% x Rp 10.000.000 = Rp 110.000.",
+      "dasar": "Pasal 2 PMK-71/PMK.03/2022."
+    },
+    {
+      "id": 27,
+      "kategori": "ppn",
+      "skenario": "Bapak Anton membangun rumah tinggal secara pribadi (Kegiatan Membangun Sendiri / KMS) dengan luas bangunan 250 meter persegi. Total biaya pembangunan adalah Rp 500.000.000 (tidak termasuk harga perolehan tanah).",
+      "soal": "Berapakah PPN atas Kegiatan Membangun Sendiri (KMS) yang wajib disetor sendiri oleh Bapak Anton berdasarkan PMK-61/2022?",
+      "opsi": [
+        "A. Rp 55.000.000",
+        "B. Rp 22.000.000",
+        "C. Rp 11.000.000",
+        "D. Rp 10.000.000"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PMK-61/PMK.03/2022, KMS dengan luas bangunan 200 m2 atau lebih dikenakan PPN dengan tarif efektif 2,2% dari total biaya pembangunan (tidak termasuk tanah), atau dihitung dari 20% x tarif PPN umum (11%) x total biaya.<br>PPN KMS = 2,2% x Rp 500.000.000 = Rp 11.000.000.",
+      "dasar": "Pasal 3 PMK-61/PMK.03/2022."
+    },
+    {
+      "id": 28,
+      "kategori": "kup",
+      "skenario": "PT Berkah Abadi terlambat melaporkan SPT Masa PPN untuk masa pajak Januari 2024 yang seharusnya dilaporkan paling lambat 29 Februari 2024.",
+      "soal": "Berapakah sanksi denda administratif yang dikenakan kepada PT Berkah Abadi atas keterlambatan lapor SPT Masa PPN tersebut?",
+      "opsi": [
+        "A. Rp 100.000",
+        "B. Rp 500.000",
+        "C. Rp 1.000.000",
+        "D. Rp 100.000 per hari keterlambatan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 7 ayat (1) UU KUP, sanksi administrasi berupa denda atas keterlambatan pelaporan SPT Masa PPN adalah sebesar Rp 500.000 per SPT Masa.",
+      "dasar": "Pasal 7 ayat (1) UU KUP."
+    },
+    {
+      "id": 29,
+      "kategori": "pph-potput",
+      "skenario": "PT Multi Kreasi membayar jasa maklon pembuatan seragam karyawan kepada CV Jahit Rapih senilai Rp 100.000.000 (tidak termasuk PPN). Bahan baku disediakan sepenuhnya oleh PT Multi Kreasi.",
+      "soal": "Berapakah PPh Pasal 23 yang wajib dipotong oleh PT Multi Kreasi atas pembayaran jasa maklon tersebut?",
+      "opsi": [
+        "A. Rp 15.000.000",
+        "B. Rp 2.000.000",
+        "C. Rp 1.500.000",
+        "D. Rp 0 (Bukan objek pemotongan)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Jasa maklon merupakan salah satu jenis jasa lain yang menjadi objek pemotongan PPh Pasal 23 dengan tarif 2% dari jumlah bruto (tidak termasuk PPN).<br>PPh 23 = 2% x Rp 100.000.000 = Rp 2.000.000.",
+      "dasar": "Pasal 23 ayat (1) huruf c UU PPh jo. PMK-141/PMK.03/2015."
+    },
+    {
+      "id": 30,
+      "kategori": "kup",
+      "skenario": "Tuan Hadi terlambat menyampaikan SPT Tahunan PPh Orang Pribadi untuk tahun pajak 2023 yang seharusnya dilaporkan paling lambat 31 Maret 2024.",
+      "soal": "Berapakah sanksi denda administratif yang dikenakan kepada Tuan Hadi?",
+      "opsi": [
+        "A. Rp 100.000",
+        "B. Rp 500.000",
+        "C. Rp 1.000.000",
+        "D. 2% dari jumlah pajak kurang bayar"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 7 ayat (1) UU KUP, sanksi administrasi berupa denda atas keterlambatan pelaporan SPT Tahunan Wajib Pajak Orang Pribadi adalah sebesar Rp 100.000.",
+      "dasar": "Pasal 7 ayat (1) UU KUP."
+    },
+    {
+      "id": 31,
+      "kategori": "pph-potput",
+      "skenario": "PT Finance Indonesia membayar bunga obligasi kepada PT Investama (WP Badan DN) sebesar Rp 50.000.000. Obligasi tersebut tidak terdaftar di bursa efek.",
+      "soal": "Bagaimanakah kewajiban pemotongan PPh atas pembayaran bunga obligasi tersebut?",
+      "opsi": [
+        "A. Dipotong PPh Pasal 23 sebesar 15%",
+        "B. Dipotong PPh Final Pasal 4 ayat (2) sebesar 10% sesuai PP-91/2021",
+        "C. Dipotong PPh Final Pasal 4 ayat (2) sebesar 20%",
+        "D. Dikecualikan dari pemotongan PPh"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-91/2021, penghasilan berupa bunga obligasi yang diterima atau diperoleh Wajib Pajak dalam negeri dan bentuk usaha tetap dikenai PPh Final Pasal 4 ayat (2) sebesar 10% dari jumlah bruto bunga obligasi.",
+      "dasar": "PP Nomor 91 Tahun 2021."
+    },
+    {
+      "id": 32,
+      "kategori": "ppn",
+      "skenario": "PT Prima Motor (PKP) menjual sepeda motor bekas seharga Rp 20.000.000 menggunakan ketentuan Besaran Tertentu PPN.",
+      "soal": "Berapakah PPN yang wajib dipungut oleh PT Prima Motor berdasarkan PMK-65/2022?",
+      "opsi": [
+        "A. Rp 2.200.000 (11%)",
+        "B. Rp 220.000 (1,1%)",
+        "C. Rp 1.100.000 (5,5%)",
+        "D. Rp 100.000 (0,5%)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-65/PMK.03/2022, penyerahan kendaraan bermotor bekas oleh PKP dikenai PPN dengan besaran tertentu sebesar 10% dari tarif umum (11%), yaitu tarif efektif sebesar 1,1% dari harga jual.<br>PPN = 1,1% x Rp 20.000.000 = Rp 220.000.",
+      "dasar": "Pasal 2 PMK-65/PMK.03/2022."
+    },
+    {
+      "id": 33,
+      "kategori": "kup",
+      "skenario": "Sebuah Surat Ketetapan Pajak Kurang Bayar (SKPKB) sebesar Rp 50.000.000 diterbitkan untuk PT XYZ pada 10 Januari 2024. Hingga tanggal 10 Februari 2024, PT XYZ belum melunasi ketetapan tersebut.",
+      "soal": "Berapakah jangka waktu maksimal pelunasan ketetapan pajak tersebut sebelum DJP menerbitkan Surat Paksa?",
+      "opsi": [
+        "A. 7 hari sejak jatuh tempo",
+        "B. 1 bulan sejak diterbitkan",
+        "C. 21 hari setelah Surat Teguran diterbitkan",
+        "D. Langsung diterbitkan pada hari jatuh tempo"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan UU Penagihan Pajak dengan Surat Paksa (PPSP), penagihan aktif dilakukan dengan menerbitkan Surat Teguran setelah 7 hari jatuh tempo pelunasan (1 bulan sejak terbit SKP). Jika dalam 21 hari sejak Surat Teguran dikirim WP belum melunasi, barulah Surat Paksa diterbitkan.",
+      "dasar": "UU Penagihan Pajak dengan Surat Paksa Nomor 19 Tahun 1997 std UU Nomor 19 Tahun 2000."
+    },
+    {
+      "id": 34,
+      "kategori": "pph-potput",
+      "skenario": "Tuan Rian (memiliki NPWP) bekerja sebagai pegawai tetap di PT Nusantara dengan gaji bruto Rp 10.000.000 per bulan. Status Tuan Rian adalah TK/0 (Tanpa Tanggungan). Pembayaran iuran pensiun disetor sendiri Rp 200.000.",
+      "soal": "Berdasarkan ketentuan TER (Tarif Efektif Rata-rata) PMK-168/2023, kategori TER dan tarif efektif bulanan yang digunakan untuk memotong PPh 21 Tuan Rian di masa Januari adalah?",
+      "opsi": [
+        "A. Kategori A, tarif 2,25%",
+        "B. Kategori A, tarif 2,00%",
+        "C. Kategori B, tarif 1,50%",
+        "D. Kategori A, tarif 1,50%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK-168/2023, status TK/0 masuk dalam Kategori TER A. Untuk penghasilan bruto bulanan Rp 10.000.000, tarif TER bulanan Kategori A yang berlaku adalah sebesar 2,00%.<br>PPh 21 bulanan = 2,00% x Rp 10.000.000 = Rp 200.000.",
+      "dasar": "Pasal 13 PMK-168/PMK.010/2023."
+    },
+    {
+      "id": 35,
+      "kategori": "ppn",
+      "skenario": "PT Selera Kuliner (PKP) yang merupakan restoran menyajikan hidangan senilai Rp 50.000.000 kepada pelanggan di restorannya.",
+      "soal": "Apakah aspek PPN atas penyerahan makanan dan minuman oleh restoran tersebut?",
+      "opsi": [
+        "A. Dipungut PPN sebesar 11%",
+        "B. Dikenakan PPN dengan besaran tertentu 1,1%",
+        "C. Dikecualikan dari objek PPN karena merupakan objek pajak daerah (PBJT)",
+        "D. Dibebaskan dari pengenaan PPN"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Undang-Undang PPN dan UU HKPD, makanan dan minuman yang disajikan di hotel, restoran, rumah makan, warung, dan sejenisnya dikecualikan dari objek PPN karena merupakan objek Pajak Barang dan Jasa Tertentu (PBJT) yang dipungut oleh Pemerintah Daerah.",
+      "dasar": "Pasal 4A ayat (2) huruf c UU PPN sttd UU HPP."
+    },
+    {
+      "id": 36,
+      "kategori": "kup",
+      "skenario": "Wajib Pajak mengajukan Keberatan atas SKPKB PPh Badan. Setelah melalui proses review, Kantor Wilayah DJP menerbitkan Surat Keputusan Keberatan yang menolak seluruh keberatan Wajib Pajak pada tanggal 15 Maret 2024. Wajib Pajak memutuskan tidak mengajukan Banding.",
+      "soal": "Berapakah sanksi denda administrasi yang dikenakan kepada Wajib Pajak atas keputusan keberatan yang ditolak tersebut sesuai UU HPP?",
+      "opsi": [
+        "A. 50% dari jumlah pajak yang belum dibayar",
+        "B. 30% dari jumlah pajak yang belum dibayar",
+        "C. 100% dari jumlah pajak yang belum dibayar",
+        "D. 30% dari total nilai ketetapan awal"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 25 ayat (9) UU KUP sttd UU HPP, jika keberatan Wajib Pajak ditolak atau dikabulkan sebagian, Wajib Pajak dikenai sanksi administrasi berupa denda sebesar 30% dari jumlah pajak berdasarkan keputusan keberatan dikurangi dengan pajak yang telah dibayar sebelum mengajukan keberatan.",
+      "dasar": "Pasal 25 ayat (9) UU KUP sttd UU HPP."
+    },
+    {
+      "id": 37,
+      "kategori": "pph-potput",
+      "skenario": "PT Mitra Logistik (PKP) membayar sewa gedung kantor kepada PT Gedung Prima (PKP) senilai Rp 120.000.000 (tidak termasuk PPN).",
+      "soal": "Berapakah PPh yang wajib dipotong oleh PT Mitra Logistik atas pembayaran sewa gedung tersebut?",
+      "opsi": [
+        "A. Dipotong PPh Pasal 23 sebesar Rp 2.400.000 (2%)",
+        "B. Dipotong PPh Final Pasal 4 ayat (2) sebesar Rp 12.000.000 (10%)",
+        "C. Dipotong PPh Pasal 23 sebesar Rp 18.000.000 (15%)",
+        "D. Tidak dipotong karena transaksi dilakukan antar PKP"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Penghasilan dari sewa tanah dan/atau bangunan merupakan objek PPh yang bersifat Final sebesar 10% dari jumlah bruto nilai persewaan.<br>PPh Final = 10% x Rp 120.000.000 = Rp 12.000.000.",
+      "dasar": "Pasal 4 ayat (2) huruf d UU PPh jo. PP Nomor 34 Tahun 2016."
+    },
+    {
+      "id": 38,
+      "kategori": "ppn",
+      "skenario": "PT Tekno Indonesia (PKP) menyerahkan Lisensi Software (BKP Tidak Berwujud) kepada perusahaan di Jepang dengan nilai transaksi Rp 1.000.000.000.",
+      "soal": "Berapakah tarif PPN yang dikenakan atas transaksi ekspor Barang Kena Pajak Tidak Berwujud tersebut?",
+      "opsi": [
+        "A. 11%",
+        "B. 12%",
+        "C. 0%",
+        "D. Dibebaskan dari PPN"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Ekspor Barang Kena Pajak Berwujud, ekspor Barang Kena Pajak Tidak Berwujud, dan ekspor Jasa Kena Pajak dikenai PPN dengan tarif 0% (Nol Persen).",
+      "dasar": "Pasal 7 ayat (1) huruf c UU PPN."
+    },
+    {
+      "id": 39,
+      "kategori": "kup",
+      "skenario": "Kantor Pelayanan Pajak menerbitkan Surat Ketetapan Pajak Kurang Bayar Tambahan (SKPKBT) kepada PT Berdikari atas hasil pemeriksaan data baru (novum) senilai Rp 200.000.000.",
+      "soal": "Berapakah sanksi administrasi berupa kenaikan yang dikenakan dalam SKPKBT tersebut jika diterbitkan di luar jangka waktu 5 tahun karena WP melakukan tindak pidana?",
+      "opsi": [
+        "A. 50%",
+        "B. 100%",
+        "C. 200%",
+        "D. Bunga per bulan sesuai tarif Kemenkeu"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan Pasal 15 ayat (2) UU KUP, jumlah kekurangan pajak yang terutang dalam SKPKBT ditambah dengan sanksi administrasi berupa kenaikan sebesar 100% dari jumlah kekurangan pajak tersebut.",
+      "dasar": "Pasal 15 ayat (2) UU KUP."
+    },
+    {
+      "id": 40,
+      "kategori": "pph-potput",
+      "skenario": "PT Prima Karya membayar biaya desain grafis brosur kepada Tuan Rendi (WP OP tidak memiliki NPWP) sebesar Rp 20.000.000.",
+      "soal": "Berapakah PPh Pasal 21 yang harus dipotong oleh PT Prima Karya atas imbalan jasa bukan pegawai yang tidak berkesinambungan tersebut?",
+      "opsi": [
+        "A. Rp 500.000",
+        "B. Rp 600.000",
+        "C. Rp 1.000.000",
+        "D. Rp 1.200.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dasar Pengenaan Pajak (DPP) PPh 21 Bukan Pegawai = 50% x Rp 20.000.000 = Rp 10.000.000. Tarif Pasal 17 terkecil = 5%. Karena Tuan Rendi tidak ber-NPWP, dikenai tarif 120% lebih tinggi.<br>PPh 21 = 5% x 120% x Rp 10.000.000 = Rp 600.000.",
+      "dasar": "Pasal 21 ayat (5a) UU PPh jo. PER-16/PJ/2016."
+    },
+    {
+      "id": 41,
+      "kategori": "ppn",
+      "skenario": "PT Sukses Bersama (PKP) membeli bahan baku senilai Rp 80.000.000 dari supplier non-PKP. Supplier tersebut menerbitkan kuitansi biasa tanpa Faktur Pajak.",
+      "soal": "Apakah PT Sukses Bersama dapat mengkreditkan Pajak Masukan dari transaksi pembelian tersebut?",
+      "opsi": [
+        "A. Dapat, dengan membuat Faktur Pajak Masukan sendiri",
+        "B. Tidak dapat, karena Pajak Masukan hanya dapat dikreditkan jika supplier menerbitkan Faktur Pajak yang sah",
+        "C. Dapat dikreditkan sebesar 11% dari kuitansi",
+        "D. Dapat dikreditkan secara proporsional"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pajak Masukan hanya dapat dikreditkan apabila didukung oleh dokumen Faktur Pajak yang sah yang diterbitkan oleh Pengusaha Kena Pajak (PKP) penjual.",
+      "dasar": "Pasal 9 ayat (2) UU PPN."
+    },
+    {
+      "id": 42,
+      "kategori": "kup",
+      "skenario": "Wajib Pajak Badan mengajukan permohonan banding ke Pengadilan Pajak atas Keputusan Keberatan yang ditolak pada 10 Januari 2024. Pengadilan Pajak memutuskan menolak seluruh banding Wajib Pajak pada 15 September 2024.",
+      "soal": "Berapakah sanksi denda administrasi yang dikenakan kepada Wajib Pajak atas putusan banding yang ditolak tersebut sesuai UU HPP?",
+      "opsi": [
+        "A. 100% dari jumlah pajak yang belum dibayar",
+        "B. 50% dari jumlah pajak yang belum dibayar",
+        "C. 60% dari jumlah pajak berdasarkan Putusan Banding dikurangi yang telah dibayar sebelum keberatan",
+        "D. 30% dari jumlah pajak berdasarkan Putusan Banding"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 27 ayat (5d) UU KUP sttd UU HPP, dalam hal permohonan banding ditolak atau dikabulkan sebagian, Wajib Pajak dikenai sanksi administrasi berupa denda sebesar 60% dari jumlah pajak berdasarkan putusan banding dikurangi dengan pembayaran pajak yang telah dibayar sebelum mengajukan keberatan.",
+      "dasar": "Pasal 27 ayat (5d) UU KUP sttd UU HPP."
+    },
+    {
+      "id": 43,
+      "kategori": "pph-potput",
+      "skenario": "PT Bahari Cargo membayar jasa pengurusan transportasi (freight forwarding) kepada PT Trans Logistik senilai Rp 80.000.000.",
+      "soal": "Berapakah PPh Pasal 23 yang wajib dipotong PT Bahari Cargo atas jasa pengurusan transportasi tersebut?",
+      "opsi": [
+        "A. Rp 12.000.000 (15%)",
+        "B. Rp 1.600.000 (2%)",
+        "C. Rp 800.000 (1%)",
+        "D. Rp 0 (Bukan objek pajak)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Jasa pengurusan transportasi (freight forwarding) dikategorikan sebagai Jasa Lain yang dikenai pemotongan PPh Pasal 23 sebesar 2% dari jumlah bruto tidak termasuk PPN.<br>PPh 23 = 2% x Rp 80.000.000 = Rp 1.600.000.",
+      "dasar": "PMK-141/PMK.03/2015."
+    },
+    {
+      "id": 44,
+      "kategori": "ppn",
+      "skenario": "PT Nusa Indah didirikan pada Januari 2024 dan langsung melakukan penjualan barang elektronik. Omzet penjualan pada akhir Februari 2024 mencapai Rp 5.000.000.000.",
+      "soal": "Kapan batas waktu paling lambat PT Nusa Indah wajib melaporkan usahanya untuk dikukuhkan sebagai Pengusaha Kena Pajak (PKP)?",
+      "opsi": [
+        "A. Akhir tahun pajak 2024",
+        "B. Paling lambat akhir bulan berikutnya setelah omzet melebihi Rp 4.800.000.000 (31 Maret 2024)",
+        "C. Langsung dikukuhkan secara jabatan oleh DJP pada bulan Februari",
+        "D. Tidak wajib dikukuhkan karena merupakan UMKM"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Wajib Pajak yang omzetnya telah melebihi batas pengusaha kecil (Rp 4,8 Miliar) wajib melaporkan usahanya untuk dikukuhkan sebagai PKP paling lambat akhir bulan berikutnya setelah bulan terjadinya omzet melebihi batas tersebut.",
+      "dasar": "PMK-197/PMK.03/2013."
+    },
+    {
+      "id": 45,
+      "kategori": "kup",
+      "skenario": "PT Maju Jaya menyampaikan SPT Tahunan PPh Badan Lebih Bayar Rp 200.000.000. DJP melakukan pemeriksaan restitusi dan menerbitkan SKPLB pada 15 November 2024 (13 bulan setelah permohonan diterima lengkap).",
+      "soal": "Apakah hak Wajib Pajak atas keterlambatan penerbitan SKPLB yang melebihi batas waktu 12 bulan tersebut?",
+      "opsi": [
+        "A. Diberikan imbalan bunga sebesar suku bunga acuan per bulan maksimal 24 bulan atas keterlambatan tersebut",
+        "B. Permohonan dianggap gugur",
+        "C. Bebas dari pemeriksaan pajak tahun berikutnya",
+        "D. Mendapatkan restitusi sebesar 200% dari nilai lebih bayar"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Apabila penerbitan SKPLB terlambat (melebihi jangka waktu 12 bulan sejak permohonan diterima secara lengkap), Wajib Pajak berhak mendapatkan imbalan bunga sesuai suku bunga acuan per bulan dihitung sejak berakhirnya jangka waktu 12 bulan tersebut sampai diterbitkannya SKPLB.",
+      "dasar": "Pasal 17B ayat (3) UU KUP."
+    },
+    {
+      "id": 46,
+      "kategori": "pph-potput",
+      "skenario": "Koperasi Simpan Pinjam 'Tunas Mandiri' membayar bunga simpanan kepada anggotanya, Ibu Siti (WP OP DN), sebesar Rp 400.000 pada suatu bulan.",
+      "soal": "Berapakah PPh Final Pasal 4 ayat (2) yang wajib dipotong oleh koperasi atas pembayaran bunga simpanan tersebut?",
+      "opsi": [
+        "A. Rp 0",
+        "B. Rp 40.000 (10%)",
+        "C. Rp 16.000 (4%)",
+        "D. Rp 60.000 (15%)"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PP-15/2009, bunga simpanan koperasi yang dibayarkan kepada anggota OP dikenai PPh Final: 0% untuk bunga s.d. Rp 240.000 per bulan, dan 10% dari jumlah bruto untuk bunga di atas Rp 240.000 per bulan. Karena bunga yang dibayarkan Rp 400.000 (di atas Rp 240.000), seluruh jumlah bruto dikenai tarif 10%.<br>PPh Final = 10% x Rp 400.000 = Rp 40.000.",
+      "dasar": "PP Nomor 15 Tahun 2009."
+    },
+    {
+      "id": 47,
+      "kategori": "ppn",
+      "skenario": "PT Mega Tekstil (PKP) mengekspor kain senilai Rp 2.000.000.000 ke Singapura pada tahun 2024.",
+      "soal": "Berapakah tarif PPN yang terutang atas kegiatan ekspor Barang Kena Pajak tersebut?",
+      "opsi": [
+        "A. 11% dari Nilai Ekspor",
+        "B. 12% dari Nilai Ekspor",
+        "C. 0% dari Nilai Ekspor",
+        "D. Dibebaskan dari pengenaan PPN"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 7 ayat (1) huruf c UU PPN, ekspor Barang Kena Pajak dikenai tarif PPN sebesar 0% (Nol Persen).",
+      "dasar": "Pasal 7 ayat (1) huruf c UU PPN."
+    },
+    {
+      "id": 48,
+      "kategori": "kup",
+      "skenario": "Seorang Wajib Pajak Orang Pribadi yang melakukan kegiatan usaha memiliki omzet usaha sebesar Rp 3.000.000.000 pada tahun 2023.",
+      "soal": "Apakah Wajib Pajak tersebut wajib menyelenggarakan pembukuan atau diperkenankan menggunakan pencatatan?",
+      "opsi": [
+        "A. Wajib menyelenggarakan pembukuan karena merupakan pengusaha",
+        "B. Wajib menyelenggarakan pencatatan, dan diperbolehkan menggunakan Norma Penghitungan Penghasilan Neto (NPPN)",
+        "C. Wajib menyelenggarakan pembukuan penuh tanpa pengecualian",
+        "D. Bebas memilih tanpa perlu melapor ke DJP"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Wajib Pajak Orang Pribadi yang melakukan kegiatan usaha atau pekerjaan bebas dengan peredaran bruto kurang dari Rp 4.800.000.000 dalam setahun diperbolehkan menghitung penghasilan neto dengan menggunakan Norma Penghitungan Penghasilan Neto (NPPN) dengan syarat wajib menyelenggarakan pencatatan dan melapor ke DJP.",
+      "dasar": "Pasal 28 ayat (2) UU KUP jo. Pasal 14 UU PPh."
+    },
+    {
+      "id": 49,
+      "kategori": "pph-potput",
+      "skenario": "PT Sumber Mineral (PKP) melakukan pembayaran jasa sewa alat berat kepada Tuan Budi (WP OP non-PKP yang ber-NPWP) senilai Rp 10.000.000.",
+      "soal": "Berapakah PPh Pasal 23 yang wajib dipotong oleh PT Sumber Mineral atas transaksi tersebut?",
+      "opsi": [
+        "A. Rp 200.000 (2%)",
+        "B. Rp 400.000 (4%)",
+        "C. Rp 1.500.000 (15%)",
+        "D. Rp 0 (Tidak dipotong karena bukan badan)"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Sewa dan penghasilan lain sehubungan dengan penggunaan harta (selain sewa tanah/bangunan) merupakan objek PPh Pasal 23 dengan tarif 2% dari jumlah bruto, meskipun penerimanya adalah Wajib Pajak Orang Pribadi.<br>PPh 23 = 2% x Rp 10.000.000 = Rp 200.000.",
+      "dasar": "Pasal 23 ayat (1) huruf c UU PPh."
+    },
+    {
+      "id": 50,
+      "kategori": "ppn",
+      "skenario": "PT Inti Pratama (PKP) menyerahkan Barang Kena Pajak kepada Kedutaan Besar Jepang di Jakarta yang memiliki surat keterangan pembebasan PPN dari kementerian terkait.",
+      "soal": "Manakah kode Faktur Pajak yang harus digunakan oleh PT Inti Pratama atas penyerahan tersebut?",
+      "opsi": [
+        "A. 01 (Penyerahan Umum)",
+        "B. 07 (PPN Tidak Dipungut)",
+        "C. 08 (PPN Dibebaskan)",
+        "D. 09 (Penyerahan Lainnya)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Penyerahan BKP/JKP yang mendapat fasilitas PPN Dibebaskan (seperti penyerahan kepada perwakilan negara asing) menggunakan kode transaksi Faktur Pajak 08.",
+      "dasar": "Lampiran PER-03/PJ/2022 tentang Faktur Pajak."
+    },
+    {
+      "id": 51,
+      "kategori": "kup",
+      "skenario": "DJP menerbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) PPh Badan PT Jaya Abadi untuk tahun pajak 2020 pada tanggal 12 Juni 2026.",
+      "soal": "Berdasarkan daluwarsa penetapan pajak, apakah penerbitan SKPKB tersebut sah secara hukum?",
+      "opsi": [
+        "A. Sah, karena daluwarsa penetapan pajak adalah 10 tahun",
+        "B. Tidak sah, karena telah melewati jangka waktu daluwarsa penetapan pajak selama 5 tahun",
+        "C. Sah, karena tidak ada daluwarsa untuk Wajib Pajak Badan",
+        "D. Tergantung apakah WP menyetujuinya"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Daluwarsa untuk menetapkan pajak (penerbitan SKP) adalah dalam jangka waktu 5 tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, bagian Tahun Pajak, atau Tahun Pajak.<br>Untuk Tahun Pajak 2020, batas daluwarsanya adalah akhir tahun 2025. Sehingga penerbitan SKPKB pada Juni 2026 adalah TIDAK SAH (daluwarsa).",
+      "dasar": "Pasal 13 ayat (1) UU KUP."
+    },
+    {
+      "id": 52,
+      "kategori": "pph-potput",
+      "skenario": "PT Delta Cemerlang membayar dividen kepada Tuan Alex (Warga Negara Asing / WPLN) sebesar Rp 100.000.000. Tidak ada P3B (Tax Treaty) antara Indonesia dengan negara asal Tuan Alex.",
+      "soal": "Berapakah PPh Pasal 26 yang wajib dipotong oleh PT Delta Cemerlang atas pembayaran dividen kepada Tuan Alex tersebut?",
+      "opsi": [
+        "A. Rp 20.000.000 (20%)",
+        "B. Rp 10.000.000 (10%)",
+        "C. Rp 15.000.000 (15%)",
+        "D. Rp 0 (Bebas pajak luar negeri)"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 26 UU PPh, penghasilan berupa dividen yang dibayarkan kepada Wajib Pajak Luar Negeri dikenai pemotongan PPh Pasal 26 sebesar 20% dari jumlah bruto (kecuali diatur lain dalam P3B/Tax Treaty).<br>PPh 26 = 20% x Rp 100.000.000 = Rp 20.000.000.",
+      "dasar": "Pasal 26 ayat (1) huruf a UU PPh."
+    },
+    {
+      "id": 53,
+      "kategori": "ppn",
+      "skenario": "PT Karya Semesta melakukan ekspor Jasa Kena Pajak berupa jasa maklon jahit baju ke pemesan di Australia dengan nilai ekspor jasa Rp 500.000.000.",
+      "soal": "Berapakah tarif PPN yang terutang atas kegiatan ekspor Jasa Kena Pajak maklon tersebut?",
+      "opsi": [
+        "A. 11%",
+        "B. 12%",
+        "C. 0%",
+        "D. Bebas PPN"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Ekspor Jasa Kena Pajak (termasuk Jasa Maklon yang dihasilkan untuk dimanfaatkan di luar daerah pabean) dikenai PPN dengan tarif 0%.",
+      "dasar": "PMK-32/PMK.03/2019 tentang Jasa Kena Pajak yang Atas Ekspornya Dikenai PPN 0%."
+    },
+    {
+      "id": 54,
+      "kategori": "kup",
+      "skenario": "Wajib Pajak menerima Surat Teguran dari KPP karena belum melaporkan SPT Masa PPN setelah lewat 30 hari dari batas waktu pelaporan.",
+      "soal": "Apakah langkah hukum pertama yang wajib dilakukan Wajib Pajak setelah menerima Surat Teguran tersebut?",
+      "opsi": [
+        "A. Mengajukan gugatan ke Pengadilan Pajak",
+        "B. Segera menyusun dan melaporkan SPT Masa PPN yang terlambat tersebut dalam jangka waktu yang ditentukan dalam Surat Teguran",
+        "C. Mengabaikannya sampai ada pemeriksaan",
+        "D. Membayar denda langsung tanpa lapor SPT"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Wajib Pajak yang menerima Surat Teguran wajib segera menyampaikan SPT yang terlambat tersebut dalam batas waktu yang ditentukan dalam Surat Teguran untuk menghindari penerbitan Surat Ketetapan Pajak secara jabatan (SKPKB).",
+      "dasar": "Pasal 3 ayat (5a) UU KUP."
+    },
+    {
+      "id": 55,
+      "kategori": "pph-potput",
+      "skenario": "PT Aneka Jasa membayar sewa ruang kantor kepada Dana Pensiun (Dapen) yang pendiriannya telah disahkan oleh Menteri Keuangan senilai Rp 50.000.000.",
+      "soal": "Bagaimanakah kewajiban pemotongan PPh atas pembayaran sewa ruang kantor kepada Dana Pensiun tersebut?",
+      "opsi": [
+        "A. Dipotong PPh Final Pasal 4 ayat (2) sebesar 10%",
+        "B. Dipotong PPh Pasal 23 sebesar 2%",
+        "C. Dikecualikan dari pemotongan PPh karena penghasilan Dana Pensiun dari bidang tertentu bukan merupakan objek pajak",
+        "D. Dipotong PPh Pasal 23 sebesar 15%"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf h UU PPh, penghasilan yang diterima atau diperoleh dana pensiun yang pendiriannya telah disahkan oleh Menteri Keuangan dari bidang-bidang tertentu (seperti sewa tanah/bangunan) dikecualikan dari objek Pajak Penghasilan.",
+      "dasar": "Pasal 4 ayat (3) huruf h UU PPh."
+    },
+    {
+      "id": 56,
+      "kategori": "ppn",
+      "skenario": "PT Agro Raya (PKP) menyerahkan buah-buahan segar hasil pertanian lokal kepada PT Supermarket senilai Rp 100.000.000.",
+      "soal": "Apakah aspek PPN atas penyerahan buah-buahan segar hasil pertanian tersebut?",
+      "opsi": [
+        "A. Dipungut PPN sebesar 11%",
+        "B. Mendapat fasilitas PPN Dibebaskan sesuai dengan ketentuan UU HPP",
+        "C. Dikenakan PPN dengan besaran tertentu 1,1%",
+        "D. Dipungut PPN sebesar 12%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Buah-buahan segar hasil pertanian merupakan barang hasil pertanian yang termasuk dalam kategori Barang Kena Pajak Tertentu yang bersifat strategis yang dibebaskan dari pengenaan PPN sesuai UU HPP.",
+      "dasar": "Pasal 16B UU PPN sttd UU HPP jo. PP Nomor 49 Tahun 2022."
+    },
+    {
+      "id": 57,
+      "kategori": "kup",
+      "skenario": "PT Semesta Alam melakukan pembetulan SPT Tahunan PPh Badan secara sukarela sebelum ada tindakan pemeriksaan, yang mengakibatkan kurang bayar bertambah sebesar Rp 100.000.000. Pembetulan dilakukan setelah lewat 12 bulan dari batas waktu pelaporan.",
+      "soal": "Berapakah sanksi bunga per bulan yang harus dibayar PT Semesta Alam atas kurang bayar tersebut?",
+      "opsi": [
+        "A. Bunga tetap 2% per bulan maksimal 24 bulan",
+        "B. Bunga per bulan sebesar suku bunga acuan ditambah 5% dibagi 12 maksimal 24 bulan",
+        "C. Kenaikan 50% dari kurang bayar",
+        "D. Bebas sanksi bunga karena dilakukan secara sukarela"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sanksi bunga atas pembetulan SPT sendiri yang menyebabkan kurang bayar bertambah adalah bunga per bulan sebesar tarif bunga kalender (Suku Bunga Acuan + 5%) / 12, maksimal 24 bulan.",
+      "dasar": "Pasal 8 ayat (2a) UU KUP sttd UU HPP."
+    },
+    {
+      "id": 58,
+      "kategori": "pph-potput",
+      "skenario": "PT Sukses Pratama membayar bunga pinjaman kepada bank Mandiri (bank BUMN) sebesar Rp 30.000.000.",
+      "soal": "Bagaimanakah kewajiban pemotongan PPh atas pembayaran bunga pinjaman kepada bank tersebut?",
+      "opsi": [
+        "A. Wajib dipotong PPh Pasal 23 sebesar 15%",
+        "B. Wajib dipotong PPh Final 20%",
+        "C. Dikecualikan dari pemotongan PPh Pasal 23 karena pembayaran kepada perbankan dikecualikan dari pemotongan PPh",
+        "D. Dipotong PPh Pasal 23 sebesar 2%"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 23 ayat (4) huruf a UU PPh, pemotongan pajak PPh Pasal 23 tidak berlaku atas penghasilan yang dibayarkan atau terutang kepada bank.",
+      "dasar": "Pasal 23 ayat (4) huruf a UU PPh."
+    },
+    {
+      "id": 59,
+      "kategori": "ppn",
+      "skenario": "PT Indotech (PKP) menggunakan jasa konsultasi manajemen dari perusahaan luar negeri yang tidak terdaftar BUT di Indonesia (Jasa Luar Negeri) dengan nilai kontrak Rp 200.000.000 pada tahun 2024.",
+      "soal": "Bagaimanakah kewajiban PPN atas pemanfaatan Jasa Kena Pajak dari luar daerah pabean tersebut?",
+      "opsi": [
+        "A. Tidak terutang PPN karena penyedia jasa berkedudukan di luar negeri",
+        "B. PT Indotech wajib memungut, menyetor, dan melaporkan PPN Jasa Luar Negeri sebesar 11% dari nilai kontrak (Rp 22.000.000) menggunakan SSP",
+        "C. Perusahaan luar negeri tersebut yang wajib melapor dan menyetor PPN ke DJP",
+        "D. Dibebaskan dari pengenaan PPN"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pemanfaatan Jasa Kena Pajak dari luar daerah pabean di dalam daerah pabean terutang PPN. Pihak yang memanfaatkan JKP (PT Indotech) wajib menyetor PPN Impor Jasa sebesar 11% menggunakan SSP atas nama WPLN qq. PT Indotech.",
+      "dasar": "Pasal 4 ayat (1) huruf d UU PPN."
+    },
+    {
+      "id": 60,
+      "kategori": "kup",
+      "skenario": "Wajib Pajak Orang Pribadi menerima Surat Ketetapan Pajak Nihil (SKPN) dari KPP setelah dilakukan pemeriksaan pajak menyeluruh.",
+      "soal": "Apakah arti hukum dari diterbitkannya Surat Ketetapan Pajak Nihil (SKPN) tersebut?",
+      "opsi": [
+        "A. Jumlah kredit pajak sama dengan jumlah pajak yang terutang, atau pajak tidak terutang dan tidak ada kredit pajak",
+        "B. Wajib Pajak memiliki lebih bayar pajak yang akan dikembalikan",
+        "C. Wajib Pajak masih kurang bayar dan akan diterbitkan SKPKB",
+        "D. Pemeriksaan dibatalkan"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Surat Ketetapan Pajak Nihil (SKPN) diterbitkan jika jumlah kredit pajak sama dengan jumlah pajak yang terutang, atau pajak tidak terutang dan tidak ada kredit pajak.",
+      "dasar": "Pasal 17A UU KUP."
     }
   ],
   "sesi2": [
@@ -679,81 +1204,6 @@
       "jawaban": 1,
       "pembahasan": "PKP = Laba 2024 - Rugi 2023 = 800jt - 500jt = 300jt.",
       "dasar": "Pasal 6 UU PPh."
-    },
-    {
-      "id": 21,
-      "kategori": "ppn",
-      "skenario": "Ekspor Jasa Kena Pajak.",
-      "soal": "Berapakah tarif PPN-nya?",
-      "opsi": [
-        "A. 11%",
-        "B. 0%",
-        "C. 1%",
-        "D. 12%"
-      ],
-      "jawaban": 1,
-      "pembahasan": "Ekspor JKP dikenakan PPN 0%.",
-      "dasar": "Pasal 7 UU PPN."
-    },
-    {
-      "id": 22,
-      "kategori": "kup",
-      "skenario": "Batas waktu lapor SPT Tahunan PPh Badan.",
-      "soal": "Kapan batas waktunya?",
-      "opsi": [
-        "A. 31 Maret",
-        "B. 30 April",
-        "C. 20 Januari",
-        "D. 31 Desember"
-      ],
-      "jawaban": 1,
-      "pembahasan": "SPT Tahunan PPh Badan paling lambat dilaporkan 4 bulan setelah akhir tahun pajak (30 April untuk tahun kalender).",
-      "dasar": "Pasal 3 UU KUP."
-    },
-    {
-      "id": 23,
-      "kategori": "pph-potput",
-      "skenario": "PT A membayar sewa mesin ke PT B (Badan DN).",
-      "soal": "Berapakah PPh 23 yang dipotong?",
-      "opsi": [
-        "A. 2% dari Bruto",
-        "B. 15% dari Bruto",
-        "C. 10% Final",
-        "D. 1,5% dari Bruto"
-      ],
-      "jawaban": 0,
-      "pembahasan": "Sewa harta (selain tanah/bangunan) dipotong PPh 23 sebesar 2%.",
-      "dasar": "Pasal 23 UU PPh."
-    },
-    {
-      "id": 24,
-      "kategori": "pph-badan",
-      "skenario": "Pemberian natura di daerah terpencil yang telah disetujui DJP.",
-      "soal": "Apakah biaya tersebut deductible?",
-      "opsi": [
-        "A. Ya",
-        "B. Tidak",
-        "C. Hanya 50%",
-        "D. Tergantung audit"
-      ],
-      "jawaban": 0,
-      "pembahasan": "Natura di daerah tertentu yang disetujui dapat dikurangkan sebagai biaya.",
-      "dasar": "PMK 66/2023."
-    },
-    {
-      "id": 25,
-      "kategori": "kup",
-      "skenario": "WP tidak menyampaikan SPT padahal sudah ditegur tertulis.",
-      "soal": "Apakah DJP dapat menerbitkan SKP secara jabatan?",
-      "opsi": [
-        "A. Ya, SKPKB",
-        "B. Tidak bisa",
-        "C. Hanya STP",
-        "D. Menunggu WP lapor"
-      ],
-      "jawaban": 0,
-      "pembahasan": "DJP berwenang menerbitkan SKPKB jika SPT tidak disampaikan dalam jangka waktu yang ditentukan dalam surat teguran.",
-      "dasar": "Pasal 13 UU KUP."
     }
   ]
 }
