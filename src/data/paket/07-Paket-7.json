@@ -6,7 +6,7 @@
     {
       "id": 1,
       "kategori": "PPh Badan",
-      "skenario": "PT Karbon adalah perusahaan industri semen yang pada 2024 diwajibkan membeli Carbon Credit atas emisi CO2 sebesar Rp 5 miliar sesuai regulasi perdagangan karbon (UU No.7/2021 dan PP-46/2024).",
+      "skenario": "PT Karbon adalah perusahaan industri semen yang pada 2024 diwajibkan membeli Carbon Credit atas emisi CO2 sebesar Rp 5 miliar sesuai regulasi perdagangan karbon (UU No.7/2021 dan UU No. 7 Tahun 2021 Bab VI (Pajak Karbon)).",
       "soal": "Bagaimana perlakuan fiskal atas pembelian Carbon Credit tersebut bagi PT Karbon?",
       "opsi": [
         "Dibebankan langsung sebagai biaya operasional (deductible)",
@@ -16,7 +16,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Pembelian Carbon Credit merupakan biaya yang dikeluarkan dalam rangka menjalankan kegiatan usaha (memenuhi kewajiban regulasi emisi). Berdasarkan Pasal 6 ayat (1) UU PPh, biaya yang berkaitan langsung dengan kegiatan 3M dapat dikurangkan. Carbon Credit yang dikonsumsi untuk compliance bukan aset, sehingga dibebankan langsung.",
-      "dasar": "Pasal 6 ayat (1) UU PPh; UU No.7/2021 tentang Harmonisasi Peraturan Perpajakan; PP-46/2024 tentang Pajak Karbon"
+      "dasar": "Pasal 6 ayat (1) UU PPh; UU No.7/2021 tentang Harmonisasi Peraturan Perpajakan; UU No. 7 Tahun 2021 Bab VI (Pajak Karbon) tentang Pajak Karbon"
     },
     {
       "id": 2,
@@ -46,7 +46,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Biaya uji klinis yang menghasilkan aset tidak berwujud (izin edar/hak paten obat) bersifat capital expenditure. Berdasarkan Pasal 11A UU PPh, biaya ini dikapitalisasi dan diamortisasi menggunakan metode yang dipilih (garis lurus/saldo menurun) sejak aset siap digunakan (sejak izin edar terbit). Masa amortisasi disesuaikan dengan kelompok masa manfaat.",
-      "dasar": "Pasal 11A UU PPh; PMK-96/PMK.03/2009 tentang Jenis-jenis Harta"
+      "dasar": "Pasal 11A UU PPh; PMK-72/PMK.03/2023 tentang Jenis-jenis Harta"
     },
     {
       "id": 4,
@@ -120,8 +120,8 @@
         "PPh 21 atas seluruh jasa medis dengan tarif 5%"
       ],
       "jawaban": 0,
-      "pembahasan": "Dokter yang praktik di RS sebagai mitra (bukan pegawai tetap) merupakan tenaga ahli. Berdasarkan PER-16/PJ/2016, pemotongan PPh 21 tenaga ahli bukan pegawai: DPP = 50% x penghasilan bruto, dikalikan tarif Pasal 17 progresif. PPh 23 tidak berlaku karena penerima adalah orang pribadi (bukan badan).",
-      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+      "pembahasan": "Dokter yang praktik di RS sebagai mitra (bukan pegawai tetap) merupakan tenaga ahli. Berdasarkan PMK-168/PMK.010/2023, pemotongan PPh 21 tenaga ahli bukan pegawai: DPP = 50% x penghasilan bruto, dikalikan tarif Pasal 17 progresif. PPh 23 tidak berlaku karena penerima adalah orang pribadi (bukan badan).",
+      "dasar": "PMK-168/PMK.010/2023; PMK-168/PMK.010/2023"
     },
     {
       "id": 9,
@@ -196,7 +196,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Royalti yang dibayarkan kepada orang pribadi SPDN dikenai PPh Pasal 23 sebesar 15% dari jumlah bruto (bukan bersifat final). PPh 23 = 15% x Rp 150 juta = Rp 22,5 juta. Berbeda dengan PPh 21 yang untuk penghasilan sehubungan pekerjaan, PPh 23 untuk royalti berlaku meski penerimanya orang pribadi (berdasarkan PER-31/PJ/2015 jo PMK yang mengatur PPh 23 atas royalti kepada OP SPDN).",
-      "dasar": "Pasal 23 UU PPh; PMK-141/PMK.03/2015 tentang Jenis Jasa PPh 23"
+      "dasar": "Pasal 23 UU PPh; PMK-59/PMK.03/2022 tentang Jenis Jasa PPh 23"
     },
     {
       "id": 14,
@@ -434,9 +434,9 @@
         "PPh Final 2,5% x Rp 150 miliar (tarif pengalihan saham non-bursa)",
         "Bebas PPh karena VC adalah investor jangka panjang"
       ],
-      "jawaban": 2,
-      "pembahasan": "Penjualan saham perusahaan (bukan emiten/tidak diperdagangkan di bursa) dikenai PPh Final 2,5% dari nilai transaksi berdasarkan PP-4/1995 jo SE-19/PJ.4/1997. DPP = harga jual = Rp 150 miliar. PPh Final = 2,5% x Rp 150 miliar = Rp 3,75 miliar. Berbeda dengan penjualan saham di bursa yang dikenai PPh Final 0,1%.",
-      "dasar": "PP-4/1995; SE-19/PJ.4/1997 tentang PPh atas Pengalihan Saham Non-Bursa"
+      "jawaban": 0,
+      "pembahasan": "Penghasilan perusahaan modal ventura dari transaksi penjualan saham atau pengalihan penyertaan modal pada perusahaan pasangan usahanya dikenakan Pajak Penghasilan yang bersifat final sebesar 0,1% dari jumlah bruto nilai transaksi penjualan saham berdasarkan PP-4/1995. DPP = Rp 150 militar. PPh Final = 0,1% x Rp 150 M = Rp 150 juta.",
+      "dasar": "PP-4/1995 tentang PPh atas Pengalihan Saham Modal Ventura"
     },
     {
       "id": 30,
@@ -480,8 +480,8 @@
         "PPh 23 sebesar 15% karena honorarium komisaris termasuk jasa manajemen"
       ],
       "jawaban": 2,
-      "pembahasan": "Berdasarkan PER-16/PJ/2016, anggota dewan komisaris yang menerima honorarium tidak secara teratur diperlakukan sebagai penerima penghasilan tidak teratur. PPh 21 dihitung atas seluruh honorarium tanpa norma 50% (norma 50% hanya untuk tenaga ahli yang memberikan jasa). Tarif = tarif Pasal 17 progresif atas penghasilan bruto.",
-      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+      "pembahasan": "Berdasarkan PMK-168/PMK.010/2023, anggota dewan komisaris yang menerima honorarium tidak secara teratur diperlakukan sebagai penerima penghasilan tidak teratur. PPh 21 dihitung atas seluruh honorarium tanpa norma 50% (norma 50% hanya untuk tenaga ahli yang memberikan jasa). Tarif = tarif Pasal 17 progresif atas penghasilan bruto.",
+      "dasar": "PMK-168/PMK.010/2023; PMK-168/PMK.010/2023"
     },
     {
       "id": 33,
@@ -676,7 +676,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Berdasarkan Pasal 11 ayat (4) UU PPh, penyusutan dimulai pada bulan dilakukannya pengeluaran (untuk aset yang tidak dalam proses konstruksi) atau bulan selesainya pengerjaan aset (untuk aset yang dibangun sendiri/konstruksi). PLTA yang dibangun 3 tahun baru dapat disusutkan setelah selesai konstruksi dan siap beroperasi.",
-      "dasar": "Pasal 11 ayat (4) UU PPh; PMK-96/PMK.03/2009"
+      "dasar": "Pasal 11 ayat (4) UU PPh; PMK-72/PMK.03/2023"
     },
     {
       "id": 46,
@@ -841,7 +841,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "SP2DK merupakan instrumen penelitian (bukan pemeriksaan) yang diatur dalam PER-06/PJ/2016. WP sebaiknya merespons dalam batas waktu dengan memberikan penjelasan dan dokumen pendukung. Jika SP2DK menemukan kekeliruan, WP dapat membetulkan SPT. Tidak merespons SP2DK dapat menjadi dasar DJP melakukan pemeriksaan.",
-      "dasar": "PER-06/PJ/2016 tentang SP2DK; PMK-17/PMK.03/2013"
+      "dasar": "PER-06/PJ/2016 tentang SP2DK; PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025"
     },
     {
       "id": 57,
@@ -901,7 +901,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Berdasarkan Pasal 29 ayat (3) UU KUP, WP wajib: memperlihatkan dan/atau meminjamkan buku/catatan, memberikan kesempatan untuk mengakses dan mengunduh data elektronik, dan memberikan keterangan yang diperlukan. Penolakan memberikan akses data ERP merupakan pelanggaran yang dapat berakibat pemeriksa menggunakan data yang ada dan membuat penetapan secara jabatan.",
-      "dasar": "Pasal 29 ayat (3) UU KUP; PMK-17/PMK.03/2013 tentang Kewajiban WP dalam Pemeriksaan"
+      "dasar": "Pasal 29 ayat (3) UU KUP; PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025 tentang Kewajiban WP dalam Pemeriksaan"
     }
   ],
   "sesi2": [
@@ -918,7 +918,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Metode CUP: harga arm's length USD 42 juta vs harga aktual USD 50 juta. Selisih = USD 8 juta (harga terlalu tinggi, merugikan PT KN). Koreksi positif PKP = USD 8 juta x Rp 16.000 = Rp 128 M (menambah PKP karena biaya yang diakui terlalu besar).",
-      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-213/PMK.03/2016"
+      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-172/PMK.03/2023"
     },
     {
       "id": 2,
@@ -933,7 +933,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Royalti kepada pihak berelasi dapat dibiayakan jika memenuhi prinsip arm's length: ada perjanjian tertulis, jasa/teknologi benar diberikan, dan tarif wajar didukung benchmarking. Tanpa studi benchmarking, tarif 3% tidak dapat diverifikasi kewajaran. Pemeriksa dapat mengoreksi seluruh atau sebagian royalti.",
-      "dasar": "Pasal 6 ayat (1) UU PPh; PMK-213/PMK.03/2016; SE-04/PJ.7/1993"
+      "dasar": "Pasal 6 ayat (1) UU PPh; PMK-172/PMK.03/2023; SE-04/PJ.7/1993"
     },
     {
       "id": 3,
@@ -1023,7 +1023,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Agen travel perorangan yang menerima komisi merupakan tenaga ahli/bukan pegawai. PPh 21: DPP = 50% x penghasilan bruto, dikalikan tarif Pasal 17. PPh 23 tidak berlaku karena penerima adalah orang pribadi.",
-      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+      "dasar": "PMK-168/PMK.010/2023; PMK-168/PMK.010/2023"
     },
     {
       "id": 9,
@@ -1038,7 +1038,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "PMK-213/2016 mewajibkan dokumentasi TP bagi WP yang bertransaksi dengan pihak berelasi di atas threshold. Tanpa dokumentasi: (1) DJP bebas menentukan metode TP yang paling menguntungkan DJP; (2) beban bukti kewajaran beralih ke WP; (3) WP tidak dapat mengklaim perlindungan safe harbor.",
-      "dasar": "PMK-213/PMK.03/2016"
+      "dasar": "PMK-172/PMK.03/2023"
     },
     {
       "id": 10,
@@ -1052,8 +1052,8 @@
         "PPh Final khusus IPO 0,5% x nilai saham"
       ],
       "jawaban": 1,
-      "pembahasan": "Penjualan saham perusahaan belum Tbk (sebelum IPO) dikenai PPh Final 2,5% dari harga jual berdasarkan PP-4/1995. PPh = 2,5% x Rp 500 M = Rp 12,5 M. Setelah menjadi Tbk, penjualan saham di bursa dikenai PPh Final 0,1%.",
-      "dasar": "PP-4/1995; SE-19/PJ.4/1997 tentang Pengalihan Saham Non-Bursa"
+      "pembahasan": "Penjualan saham perusahaan tertutup (non-Tbk) sebelum proses IPO dikenai Pajak Penghasilan umum (non-final) atas keuntungan (capital gain = harga jual - harga beli). PPh dihitung menggunakan tarif progresif Pasal 17 (untuk Orang Pribadi) atau 22% (untuk Badan) dari capital gain Rp 450 M dalam SPT Tahunan.",
+      "dasar": "Pasal 4 ayat (1) UU PPh tentang Capital Gain Saham Non-Tbk"
     },
     {
       "id": 11,

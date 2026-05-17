@@ -42,7 +42,7 @@
         "D. Rp 2.500.000"
       ],
       "jawaban": 1,
-      "pembahasan": "Pajak Penghasilan Pasal 23 dikenakan atas penghasilan berupa sewa dan penghasilan lain sehubungan dengan penggunaan harta, serta imbalan sehubungan dengan jasa tertentu, selain penghasilan yang telah dipotong PPh Pasal 21.\n\nJenis jasa: Jasa Konsultasi Manajemen.\nTarif PPh Pasal 23 untuk jasa konsultasi manajemen: 2% dari jumlah bruto (Pasal 23 ayat (1) huruf c angka 2 UU PPh dan PMK-141/PMK.03/2015).\nDasar Pengenaan Pajak (DPP): Jumlah bruto nilai kontrak jasa (Rp 50.000.000).\n\nPPh Pasal 23 yang dipotong = Tarif x DPP\nPPh Pasal 23 = 2% x Rp 50.000.000 = Rp 1.000.000",
+      "pembahasan": "Pajak Penghasilan Pasal 23 dikenakan atas penghasilan berupa sewa dan penghasilan lain sehubungan dengan penggunaan harta, serta imbalan sehubungan dengan jasa tertentu, selain penghasilan yang telah dipotong PPh Pasal 21.\n\nJenis jasa: Jasa Konsultasi Manajemen.\nTarif PPh Pasal 23 untuk jasa konsultasi manajemen: 2% dari jumlah bruto (Pasal 23 ayat (1) huruf c angka 2 UU PPh dan PMK-59/PMK.03/2022).\nDasar Pengenaan Pajak (DPP): Jumlah bruto nilai kontrak jasa (Rp 50.000.000).\n\nPPh Pasal 23 yang dipotong = Tarif x DPP\nPPh Pasal 23 = 2% x Rp 50.000.000 = Rp 1.000.000",
       "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 23 Undang-Undang Pajak Penghasilan, serta Peraturan Menteri Keuangan Nomor 141/PMK.03/2015 tentang Jenis Jasa Lain Sebagaimana Dimaksud dalam Pasal 23 Ayat (1) Huruf C Angka 2 Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan Sebagaimana Telah Beberapa Kali Diubah Terakhir dengan Undang-Undang Nomor 36 Tahun 2008."
     },
     {
@@ -193,7 +193,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "1. Berdasarkan Pasal 3 ayat (1) huruf d PP 9/2022, PPh Final atas penghasilan dari usaha jasa pelaksanaan konstruksi yang dilakukan oleh penyedia jasa yang memiliki Sertifikat Badan Usaha kualifikasi usaha menengah atau besar dikenakan tarif 2,65%.\n\n2. DPP = nilai pembayaran tidak termasuk PPN = Rp 2.500.000.000\n\n3. PPh Final = 2,65% x Rp 2.500.000.000 = Rp 66.250.000",
-      "dasar": "Pasal 3 ayat (1) huruf d Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Perubahan Kedua atas PP 51/2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi."
+      "dasar": "Pasal 3 ayat (1) huruf d Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Perubahan Kedua atas PP 9/2022 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi."
     },
     {
       "id": 14,
@@ -538,7 +538,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "1. PT Bangun Jaya memiliki sertifikat badan usaha kualifikasi Usaha Menengah untuk pelaksanaan konstruksi.\n\n2. Berdasarkan Pasal 3 ayat (1) huruf d PP 9/2022, tarif PPh Final untuk pekerjaan konstruksi oleh penyedia jasa yang memiliki sertifikat badan usaha kualifikasi usaha menengah atau besar adalah 2,65%.\n\n3. PPh Final = 2,65% x Rp 2.500.000.000 = Rp 66.250.000",
-      "dasar": "Pasal 3 ayat (1) huruf d Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Perubahan Kedua atas PP 51/2008 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi."
+      "dasar": "Pasal 3 ayat (1) huruf d Peraturan Pemerintah Nomor 9 Tahun 2022 tentang Perubahan Kedua atas PP 9/2022 tentang Pajak Penghasilan atas Penghasilan dari Usaha Jasa Konstruksi."
     },
     {
       "id": 37,
@@ -638,12 +638,12 @@
       "opsi": [
         "Rp4.750.000",
         "Rp5.250.000",
-        "Rp6.000.000",
+        "Rp5.000.000",
         "Rp6.250.000"
       ],
-      "jawaban": 3,
-      "pembahasan": "Berdasarkan PMK Nomor 79 Tahun 2024 tentang Pajak Penghasilan atas Penghasilan dari Obligasi dan Surat Utang Negara:\n\n1.  **Bunga Obligasi Korporasi yang diperdagangkan di Bursa Efek Indonesia (Rp25.000.000):**\n    *   Subjek Pajak Badan dikenakan PPh Pasal 4 ayat (2) sebesar 15% dari jumlah bruto bunga. (Pasal 2 ayat (1) huruf a PMK 79/2024)\n    *   PPh Terutang = 15% x Rp25.000.000 = Rp3.750.000\n\n2.  **Diskonto Obligasi Pemerintah (SUN) yang diperdagangkan di Bursa Efek Indonesia, dijual sebelum jatuh tempo (Rp15.000.000):**\n    *   Subjek Pajak Badan dikenakan PPh Pasal 4 ayat (2) sebesar 10% dari jumlah bruto diskonto. (Pasal 2 ayat (1) huruf b PMK 79/2024)\n    *   PPh Terutang = 10% x Rp15.000.000 = Rp1.500.000\n\n3.  **Bunga Obligasi Pemerintah (SUN) yang tidak diperdagangkan di Bursa Efek Indonesia, jatuh tempo dan dibayar (Rp10.000.000):**\n    *   Subjek Pajak Badan dikenakan PPh Pasal 4 ayat (2) sebesar 10% dari jumlah bruto bunga, baik diperdagangkan maupun tidak diperdagangkan di bursa efek. (Pasal 2 ayat (1) huruf b PMK 79/2024)\n    *   PPh Terutang = 10% x Rp10.000.000 = Rp1.000.000\n\nTotal PPh Pasal 4 ayat (2) yang dipotong:\nRp3.750.000 + Rp1.500.000 + Rp1.000.000 = Rp6.250.000",
-      "dasar": "Undang-Undang Pajak Penghasilan Pasal 4 ayat (2), Peraturan Menteri Keuangan Nomor 79 Tahun 2024 tentang Pajak Penghasilan atas Penghasilan dari Obligasi dan Surat Utang Negara."
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP Nomor 91 Tahun 2021 tentang Pajak Penghasilan atas Penghasilan Obligasi yang Diterima atau Diperoleh Wajib Pajak Dalam Negeri dan BUT, tarif PPh Final yang dikenakan adalah 10% untuk seluruh subjek pajak dalam negeri (termasuk Badan):\n\n1. Bunga Obligasi Korporasi: 10% x Rp 25.000.000 = Rp 2.500.000\n2. Diskonto Obligasi Pemerintah: 10% x Rp 15.000.000 = Rp 1.500.000\n3. Bunga Obligasi Pemerintah: 10% x Rp 10.000.000 = Rp 1.000.000\n\nTotal PPh Final terutang = Rp 2.500.000 + Rp 1.500.000 + Rp 1.000.000 = Rp 5.000.000.",
+      "dasar": "Undang-Undang Pajak Penghasilan Pasal 4 ayat (2); PP Nomor 91 Tahun 2021"
     },
     {
       "id": 44,
@@ -658,7 +658,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Berdasarkan Pasal 23 ayat (1) huruf c angka 2 Undang-Undang Pajak Penghasilan (UU PPh) dan Pasal 1 ayat (2) huruf c angka 25 Peraturan Menteri Keuangan Nomor 141/PMK.03/2015, atas penghasilan berupa imbalan sehubungan dengan jasa pelayanan kesehatan dikenai pemotongan PPh Pasal 23 sebesar 2% dari jumlah bruto tidak termasuk PPN.\n\nPerhitungan PPh Pasal 23:\nDasar Pengenaan Pajak = Rp150.000.000\nTarif PPh Pasal 23 = 2%\nPPh Pasal 23 yang dipotong = 2% x Rp150.000.000 = Rp3.000.000\n\nJadi, PT Abadi Jaya wajib memotong PPh Pasal 23 sebesar Rp3.000.000.",
-      "dasar": "UU PPh Pasal 23 ayat (1) huruf c angka 2, PMK 141/PMK.03/2015 Pasal 1 ayat (2) huruf c angka 25"
+      "dasar": "UU PPh Pasal 23 ayat (1) huruf c angka 2, PMK-59/PMK.03/2022 Pasal 1 ayat (2) huruf c angka 25"
     },
     {
       "id": 45,

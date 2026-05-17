@@ -31,7 +31,7 @@
       ],
       "jawaban": 2,
       "pembahasan": "Dalam konteks transfer pricing, PT Alpha Indonesia (distributor) membeli dari pihak berelasi dengan harga USD 5.000.000, sementara harga pasar (CUP) adalah USD 4.000.000. Harga beli yang terlalu tinggi menyebabkan biaya yang diakui terlalu besar, sehingga laba PT Alpha menjadi terlalu kecil. Koreksi yang dilakukan adalah mengurangi biaya pembelian sebesar USD 1.000.000 (sehingga biaya yang diakui hanya USD 4.000.000), yang secara efektif menambah laba kena pajak PT Alpha Indonesia sebesar USD 1.000.000.",
-      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-213/PMK.03/2016; PER-22/PJ/2013 tentang Pedoman Pemeriksaan terhadap WP yang Mempunyai Hubungan Istimewa"
+      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-172/PMK.03/2023; PER-22/PJ/2013 tentang Pedoman Pemeriksaan terhadap WP yang Mempunyai Hubungan Istimewa"
     },
     {
       "id": 3,
@@ -61,7 +61,7 @@
       ],
       "jawaban": 2,
       "pembahasan": "Berdasarkan Pasal 10 ayat (3) UU PPh, pengalihan harta dalam rangka penggabungan, peleburan, atau pemekaran usaha (spin-off) dapat menggunakan nilai buku (tidak ada gain pajak) apabila mendapat persetujuan Direktur Jenderal Pajak dan memenuhi persyaratan: tujuan bisnis, bukan penghindaran pajak, dan kontinuitas usaha. Tanpa persetujuan, pengalihan dinilai berdasarkan nilai pasar dan selisihnya merupakan objek PPh.",
-      "dasar": "Pasal 10 ayat (3) UU PPh; PMK-43/PMK.03/2008 tentang Penggunaan Nilai Buku dalam Penggabungan, Peleburan, atau Pemekaran Usaha"
+      "dasar": "Pasal 10 ayat (3) UU PPh; PMK-52/PMK.010/2017 tentang Penggunaan Nilai Buku dalam Penggabungan, Peleburan, atau Pemekaran Usaha"
     },
     {
       "id": 5,
@@ -119,9 +119,9 @@
         "Keduanya tidak dapat dikurangkan (non-deductible)",
         "Royalti tidak dapat dikurangkan; iuran produksi dapat dikurangkan"
       ],
-      "jawaban": 2,
-      "pembahasan": "Berdasarkan PP-144/2000 dan ketentuan perpajakan sektor pertambangan mineral dan batubara, royalti (iuran tetap dan iuran produksi/royalti) yang dibayarkan kepada pemerintah dalam rangka kegiatan pertambangan berdasarkan UU Minerba TIDAK DAPAT dikurangkan dari penghasilan bruto (non-deductible). Hal ini berbeda dengan biaya-biaya operasional lainnya yang dapat dikurangkan.",
-      "dasar": "Pasal 9 ayat (1) huruf j UU PPh; PP-144/2000; UU Minerba No. 3 Tahun 2020"
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan UU Minerba No. 3 Tahun 2020 dan PP-96/2021, royalti (iuran tetap dan iuran produksi/royalti) yang dibayarkan kepada pemerintah dalam rangka kegiatan pertambangan batubara merupakan Penerimaan Negara Bukan Pajak (PNBP) yang secara perpajakan diakui sebagai biaya operasional yang dapat dikurangkan (deductible) dari penghasilan bruto sesuai Pasal 6 ayat (1) huruf a UU PPh.",
+      "dasar": "Pasal 6 ayat (1) huruf a UU PPh; UU Minerba No. 3 Tahun 2020; PP-96/2021"
     },
     {
       "id": 9,
@@ -406,7 +406,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Berdasarkan Pasal 13 ayat (1) UU KUP, DJP dapat menerbitkan SKPKB dalam jangka waktu 5 tahun setelah saat terutangnya pajak atau berakhirnya Masa Pajak, Bagian Tahun Pajak, atau Tahun Pajak. Untuk masa/tahun pajak 2021, batas penerbitan SKPKB adalah 31 Desember 2026. Pemeriksaan dilakukan sebagai dasar penerbitan SKPKB, sehingga pemeriksaan yang dimulai Januari 2024 (untuk TP 2021) masih dalam batas yang sah.",
-      "dasar": "Pasal 13 ayat (1) UU KUP; PMK-17/PMK.03/2013"
+      "dasar": "Pasal 13 ayat (1) UU KUP; PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025"
     },
     {
       "id": 28,
@@ -481,7 +481,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Fasilitas tax holiday hanya berlaku untuk PPh Badan (pajak atas laba perusahaan). Ketika laba tersebut dibagikan sebagai dividen kepada pemegang saham, perlakuan PPh atas dividen mengikuti ketentuan umum (bukan termasuk dalam fasilitas tax holiday). Dividen kepada OP dikenai PPh Final 10% (jika tidak diinvestasikan) atau dikecualikan (jika diinvestasikan). Dividen kepada badan dalam negeri dengan kepemilikan ≥25% dikecualikan.",
-      "dasar": "PP-1/2007 jo PMK-135/PMK.010/2018; Pasal 4 ayat (3) huruf f UU PPh"
+      "dasar": "PP-78/2019 jo. PMK-130/PMK.010/2020 jo PMK-135/PMK.010/2018; Pasal 4 ayat (3) huruf f UU PPh"
     },
     {
       "id": 33,
@@ -570,8 +570,8 @@
         "PPh Final 2,5% x Rp 5 miliar = Rp 125 juta"
       ],
       "jawaban": 1,
-      "pembahasan": "Tn. Bimo sebagai artis perseorangan (bukan pegawai tetap, bukan melalui badan) yang memberikan jasa brand ambassador dikenai PPh 21 sebagai tenaga ahli/bukan pegawai. Berdasarkan PER-16/PJ/2016, untuk tenaga ahli bukan pegawai, DPP PPh 21 = 50% x penghasilan bruto. PPh 21 = tarif Pasal 17 x 50% x Rp 5 miliar = tarif progresif x Rp 2,5 miliar.",
-      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+      "pembahasan": "Tn. Bimo sebagai artis perseorangan (bukan pegawai tetap, bukan melalui badan) yang memberikan jasa brand ambassador dikenai PPh 21 sebagai tenaga ahli/bukan pegawai. Berdasarkan PMK-168/PMK.010/2023, untuk tenaga ahli bukan pegawai, DPP PPh 21 = 50% x penghasilan bruto. PPh 21 = tarif Pasal 17 x 50% x Rp 5 miliar = tarif progresif x Rp 2,5 miliar.",
+      "dasar": "PMK-168/PMK.010/2023; PMK-168/PMK.010/2023"
     },
     {
       "id": 39,
@@ -781,7 +781,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Perbedaan pengakuan penghasilan antara akuntansi dan fiskal (timing difference) dapat menjadi dasar koreksi fiskal. Berdasarkan Pasal 4 UU PPh, penghasilan diakui pada saat diperoleh atau dapat diperkirakan diterima. Pemeriksa berwenang mengoreksi jika pengakuan penghasilan secara akuntansi tidak sesuai dengan ketentuan fiskal. Koreksi positif dilakukan pada tahun yang seharusnya, dengan konsekuensi penambahan pajak terutang tahun 2022.",
-      "dasar": "Pasal 4 UU PPh; Pasal 28 UU KUP; PMK-17/PMK.03/2013"
+      "dasar": "Pasal 4 UU PPh; Pasal 28 UU KUP; PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025"
     },
     {
       "id": 53,
@@ -918,7 +918,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Menggunakan metode CUP: harga pasar (arm's length) SGD 8 juta vs harga dibayar SGD 10 juta. Selisih SGD 2 juta merupakan pembayaran berlebih kepada pihak berelasi. Koreksi positif = SGD 2 juta x Rp 11.500 = Rp 23 miliar (menambah PKP GTI karena biaya yang diakui terlalu tinggi).",
-      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-213/PMK.03/2016"
+      "dasar": "Pasal 18 ayat (3) UU PPh; PMK-172/PMK.03/2023"
     },
     {
       "id": 2,
@@ -933,7 +933,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Berdasarkan Pasal 6 ayat (1) UU PPh and prinsip 3M (mendapatkan, menagih, memelihara penghasilan), biaya management fee dapat dikurangkan jika dapat dibuktikan: (1) ada perjanjian tertulis, (2) jasa benar-benar diberikan, (3) harga wajar (arm's length). Tanpa perjanjian tertulis yang jelas and bukti manfaat nyata, management fee tidak memenuhi syarat and harus dikoreksi positif.",
-      "dasar": "Pasal 6 ayat (1) UU PPh; PMK-213/PMK.03/2016; SE-04/PJ.7/1993 tentang Management Fee"
+      "dasar": "Pasal 6 ayat (1) UU PPh; PMK-172/PMK.03/2023; SE-04/PJ.7/1993 tentang Management Fee"
     },
     {
       "id": 3,
@@ -977,8 +977,8 @@
         "Tidak ada syarat pembayaran; cukup lampirkan surat keberatan"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan Pasal 25 UU KUP and PMK-9/PMK.03/2013: (1) Keberatan diajukan dalam 3 bulan sejak SKPKB diterima; (2) WP wajib melunasi pajak yang tidak disengketakan sebelum mengajukan keberatan; (3) Keberatan memuat alasan yang jelas and dilampiri dokumen pendukung. TIDAK dipersyaratkan membayar 50% (itu syarat BANDING, bukan keberatan). WP juga dapat mengajukan keberatan meski menganggap seluruh tagihan tidak benar.",
-      "dasar": "Pasal 25 UU KUP; PMK-9/PMK.03/2013 tentang Tata Cara Pengajuan and Penyelesaian Keberatan"
+      "pembahasan": "Berdasarkan Pasal 25 UU KUP and PMK-9/PMK.03/2013 jo. PMK-202/PMK.03/2015: (1) Keberatan diajukan dalam 3 bulan sejak SKPKB diterima; (2) WP wajib melunasi pajak yang tidak disengketakan sebelum mengajukan keberatan; (3) Keberatan memuat alasan yang jelas and dilampiri dokumen pendukung. TIDAK dipersyaratkan membayar 50% (itu syarat BANDING, bukan keberatan). WP juga dapat mengajukan keberatan meski menganggap seluruh tagihan tidak benar.",
+      "dasar": "Pasal 25 UU KUP; PMK-9/PMK.03/2013 jo. PMK-202/PMK.03/2015 tentang Tata Cara Pengajuan and Penyelesaian Keberatan"
     },
     {
       "id": 6,
@@ -1021,9 +1021,9 @@
         "PPh Final 5% x Rp 50 M = Rp 2,5 M; ditanggung PT PP",
         "Tidak ada PPh karena tanah dijual ke pengembang"
       ],
-      "jawaban": 1,
-      "pembahasan": "Berdasarkan PP-34/2016, atas pengalihan hak atas tanah/bangunan dikenai PPh Final 2,5% dari nilai tertinggi antara harga transaksi and NJOP. PPh = 2,5% x Rp 50 miliar = Rp 1,25 miliar. PPh ini merupakan beban/kewajiban PENJUAL (Tn. Budi). Secara mekanisme, Tn. Budi wajib menyetor sendiri sebelum AJB ditandatangani. PT PP (pembeli) tidak memotong, namun notaris tidak akan memproses AJB jika SSP belum ada.",
-      "dasar": "PP-34/2016; PMK-261/PMK.03/2016"
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan UU Minerba No. 3 Tahun 2020 dan PP-96/2021, royalti (iuran tetap dan iuran produksi/royalti) yang dibayarkan kepada pemerintah dalam rangka kegiatan pertambangan batubara merupakan Penerimaan Negara Bukan Pajak (PNBP) yang secara perpajakan diakui sebagai biaya operasional yang dapat dikurangkan (deductible) dari penghasilan bruto sesuai Pasal 6 ayat (1) huruf a UU PPh.",
+      "dasar": "Pasal 6 ayat (1) huruf a UU PPh; UU Minerba No. 3 Tahun 2020; PP-96/2021"
     },
     {
       "id": 9,
@@ -1037,8 +1037,8 @@
         "Bebas potput karena dibayar ke individu"
       ],
       "jawaban": 1,
-      "pembahasan": "Agen properti perorangan (non-pegawai) yang menerima komisi merupakan tenaga ahli. Berdasarkan PER-16/PJ/2016, pemotongan PPh 21 atas imbalan kepada tenaga ahli bukan pegawai: DPP = 50% x penghasilan bruto. Tarif = tarif Pasal 17 progresif dikalikan DPP. PPh 23 tidak berlaku untuk imbalan kepada orang pribadi (PPh 23 hanya untuk badan).",
-      "dasar": "PER-16/PJ/2016; PMK-168/PMK.010/2023"
+      "pembahasan": "Agen properti perorangan (non-pegawai) yang menerima komisi merupakan tenaga ahli. Berdasarkan PMK-168/PMK.010/2023, pemotongan PPh 21 atas imbalan kepada tenaga ahli bukan pegawai: DPP = 50% x penghasilan bruto. Tarif = tarif Pasal 17 progresif dikalikan DPP. PPh 23 tidak berlaku untuk imbalan kepada orang pribadi (PPh 23 hanya untuk badan).",
+      "dasar": "PMK-168/PMK.010/2023; PMK-168/PMK.010/2023"
     },
     {
       "id": 10,
@@ -1052,8 +1052,8 @@
         "Menerbitkan STP dahulu, baru SKPKB"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan PMK-17/PMK.03/2013 tentang Tata Cara Pemeriksaan, prosedur yang wajib dilakukan sebelum SKPKB: (1) Penyampaian SPHP (Surat Pemberitahuan Hasil Pemeriksaan) kepada WP; (2) WP diberikan hak untuk menanggapi dalam 7 hari kerja; (3) Pembahasan Akhir Hasil Pemeriksaan (Closing Conference); (4) Berita Acara Pembahasan Akhir. Setelah tahapan ini, baru SKPKB diterbitkan. Pelanggaran prosedur ini menjadi dasar pembatalan SKPKB.",
-      "dasar": "PMK-17/PMK.03/2013; Pasal 36 ayat (1) huruf d UU KUP"
+      "pembahasan": "Berdasarkan PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025 tentang Tata Cara Pemeriksaan, prosedur yang wajib dilakukan sebelum SKPKB: (1) Penyampaian SPHP (Surat Pemberitahuan Hasil Pemeriksaan) kepada WP; (2) WP diberikan hak untuk menanggapi dalam 7 hari kerja; (3) Pembahasan Akhir Hasil Pemeriksaan (Closing Conference); (4) Berita Acara Pembahasan Akhir. Setelah tahapan ini, baru SKPKB diterbitkan. Pelanggaran prosedur ini menjadi dasar pembatalan SKPKB.",
+      "dasar": "PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025; Pasal 36 ayat (1) huruf d UU KUP"
     },
     {
       "id": 11,
@@ -1187,8 +1187,8 @@
         "PT AN langsung dikenai pidana pajak"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan PMK-213/PMK.03/2016, WP yang bertransaksi dengan pihak berelasi wajib menyiapkan dokumentasi TP (master file, local file, country-by-country report jika memenuhi threshold). Ketiadaan dokumentasi TP: (1) DJP dapat menggunakan data/informasi yang ada untuk menentukan kewajaran transaksi; (2) Beban pembuktian beralih ke WP; (3) WP tidak dapat menggunakan safe harbor. Tidak ada denda khusus untuk ketiadaan dokumen TP, namun memperlemah posisi WP dalam pemeriksaan.",
-      "dasar": "PMK-213/PMK.03/2016 tentang Jenis Dokumen and/atau Informasi Tambahan yang Wajib Disimpan WP yang Melakukan Transaksi dengan Pihak yang Mempunyai Hubungan Istimewa"
+      "pembahasan": "Berdasarkan PMK-172/PMK.03/2023, WP yang bertransaksi dengan pihak berelasi wajib menyiapkan dokumentasi TP (master file, local file, country-by-country report jika memenuhi threshold). Ketiadaan dokumentasi TP: (1) DJP dapat menggunakan data/informasi yang ada untuk menentukan kewajaran transaksi; (2) Beban pembuktian beralih ke WP; (3) WP tidak dapat menggunakan safe harbor. Tidak ada denda khusus untuk ketiadaan dokumen TP, namun memperlemah posisi WP dalam pemeriksaan.",
+      "dasar": "PMK-172/PMK.03/2023 tentang Jenis Dokumen and/atau Informasi Tambahan yang Wajib Disimpan WP yang Melakukan Transaksi dengan Pihak yang Mempunyai Hubungan Istimewa"
     },
     {
       "id": 20,
@@ -1203,7 +1203,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Setoran modal dalam bentuk aset non-kas (in-kind contribution) merupakan pengalihan harta. Berdasarkan Pasal 10 ayat (2) UU PPh, nilai aset yang dialihkan sebagai setoran modal dinilai berdasarkan nilai pasar. Jika nilai pasar > nilai buku, selisihnya merupakan keuntungan yang dikenai PPh bagi PT AN (pengalih). Pengecualian: jika mendapat persetujuan Dirjen Pajak berdasarkan Pasal 10 ayat (3) untuk reorganisasi usaha, dapat menggunakan nilai buku (tidak ada gain).",
-      "dasar": "Pasal 10 ayat (2) and (3) UU PPh; PMK-43/PMK.03/2008"
+      "dasar": "Pasal 10 ayat (2) and (3) UU PPh; PMK-52/PMK.010/2017"
     }
   ]
 }

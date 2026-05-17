@@ -28,7 +28,7 @@
       ],
       "jawaban": 3,
       "pembahasan": "Harga Perolehan Mesin: Rp 6.000.000.000\nTarif Penyusutan Kelompok II (Garis Lurus): 12,5% per tahun\nTanggal Perolehan: 1 Juli 2021\nTanggal Penjualan: 1 Maret 2024\n\n**Perhitungan Penyusutan Fiskal:**\n*   Tahun 2021 (Juli-Des, 6 bulan): Rp 6.000.000.000 × 12,5% × (6/12) = Rp 375.000.000\n*   Tahun 2022 (Jan-Des, 12 bulan): Rp 6.000.000.000 × 12,5% × (12/12) = Rp 750.000.000\n*   Tahun 2023 (Jan-Des, 12 bulan): Rp 6.000.000.000 × 12,5% × (12/12) = Rp 750.000.000\n*   Tahun 2024 (Jan-Feb, 2 bulan, karena dijual 1 Maret): Rp 6.000.000.000 × 12,5% × (2/12) = Rp 125.000.000\n\n**Total Akumulasi Penyusutan (sampai 28 Februari 2024):**\nRp 375.000.000 + Rp 750.000.000 + Rp 750.000.000 + Rp 125.000.000 = Rp 2.000.000.000\n\n**Nilai Buku Fiskal (pada 1 Maret 2024):**\nHarga Perolehan - Akumulasi Penyusutan = Rp 6.000.000.000 - Rp 2.000.000.000 = Rp 4.000.000.000\n\n**Harga Penjualan Aset:** Rp 3.800.000.000\n\n**Keuntungan / Kerugian Penjualan Aset:**\nHarga Penjualan - Nilai Buku Fiskal = Rp 3.800.000.000 - Rp 4.000.000.000 = **(Rp 200.000.000)**\n\nJadi, PT Delta Karya mengakui **kerugian sebesar Rp 200.000.000**.",
-      "dasar": "Pasal 11 UU PPh; PMK-96/PMK.03/2009"
+      "dasar": "Pasal 11 UU PPh; PMK-72/PMK.03/2023"
     },
     {
       "id": 3,
@@ -72,7 +72,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Berdasarkan Pasal 21 ayat (5a) UU PPh: penerima penghasilan yang tidak memiliki NPWP dikenai tarif 20% lebih tinggi dari tarif Pasal 17. Namun pemotongan ini bersifat TIDAK FINAL dan dapat dikreditkan dalam SPT Tahunan OP setelah yang bersangkutan memiliki NPWP.",
-      "dasar": "Pasal 21 ayat (5a) UU PPh; PER-16/PJ/2016",
+      "dasar": "Pasal 21 ayat (5a) UU PPh; PMK-168/PMK.010/2023",
       "id": 5
     },
     {
@@ -102,7 +102,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Pasal 23 ayat (4) UU PPh: dikecualikan dari pemotongan antara lain bunga kepada bank (BNI) dan LKBB seperti PT Dana Sejahtera yang terdaftar di OJK. Bunga ke perusahaan afiliasi non-bank (PT Kawan Maju) dikenai PPh 23 tarif 15%. Royalti dikenai PPh 23 tarif 15% atas jumlah bruto. Tarif 2% berlaku untuk jasa, bukan royalti dan bunga.",
-      "dasar": "Pasal 23 UU PPh; Pasal 23 ayat (4); PMK-141/PMK.03/2015",
+      "dasar": "Pasal 23 UU PPh; Pasal 23 ayat (4); PMK-59/PMK.03/2022",
       "id": 7
     },
     {
@@ -117,7 +117,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "PK: obat bebas Rp 5M × 11% = 550 juta. Obat keras esensial = DIBEBASKAN PPN (PP 49/2022). Ekspor = tarif 0% (PK = 0). Total PK = 550 juta. PM: PM entertainment tanpa daftar nominatif TIDAK dapat dikreditkan (Pasal 9 ayat 8). PM bahan baku Rp 700 juta, namun ada penyerahan tidak terutang (obat esensial Rp 2M), proporsional: penyerahan terutang/(terutang+bebas) = (5+3)/(5+2+3) = 8/10 = 80%. PM dapat dikreditkan = 80% × 700 = 560 juta. PPN = PK - PM = 550 - 560 = -10 juta. Sehingga terjadi Lebih Bayar sebesar Rp 10.000.000.",
-      "dasar": "Pasal 9 UU PPN; PP 49/2022; PMK-78/PMK.03/2010",
+      "dasar": "Pasal 9 UU PPN; PP 49/2022; PP-1/2012 jo. PMK-186/PMK.03/2015",
       "id": 8
     },
     {
@@ -132,7 +132,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Dalam skema BOT: (1) Jasa konstruksi yang dilakukan PT Bangun Prima terutang PPN. (2) Pendapatan sewa selama masa operasi merupakan JKP yang terutang PPN 11%. (3) Penyerahan gedung di akhir masa BOT merupakan penyerahan BKP yang terutang PPN dengan DPP nilai pasar gedung saat penyerahan. Pemda bukan otomatis bebas PPN kecuali ditetapkan secara spesifik.",
-      "dasar": "Pasal 4 ayat (1) UU PPN; SE-13/PJ.52/1998; PMK-70/PMK.03/2010",
+      "dasar": "Pasal 4 ayat (1) UU PPN; SE-13/PJ.52/1998 jo. PP-44/2022; PMK-70/PMK.03/2010",
       "id": 9
     },
     {
@@ -162,7 +162,7 @@
       ],
       "jawaban": 0,
       "pembahasan": "Pasal 29 UU KUP: WP wajib memperlihatkan/meminjamkan dokumen; rahasia bisnis tidak membebaskan kewajiban ini. Pasal 35 UU KUP: pemeriksa berwenang meminta keterangan/bukti dari pihak ketiga termasuk bank (melalui mekanisme PMK terkait rahasia bank). Pengaduan tidak menghentikan pemeriksaan. Keberatan hanya bisa diajukan atas SKP hasil pemeriksaan.",
-      "dasar": "Pasal 29, Pasal 35 UU KUP; PMK-17/PMK.03/2013",
+      "dasar": "Pasal 29, Pasal 35 UU KUP; PMK-17/PMK.03/2013 jo. PMK-18/PMK.03/2021 jo. PMK-15/PMK.03/2025",
       "id": 11
     },
     {
@@ -373,7 +373,7 @@
       ],
       "jawaban": 1,
       "pembahasan": "Bagi PKP yang melakukan penyerahan yang terutang PPN dan penyerahan yang tidak terutang (atau dibebaskan) PPN, sedangkan Pajak Masukannya tidak dapat diketahui dengan pasti pengalokasiannya (joint cost), pengkreditan Pajak Masukan dihitung menggunakan pedoman proporsional. \nProporsi = (Penyerahan Terutang PPN / Total Penyerahan) x Pajak Masukan Gabungan. \n= (Rp8.000.000.000 / Rp10.000.000.000) x Rp100.000.000 = 80% x Rp100.000.000 = Rp80.000.000.",
-      "dasar": "PMK-78/PMK.03/2010 Pasal 2 jo. PMK-135/PMK.03/2014."
+      "dasar": "PP-1/2012 jo. PMK-186/PMK.03/2015 Pasal 2 jo. PMK-135/PMK.03/2014."
     },
     {
       "id": 26,
@@ -508,7 +508,7 @@
       ],
       "jawaban": 3,
       "pembahasan": "Penyerahan material yang dibarengi instalasi oleh entitas yang kegiatan usaha utamanya adalah perdagangan (bukan konstruksi) dan tidak memiliki SBU Jasa Konstruksi, perlakuan pajaknya masuk ke PPh Pasal 23 (Jasa Instalasi/Pemasangan). Sesuai PMK-141/2015, jika tagihan merincikan harga material dan jasa secara terpisah, maka Dasar Pengenaan Pajak (DPP) PPh 23 adalah HANYA atas nilai jasanya saja (tidak termasuk material). Pemotongan = 2% x Rp5.000.000.",
-      "dasar": "PMK-141/PMK.03/2015 tentang Jenis Jasa Lain Objek PPh 23."
+      "dasar": "PMK-59/PMK.03/2022 tentang Jenis Jasa Lain Objek PPh 23."
     },
     {
       "id": 35,
@@ -583,7 +583,7 @@
       ],
       "jawaban": 2,
       "pembahasan": "Menurut PP 34 Tahun 2017 jo. PMK-141/2015, *Service Charge* yang ditagihkan menyatu atau oleh Pemilik Bangunan sendiri dianggap satu kesatuan sewa bangunan (PPh Final 10%). NAMUN, jika *Service Charge* ditagihkan oleh pihak ketiga (Perusahaan Manajemen Properti) yang merupakan entitas hukum terpisah dari pemilik tanah/bangunan dengan kontrak terpisah, maka atas *Service Charge* tersebut dikenai pemotongan PPh Pasal 23 (Tarif 2%) atas Jasa Pengelolaan Gedung.",
-      "dasar": "PP Nomor 34 Tahun 2017 jo. Penjelasan Klasifikasi Jasa PMK-141/PMK.03/2015."
+      "dasar": "PP Nomor 34 Tahun 2017 jo. Penjelasan Klasifikasi Jasa PMK-59/PMK.03/2022."
     },
     {
       "id": 40,
@@ -732,8 +732,8 @@
         "Bukan Objek PPh 23"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan PMK-141/PMK.03/2015, jasa sewa space iklan di media online/portal berita dikategorikan spesifik sebagai 'Jasa penyediaan tempat dan/atau waktu dalam media masa, media luar ruang atau media lain untuk penyampaian informasi' yang merupakan objek PPh Pasal 23 dengan tarif 2%.",
-      "dasar": "PMK-141/PMK.03/2015 Lampiran."
+      "pembahasan": "Berdasarkan PMK-59/PMK.03/2022, jasa sewa space iklan di media online/portal berita dikategorikan spesifik sebagai 'Jasa penyediaan tempat dan/atau waktu dalam media masa, media luar ruang atau media lain untuk penyampaian informasi' yang merupakan objek PPh Pasal 23 dengan tarif 2%.",
+      "dasar": "PMK-59/PMK.03/2022 Lampiran."
     },
     {
       "id": 50,
@@ -822,8 +822,8 @@
         "Rp5.000.000"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan PMK-120/PMK.03/2019 jo. PMK-71/PMK.03/2024, Pajak Pertambahan Nilai yang dapat diminta kembali (VAT Refund) minimal adalah Rp500.000 (lima ratus ribu rupiah), yang dapat merupakan gabungan dari beberapa Faktur Pajak Khusus (struk yang berfungsi sebagai faktur pajak) dengan nilai PPN per struk minimal Rp50.000 (terbaru bisa akumulasi dari beberapa struk beda tanggal dalam 1 bulan dari toko yang sama atau beda). Total claim harus >= Rp500.000.",
-      "dasar": "PMK-120/PMK.03/2019 tentang Tata Cara Pengajuan dan Penyelesaian Permintaan Kembali PPN Barang Bawaan Orang Pribadi Pemegang Paspor Luar Negeri."
+      "pembahasan": "Berdasarkan PMK-71/PMK.03/2024 jo. PMK-71/PMK.03/2024, Pajak Pertambahan Nilai yang dapat diminta kembali (VAT Refund) minimal adalah Rp500.000 (lima ratus ribu rupiah), yang dapat merupakan gabungan dari beberapa Faktur Pajak Khusus (struk yang berfungsi sebagai faktur pajak) dengan nilai PPN per struk minimal Rp50.000 (terbaru bisa akumulasi dari beberapa struk beda tanggal dalam 1 bulan dari toko yang sama atau beda). Total claim harus >= Rp500.000.",
+      "dasar": "PMK-71/PMK.03/2024 tentang Tata Cara Pengajuan dan Penyelesaian Permintaan Kembali PPN Barang Bawaan Orang Pribadi Pemegang Paspor Luar Negeri."
     },
     {
       "id": 56,
@@ -883,7 +883,7 @@
       ],
       "jawaban": 2,
       "pembahasan": "Berdasarkan Pasal 1 angka 17 UU PPN, Dasar Pengenaan Pajak (Harga Jual) adalah nilai uang... tidak termasuk PPN yang dipungut menurut Undang-Undang ini dan potongan harga yang DICANTUMKAN DALAM FAKTUR PAJAK. Diskon tunai (cash discount) biasanya bersifat kondisional/bersyarat (misal termin 2/10, n/30) dan baru direalisasikan setelah Faktur Pajak diterbitkan. Oleh karenanya, diskon jenis ini tidak dicantumkan sebagai pengurang di dalam Faktur Pajak awal, sehingga tidak mengurangi DPP PPN.",
-      "dasar": "UU PPN Pasal 1 angka 17 jo. SE-24/PJ.52/1998."
+      "dasar": "UU PPN Pasal 1 angka 17 jo. Pasal 1 angka 17 UU PPN."
     },
     {
       "id": 60,
@@ -1020,7 +1020,7 @@
       ],
       "jawaban": 2,
       "pembahasan": "Jasa notaris termasuk jasa lain → PPh 23 = 2% x Rp10.000.000 = Rp200.000",
-      "dasar": "PMK 141/PMK.03/2015"
+      "dasar": "PMK-59/PMK.03/2022"
     },
     {
       "id": 9,
