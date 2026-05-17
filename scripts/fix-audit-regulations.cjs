@@ -234,7 +234,7 @@ files.forEach(fileName => {
       // -------------------------------------------------------------
       if (fileName === '07-Paket-7.json' && soal.id === 10 && soal.skenario.includes('IPO')) {
         console.log('Memperbaiki Paket 7 Sesi 2 ID 10 (Pre-IPO Shares)...');
-        soal.jawaban = 1; // PPh Badan/OP atas capital gain Rp 450 M dengan tarif progresif (non-final)
+        soal.jawaban = 2; // PPh Badan/OP atas capital gain Rp 450 M dengan tarif progresif (non-final)
         soal.pembahasan = 'Penjualan saham perusahaan tertutup (non-Tbk) sebelum proses IPO dikenai Pajak Penghasilan umum (non-final) atas keuntungan (capital gain = harga jual - harga beli). PPh dihitung menggunakan tarif progresif Pasal 17 (untuk Orang Pribadi) atau 22% (untuk Badan) dari capital gain Rp 450 M dalam SPT Tahunan.';
         soal.dasar = 'Pasal 4 ayat (1) UU PPh tentang Capital Gain Saham Non-Tbk';
         changesCount++;
