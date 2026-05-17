@@ -71,9 +71,9 @@
         "Rp0",
         "Rp10.000.000"
       ],
-      "jawaban": 0,
-      "pembahasan": "Sesuai PMK-66/2023, fasilitas tempat tinggal yang hak pemanfaatannya dipegang oleh perorangan (individual) dan bukan bersifat komunal, merupakan objek PPh 21 bagi karyawan tanpa melihat ambang batas (threshold) penghasilan, kecuali untuk daerah tertentu. Nilai kenikmatan adalah sebesar biaya sewa riil yaitu Rp30.000.000.",
-      "dasar": "PMK-66/2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan."
+      "jawaban": 1,
+      "pembahasan": "Sesuai PMK-66/2023, fasilitas tempat tinggal yang hak pemanfaatannya dipegang secara perseorangan (seperti sewa apartemen) dikecualikan dari objek PPh Pasal 21 sepanjang nilainya tidak melebihi Rp2.000.000 per pegawai per bulan. Apabila nilainya melebihi batas tersebut, maka hanya selisih lebihnya saja yang menjadi objek PPh Pasal 21 bagi penerima. Perhitungan: Rp30.000.000 - Rp2.000.000 = Rp28.000.000.",
+      "dasar": "Lampiran A Nomor 5 Peraturan Menteri Keuangan Nomor 66/PMK.03/2023."
     },
     {
       "id": 6,

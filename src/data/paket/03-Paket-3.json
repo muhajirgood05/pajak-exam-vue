@@ -168,17 +168,17 @@
     {
       "id": 12,
       "kategori": "pph-potput",
-      "skenario": "Bapak Arman (belum menikah, tidak ada tanggungan) adalah karyawan di PT Maju Mundur dengan gaji bulanan Rp 15.000.000. Selain itu, pada bulan Juni 2024, Bapak Arman menerima fasilitas perumahan dari kantor senilai Rp 2.000.000 per bulan yang disediakan di lokasi kerja (bukan di daerah terpencil).",
+      "skenario": "Bapak Arman (belum menikah, tidak ada tanggungan) adalah karyawan di PT Maju Mundur dengan gaji bulanan Rp 15.000.000. Selain itu, pada bulan Juni 2024, Bapak Arman menerima fasilitas perumahan (apartemen) dari kantor senilai Rp 2.000.000 per bulan yang disediakan di lokasi kerja (bukan di daerah terpencil/tertentu).",
       "soal": "Apakah fasilitas perumahan sebesar Rp 2.000.000 tersebut merupakan objek pemotongan PPh Pasal 21 bagi Bapak Arman?",
       "opsi": [
-        "A. Ya, merupakan objek PPh 21 karena tidak memenuhi kriteria pengecualian natura dalam PMK 66/2023.",
-        "B. Tidak, dikecualikan dari objek PPh karena merupakan natura yang dinikmati karyawan.",
-        "C. Ya, tetapi dikenakan PPh Final sebesar 10%.",
-        "D. Tidak, karena merupakan natura yang tidak dapat dibiayakan oleh perusahaan."
+        "A. Ya, merupakan objek PPh 21 seluruhnya karena tidak disediakan di daerah terpencil.",
+        "B. Tidak, dikecualikan dari objek PPh 21 karena nilainya tidak melebihi batasan Rp 2.000.000 per bulan.",
+        "C. Ya, tetapi hanya selisih lebihnya saja yang menjadi objek PPh 21.",
+        "D. Tidak, karena seluruh fasilitas tempat tinggal non-komunal selalu bebas pajak bagi pegawai."
       ],
-      "jawaban": 0,
-      "pembahasan": "Berdasarkan PMK 66/2023, natura berupa fasilitas perumahan yang hak pemanfaatannya dipegang oleh perseorangan (bukan komunal) dan bukan di daerah terpencil, merupakan objek PPh Pasal 21 bagi penerimanya.",
-      "dasar": "PMK 66/2023"
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK 66/2023, fasilitas tempat tinggal yang hak pemanfaatannya dipegang secara perseorangan (seperti apartemen/rumah tapak) dikecualikan dari objek PPh Pasal 21 sepanjang nilainya tidak melebihi Rp 2.000.000 per pegawai per bulan. Karena nilai fasilitas perumahan Bapak Arman tepat Rp 2.000.000 per bulan (tidak melebihi batas), maka fasilitas tersebut dikecualikan seluruhnya (Bukan Objek PPh 21) bagi penerima.",
+      "dasar": "Lampiran A Nomor 5 PMK-66/PMK.03/2023"
     },
     {
       "id": 13,
