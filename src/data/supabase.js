@@ -2,8 +2,8 @@ import { createClient } from '@supabase/supabase-js'
 
 const getCreds = () => {
   return {
-    url: import.meta.env.VITE_SUPABASE_URL || localStorage.getItem('VITE_SUPABASE_URL') || '',
-    key: import.meta.env.VITE_SUPABASE_ANON_KEY || localStorage.getItem('VITE_SUPABASE_ANON_KEY') || ''
+    url: import.meta.env.VITE_SUPABASE_URL || localStorage.getItem('VITE_SUPABASE_URL') || 'https://khdygilyzjolafncxmgo.supabase.co',
+    key: import.meta.env.VITE_SUPABASE_ANON_KEY || localStorage.getItem('VITE_SUPABASE_ANON_KEY') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoZHlnaWx5empvbGFmbmN4bWdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5NDEzMDEsImV4cCI6MjA5NDUxNzMwMX0._ar3KK-F4Fk0q6SHoXJrLJalV6W3Bz0E7cye6wzW1WA'
   };
 };
 

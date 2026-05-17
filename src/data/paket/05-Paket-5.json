@@ -1,7 +1,7 @@
 {
   "id": "paket-5",
   "title": "Paket Latihan 5 (Pertambangan & UU HPP)",
-  "totalSoal": 12,
+  "totalSoal": 50,
   "sesi1": [
     {
       "id": 1,
@@ -32,6 +32,351 @@
       "jawaban": 1,
       "pembahasan": "Berdasarkan UU HPP dan PMK 66/2023, biaya penggantian atau imbalan dalam bentuk natura dan/atau kenikmatan dapat dikurangkan dari penghasilan bruto (deductible) bagi pemberi kerja.",
       "dasar": "Pasal 6 ayat (1) huruf n UU PPh sttd UU HPP."
+    },
+    {
+      "id": 3,
+      "kategori": "pph-potput",
+      "skenario": "Wajib Pajak Orang Pribadi menerima natura berupa bingkisan hari raya dengan nilai total Rp 5.000.000 dalam setahun pajak 2024 dari pemberi kerja.",
+      "soal": "Berapakah nilai natura yang menjadi objek PPh Pasal 21 bagi penerima tersebut?",
+      "opsi": [
+        "A. Rp 0 (Bukan objek pajak)",
+        "B. Rp 2.000.000",
+        "C. Rp 3.000.000",
+        "D. Rp 5.000.000"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK 66/2023, bingkisan dari pemberi kerja dalam rangka hari raya keagamaan dikecualikan dari objek pajak tanpa batasan nilai tertentu bagi penerima.",
+      "dasar": "Lampiran A nomor 1 PMK 66/2023."
+    },
+    {
+      "id": 4,
+      "kategori": "pph-badan",
+      "skenario": "PT Global Niaga memiliki omzet Rp 60 Miliar pada tahun 2023. Pada tahun 2024, perusahaan menghitung PPh Badan terutang.",
+      "soal": "Berapakah tarif PPh Badan yang berlaku untuk PT Global Niaga pada tahun pajak 2024?",
+      "opsi": [
+        "A. 25%",
+        "B. 22%",
+        "C. 20%",
+        "D. 19%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan UU HPP, tarif PPh Badan yang berlaku untuk tahun pajak 2022 dan seterusnya ditetapkan sebesar 22%.",
+      "dasar": "Pasal 17 ayat (1) huruf b UU PPh sttd UU HPP."
+    },
+    {
+      "id": 5,
+      "kategori": "ppn",
+      "skenario": "Sebuah perusahaan jasa konstruksi membangun rumah mewah untuk klien pribadi dengan nilai kontrak Rp 5 Miliar (belum termasuk PPN).",
+      "soal": "Berapakah tarif PPN yang harus dipungut atas transaksi tersebut jika dilakukan pada Mei 2024?",
+      "opsi": [
+        "A. 10%",
+        "B. 11%",
+        "C. 12%",
+        "D. 15%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Tarif PPN yang berlaku sejak 1 April 2022 adalah 11% sesuai amanat UU HPP.",
+      "dasar": "Pasal 7 ayat (1) huruf a UU PPN sttd UU HPP."
+    },
+    {
+      "id": 6,
+      "kategori": "kup",
+      "skenario": "Wajib Pajak terlambat menyampaikan SPT Tahunan PPh Badan tahun 2023 yang jatuh tempo 30 April 2024. WP baru menyampaikannya pada 15 Mei 2024.",
+      "soal": "Berapakah sanksi administrasi berupa denda yang dikenakan atas keterlambatan tersebut?",
+      "opsi": [
+        "A. Rp 100.000",
+        "B. Rp 500.000",
+        "C. Rp 1.000.000",
+        "D. 2% dari jumlah pajak kurang bayar"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Denda keterlambatan penyampaian SPT Tahunan PPh Badan adalah sebesar Rp 1.000.000.",
+      "dasar": "Pasal 7 ayat (1) UU KUP."
+    },
+    {
+      "id": 7,
+      "kategori": "pph-potput",
+      "skenario": "PT Sentosa membayar bunga pinjaman kepada bank yang berkedudukan di Indonesia sebesar Rp 100.000.000.",
+      "soal": "Apakah PT Sentosa wajib memotong PPh atas pembayaran bunga tersebut?",
+      "opsi": [
+        "A. Wajib potong PPh Pasal 23 sebesar 15%",
+        "B. Wajib potong PPh Pasal 23 sebesar 2%",
+        "C. Tidak wajib potong karena dibayar ke bank",
+        "D. Wajib potong PPh Final Pasal 4 ayat (2)"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Penghasilan yang dibayar atau terutang kepada bank dikecualikan dari pemotongan PPh Pasal 23.",
+      "dasar": "Pasal 23 ayat (4) huruf a UU PPh."
+    },
+    {
+      "id": 8,
+      "kategori": "pph-op",
+      "skenario": "Bapak Andi adalah karyawan swasta dengan gaji Rp 10.000.000/bulan. Menikah dan memiliki 2 anak (K/2).",
+      "soal": "Berapakah total PTKP Bapak Andi untuk tahun pajak 2024?",
+      "opsi": [
+        "A. Rp 54.000.000",
+        "B. Rp 58.500.000",
+        "C. Rp 63.000.000",
+        "D. Rp 67.500.000"
+      ],
+      "jawaban": 3,
+      "pembahasan": "WP Sendiri (54jt) + Status Menikah (4.5jt) + 2 Tanggungan (2 x 4.5jt = 9jt) = Rp 67.500.000.",
+      "dasar": "Pasal 7 ayat (1) UU PPh."
+    },
+    {
+      "id": 9,
+      "kategori": "ppn",
+      "skenario": "PT Retail Jaya melakukan ekspor barang kena pajak ke luar negeri senilai Rp 10 Miliar.",
+      "soal": "Berapakah tarif PPN yang dikenakan atas transaksi ekspor tersebut?",
+      "opsi": [
+        "A. 0%",
+        "B. 1%",
+        "C. 11%",
+        "D. Dibebaskan"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Ekspor Barang Kena Pajak Berwujud dikenai PPN dengan tarif 0%.",
+      "dasar": "Pasal 7 ayat (2) UU PPN."
+    },
+    {
+      "id": 10,
+      "kategori": "kup",
+      "skenario": "Dalam pemeriksaan pajak, WP setuju dengan sebagian hasil pemeriksaan namun mengajukan keberatan atas SKPKB yang diterbitkan.",
+      "soal": "Kapan batas waktu maksimal pengajuan keberatan tersebut sejak tanggal dikirimnya surat ketetapan pajak?",
+      "opsi": [
+        "A. 1 bulan",
+        "B. 3 bulan",
+        "C. 6 bulan",
+        "D. 12 bulan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Keberatan harus diajukan dalam jangka waktu 3 bulan sejak tanggal dikirimnya surat ketetapan pajak.",
+      "dasar": "Pasal 25 ayat (3) UU KUP."
+    },
+    {
+      "id": 11,
+      "kategori": "pph-badan",
+      "skenario": "PT Digital Indonesia menyewa server dari Amazon Web Services (AWS) di Singapura senilai Rp 1 Miliar.",
+      "soal": "Manakah pernyataan yang paling tepat mengenai kewajiban perpajakan PT Digital Indonesia atas transaksi tersebut (asumsikan tidak ada BUT)?",
+      "opsi": [
+        "A. Memotong PPh Pasal 23 sebesar 2%",
+        "B. Memotong PPh Pasal 26 sebesar 20% (atau sesuai Tax Treaty)",
+        "C. Memotong PPh Final 10%",
+        "D. Tidak ada kewajiban pemotongan karena cloud service bukan objek PPh"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sewa harta atau imbalan jasa yang dibayar ke luar negeri merupakan objek PPh Pasal 26.",
+      "dasar": "Pasal 26 UU PPh."
+    },
+    {
+      "id": 12,
+      "kategori": "pph-potput",
+      "skenario": "Perusahaan membayar jasa konsultan manajemen (WPOP) sebesar Rp 50.000.000 (netto) setelah dipotong pajak.",
+      "soal": "Jika menggunakan metode gross-up, berapakah DPP yang harus dilaporkan dalam bukti potong?",
+      "opsi": [
+        "A. Rp 50.000.000",
+        "B. Rp 51.020.408",
+        "C. Rp 51.282.051",
+        "D. Rp 52.631.579"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Metode gross-up menghitung DPP agar setelah dipotong pajak hasilnya sesuai nilai kesepakatan.",
+      "dasar": "Konsep akuntansi perpajakan."
+    },
+    {
+      "id": 13,
+      "kategori": "ppn",
+      "skenario": "PT Makmur membeli mobil box untuk operasional pengiriman barang seharga Rp 300.000.000 plus PPN.",
+      "soal": "Dapatkah PPN Masukan atas pembelian mobil box tersebut dikreditkan?",
+      "opsi": [
+        "A. Tidak dapat karena merupakan aset tetap",
+        "B. Dapat dikreditkan karena berhubungan langsung dengan kegiatan usaha",
+        "C. Hanya dapat dikreditkan 50%",
+        "D. Dapat dikreditkan asalkan mobilnya berwarna kuning"
+      ],
+      "jawaban": 1,
+      "pembahasan": "PPN Masukan atas perolehan barang modal yang berhubungan langsung dengan produksi/distribusi dapat dikreditkan.",
+      "dasar": "Pasal 9 UU PPN."
+    },
+    {
+      "id": 14,
+      "kategori": "pph-op",
+      "skenario": "Seorang atlet profesional menerima hadiah juara pertama sebesar Rp 100.000.000 dalam sebuah turnamen nasional.",
+      "soal": "Berapakah PPh yang dipotong atas hadiah tersebut?",
+      "opsi": [
+        "A. PPh Pasal 21 dengan tarif Pasal 17",
+        "B. PPh Final 25%",
+        "C. PPh Final 15%",
+        "D. Bukan objek pajak"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Hadiah perlombaan yang diterima oleh WP OP Dalam Negeri merupakan objek PPh Pasal 21.",
+      "dasar": "PER-16/PJ/2016."
+    },
+    {
+      "id": 15,
+      "kategori": "kup",
+      "skenario": "WP menerima Surat Tagihan Pajak (STP) atas bunga penagihan sebesar Rp 10.000.000.",
+      "soal": "Dapatkah WP mengajukan Keberatan atas terbitnya STP tersebut?",
+      "opsi": [
+        "A. Bisa, jika alasannya kuat",
+        "B. Tidak bisa, Keberatan hanya untuk SKP",
+        "C. Bisa, melalui proses Gugatan di Pengadilan Pajak",
+        "D. B dan C Benar"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Keberatan hanya diajukan terhadap SKP dan pemotongan oleh pihak ketiga. STP dilawan melalui permohonan pengurangan/penghapusan sanksi (Pasal 36) atau Gugatan.",
+      "dasar": "Pasal 25 dan Pasal 23 UU KUP."
+    },
+    {
+      "id": 16,
+      "kategori": "pph-badan",
+      "skenario": "PT A memiliki piutang tak tertagih kepada PT B sebesar Rp 200.000.000 yang ingin dibebankan secara fiskal.",
+      "soal": "Manakah syarat yang TIDAK wajib dipenuhi agar piutang tersebut deductible?",
+      "opsi": [
+        "A. Telah dibebankan sebagai biaya di laporan keuangan komersial",
+        "B. Daftar piutang tak tertagih telah diserahkan ke DJP",
+        "C. Telah diserahkan perkara penagihannya ke Pengadilan Negeri atau BUPLN",
+        "D. Harus ada surat pernyataan bangkrut dari RT/RW setempat"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Syarat piutang tak tertagih diatur ketat dalam UU PPh dan PMK terkait, tidak termasuk surat dari RT/RW.",
+      "dasar": "Pasal 6 ayat (1) huruf h UU PPh."
+    },
+    {
+      "id": 17,
+      "kategori": "ppn",
+      "skenario": "PT Konstruksi membangun gedung kantor sendiri dengan luas 400 m2 menggunakan tukang borongan (Kegiatan Membangun Sendiri).",
+      "soal": "Berapakah tarif efektif PPN KMS yang berlaku sesuai UU HPP?",
+      "opsi": [
+        "A. 1,1%",
+        "B. 2,2%",
+        "C. 11%",
+        "D. 20% dari tarif PPN"
+      ],
+      "jawaban": 1,
+      "pembahasan": "PPN KMS = 20% x tarif PPN x total biaya. 20% x 11% = 2,2%.",
+      "dasar": "PMK No. 61/PMK.03/2022."
+    },
+    {
+      "id": 18,
+      "kategori": "pph-potput",
+      "skenario": "PT Media membayar royalti kepada pencipta lagu (WPOP) sebesar Rp 20.000.000.",
+      "soal": "Jika pencipta lagu memiliki NPWP, berapakah PPh Pasal 23 yang harus dipotong?",
+      "opsi": [
+        "A. Rp 400.000",
+        "B. Rp 3.000.000",
+        "C. Rp 2.000.000",
+        "D. Rp 1.000.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Royalti dipotong PPh 23 sebesar 15% dari bruto. 15% x 20jt = 3jt.",
+      "dasar": "Pasal 23 ayat (1) UU PPh."
+    },
+    {
+      "id": 19,
+      "kategori": "pph-badan",
+      "skenario": "PT Maju melakukan revaluasi aset tetap tanah dan bangunan pada tahun 2024 untuk tujuan perpajakan.",
+      "soal": "Berapakah tarif PPh Final atas selisih lebih revaluasi aset tersebut?",
+      "opsi": [
+        "A. 10%",
+        "B. 15%",
+        "C. 20%",
+        "D. 22%"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Selisih lebih revaluasi aset tetap dikenakan PPh Final sebesar 10%.",
+      "dasar": "Pasal 19 UU PPh."
+    },
+    {
+      "id": 20,
+      "kategori": "kup",
+      "skenario": "WP badan yang sudah tidak aktif namun belum dibubarkan secara hukum ingin mengajukan status WP Non-Efektif (NE).",
+      "soal": "Manakah konsekuensi dari status WP NE?",
+      "opsi": [
+        "A. NPWP dihapus",
+        "B. Tidak wajib lapor SPT Masa dan SPT Tahunan",
+        "C. Tetap wajib lapor SPT Tahunan tapi nihil",
+        "D. Bebas dari pemeriksaan pajak selamanya"
+      ],
+      "jawaban": 1,
+      "pembahasan": "WP NE tidak wajib menyampaikan SPT dan tidak dikenai sanksi administrasi keterlambatan lapor.",
+      "dasar": "PER-04/PJ/2020."
+    },
+    {
+      "id": 21,
+      "kategori": "ppn",
+      "skenario": "PT Tekstil menjual pakaian kepada Yayasan Yatim Piatu senilai Rp 50.000.000 sebagai sumbangan.",
+      "soal": "Bagaimanakah aspek PPN atas penyerahan cuma-cuma tersebut?",
+      "opsi": [
+        "A. Tidak terutang PPN karena sumbangan",
+        "B. Terutang PPN dengan DPP senilai Harga Jual",
+        "C. Terutang PPN dengan DPP senilai Harga Pokok Produksi (HPP)",
+        "D. Terutang PPN 0%"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Penyerahan cuma-cuma BKP terutang PPN dengan DPP menggunakan Nilai Lain (HPP/Harga Pokok).",
+      "dasar": "PMK No. 71/PMK.03/2022."
+    },
+    {
+      "id": 22,
+      "kategori": "pph-badan",
+      "skenario": "PT Z memiliki utang luar negeri kepada induk perusahaannya dengan bunga 12%, sementara bunga pasar hanya 6%.",
+      "soal": "Sesuai prinsip Transfer Pricing, berapakah biaya bunga yang dapat diakui secara fiskal?",
+      "opsi": [
+        "A. Seluruhnya (12%)",
+        "B. Hanya 6% (Nilai kewajaran)",
+        "C. Tidak dapat dibiayakan sama sekali",
+        "D. 12% asalkan ada perjanjian tertulis"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Biaya yang dibayar kepada pihak afiliasi harus memenuhi prinsip kewajaran dan kelaziman usaha (ALP).",
+      "dasar": "Pasal 18 ayat (3) UU PPh."
+    },
+    {
+      "id": 23,
+      "kategori": "pph-potput",
+      "skenario": "PT X menyewa kendaraan dari CV Trans (WPOP) sebesar Rp 5.000.000.",
+      "soal": "Berapakah PPh Pasal 23 yang harus dipotong jika CV Trans tidak memiliki NPWP?",
+      "opsi": [
+        "A. Rp 100.000",
+        "B. Rp 200.000",
+        "C. Rp 400.000",
+        "D. Rp 150.000"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Sewa kendaraan dipotong PPh 23 sebesar 2%. Jika tanpa NPWP, tarif naik 100% (menjadi 4%). 4% x 5jt = 200rb.",
+      "dasar": "Pasal 23 ayat (1a) UU PPh."
+    },
+    {
+      "id": 24,
+      "kategori": "kup",
+      "skenario": "DJP menerbitkan Surat Paksa kepada WP karena utang pajak dalam SKPKB belum dilunasi setelah lewat jatuh tempo.",
+      "soal": "Berapakah jangka waktu WP harus melunasi utang pajak sejak Surat Paksa diberitahukan?",
+      "opsi": [
+        "A. 2 x 24 Jam",
+        "B. 7 Hari",
+        "C. 14 Hari",
+        "D. 21 Hari"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Surat Paksa memerintahkan pembayaran utang pajak dalam jangka waktu 2 x 24 jam.",
+      "dasar": "UU Penagihan Pajak dengan Surat Paksa (PPSP)."
+    },
+    {
+      "id": 25,
+      "kategori": "pph-op",
+      "skenario": "Seorang konsultan (WPOP) menggunakan Norma Penghitungan Penghasilan Netto (NPPN) karena peredaran brutonya di bawah Rp 4,8 Miliar.",
+      "soal": "Manakah syarat administratif utama agar WP dapat menggunakan NPPN?",
+      "opsi": [
+        "A. Mengajukan izin ke Menteri Keuangan",
+        "B. Memberitahukan ke DJP dalam 3 bulan pertama tahun pajak",
+        "C. Wajib melakukan pembukuan lengkap",
+        "D. Memiliki minimal 10 karyawan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "WP OP yang menggunakan NPPN wajib memberitahukan kepada Direktur Jenderal Pajak dalam jangka waktu 3 bulan pertama dari tahun pajak yang bersangkutan.",
+      "dasar": "Pasal 14 ayat (2) UU PPh."
     }
   ],
   "sesi2": [
@@ -184,6 +529,231 @@
       "jawaban": 0,
       "pembahasan": "Salah satu sanksi bagi PMSE yang tidak patuh setelah dilakukan teguran adalah pemutusan akses (pemblokiran) oleh Menteri Kominfo.",
       "dasar": "Pasal 18 PMK No. 60/PMK.03/2022."
+    },
+    {
+      "id": 11,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS RESTRUKTURISASI] PT A dan PT B melakukan merger pada tahun 2024. Nilai buku aset PT B adalah Rp 100 Miliar, sedangkan nilai pasarnya Rp 150 Miliar.",
+      "soal": "Manakah syarat utama agar merger tersebut dapat menggunakan nilai buku (Tax Neutral Merger)?",
+      "opsi": [
+        "A. Harus mendapat persetujuan dari Direktur Jenderal Pajak",
+        "B. Harus melunasi seluruh utang pajak kedua perusahaan",
+        "C. Lulus test 'Business Purpose Test'",
+        "D. Semua jawaban benar"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Penggunaan nilai buku dalam rangka merger memerlukan persetujuan DJP, pelunasan utang pajak, dan memenuhi tujuan bisnis.",
+      "dasar": "PMK No. 52/PMK.010/2017."
+    },
+    {
+      "id": 12,
+      "kategori": "pph-badan",
+      "skenario": "[STUDI KASUS RESTRUKTURISASI] PT A dan PT B melakukan merger...",
+      "soal": "Jika merger disetujui menggunakan nilai buku, apakah PT A (surviving entity) dapat mengompensasikan sisa kerugian fiskal PT B?",
+      "opsi": [
+        "A. Bisa seluruhnya",
+        "B. Tidak bisa sama sekali",
+        "C. Bisa asalkan kepemilikan saham tidak berubah",
+        "D. Bisa maksimal 50%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Dalam hal merger, sisa kerugian fiskal dari WP yang membubarkan diri (PT B) tidak dapat dikompensasikan oleh WP yang menerima penggabungan (PT A).",
+      "dasar": "Pasal 10 PMK No. 52/PMK.010/2017."
+    },
+    {
+      "id": 13,
+      "kategori": "ppn",
+      "skenario": "[STUDI KASUS RESTRUKTURISASI] PT A dan PT B melakukan merger...",
+      "soal": "Bagaimanakah perlakuan PPN atas pengalihan Barang Kena Pajak (BKP) dalam rangka penggabungan usaha tersebut?",
+      "opsi": [
+        "A. Terutang PPN 11%",
+        "B. Tidak terutang PPN asalkan kedua belah pihak adalah PKP",
+        "C. Dibebaskan dari PPN",
+        "D. Terutang PPN 0%"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pengalihan BKP dalam rangka penggabungan, peleburan, pemekaran, pemecahan, dan pengambilalihan usaha tidak termasuk penyerahan BKP asalkan pihak yang mengalihkan dan menerima adalah PKP.",
+      "dasar": "Pasal 1A ayat (2) huruf d UU PPN."
+    },
+    {
+      "id": 14,
+      "kategori": "pph-potput",
+      "skenario": "[STUDI KASUS RESTRUKTURISASI] PT A dan PT B melakukan merger...",
+      "soal": "Jika dalam merger terdapat selisih lebih antara nilai pasar dan nilai buku aset yang dialihkan, dan merger TIDAK menggunakan nilai buku, maka selisih tersebut:",
+      "opsi": [
+        "A. Merupakan objek PPh bagi pihak yang menerima pengalihan",
+        "B. Merupakan objek PPh bagi pihak yang mengalihkan",
+        "C. Bukan objek pajak",
+        "D. Merupakan utang pajak tangguhan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Jika merger menggunakan harga pasar, maka selisih lebih antara harga pasar dan nilai sisa buku merupakan keuntungan yang menjadi objek PPh bagi WP yang mengalihkan.",
+      "dasar": "Pasal 4 ayat (1) huruf d UU PPh."
+    },
+    {
+      "id": 15,
+      "kategori": "kup",
+      "skenario": "[STUDI KASUS RESTRUKTURISASI] PT A dan PT B melakukan merger...",
+      "soal": "Kapan PT B harus menyampaikan SPT Tahunan PPh terakhirnya karena membubarkan diri akibat merger?",
+      "opsi": [
+        "A. Paling lambat 4 bulan setelah tanggal merger",
+        "B. Akhir tahun pajak berjalan",
+        "C. Paling lambat 30 hari sebelum merger",
+        "D. Tidak wajib lapor karena sudah bubar"
+      ],
+      "jawaban": 0,
+      "pembahasan": "WP yang membubarkan diri wajib menyampaikan SPT Tahunan paling lama 4 bulan setelah akhir tahun pajak yang bersinggungan dengan pembubaran (dalam hal ini masa pajak terakhir).",
+      "dasar": "Pasal 3 UU KUP."
+    },
+    {
+      "id": 16,
+      "kategori": "pph-potput",
+      "skenario": "Tuan Eko bekerja di PT Maju (status K/2). Pada bulan Maret 2024, ia menerima gaji Rp 10.000.000 dan bonus tahunan Rp 50.000.000. Perusahaan menggunakan metode TER (PMK 168/2023).",
+      "soal": "Bagaimanakah penghitungan PPh Pasal 21 atas bonus tersebut sesuai metode TER?",
+      "opsi": [
+        "A. Bonus dikenakan tarif Pasal 17 secara terpisah",
+        "B. Bonus digabungkan dengan gaji bulan Maret, lalu dikalikan tarif TER yang sesuai dengan total bruto tersebut",
+        "C. Bonus tidak dikenakan TER, hanya gaji yang dikenakan TER",
+        "D. Bonus dikenakan tarif rata-rata PPh tahun lalu"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK 168/2023, untuk masa pajak selain Desember, PPh 21 dihitung dengan mengalikan Tarif Efektif (Bulanan/Harian) dengan jumlah penghasilan bruto yang diterima dalam masa pajak tersebut (termasuk bonus, THR, dll).",
+      "dasar": "PMK 168/2023."
+    },
+    {
+      "id": 17,
+      "kategori": "ppn",
+      "skenario": "Sesuai dengan amanat UU HPP, tarif PPN akan mengalami kenaikan secara bertahap.",
+      "soal": "Kapan tarif PPN sebesar 12% direncanakan mulai berlaku berdasarkan UU HPP?",
+      "opsi": [
+        "A. 1 Januari 2024",
+        "B. 1 Januari 2025",
+        "C. 1 April 2025",
+        "D. 1 Januari 2026"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pasal 7 ayat (1) huruf b UU PPN sttd UU HPP menetapkan tarif PPN sebesar 12% yang mulai berlaku paling lambat pada tanggal 1 Januari 2025.",
+      "dasar": "Pasal 7 ayat (1) UU PPN sttd UU HPP."
+    },
+    {
+      "id": 18,
+      "kategori": "pph-badan",
+      "skenario": "PT Artha memiliki bangunan permanen yang diperoleh pada tahun 2024 dengan harga Rp 2 Miliar. Masa manfaat bangunan tersebut adalah 20 tahun.",
+      "soal": "Berdasarkan UU HPP, jika masa manfaat bangunan sebenarnya melebihi 20 tahun, apakah WP dapat menyusutkan sesuai masa manfaat sebenarnya?",
+      "opsi": [
+        "A. Tidak bisa, maksimal tetap 20 tahun",
+        "B. Bisa, sesuai masa manfaat sebenarnya berdasarkan pembukuan WP",
+        "C. Bisa, asalkan disetujui Menteri Keuangan",
+        "D. Hanya untuk bangunan di daerah terpencil"
+      ],
+      "jawaban": 1,
+      "pembahasan": "UU HPP memberikan pilihan bagi WP untuk menyusutkan bangunan permanen sesuai dengan masa manfaat yang sebenarnya berdasarkan pembukuan WP, jika masa manfaatnya lebih dari 20 tahun.",
+      "dasar": "Pasal 11 ayat (6a) UU PPh sttd UU HPP."
+    },
+    {
+      "id": 19,
+      "kategori": "pph-potput",
+      "skenario": "PT Investasi menerima dividen dari penyertaan modal pada sebuah Reksa Dana.",
+      "soal": "Bagaimanakah perlakuan PPh atas dividen atau bagian laba yang diterima dari pemegang unit penyertaan kontrak investasi kolektif (Reksa Dana)?",
+      "opsi": [
+        "A. Objek PPh Pasal 23 (15%)",
+        "B. Objek PPh Final (10%)",
+        "C. Dikecualikan dari objek Pajak Penghasilan",
+        "D. Objek PPh Pasal 17"
+      ],
+      "jawaban": 2,
+      "pembahasan": "Bagian laba atau dividen yang diterima oleh pemegang unit penyertaan kontrak investasi kolektif (termasuk Reksa Dana) dikecualikan dari objek pajak.",
+      "dasar": "Pasal 4 ayat (3) huruf i UU PPh."
+    },
+    {
+      "id": 20,
+      "kategori": "kup",
+      "skenario": "Pemerintah memperkenalkan Program Pengungkapan Sukarela (PPS) dalam UU HPP sebagai kelanjutan dari Tax Amnesty.",
+      "soal": "Manakah pernyataan yang BENAR mengenai sanksi jika ditemukan harta yang belum diungkapkan setelah periode PPS berakhir?",
+      "opsi": [
+        "A. Dikenakan sanksi denda 200%",
+        "B. Dikenakan PPh Final dengan tarif 30% ditambah sanksi bunga UU KUP",
+        "C. Harta tersebut disita negara",
+        "D. Tidak ada sanksi tambahan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Harta yang belum atau kurang diungkapkan setelah PPS akan dikenai PPh Final (biasanya 30% untuk badan/OP) ditambah sanksi administrasi berupa bunga sesuai Pasal 13 ayat (2) UU KUP.",
+      "dasar": "UU HPP Bab V (PPS)."
+    },
+    {
+      "id": 21,
+      "kategori": "pph-badan",
+      "skenario": "[PERTAMBANGAN] WP Pertambangan melakukan pembangunan fasilitas pemurnian (smelter) di dalam negeri.",
+      "soal": "Manakah fasilitas pajak yang dapat diberikan kepada WP tersebut untuk mendorong hilirisasi?",
+      "opsi": [
+        "A. Tax Holiday (Pembebasan PPh Badan)",
+        "B. Tax Allowance (Investment Allowance)",
+        "C. Pembebasan Bea Masuk atas impor mesin",
+        "D. Semua jawaban benar"
+      ],
+      "jawaban": 3,
+      "pembahasan": "Pemerintah memberikan berbagai insentif (Tax Holiday/Allowance/BM) bagi industri pionir atau industri strategis termasuk pembangunan smelter.",
+      "dasar": "PMK 130/2020 dan PMK 11/2020."
+    },
+    {
+      "id": 22,
+      "kategori": "ppn",
+      "skenario": "Dalam UU HPP, beberapa barang/jasa yang sebelumnya bukan objek PPN diubah menjadi barang/jasa kena pajak namun diberikan fasilitas 'Dibebaskan' atau 'Tidak Dipungut'.",
+      "soal": "Manakah contoh jasa yang kini menjadi Jasa Kena Pajak namun diberikan fasilitas dibebaskan dari pengenaan PPN untuk masyarakat luas?",
+      "opsi": [
+        "A. Jasa kesehatan medis dan Jasa pendidikan",
+        "B. Jasa perhotelan",
+        "C. Jasa boga/katering",
+        "D. Jasa parkir"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Jasa pendidikan dan kesehatan medis kini merupakan JKP, namun PPN-nya dibebaskan demi menjaga keterjangkauan bagi masyarakat.",
+      "dasar": "Pasal 16B UU PPN sttd UU HPP."
+    },
+    {
+      "id": 23,
+      "kategori": "pph-badan",
+      "skenario": "Pajak Karbon (Carbon Tax) diperkenalkan dalam UU HPP sebagai upaya mitigasi perubahan iklim.",
+      "soal": "Siapakah subjek yang dikenakan Pajak Karbon berdasarkan UU HPP?",
+      "opsi": [
+        "A. Hanya perusahaan tambang batubara",
+        "B. Orang pribadi atau badan yang membeli barang yang mengandung karbon atau melakukan aktivitas yang menghasilkan emisi karbon",
+        "C. Seluruh rakyat Indonesia tanpa terkecuali",
+        "D. Hanya kendaraan bermotor"
+      ],
+      "jawaban": 1,
+      "pembahasan": "Pajak karbon dikenakan pada orang pribadi atau badan yang membeli barang yang mengandung karbon dan/atau melakukan aktivitas yang menghasilkan emisi karbon.",
+      "dasar": "UU HPP Bab VI (Pajak Karbon)."
+    },
+    {
+      "id": 24,
+      "kategori": "kup",
+      "skenario": "DJP menerbitkan Surat Pemberitahuan Hasil Pemeriksaan (SPHP) kepada WP.",
+      "soal": "Berapa lama jangka waktu paling lama bagi WP untuk memberikan tanggapan tertulis atas SPHP tersebut?",
+      "opsi": [
+        "A. 3 hari kerja",
+        "B. 7 hari kerja",
+        "C. 10 hari kerja",
+        "D. 1 bulan"
+      ],
+      "jawaban": 1,
+      "pembahasan": "WP wajib menyampaikan tanggapan tertulis atas SPHP dalam jangka waktu paling lama 7 hari kerja sejak SPHP diterima.",
+      "dasar": "PMK 17/2013 sttd PMK 18/2021."
+    },
+    {
+      "id": 25,
+      "kategori": "pph-badan",
+      "skenario": "Dalam ketentuan anti-tax avoidance, terdapat istilah 'Controlled Foreign Company' (CFC).",
+      "soal": "Apakah tujuan utama dari diterapkannya aturan CFC dalam perpajakan Indonesia?",
+      "opsi": [
+        "A. Mencegah penundaan pengakuan penghasilan dari luar negeri melalui pembentukan badan usaha di negara suaka pajak (Tax Haven)",
+        "B. Membantu perusahaan lokal melakukan ekspansi ke luar negeri",
+        "C. Menghapuskan pajak berganda internasional",
+        "D. Menurunkan tarif pajak bagi perusahaan ekspor"
+      ],
+      "jawaban": 0,
+      "pembahasan": "Aturan CFC (Pasal 18 ayat 2 UU PPh) bertujuan mencegah WP DN menunda pengakuan dividen dari perusahaan luar negeri yang mereka kendalikan di negara dengan beban pajak rendah.",
+      "dasar": "Pasal 18 ayat (2) UU PPh."
     }
   ]
 }

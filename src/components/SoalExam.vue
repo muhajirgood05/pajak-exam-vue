@@ -188,7 +188,8 @@ const progressPct = computed(() => totalCount.value > 0 ? Math.round((doneCount.
 const allDone = computed(() => doneCount.value === totalCount.value && totalCount.value > 0);
 
 watch(doneCount, (newCount) => {
-  if (newCount > 0 && newCount % 5 === 0) {
+  // Hanya kirim data setiap kelipatan 10 soal untuk efisiensi request
+  if (newCount > 0 && newCount % 10 === 0) {
     const results = {};
     props.soals.forEach(s => {
       if (revealed.value[s.id]) {

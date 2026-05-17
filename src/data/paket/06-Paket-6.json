@@ -130,13 +130,13 @@
       "soal": "Bagaimana perlakuan PPh atas penghasilan PT Pelayaran Nusantara?",
       "opsi": [
         "Semua penghasilan dikenai PPh Final 1,2% dari peredaran bruto",
-        "Freight dikenai PPh Final 1,2% dari peredaran bruto; sewa gudang dikenai PPh Badan umum 22%",
+        "Freight dikenai PPh Final 1,2% dari peredaran bruto; sewa gudang dikenai PPh Final 10% sesuai Pasal 4 ayat (2)",
         "Semua penghasilan dikenai tarif normal Pasal 17",
         "Freight dikenai PPh Final 0,6%; sewa gudang 22%"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan PP-15/1990 jo KMK-416/KMK.04/1996, penghasilan dari usaha pelayaran dalam negeri dikenai PPh Final sebesar 1,2% dari peredaran bruto (nilai freight). Penghasilan lain di luar kegiatan pelayaran (seperti sewa gudang) dikenakan tarif PPh Badan umum sesuai Pasal 17 UU PPh (22%), tidak termasuk dalam rezim PPh Final pelayaran.",
-      "dasar": "PP-15/1990; KMK-416/KMK.04/1996"
+      "pembahasan": "Berdasarkan PP-15/1990 jo KMK-416/KMK.04/1996, penghasilan dari usaha pelayaran dalam negeri dikenai PPh Final sebesar 1,2% dari peredaran bruto (nilai freight). Sedangkan untuk penghasilan sewa gudang (kategori sewa tanah dan/atau bangunan) dikenai PPh Final Pasal 4 ayat (2) sebesar 10% berdasarkan PP-34/2016, bukan tarif PPh Badan umum.",
+      "dasar": "PP-15/1990; KMK-416/KMK.04/1996; PP-34/2016"
     },
     {
       "id": 10,
@@ -261,17 +261,17 @@
     {
       "id": 18,
       "kategori": "Potput",
-      "skenario": "PT Perkebunan Sawit membeli tandan buah segar (TBS) sawit dari petani plasma yang merupakan anggota koperasi. Koperasi menjual TBS ke PT Perkebunan senilai Rp 5.000.000.000 per bulan. Koperasi tidak memiliki izin usaha perkebunan secara mandiri.",
-      "soal": "Bagaimana kewajiban PPh Pasal 22 PT Perkebunan Sawit atas pembelian TBS dari koperasi petani?",
+      "skenario": "PT Perkebunan Sawit (industri pengolah kelapa sawit) membeli tandan buah segar (TBS) sawit dari Koperasi Petani Plasma senilai Rp 5.000.000.000 dalam satu masa pajak.",
+      "soal": "Bagaimana kewajiban pemungutan PPh Pasal 22 oleh PT Perkebunan Sawit atas pembelian TBS dari koperasi tersebut?",
       "opsi": [
-        "Wajib memungut PPh 22 sebesar 0,25% dari harga pembelian TBS",
-        "Tidak wajib memungut PPh 22 karena TBS termasuk barang pertanian yang dikecualikan",
-        "Wajib memungut PPh 22 sebesar 1,5% dari harga pembelian",
-        "Tidak wajib memungut karena pembelian dari koperasi"
+        "Wajib memungut PPh 22 sebesar 0,25% dari harga pembelian karena nilai transaksi dengan koperasi di atas Rp 20 juta",
+        "Tidak wajib memungut PPh 22 karena TBS kelapa sawit dibebaskan dari PPh 22",
+        "Wajib memungut PPh 22 sebesar 1,5% dari harga pembelian sebagai pembelian barang industri",
+        "Tidak wajib memungut PPh 22 karena transaksi dilakukan dengan koperasi"
       ],
-      "jawaban": 1,
-      "pembahasan": "Berdasarkan PMK-34/PMK.010/2017 dan perubahannya, komoditas pertanian berupa tandan buah segar (TBS) sawit yang dibeli dari petani/koperasi petani termasuk dalam kelompok barang pertanian yang dikecualikan dari pemungutan PPh Pasal 22. Komoditas pertanian tidak dikenai PPh 22 dalam rantai dari petani ke pabrikan pertama.",
-      "dasar": "PMK-34/PMK.010/2017; PMK-41/PMK.010/2022 tentang Pemungutan PPh Pasal 22"
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK-34/PMK.010/2017 jo PMK-41/PMK.010/2022, badan usaha industri atau eksportir yang melakukan pembelian bahan-bahan berupa hasil kehutanan, perkebunan (termasuk TBS sawit), pertanian, peternakan, dan perikanan yang belum melalui proses industri manufaktur wajib memungut PPh Pasal 22 sebesar 0,25% dari harga pembelian (tidak termasuk PPN). Batas transaksi yang dikecualikan dari pemungutan adalah paling banyak Rp 20.000.000 dalam satu masa pajak. Karena nilai transaksi adalah Rp 5 miliar, PT Perkebunan Sawit wajib memungut PPh 22 sebesar 0,25%.",
+      "dasar": "Pasal 22 UU PPh; PMK-34/PMK.010/2017; PMK-41/PMK.010/2022"
     },
     {
       "id": 19,
@@ -291,17 +291,17 @@
     {
       "id": 20,
       "kategori": "Potput",
-      "skenario": "PT Distributor membeli produk elektronik dari PT Produsen dengan harga Rp 10.000.000.000 (tidak termasuk PPN). PT Produsen adalah industri elektronik yang terdaftar sebagai industri penghasil barang tertentu sesuai PMK-41/2022.",
-      "soal": "Berapa PPh Pasal 22 yang wajib dipungut PT Produsen kepada PT Distributor?",
+      "skenario": "PT Distributor membeli semen dari PT Produsen Semen dengan harga Rp 10.000.000.000 (tidak termasuk PPN). PT Produsen Semen menjual hasil produksinya kepada distributor di dalam negeri.",
+      "soal": "Berapa PPh Pasal 22 yang wajib dipungut oleh PT Produsen Semen kepada PT Distributor?",
       "opsi": [
         "Rp 25.000.000 (0,25%)",
-        "Rp 150.000.000 (1,5%)",
-        "Rp 200.000.000 (2%)",
-        "Tidak dipungut karena transaksi antar PKP"
+        "Rp 10.000.000 (0,10%)",
+        "Rp 30.000.000 (0,30%)",
+        "Tidak dipungut karena transaksi dilakukan antar PKP"
       ],
       "jawaban": 0,
-      "pembahasan": "Berdasarkan PMK-41/PMK.010/2022, industri elektronik wajib memungut PPh Pasal 22 atas penjualan hasil produksinya di dalam negeri dengan tarif 0,25% dari Dasar Pengenaan Pajak (DPP) PPN. PPh 22 = 0,25% x Rp 10.000.000.000 = Rp 25.000.000. PPh Pasal 22 ini bersifat tidak final dan dapat dikreditkan oleh PT Distributor dalam SPT PPh Badannya.",
-      "dasar": "PMK-41/PMK.010/2022; PMK-34/PMK.010/2017"
+      "pembahasan": "Berdasarkan PMK-34/PMK.010/2017 jo PMK-41/PMK.010/2022, badan usaha yang bergerak di bidang industri semen wajib memungut PPh Pasal 22 atas penjualan hasil produksinya kepada distributor di dalam negeri dengan tarif 0,25% dari Dasar Pengenaan Pajak (DPP) PPN. PPh 22 terutang = 0,25% x Rp 10.000.000.000 = Rp 25.000.000. PPh Pasal 22 ini bersifat tidak final dan dapat dikreditkan oleh PT Distributor dalam SPT PPh Badan.",
+      "dasar": "PMK-34/PMK.010/2017; PMK-41/PMK.010/2022"
     },
     {
       "id": 21,
@@ -606,17 +606,17 @@
     {
       "id": 41,
       "kategori": "PPh Badan",
-      "skenario": "PT Cipta Karya (PKP) memberikan fasilitas kendaraan kepada direkturnya berupa sedan mewah senilai Rp 2.000.000.000. Biaya perawatan kendaraan per tahun Rp 100.000.000. Kendaraan tersebut 70% digunakan untuk kepentingan perusahaan dan 30% kepentingan pribadi.",
-      "soal": "Berdasarkan UU HPP dan PMK-66/2023, berapa biaya yang dapat dikurangkan dari penghasilan bruto PT Cipta Karya terkait kendaraan direktur?",
+      "skenario": "PT Cipta Karya memberikan fasilitas kendaraan berupa sedan mewah kepada direkturnya. Biaya penyusutan kendaraan per tahun adalah Rp 250.000.000 and biaya pemeliharaan/perawatan per tahun adalah Rp 100.000.000. Fasilitas tersebut diberikan sebagai kenikmatan (fringe benefit) sehubungan dengan pekerjaan.",
+      "soal": "Berdasarkan UU HPP and PMK-66/2023, bagaimana perlakuan pembebanan biaya penyusutan and pemeliharaan kendaraan tersebut bagi PT Cipta Karya?",
       "opsi": [
-        "Rp 0 karena fasilitas kendaraan direktur non-deductible",
-        "Rp 100.000.000 (100% biaya perawatan)",
-        "Rp 70.000.000 (70% biaya perawatan sesuai penggunaan bisnis)",
-        "Penyusutan 70% + biaya perawatan 70% sesuai proporsional penggunaan bisnis"
+        "Rp 0 (tidak dapat dibiayakan secara fiskal karena merupakan kenikmatan)",
+        "Hanya dapat dibiayakan 50% dari penyusutan and biaya perawatan sesuai ketentuan KEP-220/PJ/2002",
+        "Hanya dapat dibiayakan 70% dari penyusutan and biaya perawatan sesuai porsi penggunaan dinas",
+        "Dapat dibiayakan penuh 100% (Rp 350.000.000) karena merupakan biaya natura/kenikmatan sehubungan pekerjaan yang bersifat deductible bagi perusahaan"
       ],
       "jawaban": 3,
-      "pembahasan": "Berdasarkan PMK-66/PMK.03/2023 tentang Perlakuan PPh atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan/Jasa dalam Bentuk Natura/Kenikmatan: biaya kendaraan yang sebagian untuk kepentingan bisnis dapat dikurangkan secara proporsional. Penyusutan sedan: 70% x nilai sedan x tarif penyusutan (kelompok II, 12,5%/tahun untuk garis lurus). Biaya perawatan: 70% x Rp 100 juta = Rp 70 juta. Total = Rp 175 juta penyusutan + Rp 70 juta perawatan.",
-      "dasar": "PMK-66/PMK.03/2023; Pasal 6 dan 9 UU PPh"
+      "pembahasan": "Berdasarkan PMK-66/PMK.03/2023 and UU HPP, biaya penyediaan fasilitas natura and/atau kenikmatan sehubungan pekerjaan (termasuk kendaraan direktur) dapat dikurangkan sepenuhnya 100% (fully deductible) dari penghasilan bruto pemberi kerja, sepanjang merupakan biaya 3M (mendapatkan, menagih, memelihara penghasilan). Ketentuan lama KEP-220/PJ/2002 yang membatasi pembebanan biaya kendaraan direktur sebesar 50% sudah tidak berlaku lagi. Bagi direktur (penerima), fasilitas ini merupakan objek PPh 21 (taxable) kecuali jika memenuhi kriteria pengecualian tertentu.",
+      "dasar": "Pasal 6 ayat (1) huruf n UU PPh; PMK-66/PMK.03/2023"
     },
     {
       "id": 42,
@@ -786,17 +786,17 @@
     {
       "id": 53,
       "kategori": "PPh Badan",
-      "skenario": "PT Holdings memiliki 100% saham PT Anak. PT Holdings berencana memberikan hibah aset kepada PT Anak berupa tanah dengan nilai buku Rp 100 miliar and nilai pasar Rp 300 miliar. Aset tersebut diterima tanpa kompensasi.",
-      "soal": "Bagaimana perlakuan pajak atas hibah tanah dari PT Holdings kepada PT Anak (hubungan induk-anak 100%)?",
+      "skenario": "PT Holdings memiliki 100% saham PT Anak. PT Holdings berencana memberikan hibah aset kepada PT Anak berupa tanah dengan nilai buku Rp 100 miliar dan nilai pasar Rp 300 miliar. Hibah tersebut dilakukan tanpa kompensasi apa pun.",
+      "soal": "Bagaimana perlakuan PPh atas hibah tanah dari PT Holdings kepada PT Anak (hubungan induk-anak 100%)?",
       "opsi": [
-        "Hibah antara induk-anak dikecualikan dari pajak karena satu group",
-        "PT Holdings dikenai PPh atas keuntungan pengalihan (Rp 200 M) dan PPh Final 2,5% atas nilai tanah; PT Anak mengakui harga perolehan tanah sebesar nilai pasar Rp 300 M",
-        "PT Holdings tidak kena pajak; PT Anak mengakui sebagai modal tambahan",
-        "Dikecualikan jika mendapat persetujuan Dirjen Pajak sebagai reorganisasi"
+        "Hibah antara induk-anak dikecualikan dari PPh karena masih dalam satu grup usaha",
+        "PT Holdings dikenai PPh Final 2,5% atas nilai pengalihan (Rp 300 M) dan keuntungan pengalihan bukan objek PPh Badan umum; PT Anak wajib mengakui hibah tanah sebesar nilai pasar (Rp 300 M) sebagai objek PPh Badan bagi PT Anak",
+        "PT Holdings tidak dikenai PPh apa pun karena hibah tidak menghasilkan keuntungan nyata; PT Anak mengakui tanah sebagai tambahan modal disetor yang bebas PPh",
+        "PT Holdings dikenai PPh Badan 22% atas nilai pasar; PT Anak dibebaskan dari objek PPh"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan Pasal 4 ayat (1) huruf d UU PPh, keuntungan dari pengalihan harta (termasuk hibah antar badan) merupakan objek PPh. PT Holdings dikenai: (1) PPh Final 2,5% atas pengalihan tanah berdasarkan PP-34/2016 (DPP = nilai tertinggi antara harga jual dan NJOP); (2) PPh Badan atas selisih nilai pasar dengan nilai buku (gain Rp 200 M) mengikuti ketentuan pengalihan aset. PT Anak mengakui tanah sebesar nilai pasar sebagai harga perolehan.",
-      "dasar": "Pasal 4 ayat (1) huruf d, Pasal 10 ayat (2) UU PPh; PP-34/2016"
+      "pembahasan": "Berdasarkan PP-34/2016, hibah tanah antar-badan merupakan objek PPh Final PHTB sebesar 2,5% dari nilai pengalihan (nilai pasar Rp 300 M) yang disetor oleh pihak yang mengalihkan (PT Holdings). Karena bersifat final, keuntungan pengalihan (selisih nilai pasar dan nilai buku Rp 200 M) tidak dikenai PPh Badan umum lagi bagi PT Holdings. Sementara itu, bagi PT Anak (penerima), karena terdapat hubungan kepemilikan (100%), hibah tersebut tidak memenuhi syarat pengecualian objek pajak (Pasal 4 ayat (3) huruf a UU PPh), sehingga PT Anak wajib mengakui nilai pasar tanah (Rp 300 M) sebagai penghasilan objek PPh Badan dengan tarif 22%.",
+      "dasar": "Pasal 4 ayat (1) huruf d UU PPh; PP-34/2016; PMK-245/PMK.03/2008"
     },
     {
       "id": 54,
@@ -861,17 +861,17 @@
     {
       "id": 58,
       "kategori": "Potput",
-      "skenario": "PT Kontraktor Nasional mendapat proyek rehabilitasi gedung pemerintah senilai Rp 100 miliar (termasuk PPN). PT Kontraktor tidak memiliki sertifikat kualifikasi konstruksi apapun karena baru berdiri.",
-      "soal": "Berapa PPh Final jasa konstruksi yang dipotong oleh bendahara pemerintah atas pembayaran kepada PT Kontraktor?",
+      "skenario": "PT Kontraktor Nasional mendapat proyek rehabilitasi gedung pemerintah (pekerjaan konstruksi) senilai Rp 100 miliar (termasuk PPN). PT Kontraktor tidak memiliki sertifikat kualifikasi konstruksi apa pun karena baru berdiri.",
+      "soal": "Berapa PPh Final jasa konstruksi yang dipotong bendahara pemerintah atas pembayaran kepada PT Kontraktor?",
       "opsi": [
         "2,65% dari nilai kontrak tidak termasuk PPN",
         "3,5% dari nilai kontrak tidak termasuk PPN",
         "4% dari nilai kontrak tidak termasuk PPN",
         "6% dari nilai kontrak tidak termasuk PPN"
       ],
-      "jawaban": 3,
-      "pembahasan": "Berdasarkan PP-9/2022, tarif PPh Final atas jasa konstruksi untuk penyedia jasa yang tidak memiliki sertifikat kualifikasi adalah 4% dari nilai bruto jasa konstruksi (DPP = nilai kontrak tidak termasuk PPN). Tarif 2,65% untuk kualifikasi menengah/besar, 1,75% untuk kualifikasi kecil, 4% untuk tanpa sertifikat.",
-      "dasar": "PP-9/2022 tentang PPh atas Penghasilan dari Usaha Jasa Konstruksi"
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP-9/2022 (aturan terbaru Jasa Konstruksi), tarif PPh Final Jasa Konstruksi adalah: (1) Pelaksanaan dengan kualifikasi Kecil: 1,75%, (2) Pelaksanaan dengan kualifikasi Menengah/Besar: 2,65%, (3) Pelaksanaan tanpa sertifikasi kualifikasi: 4%, (4) Konsultansi dengan sertifikasi kualifikasi: 3,5%, (5) Konsultansi tanpa sertifikasi kualifikasi: 6%. Karena proyek rehabilitasi gedung pemerintah dikategorikan sebagai pekerjaan pelaksanaan konstruksi dan penyedia jasa tidak memiliki sertifikat kualifikasi konstruksi apa pun, maka dikenai tarif 4% dari DPP (nilai kontrak tidak termasuk PPN).",
+      "dasar": "PP-9/2022 tentang PPh atas Usaha Jasa Konstruksi"
     },
     {
       "id": 59,

@@ -51,12 +51,43 @@
         <div v-if="dashboardTab === 'stats'">
           <div class="stats-overview">
             <div class="stat-card">
-              <div class="stat-val">{{ Object.keys(aggregatedStats).length }}</div>
-              <div class="stat-lab">Paket Aktif</div>
-            </div>
-            <div class="stat-card">
               <div class="stat-val">{{ totalSubmissions }}</div>
               <div class="stat-lab">Total Ujian Selesai</div>
+            </div>
+            <div class="stat-card" :style="{ borderColor: isGlobal ? 'var(--green)' : 'var(--amber)' }">
+              <div class="stat-val" :style="{ color: isGlobal ? 'var(--green)' : 'var(--amber)' }">
+                {{ isGlobal ? 'GLOBAL' : 'LOKAL' }}
+              </div>
+              <div class="stat-lab">Sumber Data ({{ isGlobal ? 'Supabase' : 'Browser' }})</div>
+            </div>
+          </div>
+
+          <!-- RECENT ACTIVITY (Admin Only) -->
+          <div v-if="isGlobal && recentSubmissions.length > 0" class="pkg-stats-section" style="margin-bottom: 2rem;">
+            <h3>Aktivitas Terbaru (Real-time)</h3>
+            <div class="stats-table-container">
+              <table class="stats-table">
+                <thead>
+                  <tr>
+                    <th>Waktu</th>
+                    <th>User IP</th>
+                    <th>Paket</th>
+                    <th>Progress</th>
+                    <th>Hasil</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="res in recentSubmissions.slice(0, 5)" :key="res.timestamp + res.ip">
+                    <td>{{ formatDateTime(res.timestamp) }}</td>
+                    <td><code>{{ res.ip }}</code></td>
+                    <td>{{ res.packageId.replace(/-/g, ' ') }}</td>
+                    <td>{{ Object.keys(res.results).length }} soal</td>
+                    <td>
+                      <span class="badge badge-blue">Aktif/Selesai</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
@@ -142,6 +173,14 @@
             <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg2); border-radius: var(--radius-sm); font-size: 12px;">
               <strong>Note:</strong> Data ini disimpan secara lokal di browser Anda. Untuk pengamanan maksimal, gunakan Environment Variables di Vercel.
             </div>
+
+            <div class="danger-zone" style="margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+              <h3 style="color: var(--red);">Danger Zone</h3>
+              <p style="font-size: 13px; color: var(--text3); margin-bottom: 1rem;">
+                Tindakan ini akan menghapus seluruh data statistik lokal. Untuk data di Supabase, Anda harus menghapusnya secara manual melalui SQL Editor.
+              </p>
+              <button class="btn btn-danger" @click="clearAllData">⚠️ Hapus Semua Data Statistik</button>
+            </div>
           </div>
         </div>
       </main>
@@ -211,6 +250,9 @@
             {{ isDarkMode ? '☀️' : '🌙' }}
           </button>
           <div class="timer-pill">⏱ {{ timerDisplay }}</div>
+          <div v-if="isGlobal" class="sync-indicator" :class="{ 'syncing': isSyncing }" title="Real-time Sync Aktif">
+            ☁️
+          </div>
         </div>
       </nav>
       <main class="main-content">
@@ -238,6 +280,7 @@ import { ref, watch, onMounted, onUnmounted, computed } from 'vue';
 import SoalExam from './components/SoalExam.vue';
 import { PACKAGES, KATEGORI_META } from './data/soalBank.js';
 import { saveResultLocally, getAllStats, getIP } from './data/stats.js';
+import { getSupabaseClient } from './data/supabase.js';
 
 const currentView = ref('menu'); // 'menu', 'exam', 'dashboard'
 const currentPackageId = ref(null);
@@ -272,6 +315,14 @@ const saveConfig = () => {
   window.location.reload();
 };
 
+const clearAllData = () => {
+  if (confirm('APAKAH ANDA YAKIN? Semua data statistik lokal akan dihapus selamanya.')) {
+    localStorage.removeItem('pajak_exam_all_results');
+    alert('Data Lokal Berhasil Dihapus. Jangan lupa untuk TRUNCATE tabel di Supabase jika perlu.');
+    refreshStats();
+  }
+};
+
 const handleAdminTrigger = () => {
   loginAttempts.value++;
   if (loginAttempts.value >= 3) {
@@ -301,11 +352,41 @@ const logoutAdmin = () => {
 // Statistics Logic
 const aggregatedStats = ref({});
 const totalSubmissions = ref(0);
+const recentSubmissions = ref([]);
+const isGlobal = ref(false);
 
 const refreshStats = async () => {
-  aggregatedStats.value = await getAllStats();
-  // Calculate total submissions from aggregated data
-  totalSubmissions.value = Object.values(aggregatedStats.value).reduce((acc, curr) => acc + curr.totalSubmissions, 0);
+  const allStats = await getAllStats();
+  aggregatedStats.value = allStats;
+  
+  // Calculate total submissions
+  totalSubmissions.value = Object.values(allStats).reduce((acc, curr) => acc + (curr.totalSubmissions || 0), 0);
+  
+  // Check if we are using global data
+  isGlobal.value = !!localStorage.getItem('VITE_SUPABASE_URL');
+
+  // Fetch raw results for activity log
+  const localResults = JSON.parse(localStorage.getItem('pajak_exam_all_results') || '[]');
+  const client = getSupabaseClient();
+  if (client) {
+    const { data } = await client.from('pajak_exam_results').select('*').order('created_at', { ascending: false }).limit(10);
+    if (data) {
+      recentSubmissions.value = data.map(item => ({
+        packageId: item.package_id,
+        results: item.results,
+        ip: item.user_ip,
+        timestamp: item.created_at
+      }));
+    }
+  } else {
+    recentSubmissions.value = localResults.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+  }
+};
+
+const formatDateTime = (iso) => {
+  if (!iso) return '-';
+  const d = new Date(iso);
+  return d.toLocaleDateString('id-ID', { hour: '2-digit', minute: '2-digit' });
 };
 
 const getSortedQuestions = (questions) => {
@@ -329,15 +410,32 @@ const getDiffColor = (pct) => {
   return '#52c41a';
 };
 
+const isSyncing = ref(false);
+
 const handleResults = async (results) => {
+  isSyncing.value = true;
   const ip = await getIP();
   await saveResultLocally(currentPackageId.value, currentExamSession.value, results, ip, currentAttemptId.value);
   if (isAdmin.value) refreshStats();
+  
+  // Visual feedback for sync
+  setTimeout(() => {
+    isSyncing.value = false;
+  }, 1000);
 };
 
 const selectPackage = (id) => {
   currentPackageId.value = id;
-  currentAttemptId.value = generateUUID();
+  // Try to restore attemptId from local storage to prevent duplicates on refresh
+  const savedAttemptId = localStorage.getItem(`pajak_exam_attempt_${id}`);
+  if (savedAttemptId) {
+    currentAttemptId.value = savedAttemptId;
+  } else {
+    const newId = generateUUID();
+    currentAttemptId.value = newId;
+    localStorage.setItem(`pajak_exam_attempt_${id}`, newId);
+  }
+  
   currentView.value = 'exam';
   const pkg = PACKAGES.find(p => p.id === id);
   currentExamSession.value = pkg.sesi1.length > 0 ? 'sesi1' : 'sesi2';
@@ -502,6 +600,8 @@ onUnmounted(() => {
 .timer-pill { font-size: 14px; font-weight: 600; background: var(--blue-light); color: var(--blue); padding: 5px 14px; border-radius: 20px; font-variant-numeric: tabular-nums; }
 .theme-toggle { background: var(--bg2); border: 1px solid var(--border); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; font-size: 14px; }
 .theme-toggle:hover { background: var(--border); }
+.sync-indicator { font-size: 18px; opacity: 0.3; transition: all 0.3s; filter: grayscale(1); }
+.sync-indicator.syncing { opacity: 1; filter: grayscale(0); transform: scale(1.2); }
 
 /* ── MENU VIEW ── */
 .menu-view {
