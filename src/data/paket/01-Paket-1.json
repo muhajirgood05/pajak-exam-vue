@@ -11,8 +11,8 @@
         "Rp 9.200.000.000"
       ],
       "jawaban": 0,
-      "pembahasan": "PKP = Laba komersial + Koreksi positif – Koreksi negatif – Kompensasi kerugian. Dividen dari anak perusahaan dengan kepemilikan ≥25% dikecualikan dari objek pajak (Pasal 4 ayat 3 UU PPh). PKP = 12.000 + 800 + 500 + 300 – 1.200 – 2.000 = Rp 10.400 juta.",
-      "dasar": "Pasal 4 ayat (3) huruf f, Pasal 6 ayat (1), Pasal 11A UU PPh; PMK-81/PMK.03/2009",
+      "pembahasan": "PKP = Laba komersial + Koreksi positif – Koreksi negatif – Kompensasi kerugian. Berdasarkan Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP, dividen yang diterima oleh Wajib Pajak Badan Dalam Negeri dikecualikan dari objek pajak tanpa syarat persentase kepemilikan. Maka, seluruh dividen sebesar Rp 1,2 miliar adalah koreksi negatif. PKP = 12.000 + 800 + 500 + 300 – 1.200 – 2.000 = Rp 10.400 juta.",
+      "dasar": "Pasal 4 ayat (3) huruf f, Pasal 6 ayat (1), Pasal 11A UU PPh; PMK-18/PMK.03/2021",
       "id": 1
     },
     {
@@ -33,16 +33,16 @@
     {
       "id": 3,
       "kategori": "pph-badan",
-      "skenario": "PT Andalan Grup memiliki penyertaan saham di 3 entitas: (A) PT Anak Usaha (kepemilikan 80%, NPWP terdaftar), (B) ABC Ltd di Singapura (kepemilikan 40%), (C) PT Mitra Strategis (kepemilikan 20%). Pada tahun 2023, PT Andalan menerima dividen dari ketiga entitas masing-masing Rp 2 miliar, Rp 1,5 miliar, dan Rp 500 juta. Dividen dari ABC Ltd berasal dari laba setelah pajak (CIT Singapore 17%). PT Andalan tidak memiliki BUT di Singapura.",
+      "skenario": "PT Andalan Grup memiliki penyertaan saham di 3 entitas: (A) PT Anak Usaha (kepemilikan 80%, NPWP terdaftar), (B) ABC Ltd di Singapura (kepemilikan 40%), (C) PT Mitra Strategis (kepemilikan 20%). Pada tahun 2023, PT Andalan menerima dividen dari ketiga entitas masing-masing Rp 2 miliar, Rp 1,5 miliar, dan Rp 500 juta. Dividen dari ABC Ltd berasal dari laba setelah pajak (CIT Singapore 17%) dan tidak diinvestasikan kembali di Indonesia. PT Andalan tidak memiliki BUT di Singapura.",
       "soal": "Berapa total dividen yang merupakan objek PPh bagi PT Andalan Grup tahun 2023 berdasarkan UU PPh sebagaimana diubah UU HPP?",
       "opsi": [
-        "Rp 500.000.000 (hanya dari PT Mitra Strategis)",
-        "Rp 2.000.000.000 (dari ABC Ltd dan PT Mitra Strategis)",
-        "Rp 4.000.000.000 (dari ABC Ltd dan PT Mitra Strategis)",
-        "Rp 0 karena seluruh dividen dikecualikan"
+        "A. Rp 500.000.000 (hanya dari PT Mitra Strategis)",
+        "B. Rp 1.500.000.000 (hanya dari ABC Ltd Singapura)",
+        "C. Rp 2.000.000.000 (dari ABC Ltd dan PT Mitra Strategis)",
+        "D. Rp 0 karena seluruh dividen dikecualikan"
       ],
       "jawaban": 1,
-      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP dan PMK-18/PMK.03/2021:\n*   (A) Dividen dari PT Anak Usaha (dalam negeri, kepemilikan 80% ≥ 25%): Dikecualikan dari objek PPh. (Rp 0 objek)\n*   (B) Dividen dari ABC Ltd di Singapura (luar negeri, kepemilikan 40% ≥ 25%): Termasuk objek PPh. Pengecualian dividen luar negeri hanya berlaku JIKA diinvestasikan kembali di wilayah NKRI. Karena skenario tidak menyebutkan adanya investasi, maka dividen ini merupakan objek PPh. (Rp 1.500.000.000 objek)\n*   (C) Dividen dari PT Mitra Strategis (dalam negeri, kepemilikan 20% < 25%): Termasuk objek PPh. (Rp 500.000.000 objek)\n\nTotal dividen yang merupakan objek PPh bagi PT Andalan Grup tahun 2023 adalah Rp 1.500.000.000 + Rp 500.000.000 = **Rp 2.000.000.000**.",
+      "pembahasan": "Berdasarkan Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP dan PMK-18/PMK.03/2021:\n*   (A) Dividen dari PT Anak Usaha (dalam negeri, kepemilikan 80%): Dikecualikan dari objek PPh bagi WP Badan Dalam Negeri tanpa syarat persentase kepemilikan dan tanpa syarat investasi. (Rp 0 objek)\n*   (B) Dividen dari ABC Ltd di Singapura (luar negeri, kepemilikan 40%): Merupakan objek PPh karena dividen dari luar negeri hanya dikecualikan jika diinvestasikan kembali di wilayah NKRI. Karena dalam skenario tidak diinvestasikan kembali, maka dividen ini tetap merupakan objek PPh Badan. (Rp 1.500.000.000 objek)\n*   (C) Dividen dari PT Mitra Strategis (dalam negeri, kepemilikan 20%): Dikecualikan dari objek PPh bagi WP Badan Dalam Negeri. Di bawah UU HPP, batasan kepemilikan minimal 25% untuk dividen dalam negeri telah dihapus, sehingga kepemilikan 20% pun tetap bebas PPh. (Rp 0 objek)\n\nTotal dividen yang merupakan objek PPh bagi PT Andalan Grup adalah **Rp 1.500.000.000**.",
       "dasar": "Pasal 4 ayat (3) huruf f UU PPh sebagaimana diubah UU HPP; PMK-18/PMK.03/2021"
     },
     {

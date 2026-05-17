@@ -294,14 +294,14 @@
       "skenario": "WP membeli mobil sedan untuk digunakan sebagai kendaraan dinas Direktur Pemasaran.",
       "soal": "Dapatkah Pajak Masukan atas perolehan sedan tersebut dikreditkan?",
       "opsi": [
-        "A. Dapat, karena untuk operasional perusahaan",
-        "B. Tidak dapat dikreditkan sesuai aturan Pasal 9 ayat (8) huruf b",
-        "C. Hanya dapat dikreditkan 50%",
-        "D. Dapat dikreditkan asalkan mobil bekas"
+        "A. Dapat, karena digunakan untuk operasional dan sejak UU HPP larangan pengkreditan PPN atas sedan telah dihapus",
+        "B. Tidak dapat dikreditkan karena secara mutlak sedan dilarang dikreditkan PPN-nya",
+        "C. Hanya dapat dikreditkan 50% dari PPN Masukan",
+        "D. Dapat dikreditkan asalkan mobil tersebut dibeli dalam kondisi bekas"
       ],
-      "jawaban": 1,
-      "pembahasan": "Pajak Masukan tidak dapat dikreditkan untuk pengeluaran bagi perolehan dan pemeliharaan kendaraan bermotor berupa sedan dan station wagon, kecuali untuk barang dagangan atau disewakan.",
-      "dasar": "Pasal 9 ayat (8) huruf b UU PPN."
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan UU HPP (Undang-Undang Nomor 7 Tahun 2021), larangan khusus pengkreditan Pajak Masukan atas perolehan dan pemeliharaan kendaraan bermotor berupa sedan dan station wagon (yang sebelumnya diatur dalam Pasal 9 ayat (8) huruf c UU PPN) telah dihapus. Oleh karena itu, Pajak Masukan atas pembelian sedan operasional perusahaan dapat dikreditkan sepenuhnya sepanjang digunakan untuk kegiatan operasional (3M).",
+      "dasar": "Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP) Pasal 9 UU PPN."
     },
     {
       "id": 21,
