@@ -19,6 +19,74 @@
       </div>
     </div>
 
+    <!-- FEEDBACK INPUT MODAL -->
+    <div v-if="showFeedbackModal" class="modal-overlay">
+      <div class="modal-content feedback-modal-content">
+        <div v-if="!feedbackSuccess">
+          <div class="modal-header">
+            <h3 style="margin-top: 0; font-size: 1.3rem;">💬 Saran & Kritik</h3>
+            <p style="color: var(--text3); font-size: 13px; margin: 4px 0 16px 0;">Masukkan masukan Anda untuk membantu kami mengembangkan bank soal dan aplikasi ini.</p>
+          </div>
+          
+          <div class="form-group" style="text-align: left; margin-bottom: 12px;">
+            <label class="form-label">Nama Pengirim</label>
+            <input 
+              v-model="feedbackForm.name" 
+              type="text" 
+              placeholder="Contoh: Tn. Wibowo, S.E." 
+              class="admin-input"
+              style="margin: 6px 0 0 0;"
+            >
+          </div>
+
+          <div class="form-group" style="text-align: left; margin-bottom: 12px;">
+            <label class="form-label">Peran / Jabatan</label>
+            <select v-model="feedbackForm.role" class="admin-input select-input" style="margin: 6px 0 0 0;">
+              <option value="Pemeriksa Pajak">Pemeriksa Pajak</option>
+              <option value="Fungsional Penyuluh">Fungsional Penyuluh / AR</option>
+              <option value="Dosen / Akademisi">Dosen / Akademisi</option>
+              <option value="Mahasiswa Perpajakan">Mahasiswa Perpajakan</option>
+              <option value="Masyarakat Umum">Masyarakat Umum</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="text-align: left; margin-bottom: 12px;">
+            <label class="form-label">Kategori Masukan</label>
+            <select v-model="feedbackForm.category" class="admin-input select-input" style="margin: 6px 0 0 0;">
+              <option value="Soal Exam">Soal Exam & Skenario</option>
+              <option value="Kunci Jawaban">Kunci & Pembahasan</option>
+              <option value="Fitur Aplikasi">Tampilan / Fitur Aplikasi</option>
+              <option value="Lainnya">Lain-lain</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="text-align: left; margin-bottom: 16px;">
+            <label class="form-label">Kritik / Saran / Masukan</label>
+            <textarea 
+              v-model="feedbackForm.message" 
+              placeholder="Tuliskan saran perbaikan secara spesifik di sini..." 
+              class="admin-input textarea-input"
+              rows="4"
+              style="margin: 6px 0 0 0;"
+            ></textarea>
+          </div>
+
+          <div class="modal-actions">
+            <button @click="showFeedbackModal = false" class="btn-text">Batal</button>
+            <button @click="submitFeedback" class="btn-primary" :disabled="isSubmittingFeedback">
+              {{ isSubmittingFeedback ? 'Mengirim...' : 'Kirim Masukan' }}
+            </button>
+          </div>
+        </div>
+
+        <div v-else class="feedback-success-state">
+          <div class="success-icon">🎉</div>
+          <h3>Masukan Terkirim!</h3>
+          <p>Terima kasih banyak atas kritik dan saran yang Anda berikan. Masukan Anda sangat berharga bagi kami.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- DASHBOARD VIEW (Admin Only) -->
     <div v-if="currentView === 'dashboard'" class="dashboard-view">
       <nav class="topbar">
@@ -34,6 +102,12 @@
             Evaluasi Soal
           </button>
           <button 
+            :class="['tab-btn', { active: dashboardTab === 'feedbacks' }]" 
+            @click="dashboardTab = 'feedbacks'"
+          >
+            💬 Saran & Kritik
+          </button>
+          <button 
             :class="['tab-btn', { active: dashboardTab === 'config' }]" 
             @click="dashboardTab = 'config'"
           >
@@ -41,7 +115,7 @@
           </button>
         </div>
         <div class="topbar-right">
-          <button v-if="dashboardTab === 'stats'" class="btn btn-sm btn-outline" @click="refreshStats">🔄 Refresh</button>
+          <button v-if="dashboardTab === 'stats' || dashboardTab === 'feedbacks'" class="btn btn-sm btn-outline" @click="refreshStats">🔄 Refresh</button>
           <button class="btn btn-sm btn-danger" @click="logoutAdmin">Keluar</button>
         </div>
       </nav>
@@ -150,6 +224,48 @@
           </div>
         </div>
 
+        <!-- FEEDBACKS TAB -->
+        <div v-if="dashboardTab === 'feedbacks'" class="feedbacks-section">
+          <div class="pkg-stats-header">
+            <h3>💬 Data Saran & Kritik Wajib Pajak / Pengguna</h3>
+            <span class="badge badge-blue">{{ feedbacksList.length }} Masukan</span>
+          </div>
+          
+          <div v-if="feedbacksList.length === 0" class="no-feedback-state">
+            <div class="no-feedback-icon">📭</div>
+            <h4>Belum Ada Masukan</h4>
+            <p>Saran dan kritik yang dikirimkan oleh pengguna akan muncul di sini.</p>
+          </div>
+
+          <div v-else class="feedbacks-grid">
+            <div v-for="fb in feedbacksList" :key="fb.id" class="feedback-item-card">
+              <div class="feedback-item-header">
+                <div class="feedback-sender-info">
+                  <span class="feedback-sender-name">{{ fb.name }}</span>
+                  <span class="feedback-sender-role">💼 {{ fb.role }}</span>
+                </div>
+                <button class="btn-delete-fb" @click="deleteFeedback(fb.id)" title="Hapus Masukan">🗑️</button>
+              </div>
+              
+              <div class="feedback-item-body">
+                <div class="feedback-meta">
+                  <span :class="['badge', {
+                    'badge-green': fb.category === 'Soal Exam',
+                    'badge-red': fb.category === 'Kunci Jawaban',
+                    'badge-blue': fb.category === 'Fitur Aplikasi',
+                    'badge-amber': fb.category === 'Lainnya'
+                  }]">
+                    {{ fb.category }}
+                  </span>
+                  <span class="feedback-date">🕒 {{ formatDateTime(fb.timestamp) }}</span>
+                  <span class="feedback-ip">🌐 {{ fb.ip }}</span>
+                </div>
+                <p class="feedback-message">" {{ fb.message }} "</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- CONFIG TAB -->
         <div v-if="dashboardTab === 'config'" class="config-section">
           <div class="stat-card" style="max-width: 600px; margin: 0 auto;">
@@ -212,6 +328,16 @@
             </div>
             <div class="package-card-arrow">→</div>
           </div>
+        </div>
+
+        <!-- SUGGESTION & FEEDBACK CARD -->
+        <div class="feedback-trigger-card" @click="showFeedbackModal = true">
+          <div class="feedback-card-icon">💬</div>
+          <div class="feedback-card-content">
+            <h3>Kirim Saran & Kritik</h3>
+            <span>Bantu kami menyempurnakan kualitas soal dan aplikasi ini</span>
+          </div>
+          <div class="feedback-card-arrow">📝</div>
         </div>
 
         <div class="menu-footer">
@@ -289,6 +415,18 @@ const currentExamSession = ref('sesi1');
 const dashboardTab = ref('stats'); // 'stats', 'config'
 const dashboardCategoryFilter = ref('semua');
 const currentAttemptId = ref(null);
+
+// Feedback State
+const showFeedbackModal = ref(false);
+const feedbackForm = ref({
+  name: '',
+  role: 'Pemeriksa Pajak',
+  category: 'Soal Exam',
+  message: ''
+});
+const isSubmittingFeedback = ref(false);
+const feedbackSuccess = ref(false);
+const feedbacksList = ref([]);
 
 const generateUUID = () => {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -381,6 +519,117 @@ const refreshStats = async () => {
   } else {
     recentSubmissions.value = localResults.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
   }
+  
+  await loadFeedbacks();
+};
+
+const submitFeedback = async () => {
+  if (!feedbackForm.value.name.trim() || !feedbackForm.value.message.trim()) {
+    alert('Nama dan masukan tidak boleh kosong!');
+    return;
+  }
+  
+  isSubmittingFeedback.value = true;
+  const ip = await getIP();
+  
+  const feedbackItem = {
+    id: generateUUID(),
+    name: feedbackForm.value.name,
+    role: feedbackForm.value.role,
+    category: feedbackForm.value.category,
+    message: feedbackForm.value.message,
+    ip: ip,
+    timestamp: new Date().toISOString()
+  };
+  
+  // 1. Save to Local Storage
+  const localFeedbacks = JSON.parse(localStorage.getItem('pajak_exam_feedbacks') || '[]');
+  localFeedbacks.push(feedbackItem);
+  localStorage.setItem('pajak_exam_feedbacks', JSON.stringify(localFeedbacks));
+  
+  // 2. Try to save to Supabase if connected
+  const client = getSupabaseClient();
+  if (client) {
+    try {
+      const { error } = await client.from('pajak_exam_feedbacks').insert([
+        {
+          id: feedbackItem.id,
+          name: feedbackItem.name,
+          role: feedbackItem.role,
+          category: feedbackItem.category,
+          message: feedbackItem.message,
+          user_ip: feedbackItem.ip,
+          created_at: feedbackItem.timestamp
+        }
+      ]);
+      if (error) {
+        console.warn('Supabase feedback sync error (possibly table does not exist):', error.message);
+      }
+    } catch (e) {
+      console.warn('Supabase insertion failed gracefully:', e);
+    }
+  }
+  
+  isSubmittingFeedback.value = false;
+  feedbackSuccess.value = true;
+  
+  await loadFeedbacks();
+  
+  setTimeout(() => {
+    showFeedbackModal.value = false;
+    feedbackSuccess.value = false;
+    feedbackForm.value.name = '';
+    feedbackForm.value.message = '';
+  }, 1500);
+};
+
+const loadFeedbacks = async () => {
+  const localFeedbacks = JSON.parse(localStorage.getItem('pajak_exam_feedbacks') || '[]');
+  const client = getSupabaseClient();
+  if (client) {
+    try {
+      const { data, error } = await client
+        .from('pajak_exam_feedbacks')
+        .select('*')
+        .order('created_at', { ascending: false });
+        
+      if (data && !error) {
+        feedbacksList.value = data.map(item => ({
+          id: item.id,
+          name: item.name,
+          role: item.role,
+          category: item.category,
+          message: item.message,
+          ip: item.user_ip,
+          timestamp: item.created_at
+        }));
+        return;
+      }
+    } catch (e) {
+      console.warn('Supabase load feedbacks failed, using local:', e);
+    }
+  }
+  feedbacksList.value = localFeedbacks.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+};
+
+const deleteFeedback = async (id) => {
+  if (!confirm('Apakah Anda yakin ingin menghapus masukan ini?')) return;
+  
+  let localFeedbacks = JSON.parse(localStorage.getItem('pajak_exam_feedbacks') || '[]');
+  localFeedbacks = localFeedbacks.filter(f => f.id !== id);
+  localStorage.setItem('pajak_exam_feedbacks', JSON.stringify(localFeedbacks));
+  
+  const client = getSupabaseClient();
+  if (client) {
+    try {
+      const { error } = await client.from('pajak_exam_feedbacks').delete().eq('id', id);
+      if (error) console.warn('Supabase feedback delete error:', error.message);
+    } catch (e) {
+      console.warn('Supabase deletion failed gracefully:', e);
+    }
+  }
+  
+  await loadFeedbacks();
 };
 
 const formatDateTime = (iso) => {
@@ -494,13 +743,14 @@ const toggleTheme = () => {
   }
 };
 
-onMounted(() => {
+onMounted(async () => {
   // Check initial theme
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     isDarkMode.value = true;
     document.documentElement.classList.add('dark');
   }
+  await loadFeedbacks();
 });
 
 onUnmounted(() => {
@@ -678,4 +928,202 @@ onUnmounted(() => {
   .topbar { padding: 0 1rem; }
   .topbar-brand span { display: none; }
 }
+
+/* ── FEEDBACK SYSTEM STYLES ── */
+.feedback-trigger-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, var(--blue-light) 0%, var(--surface) 100%);
+  border: 1px dashed var(--blue-mid);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+.dark-theme .feedback-trigger-card {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, var(--surface) 100%);
+}
+.feedback-trigger-card:hover {
+  border-style: solid;
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+}
+.feedback-card-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.feedback-card-content {
+  flex: 1;
+  text-align: left;
+}
+.feedback-card-content h3 {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+.feedback-card-content span {
+  font-size: 0.8rem;
+  color: var(--text3);
+}
+.feedback-card-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+.feedback-trigger-card:hover .feedback-card-arrow {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.feedback-modal-content {
+  max-width: 500px;
+}
+.form-label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text2);
+}
+.select-input {
+  cursor: pointer;
+}
+.textarea-input {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+.feedback-success-state {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.success-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+.feedback-success-state h3 {
+  font-size: 1.5rem;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+.feedback-success-state p {
+  color: var(--text2);
+  font-size: 0.95rem;
+}
+
+/* Feedbacks List Dashboard */
+.feedbacks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+.feedback-item-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: all 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  text-align: left;
+}
+.feedback-item-card:hover {
+  border-color: var(--blue-mid);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+.feedback-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.feedback-sender-info {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-sender-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+.feedback-sender-role {
+  font-size: 12px;
+  color: var(--text3);
+  margin-top: 2px;
+}
+.btn-delete-fb {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.btn-delete-fb:hover {
+  background: var(--bg2);
+}
+.feedback-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feedback-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--text3);
+}
+.feedback-date {
+  font-weight: 500;
+}
+.feedback-ip {
+  font-family: monospace;
+}
+.feedback-message {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text2);
+  margin: 4px 0 0 0;
+  background: var(--bg);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--blue);
+  font-style: italic;
+}
+.no-feedback-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  margin-top: 1rem;
+}
+.no-feedback-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.no-feedback-state h4 {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.no-feedback-state p {
+  color: var(--text3);
+}
+
+.badge-green { background: #d1fae5; color: #065f46; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-amber { background: #fef3c7; color: #92400e; }
 </style>

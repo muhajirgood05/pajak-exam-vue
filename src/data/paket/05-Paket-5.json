@@ -51,17 +51,17 @@
     {
       "id": 4,
       "kategori": "pph-badan",
-      "skenario": "PT Global Niaga memiliki omzet Rp 60 Miliar pada tahun 2023. Pada tahun 2024, perusahaan menghitung PPh Badan terutang.",
-      "soal": "Berapakah tarif PPh Badan yang berlaku untuk PT Global Niaga pada tahun pajak 2024?",
+      "skenario": "PT Global Niaga memiliki omzet Rp 30 Miliar pada tahun pajak 2024 dengan Penghasilan Kena Pajak (PKP) sebesar Rp 3 Miliar.",
+      "soal": "Berapakah PPh Badan terutang PT Global Niaga untuk tahun pajak 2024 setelah memanfaatkan fasilitas Pasal 31E UU PPh?",
       "opsi": [
-        "A. 25%",
-        "B. 22%",
-        "C. 20%",
-        "D. 19%"
+        "A. Rp 330.000.000",
+        "B. Rp 660.000.000",
+        "C. Rp 607.200.000",
+        "D. Rp 450.000.000"
       ],
-      "jawaban": 1,
-      "pembahasan": "Berdasarkan UU HPP, tarif PPh Badan yang berlaku untuk tahun pajak 2022 dan seterusnya ditetapkan sebesar 22%.",
-      "dasar": "Pasal 17 ayat (1) huruf b UU PPh sttd UU HPP."
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan Pasal 31E UU PPh, Wajib Pajak Badan DN dengan omzet s.d Rp 50 Miliar mendapat fasilitas pengurangan tarif 50% atas PKP dari bagian omzet s.d Rp 4,8 Miliar.<br>1. Bagian PKP yang mendapat fasilitas = (4,8 Miliar / Omzet) x PKP = (4,8 / 30) x Rp 3 M = Rp 480.000.000.<br>2. PPh atas bagian fasilitas = 50% x 22% x Rp 480.000.000 = Rp 52.800.000.<br>3. Bagian PKP non-fasilitas = Rp 3 M - Rp 480 juta = Rp 2.520.000.000.<br>4. PPh atas non-fasilitas = 22% x Rp 2.520.000.000 = Rp 554.400.000.<br>Total PPh terutang = Rp 52.800.000 + Rp 554.400.000 = Rp 607.200.000.",
+      "dasar": "Pasal 31E UU PPh."
     },
     {
       "id": 5,
@@ -306,17 +306,17 @@
     {
       "id": 21,
       "kategori": "ppn",
-      "skenario": "PT Tekstil menjual pakaian kepada Yayasan Yatim Piatu senilai Rp 50.000.000 sebagai sumbangan.",
-      "soal": "Bagaimanakah aspek PPN atas penyerahan cuma-cuma tersebut?",
+      "skenario": "PT Tekstil (PKP) menyumbangkan 1.000 potong pakaian kepada Yayasan Panti Asuhan secara cuma-cuma. Harga Pokok Produksi (HPP) total adalah Rp 50.000.000, sedangkan harga jual normal jika dipasarkan adalah Rp 60.000.000.",
+      "soal": "Berapakah PPN yang wajib dipungut/diterbitkan Faktur Pajaknya oleh PT Tekstil atas penyerahan cuma-cuma tersebut?",
       "opsi": [
-        "A. Tidak terutang PPN karena sumbangan",
-        "B. Terutang PPN dengan DPP senilai Harga Jual",
-        "C. Terutang PPN dengan DPP senilai Harga Pokok Produksi (HPP)",
-        "D. Terutang PPN 0%"
+        "A. Rp 0 (Bebas PPN karena sumbangan sosial)",
+        "B. Rp 5.500.000",
+        "C. Rp 6.600.000",
+        "D. Rp 1.100.000"
       ],
-      "jawaban": 2,
-      "pembahasan": "Penyerahan cuma-cuma BKP terutang PPN dengan DPP menggunakan Nilai Lain (HPP/Harga Pokok).",
-      "dasar": "PMK No. 71/PMK.03/2022."
+      "jawaban": 1,
+      "pembahasan": "Berdasarkan PMK No. 71/PMK.03/2022, penyerahan cuma-cuma BKP terutang PPN dengan Dasar Pengenaan Pajak (DPP) menggunakan Nilai Lain, yaitu sebesar Harga Pokok Produksi (HPP), bukan Harga Jual. Dengan tarif PPN 11% yang berlaku saat ini (UU HPP), maka PPN Terutang = 11% x Rp 50.000.000 = Rp 5.500.000.",
+      "dasar": "Pasal 2 PMK No. 71/PMK.03/2022 jo. Pasal 7 ayat (1) UU PPN."
     },
     {
       "id": 22,
