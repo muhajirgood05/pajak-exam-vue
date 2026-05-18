@@ -232,16 +232,16 @@
       "id": 16,
       "kategori": "PPN",
       "skenario": "PT Apotek Sehat (PKP) menjual: (1) obat resep dokter Rp 50 juta, (2) suplemen vitamin tanpa resep Rp 20 juta, (3) alat kesehatan (termometer, tensimeter) Rp 15 juta, (4) jasa konsultasi apoteker Rp 5 juta.",
-      "soal": "Dari penjualan PT Apotek Sehat, mana yang tidak terutang PPN?",
+      "soal": "Bagaimana perlakuan PPN atas penyerahan obat resep dokter (1) dan alat kesehatan (3) berdasarkan UU HPP?",
       "opsi": [
-        "Hanya obat resep dokter (1)",
-        "Obat resep (1) dan alat kesehatan (3)",
-        "Semua terutang PPN 11%",
-        "Semua dikecualikan karena apotek termasuk fasilitas kesehatan"
+        "Tidak terutang PPN karena termasuk barang non-BKP",
+        "Terutang PPN 11% dan wajib dipungut",
+        "Terutang PPN namun dibebaskan dari pengenaan PPN",
+        "Dikenai PPN dengan besaran tertentu (tarif final) 1,1%"
       ],
-      "jawaban": 1,
-      "pembahasan": "Berdasarkan PP-49/2022 dan Perpres tentang daftar barang bebas PPN: (1) Obat-obatan yang masuk dalam daftar obat-obatan tertentu dan alat kesehatan dikecualikan dari PPN. (2) Suplemen vitamin (bukan obat) dan jasa konsultasi merupakan objek PPN yang terutang. Namun perlu dicek regulasi terkini karena UU HPP mengubah beberapa ketentuan pembebasan PPN atas obat dan alkes.",
-      "dasar": "PP-49/2022; Perpres tentang Daftar Obat dan Alkes Bebas PPN"
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan UU HPP dan PP-49/2022, obat-obatan tertentu (termasuk obat resep) dan alat kesehatan tertentu tidak lagi dikategorikan sebagai non-BKP (tidak terutang PPN), melainkan berstatus sebagai Barang Kena Pajak (BKP) yang atas penyerahannya terutang PPN namun dibebaskan dari pengenaan PPN. Sementara itu, suplemen vitamin dan jasa konsultasi tetap terutang PPN 11% dan wajib dipungut.",
+      "dasar": "UU No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP); PP-49/2022"
     },
     {
       "id": 17,

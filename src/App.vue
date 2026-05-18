@@ -25,7 +25,12 @@
         <div v-if="!feedbackSuccess">
           <div class="modal-header">
             <h3 style="margin-top: 0; font-size: 1.3rem;">💬 Saran & Kritik</h3>
-            <p style="color: var(--text3); font-size: 13px; margin: 4px 0 16px 0;">Masukkan masukan Anda untuk membantu kami mengembangkan bank soal dan aplikasi ini.</p>
+            <p style="color: var(--text3); font-size: 13px; margin: 4px 0 16px 0; line-height: 1.5;">
+              Masukkan masukan Anda untuk membantu kami mengembangkan bank soal dan aplikasi ini. 
+              Anda juga dapat menghubungi kami langsung via 
+              <a href="mailto:muhajirgood05@gmail.com" style="color: var(--blue); text-decoration: none; font-weight: 600;">Email</a> atau 
+              <a href="https://www.linkedin.com/in/ahmad-muhajir-a64506221/" target="_blank" style="color: var(--blue); text-decoration: none; font-weight: 600;">LinkedIn</a>.
+            </p>
           </div>
           
           <div class="form-group" style="text-align: left; margin-bottom: 12px;">
@@ -340,10 +345,20 @@
           <div class="feedback-card-arrow">📝</div>
         </div>
 
-        <div class="menu-footer">
+        <div class="menu-footer" style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 1.5rem;">
           <button class="theme-toggle" @click="toggleTheme" title="Toggle Dark Mode">
             {{ isDarkMode ? '☀️ Mode Terang' : '🌙 Mode Gelap' }}
           </button>
+          <div class="contact-info" style="font-size: 12.5px; color: var(--text3); display: flex; align-items: center; gap: 8px; font-weight: 500;">
+            <span>Nara Hubung:</span>
+            <a href="mailto:muhajirgood05@gmail.com" style="color: var(--blue); text-decoration: none; display: flex; align-items: center; gap: 4px; font-weight: 600; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+              ✉️ Email
+            </a>
+            <span style="color: var(--border);">|</span>
+            <a href="https://www.linkedin.com/in/ahmad-muhajir-a64506221/" target="_blank" style="color: var(--blue); text-decoration: none; display: flex; align-items: center; gap: 4px; font-weight: 600; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+              💼 LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </div>
