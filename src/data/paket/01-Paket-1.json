@@ -686,9 +686,9 @@
         "Tidak terutang PPN karena pemakaian sendiri bukan untuk tujuan produktif (distribusi)",
         "PPN Rp4.400.000"
       ],
-      "jawaban": 2,
-      "pembahasan": "Berdasarkan PMK-75/PMK.03/2010 jo. Pasal 9 ayat (8) UU PPN. Pemakaian sendiri untuk tujuan non-produktif (seperti dipakai direksi) terutang PPN. DPP-nya adalah Harga Pokok Penjualan (HPP). Namun, perlu diingat bahwa Pajak Masukan atas perolehan Sedan/Station Wagon (SUV) tidak dapat dikreditkan (Pasal 9 ayat 8). Oleh karena itu, PMK-75 mengatur bahwa penyerahan kendaraan yang pajak masukannya tidak dapat dikreditkan tersebut dikecualikan dari Pemakaian Sendiri yang terutang PPN (Tidak terutang PPN Keluaran agar tidak terjadi pajak berganda).",
-      "dasar": "PMK-75/PMK.03/2010 jo. UU PPN Pasal 9 ayat (8)."
+      "jawaban": 0,
+      "pembahasan": "Pemakaian sendiri BKP produksi sendiri untuk tujuan non-produktif (seperti kendaraan operasional/fasilitas bagi direksi) merupakan penyerahan BKP yang terutang PPN. Berdasarkan PMK-75/PMK.03/2010, Dasar Pengenaan Pajak (DPP) yang digunakan adalah Nilai Lain, yaitu Harga Pokok Penjualan (HPP) sebesar Rp400.000.000. Dengan tarif PPN 11% (UU HPP), maka PPN terutang yang wajib disetor adalah 11% x Rp400.000.000 = Rp44.000.000. Catatan: Mobil yang digunakan adalah SUV (bukan sedan/station wagon), sehingga ketentuan pembatasan kredit Pajak Masukan berdasarkan Pasal 9 ayat (8) UU PPN tidak berlaku.",
+      "dasar": "Pasal 1A ayat (1) huruf d UU PPN; PMK-75/PMK.03/2010"
     },
     {
       "id": 47,
