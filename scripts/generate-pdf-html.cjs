@@ -291,9 +291,8 @@ const htmlContent = `
         background-color: #ffffff;
       }
       .page {
-        height: 100vh;
+        min-height: 100vh;
         page-break-after: always;
-        overflow: hidden;
       }
       .page:last-child {
         page-break-after: avoid;
