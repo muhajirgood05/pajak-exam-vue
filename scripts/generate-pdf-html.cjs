@@ -55,6 +55,35 @@ targets.forEach((target, idx) => {
 
 console.log(`Loaded ${questions.length} questions for PDF compilation.`);
 
+function formatPembahasan(text) {
+  if (!text) return '';
+  
+  let cleaned = text.replace(/\r\n/g, '\n').trim();
+  let lines = cleaned.split('\n');
+  let formattedLines = lines.map(line => {
+    let bulletMatch = line.match(/^\s*[\*\-]\s+(.*?)$/);
+    if (bulletMatch) {
+      return `<div style="margin-left: 1.25rem; margin-bottom: 0.35rem; display: flex; gap: 0.5rem; font-size: 0.9rem; line-height: 1.5; color: #065f46;"><span style="color: var(--success); font-weight: bold;">•</span><span>${bulletMatch[1]}</span></div>`;
+    }
+    
+    let numMatch = line.match(/^\s*(\d+)\.\s+(.*?)$/);
+    if (numMatch) {
+      return `<div style="margin-top: 0.75rem; margin-bottom: 0.5rem; font-weight: 700; color: var(--primary); font-family: 'Outfit', sans-serif; font-size: 0.95rem;">${numMatch[1]}. ${numMatch[2]}</div>`;
+    }
+    
+    if (line.trim() === '') {
+      return '<div style="margin-top: 0.5rem;"></div>';
+    }
+    
+    return `<p style="margin-bottom: 0.5rem; font-size: 0.925rem; line-height: 1.5; text-align: justify; color: #065f46;">${line}</p>`;
+  });
+  
+  let result = formattedLines.join('\n');
+  result = result.replace(/\*\*(.*?)\*\?/g, '<strong>$1</strong>'); // Fix possible typo in case of **...?
+  result = result.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  return result;
+}
+
 // Generate HTML with premium CSS (Simplified: No Cover, No Intro, No Header, No Footer)
 const htmlContent = `
 <!DOCTYPE html>
@@ -349,7 +378,7 @@ const htmlContent = `
               <span>💡</span> Pembahasan Materiil & Analisis Jawaban
             </div>
             <div class="expl-text">
-              ${q.pembahasan}
+              ${formatPembahasan(q.pembahasan)}
             </div>
             <div class="expl-basis">
               <span class="expl-basis-label">Dasar Hukum:</span>
