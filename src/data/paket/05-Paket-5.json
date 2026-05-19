@@ -734,9 +734,9 @@
         "C. 50%",
         "D. 10%"
       ],
-      "jawaban": 1,
-      "pembahasan": "Amortisasi atas harta tak berwujud Kelompok 3 (masa manfaat 16 tahun) jika menggunakan metode saldo menurun menggunakan tarif sebesar 25% (dua kali tarif metode garis lurus yang sebesar 6,25%).",
-      "dasar": "Pasal 11A ayat (1) UU PPh."
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan Pasal 11A ayat (2) UU PPh, amortisasi atas harta tak berwujud Kelompok 3 (masa manfaat 16 tahun) apabila menggunakan metode saldo menurun dihitung dengan tarif 12,5% (dua kali tarif metode garis lurus yang sebesar 6,25%).",
+      "dasar": "Pasal 11A ayat (2) UU PPh"
     },
     {
       "id": 50,

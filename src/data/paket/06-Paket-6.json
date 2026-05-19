@@ -629,8 +629,8 @@
         "Rp 50.000.000.000",
         "Rp 150.000.000.000"
       ],
-      "jawaban": 1,
-      "pembahasan": "Investment Allowance sebesar 30% x Rp 500 miliar = Rp 150 miliar. Fasilitas ini berupa pengurangan tambahan dari penghasilan neto (bukan dari PKP). PKP = Rp 200 miliar - Rp 150 miliar = Rp 50 miliar. Jika PKP positif Rp 50 miliar, bukan negatif. Koreksi: PKP = Rp 200 M - Rp 150 M = Rp 50 M (positif). Namun jawaban B (negatif) mengasumsikan pengurangan penuh tanpa batasan, yang menghasilkan 200-150=50 M positif. Jawaban yang benar = C (Rp 50 M).",
+      "jawaban": 2,
+      "pembahasan": "Investment allowance dihitung sebesar 30% dari nilai investasi mesin dan bangunan, yaitu 30% x Rp 500 miliar = Rp 150 Miliar. Fasilitas ini berupa pengurangan tambahan dari penghasilan neto. PKP setelah fasilitas = Laba sebelum fasilitas - Investment Allowance = Rp 200 miliar - Rp 150 Miliar = Rp 50 Miliar (positif, tidak menjadi rugi fiskal).",
       "dasar": "PP-18/2015 jo PP-9/2016 tentang Fasilitas PPh untuk Penanaman Modal di Bidang-Bidang Usaha Tertentu"
     },
     {
@@ -839,9 +839,9 @@
         "Masing-masing mendapat PTKP TK/0 (Rp 54 juta)",
         "PTKP K/0 dibagi dua: masing-masing Rp 29,25 juta"
       ],
-      "jawaban": 2,
-      "pembahasan": "Berdasarkan Pasal 8 ayat (3) UU PPh, dalam kondisi suami-istri memilih melakukan kewajiban perpajakan terpisah (MT), masing-masing suami and istri mendapatkan PTKP sesuai statusnya sendiri. Tn. Doni mendapat PTKP status TK/0 (bukan K/0 karena dalam kasus MT), demikian pula Ny. Mira mendapat PTKP TK/0. Status K diterapkan hanya jika kewajiban pajak digabung.",
-      "dasar": "Pasal 8 ayat (3) UU PPh tentang Penggabungan Penghasilan Suami-Istri"
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan UU PPh jo PMK-168/2023, dalam hal suami-istri memilih menjalankan kewajiban perpajakan secara terpisah (MT), tambahan PTKP untuk status kawin (K) dan tanggungan tetap melekat pada pihak suami sebagai kepala keluarga. Oleh karena itu, suami (Tn. Doni) menggunakan PTKP K/0 (Rp 58,5 juta) sedangkan istri (Ny. Mira) menggunakan PTKP TK/0 (Rp 54 juta). Status kawin tidak dapat diklaim secara ganda oleh keduanya.",
+      "dasar": "Pasal 8 ayat (3) UU PPh; PMK-168/PMK.010/2023"
     },
     {
       "id": 57,

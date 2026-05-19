@@ -474,14 +474,14 @@
       "skenario": "Tn. Erik adalah anggota dewan komisaris PT Tbk yang menerima honorarium Rp 200 juta/tahun. Ia juga merupakan pemegang saham dengan kepemilikan 15% dan menerima dividen Rp 50 juta. Tn. Erik tidak memiliki pekerjaan lain (K/1).",
       "soal": "Bagaimana pemotongan PPh atas honorarium komisaris oleh PT Tbk?",
       "opsi": [
-        "PPh 21 dengan tarif efektif 7,5% (30% x 25%) karena komisaris bukan pegawai tetap",
+        "PPh 21 dihitung menggunakan Tarif Efektif Bulanan (TER) Kategori B (karena status K/1) dikalikan honorarium bruto",
         "PPh 21 dengan DPP = 50% x honorarium x tarif Pasal 17",
-        "PPh 21 atas seluruh honorarium dengan tarif Pasal 17 progresif tanpa pengurangan",
+        "PPh 21 atas seluruh honorarium dengan tarif Pasal 17 progresif tanpa penggabungan",
         "PPh 23 sebesar 15% karena honorarium komisaris termasuk jasa manajemen"
       ],
-      "jawaban": 2,
-      "pembahasan": "Berdasarkan PMK-168/PMK.010/2023, anggota dewan komisaris yang menerima honorarium tidak secara teratur diperlakukan sebagai penerima penghasilan tidak teratur. PPh 21 dihitung atas seluruh honorarium tanpa norma 50% (norma 50% hanya untuk tenaga ahli yang memberikan jasa). Tarif = tarif Pasal 17 progresif atas penghasilan bruto.",
-      "dasar": "PMK-168/PMK.010/2023; PMK-168/PMK.010/2023"
+      "jawaban": 0,
+      "pembahasan": "Berdasarkan PMK-168/PMK.010/2023, dewan komisaris yang tidak merangkap sebagai pegawai tetap dikategorikan sebagai bukan pegawai tetap yang menerima penghasilan tidak teratur. Aturan terbaru ini memotong PPh 21 menggunakan Tarif Efektif Bulanan (TER) Kategori A/B/C (tergantung PTKP) yang dikalikan langsung dengan honorarium bruto pada masa pajak terutang (tidak kumulatif). Karena status PTKP Tn. Erik adalah K/1, maka ia menggunakan TER Kategori B.",
+      "dasar": "PMK-168/PMK.010/2023 Pasal 13"
     },
     {
       "id": 33,
@@ -580,7 +580,7 @@
       "soal": "Dari penghasilan PT Fintech Lending tersebut, mana yang merupakan objek PPN?",
       "opsi": [
         "Semua penghasilan dibebaskan PPN karena jasa keuangan",
-        "Hanya origination fee (Rp 5 M) yang terutang PPN; bunga dan denda dibebaskan",
+        "Bunga terutang PPN; origination fee dan denda dibebaskan PPN",
         "Bunga dan denda dibebaskan; origination fee terutang PPN",
         "Semua terutang PPN 11%"
       ],
@@ -689,9 +689,9 @@
         "Keduanya terutang PPN 11%",
         "Majalah cetak terutang PPN; e-magazine dibebaskan"
       ],
-      "jawaban": 1,
-      "pembahasan": "Buku/majalah cetak termasuk dalam kategori BKP Strategis yang tidak dipungut PPN berdasarkan PP-49/2022 (buku pelajaran) atau dibebaskan. Namun e-magazine/buku digital merupakan BKP Tidak Berwujud (produk digital) yang TERUTANG PPN 11%. Perbedaan perlakuan antara versi cetak dan digital ini merupakan isu yang disoroti dalam reformasi PPN.",
-      "dasar": "PP-49/2022; UU HPP tentang BKP Tidak Berwujud digital"
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP Nomor 49 Tahun 2022, fasilitas PPN dibebaskan hanya diberikan untuk Buku Pelajaran umum, kitab suci, dan buku keagamaan (baik cetak maupun digital/elektronik). Sedangkan untuk majalah, surat kabar, tabloid, dan sejenisnya (baik dalam bentuk cetak maupun digital/e-magazine) tidak mendapatkan fasilitas pembebasan, sehingga keduanya terutang PPN dengan tarif umum 11%.",
+      "dasar": "Pasal 6 dan Lampiran PP Nomor 49 Tahun 2022"
     },
     {
       "id": 47,
@@ -806,12 +806,12 @@
       "opsi": [
         "PPh Final 10% atas pendapatan kos karena termasuk sewa tanah/bangunan",
         "PPh Pasal 17 progresif atas penghasilan neto kos digabung dengan gaji",
-        "PPh Final 0,5% UMKM karena omzet di bawah Rp 500 M",
+        "Dikenai PPh Final UMKM 0,5%, namun karena omzet kos (Rp 270 juta) di bawah batas Rp 500 juta bagi WP OP, pajaknya Rp 0 dan tidak digabung dengan penghasilan gaji",
         "Bebas PPh karena kos mahasiswa merupakan bisnis sosial"
       ],
-      "jawaban": 1,
-      "pembahasan": "PPh Final 10% (sewa tanah/bangunan) berlaku untuk penyewaan tanah/bangunan. Kos dengan 15 kamar atau kurang merupakan rumah kos yang penghasilannya digabung dengan penghasilan lain dan dikenai PPh Pasal 17 progresif. Namun jika jumlah kamar >10, ada pandangan bahwa ini merupakan usaha. Untuk kos ≤10 kamar: digabung penghasilan lain. Dalam kasus ini (15 kamar): dapat dianggap usaha kos.",
-      "dasar": "SE-22/PJ.41/1996 tentang PPh atas Usaha Kos; PP-34/2017"
+      "jawaban": 2,
+      "pembahasan": "Berdasarkan PP Nomor 34 Tahun 2017 jo PP Nomor 55 Tahun 2022, penghasilan dari usaha rumah kos dikategorikan sebagai jasa pelayanan penginapan yang dikecualikan dari PPh Final 10% sewa bangunan. Usaha kos dikategorikan sebagai kegiatan usaha biasa yang dapat memanfaatkan skema PPh Final UMKM 0,5% (PP 55/2022). Karena omzet kos Tn. Ivan hanya Rp 270 juta/tahun (di bawah batasan peredaran bruto tidak dikenai pajak Rp 500 juta bagi WP OP), maka PPh Final atas kos adalah Rp 0 dan tidak perlu digabung dengan penghasilan gaji di SPT Tahunan (gaji tetap dikenai PPh 17 progresif secara terpisah).",
+      "dasar": "Pasal 6 PP Nomor 55 Tahun 2022; PP Nomor 34 Tahun 2017"
     },
     {
       "id": 55,
