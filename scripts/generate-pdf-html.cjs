@@ -283,6 +283,9 @@ const htmlContent = `
       padding: 0.5rem 0.75rem;
     }
 
+    @page {
+      margin: 0;
+    }
     @media print {
       body {
         background-color: #ffffff;
